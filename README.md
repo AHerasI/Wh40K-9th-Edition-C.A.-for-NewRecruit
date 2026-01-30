@@ -11,15 +11,17 @@ Template Data Repo
 
 ## Overview ##
 
-__What's this?__
+# Warhammer 40.000 9th Edition - CA Modification
+GitHub repository of a modified version of Warhammer 40K 9th edition. (C.A. Discord).
 
-BSData organisation created this project. It's a GitHub repository of datafiles.
-Maintained by community, in no way endorsed by BattleScribe or any other company/publisher. If you want
-to develop - cool! We need you! Take a look at [our homepage][BSData.net]
+The objective of this modifications is to allow a more lore-accurate Tabletop game experience.
+# Disclaimer
+__Derived from the original Warhammer 40,000 9th Edition database, created by BSData Developers__ 
+@WH40k Data Dev, from https://www.bsdata.net.
 
-__Okay, nice project. Is it actually working?__ _I just want those files..._
+Additional reference data obtained from Wahapedia, https://wahapedia.ru/
 
-Yeah! We have it hosted on AppSpot. Take a look: [BattleScribe Data on Appspot][]
+Original and reference data from Games Workshop.
 
 __I found a bug!__ / *I have another request*
 
@@ -28,7 +30,7 @@ Great, thank you! Please [Report a bug][bug report] - you can also suggest enhan
 ## Links ##
 
 * [BSData organization homepage][BSData.net]
-* [BattleScribe app homepage](https://www.battlescribe.net/)
-
+* [New Recruit app homepage](https://www.newrecruit.eu/)
+  
 [BSData.net]: https://www.bsdata.net/
 [bug report]: https://github.com/BSData/TemplateDataRepo/issues/new/choose
