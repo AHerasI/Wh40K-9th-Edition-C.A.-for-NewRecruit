@@ -2405,7 +2405,7 @@ If the unit has the INFANTRY Keyword and is in a terrain with the DEFENSIBLE tra
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="8a87-f0e3-f2f2-ad1a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0d7c-f6da-32e9-53aa" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0d7c-f6da-32e9-53aa" type="max"/>
         <constraint field="forces" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b574-7a98-b5ff-6731" type="max"/>
       </constraints>
       <rules>
