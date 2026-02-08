@@ -227,7 +227,6 @@ Additional reference data obtained from Wahapedia, https://wahapedia.ru/</readme
                 <conditionGroup type="and">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f273-738c-4a42-4051" type="equalTo"/>
-                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="08f1-d244-eb44-7e01" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -254,7 +253,6 @@ Additional reference data obtained from Wahapedia, https://wahapedia.ru/</readme
                 <conditionGroup type="and">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="46fa-1fac-f91a-2a07" type="equalTo"/>
-                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="08f1-d244-eb44-7e01" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -274,28 +272,45 @@ Additional reference data obtained from Wahapedia, https://wahapedia.ru/</readme
             </modifier>
           </modifiers>
         </infoLink>
-        <infoLink id="4dfc-d90a-d377-8b86" name="Rugged explorators" hidden="true" targetId="4576-74d3-f595-c3a9" type="profile">
+      </infoLinks>
+      <profiles>
+        <profile name="Rugged explorators" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="true" id="d876-0320-ba6c-3d4b">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Models in this unit do not suffer the penalty to hit rolls incurred for firing Heavy weapons in the same turn that their unit has moved.</characteristic>
+          </characteristics>
+          <comment>Infantry</comment>
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
+            <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2592-945f-c7a6-81c6" type="equalTo"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="2592-945f-c7a6-81c6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="3d52-fccf-10c0-3fae" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c8fd-783f-3230-493e" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3d52-fccf-10c0-3fae" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
-        </infoLink>
-      </infoLinks>
+        </profile>
+        <profile name="Rugged explorators" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="true" id="5eac-7c97-46d2-ab64">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">VEHICLE models in this unit do not suffer the penalty to hit rolls incurred for firing Assault weapons in the same turn that their unit has Advanced.</characteristic>
+          </characteristics>
+          <comment>Vehicles</comment>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="2592-945f-c7a6-81c6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="c8fd-783f-3230-493e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
     </categoryEntry>
     <categoryEntry id="fb1c-adb6-2b99-3822" name="Skitarii" hidden="false">
       <profiles>
@@ -753,8 +768,7 @@ In addition, each time a model in that unit would lose a wound as a result of a 
                 <profile name="-4-" typeId="a91a-94bc-68e1-7481" typeName="Canticles" hidden="false" id="5900-7e89-6f76-2944">
                   <characteristics>
                     <characteristic name="of the Omnissiah" typeId="246e-7747-9dfb-36c9">Benediction of the Omnissiah</characteristic>
-                    <characteristic name="Effect" typeId="2b03-0847-11b3-6797">While this Canticle is active, each time a CANTICLES OF THE OMNISSIAH unit is selected to shoot, when resolving its attacks you can re-roll one Hit roll, one Wound roll and one Damage roll.
-</characteristic>
+                    <characteristic name="Effect" typeId="2b03-0847-11b3-6797">While this Canticle is active, each time a CANTICLES OF THE OMNISSIAH unit is selected to shoot, when resolving its attacks you can re-roll one Hit roll, one Wound roll and one Damage roll.</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="-5-" typeId="a91a-94bc-68e1-7481" typeName="Canticles" hidden="false" id="e4aa-a65e-e6dc-8f64">
@@ -913,7 +927,7 @@ Unless stated otherwise, when a Doctrina Imperative is active, both of the effec
                       <profiles>
                         <profile id="027d-cd59-b209-19f6" name="Radiant disciples" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                           <characteristics>
-                            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a ranged attack targets a CORE unit with this dogma, if the attacker is more than 12&quot; away, subtract 1 from the Strength characteristic of that attack.</characteristic>
+                            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a ranged attack targets a unit with this dogma, if the attacker is more than 12&quot; away, subtract 1 from the Strength characteristic of that attack.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -958,7 +972,7 @@ Unless stated otherwise, when a Doctrina Imperative is active, both of the effec
                               <profiles>
                                 <profile id="2ef8-e492-0308-e91d" name="Machine God&apos;s chosen" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                                   <characteristics>
-                                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Units with this trait automaticly pass morale checks.</characteristic>
+                                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Units with this dogma automaticly pass morale checks.</characteristic>
                                   </characteristics>
                                 </profile>
                               </profiles>
@@ -1013,7 +1027,7 @@ Unless stated otherwise, when a Doctrina Imperative is active, both of the effec
                               <profiles>
                                 <profile id="0ba5-1ad9-dde6-484e" name="Foward operations" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                                   <characteristics>
-                                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the start of the first battle round, each SKITARII CORE model in your army with this dogma can make a Normal Move of up to 3&quot;. This is in addition to any other abilities they may have that allow them to make a Normal Move. They cannot end this move within 9&quot; of any enemy models.</characteristic>
+                                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the start of the first battle round, each SKITARII CORE model in your army with this dogma can either make a normal Move or, in addition to any other abilities they may have that allow them to make a normal Move, move an additional 3&quot;. They cannot end this move within 6&quot; of any enemy models.</characteristic>
                                   </characteristics>
                                 </profile>
                               </profiles>
@@ -1054,7 +1068,7 @@ Unless stated otherwise, when a Doctrina Imperative is active, both of the effec
                       <profiles>
                         <profile id="00e6-bd0b-10a5-9e84" name="Magnabonded alloys" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                           <characteristics>
-                            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a VEHICLE model with this dogma would lose a wound, roll one D6: on a 6, that wound is not lost.</characteristic>
+                            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a VEHICLE model with this dogma would lose a wound, roll one D6: on a 5+, that wound is not lost.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -1069,7 +1083,7 @@ Unless stated otherwise, when a Doctrina Imperative is active, both of the effec
                               <profiles>
                                 <profile id="f3b8-44da-9443-c02b" name="Omnitrac impellors" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                                   <characteristics>
-                                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Add 2&quot; to the Move characteristic of KATAPHRON SERVITORS and ONAGER DUNECRAWLER models with this dogma.</characteristic>
+                                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Add 4&quot; to the Move characteristic of SERVITORS and ONAGER DUNECRAWLER models with this dogma.</characteristic>
                                   </characteristics>
                                 </profile>
                               </profiles>
@@ -1125,7 +1139,7 @@ Unless stated otherwise, when a Doctrina Imperative is active, both of the effec
                       <profiles>
                         <profile id="e123-3835-fc7f-16b5" name="Purgation protocols" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                           <characteristics>
-                            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a CORE model with this dogma makes a ranged attack, on an unmodified wound roll of 6, the Damage characteristic of that attack is improved by 1.</characteristic>
+                            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a model with this dogma makes a ranged attack, on an unmodified wound roll of 6, the Damage characteristic of that attack is improved by 1.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -2898,7 +2912,7 @@ Unless stated otherwise, when a Doctrina Imperative is active, both of the effec
         </selectionEntry>
         <selectionEntry id="5499-0e26-ae82-9954" name="Twin Cognis Lascannon" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
-            <infoLink id="4048-a3e3-2082-9f65" name="Twin Las-cannon" hidden="false" targetId="1662-54b9-46da-fefc" type="profile">
+            <infoLink id="4048-a3e3-2082-9f65" name="Twin Lascannon" hidden="false" targetId="1662-54b9-46da-fefc" type="profile">
               <modifiers>
                 <modifier type="set" field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="51&quot;">
                   <conditions>
@@ -4251,7 +4265,7 @@ Unless stated otherwise, when a Doctrina Imperative is active, both of the effec
             </infoLink>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="4d87-9083-e616-f850" name="Beam weapon" hidden="false" targetId="e0a1-e75a-bb09-b142" primary="false"/>
+            <categoryLink id="4d87-9083-e616-f850" name="Beam" hidden="false" targetId="e0a1-e75a-bb09-b142" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -7140,7 +7154,15 @@ The action is completed at the end of your next Command phase. When it is comple
           <selectionEntries>
             <selectionEntry id="6426-a082-7ca5-c60f" name="Servitor" hidden="false" collective="false" import="true" type="model">
               <infoLinks>
-                <infoLink id="48c8-5f5c-950f-0e28" name="Servitor" hidden="false" targetId="13f5-df94-118f-00ac" type="profile"/>
+                <infoLink id="48c8-5f5c-950f-0e28" name="Servitor" hidden="false" targetId="13f5-df94-118f-00ac" type="profile">
+                  <modifiers>
+                    <modifier type="set" value="9&quot;" field="0bdf-a96e-9e38-7779">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="c1ea-7d23-b520-3691" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <entryLinks>
                 <entryLink id="8944-ed49-8bcd-0179" name="Servo-arm" hidden="false" collective="false" import="true" targetId="14cd-b045-05d9-b6b0" type="selectionEntry"/>
@@ -7154,7 +7176,15 @@ The action is completed at the end of your next Command phase. When it is comple
             </selectionEntry>
             <selectionEntry id="aba5-b684-c1a2-d68c" name="Servitor w/Plasma cannon" hidden="false" collective="false" import="true" type="model">
               <infoLinks>
-                <infoLink id="52a5-ea94-81ff-d3d1" name="Servitor" hidden="false" targetId="13f5-df94-118f-00ac" type="profile"/>
+                <infoLink id="52a5-ea94-81ff-d3d1" name="Servitor" hidden="false" targetId="13f5-df94-118f-00ac" type="profile">
+                  <modifiers>
+                    <modifier type="set" value="9&quot;" field="0bdf-a96e-9e38-7779">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="c1ea-7d23-b520-3691" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <entryLinks>
                 <entryLink id="b59d-8525-4e2b-60a1" name="Plasma cannon" hidden="false" collective="false" import="true" targetId="e0dc-0e8e-2e25-bd1b" type="selectionEntry">
@@ -7173,7 +7203,15 @@ The action is completed at the end of your next Command phase. When it is comple
             </selectionEntry>
             <selectionEntry id="313a-eaf7-4f68-7b4e" name="Servitor w/Multi-melta" hidden="false" collective="false" import="true" type="model">
               <infoLinks>
-                <infoLink id="70d2-aba0-11ab-2f1a" name="Servitor" hidden="false" targetId="13f5-df94-118f-00ac" type="profile"/>
+                <infoLink id="70d2-aba0-11ab-2f1a" name="Servitor" hidden="false" targetId="13f5-df94-118f-00ac" type="profile">
+                  <modifiers>
+                    <modifier type="set" value="9&quot;" field="0bdf-a96e-9e38-7779">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="c1ea-7d23-b520-3691" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <entryLinks>
                 <entryLink id="1265-0b87-f91e-f341" name="Multi-melta" hidden="false" collective="false" import="true" targetId="3a12-1083-72c5-6b34" type="selectionEntry">
@@ -7192,7 +7230,15 @@ The action is completed at the end of your next Command phase. When it is comple
             </selectionEntry>
             <selectionEntry id="2ded-8114-42de-92b7" name="Servitor w/Heavy bolter" hidden="false" collective="false" import="true" type="model">
               <infoLinks>
-                <infoLink id="84f4-eb7b-ebb7-db43" name="Servitor" hidden="false" targetId="13f5-df94-118f-00ac" type="profile"/>
+                <infoLink id="84f4-eb7b-ebb7-db43" name="Servitor" hidden="false" targetId="13f5-df94-118f-00ac" type="profile">
+                  <modifiers>
+                    <modifier type="set" value="9&quot;" field="0bdf-a96e-9e38-7779">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="c1ea-7d23-b520-3691" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <entryLinks>
                 <entryLink id="fa26-e427-7ad4-c2f2" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="5dfe-014a-29d4-fa0d" type="selectionEntry">
@@ -9203,7 +9249,7 @@ This effect is not cumulable with other effects that decrease the Toughness.</ch
         </modifierGroup>
       </modifierGroups>
       <profiles>
-        <profile id="2f56-8b59-0cae-767b" name="Onager Dunecrawler [1] (7+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="2f56-8b59-0cae-767b" name="Onager Dunecrawler [1] (7+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
@@ -9215,8 +9261,15 @@ This effect is not cumulable with other effects that decrease the Toughness.</ch
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="c1ea-7d23-b520-3691" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
-        <profile id="a0e2-42b5-9053-71bc" name="Onager Dunecrawler [2] (4-6 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="a0e2-42b5-9053-71bc" name="Onager Dunecrawler [2] (4-6 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
@@ -9228,8 +9281,15 @@ This effect is not cumulable with other effects that decrease the Toughness.</ch
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="10&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="c1ea-7d23-b520-3691" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
-        <profile id="a852-60e6-dfea-1d77" name="Onager Dunecrawler [3] (1-3 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="a852-60e6-dfea-1d77" name="Onager Dunecrawler [3] (1-3 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">4&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
@@ -9241,6 +9301,13 @@ This effect is not cumulable with other effects that decrease the Toughness.</ch
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="8&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="c1ea-7d23-b520-3691" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -10428,6 +10495,11 @@ Blast.</characteristic>
                 <modifier type="set" field="9c9f-9774-a358-3a39" value="5">
                   <conditions>
                     <condition field="selections" scope="1ac7-9336-40fe-fe34" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1601-4a55-47b8-5438" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="10&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="c1ea-7d23-b520-3691" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -12488,7 +12560,15 @@ Blast.</characteristic>
             <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0ad-1491-3c84-7021" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="89fd-e3f1-792d-c781" name="Servitor" hidden="false" targetId="13f5-df94-118f-00ac" type="profile"/>
+            <infoLink id="89fd-e3f1-792d-c781" name="Servitor" hidden="false" targetId="13f5-df94-118f-00ac" type="profile">
+              <modifiers>
+                <modifier type="set" value="9&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="c1ea-7d23-b520-3691" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="f71b-9749-301a-ec54" name="Mechadendrite" hidden="false" collective="true" import="true" type="upgrade">
@@ -14233,7 +14313,7 @@ When it is completed, the Initial part of this model’s progressive ability sto
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
       </characteristics>
     </profile>
-    <profile id="4567-7d8f-3b14-14de" name="Kataphron Servitor" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+    <profile id="4567-7d8f-3b14-14de" name="Kataphron Servitor" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
         <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
         <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
@@ -14245,6 +14325,13 @@ When it is completed, the Initial part of this model’s progressive ability sto
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
       </characteristics>
+      <modifiers>
+        <modifier type="set" value="10&quot;" field="0bdf-a96e-9e38-7779">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="c1ea-7d23-b520-3691" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </profile>
     <profile id="1a86-155a-e79c-4280" name="Broad Spectrum Data-tether [Aura]" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
       <characteristics>
@@ -14317,7 +14404,7 @@ When it is completed, the Initial part of this model’s progressive ability sto
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
       </characteristics>
     </profile>
-    <profile id="70d6-aef5-e050-5186" name="Pteraxii" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+    <profile id="70d6-aef5-e050-5186" name="Pteraxii" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
         <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
         <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
@@ -14343,7 +14430,7 @@ When it is completed, the Initial part of this model’s progressive ability sto
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
       </characteristics>
     </profile>
-    <profile id="f742-53a2-2341-27c4" name="Serberys Rider" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+    <profile id="f742-53a2-2341-27c4" name="Serberys Rider" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <modifiers>
         <modifier type="set" field="00ca-f8b8-876d-b705" value="7">
           <conditions>
@@ -14401,7 +14488,7 @@ When it is completed, the Initial part of this model’s progressive ability sto
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
       </characteristics>
     </profile>
-    <profile id="4410-49bd-630b-73a7" name="Enhanced Skitarii Alpha" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+    <profile id="4410-49bd-630b-73a7" name="Enhanced Skitarii Alpha" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
         <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
         <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
@@ -14414,7 +14501,7 @@ When it is completed, the Initial part of this model’s progressive ability sto
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
       </characteristics>
     </profile>
-    <profile id="62b8-9d7d-705d-1c45" name="Scyllax Servitor" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+    <profile id="62b8-9d7d-705d-1c45" name="Scyllax Servitor" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
         <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
         <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
