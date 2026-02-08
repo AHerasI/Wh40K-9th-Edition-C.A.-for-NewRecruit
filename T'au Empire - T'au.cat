@@ -15967,15 +15967,6 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
       </selectionEntryGroups>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Veteran Tallerian Warrior" hidden="false" id="11bb-cc1b-cb1e-af27">
-          <infoLinks>
-            <infoLink name="Tallerian Warrior" id="51b1-119e-d17e-bafd" hidden="false" type="profile" targetId="cec1-8c29-ba3d-be7f">
-              <modifiers>
-                <modifier type="prepend" value="Veteran" field="name" join=" "/>
-                <modifier type="set" value="5" field="13fc-b29b-31f2-ab9f"/>
-                <modifier type="set" value="8" field="00ca-f8b8-876d-b705"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapon option" id="3067-3682-afad-77ee" hidden="false" defaultSelectionEntryId="527e-fc2a-6279-24b2">
               <constraints>
@@ -16067,6 +16058,29 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
           <entryLinks>
             <entryLink import="true" name="Gravitic concussion grenades" hidden="false" id="6150-93e0-7db1-5ada" type="selectionEntry" targetId="be66-f992-8552-271a"/>
           </entryLinks>
+          <profiles>
+            <profile name="Veteran Tallerian Warrior" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="9dd2-e0a5-4db4-5dca">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">5</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <comment>Enclaves</comment>
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="9e82-c782-b939-36b4" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
