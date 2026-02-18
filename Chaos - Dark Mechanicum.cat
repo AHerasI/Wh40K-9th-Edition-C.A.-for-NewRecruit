@@ -14277,7 +14277,7 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Additional Weapon option" id="d268-04df-34ec-cf1d" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Additional Weapon option" id="d268-04df-34ec-cf1d" hidden="false" collective="false" import="true" defaultSelectionEntryId="none">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2a1d-472c-8206-13e4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -14289,7 +14289,18 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
             </entryLink>
             <entryLink import="true" name="Storm Bolter" hidden="false" id="6f4f-5b08-0d0d-e34e" collective="false" targetId="2b03-8d64-3711-f300" type="selectionEntry"/>
             <entryLink import="true" name="Combi-Boltgun (Flamer)" hidden="false" id="d14b-b67f-2a36-e064" collective="false" targetId="6fd3-0b23-4197-dc47" type="selectionEntry"/>
-            <entryLink import="true" name="Combi-Boltgun (Warpflamer)" hidden="false" id="8fbc-741a-ed9c-583a" collective="false" targetId="6342-d447-e0d0-cc73" type="selectionEntry"/>
+            <entryLink import="true" name="Combi-Boltgun (Warpflamer)" hidden="false" id="8fbc-741a-ed9c-583a" collective="false" targetId="6342-d447-e0d0-cc73" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="points" value="5"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="dbe4-3959-d35f-11bd" childId="eb2b-ba4e-a494-b321" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Chest weapon" id="b445-f211-c7c2-2a02" hidden="false" defaultSelectionEntryId="a4a1-ff9b-3f1b-c7c8">
@@ -14345,6 +14356,9 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
                   </conditions>
                 </modifier>
               </modifiers>
+              <costs>
+                <cost name="Pts" typeId="points" value="5"/>
+              </costs>
             </entryLink>
             <entryLink import="true" name="Twin Doom Siren" hidden="true" id="70a1-4b1a-46af-7cbb" targetId="a87a-1b34-1205-6df9" type="selectionEntry" collective="false">
               <costs>
@@ -14361,7 +14375,7 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
             </entryLink>
             <entryLink import="true" name="Twin Plague spewer" hidden="true" id="0cb8-4a95-b0ca-db24" targetId="a6a5-4bd2-3497-ae81" type="selectionEntry" collective="false">
               <costs>
-                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="Pts" typeId="points" value="5"/>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
               </costs>
               <modifiers>

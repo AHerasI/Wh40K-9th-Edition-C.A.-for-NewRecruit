@@ -728,6 +728,11 @@ Additional reference data obtained from Wahapedia, https://wahapedia.ru/</readme
         <categoryLink id="c850-a5e9-472b-b552" name="No Force Org Slot" hidden="false" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Skitarii Hastarii" hidden="false" id="dee7-4d1b-c7a8-7068" type="selectionEntry" targetId="aab1-334a-10ae-2b6d">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="4565-053e-c36e-4b3f" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="2820-cc81-4989-2890" name=" Forge world" hidden="false" collective="false" import="true" type="upgrade">
@@ -4162,7 +4167,7 @@ Unless stated otherwise, when a Doctrina Imperative is active, both of the effec
               </modifiers>
               <characteristics>
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 8</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 4</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
                 <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
@@ -5831,6 +5836,8 @@ Until the start of your next Command phase, that unit ignores the Deprecation ef
                     <condition field="selections" scope="5c4b-1b42-2ddc-b616" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1601-4a55-47b8-5438" type="atLeast"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="3+" field="c0df-df94-abd7-e8d3"/>
+                <modifier type="set" value="3+" field="381b-eb28-74c3-df5f"/>
               </modifiers>
             </infoLink>
           </infoLinks>
@@ -12655,6 +12662,296 @@ Blast.</characteristic>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Skitarii Hastarii" hidden="false" id="aab1-334a-10ae-2b6d" collective="false">
+      <modifiers>
+        <modifier type="add" value="2f88-4d5f-a2bc-cea1" field="category">
+          <comment>Canticles</comment>
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="de26-b593-ab72-84a0" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>FW</comment>
+          <modifiers>
+            <modifier type="add" value="6f5f-8df0-08c3-b159" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="38c7-fc6f-1445-68e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="0c30-fc1b-6c56-186f" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="14e6-b35c-75fa-06ac" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="c553-868b-2fb3-2119" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="de26-b593-ab72-84a0" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="84fd-bad1-01e5-04f0" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="a076-2f1c-282d-9a96" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="d164-1a36-5200-ae39" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="1d56-d67d-1efe-517b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="5100-5c78-f1aa-84e2" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="f6e1-f088-18d0-1010" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="eb2c-6311-d07f-dae1" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="0df5-03b2-7019-7e2f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="b915-ab89-040f-d533" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="833c-8d94-a613-ebb5" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <infoLinks>
+        <infoLink name="Bionics" id="d029-f441-5b3d-090d" hidden="false" targetId="1955-0b13-0a25-aebf" type="profile"/>
+        <infoLink name="Orbital Teleportarium" id="6f97-ece8-6ab7-6c1e" hidden="false" targetId="fa5d-0890-6bf7-6ed1" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Infantry" hidden="false" id="7827-e7e7-2212-0649" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+        <categoryLink name="Faction: Adeptus Mechanicus" hidden="false" id="2a42-f145-e86f-11fc" targetId="ca27-5069-1c2c-a28b" primary="false"/>
+        <categoryLink name="Faction: Imperium" hidden="false" id="3c52-ff91-cff7-fd1e" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
+        <categoryLink name="Core" hidden="false" id="60ab-5196-10cc-643c" targetId="08f1-d244-eb44-7e01" primary="false"/>
+        <categoryLink name="Skitarii" hidden="false" id="d9e1-9862-8804-8e2a" targetId="fb1c-adb6-2b99-3822" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Skitarii Hastarii Alpha" hidden="false" id="d358-da01-737a-a6d1" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51aa-c077-3db7-caaf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f73-a381-4240-fbcf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Skitarii Alpha" id="da4e-2bd3-424d-f1ba" hidden="false" targetId="40b8-1cfa-6fba-e9d7" type="profile">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="3+" field="c0df-df94-abd7-e8d3"/>
+                    <modifier type="set" value="4" field="9c9f-9774-a358-3a39"/>
+                    <modifier type="set" value="2" field="f330-5e6e-4110-0978"/>
+                    <modifier type="set" value="Hastarii Alpha" field="name"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </infoLink>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapon" id="00d4-b1be-fc81-bb22" hidden="false" collective="false" import="true" defaultSelectionEntryId="ceb2-26bf-f79c-9c5f">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8842-90f1-007d-c8a4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ca5-5e99-405d-af02" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Arc pistol" hidden="false" id="5d5e-10db-ce54-b941" collective="false" targetId="c37c-aead-9f52-7bec" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="points" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Radium pistol" hidden="false" id="f5db-e91f-9361-b465" collective="false" targetId="447f-5a48-e8eb-89db" type="selectionEntry"/>
+                <entryLink import="true" name="Phosphor blast pistol" hidden="false" id="3214-8c79-9736-35a7" collective="false" targetId="02e3-9994-c0ce-3ae4" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Shoulder weapon" id="b0ef-bbaa-63cd-893c" hidden="false" defaultSelectionEntryId="d791-f7f1-6d34-3b13">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d3d-c4af-e178-cd4d" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fff0-5bd2-29e9-f3fc" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Cognis flamer" hidden="false" id="d791-f7f1-6d34-3b13" collective="false" targetId="1580-6f7a-2617-91cb" type="selectionEntry"/>
+                <entryLink import="true" name="Phosphor blaster" hidden="false" id="c37c-39eb-efa6-cda8" collective="false" targetId="a8d2-f493-1087-5896" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="points" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Melee weapon" hidden="false" id="2c4c-4d06-c9c7-64e6" collective="false" targetId="1b06-5307-0a41-1817" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="points" value="15"/>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Skitarii Hastarii" id="1d28-8894-fc94-af8a" hidden="false" collective="false" import="true" defaultSelectionEntryId="4825-42b3-f0db-365f">
+          <constraints>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="070e-2d37-8696-fa20" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="40b3-8851-ff9a-2743" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Hastarii" hidden="false" id="e189-9bd6-72bc-6de4" collective="false">
+              <infoLinks>
+                <infoLink name="Skitarii" id="837d-758a-d5a3-883c" hidden="false" targetId="2167-c172-924c-6ab5" type="profile">
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="3+" field="c0df-df94-abd7-e8d3"/>
+                        <modifier type="set" value="4" field="9c9f-9774-a358-3a39"/>
+                        <modifier type="set" value="2" field="f330-5e6e-4110-0978"/>
+                        <modifier type="set" value="Hastarii" field="name"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </infoLink>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Cognis flamer" hidden="false" id="be30-e0a7-6588-a91a" collective="false" targetId="1580-6f7a-2617-91cb" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11f6-0f56-4f9a-fec6" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cafa-46cc-06bf-c7c7" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Arc rifle" hidden="false" id="d1c3-5880-0ee2-5395" type="selectionEntry" targetId="c3d2-36ce-ddfb-4312">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2994-e76f-adb6-20b8" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8805-bc7c-a58f-674c" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="15"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Hastarii w/Lighting lock" hidden="false" id="c9c1-e41f-495d-0dcc" collective="false">
+              <infoLinks>
+                <infoLink name="Skitarii" id="6ffc-14c5-5dd8-2616" hidden="false" targetId="2167-c172-924c-6ab5" type="profile">
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="3+" field="c0df-df94-abd7-e8d3"/>
+                        <modifier type="set" value="4" field="9c9f-9774-a358-3a39"/>
+                        <modifier type="set" value="2" field="f330-5e6e-4110-0978"/>
+                        <modifier type="set" value="Hastarii" field="name"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </infoLink>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Cognis flamer" hidden="false" id="9d43-ad76-d770-25ff" collective="false" targetId="1580-6f7a-2617-91cb" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d112-b9ab-daa2-f741" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc7c-e649-fef3-1c66" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Lightning lock" hidden="false" id="86f3-f167-3f5d-3bea" type="selectionEntry" targetId="be80-0b7e-7cef-4ca2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04d7-5e8d-ae61-3707" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3eb9-f3aa-ac15-0e6a" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="20"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Hastarii w/Blaster" hidden="false" id="c088-362d-bd7c-65aa" collective="false">
+              <infoLinks>
+                <infoLink name="Skitarii" id="3aab-0964-2143-caca" hidden="false" targetId="2167-c172-924c-6ab5" type="profile">
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="3+" field="c0df-df94-abd7-e8d3"/>
+                        <modifier type="set" value="4" field="9c9f-9774-a358-3a39"/>
+                        <modifier type="set" value="2" field="f330-5e6e-4110-0978"/>
+                        <modifier type="set" value="Hastarii" field="name"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </infoLink>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Phosphor blaster" hidden="false" id="7c6f-50b5-83fc-af0c" collective="false" targetId="a8d2-f493-1087-5896" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a78a-a908-7ee7-b4b7" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6cfa-6e40-c665-a84f" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Arc rifle" hidden="false" id="edae-f2f4-9324-9875" type="selectionEntry" targetId="c3d2-36ce-ddfb-4312">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eff8-2b72-104e-7d31" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fce9-677b-a164-3849" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="20"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Hastarii w/Lighting lock&amp;Blaster" hidden="false" id="e4a2-4985-3986-aa7c" collective="false">
+              <infoLinks>
+                <infoLink name="Skitarii" id="6a1b-48d9-2932-6f0e" hidden="false" targetId="2167-c172-924c-6ab5" type="profile">
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="3+" field="c0df-df94-abd7-e8d3"/>
+                        <modifier type="set" value="4" field="9c9f-9774-a358-3a39"/>
+                        <modifier type="set" value="2" field="f330-5e6e-4110-0978"/>
+                        <modifier type="set" value="Hastarii" field="name"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </infoLink>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Cognis flamer" hidden="false" id="2a9d-94af-e7e9-2e39" collective="false" targetId="1580-6f7a-2617-91cb" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7967-c30b-b262-8c37" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="001f-89ea-440b-b669" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Phosphor blaster" hidden="false" id="58a2-bfa7-e47f-d141" type="selectionEntry" targetId="a8d2-f493-1087-5896">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="307d-471b-df7a-d34d" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a018-95e4-e18c-f0fc" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="25"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="Pts" typeId="points" value="0"/>
+        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="cbb4-dd33-12a3-3bdc" name=" Character definition" hidden="false" collective="false" import="true">
@@ -14323,7 +14620,7 @@ Until the start of your next Command phase, each time a model in that unit would
 When it is completed, the Initial part of this model’s progressive ability stops being active, and its Advanced part becomes active instead.</characteristic>
       </characteristics>
     </profile>
-    <profile id="2167-c172-924c-6ab5" name="Skitarii" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+    <profile id="2167-c172-924c-6ab5" name="Skitarii" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <modifiers>
         <modifier type="set" field="00ca-f8b8-876d-b705" value="7">
           <conditions>
@@ -14343,7 +14640,7 @@ When it is completed, the Initial part of this model’s progressive ability sto
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
       </characteristics>
     </profile>
-    <profile id="40b8-1cfa-6fba-e9d7" name="Skitarii Alpha" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+    <profile id="40b8-1cfa-6fba-e9d7" name="Skitarii Alpha" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <modifiers>
         <modifier type="set" field="00ca-f8b8-876d-b705" value="8">
           <conditions>
@@ -14388,7 +14685,7 @@ When it is completed, the Initial part of this model’s progressive ability sto
         <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly &lt;FORGE WORLD&gt; SKITARII CORE unit that has not the DATA-TETHER keyword is within 3&quot; of this unit, add 1 to the Leadership characteristic of models in that unit, and that unit gains the DATA-TETHER keyword.</characteristic>
       </characteristics>
     </profile>
-    <profile id="35aa-03af-e1ef-cab3" name="Secutarii" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+    <profile id="35aa-03af-e1ef-cab3" name="Secutarii" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <modifiers>
         <modifier type="set" field="00ca-f8b8-876d-b705" value="7">
           <conditions>
@@ -14525,7 +14822,7 @@ When it is completed, the Initial part of this model’s progressive ability sto
         <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly &lt;FORGE WORLD&gt; SKITARII CORE unit that has not the DATA-TETHER keyword is within 3&quot; of this unit, add 1 to the Leadership characteristic of models in that unit, and that unit gains the DATA-TETHER keyword.</characteristic>
       </characteristics>
     </profile>
-    <profile id="2ab9-57f6-0005-2980" name="Enhanced Skitarii" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+    <profile id="2ab9-57f6-0005-2980" name="Enhanced Skitarii" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
         <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
         <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
