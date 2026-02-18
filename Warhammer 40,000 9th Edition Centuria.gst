@@ -1742,6 +1742,20 @@ If the unit has the INFANTRY Keyword and is in a terrain with the DEFENSIBLE tra
         <infoLink id="6fad-0c19-b467-8c0c" name="Round base" hidden="false" targetId="1010-8272-39a9-75d6" type="rule"/>
       </infoLinks>
     </categoryEntry>
+    <categoryEntry id="ed3b-482c-ebbd-15d2" name="Sonic weapon" hidden="false">
+      <rules>
+        <rule id="4da5-e67b-9119-20c1" name="Sonic weapon" hidden="false">
+          <description>Each time an attack made with this weapon targets a unit within half range, add 1 to the Damage characteristic of that attack.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry id="56a9-eae2-7298-9256" name="Plage weapon" hidden="false">
+      <rules>
+        <rule id="5e6c-3179-5220-b644" name="Plage weapon" hidden="false">
+          <description>Re-roll wound rolls of 1 against units without the VEHICLE, TITANIC or INORGANIC Keywords.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="a0c7-2a71-bae0-215d" name="Patrol Detachment -2CP" hidden="false">
@@ -13047,6 +13061,137 @@ EARTH CASTE COMBAT ENGINEER</description>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Icarus mount" hidden="false" id="e7c5-9b1e-c3e6-687a" targetId="1f9d-db7b-1926-9dfa" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="Pts" typeId="points" value="0"/>
+        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1888-e520-d98f-652a" name="Warpflamer" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="45b0-e608-a5df-9eb2" name="Warpflamer" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault D6</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="2df6-b321-4136-bc4f" name="Torrent" hidden="false" targetId="795f-a8d3-dc18-cb2e" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="Pts" typeId="points" value="0"/>
+        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="26d5-27de-a7dd-5057" name="Warpflamer" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c519-e141-0229-625d" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a004-d2a2-5158-3add" type="min"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="f0c3-b2a2-8edb-2b84" name="Warpflamer" hidden="false" targetId="45b0-e608-a5df-9eb2" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="f4ad-f215-6669-ca6f" name="Torrent" hidden="false" targetId="795f-a8d3-dc18-cb2e" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="Pts" typeId="points" value="0"/>
+        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a45d-f448-9064-5ebf" name="Twin Heavy Warpflamer" hidden="false" collective="false" import="true" type="upgrade">
+      <comment>a45d-f448-9064-5ebf</comment>
+      <profiles>
+        <profile id="2c6c-c08e-29c2-a3eb" name="Twin Heavy Warpflamer" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 2D6</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="Pts" typeId="points" value="0"/>
+        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin Doom Siren" hidden="false" id="a87a-1b34-1205-6df9" collective="false">
+      <profiles>
+        <profile name="Twin Doom Siren" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="07c9-69d5-31c1-4680">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 2D6</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Sonic weapon. Torrent. If the unit of the weapon&apos;s bearer is in engagement range of enemy units, this weapon changes it&apos;s profile to Pistol D6.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="points" value="0"/>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a6a5-4bd2-3497-ae81" name="Twin Plague spewer" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="004d-d7cf-39e0-023f" name="Twin Plague spewer" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 2D6</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Plague Weapon. Torrent.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="3235-50c3-3bd4-2c97" name="Plage weapon" hidden="false" targetId="56a9-eae2-7298-9256" primary="false"/>
+        <categoryLink id="fcfa-46bf-cf92-c6b2" name="Torrent" hidden="false" targetId="795f-a8d3-dc18-cb2e" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="Pts" typeId="points" value="0"/>
+        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6342-d447-e0d0-cc73" name="Combi-Boltgun (Warpflamer)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="da37-78e6-e2f1-e944" name="Boltgun" hidden="false" targetId="3d4b-95ea-f860-dd22" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Combi-Boltgun"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="fcba-7b61-8f4b-6c3d" name="Warpflamer" hidden="false" targetId="45b0-e608-a5df-9eb2" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Combi-Warpflamer"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="48ac-d3ce-ba98-939f" name="Combined weapon" hidden="false" targetId="18d3-6068-7f55-0d0a" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b9eb-8eb8-c1c7-a966" name="Bolt Weapon" hidden="false" targetId="fe8c-9fa3-c71e-d8de" primary="false"/>
+        <categoryLink id="a8f9-249d-b897-9184" name="Flame Weapon" hidden="false" targetId="dbad-8265-94be-9c47" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>

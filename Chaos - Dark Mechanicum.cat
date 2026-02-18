@@ -14277,15 +14277,45 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="89fc-d4ad-4c71-43f1" name="Front weapon option" hidden="false" collective="false" import="true" defaultSelectionEntryId="6f66-6ed6-93de-8685">
+        <selectionEntryGroup name="Additional Weapon option" id="d268-04df-34ec-cf1d" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7d38-3b13-5285-5ad8" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6d83-8dca-15db-28c6" type="min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2a1d-472c-8206-13e4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Combi-Boltgun (Melta)" hidden="false" id="12a4-0e63-bb7c-b596" collective="false" targetId="95eb-a5a5-4147-9def" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Storm Bolter" hidden="false" id="6f4f-5b08-0d0d-e34e" collective="false" targetId="2b03-8d64-3711-f300" type="selectionEntry"/>
+            <entryLink import="true" name="Combi-Boltgun (Flamer)" hidden="false" id="d14b-b67f-2a36-e064" collective="false" targetId="6fd3-0b23-4197-dc47" type="selectionEntry"/>
+            <entryLink import="true" name="Combi-Boltgun (Warpflamer)" hidden="false" id="8fbc-741a-ed9c-583a" collective="false" targetId="6342-d447-e0d0-cc73" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Chest weapon" id="b445-f211-c7c2-2a02" hidden="false" defaultSelectionEntryId="a4a1-ff9b-3f1b-c7c8">
+          <entryLinks>
+            <entryLink import="true" name="Battle Cannon" hidden="false" id="a4a1-ff9b-3f1b-c7c8" collective="false" targetId="1d7b-4f46-b77b-ead1" type="selectionEntry"/>
+            <entryLink import="true" name="Heavy Plasma cannon" hidden="false" id="edce-85b4-2bd3-17fd" collective="false" targetId="221a-6109-61df-015e" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="points" value="20"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78e8-fc5b-1f30-886f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9dd6-7369-309b-b39c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Left arm weapon option" id="9f1c-fb35-0ff0-a396" hidden="false" collective="false" import="true" defaultSelectionEntryId="b1b2-b409-3ad1-a7ca">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="dd6d-c4b1-c127-49c5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="6287-7562-208b-cc7f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="cc93-ddbf-ee66-9b0c" name="Defiler scourge" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry type="upgrade" import="true" name="Defiler scourge" hidden="false" id="a824-3133-d008-f2bc" collective="false">
               <profiles>
-                <profile id="9876-27af-2c5d-2e7a" name="Defiler scourge" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                <profile name="Defiler scourge" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="a228-0cfd-322a-a544">
                   <characteristics>
                     <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                     <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
@@ -14305,38 +14335,59 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink id="6f66-6ed6-93de-8685" name="Havoc launcher" hidden="false" collective="false" import="true" targetId="be68-020b-cdcb-6a2c" type="selectionEntry"/>
-            <entryLink id="d720-2d37-5611-cf9c" name="Twin Heavy Flamer" hidden="false" collective="false" import="true" targetId="8d70-a6af-cbad-f08c" type="selectionEntry"/>
+            <entryLink import="true" name="Havoc launcher" hidden="false" id="b1b2-b409-3ad1-a7ca" collective="false" targetId="be68-020b-cdcb-6a2c" type="selectionEntry"/>
+            <entryLink import="true" name="Twin Heavy Flamer" hidden="false" id="65b2-44c9-96f4-603b" collective="false" targetId="8d70-a6af-cbad-f08c" type="selectionEntry"/>
+            <entryLink import="true" name="Twin Heavy Warpflamer" hidden="true" id="913d-b4ab-f47f-13d9" collective="false" targetId="a45d-f448-9064-5ebf" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="dbe4-3959-d35f-11bd" childId="eb2b-ba4e-a494-b321" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Twin Doom Siren" hidden="true" id="70a1-4b1a-46af-7cbb" targetId="a87a-1b34-1205-6df9" type="selectionEntry" collective="false">
+              <costs>
+                <cost name="Pts" typeId="points" value="20"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="dbe4-3959-d35f-11bd" childId="46b1-c36b-4ce7-9bef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Twin Plague spewer" hidden="true" id="0cb8-4a95-b0ca-db24" targetId="a6a5-4bd2-3497-ae81" type="selectionEntry" collective="false">
+              <costs>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="dbe4-3959-d35f-11bd" childId="b84a-3241-ae79-e144" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="797b-e0f9-99f4-9640" name="Tail weapon option" hidden="false" collective="false" import="true" defaultSelectionEntryId="6667-e27a-f684-e575">
+        <selectionEntryGroup name="Right arm weapon option" id="8c78-ba8a-0a64-d4ed" hidden="false" collective="false" import="true" defaultSelectionEntryId="0100-6d60-de4c-c503">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="65c0-381d-773e-6eba" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6c03-096c-f8a6-1f1b" type="min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d177-dd24-0bab-9792" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="75d2-7201-95ac-1436" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink id="1762-e2df-835d-488b" name="Twin Lascannon" hidden="false" collective="false" import="true" targetId="ee18-b1cd-6b60-464d" type="selectionEntry">
+            <entryLink import="true" name="Twin Lascannon" hidden="false" id="5b6a-1124-8469-d896" collective="false" targetId="ee18-b1cd-6b60-464d" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="points" value="30"/>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="2"/>
               </costs>
             </entryLink>
-            <entryLink id="2a4b-b7b0-06ee-0432" name="Reaper Autocannon" hidden="false" collective="false" import="true" targetId="5ab4-1ee7-95ad-7e15" type="selectionEntry"/>
-            <entryLink id="6667-e27a-f684-e575" name="Twin Heavy Bolter" hidden="false" collective="false" import="true" targetId="09d8-7790-ed3f-4d6d" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="c57a-c6fa-1194-150a" name="Extra Weapon option" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9ad2-6b03-f1d4-20da" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="b322-2bab-a620-f203" name="Combi-Boltgun (Melta)" hidden="false" collective="false" import="true" targetId="95eb-a5a5-4147-9def" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="points" value="10"/>
-              </costs>
-            </entryLink>
-            <entryLink id="dbb1-927c-00f0-86c0" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="2b03-8d64-3711-f300" type="selectionEntry"/>
-            <entryLink id="ff8b-533e-cc72-5fd9" name="Combi-Boltgun (Flamer)" hidden="false" collective="false" import="true" targetId="6fd3-0b23-4197-dc47" type="selectionEntry"/>
+            <entryLink import="true" name="Reaper Autocannon" hidden="false" id="0100-6d60-de4c-c503" collective="false" targetId="5ab4-1ee7-95ad-7e15" type="selectionEntry"/>
+            <entryLink import="true" name="Twin Heavy Bolter" hidden="false" id="2fb8-3924-19ed-386f" collective="false" targetId="09d8-7790-ed3f-4d6d" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
