@@ -1474,6 +1474,11 @@ If the unit has the INFANTRY Keyword and is in a terrain with the DEFENSIBLE tra
         <categoryLink name="S.C. Detachment" hidden="false" id="a7a3-f49a-b454-b5f2" targetId="26b0-4bb9-73aa-d3d7" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Wargear" hidden="false" id="f303-1b50-1f24-0023" type="selectionEntryGroup" targetId="5278-fb90-d41f-37f6">
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="410b-bc43-0ef2-58dd" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="0e73-a754-93fe-e10d" name=" Sept selection" hidden="false" collective="false" import="true" type="upgrade">
@@ -8477,7 +8482,6 @@ Any models embarked within another model when it embarks upon this model do not 
         <categoryLink id="2034-7c51-bce4-2d91" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
         <categoryLink id="719d-35c4-2f64-cd18" name="Commander" hidden="false" targetId="dd89-06e9-3ef5-7fe8" primary="false"/>
         <categoryLink id="cced-01bd-ce31-958f" name="XV8 Crisis Battlesuit " hidden="false" targetId="0da8-ce96-7632-3458" primary="false"/>
-        <categoryLink id="889c-4ad5-ce7a-9c74" name="NC" hidden="false" targetId="75f3-874b-4f4d-05c7" primary="false"/>
         <categoryLink id="8e81-0c77-ce63-7090" name="Supreme Commander" hidden="false" targetId="5750-de0a-589d-eacf" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -8660,24 +8664,15 @@ In addition, at the end of each Fight phase, if any number of enemy models were 
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9c7-af40-dde0-513f" type="min"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bef-4de2-c609-829b" type="max"/>
                   </constraints>
-                  <profiles>
-                    <profile id="802e-bf40-b03c-f324" name="Miniaturised fletchette pod" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
-                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol 4</characteristic>
-                        <characteristic name="S" typeId="59b1-319e-ec13-d466">3</characteristic>
-                        <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
-                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
                   <costs>
                     <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                     <cost name="Pts" typeId="points" value="0"/>
                     <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                     <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                   </costs>
+                  <infoLinks>
+                    <infoLink targetId="802e-bf40-b03c-f324" id="864e-400d-ef32-207e" type="profile" name="Miniaturised fletchette pod" hidden="false"/>
+                  </infoLinks>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
@@ -16158,7 +16153,6 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
             <categoryLink name="Infantry" hidden="false" id="ea67-be39-2e88-9ea3" targetId="3d52-fccf-10c0-3fae" primary="false"/>
             <categoryLink name="Commander" hidden="false" id="be94-4658-06f9-630b" targetId="dd89-06e9-3ef5-7fe8" primary="false"/>
             <categoryLink name="XV8 Crisis Battlesuit " hidden="false" id="d141-f769-38d1-f192" targetId="0da8-ce96-7632-3458" primary="false"/>
-            <categoryLink name="NC" hidden="false" id="6440-f7d6-2383-de06" targetId="75f3-874b-4f4d-05c7" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name=" Equipment Options" id="22a9-de07-ba7b-ba94" hidden="false" collective="false" import="true">
@@ -16283,7 +16277,6 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
             <categoryLink name="Infantry" hidden="false" id="25d6-357e-d34d-adb7" targetId="3d52-fccf-10c0-3fae" primary="false"/>
             <categoryLink name="Commander" hidden="false" id="a2cb-fa33-6bae-80e8" targetId="dd89-06e9-3ef5-7fe8" primary="false"/>
             <categoryLink name="XV8 Crisis Battlesuit " hidden="false" id="2322-3976-b70c-81f8" targetId="0da8-ce96-7632-3458" primary="false"/>
-            <categoryLink name="NC" hidden="false" id="5866-7e08-dceb-4159" targetId="75f3-874b-4f4d-05c7" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name=" Equipment Options" id="daf3-57fe-2dd2-2f48" hidden="false" collective="false" import="true">
@@ -16406,8 +16399,6 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
             <categoryLink name="Jet Pack" hidden="false" id="fb4a-fe80-0b33-eced" targetId="092c-6125-af28-ef5d" primary="false"/>
             <categoryLink name="T&apos;au Fire Caste Warrior" hidden="false" id="3498-5ca5-f55e-3952" targetId="dcd0-ba12-2a47-fbaa" primary="false"/>
             <categoryLink name="Infantry" hidden="false" id="275a-2c26-e03d-65ae" targetId="3d52-fccf-10c0-3fae" primary="false"/>
-            <categoryLink name="Commander" hidden="false" id="24c5-e6f7-6746-689b" targetId="dd89-06e9-3ef5-7fe8" primary="false"/>
-            <categoryLink name="NC" hidden="false" id="2c82-f6ee-4319-723b" targetId="75f3-874b-4f4d-05c7" primary="false"/>
             <categoryLink name="XV85 Enforcer Battlesuit" hidden="false" id="abb7-6947-5091-09a8" targetId="7732-8c03-1265-ca2d" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
@@ -16528,8 +16519,6 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
             <categoryLink name="Farsight Enclaves" hidden="false" id="c3b7-f311-e948-44c1" targetId="fa10-5b69-9887-b4c1" primary="false"/>
             <categoryLink name="T&apos;au Fire Caste Warrior" hidden="false" id="ce46-664c-cb23-5e32" targetId="dcd0-ba12-2a47-fbaa" primary="false"/>
             <categoryLink name="Infantry" hidden="false" id="10db-de16-dbbb-e7f2" targetId="3d52-fccf-10c0-3fae" primary="false"/>
-            <categoryLink name="Commander" hidden="false" id="8792-6cf9-811c-b75d" targetId="dd89-06e9-3ef5-7fe8" primary="false"/>
-            <categoryLink name="NC" hidden="false" id="3793-8634-4568-e796" targetId="75f3-874b-4f4d-05c7" primary="false"/>
             <categoryLink name="Inorganic" hidden="false" id="ba02-a367-da3c-695d" targetId="378d-72a9-b8f6-b98b" primary="false"/>
             <categoryLink name="XV88 Broadside Battlesuit" hidden="false" id="772c-4bec-b8c4-a008" targetId="2d00-1ec2-b978-cb2d" primary="false"/>
           </categoryLinks>
@@ -16663,7 +16652,6 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
             <categoryLink name="Infantry" hidden="false" id="7d83-f6a7-9806-5a18" targetId="3d52-fccf-10c0-3fae" primary="false"/>
             <categoryLink name="Commander" hidden="false" id="9fa4-8c91-5502-8963" targetId="dd89-06e9-3ef5-7fe8" primary="false"/>
             <categoryLink name="XV8 Crisis Battlesuit " hidden="false" id="692a-3df8-8909-f811" targetId="0da8-ce96-7632-3458" primary="false"/>
-            <categoryLink name="NC" hidden="false" id="1468-6358-92b7-901f" targetId="75f3-874b-4f4d-05c7" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name=" Equipment Options" id="bb46-d17a-b55e-fa07" hidden="false" collective="false" import="true">
@@ -16794,7 +16782,6 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
             <categoryLink name="T&apos;au Fire Caste Warrior" hidden="false" id="74ad-2023-4adf-9283" targetId="dcd0-ba12-2a47-fbaa" primary="false"/>
             <categoryLink name="Infantry" hidden="false" id="6410-d03c-6d78-9552" targetId="3d52-fccf-10c0-3fae" primary="false"/>
             <categoryLink name="Commander" hidden="false" id="8eac-5e30-31fe-1d80" targetId="dd89-06e9-3ef5-7fe8" primary="false"/>
-            <categoryLink name="NC" hidden="false" id="0527-2a35-9dbb-6aed" targetId="75f3-874b-4f4d-05c7" primary="false"/>
             <categoryLink name="XV85 Enforcer Battlesuit" hidden="false" id="66c2-7ea7-59a8-e41a" targetId="7732-8c03-1265-ca2d" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
@@ -17095,6 +17082,7 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
       <categoryLinks>
         <categoryLink name="Faction: T&apos;au Empire" hidden="false" id="2bdf-a18c-a504-c456" targetId="77ee-b03b-d244-d535" primary="false"/>
         <categoryLink name="Farsight Enclaves" hidden="false" id="d877-d18a-d8fb-ee58" targetId="fa10-5b69-9887-b4c1" primary="false"/>
+        <categoryLink name="NC" hidden="false" id="475a-1379-7372-6cf6" targetId="75f3-874b-4f4d-05c7" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Drones" id="36bd-fd0e-20b6-1403" hidden="false">
@@ -17160,6 +17148,9 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42c2-aa91-c3e6-0439" includeChildSelections="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2c5f-78e7-5288-91d7" includeChildSelections="false"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="NC" hidden="false" id="655a-f761-d2da-c25e" targetId="75f3-874b-4f4d-05c7" primary="false"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
       <modifiers>
@@ -17188,6 +17179,380 @@ Farsight - Selection</characteristic>
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="The Twin Lance" hidden="true" id="c973-568e-c1e8-e1fc" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="78c8-6a0f-c53c-a044" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Death from Above" id="c2c4-0f50-4cec-ed23" hidden="false" targetId="2a93-0488-0277-cb07" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="T&apos;au Sept" hidden="false" id="8087-288e-65ce-5041" targetId="4c0d-fd8d-e7c1-a2c1" primary="false"/>
+        <categoryLink name="Faction: T&apos;au Empire" hidden="false" id="564d-afb2-a604-967d" targetId="77ee-b03b-d244-d535" primary="false"/>
+        <categoryLink name="NC" hidden="false" id="27af-5bcf-d150-386d" targetId="75f3-874b-4f4d-05c7" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Shas&apos;vre Ri&apos;lantar" hidden="true" id="2644-28c3-361a-2a75" collective="false">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f0d8-bf79-46e3-d82e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2955-c78b-826b-4e91" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1c4d-3b48-8d63-34cd" percentValue="false" includeChildSelections="false" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Ri&apos;lantar" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="452a-074d-7206-abbe">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">5</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Shield Generator" id="7247-0184-d0ea-a9ba" hidden="false" targetId="1f25-2f70-147a-da53" type="profile"/>
+            <infoLink name="Impervious to small weapons fire" id="3b00-0a6a-a4d2-6e48" hidden="false" targetId="b48e-9a4a-2fdc-5d7c" type="profile"/>
+            <infoLink name="Retro-thrusters" id="b95b-78f2-aa87-849e" hidden="false" type="profile" targetId="630d-27ff-93c8-af95"/>
+            <infoLink name="Repulsor Impact Field" id="a61d-c42b-fa72-9a3b" hidden="false" type="profile" targetId="9a51-c759-29f8-bcbf"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Character" hidden="false" id="0b32-6189-0287-30c9" targetId="ef18-746a-369f-43a4" primary="false"/>
+            <categoryLink name="Jet Pack" hidden="false" id="fa66-4c1a-87d3-11f3" targetId="092c-6125-af28-ef5d" primary="false"/>
+            <categoryLink name="Fly" hidden="false" id="8992-cfc2-0b03-eb32" targetId="3117-16d8-fcef-4f56" primary="false"/>
+            <categoryLink name="T&apos;au Fire Caste Warrior" hidden="false" id="b5b2-59c9-00d9-0985" targetId="dcd0-ba12-2a47-fbaa" primary="false"/>
+            <categoryLink name="Infantry" hidden="false" id="5696-1a6f-5205-c2ad" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+            <categoryLink name="XV8 Crisis Battlesuit " hidden="false" id="1ea9-4594-82d0-12b1" targetId="0da8-ce96-7632-3458" primary="false"/>
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name=" Equipment Options" id="e92a-ddea-d359-0b2e" hidden="false" collective="false" import="true">
+              <selectionEntryGroups>
+                <selectionEntryGroup name=" Main Equipment options" id="e500-7c45-978f-bec4" hidden="false" collective="false" import="true">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Miniaturised fletchette pod" hidden="false" id="b216-5524-3e36-4518" collective="false">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="41bd-b0bf-93e7-8d88" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a869-b3d5-11b5-d70b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                        <cost name="Pts" typeId="points" value="0"/>
+                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Miniaturised fletchette pod" id="3440-1b9f-24e7-e20b" hidden="false" targetId="802e-bf40-b03c-f324" type="profile"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Alternating Fusion Blaster" hidden="false" id="8cfb-eb3a-3464-50b4" collective="true">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0fb2-539a-1f3c-3c53" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1afe-e1a4-06a9-8997" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="points" value="0"/>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Alternating Fusion Blaster (Melee)" id="f127-b39f-134a-78bf" hidden="false" type="profile" targetId="0701-96be-9734-e4e5"/>
+                        <infoLink name="Alternating Fusion Blaster (Shooting)" id="5950-2a98-677d-564e" hidden="false" type="profile" targetId="acf4-c286-c895-9948"/>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <entryLinks>
+                    <entryLink import="true" name="XV Pulse Blaster" hidden="false" id="3c74-2312-e89f-aa67" type="selectionEntry" targetId="a114-8082-7220-a8cd">
+                      <costs>
+                        <cost name="Pts" typeId="points" value="0"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54a6-84c0-8a2f-7414" includeChildSelections="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="251e-0022-ea3e-2195" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Additional Equipment Options (0-1)" id="6761-1131-bf2f-59e4" hidden="false" collective="false" import="true">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Support Systems" id="b077-eea3-5fbc-9989" hidden="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1102-4d73-4e7e-e5b2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="append" value="(0-1)" field="name"/>
+                      </modifiers>
+                      <entryLinks>
+                        <entryLink import="true" name="Advanced Targeting System" hidden="false" id="fc3e-87b5-2ff1-a9c1" type="selectionEntry" targetId="ebce-2971-b73d-4205">
+                          <costs>
+                            <cost name="Pts" typeId="points" value="5"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Counterfire Defence System" hidden="false" id="b77f-3b68-5dd1-d2b7" type="selectionEntry" targetId="5fed-cdf8-453e-8534">
+                          <costs>
+                            <cost name="Pts" typeId="points" value="5"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Early Warning Override" hidden="false" id="22e3-4233-0170-3ae1" type="selectionEntry" targetId="c31f-37bd-2b6a-55c2">
+                          <costs>
+                            <cost name="Pts" typeId="points" value="5"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Multi-tracker" hidden="false" id="c3f0-92d2-1308-181f" type="selectionEntry" targetId="7985-ad8b-3f83-430f">
+                          <costs>
+                            <cost name="Pts" typeId="points" value="5"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Velocity Tracker" hidden="false" id="b2c1-8dad-eed0-d64c" type="selectionEntry" targetId="1fa6-7901-8840-20fd">
+                          <costs>
+                            <cost name="Pts" typeId="points" value="5"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Target Lock" hidden="false" id="28ed-86ee-757f-d2c0" type="selectionEntry" targetId="8e1b-2cdd-1e0f-2233">
+                          <costs>
+                            <cost name="Pts" typeId="points" value="5"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Crushing bulk" hidden="false" id="f3c0-38df-dfb8-9700" collective="false" targetId="502f-45c2-6fd1-443b" type="selectionEntry"/>
+          </entryLinks>
+          <costs>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="9"/>
+            <cost name="Pts" typeId="points" value="170"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Shas&apos;vre Ri&apos;locai" hidden="true" id="3be3-d463-5923-a68e" collective="false">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f0d8-bf79-46e3-d82e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3d8d-fe88-43ba-b566" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="f388-cbe5-6dbd-d7a8" percentValue="false" includeChildSelections="false" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Ri&apos;locai" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="c4d9-39e2-920e-1c16">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">5</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Retro-thrusters" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="630d-27ff-93c8-af95">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the end of the Fight phase, this unit can maje either a normal move or a Fall back move.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Shield Generator" id="c2bb-32d1-6f25-ddf5" hidden="false" targetId="1f25-2f70-147a-da53" type="profile"/>
+            <infoLink name="Impervious to small weapons fire" id="7e53-5b35-d130-eb9e" hidden="false" targetId="b48e-9a4a-2fdc-5d7c" type="profile"/>
+            <infoLink name="Repulsor Impact Field" id="df93-4457-270a-445a" hidden="false" type="profile" targetId="9a51-c759-29f8-bcbf"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Character" hidden="false" id="fde0-2a3d-92d1-ebf8" targetId="ef18-746a-369f-43a4" primary="false"/>
+            <categoryLink name="Jet Pack" hidden="false" id="fddf-2925-6cc1-b807" targetId="092c-6125-af28-ef5d" primary="false"/>
+            <categoryLink name="Fly" hidden="false" id="6a91-1666-b6b9-3ff0" targetId="3117-16d8-fcef-4f56" primary="false"/>
+            <categoryLink name="T&apos;au Fire Caste Warrior" hidden="false" id="fc0d-d062-af36-b1b5" targetId="dcd0-ba12-2a47-fbaa" primary="false"/>
+            <categoryLink name="Infantry" hidden="false" id="946b-a544-1dd6-0230" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+            <categoryLink name="XV8 Crisis Battlesuit " hidden="false" id="9bf8-3469-b590-0fd5" targetId="0da8-ce96-7632-3458" primary="false"/>
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name=" Equipment Options" id="3168-7e23-effa-e951" hidden="false" collective="false" import="true">
+              <selectionEntryGroups>
+                <selectionEntryGroup name=" Main Equipment options" id="4c89-8a87-920b-2774" hidden="false" collective="false" import="true">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Miniaturised fletchette pod" hidden="false" id="42e6-25d0-809d-2985" collective="false">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="106f-9165-fe82-0e9f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3323-a8a0-b913-adcb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                        <cost name="Pts" typeId="points" value="0"/>
+                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Miniaturised fletchette pod" id="85a0-50fa-ea3d-8567" hidden="false" targetId="802e-bf40-b03c-f324" type="profile"/>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <entryLinks>
+                    <entryLink import="true" name="Ion Beamer" hidden="false" id="c7c3-e198-15bd-1981" collective="false" targetId="d6a8-6d0a-890f-c5ac" type="selectionEntry">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f36-4f34-e9bc-719a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c6f-1575-7615-2acb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="XV Pulse Blaster" hidden="false" id="b776-bdb8-5483-0a65" type="selectionEntry" targetId="a114-8082-7220-a8cd">
+                      <costs>
+                        <cost name="Pts" typeId="points" value="0"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ef6-f227-29c9-39aa" includeChildSelections="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2d72-8a02-1e38-d898" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Additional Equipment Options (0-1)" id="30ab-3e20-e3bc-f210" hidden="false" collective="false" import="true">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Support Systems" id="4fad-11e5-9fa1-1eab" hidden="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="8e6a-ef09-e5b6-f0a7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="append" value="(0-1)" field="name"/>
+                      </modifiers>
+                      <entryLinks>
+                        <entryLink import="true" name="Advanced Targeting System" hidden="false" id="4e0e-b9d5-9464-e1da" type="selectionEntry" targetId="ebce-2971-b73d-4205">
+                          <costs>
+                            <cost name="Pts" typeId="points" value="5"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Counterfire Defence System" hidden="false" id="aed9-2d7a-ddf4-a8c9" type="selectionEntry" targetId="5fed-cdf8-453e-8534">
+                          <costs>
+                            <cost name="Pts" typeId="points" value="5"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Early Warning Override" hidden="false" id="2378-8064-f2a0-7dc7" type="selectionEntry" targetId="c31f-37bd-2b6a-55c2">
+                          <costs>
+                            <cost name="Pts" typeId="points" value="5"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Multi-tracker" hidden="false" id="fd32-99e1-7aa3-9f0d" type="selectionEntry" targetId="7985-ad8b-3f83-430f">
+                          <costs>
+                            <cost name="Pts" typeId="points" value="5"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Velocity Tracker" hidden="false" id="ec29-16d9-226d-9d7c" type="selectionEntry" targetId="1fa6-7901-8840-20fd">
+                          <costs>
+                            <cost name="Pts" typeId="points" value="5"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Target Lock" hidden="false" id="0861-78b8-bf3e-479e" type="selectionEntry" targetId="8e1b-2cdd-1e0f-2233">
+                          <costs>
+                            <cost name="Pts" typeId="points" value="5"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Crushing bulk" hidden="false" id="da73-ed42-dc73-bbe6" collective="false" targetId="502f-45c2-6fd1-443b" type="selectionEntry"/>
+          </entryLinks>
+          <costs>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="9"/>
+            <cost name="Pts" typeId="points" value="170"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Drones" id="8fb7-85ba-b7a6-10e6" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="MV1 Gun Drone" hidden="true" id="d1a7-42d3-dadc-680d" collective="false" targetId="023e-bd70-2cba-51b3" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="points" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="MV4 Shield Drone" hidden="true" id="2fe6-1c7b-d6b1-ae71" collective="false" targetId="50ee-ed10-becd-a968" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="points" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="MV7 Marker Drone" hidden="true" id="1513-703a-1d91-16d4" collective="false" targetId="e29a-716e-e430-5079" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="points" value="0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b84c-77ad-6eb5-4a19" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="Pts" typeId="points" value="0"/>
+        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="   Character definition:" hidden="false" id="e625-6f59-eaa0-4b87" collective="false" targetId="727f-9459-651d-5b07" type="selectionEntryGroup">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Warlord Trait" id="1e49-06f0-e510-2bda" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="c0ee-e0d2-9dec-1106" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="15e7-ffe5-1f1b-384e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <entryLinks>
+                <entryLink import="true" name="6. Exemplar of the Mont&apos;ka" hidden="false" id="69d6-e103-2275-890d" collective="false" targetId="4ca4-3797-ed65-c2d0" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ffc-023b-0d7c-f37b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </entryLink>
+      </entryLinks>
+      <profiles>
+        <profile name="The twin Lance" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="a522-be79-c27d-da42">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Both CHARACTER models of this unit are considered to have the assigned WARLORD trait.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="cd11-3986-f127-1a5b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -18981,6 +19346,11 @@ Farsight - Selection</characteristic>
             <cost name="Pts" typeId="points" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="XV Pulse Blaster" hidden="false" id="a114-8082-7220-a8cd">
+          <infoLinks>
+            <infoLink name="XV Pulse Blaster" id="ce6a-464a-e511-d1e9" hidden="false" type="profile" targetId="b1fa-5893-d6a5-7b9e"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -22385,6 +22755,11 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
                 <cost name="pts" typeId="points" value="5"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="XV Pulse Blaster" hidden="false" id="21d9-6935-ef5c-865d" type="selectionEntry" targetId="a114-8082-7220-a8cd">
+              <costs>
+                <cost name="Pts" typeId="points" value="5"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -23530,7 +23905,7 @@ If the unit of the weapon&apos;s bearer is in engagement range of enemy units, t
       <characteristics>
         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 2D6</characteristic>
-        <characteristic name="S" typeId="59b1-319e-ec13-d466">3</characteristic>
+        <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
@@ -23540,7 +23915,7 @@ If the unit of the weapon&apos;s bearer is in engagement range of enemy units, t
       <characteristics>
         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18&quot;</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 2D6</characteristic>
-        <characteristic name="S" typeId="59b1-319e-ec13-d466">3</characteristic>
+        <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
@@ -24246,6 +24621,27 @@ In addition, if a wound is scored against a target without the INORGANIC, VEHICL
           </conditions>
         </modifier>
       </modifiers>
+    </profile>
+    <profile id="802e-bf40-b03c-f324" name="Miniaturised fletchette pod" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 4</characteristic>
+        <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
+        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="XV Pulse Blaster" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="b1fa-5893-d6a5-7b9e">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18&quot;</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 2</characteristic>
+        <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">If the target is within half range of this weapon, add 1 to the Strength characteristic of the attack and the AP characteristic changes to -2.
+</characteristic>
+      </characteristics>
     </profile>
   </sharedProfiles>
 </catalogue>
