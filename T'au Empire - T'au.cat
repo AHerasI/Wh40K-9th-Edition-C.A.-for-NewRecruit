@@ -17211,7 +17211,7 @@ Farsight - Selection</characteristic>
           <infoLinks>
             <infoLink name="Shield Generator" id="7247-0184-d0ea-a9ba" hidden="false" targetId="1f25-2f70-147a-da53" type="profile"/>
             <infoLink name="Impervious to small weapons fire" id="3b00-0a6a-a4d2-6e48" hidden="false" targetId="b48e-9a4a-2fdc-5d7c" type="profile"/>
-            <infoLink name="Retro-thrusters" id="b95b-78f2-aa87-849e" hidden="false" type="profile" targetId="630d-27ff-93c8-af95"/>
+            <infoLink name="Vectored Manoeuvring Thrusters" id="b95b-78f2-aa87-849e" hidden="false" type="profile" targetId="9195-7c64-1e77-1966"/>
             <infoLink name="Repulsor Impact Field" id="a61d-c42b-fa72-9a3b" hidden="false" type="profile" targetId="9a51-c759-29f8-bcbf"/>
           </infoLinks>
           <categoryLinks>
@@ -17354,16 +17354,12 @@ Farsight - Selection</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
               </characteristics>
             </profile>
-            <profile name="Retro-thrusters" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="630d-27ff-93c8-af95">
-              <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the end of the Fight phase, this unit can maje either a normal move or a Fall back move.</characteristic>
-              </characteristics>
-            </profile>
           </profiles>
           <infoLinks>
             <infoLink name="Shield Generator" id="c2bb-32d1-6f25-ddf5" hidden="false" targetId="1f25-2f70-147a-da53" type="profile"/>
             <infoLink name="Impervious to small weapons fire" id="7e53-5b35-d130-eb9e" hidden="false" targetId="b48e-9a4a-2fdc-5d7c" type="profile"/>
             <infoLink name="Repulsor Impact Field" id="df93-4457-270a-445a" hidden="false" type="profile" targetId="9a51-c759-29f8-bcbf"/>
+            <infoLink name="Vectored Manoeuvring Thrusters" id="cffc-3d70-1617-057d" hidden="false" type="profile" targetId="9195-7c64-1e77-1966"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink name="Character" hidden="false" id="fde0-2a3d-92d1-ebf8" targetId="ef18-746a-369f-43a4" primary="false"/>
@@ -20079,9 +20075,8 @@ T&apos;AU FIRE CASTE WARRIOR units within 3&quot; of this model has a 5+ invulne
           <profiles>
             <profile id="9195-7c64-1e77-1966" name="Vectored Manoeuvring Thrusters" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">COMMANDER model only.
-- Add 2&quot; to the bearer&apos;s Move characteristic.
-- Once per battle round, when the bearer is selected as a target of a charge, if it is not within Engagement Range of any enemy units it can use this Relic. If it does, it can make a Normal Move. Until the end of the phase, the bearer cannot fire Overwatch, or Set to Defend. Your opponent can select new targets for the charge.</characteristic>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Add 2&quot; to the bearer&apos;s Move characteristic.
+- Once per battle round, when the bearer is selected as a target of a charge or Heroic Intervention, if it is not within Engagement Range of any enemy units it can use this system. If it does, it can make a Normal Move. Until the end of the phase, the bearer cannot fire Overwatch, or Set to Defend. Your opponent can select new targets for the charge.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20136,7 +20131,8 @@ T&apos;AU FIRE CASTE WARRIOR units within 3&quot; of this model has a 5+ invulne
           <profiles>
             <profile id="86d1-00b3-3aff-1ed4" name="Overdrive Power Systems" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">COMMANDER model only. Select up to two ranged weapons this model is equipped with. Each time the bearer makes a ranged attack with one of those weapons that targets a unit within half range, add 1 to that attack&apos;s wound roll.</characteristic>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Select up to two ranged weapons this model is equipped with. 
+Each time the bearer makes a ranged attack with one of those weapons that targets a unit within half range, add 1 to that attack&apos;s wound roll.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20159,10 +20155,12 @@ T&apos;AU FIRE CASTE WARRIOR units within 3&quot; of this model has a 5+ invulne
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77f5-d995-f26f-5f65" type="max"/>
           </constraints>
           <profiles>
-            <profile id="ba84-6457-1609-b1ba" name="Dynamic Mirror Field" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+            <profile name="Dynamic Mirror Field" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="6e6c-34f2-9984-3d6c">
               <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- The bearer cannot be selected as a target for ranged attacks unless the firing model is within 12&quot; of it.
-- The bearer has a 5+ invulnerable save.</characteristic>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Each time a ranged attack is made against this unit, a hit roll of 1-3 for that attack fails. Substract 1 from that attack&apos;s hit roll.
+- Each time a melee attack is made against this unit, a hit roll of 1-2 for that attack fails. Substract 1 from that attack&apos;s hit roll.
+- Each time a ranged attack is allocated to a model in this unit while it is receiving the benefits of cover, add an additional 1 to any armour saving throw made against that attack.
+- Enemy models cannot target a model in this unit with ranged attacks unless they are within 12&quot; of it.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20191,8 +20189,8 @@ T&apos;AU FIRE CASTE WARRIOR units within 3&quot; of this model has a 5+ invulne
           <profiles>
             <profile id="7c31-eb45-cc6b-8d8e" name="Talisman of Arthas Moloch" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- In your opponent&apos;s Psychic phase, the bearer can attempt to deny one psychic power as if it were a PSYKER.
-- Add 1 to Deny the Witch tests takes for the bearer.</characteristic>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- In your opponent&apos;s Psychic phase, the bearer can attempt to deny up to two psychic powers as if it were a PSYKER.
+- Add 3 to Deny the Witch tests takes for the bearer.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20222,7 +20220,8 @@ T&apos;AU FIRE CASTE WARRIOR units within 3&quot; of this model has a 5+ invulne
           <profiles>
             <profile id="8f7f-f22e-3d9b-5f73" name="Automated Armour Defences" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">COMMANDER model only. At the start of your Shooting phase, select up to 3 enemy units within 9&quot; of and visible to the bearer. Make an attack with this unit&apos;s Fletchette Pod against each of the selected Enemy units.</characteristic>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the start of your Shooting phase, select up to 3 enemy units within 9&quot; of and visible to the bearer. 
+Make an attack with this unit&apos;s Fletchette Pod against each of the selected Enemy units.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20507,7 +20506,7 @@ T&apos;AU FIRE CASTE WARRIOR units within 3&quot; of this model has a 5+ invulne
           <profiles>
             <profile id="c150-6f25-759e-ca42" name="The Humble Stave" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- In your Command phase, if the bearer is on the battlefield, it can intone one additional invocation it knows from the Invocations of the Ethereals (pg 76) that has not already been intoned by a friendly model that turn.
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- In your Command phase, if the bearer is on the battlefield, it can intone one additional invocation it knows from the Invocations of the Ethereals that has not already been intoned by a friendly model that turn.
 - Each time the bearer intones an Invocation, add 1 to the roll to see if it is inspiring.</characteristic>
               </characteristics>
             </profile>
@@ -21477,7 +21476,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
           <profiles>
             <profile id="d0be-c369-b1e9-30d8" name="Sensory Negation Countermeasures" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">COMMANDER or XV8 CRISIS model only. Each time a model makes a melee attack against the bearer, subtract 1 from that attack&apos;s hit roll.</characteristic>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a model makes a melee attack against the bearer, subtract 1 from that attack&apos;s hit roll.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -21506,13 +21505,13 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
           <profiles>
             <profile id="eb2b-df8c-ce29-2b3b" name="Starflare Ignition System" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">XV86 COLDSTAR COMMANDER model only. When the bearer starts or ends a move, or when it does its High-altitude Manoeuvres ability (before removing it from the battlefield), it can use this Prototype System. If it does, roll one attack with the Ignition System Blast against each unit ar 3&quot; of the bearer&apos;s model.</characteristic>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">When the bearer starts or ends a move, or when it does its High-altitude Manoeuvres ability (before removing it from the battlefield), it can use this Prototype System. If it does, roll one attack with the Ignition System Blast against each unit within 3&quot; of the bearer&apos;s model.</characteristic>
               </characteristics>
             </profile>
             <profile id="1345-ca14-032b-f18d" name="Ignition System Blast" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">3&quot;</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Grenade 1D6</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Grenade 2D6</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
                 <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
@@ -21543,11 +21542,6 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66f0-0de4-e482-7a9f" type="max"/>
           </constraints>
           <profiles>
-            <profile id="49cb-d6f0-fd30-7120" name="E-H Disruption Suite" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-              <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">XV95 GHOSTKEEL BATTLESUIT model only.</characteristic>
-              </characteristics>
-            </profile>
             <profile id="3486-4961-8d41-1e1e" name="E-H Disruption [Aura]" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
                 <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While an enemy unit is within 6&quot; of this model, cannot be affected by Stratagems.</characteristic>
@@ -21595,7 +21589,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
           <profiles>
             <profile id="081f-96a3-771f-222d" name="Internal Grenade Packs" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">COMMANDER or XV8 CRISIS model only. You can declare an attacks with one Bomb weapon the model has per Movement phase.</characteristic>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">You can declare an attacks with one Bomb weapon the model has per Movement phase.</characteristic>
               </characteristics>
             </profile>
             <profile id="6699-1c87-a5b1-b6c9" name="EMP Grenade" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -21948,7 +21942,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
           <profiles>
             <profile id="e430-d04d-1689-c10d" name="Stimm Injectors" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">COMMANDER or XV8 CRISIS model only. When a saving throw is failed for the bearer, the bearer can use this Prototype System. if it does, each time the bearer would lose a wound, roll one D6: on a 5+ that wound is not lost.</characteristic>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time the bearer would lose a wound, roll one D6: on a 5+ that wound is not lost.</characteristic>
               </characteristics>
             </profile>
           </profiles>
