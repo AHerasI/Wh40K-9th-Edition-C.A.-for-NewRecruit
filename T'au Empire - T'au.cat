@@ -8746,7 +8746,6 @@ In addition, at the end of each Fight phase, if any number of enemy models were 
       <selectionEntries>
         <selectionEntry id="7225-e03b-ca23-d63b" name="Shas&apos;O Shaserra" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8797-0ac1-f160-fc68" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7a1-e93a-c8d1-b02d" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b75-556a-7539-c7e6" type="max"/>
           </constraints>
@@ -8957,6 +8956,9 @@ In addition, at the end of each Fight phase, if any number of enemy models were 
         <cost name="Pts" typeId="points" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="36df-3039-6646-eefb" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="b539-daba-a3e7-d543" name="Shas&apos;O Vesu&apos;r Ra&apos;lai" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
