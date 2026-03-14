@@ -5430,9 +5430,9 @@ In addition, a unit gain a extra EXP point if it managed to do one of the follow
                 </modifier>
               </modifiers>
               <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="Pts" typeId="points" value="0"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>
@@ -5450,9 +5450,9 @@ In addition, a unit gain a extra EXP point if it managed to do one of the follow
                 </modifier>
               </modifiers>
               <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="Pts" typeId="points" value="0"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>
@@ -5470,9 +5470,9 @@ In addition, a unit gain a extra EXP point if it managed to do one of the follow
                 </modifier>
               </modifiers>
               <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="Pts" typeId="points" value="0"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="3"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>
@@ -5490,9 +5490,9 @@ In addition, a unit gain a extra EXP point if it managed to do one of the follow
                 </modifier>
               </modifiers>
               <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="Pts" typeId="points" value="0"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="4"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>
@@ -5510,9 +5510,9 @@ In addition, a unit gain a extra EXP point if it managed to do one of the follow
                 </modifier>
               </modifiers>
               <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="Pts" typeId="points" value="0"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="5"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>
@@ -5529,9 +5529,9 @@ In addition, a unit gain a extra EXP point if it managed to do one of the follow
                 </modifier>
               </modifiers>
               <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="Pts" typeId="points" value="0"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="6"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>
