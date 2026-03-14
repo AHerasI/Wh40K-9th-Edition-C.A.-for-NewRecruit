@@ -2706,14 +2706,14 @@ In your Command phase, this unit’s PRIEST model can attempt to chant one praye
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="faa9-9a94-354b-c46f" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d691-91d9-76e1-b276" type="atLeast"/>
-                        <condition field="selections" scope="faa9-9a94-354b-c46f" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="65dd-a3e7-b044-4659" type="atLeast"/>
+                        <condition field="selections" scope="faa9-9a94-354b-c46f" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c14-22cc-93ce-b85a" type="atLeast"/>
+                        <condition field="selections" scope="faa9-9a94-354b-c46f" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="efc8-c51d-5b02-a3a2" type="atLeast"/>
                       </conditions>
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition field="selections" scope="faa9-9a94-354b-c46f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d691-91d9-76e1-b276" type="atLeast"/>
-                            <condition field="selections" scope="faa9-9a94-354b-c46f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="65dd-a3e7-b044-4659" type="atLeast"/>
+                            <condition field="selections" scope="faa9-9a94-354b-c46f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c14-22cc-93ce-b85a" type="atLeast"/>
+                            <condition field="selections" scope="faa9-9a94-354b-c46f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="efc8-c51d-5b02-a3a2" type="atLeast"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -6729,26 +6729,6 @@ Each time an attack is made against a &lt;REGIMENT&gt; unit, wound rolls cannot 
           </constraints>
           <selectionEntries>
             <selectionEntry id="1c4e-183c-806e-acbc" name="Storm Trooper Squad" hidden="false" collective="false" import="true" type="unit">
-              <modifiers>
-                <modifier type="increment" field="e356-c769-5920-6e14" value="1">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="1c4e-183c-806e-acbc" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d691-91d9-76e1-b276" type="equalTo"/>
-                        <condition field="selections" scope="1c4e-183c-806e-acbc" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="65dd-a3e7-b044-4659" type="equalTo"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="1c4e-183c-806e-acbc" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="65dd-a3e7-b044-4659" type="equalTo"/>
-                            <condition field="selections" scope="1c4e-183c-806e-acbc" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d691-91d9-76e1-b276" type="equalTo"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>IMPERIUM KEYWORDS</comment>
@@ -6869,6 +6849,20 @@ Each time an attack is made against a &lt;REGIMENT&gt; unit, wound rolls cannot 
                       </modifiers>
                     </modifierGroup>
                   </modifierGroups>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="e356-c769-5920-6e14">
+                      <repeats>
+                        <repeat value="2" repeats="1" field="selections" scope="1c4e-183c-806e-acbc" childId="8c14-22cc-93ce-b85a" shared="false" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="increment" value="1" field="e356-c769-5920-6e14">
+                      <repeats>
+                        <repeat value="2" repeats="1" field="selections" scope="1c4e-183c-806e-acbc" childId="efc8-c51d-5b02-a3a2" shared="false" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
                 </modifierGroup>
               </modifierGroups>
               <categoryLinks>
@@ -19076,8 +19070,8 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
                   <modifiers>
                     <modifier type="increment" field="e356-c769-5920-6e14" value="1">
                       <repeats>
-                        <repeat field="selections" scope="b8b5-5933-712a-9800" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="65dd-a3e7-b044-4659" repeats="1" roundUp="true"/>
-                        <repeat field="selections" scope="b8b5-5933-712a-9800" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d691-91d9-76e1-b276" repeats="1" roundUp="true"/>
+                        <repeat value="2" repeats="1" field="selections" scope="b8b5-5933-712a-9800" childId="8c14-22cc-93ce-b85a" shared="true" roundUp="false" includeChildSelections="true"/>
+                        <repeat value="2" repeats="1" field="selections" scope="b8b5-5933-712a-9800" childId="efc8-c51d-5b02-a3a2" shared="true" roundUp="false" includeChildSelections="true"/>
                       </repeats>
                     </modifier>
                   </modifiers>
