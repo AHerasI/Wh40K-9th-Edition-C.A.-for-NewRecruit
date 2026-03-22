@@ -1050,7 +1050,7 @@ In your Command phase, this unit’s PRIEST model can attempt to chant one praye
     </categoryEntry>
   </categoryEntries>
   <selectionEntries>
-    <selectionEntry id="399f-f56b-0c0f-6fb5" name="Mechanized Company Command" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="399f-f56b-0c0f-6fb5" name="Mechanised Company Command" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -1100,7 +1100,7 @@ In your Command phase, this unit’s PRIEST model can attempt to chant one praye
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4c57-ba87-a3d7-f151" name="Mechanized Regimental Command" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="4c57-ba87-a3d7-f151" name="Mechanised Regimental Command" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -1679,6 +1679,10 @@ In your Command phase, this unit’s PRIEST model can attempt to chant one praye
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fdfe-3c10-2004-aa2b" type="equalTo"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4487-cf58-b38d-eb48" type="equalTo"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06c4-f6da-bb1b-3cbd" type="equalTo"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="b3fc-2bcc-a8ab-78e6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4399-7ac5-26a8-3c81" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="521a-24b7-f8db-4c46" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4b79-6320-95a3-63e1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1692,6 +1696,10 @@ In your Command phase, this unit’s PRIEST model can attempt to chant one praye
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b79-6320-95a3-63e1" type="equalTo"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc39-529a-6aa3-33eb" type="equalTo"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4487-cf58-b38d-eb48" type="equalTo"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="b3fc-2bcc-a8ab-78e6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4399-7ac5-26a8-3c81" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="521a-24b7-f8db-4c46" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4b79-6320-95a3-63e1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2670,6 +2678,30 @@ In your Command phase, this unit’s PRIEST model can attempt to chant one praye
     <entryLink id="f40f-fe51-3e1f-1850" name=" Stratagem List" hidden="false" collective="false" import="true" targetId="138f-3b0b-5561-2a1e" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="7d44-fe5d-8af5-3746" name="Configuration" hidden="false" targetId="fcff-0f21-93e6-1ddc" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Command Vehicle" hidden="true" id="5ff1-1465-b4aa-19f8" type="selectionEntry" targetId="9316-c782-2ad4-1cd2">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4b65-65ca-65a8-938c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4399-7ac5-26a8-3c81" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="7795-e688-5cdf-5aac" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="521a-24b7-f8db-4c46" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="06c4-f6da-bb1b-3cbd" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="5785-1869-d25b-dd4b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="b3fc-2bcc-a8ab-78e6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="6820-9d46-bfbf-146d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4487-cf58-b38d-eb48" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="a152-9931-4061-9d09" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -24027,6 +24059,76 @@ Re-roll Invulnerable saving throws of 1 for this WARLORD.</characteristic>
         <cost name="PL" typeId="e356-c769-5920-6e14" value="6"/>
         <cost name="Pts" typeId="points" value="120"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Command Vehicle" hidden="false" id="9316-c782-2ad4-1cd2" collective="false">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Command Vehicle" id="9648-1ccb-5115-5735" hidden="false" collective="false" import="true" defaultSelectionEntryId="9e30-f570-cd61-064d">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df7e-d3e1-38ef-01bf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3437-2aff-9d34-f891" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Chimera IFV" hidden="false" id="c8b0-6eaf-0924-e2ec" collective="false" targetId="aa5e-d476-c0e1-e5e5" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="Commander in Chimera IFV" field="name"/>
+              </modifiers>
+              <categoryLinks>
+                <categoryLink name="Character" hidden="false" id="2ee9-d77e-f454-5567" targetId="ef18-746a-369f-43a4" primary="false"/>
+                <categoryLink name="Officer" hidden="false" id="5e2c-de91-0425-c849" targetId="6f24-1326-b08a-81bc" primary="false"/>
+                <categoryLink name="Tank Commander" hidden="false" id="908d-fd47-a082-9f29" targetId="9946-33a8-b502-a531" primary="false"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink import="true" name=" Character Definition" hidden="false" id="5fd9-61e6-9915-708c" collective="false" targetId="b8e4-216c-16cc-4263" type="selectionEntryGroup"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Chimera APC" hidden="false" id="9e30-f570-cd61-064d" collective="false" targetId="4658-d952-cddf-b78a" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="Commander in Chimera APC" field="name"/>
+              </modifiers>
+              <categoryLinks>
+                <categoryLink name="Character" hidden="false" id="827e-6c80-703f-6ca9" targetId="ef18-746a-369f-43a4" primary="false"/>
+                <categoryLink name="Officer" hidden="false" id="bee0-5daa-8d69-b739" targetId="6f24-1326-b08a-81bc" primary="false"/>
+                <categoryLink name="Tank Commander" hidden="false" id="f945-ecfc-e006-8eb5" targetId="9946-33a8-b502-a531" primary="false"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink import="true" name=" Character Definition" hidden="false" id="0020-73a0-18cb-6d6f" collective="false" targetId="b8e4-216c-16cc-4263" type="selectionEntryGroup"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Taurox APC" hidden="false" id="606f-3d3f-66d6-df0f" collective="false" targetId="fb2a-9e7b-3cd5-9eca" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="Commander in Taurox APC" field="name"/>
+              </modifiers>
+              <categoryLinks>
+                <categoryLink name="Character" hidden="false" id="496a-9cfd-3f1e-133e" targetId="ef18-746a-369f-43a4" primary="false"/>
+                <categoryLink name="Officer" hidden="false" id="b54f-a273-f2f6-0dea" targetId="6f24-1326-b08a-81bc" primary="false"/>
+                <categoryLink name="Tank Commander" hidden="false" id="157c-c3b1-0720-54c3" targetId="9946-33a8-b502-a531" primary="false"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink import="true" name=" Character Definition" hidden="false" id="b6ab-06db-4cfc-c019" collective="false" targetId="b8e4-216c-16cc-4263" type="selectionEntryGroup"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Taurox AC" hidden="false" id="5e5e-a14f-7038-8ffd" collective="false" targetId="322d-555b-8a2d-a627" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="Commander in Taurox AC" field="name"/>
+              </modifiers>
+              <categoryLinks>
+                <categoryLink name="Character" hidden="false" id="35fc-fda9-575e-88fd" targetId="ef18-746a-369f-43a4" primary="false"/>
+                <categoryLink name="Officer" hidden="false" id="e971-7640-c88c-d004" targetId="6f24-1326-b08a-81bc" primary="false"/>
+                <categoryLink name="Tank Commander" hidden="false" id="cf69-6ff1-052a-0a9d" targetId="9946-33a8-b502-a531" primary="false"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink import="true" name=" Character Definition" hidden="false" id="d20c-5168-4f47-62a4" collective="false" targetId="b8e4-216c-16cc-4263" type="selectionEntryGroup"/>
+              </entryLinks>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="Pts" typeId="points" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
     </selectionEntry>
