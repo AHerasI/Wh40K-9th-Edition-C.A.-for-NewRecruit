@@ -12767,20 +12767,32 @@ Blast.</characteristic>
             </infoLink>
           </infoLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Weapon" id="00d4-b1be-fc81-bb22" hidden="false" collective="false" import="true" defaultSelectionEntryId="ceb2-26bf-f79c-9c5f">
+            <selectionEntryGroup name="Weapon" id="00d4-b1be-fc81-bb22" hidden="false" collective="false" import="true" defaultSelectionEntryId="14ae-5b70-c7b1-1ffb">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8842-90f1-007d-c8a4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ca5-5e99-405d-af02" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Arc pistol" hidden="false" id="5d5e-10db-ce54-b941" collective="false" targetId="c37c-aead-9f52-7bec" type="selectionEntry">
+                <entryLink import="true" name="Torsion cannon" hidden="false" id="2146-d5a8-f323-db51" type="selectionEntry" targetId="9a7c-3e57-e490-436a">
                   <costs>
-                    <cost name="pts" typeId="points" value="5"/>
+                    <cost name="Pts" typeId="points" value="20"/>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Radium pistol" hidden="false" id="f5db-e91f-9361-b465" collective="false" targetId="447f-5a48-e8eb-89db" type="selectionEntry"/>
-                <entryLink import="true" name="Phosphor blast pistol" hidden="false" id="3214-8c79-9736-35a7" collective="false" targetId="02e3-9994-c0ce-3ae4" type="selectionEntry"/>
+                <entryLink import="true" name="Lightning lock" hidden="false" id="920a-0975-de0e-ba52" type="selectionEntry" targetId="be80-0b7e-7cef-4ca2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3cf8-666e-91bb-1c38" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1fd0-bc31-6cbc-9707" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Arc rifle" hidden="false" id="14ae-5b70-c7b1-1ffb">
+                  <infoLinks>
+                    <infoLink name="Arc rifle" id="c502-2b05-2979-58a2" hidden="false" type="profile" targetId="9cd5-5b7d-a996-21e0"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="Shoulder weapon" id="b0ef-bbaa-63cd-893c" hidden="false" defaultSelectionEntryId="d791-f7f1-6d34-3b13">
               <constraints>
@@ -12792,6 +12804,11 @@ Blast.</characteristic>
                 <entryLink import="true" name="Phosphor blaster" hidden="false" id="c37c-39eb-efa6-cda8" collective="false" targetId="a8d2-f493-1087-5896" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="points" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Eradication ray" hidden="false" id="33ed-a387-2968-adfc" type="selectionEntry" targetId="711d-ba6d-d965-1750">
+                  <costs>
+                    <cost name="Pts" typeId="points" value="10"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -12939,13 +12956,13 @@ Blast.</characteristic>
                 </infoLink>
               </infoLinks>
               <entryLinks>
-                <entryLink import="true" name="Cognis flamer" hidden="false" id="2a9d-94af-e7e9-2e39" collective="false" targetId="1580-6f7a-2617-91cb" type="selectionEntry">
+                <entryLink import="true" name="Phosphor blaster" hidden="false" id="2a9d-94af-e7e9-2e39" collective="false" targetId="a8d2-f493-1087-5896" type="selectionEntry">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7967-c30b-b262-8c37" includeChildSelections="false"/>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="001f-89ea-440b-b669" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Phosphor blaster" hidden="false" id="58a2-bfa7-e47f-d141" type="selectionEntry" targetId="a8d2-f493-1087-5896">
+                <entryLink import="true" name="Lightning lock" hidden="false" id="58a2-bfa7-e47f-d141" type="selectionEntry" targetId="be80-0b7e-7cef-4ca2">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="307d-471b-df7a-d34d" includeChildSelections="false"/>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a018-95e4-e18c-f0fc" includeChildSelections="false"/>
@@ -12955,6 +12972,150 @@ Blast.</characteristic>
               <costs>
                 <cost name="Pts" typeId="points" value="25"/>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Hastarii w/E. ray" hidden="false" id="1b08-7e64-c247-7d00" collective="false">
+              <infoLinks>
+                <infoLink name="Skitarii" id="61ab-ab35-c907-9d6e" hidden="false" targetId="2167-c172-924c-6ab5" type="profile">
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="3+" field="c0df-df94-abd7-e8d3"/>
+                        <modifier type="set" value="4" field="9c9f-9774-a358-3a39"/>
+                        <modifier type="set" value="2" field="f330-5e6e-4110-0978"/>
+                        <modifier type="set" value="Hastarii" field="name"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </infoLink>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Eradication ray" hidden="false" id="34d0-103c-47f2-3a8a" collective="false" targetId="711d-ba6d-d965-1750" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3bb9-8bbe-868f-0a98" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b1ec-2596-3234-5ca7" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Arc rifle" hidden="false" id="f944-c01c-b54b-87d1" type="selectionEntry" targetId="c3d2-36ce-ddfb-4312">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="255a-7551-2899-e60b" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c8b6-de1e-3309-fccf" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="30"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Hastarii w/Lighting lock&amp;E. ray" hidden="false" id="f2da-7299-41f9-85ad" collective="false">
+              <infoLinks>
+                <infoLink name="Skitarii" id="d3fe-1cde-26aa-bc61" hidden="false" targetId="2167-c172-924c-6ab5" type="profile">
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="3+" field="c0df-df94-abd7-e8d3"/>
+                        <modifier type="set" value="4" field="9c9f-9774-a358-3a39"/>
+                        <modifier type="set" value="2" field="f330-5e6e-4110-0978"/>
+                        <modifier type="set" value="Hastarii" field="name"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </infoLink>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Lightning lock" hidden="false" id="ccf0-cef1-18ee-44e0" collective="false" targetId="be80-0b7e-7cef-4ca2" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3cb2-2580-7d49-e959" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3784-41a5-e5dd-7375" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Eradication ray" hidden="false" id="eda8-9309-25f3-ab37" type="selectionEntry" targetId="711d-ba6d-d965-1750">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b921-017e-dfaa-116c" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="28ed-bfb1-74d5-a6b0" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="25"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Hastarii w/Torsion cannon" hidden="false" id="2734-0cfe-20d0-1b07" collective="false">
+              <infoLinks>
+                <infoLink name="Skitarii" id="173a-7e68-7c2a-b5b9" hidden="false" targetId="2167-c172-924c-6ab5" type="profile">
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="3+" field="c0df-df94-abd7-e8d3"/>
+                        <modifier type="set" value="4" field="9c9f-9774-a358-3a39"/>
+                        <modifier type="set" value="2" field="f330-5e6e-4110-0978"/>
+                        <modifier type="set" value="Hastarii" field="name"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </infoLink>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Cognis flamer" hidden="false" id="2fd6-2f1f-3fe3-d365" collective="false" targetId="1580-6f7a-2617-91cb" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ddcd-d0c3-a93b-c5b3" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9914-d720-caa0-9e6a" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Torsion cannon" hidden="false" id="36a1-02f6-3aa9-5187" type="selectionEntry" targetId="9a7c-3e57-e490-436a">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5576-8dae-99e1-7161" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0412-0287-6626-8e29" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="35"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Hastarii w/Torsion cannon&amp;Blaster" hidden="false" id="5aae-d2cd-b165-976f" collective="false">
+              <infoLinks>
+                <infoLink name="Skitarii" id="b5f6-d6e6-fb93-a0e9" hidden="false" targetId="2167-c172-924c-6ab5" type="profile">
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="3+" field="c0df-df94-abd7-e8d3"/>
+                        <modifier type="set" value="4" field="9c9f-9774-a358-3a39"/>
+                        <modifier type="set" value="2" field="f330-5e6e-4110-0978"/>
+                        <modifier type="set" value="Hastarii" field="name"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </infoLink>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Phosphor blaster" hidden="false" id="95d9-641d-06d6-5948" collective="false" targetId="a8d2-f493-1087-5896" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51be-e280-9a1e-e95e" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3349-990b-2c68-cd9e" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Torsion cannon" hidden="false" id="34a1-e9bb-ebdb-e452" type="selectionEntry" targetId="9a7c-3e57-e490-436a">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="494a-b322-ef70-943e" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="19a8-cca0-4767-cbe6" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="40"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
