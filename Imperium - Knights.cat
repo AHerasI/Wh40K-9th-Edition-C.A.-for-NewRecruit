@@ -9484,6 +9484,23 @@ Ion Aegis [Aura]: While a friendly &lt;NOBLE HOUSEHOLD&gt; ARMIGER-CLASS model i
                 <entryLink import="true" name="Heavy Fragmentation cannon" hidden="false" id="27b2-1ead-125d-8e01" type="selectionEntry" targetId="d5a7-4482-a816-7649"/>
               </entryLinks>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Chest weapon" id="2f4f-d786-26ec-5872" hidden="false" defaultSelectionEntryId="70ee-06b6-6128-bed9">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aa03-8062-f34d-9673"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ccf-d037-0e62-84b6" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Heavy Stubber" hidden="true" id="70ee-06b6-6128-bed9" collective="false" targetId="56ff-d765-ada3-31a5" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="0eb1-3583-9007-9cc1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink import="true" name=" Character definition" hidden="false" id="dc01-8444-cdbe-88c4" collective="false" targetId="44eb-3995-a615-f626" type="selectionEntryGroup"/>
@@ -11589,6 +11606,17 @@ Crusade Duty only applies when such a model is part of your Crusade force.</desc
               </conditions>
             </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Stubber" hidden="true" id="e8e2-ac18-d728-3463" collective="false" targetId="56ff-d765-ada3-31a5" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="0eb1-3583-9007-9cc1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
