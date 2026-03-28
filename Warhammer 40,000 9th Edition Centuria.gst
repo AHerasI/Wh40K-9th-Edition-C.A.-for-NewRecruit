@@ -2422,7 +2422,7 @@ If the unit has the INFANTRY Keyword and is in a terrain with the DEFENSIBLE tra
           <modifiers>
             <modifier type="set" value="0" field="16b4-0dcd-fb56-180e">
               <conditionGroups>
-                <conditionGroup type="and">
+                <conditionGroup type="or">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" shared="true" includeChildSelections="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" shared="true" includeChildSelections="true"/>
@@ -2442,7 +2442,7 @@ If the unit has the INFANTRY Keyword and is in a terrain with the DEFENSIBLE tra
           <modifiers>
             <modifier type="set" value="0" field="b59b-3e00-e77a-c389">
               <conditionGroups>
-                <conditionGroup type="and">
+                <conditionGroup type="or">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" shared="true" includeChildSelections="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" shared="true" includeChildSelections="true"/>
@@ -2462,7 +2462,7 @@ If the unit has the INFANTRY Keyword and is in a terrain with the DEFENSIBLE tra
           <modifiers>
             <modifier type="set" value="0" field="844b-5d0c-f0ed-984a">
               <conditionGroups>
-                <conditionGroup type="and">
+                <conditionGroup type="or">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" shared="true" includeChildSelections="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" shared="true" includeChildSelections="true"/>
@@ -2482,7 +2482,7 @@ If the unit has the INFANTRY Keyword and is in a terrain with the DEFENSIBLE tra
           <modifiers>
             <modifier type="set" value="0" field="635f-6b12-c188-287c">
               <conditionGroups>
-                <conditionGroup type="and">
+                <conditionGroup type="or">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" shared="true" includeChildSelections="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" shared="true" includeChildSelections="true"/>
@@ -2502,7 +2502,7 @@ If the unit has the INFANTRY Keyword and is in a terrain with the DEFENSIBLE tra
           <modifiers>
             <modifier type="set" value="0" field="689c-a619-2698-6a81">
               <conditionGroups>
-                <conditionGroup type="and">
+                <conditionGroup type="or">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" shared="true" includeChildSelections="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" shared="true" includeChildSelections="true"/>
@@ -2522,7 +2522,7 @@ If the unit has the INFANTRY Keyword and is in a terrain with the DEFENSIBLE tra
           <modifiers>
             <modifier type="set" value="0" field="719f-e0cf-f395-c9d8">
               <conditionGroups>
-                <conditionGroup type="and">
+                <conditionGroup type="or">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" shared="true" includeChildSelections="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" shared="true" includeChildSelections="true"/>
