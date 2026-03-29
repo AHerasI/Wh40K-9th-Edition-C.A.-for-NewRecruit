@@ -8334,6 +8334,11 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" value="40" field="points">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b57a-d7ee-6663-4044" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <modifierGroups>
             <modifierGroup>
@@ -8444,6 +8449,15 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
           <infoLinks>
             <infoLink id="07e5-86a3-33de-9762" name="Explodes 6+ (3&quot;)" hidden="false" targetId="a90c-078f-b826-e2d4" type="rule"/>
             <infoLink id="ef4b-7a13-d280-d9d2" name="Sentinel" hidden="false" targetId="50c4-3d5c-9c01-1213" type="profile"/>
+            <infoLink name="Impervious to small weapons fire" id="9069-d803-f9ae-29f5" hidden="false" type="profile" targetId="b48e-9a4a-2fdc-5d7c">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b57a-d7ee-6663-4044" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="6002-eb6e-8895-6558" name="Walker" hidden="false" targetId="27d8-f0bb-f3cc-580f" primary="false"/>
@@ -8494,7 +8508,7 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="Pts" typeId="points" value="40"/>
+            <cost name="Pts" typeId="points" value="50"/>
             <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
@@ -16844,6 +16858,7 @@ Roll one D6 to set a random Warlord trait from the Astra Militarum Warlord Trait
             <categoryLink name="Regiment" hidden="false" id="3522-7e78-4b81-b186" targetId="3aa8-21df-b483-57dd" primary="false"/>
             <categoryLink name="Tracked" hidden="false" id="557b-8bf7-3922-2b0b" targetId="7402-3477-84a2-08f8" primary="false"/>
             <categoryLink name="Transport" hidden="false" id="5888-cada-149e-c801" targetId="6cc4-1b62-8e8a-05cd" primary="false"/>
+            <categoryLink name="Open-topped" hidden="false" id="c314-944f-712f-e137" targetId="cdc5-4a32-031d-f86e" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Variant" id="38dc-7acf-722e-d7f0" hidden="false" collective="false" import="true" defaultSelectionEntryId="5f28-82f7-6afc-e3ae">
@@ -26917,7 +26932,7 @@ You can Disband any summoned unit in your morale phase. Disbanded units are cons
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
       </characteristics>
     </profile>
-    <profile id="50c4-3d5c-9c01-1213" name="Sentinel" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+    <profile id="50c4-3d5c-9c01-1213" name="Sentinel" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <modifiers>
         <modifier type="set" field="0bdf-a96e-9e38-7779" value="17&quot;">
           <conditionGroups>
