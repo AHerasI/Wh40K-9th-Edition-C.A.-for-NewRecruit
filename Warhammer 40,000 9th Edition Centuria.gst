@@ -8030,17 +8030,6 @@ Each Multi-Purpose Reactive Armour packcage can be used once per battle.</descri
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6924-0ed4-0c06-6b91" name="Heavy Assault cannon" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="0512-4a1a-2c49-d870" name="Heavy Assault cannon" hidden="false" targetId="4104-7919-6310-e865" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-        <cost name="Pts" typeId="points" value="0"/>
-        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="eebb-eee3-1a35-0d49" name="Twin Volkite Charger" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="361f-f277-ccfd-efb7" name="Twin Volkite Charger" hidden="false" targetId="18c7-c4e3-40c0-efcd" type="profile"/>
@@ -18622,8 +18611,8 @@ Before using it, select one of the available ammo.
     </profile>
     <profile id="20dc-1fbb-dc65-7f04" name="Assault cannon" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
-        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 6</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30&quot;</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 8</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
@@ -19094,8 +19083,8 @@ Blast.</characteristic>
     </profile>
     <profile id="acb8-7501-1f1b-b483" name="Twin Assault Cannon" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
-        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 12</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30&quot;</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 16</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
@@ -20357,16 +20346,6 @@ If the result is less than the Strength characteristic of that enemy unit, it ca
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon profile, subtract 1 from that attack’s hit roll.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="4104-7919-6310-e865" name="Heavy Assault cannon" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30&quot;</characteristic>
-        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 12</characteristic>
-        <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
-        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
     </profile>
     <profile id="18c7-c4e3-40c0-efcd" name="Twin Volkite Charger" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
