@@ -21987,6 +21987,175 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry type="unit" import="true" name="Navis Imperialis Ogryn support crew" hidden="false" id="63bf-d82c-b6d0-c641" collective="false">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>INQUISITION KEYWORDS</comment>
+                  <modifiers>
+                    <modifier type="add" value="2981-f499-19fc-bc80" field="category">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="75e3-1aca-fccc-4aa1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="add" value="0eb0-346d-12e6-5924" field="category">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="f9bb-f784-dc6d-d6dd" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="add" value="3aa8-21df-b483-57dd" field="category">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="4487-cf58-b38d-eb48" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="add" value="1481-ffc3-f85a-eb36" field="category">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="2315-9e36-478d-6576" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="add" value="08f1-d244-eb44-7e01" field="category">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="4487-cf58-b38d-eb48" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <categoryLinks>
+                <categoryLink name="Faction: Astra Militarum" hidden="false" id="d49c-3a1a-9e73-6b0d" targetId="3263-4233-4344-6228" primary="false"/>
+                <categoryLink name="Faction: Imperium" hidden="false" id="e9aa-e8e1-3d5e-3a33" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
+                <categoryLink name="Faction: Navis Imperialis" hidden="false" id="716d-e183-f6d4-dfa9" targetId="5148-4ab3-b792-38fe" primary="false"/>
+                <categoryLink name="Infantry" hidden="false" id="e28f-3371-d1f3-115a" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+              </categoryLinks>
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="Navis support Bone&apos;ead" hidden="false" id="0d04-0409-5aa8-bf38" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed82-adc8-66ef-4371" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="64c3-799b-ceab-beb1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Ogryn Bone ’ead" id="8047-90d9-b727-bda8" hidden="false" targetId="2cf1-96be-a0d7-a39c" type="profile"/>
+                    <infoLink name="Off-hand weapon" id="13ec-bb2e-886c-f0aa" hidden="false" type="profile" targetId="e14b-37da-f8e9-1752"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink name="Infantry" hidden="false" id="e892-8d35-e643-c357" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+                    <categoryLink name="Carapace Armour" hidden="false" id="5d78-32b6-f610-af1f" targetId="b4b1-c3d9-0382-c906" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="Pts" typeId="points" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon option" id="601c-b04f-9953-55af" hidden="false">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="cd0d-4b1e-a0d1-d569"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c752-9d21-c23c-a73a"/>
+                      </constraints>
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Hydraulic claw w/Heavy flamer" hidden="false" id="4bd8-1789-9e1a-74ab">
+                          <entryLinks>
+                            <entryLink import="true" name="Hydraulic claw" hidden="false" id="f902-9659-eeec-b2fc" type="selectionEntry" targetId="685d-bbe2-a563-701d" collective="true">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98a5-ac88-8fa3-f4fb" includeChildSelections="false"/>
+                                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6461-b3d1-be94-fef4" includeChildSelections="false"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="Heavy Flamer" hidden="false" id="163c-096b-c8c3-9425" type="selectionEntry" targetId="4640-ecff-bdae-4617"/>
+                          </entryLinks>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee29-a385-03fd-64f2"/>
+                          </constraints>
+                          <modifiers>
+                            <modifier type="set" value="1" field="e356-c769-5920-6e14">
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="parent" childId="e464-77c1-12bb-e52f" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                          <costs>
+                            <cost name="Pts" typeId="points" value="10"/>
+                            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                      </selectionEntries>
+                      <entryLinks>
+                        <entryLink import="true" name="Lightning Claw" hidden="false" id="c2f2-7ca8-72fa-3cca" type="selectionEntry" targetId="90de-7b01-e401-888b"/>
+                        <entryLink import="true" name="Power Maul" hidden="false" id="9145-a877-4100-2ca3" type="selectionEntry" targetId="6ea7-1195-7144-438e">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca98-ad35-92de-cbb4" includeChildSelections="false"/>
+                          </constraints>
+                          <costs>
+                            <cost name="Pts" typeId="points" value="5"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Power Axe" hidden="false" id="be64-13e5-89df-ca08" type="selectionEntry" targetId="3292-34e6-f679-d5b9">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d73a-5607-a740-7c43" includeChildSelections="false"/>
+                          </constraints>
+                          <costs>
+                            <cost name="Pts" typeId="points" value="5"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Chainfist" hidden="false" id="4e84-87cb-7eb8-6286" type="selectionEntry" targetId="e464-77c1-12bb-e52f">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7986-5a03-b5af-f637" includeChildSelections="false"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink import="true" name="Chainfist" hidden="false" id="daf8-1431-27f1-9dd3" type="selectionEntry" targetId="e464-77c1-12bb-e52f">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7aba-7880-75cb-e61f" includeChildSelections="false"/>
+                              </constraints>
+                              <modifiers>
+                                <modifier type="set" value="0" field="7aba-7880-75cb-e61f">
+                                  <conditions>
+                                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="4bd8-1789-9e1a-74ab" shared="true"/>
+                                  </conditions>
+                                </modifier>
+                              </modifiers>
+                            </entryLink>
+                          </entryLinks>
+                          <costs>
+                            <cost name="Pts" typeId="points" value="10"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Navis support Ogryn" hidden="false" id="392c-5e7c-1134-8b5c" collective="false">
+                  <constraints>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="739f-2266-f126-b7f0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="1fa8-a885-df1a-0796" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Ogryn" id="e369-1432-d527-7856" hidden="false" targetId="6c12-0f46-43fc-6b29" type="profile"/>
+                    <infoLink name="Off-hand weapon" id="aeba-8186-6047-0a6d" hidden="false" type="profile" targetId="e14b-37da-f8e9-1752"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink name="Infantry" hidden="false" id="3354-8462-dcb9-d0af" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+                    <categoryLink name="Carapace Armour" hidden="false" id="2d85-dff5-ec15-3e01" targetId="b4b1-c3d9-0382-c906" primary="false"/>
+                  </categoryLinks>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon option" hidden="false" id="3306-4eb1-2c2c-2ae1" type="selectionEntryGroup" targetId="601c-b04f-9953-55af"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="Pts" typeId="points" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="Pts" typeId="points" value="100"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="5"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -26933,7 +27102,7 @@ You can Disband any summoned unit in your morale phase. Disbanded units are cons
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
       </characteristics>
     </profile>
-    <profile id="6c12-0f46-43fc-6b29" name="Ogryn" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+    <profile id="6c12-0f46-43fc-6b29" name="Ogryn" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <modifierGroups>
         <modifierGroup>
           <modifiers>
@@ -27002,7 +27171,7 @@ You can Disband any summoned unit in your morale phase. Disbanded units are cons
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
       </characteristics>
     </profile>
-    <profile id="2cf1-96be-a0d7-a39c" name="Ogryn Bone ’ead" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+    <profile id="2cf1-96be-a0d7-a39c" name="Ogryn Bone ’ead" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <modifierGroups>
         <modifierGroup>
           <modifiers>
@@ -27210,7 +27379,7 @@ When doing so, measure distances to and from this TRANSPORT model.</characterist
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
       </characteristics>
     </profile>
-    <profile id="6e41-c07b-bacb-e790" name="Navis Sergeant-at-Arms" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+    <profile id="6e41-c07b-bacb-e790" name="Navis Sergeant-at-Arms" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
         <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
         <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
@@ -27223,7 +27392,7 @@ When doing so, measure distances to and from this TRANSPORT model.</characterist
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
       </characteristics>
     </profile>
-    <profile id="3192-46e0-55f4-9526" name="Navis Man-at-Arms" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+    <profile id="3192-46e0-55f4-9526" name="Navis Man-at-Arms" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
         <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
         <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
