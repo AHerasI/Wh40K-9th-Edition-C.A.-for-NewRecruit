@@ -2704,6 +2704,11 @@ In your Command phase, this unit’s PRIEST model can attempt to chant one praye
         <categoryLink name="HQ" hidden="false" id="a152-9931-4061-9d09" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Dark Commune" hidden="false" id="b15e-41f4-4a0a-f902" type="selectionEntry" targetId="83b1-aafc-b6fa-c7ec">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="2012-0fcf-066c-6950" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="c5a3-26be-3993-e93f" name="Infantry Platoon" hidden="false" collective="false" import="true" type="unit" subType="unit-group">
@@ -15899,6 +15904,127 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Rogue Psyker" hidden="true" id="c7a4-1f6c-a125-74c1" collective="false">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bc41-7bc9-1b3c-e921" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1efa-fe82-d536-5d34" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="f2f6-7cc9-43ee-f889" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="234b-40a5-35e4-ab8d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>IMPERIUM KEYWORDS</comment>
+              <modifiers>
+                <modifier type="add" value="cee0-4459-2f94-b827" field="category">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="a5b4-4342-3a16-8270" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="add" value="3c6d-c9b3-cd33-e5e5" field="category">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1b06-f117-011f-860e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="add" value="ca27-5069-1c2c-a28b" field="category">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1115-ef9e-fc44-757e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="add" value="2981-f499-19fc-bc80" field="category">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="75e3-1aca-fccc-4aa1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="add" value="0eb0-346d-12e6-5924" field="category">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="f9bb-f784-dc6d-d6dd" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="add" value="1481-ffc3-f85a-eb36" field="category">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="2315-9e36-478d-6576" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01a4-eeb6-a1ec-5c41" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Rogue Psyker" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="345b-569f-58f4-1023">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Rogue Psyker" typeId="bc97-dea9-9e88-bb7d" typeName="Psyker" hidden="false" id="afe5-59cf-fa99-72f6">
+              <characteristics>
+                <characteristic name="Cast" typeId="5afb-9914-904b-d3b3">2</characteristic>
+                <characteristic name="Deny" typeId="b5ac-9c20-5d5a-6f9b">1</characteristic>
+                <characteristic name="Powers Known" typeId="69d7-b45e-00a2-7e46">Smite, 3 from the Dark Hereticus discipline.</characteristic>
+                <characteristic name="Other" typeId="c2e2-f115-0003-5d7b">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Refractor Field" id="069c-e87f-c230-caaf" hidden="false" targetId="76f9-878f-4057-ce75" type="profile"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Infantry" hidden="false" id="02c1-1294-f1a2-c22a" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+            <categoryLink name="Psyker" hidden="false" id="4e04-c5a4-40f5-19c1" targetId="e691-aad7-d21c-1023" primary="false"/>
+            <categoryLink name="Astra Militarum Auxilia" hidden="false" id="a40b-ecb8-354b-f5fd" targetId="c93e-e4e5-1298-204c" primary="false"/>
+            <categoryLink name="Faction: Astra Militarum" hidden="false" id="6880-dce1-166c-668e" targetId="3263-4233-4344-6228" primary="false"/>
+            <categoryLink name="Faction: Imperium" hidden="false" id="f72b-f6dd-f917-19a5" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Laspistol" hidden="false" id="3b8c-d947-0108-64a0" collective="false" targetId="0e60-b904-c3ed-5c38" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="71a6-2a13-6d47-b0b4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ab80-2cd7-fc2d-a3f2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Force stave" hidden="false" id="f972-8fcb-4fa3-4bf2" collective="false" targetId="6f9a-c4fe-3132-d011" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29fe-b0d6-f0e2-1f46" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9dbd-4026-daba-c257" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Smite" hidden="false" id="6011-6fcb-4d80-b2ab" collective="false" targetId="03fd-db47-5333-1e1f" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41e8-ea08-758a-fe86" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5222-717d-c134-df67" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Discipline of the Dark Hereticus" hidden="false" id="015d-d10d-9d8d-a8b8" type="selectionEntryGroup" targetId="02e5-246c-098a-37a0">
+              <constraints>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="d01c-a470-fa37-6314"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="fdb6-f1fe-cb7b-a625"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="Pts" typeId="points" value="40"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -16881,6 +17007,7 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
             <entryLink id="5a81-07b4-c656-520a" name="Preacher" hidden="false" collective="false" import="true" targetId="47bc-6e92-b5d3-3833" type="selectionEntry"/>
             <entryLink id="033c-214f-0bda-0692" name="Primaris Psyker" hidden="false" collective="false" import="true" targetId="b461-6fed-d25f-80a8" type="selectionEntry"/>
             <entryLink id="5953-6bf0-0b45-59ee" name="Daemonhost" hidden="false" collective="false" import="true" targetId="9f08-8d54-cb95-758b" type="selectionEntry"/>
+            <entryLink import="true" name="Rogue Psyker" hidden="false" id="bc9b-a749-c809-98be" type="selectionEntry" targetId="c7a4-1f6c-a125-74c1"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="4008-65be-e052-4448" name="Commander option" hidden="false" collective="false" import="true" defaultSelectionEntryId="b24e-8733-22c7-6687">
@@ -20109,6 +20236,7 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
             <entryLink id="b2cb-262f-34f7-287e" name="Preacher" hidden="false" collective="false" import="true" targetId="47bc-6e92-b5d3-3833" type="selectionEntry"/>
             <entryLink id="2a59-83b2-4a2c-422a" name="Primaris Psyker" hidden="false" collective="false" import="true" targetId="b461-6fed-d25f-80a8" type="selectionEntry"/>
             <entryLink id="62cf-4aa0-b385-5c95" name="Daemonhost" hidden="false" collective="false" import="true" targetId="9f08-8d54-cb95-758b" type="selectionEntry"/>
+            <entryLink import="true" name="Rogue Psyker" hidden="false" id="cb74-e06a-0fa6-12b9" type="selectionEntry" targetId="c7a4-1f6c-a125-74c1"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="8734-8900-383c-debe" name="Commander option" hidden="false" collective="false" import="true" defaultSelectionEntryId="1748-2980-5245-3340">
@@ -24160,6 +24288,276 @@ Re-roll Invulnerable saving throws of 1 for this WARLORD.</characteristic>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Dark Commune" hidden="true" id="83b1-aafc-b6fa-c7ec" collective="false">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="bc41-7bc9-1b3c-e921" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="1efa-fe82-d536-5d34" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="f2f6-7cc9-43ee-f889" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="234b-40a5-35e4-ab8d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Faction: Chaos" hidden="false" id="33be-e4bd-999a-2bbb" targetId="5cf1-acf2-ca3b-c2e5" primary="false"/>
+        <categoryLink name="Faction: Chaos Servants" hidden="false" id="5fcf-26c3-2710-395e" targetId="39bd-1989-42e4-056c" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Cult Demagogue" hidden="false" id="b3b2-099a-5fbd-f8f9" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d56-1fe6-8e09-f542" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d094-f4d6-24f5-4943" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Cult Demagogue" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="adcf-7486-f9c7-ad2f">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Faithful Flock" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="5f2b-cd65-6f14-7125">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While this unit contains a CULT DEMAGOGUE model, each time a Morale test is taken for this unit, that test is automatically passed.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink name="Infantry" hidden="false" id="923e-0f06-862a-ea57" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+            <categoryLink name="Dark Priest" hidden="false" id="9efe-c82b-1b4c-caa2" targetId="9179-1ae8-54eb-1abd" primary="false"/>
+            <categoryLink name="Cultists" hidden="false" id="f63f-1803-2f40-c69a" targetId="40ff-8241-e4a3-8dc7" primary="false"/>
+            <categoryLink name="Ø32mm" hidden="false" id="37d5-b369-4fdd-a52d" targetId="1441-1590-8a0e-24f3" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Commune stave" hidden="false" id="cb75-b338-a7f2-b7c2" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="920a-1248-61cd-e215" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b02-2fd5-be0f-1140" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Commune stave" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="1b9e-c517-ae62-d141">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Autopistol" hidden="false" id="6f1d-d05d-b81c-b3e0" collective="false" targetId="2940-1984-b9fa-0b34" type="selectionEntry"/>
+            <entryLink import="true" name="Prayers to the Dark Gods" hidden="false" id="db86-32ff-14e3-25dc" collective="false" targetId="3fdf-a753-0774-d5d8" type="selectionEntryGroup"/>
+            <entryLink import="true" name="   Character definition:" hidden="false" id="088b-8a3f-3dd1-3126" collective="false" targetId="3bcc-c51f-ca44-aca4" type="selectionEntryGroup">
+              <entryLinks>
+                <entryLink import="true" name="Unit upgrades" hidden="false" id="a472-c5a7-ad7d-4750" collective="false" targetId="867f-e3d9-541a-3498" type="selectionEntryGroup"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Frag &amp; Krak grenades" hidden="false" id="e5dd-65bf-000e-0acf" collective="false" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
+          </entryLinks>
+          <costs>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="Pts" typeId="points" value="15"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Mindwitch" hidden="false" id="93a6-bfcd-bbb5-4be8" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47e0-487e-b035-e859" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b75a-b0f1-7f84-064e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Dark Disciples" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="3728-fbba-a09f-da2c">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time this unit chants a prayer, if this unit contains any DARK DISCIPLE models, add 1 to the dice roll to determine if that prayer is heard. The destruction of DARK DISCIPLE models is ignored for the purposes of Morale tests. If this unit’s DARK APOSTLE model is ever destroyed, all remaining DARK DISCIPLE models in this unit are also destroyed.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Mindwitch" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="e46a-400e-eb6d-aa60">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Mindwitch" typeId="bc97-dea9-9e88-bb7d" typeName="Psyker" hidden="false" id="bfc2-2f4e-9f31-3e13">
+              <characteristics>
+                <characteristic name="Cast" typeId="5afb-9914-904b-d3b3">1</characteristic>
+                <characteristic name="Deny" typeId="b5ac-9c20-5d5a-6f9b">1</characteristic>
+                <characteristic name="Powers Known" typeId="69d7-b45e-00a2-7e46">Smite, 2 Dark Hereticus</characteristic>
+                <characteristic name="Other" typeId="c2e2-f115-0003-5d7b"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink name="Infantry" hidden="false" id="f703-353c-107d-2882" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+            <categoryLink name="Cultists" hidden="false" id="66d6-9c54-b3de-e4fc" targetId="40ff-8241-e4a3-8dc7" primary="false"/>
+            <categoryLink name="Ø32mm" hidden="false" id="f190-77b0-46d1-5fbd" targetId="1441-1590-8a0e-24f3" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Brutal Blunt Weapon" hidden="false" id="209c-a79a-5849-08de" collective="false" targetId="bfbe-de91-6f03-e116" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42f9-df64-c036-eb59" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c202-52c6-8abe-7f4c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Frag &amp; Krak grenades" hidden="false" id="cbb3-d9ef-b08e-bee0" collective="false" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
+            <entryLink import="true" name="Smite" hidden="false" id="31b3-3fc4-9a85-5c03" collective="false" targetId="03fd-db47-5333-1e1f" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7fdd-65c4-56fb-0103" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6763-6f62-98e9-3c4b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Discipline of the Dark Hereticus" hidden="false" id="01a3-9b0d-6395-7e64" type="selectionEntryGroup" targetId="02e5-246c-098a-37a0">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2e9f-1b71-63b7-07a4"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4a2f-258a-3c76-6320"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="Pts" typeId="points" value="15"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Iconarch" hidden="false" id="6d3f-b9e2-b8a8-2ecd" collective="false">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1cb1-6bbb-e242-cb9b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b94b-ec74-2a09-0cc6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Iconarch [Aura]" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="ba19-20a2-c16a-453d">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly CULTISTS unit is within 6&quot; of this unit’s ICONARCH model, add 2 to the Leadership characteristic of models in that unit, and each time a model in that unit makes an attack, re-roll a hit roll of 1.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Iconarch" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="6f97-4520-6bbf-b547">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink name="Infantry" hidden="false" id="1dca-384f-b9c8-6d70" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+            <categoryLink name="Cultists" hidden="false" id="6fcf-4d45-ab53-9831" targetId="40ff-8241-e4a3-8dc7" primary="false"/>
+            <categoryLink name="Ø32mm" hidden="false" id="4482-18c5-f7ac-c37b" targetId="1441-1590-8a0e-24f3" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Autopistol" hidden="false" id="59d0-eda3-16ae-1f5e" collective="false" targetId="2940-1984-b9fa-0b34" type="selectionEntry"/>
+            <entryLink import="true" name="Frag &amp; Krak grenades" hidden="false" id="f4fa-6441-aefe-532b" collective="false" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
+          </entryLinks>
+          <costs>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="Pts" typeId="points" value="10"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Blessed Blades" hidden="false" id="dcb5-1a06-df86-e489" collective="false">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="54a5-b193-5ff6-dcbd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="fecb-2b4e-ab2c-1ef7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Blessed Blade" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="448d-3d95-6118-e49b">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">1</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink name="Infantry" hidden="false" id="76fc-fe90-66fa-ea9e" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+            <categoryLink name="Cultists" hidden="false" id="50f5-89d4-3ece-06b0" targetId="40ff-8241-e4a3-8dc7" primary="false"/>
+            <categoryLink name="Ø28mm" hidden="false" id="bb8c-d538-1908-df40" targetId="7faf-04a8-3770-87b5" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Commune blade" hidden="false" id="a3a9-13c1-fcbb-c499" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f126-db5d-c289-5e90" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ab93-b02f-5d4a-2d8f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Commune blade" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="9a61-d8d6-13cb-7ee9">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Frag &amp; Krak grenades" hidden="false" id="1aae-a503-6b35-a549" collective="false" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
+          </entryLinks>
+          <costs>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="Pts" typeId="points" value="5"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="6"/>
+        <cost name="Pts" typeId="points" value="120"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="49f6-ae14-84fd-9dd7" name="Infantry Special Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="a097-eccd-fb63-83ce">
@@ -24938,6 +25336,238 @@ If this model would lose a wound as the result of a mortal wound during other ph
             <cost name="Pts" typeId="points" value="30"/>
             <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Discipline of the Dark Hereticus" id="02e5-246c-098a-37a0" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="11 - Infernal Gaze" hidden="false" id="34b7-a8b4-32f3-1fd9" collective="false">
+          <comment>GAZE OF HATE</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7320-c7bd-226d-5088" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Infernal Gaze" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="bdbf-a235-2ffc-c085">
+              <characteristics>
+                <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">5</characteristic>
+                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
+                <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Witchfire: Infernal Gaze has a warp charge value of 5. If manifested, select one enemy unit within 18&quot; of and visible to this PSYKER and roll three D6. For each 4+, that enemy unit suffers 1 mortal wound. If the result of the Psychic test was an unmodified 10+, roll six D6 instead.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="Pts" typeId="points" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="12 - Prescience" hidden="false" id="24fc-3196-b210-58b5" collective="false">
+          <comment>EMPYRIC GUIDANCE</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f24-e1e7-7387-bd96" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Prescience" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="7fcd-1c31-413d-aa21">
+              <characteristics>
+                <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">7</characteristic>
+                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
+                <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Blessing: Prescience has a warp charge value of 7. If manifested, select one friendly &lt;LEGION&gt; unit within 18&quot; of this PSYKER. Until the start of your next Psychic phase, each time a model in that unit makes an attack, add 1 to that attack’s hit roll.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="Pts" typeId="points" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="13 - Diabolic Strength" hidden="false" id="4dfc-5e65-0630-cb0a" collective="false">
+          <comment>SWELLED BY THE WARP</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1e3-e10e-1bae-046f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Diabolic Strength" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="d97b-2d1f-d51b-a1c6">
+              <characteristics>
+                <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
+                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">12&quot;</characteristic>
+                <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Blessing: Diabolic Strength has a warp charge value of 6. If manifested, select one friendly &lt;LEGION&gt; INFANTRY or CHAOS SPAWN model within 12&quot; of this PSYKER. Until the start of your next Psychic phase, add 2 to the Strength and Attacks characteristics of that model.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="Pts" typeId="points" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="21 - Death Hex" hidden="true" id="091d-4e6e-b8b1-004e" collective="false">
+          <comment>TWIST OF FATE</comment>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="bb2c-ed02-4e2c-f362" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c742-100a-3779-39e3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Death Hex" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="5491-a13c-f2af-947a">
+              <characteristics>
+                <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">8</characteristic>
+                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">12&quot;</characteristic>
+                <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Malediction: Death Hex has a warp charge value of 8. If manifested, select one enemy unit within 12&quot; of this PSYKER. Until the start of your next Psychic phase, models in that unit cannot use any invulnerable saves.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="Pts" typeId="points" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="22 - Gift of Chaos" hidden="true" id="859b-ee66-bafb-6e83" collective="false">
+          <comment>DARK BLESSING</comment>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="bb2c-ed02-4e2c-f362" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d31-e179-b3d7-5803" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Gift of Chaos" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="738b-2ba1-bbb8-8454">
+              <characteristics>
+                <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">7</characteristic>
+                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
+                <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Witchfire: Gift of Chaos has a warp charge value of 7. If manifested, the closest enemy unit within 18&quot; of and visible to this PSYKER suffers D3 mortal wounds, and you must roll one D6 for every other enemy unit within 6&quot; of that unit: on a 4+, the unit being rolled for suffers 1 mortal wound.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="Pts" typeId="points" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="23 - Warptime" hidden="true" id="20bb-8fa9-7936-e963" collective="false">
+          <comment>TEMPORAL SURGE</comment>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="bb2c-ed02-4e2c-f362" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d91f-fe42-7361-de86" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Warptime" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="80aa-fe86-7af0-acf4">
+              <characteristics>
+                <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
+                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">6&quot;</characteristic>
+                <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Blessing: Warptime has a warp charge value of 6. If manifested, select one friendly &lt;LEGION&gt; INFANTRY, BIKER, CAVALRY or BEAST unit within 6&quot; of this PSYKER. That unit can make a Normal Move (if that unit Advanced in your previous Movement phase, it still counts as having Advanced this turn).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="Pts" typeId="points" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="33 - Desecration of Worlds" hidden="true" id="4a5e-04b4-6a32-2a6c" collective="false">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="bb2c-ed02-4e2c-f362" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bbdd-d534-15d1-03e8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Desecration of Worlds" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="abfc-289d-cac0-0b20">
+              <characteristics>
+                <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">7</characteristic>
+                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">24&quot;</characteristic>
+                <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Malediction: Desecration of Worlds has a warp charge value of 7. If manifested, select one enemy unit within 24&quot; of and visible to this PSYKER. Until the start of your next Psychic phase, each time that unit makes a Normal Move, Advances, Falls Back or makes a charge move, roll one D6 for each model in that unit. For each result of 6, that unit suffers 1 mortal wound.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="Pts" typeId="points" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="32 - Psychic Stalk" hidden="true" id="ceea-6e3b-5232-9c64" collective="false">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="bb2c-ed02-4e2c-f362" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="394f-9cb6-7638-f78e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Psychic Stalk" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="f129-9b2b-cce0-b99e">
+              <characteristics>
+                <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
+                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
+                <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Witchfire: Psychic Stalk has a warp charge value of 6. If manifested, select one enemy unit that is not a VEHICLE, MONSTER or CHARACTER within 18&quot; of and visible to this PSYKER. Roll 2D6: if the result is greater than the unmodified Leadership characteristic of that unit, one model in that unit selected by your opponent is slain.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="Pts" typeId="points" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="31 - Dark Blessing" hidden="true" id="404b-173a-4f22-3289" collective="false">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="bb2c-ed02-4e2c-f362" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3543-5533-4778-ea98" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Dark Blessing" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="e88b-d25b-89b1-983d">
+              <characteristics>
+                <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">7</characteristic>
+                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
+                <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Witchfire: Dark Blessing has a warp charge value of 7. If manifested, select one enemy model within 6&quot; of and visible to this PYKER and roll one D6: if the result is greater than the target’s Toughness characteristic, its unit suffers D3+3 mortal wounds. If the target unit is slained by this power, and it had the CHARACTER Keyword, you can add a CHAOS SPAWN model to your army. Set up the CHAOS SPAWN model on the battlefield as close as possible to where the CHARACTER unit was destroyed and more than 1&quot; away from any enemy models.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="Pts" typeId="points" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
         </selectionEntry>
