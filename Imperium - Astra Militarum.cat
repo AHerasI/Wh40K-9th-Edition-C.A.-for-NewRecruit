@@ -16048,11 +16048,6 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
           <entryLinks>
             <entryLink import="true" name="Autopistol" hidden="false" id="6f1d-d05d-b81c-b3e0" collective="false" targetId="2940-1984-b9fa-0b34" type="selectionEntry"/>
             <entryLink import="true" name="Frag &amp; Krak grenades" hidden="false" id="e5dd-65bf-000e-0acf" collective="false" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
-            <entryLink import="true" name=" Character Definition" hidden="false" id="48c0-aef4-cddc-2b24" collective="false" targetId="b8e4-216c-16cc-4263" type="selectionEntryGroup">
-              <entryLinks>
-                <entryLink import="true" name="Daemonic Summoning Ritual" hidden="false" id="f95e-d56a-77df-7ff9" type="selectionEntryGroup" targetId="ac45-5667-2dca-c6d8"/>
-              </entryLinks>
-            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="points" value="20"/>
@@ -16200,6 +16195,162 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
                   </costs>
                 </selectionEntry>
               </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name=" Character Definition" id="0874-889e-8296-ccab" hidden="false" collective="false" import="true">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Warlord Traits" id="9613-e7f4-f8dc-b732" hidden="true" collective="false" import="true">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="15e7-ffe5-1f1b-384e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8235-3f08-e93a-c331" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Chaos" id="8b7a-5f1f-9f3a-212b" hidden="false" collective="false" import="true">
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="1: Flames of Spite" hidden="false" id="d259-1811-f650-de09" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd18-b46d-8350-f694" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f0f3-3b80-d791-67cf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Flames of Spite" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="3772-52b9-9880-b052">
+                              <characteristics>
+                                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Each time this WARLORD makes a melee attack, you can re-roll that attack’s wound roll.
+- Each time this WARLORD makes an attack, on an unmodified wound roll of 6, the target suffers 1 mortal wound in addition to any normal damage.</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <costs>
+                            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                            <cost name="Pts" typeId="points" value="0"/>
+                            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="2: Unholy Fortitude" hidden="false" id="7bda-9c75-0314-71be" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e48e-89b7-01ee-1a5c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d808-16bd-ded5-cf3d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Unholy Fortitude" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="11fc-c010-d9ae-4f44">
+                              <characteristics>
+                                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time this WARLORD would lose a wound, roll one D6: on a 5+, that wound is not lost.</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <costs>
+                            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                            <cost name="Pts" typeId="points" value="0"/>
+                            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="3: Hatred incarnate" hidden="false" id="18f0-ed62-aa20-d491" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5cf3-4ff6-ee4e-bd11" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="98d7-9059-e60a-0802" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Hatred incarnate" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="9d2e-15c3-8290-7b1e">
+                              <characteristics>
+                                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Each time this WARLORD fights, if it made a charge move or performed a Heroic Intervention this turn, until that fight is resolved, add 1 to the Strength and Attacks characteristics of this WARLORD.
+- Each time this WARLORD makes a melee attack, you can re-roll that attack’s hit roll</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <costs>
+                            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                            <cost name="Pts" typeId="points" value="0"/>
+                            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="4: Lord of Terror" hidden="false" id="2676-267c-158b-8dbf" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7279-2d27-f6d7-4b7a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="fcd1-ab4a-1c08-4007" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Lord of Terror [Aura]" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="c3eb-2aae-8f31-65cb">
+                              <characteristics>
+                                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While an enemy unit is within 6&quot; of this WARLORD:
+- Each time a Morale test is taken for that unit, your opponent must roll one additional D6 and discard the lowest result.
+- If that unit fails a Morale test, until the end of the phase, it is considered to be below Half-strength for the purposes of Combat Attrition tests.</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <costs>
+                            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                            <cost name="Pts" typeId="points" value="0"/>
+                            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="5: Eternal vendetta" hidden="false" id="490a-0eee-b9a6-d0c9" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e1c-4374-4e7b-2f7a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="06dd-c448-cfab-ea3e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Eternal vendetta" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="6ff9-b874-395f-5b7e">
+                              <characteristics>
+                                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the start of the first battle round, before the first turn begins, select one enemy unit. 
+Until the end of the battle, while a friendly &lt;LEGION&gt; CORE or &lt;LEGION&gt; CHARACTER unit is within 9&quot; of this WARLORD, each time a model in that &lt;LEGION&gt; unit makes an attack against that enemy unit, you can re-roll that attack’s wound roll.
+If the selected unit is destroyed, you can select another unit.</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <costs>
+                            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                            <cost name="Pts" typeId="points" value="0"/>
+                            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="6: Gaze of the Gods" hidden="false" id="788c-688e-7ded-0d79" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bf5-c869-33c0-9839" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="32e2-d51f-047a-0645" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Gaze of the Gods" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="b8e5-8af9-65f7-629c">
+                              <characteristics>
+                                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This WARLORD has a 4+ invulnerable save.
+Re-roll Invulnerable saving throws of 1 for this WARLORD.</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <costs>
+                            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                            <cost name="Pts" typeId="points" value="0"/>
+                            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name=" Warlord" hidden="false" id="ea30-55ff-9d0e-54b8" collective="false" targetId="15e7-ffe5-1f1b-384e" type="selectionEntry">
+                  <profiles>
+                    <profile name=" Field promotion" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="b2c2-8207-744e-d802">
+                      <characteristics>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">When the WARLORD is destroyed, select any ASTRA MILITARUM CHARACTER model which is on the Battlefield. 
+Roll one D6 to set a random Warlord trait from the Astra Militarum Warlord Traits table.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </entryLink>
+                <entryLink import="true" name="Daemonic Summoning Ritual" hidden="false" id="f95e-d56a-77df-7ff9" type="selectionEntryGroup" targetId="ac45-5667-2dca-c6d8"/>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <modifiers>
