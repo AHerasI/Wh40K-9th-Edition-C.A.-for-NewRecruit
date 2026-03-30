@@ -1292,8 +1292,22 @@ Inflict D3 mortal wounds on this model and select one result from the Daemonic S
                   </conditionGroups>
                   <modifiers>
                     <modifier type="set" field="e7f0-1278-0250-df0c" value="2+"/>
-                    <modifier type="set" field="13fc-b29b-31f2-ab9f" value="4"/>
                   </modifiers>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="9bec-7323-e77c-ca31" childId="5903-0de3-de22-76f0" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="9bec-7323-e77c-ca31" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <comment>Attacks</comment>
                 </modifierGroup>
               </modifierGroups>
             </modifierGroup>
@@ -1332,8 +1346,22 @@ Inflict D3 mortal wounds on this model and select one result from the Daemonic S
                   </conditionGroups>
                   <modifiers>
                     <modifier type="set" field="e7f0-1278-0250-df0c" value="3+"/>
-                    <modifier type="set" field="13fc-b29b-31f2-ab9f" value="4"/>
                   </modifiers>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="9bec-7323-e77c-ca31" childId="5903-0de3-de22-76f0" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="9bec-7323-e77c-ca31" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <comment>Attacks</comment>
                 </modifierGroup>
               </modifierGroups>
             </modifierGroup>
@@ -1372,8 +1400,22 @@ Inflict D3 mortal wounds on this model and select one result from the Daemonic S
                   </conditionGroups>
                   <modifiers>
                     <modifier type="set" field="e7f0-1278-0250-df0c" value="4+"/>
-                    <modifier type="set" field="13fc-b29b-31f2-ab9f" value="4"/>
                   </modifiers>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="9bec-7323-e77c-ca31" childId="5903-0de3-de22-76f0" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="9bec-7323-e77c-ca31" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <comment>Attacks</comment>
                 </modifierGroup>
               </modifierGroups>
             </modifierGroup>
@@ -1946,6 +1988,11 @@ Each time an attack is made with this weapon, invulnerable saving throws cannot 
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="eb20-d9a7-91d9-bab1" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <modifierGroups>
                 <modifierGroup>
@@ -1972,13 +2019,18 @@ Each time an attack is made with this weapon, invulnerable saving throws cannot 
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
         </profile>
-        <profile id="34c6-2b2d-c289-8327" name="Knight Desecrator [2] (7-12 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="34c6-2b2d-c289-8327" name="Knight Desecrator [2] (7-12 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <modifierGroups>
             <modifierGroup>
               <modifiers>
                 <modifier type="increment" field="f330-5e6e-4110-0978" value="2">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="eb20-d9a7-91d9-bab1" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2007,13 +2059,18 @@ Each time an attack is made with this weapon, invulnerable saving throws cannot 
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
         </profile>
-        <profile id="60e5-1360-51ab-f1da" name="Knight Desecrator [3] (1-6 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="60e5-1360-51ab-f1da" name="Knight Desecrator [3] (1-6 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <modifierGroups>
             <modifierGroup>
               <modifiers>
                 <modifier type="increment" field="f330-5e6e-4110-0978" value="2">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="eb20-d9a7-91d9-bab1" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2182,13 +2239,18 @@ Each time an attack is made with this weapon, invulnerable saving throws cannot 
         </modifierGroup>
       </modifierGroups>
       <profiles>
-        <profile id="c31c-0134-faaf-30d3" name="Knight Despoiler [1] (13+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="c31c-0134-faaf-30d3" name="Knight Despoiler [1] (13+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <modifierGroups>
             <modifierGroup>
               <modifiers>
                 <modifier type="increment" field="f330-5e6e-4110-0978" value="2">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="4c42-e236-77f4-f53d" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2226,6 +2288,11 @@ Each time an attack is made with this weapon, invulnerable saving throws cannot 
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="4c42-e236-77f4-f53d" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <modifierGroups>
                 <modifierGroup>
@@ -2259,6 +2326,11 @@ Each time an attack is made with this weapon, invulnerable saving throws cannot 
                 <modifier type="increment" field="f330-5e6e-4110-0978" value="2">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="4c42-e236-77f4-f53d" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2485,13 +2557,18 @@ Each time an attack is made with this weapon, invulnerable saving throws cannot 
         </modifierGroup>
       </modifierGroups>
       <profiles>
-        <profile id="4955-a35d-931b-d963" name="Knight Rampager [1] (13+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="4955-a35d-931b-d963" name="Knight Rampager [1] (13+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <modifierGroups>
             <modifierGroup>
               <modifiers>
                 <modifier type="increment" field="f330-5e6e-4110-0978" value="2">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="d662-a9dc-84f8-f64b" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2520,13 +2597,18 @@ Each time an attack is made with this weapon, invulnerable saving throws cannot 
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
         </profile>
-        <profile id="dbfc-a61e-6552-58ab" name="Knight Rampager [2] (7-12 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="dbfc-a61e-6552-58ab" name="Knight Rampager [2] (7-12 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <modifierGroups>
             <modifierGroup>
               <modifiers>
                 <modifier type="increment" field="f330-5e6e-4110-0978" value="2">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="d662-a9dc-84f8-f64b" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2562,6 +2644,11 @@ Each time an attack is made with this weapon, invulnerable saving throws cannot 
                 <modifier type="increment" field="f330-5e6e-4110-0978" value="2">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="d662-a9dc-84f8-f64b" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2739,6 +2826,11 @@ Each time an attack is made with this weapon, invulnerable saving throws cannot 
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="098d-b1f8-1684-af63" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <modifierGroups>
                 <modifierGroup>
@@ -2774,6 +2866,11 @@ Each time an attack is made with this weapon, invulnerable saving throws cannot 
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="098d-b1f8-1684-af63" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <modifierGroups>
                 <modifierGroup>
@@ -2807,6 +2904,11 @@ Each time an attack is made with this weapon, invulnerable saving throws cannot 
                 <modifier type="increment" field="f330-5e6e-4110-0978" value="2">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="098d-b1f8-1684-af63" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -3189,6 +3291,11 @@ Each time an attack made with this weapon is allocated to a model, that model’
                                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
                               </conditions>
                             </modifier>
+                            <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="6da0-b3ed-0139-ae8c" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                              </conditions>
+                            </modifier>
                           </modifiers>
                           <modifierGroups>
                             <modifierGroup>
@@ -3224,6 +3331,11 @@ Each time an attack made with this weapon is allocated to a model, that model’
                                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
                               </conditions>
                             </modifier>
+                            <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="6da0-b3ed-0139-ae8c" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                              </conditions>
+                            </modifier>
                           </modifiers>
                           <modifierGroups>
                             <modifierGroup>
@@ -3257,6 +3369,11 @@ Each time an attack made with this weapon is allocated to a model, that model’
                             <modifier type="increment" field="f330-5e6e-4110-0978" value="1">
                               <conditions>
                                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
+                              </conditions>
+                            </modifier>
+                            <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="6da0-b3ed-0139-ae8c" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                               </conditions>
                             </modifier>
                           </modifiers>
@@ -3438,6 +3555,11 @@ Each time an attack made with this weapon is allocated to a model, that model’
                                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
                               </conditions>
                             </modifier>
+                            <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="aff9-b98d-1973-ef88" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                              </conditions>
+                            </modifier>
                           </modifiers>
                           <modifierGroups>
                             <modifierGroup>
@@ -3473,6 +3595,11 @@ Each time an attack made with this weapon is allocated to a model, that model’
                                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
                               </conditions>
                             </modifier>
+                            <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="aff9-b98d-1973-ef88" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                              </conditions>
+                            </modifier>
                           </modifiers>
                           <modifierGroups>
                             <modifierGroup>
@@ -3506,6 +3633,11 @@ Each time an attack made with this weapon is allocated to a model, that model’
                             <modifier type="increment" field="f330-5e6e-4110-0978" value="1">
                               <conditions>
                                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
+                              </conditions>
+                            </modifier>
+                            <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="aff9-b98d-1973-ef88" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                               </conditions>
                             </modifier>
                           </modifiers>
@@ -3681,6 +3813,11 @@ Each time an attack made with this weapon is allocated to a model, that model’
                                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
                               </conditions>
                             </modifier>
+                            <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="6658-2671-3c9c-236b" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                              </conditions>
+                            </modifier>
                           </modifiers>
                           <modifierGroups>
                             <modifierGroup>
@@ -3716,6 +3853,11 @@ Each time an attack made with this weapon is allocated to a model, that model’
                                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
                               </conditions>
                             </modifier>
+                            <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="6658-2671-3c9c-236b" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                              </conditions>
+                            </modifier>
                           </modifiers>
                           <modifierGroups>
                             <modifierGroup>
@@ -3749,6 +3891,11 @@ Each time an attack made with this weapon is allocated to a model, that model’
                             <modifier type="increment" field="f330-5e6e-4110-0978" value="1">
                               <conditions>
                                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
+                              </conditions>
+                            </modifier>
+                            <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="6658-2671-3c9c-236b" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                               </conditions>
                             </modifier>
                           </modifiers>
@@ -3930,6 +4077,11 @@ Each time an attack made with this weapon is allocated to a model, that model’
                                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
                               </conditions>
                             </modifier>
+                            <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="9d59-d02e-6c1c-ef07" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                              </conditions>
+                            </modifier>
                           </modifiers>
                           <modifierGroups>
                             <modifierGroup>
@@ -3965,6 +4117,11 @@ Each time an attack made with this weapon is allocated to a model, that model’
                                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
                               </conditions>
                             </modifier>
+                            <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="9d59-d02e-6c1c-ef07" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                              </conditions>
+                            </modifier>
                           </modifiers>
                           <modifierGroups>
                             <modifierGroup>
@@ -3998,6 +4155,11 @@ Each time an attack made with this weapon is allocated to a model, that model’
                             <modifier type="increment" field="f330-5e6e-4110-0978" value="1">
                               <conditions>
                                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
+                              </conditions>
+                            </modifier>
+                            <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="9d59-d02e-6c1c-ef07" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                               </conditions>
                             </modifier>
                           </modifiers>
@@ -4179,6 +4341,11 @@ Each time an attack made with this weapon is allocated to a model, that model’
                                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
                               </conditions>
                             </modifier>
+                            <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="8033-851d-fc9b-c491" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                              </conditions>
+                            </modifier>
                           </modifiers>
                           <modifierGroups>
                             <modifierGroup>
@@ -4214,6 +4381,11 @@ Each time an attack made with this weapon is allocated to a model, that model’
                                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
                               </conditions>
                             </modifier>
+                            <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="8033-851d-fc9b-c491" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                              </conditions>
+                            </modifier>
                           </modifiers>
                           <modifierGroups>
                             <modifierGroup>
@@ -4247,6 +4419,11 @@ Each time an attack made with this weapon is allocated to a model, that model’
                             <modifier type="increment" field="f330-5e6e-4110-0978" value="1">
                               <conditions>
                                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
+                              </conditions>
+                            </modifier>
+                            <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="8033-851d-fc9b-c491" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                               </conditions>
                             </modifier>
                           </modifiers>
@@ -4442,6 +4619,11 @@ Each time an attack made with this weapon is allocated to a model, that model’
                                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
                               </conditions>
                             </modifier>
+                            <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="6451-2d17-399a-2d42" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                              </conditions>
+                            </modifier>
                           </modifiers>
                           <modifierGroups>
                             <modifierGroup>
@@ -4477,6 +4659,11 @@ Each time an attack made with this weapon is allocated to a model, that model’
                                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
                               </conditions>
                             </modifier>
+                            <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="6451-2d17-399a-2d42" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                              </conditions>
+                            </modifier>
                           </modifiers>
                           <modifierGroups>
                             <modifierGroup>
@@ -4510,6 +4697,11 @@ Each time an attack made with this weapon is allocated to a model, that model’
                             <modifier type="increment" field="f330-5e6e-4110-0978" value="1">
                               <conditions>
                                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
+                              </conditions>
+                            </modifier>
+                            <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="6451-2d17-399a-2d42" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                               </conditions>
                             </modifier>
                           </modifiers>
@@ -4822,6 +5014,11 @@ Each time an attack made with this weapon is allocated to a model, that model’
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="39ed-b8c3-9394-7f4c" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <modifierGroups>
                 <modifierGroup>
@@ -4857,6 +5054,11 @@ Each time an attack made with this weapon is allocated to a model, that model’
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="39ed-b8c3-9394-7f4c" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <modifierGroups>
                 <modifierGroup>
@@ -4883,13 +5085,18 @@ Each time an attack made with this weapon is allocated to a model, that model’
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
         </profile>
-        <profile id="8518-c93c-36d0-8c91" name="Knight Asterius [3] (1-7 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="8518-c93c-36d0-8c91" name="Knight Asterius [3] (1-7 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <modifierGroups>
             <modifierGroup>
               <modifiers>
                 <modifier type="increment" field="f330-5e6e-4110-0978" value="2">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="39ed-b8c3-9394-7f4c" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5124,6 +5331,11 @@ Each time an attack made with this weapon is allocated to a model, that model’
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="da82-189e-d953-6153" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <modifierGroups>
                 <modifierGroup>
@@ -5159,6 +5371,11 @@ Each time an attack made with this weapon is allocated to a model, that model’
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="da82-189e-d953-6153" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <modifierGroups>
                 <modifierGroup>
@@ -5192,6 +5409,11 @@ Each time an attack made with this weapon is allocated to a model, that model’
                 <modifier type="increment" field="f330-5e6e-4110-0978" value="2">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="da82-189e-d953-6153" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5459,13 +5681,18 @@ Each time an attack made with this weapon is allocated to a model, that model’
         </modifierGroup>
       </modifierGroups>
       <profiles>
-        <profile id="cbb4-97b3-db7d-b29c" name="Knight Acheron [1] (15+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="cbb4-97b3-db7d-b29c" name="Knight Acheron [1] (15+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <modifierGroups>
             <modifierGroup>
               <modifiers>
                 <modifier type="increment" field="f330-5e6e-4110-0978" value="2">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="17bb-8ce2-42f7-c0ff" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5496,13 +5723,18 @@ Each time an attack made with this weapon is allocated to a model, that model’
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
         </profile>
-        <profile id="f592-9445-a6e6-6915" name="Knight Acheron [2] (7-13 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="f592-9445-a6e6-6915" name="Knight Acheron [2] (7-13 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <modifierGroups>
             <modifierGroup>
               <modifiers>
                 <modifier type="increment" field="f330-5e6e-4110-0978" value="2">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="17bb-8ce2-42f7-c0ff" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5533,13 +5765,18 @@ Each time an attack made with this weapon is allocated to a model, that model’
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
         </profile>
-        <profile id="cf4d-7493-9d1e-1b30" name="Knight Acheron [3] (1-6 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="cf4d-7493-9d1e-1b30" name="Knight Acheron [3] (1-6 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <modifierGroups>
             <modifierGroup>
               <modifiers>
                 <modifier type="increment" field="f330-5e6e-4110-0978" value="2">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="17bb-8ce2-42f7-c0ff" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5758,6 +5995,11 @@ Each time an attack made with this weapon is allocated to a model, that model’
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="c80f-b288-09b9-22e0" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <modifierGroups>
                 <modifierGroup>
@@ -5795,6 +6037,11 @@ Each time an attack made with this weapon is allocated to a model, that model’
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="c80f-b288-09b9-22e0" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <modifierGroups>
                 <modifierGroup>
@@ -5830,6 +6077,11 @@ Each time an attack made with this weapon is allocated to a model, that model’
                 <modifier type="increment" field="f330-5e6e-4110-0978" value="2">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="c80f-b288-09b9-22e0" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6057,6 +6309,11 @@ Each time an attack made with this weapon is allocated to a model, that model’
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="a17b-adb2-a753-450d" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <modifierGroups>
                 <modifierGroup>
@@ -6094,6 +6351,11 @@ Each time an attack made with this weapon is allocated to a model, that model’
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="a17b-adb2-a753-450d" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <modifierGroups>
                 <modifierGroup>
@@ -6129,6 +6391,11 @@ Each time an attack made with this weapon is allocated to a model, that model’
                 <modifier type="increment" field="f330-5e6e-4110-0978" value="2">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="a17b-adb2-a753-450d" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6350,6 +6617,11 @@ Each time an attack made with this weapon is allocated to a model, that model’
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="025c-62a4-63b7-f2a2" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <modifierGroups>
                 <modifierGroup>
@@ -6387,6 +6659,11 @@ Each time an attack made with this weapon is allocated to a model, that model’
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="025c-62a4-63b7-f2a2" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <modifierGroups>
                 <modifierGroup>
@@ -6422,6 +6699,11 @@ Each time an attack made with this weapon is allocated to a model, that model’
                 <modifier type="increment" field="f330-5e6e-4110-0978" value="2">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="025c-62a4-63b7-f2a2" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6644,6 +6926,11 @@ Each time a TITANIC unit makes a melee attack that targets this model, subtract 
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="a7d6-ec64-5711-8b9a" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <modifierGroups>
                 <modifierGroup>
@@ -6681,6 +6968,11 @@ Each time a TITANIC unit makes a melee attack that targets this model, subtract 
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="a7d6-ec64-5711-8b9a" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <modifierGroups>
                 <modifierGroup>
@@ -6716,6 +7008,11 @@ Each time a TITANIC unit makes a melee attack that targets this model, subtract 
                 <modifier type="increment" field="f330-5e6e-4110-0978" value="2">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="a7d6-ec64-5711-8b9a" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6948,13 +7245,18 @@ Each time a TITANIC unit makes a melee attack that targets this model, subtract 
         </modifierGroup>
       </modifierGroups>
       <profiles>
-        <profile id="214f-e4f2-3f75-9529" name="Knight Styrix [1] (13+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="214f-e4f2-3f75-9529" name="Knight Styrix [1] (13+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <modifierGroups>
             <modifierGroup>
               <modifiers>
                 <modifier type="increment" field="f330-5e6e-4110-0978" value="2">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="4d16-6fc4-f8e1-9ef5" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6994,6 +7296,11 @@ Each time a TITANIC unit makes a melee attack that targets this model, subtract 
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="4d16-6fc4-f8e1-9ef5" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <modifierGroups>
                 <modifierGroup>
@@ -7029,6 +7336,11 @@ Each time a TITANIC unit makes a melee attack that targets this model, subtract 
                 <modifier type="increment" field="f330-5e6e-4110-0978" value="2">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="4d16-6fc4-f8e1-9ef5" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7718,6 +8030,11 @@ Each time a TITANIC unit makes a melee attack that targets this model, subtract 
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="f95f-fed4-cd7d-e771" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <modifierGroups>
                 <modifierGroup>
@@ -7753,6 +8070,11 @@ Each time a TITANIC unit makes a melee attack that targets this model, subtract 
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="f95f-fed4-cd7d-e771" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <modifierGroups>
                 <modifierGroup>
@@ -7779,13 +8101,18 @@ Each time a TITANIC unit makes a melee attack that targets this model, subtract 
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
         </profile>
-        <profile id="5f2d-4375-a1ee-517f" name="Knight Ruinator [3] (1-6 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="5f2d-4375-a1ee-517f" name="Knight Ruinator [3] (1-6 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <modifierGroups>
             <modifierGroup>
               <modifiers>
                 <modifier type="increment" field="f330-5e6e-4110-0978" value="2">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d9e-e608-2ce8-7fba" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="f95f-fed4-cd7d-e771" childId="92fe-641e-abcb-c009" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
