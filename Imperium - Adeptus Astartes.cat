@@ -19176,7 +19176,7 @@ Each JUMP PACK, GRAVIS or TERMINATOR model takes the space of two other models a
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="3834-c2aa-0c4a-b931" name="Redemptor Dreadnought [2] (4-7+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+                <profile id="3834-c2aa-0c4a-b931" name="Redemptor Dreadnought [2] (4-7+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
@@ -19433,6 +19433,18 @@ Each JUMP PACK, GRAVIS or TERMINATOR model takes the space of two other models a
                         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                       </costs>
+                      <modifiers>
+                        <modifier type="set" value="1" field="e356-c769-5920-6e14">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="equalTo" value="0" field="selections" scope="b0b5-7de4-72d4-805e" childId="d691-91d9-76e1-b276" shared="true" includeChildSelections="true"/>
+                                <condition type="equalTo" value="0" field="selections" scope="b0b5-7de4-72d4-805e" childId="f74f-8bb9-7448-707c" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
                     </selectionEntry>
                     <selectionEntry id="478f-9996-f738-de7e" name="2x Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
                       <entryLinks>
@@ -27070,7 +27082,7 @@ Each JUMP PACK or TERMINATOR model takes the space of two other models and each 
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
         </profile>
-        <profile id="5fc1-6cb6-81e8-8cbf" name="Sicaran [2] (5-7 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="5fc1-6cb6-81e8-8cbf" name="Sicaran [2] (5-7 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
@@ -27083,7 +27095,7 @@ Each JUMP PACK or TERMINATOR model takes the space of two other models and each 
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
         </profile>
-        <profile id="90a7-29ee-30e3-58e4" name="Sicaran [3] (1-4 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="90a7-29ee-30e3-58e4" name="Sicaran [3] (1-4 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">4&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
@@ -27274,24 +27286,30 @@ Each JUMP PACK or TERMINATOR model takes the space of two other models and each 
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0939-f7a6-5e82-feb5" name="Turreted Twin Heavy Autocannon" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="0939-f7a6-5e82-feb5" name="Turreted Hades Autocannon" hidden="false" collective="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink id="01cb-4667-357c-9fea" name="Turret-mounted" hidden="false" targetId="f28c-7e4e-75e1-2474" primary="false"/>
               </categoryLinks>
-              <entryLinks>
-                <entryLink id="8a8a-edf7-75ef-392c" name="Twin Heavy Autocannon" hidden="false" collective="false" import="true" targetId="3d80-09da-5fa8-677f" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e108-ae07-5f81-c955" type="max"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd83-15b1-254b-39a4" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
               <costs>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="Pts" typeId="points" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Twin Heavy Autocannon" id="ecee-8c72-7dc7-2b99" hidden="false" targetId="0cac-6923-eeeb-9ace" type="profile">
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Hades</comment>
+                      <modifiers>
+                        <modifier type="set" value="Twin Icarus Heavy Autocannon" field="name"/>
+                        <modifier type="set" value="Twin Icarus Heavy Autocannon" field="name"/>
+                        <modifier type="set" value="Icarus Weapons ignore the Hard to hit ability." field="837d-5e63-aeb7-1410"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </infoLink>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry id="4a3e-094e-003c-5079" name="Hull-mounted Neutron Projector" hidden="false" collective="false" import="true" type="upgrade">
               <categoryLinks>
