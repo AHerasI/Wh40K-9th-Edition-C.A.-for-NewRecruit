@@ -19429,17 +19429,17 @@ Each JUMP PACK, GRAVIS or TERMINATOR model takes the space of two other models a
                       </entryLinks>
                       <costs>
                         <cost name="Pts" typeId="points" value="30"/>
-                        <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
                         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                       </costs>
                       <modifiers>
-                        <modifier type="set" value="1" field="e356-c769-5920-6e14">
+                        <modifier type="set" value="2" field="e356-c769-5920-6e14">
                           <conditionGroups>
-                            <conditionGroup type="and">
+                            <conditionGroup type="or">
                               <conditions>
-                                <condition type="equalTo" value="0" field="selections" scope="b0b5-7de4-72d4-805e" childId="d691-91d9-76e1-b276" shared="true" includeChildSelections="true"/>
-                                <condition type="equalTo" value="0" field="selections" scope="b0b5-7de4-72d4-805e" childId="f74f-8bb9-7448-707c" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="b0b5-7de4-72d4-805e" childId="d691-91d9-76e1-b276" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="b0b5-7de4-72d4-805e" childId="f74f-8bb9-7448-707c" shared="true" includeChildSelections="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
