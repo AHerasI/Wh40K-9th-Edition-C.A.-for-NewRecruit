@@ -16300,7 +16300,7 @@ Each model can only be corrupted once per turn.</characteristic>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="6708-8742-4e08-5ee9" name="Main Weapon option" hidden="false" collective="false" import="true" defaultSelectionEntryId="830a-0f6e-1a54-a38a">
+        <selectionEntryGroup id="6708-8742-4e08-5ee9" name="Main Weapon option" hidden="false" collective="false" import="true" defaultSelectionEntryId="e5a4-1c59-eb64-81f0">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="807a-eab9-3079-a08a" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bfd-6b12-1d3c-6924" type="min"/>
@@ -16329,25 +16329,6 @@ Each model can only be corrupted once per turn.</characteristic>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="Pts" typeId="points" value="10"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="830a-0f6e-1a54-a38a" name="Turreted Twin Heavy Autocannon" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3287-41c0-e699-3bec" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="e797-2b16-7ab0-204f" name="Twin Heavy Autocannon" hidden="false" collective="false" import="true" targetId="3d80-09da-5fa8-677f" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3008-64ef-5c8a-185b" type="max"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab33-352e-6371-fc65" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>
@@ -16449,6 +16430,31 @@ Each model can only be corrupted once per turn.</characteristic>
                 <cost name="Pts" typeId="points" value="60"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Turreted Hades Autocannon" hidden="false" id="e5a4-1c59-eb64-81f0" collective="false">
+              <categoryLinks>
+                <categoryLink name="Turret-mounted" hidden="false" id="f1cf-11dd-323d-f94b" targetId="f28c-7e4e-75e1-2474" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Twin Heavy Autocannon" id="859f-0387-dd5d-ea45" hidden="false" targetId="0cac-6923-eeeb-9ace" type="profile">
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Hades</comment>
+                      <modifiers>
+                        <modifier type="set" value="Heavy 12" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2"/>
+                        <modifier type="set" value="Hades Autocannon" field="name"/>
+                        <modifier type="set" value="This weapon ignore the Hard to hit ability." field="837d-5e63-aeb7-1410"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </infoLink>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>

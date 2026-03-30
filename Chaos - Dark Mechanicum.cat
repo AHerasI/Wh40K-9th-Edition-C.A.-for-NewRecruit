@@ -17914,7 +17914,7 @@ At the start of your Command phase, you can select one of the following:
         </modifierGroup>
       </modifierGroups>
       <profiles>
-        <profile id="26a9-c411-0f82-3ddf" name="Sicaran [1] (8+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="26a9-c411-0f82-3ddf" name="Sicaran [1] (8+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">14&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
@@ -18064,7 +18064,7 @@ At the start of your Command phase, you can select one of the following:
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="f7ba-8e0e-559f-83b5" name="Main Weapon option" hidden="false" collective="false" import="true" defaultSelectionEntryId="5773-ceba-8db0-7821">
+        <selectionEntryGroup id="f7ba-8e0e-559f-83b5" name="Main Weapon option" hidden="false" collective="false" import="true" defaultSelectionEntryId="b94f-a8b6-b686-c3fc">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e811-cf31-92be-4963" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca75-0c06-8e26-2294" type="min"/>
@@ -18096,25 +18096,6 @@ At the start of your Command phase, you can select one of the following:
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="5773-ceba-8db0-7821" name="Turreted Twin Heavy Autocannon" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f2d-0d98-a6fa-856a" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="197b-a0d1-ec93-78e7" name="Twin Heavy Autocannon" hidden="false" collective="false" import="true" targetId="3d80-09da-5fa8-677f" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c81-895d-9dcd-3afe" type="max"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12d0-49b7-809f-02ef" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="9095-64ab-ae1e-9ffa" name="Hull-mounted Neutron Projector" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a5a-0786-2ed1-4c39" type="max"/>
@@ -18137,6 +18118,31 @@ At the start of your Command phase, you can select one of the following:
                 <cost name="Pts" typeId="points" value="30"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Turreted Hades Autocannon" hidden="false" id="b94f-a8b6-b686-c3fc" collective="false">
+              <categoryLinks>
+                <categoryLink name="Turret-mounted" hidden="false" id="4261-0d63-92e5-8ce0" targetId="f28c-7e4e-75e1-2474" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Twin Heavy Autocannon" id="a1d8-c6bc-9487-5a7d" hidden="false" targetId="0cac-6923-eeeb-9ace" type="profile">
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Hades</comment>
+                      <modifiers>
+                        <modifier type="set" value="Heavy 12" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2"/>
+                        <modifier type="set" value="Hades Autocannon" field="name"/>
+                        <modifier type="set" value="This weapon ignore the Hard to hit ability." field="837d-5e63-aeb7-1410"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </infoLink>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
