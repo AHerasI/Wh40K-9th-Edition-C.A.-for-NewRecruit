@@ -921,13 +921,6 @@ Unless otherwise stated, a unit can only be given one Order of each type, each p
         </profile>
       </profiles>
     </categoryEntry>
-    <categoryEntry id="1724-9147-143d-875e" name="Platoon" hidden="false">
-      <rules>
-        <rule id="a490-5e92-b627-c686" name="Platoon" hidden="false">
-          <description>The first time this unit is set up, all squads in this unit must be placed within 3&quot; of each other. From that point onwards, each squad operates independently and is treated as a separate unit for all rules purposes.</description>
-        </rule>
-      </rules>
-    </categoryEntry>
     <categoryEntry id="c93e-e4e5-1298-204c" name="Astra Militarum Auxilia" hidden="false">
       <profiles>
         <profile id="1164-8c51-cd2e-50b9" name="Auxilia Vox Range" hidden="true" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -981,26 +974,6 @@ Unless otherwise stated, a unit can only be given one Order of each type, each p
       </profiles>
     </categoryEntry>
     <categoryEntry id="ffb2-0540-4815-57ea" name="Faction: Adeptus Arbites" hidden="false"/>
-    <categoryEntry id="40ff-8241-e4a3-8dc7" name="Cultists" hidden="false">
-      <profiles>
-        <profile id="fdb2-9c24-b40d-1a02" name="[Action] Rites for the Dark Gods" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This unit can start this action at the beggining of the movement phase, it ends at the end of your next Command phase.
-During the action, units within 6&quot; can use an additional D6 and discard a D6 in:
- - Daemon summoning ritual
- - Psychic check
- - Posessed Unleash check
-For each additional D6 used, the unit suffers a mortal wound.
-This action will inmediatly fail if a Morale check is failed, or if a enemy unit is in engagement range of the unit performing the action.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="553f-e4d7-b4ca-98df" name="Mere mortals" hidden="false">
-          <description>You cannot include more CULTISTS units than CHAOTIC ASTARTES units in each CHAOS LEGIONS Detachment in your army.</description>
-        </rule>
-      </rules>
-    </categoryEntry>
     <categoryEntry id="62d9-3cd6-aed7-34fe" name="Chaotic Astartes" hidden="false">
       <profiles>
         <profile id="1cf9-2227-447e-5320" name="Wanton acts" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -16080,9 +16053,9 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
           <categoryLinks>
             <categoryLink name="Infantry" hidden="false" id="923e-0f06-862a-ea57" targetId="3d52-fccf-10c0-3fae" primary="false"/>
             <categoryLink name="Dark Priest" hidden="false" id="9efe-c82b-1b4c-caa2" targetId="9179-1ae8-54eb-1abd" primary="false"/>
-            <categoryLink name="Cultists" hidden="false" id="f63f-1803-2f40-c69a" targetId="40ff-8241-e4a3-8dc7" primary="false"/>
             <categoryLink name="Faction: Chaos" hidden="false" id="0bb4-07d7-7d2a-4750" targetId="5cf1-acf2-ca3b-c2e5" primary="false"/>
             <categoryLink name="Faction: Chaos Servants" hidden="false" id="adf0-9f7c-8805-7273" targetId="39bd-1989-42e4-056c" primary="false"/>
+            <categoryLink name="Cultists" hidden="false" id="fa7b-9265-cb02-6fdc" targetId="40ff-8241-e4a3-8dc7" primary="false"/>
           </categoryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Commune stave" hidden="false" id="cb75-b338-a7f2-b7c2" collective="false">
@@ -25269,7 +25242,7 @@ Re-roll Invulnerable saving throws of 1 for this WARLORD.</characteristic>
           </profiles>
           <categoryLinks>
             <categoryLink id="74d7-c68f-4406-12c3" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
-            <categoryLink id="0308-5cc9-44fc-0a4f" name="Cultists" hidden="false" targetId="40ff-8241-e4a3-8dc7" primary="false"/>
+            <categoryLink name="Cultists" hidden="false" id="d65f-ac74-5cad-92b1" targetId="40ff-8241-e4a3-8dc7" primary="false"/>
           </categoryLinks>
           <entryLinks>
             <entryLink id="38ea-b7da-4d8f-a16c" name="Brutal Blunt Weapon" hidden="false" collective="false" import="true" targetId="081c-569c-a2f8-b7df" type="selectionEntry"/>
@@ -25438,8 +25411,8 @@ Re-roll Invulnerable saving throws of 1 for this WARLORD.</characteristic>
           </profiles>
           <categoryLinks>
             <categoryLink name="Infantry" hidden="false" id="f703-353c-107d-2882" targetId="3d52-fccf-10c0-3fae" primary="false"/>
-            <categoryLink name="Cultists" hidden="false" id="66d6-9c54-b3de-e4fc" targetId="40ff-8241-e4a3-8dc7" primary="false"/>
             <categoryLink name="Ø32mm" hidden="false" id="f190-77b0-46d1-5fbd" targetId="1441-1590-8a0e-24f3" primary="false"/>
+            <categoryLink name="Cultists" hidden="false" id="aaa6-47f8-303d-2fb2" targetId="40ff-8241-e4a3-8dc7" primary="false"/>
           </categoryLinks>
           <entryLinks>
             <entryLink import="true" name="Brutal Blunt Weapon" hidden="false" id="209c-a79a-5849-08de" collective="false" targetId="bfbe-de91-6f03-e116" type="selectionEntry">
@@ -25496,8 +25469,8 @@ Re-roll Invulnerable saving throws of 1 for this WARLORD.</characteristic>
           </profiles>
           <categoryLinks>
             <categoryLink name="Infantry" hidden="false" id="1dca-384f-b9c8-6d70" targetId="3d52-fccf-10c0-3fae" primary="false"/>
-            <categoryLink name="Cultists" hidden="false" id="6fcf-4d45-ab53-9831" targetId="40ff-8241-e4a3-8dc7" primary="false"/>
             <categoryLink name="Ø32mm" hidden="false" id="4482-18c5-f7ac-c37b" targetId="1441-1590-8a0e-24f3" primary="false"/>
+            <categoryLink name="Cultists" hidden="false" id="edd3-4836-462c-fe02" targetId="40ff-8241-e4a3-8dc7" primary="false"/>
           </categoryLinks>
           <entryLinks>
             <entryLink import="true" name="Autopistol" hidden="false" id="59d0-eda3-16ae-1f5e" collective="false" targetId="2940-1984-b9fa-0b34" type="selectionEntry"/>
@@ -25532,8 +25505,8 @@ Re-roll Invulnerable saving throws of 1 for this WARLORD.</characteristic>
           </profiles>
           <categoryLinks>
             <categoryLink name="Infantry" hidden="false" id="76fc-fe90-66fa-ea9e" targetId="3d52-fccf-10c0-3fae" primary="false"/>
-            <categoryLink name="Cultists" hidden="false" id="50f5-89d4-3ece-06b0" targetId="40ff-8241-e4a3-8dc7" primary="false"/>
             <categoryLink name="Ø28mm" hidden="false" id="bb8c-d538-1908-df40" targetId="7faf-04a8-3770-87b5" primary="false"/>
+            <categoryLink name="Cultists" hidden="false" id="1bce-8d18-5a22-6de7" targetId="40ff-8241-e4a3-8dc7" primary="false"/>
           </categoryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Commune blade" hidden="false" id="a3a9-13c1-fcbb-c499" collective="false">

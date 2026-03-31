@@ -1756,6 +1756,21 @@ If the unit has the INFANTRY Keyword and is in a terrain with the DEFENSIBLE tra
         </rule>
       </rules>
     </categoryEntry>
+    <categoryEntry id="40ff-8241-e4a3-8dc7" name="Cultists" hidden="false">
+      <profiles>
+        <profile id="829e-caaf-7566-bc23" name="[Action] Rites for the Dark Gods" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This unit can start this action at the beggining of the movement phase, it ends at the end of your next Command phase.
+During the action, units within 6&quot; can use an additional D6 and discard a D6 in:
+ - Daemon summoning ritual
+ - Psychic check
+ - Posessed Unleash check
+For each additional D6 used, the unit suffers a mortal wound.
+This action will inmediatly fail if a Morale check is failed, or if a enemy unit is in engagement range of the unit performing the action.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="a0c7-2a71-bae0-215d" name="Patrol Detachment -2CP" hidden="false">
