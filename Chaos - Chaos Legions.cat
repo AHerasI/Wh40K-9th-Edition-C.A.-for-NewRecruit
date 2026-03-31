@@ -1753,26 +1753,6 @@ By default, standard ammo will be shot (no changes to the weapon&apos;s profile)
         <categoryLink id="4d50-a373-2a65-726b" name="No Force Org Slot" hidden="false" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="974a-311b-b7ad-4140" name="Foul Blightspawn" hidden="false" collective="false" import="true" targetId="ed0a-5968-c931-0a38" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="4ca3-1a22-ded4-fbad" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="37af-e8c0-4c0c-3015" name="Noxious Blightbringer" hidden="false" collective="false" import="true" targetId="d9c9-26ca-61a0-46dc" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="655b-1d71-b66e-625c" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="864d-6a6a-02da-84a9" name="Plague Surgeon" hidden="false" collective="false" import="true" targetId="e8d0-9982-6c67-d2b2" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="803e-ed5c-fcc2-6f7a" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="a38a-be73-a621-bc49" name="Tallyman" hidden="false" collective="false" import="true" targetId="f12c-32ca-4024-cd43" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="3860-0788-4246-9e39" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="fbfc-e6d9-d464-ccc6" name="Foetid Bloat-drone" hidden="false" collective="false" import="true" targetId="2ac5-c1e3-f378-749b" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="2988-18aa-6e2d-864d" name="Fast Attack" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="true"/>
@@ -50422,21 +50402,41 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
     </profile>
   </sharedProfiles>
   <selectionEntries>
-    <selectionEntry type="upgrade" import="true" name="New Entry" hidden="true" id="2c4c-8f76-da71-3262">
+    <selectionEntry type="upgrade" import="true" name="Foetid Virion" hidden="true" id="2c4c-8f76-da71-3262">
       <categoryLinks>
         <categoryLink name="Elites" hidden="false" id="c31f-9189-1405-628f" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="New Group" id="c8b6-95b4-d6af-2c6d" hidden="false">
+        <selectionEntryGroup name="Foetid Virion" id="c8b6-95b4-d6af-2c6d" hidden="false">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="29bb-ada0-dd58-bc18"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="743b-f30b-8c54-e682"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Biologus Putrifier" hidden="false" id="4b73-3651-4b9f-4e85" collective="false" targetId="9d2f-4ce2-9ce7-7b6f" type="selectionEntry">
-              <categoryLinks>
-                <categoryLink name="Elites" hidden="false" id="f21a-51a8-eede-d275" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
-              </categoryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb53-322e-8539-12da"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Foul Blightspawn" hidden="false" id="974a-311b-b7ad-4140" collective="false" targetId="ed0a-5968-c931-0a38" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ea4-0ed5-604a-d761"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Noxious Blightbringer" hidden="false" id="37af-e8c0-4c0c-3015" collective="false" targetId="d9c9-26ca-61a0-46dc" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="176b-4a80-ff4b-ad9c" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Plague Surgeon" hidden="false" id="864d-6a6a-02da-84a9" collective="false" targetId="e8d0-9982-6c67-d2b2" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8f7-d867-17f2-ba63" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Tallyman" hidden="false" id="a38a-be73-a621-bc49" collective="false" targetId="f12c-32ca-4024-cd43" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d71-996d-a17c-aeac" includeChildSelections="false"/>
+              </constraints>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
