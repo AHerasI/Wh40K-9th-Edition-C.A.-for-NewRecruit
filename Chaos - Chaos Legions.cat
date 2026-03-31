@@ -89,6 +89,53 @@ You gain as much Depravity Points as wounds in each non INORGANIC MONSTER slain 
             <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While an enemy unit is within Contagion Range of this unit, subtract 1 from the Toughness characteristic of models in that enemy unit.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Inexorable Advance" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="d1e7-16cf-8394-2030">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This unit counts as having Remained Stationary if it did not Fall Back or Advance in your previous Movement phase.
+In addition, it can ignore any or all modifiers to its Move characteristic, Advance rolls and charge rolls.</characteristic>
+          </characteristics>
+          <comment>Infantry</comment>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="c8fd-783f-3230-493e" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c8fd-783f-3230-493e" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="3b77-decb-d468-6bcc" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3b77-decb-d468-6bcc" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Inexorable Advance" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="true" id="92ce-37d2-b015-3a96">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This unit counts as having Remained Stationary if it did not Fall Back or Advance in your previous Movement phase.
+In addition, models of this unit does not suffer the penalty incurred to its hit rolls for firing Heavy weapons at enemy units that are within Engagement Range of it.</characteristic>
+          </characteristics>
+          <comment>Vehicle</comment>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="c8fd-783f-3230-493e" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c8fd-783f-3230-493e" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="3b77-decb-d468-6bcc" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3b77-decb-d468-6bcc" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Disgustingly Resilient" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="00c1-75ef-4434-9661">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time an attack is allocated to a model with this ability, subtract 1 from the Damage characteristic of that attack (to a minimum of 1). Cumulative with similar abilities.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
     </categoryEntry>
     <categoryEntry id="364e-81de-b1ce-fa7c" name="Legion: Thousand Sons" hidden="false">
