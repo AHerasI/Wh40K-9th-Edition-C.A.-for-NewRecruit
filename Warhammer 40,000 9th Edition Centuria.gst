@@ -16664,6 +16664,13 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                     <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                     <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                   </costs>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="c977-722f-9737-a2de" childId="62ae-1348-9d94-55de" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </selectionEntry>
                 <selectionEntry id="bb51-6b67-0ce8-ae7f" name="Inquisitor Eisenhorn" hidden="true" collective="false" import="true" type="unit">
                   <modifiers>
@@ -17830,6 +17837,110 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                   <costs>
                     <cost name="Pts" typeId="points" value="70"/>
                     <cost name="PL" typeId="e356-c769-5920-6e14" value="3"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Inquisitor Kroyle" hidden="true" id="2515-8311-322a-efee" collective="false">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="6abe-fce3-b1d2-b555" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3a41-e477-66a5-06a2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Inquisitor Kroyle" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="d0a2-7f3b-afac-f251">
+                      <characteristics>
+                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
+                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                        <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+                        <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
+                        <characteristic name="W" typeId="f330-5e6e-4110-0978">6</characteristic>
+                        <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+                        <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
+                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Refractor Field" id="8877-76b7-c3f4-686d" hidden="false" targetId="76f9-878f-4057-ce75" type="profile"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink name="Ordo Xenos" hidden="false" id="e6ba-f357-a5fe-6140" targetId="0eb0-346d-12e6-5924" primary="false"/>
+                    <categoryLink name="Cavalry" hidden="false" id="2e28-7fb1-f5b6-bfec" targetId="ad01-caec-17d9-cb8d" primary="false"/>
+                  </categoryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Jindarii tox-cycler" hidden="false" id="3a1c-9e02-c54b-0848" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8302-18ba-9673-5f45" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d559-6fe8-c6ff-37f3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Tox-cycler" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="fbd1-f652-57e3-f410">
+                          <characteristics>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
+                            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 1</characteristic>
+                            <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Poisoned Weapon (2+). Each time you select a target for this weapon, you can ignore the Look Out, Sir rule.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <costs>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                        <cost name="Pts" typeId="points" value="0"/>
+                        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Garralisk claws" hidden="false" id="4c5a-97d4-d6dc-ed65" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec3b-6c16-ba0c-72d6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f86b-568c-dac9-cec8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Garralisk claws" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="14f0-7dc7-0600-b19f">
+                          <characteristics>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                            <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">When the bearer fights, it makes 4 additional attacks with this weapon and no more than 4 attacks can be made with this weapon.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <costs>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                        <cost name="Pts" typeId="points" value="0"/>
+                        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <entryLinks>
+                    <entryLink import="true" name="Power Sword" hidden="false" id="6386-a009-7c3b-429e" collective="false" targetId="6168-426f-d99c-ad99" type="selectionEntry"/>
+                    <entryLink import="true" name=" Warlord" hidden="false" id="567b-bdc9-6e73-ea66" collective="false" targetId="15e7-ffe5-1f1b-384e" type="selectionEntry"/>
+                    <entryLink import="true" name="2. Killing ground" hidden="true" id="a468-adaf-9f81-0c12" collective="false" targetId="6597-c6cc-c146-ecdd" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="15e7-ffe5-1f1b-384e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Master-crafted Bolt Pistol" hidden="false" id="1ebc-685a-1e88-0459" collective="false" targetId="eb68-be72-b493-1a34" type="selectionEntry"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="points" value="75"/>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="4"/>
                     <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                     <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                   </costs>
