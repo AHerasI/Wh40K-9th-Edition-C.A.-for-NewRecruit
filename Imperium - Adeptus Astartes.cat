@@ -27226,29 +27226,6 @@ Each JUMP PACK or TERMINATOR model takes the space of two other models and each 
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6c48-a312-d432-21af" name="Punisher Gatling Cannon" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="de21-3078-ecb5-7249" name="Turret-mounted" hidden="false" targetId="f28c-7e4e-75e1-2474" primary="false"/>
-              </categoryLinks>
-              <entryLinks>
-                <entryLink id="a01d-a9c9-1b8d-754b" name="Punisher Gatling Cannon" hidden="false" collective="false" import="true" targetId="3ee3-74ec-d970-9b43" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8be1-7c4e-c038-586d" type="max"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6239-b591-2eb9-0fec" type="min"/>
-                  </constraints>
-                  <costs>
-                    <cost name="pts" typeId="points" value="30"/>
-                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="2"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="10"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="7007-2e07-8736-dd51" name="Turreted Double Vengeance Launcher" hidden="false" collective="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink id="48f7-8c81-e15f-1b8a" name="Turret-mounted" hidden="false" targetId="f28c-7e4e-75e1-2474" primary="false"/>
@@ -27286,7 +27263,7 @@ Each JUMP PACK or TERMINATOR model takes the space of two other models and each 
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0939-f7a6-5e82-feb5" name="Turreted Hades Autocannon" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="0939-f7a6-5e82-feb5" name="Turreted Herakles Autocannon" hidden="false" collective="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink id="01cb-4667-357c-9fea" name="Turret-mounted" hidden="false" targetId="f28c-7e4e-75e1-2474" primary="false"/>
               </categoryLinks>
@@ -27303,7 +27280,7 @@ Each JUMP PACK or TERMINATOR model takes the space of two other models and each 
                       <comment>Hades</comment>
                       <modifiers>
                         <modifier type="set" value="Heavy 12" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2"/>
-                        <modifier type="set" value="Hades Autocannon" field="name"/>
+                        <modifier type="set" value="Twin Herakles Autocannon" field="name"/>
                         <modifier type="set" value="This weapon ignore the Hard to hit ability." field="837d-5e63-aeb7-1410"/>
                       </modifiers>
                     </modifierGroup>
@@ -27331,6 +27308,26 @@ Each JUMP PACK or TERMINATOR model takes the space of two other models and each 
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="Pts" typeId="points" value="30"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Heavy Gatling cannon" hidden="false" id="9f07-46ec-607d-d604">
+              <infoLinks>
+                <infoLink name="Twin Heavy Gatling cannon" id="ff8e-cfc1-d731-631e" hidden="false" type="profile" targetId="55c0-8057-0831-0bd7">
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="Heavy Gatling cannon" field="name"/>
+                        <modifier type="set" value="Heavy 16" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="10"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>

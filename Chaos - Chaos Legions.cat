@@ -16316,33 +16316,7 @@ Each model can only be corrupted once per turn.</characteristic>
             <categoryLink id="f498-ceb1-2d54-a368" name="Turret-mounted" hidden="false" targetId="f28c-7e4e-75e1-2474" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="cf02-7d8a-9689-2691" name="Punisher Gatling Cannon" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e53e-dfed-a340-ca0f" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="1abf-b75e-1e73-d519" name="Punisher Gatling Cannon" hidden="false" collective="false" import="true" targetId="3ee3-74ec-d970-9b43" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb61-09db-46b8-0410" type="max"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddca-19dc-7f79-7216" type="min"/>
-                  </constraints>
-                  <costs>
-                    <cost name="pts" typeId="points" value="30"/>
-                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="2"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="10"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="e71b-c5db-67e2-683e" name="Hull-mounted Neutron Projector" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c5b-1687-7ee8-c1f4" type="max"/>
-              </constraints>
               <entryLinks>
                 <entryLink id="df5d-6add-ec16-16ef" name="Neutron Projector" hidden="false" collective="false" import="true" targetId="c063-a43f-5f5d-67e4" type="selectionEntry">
                   <constraints>
@@ -16438,7 +16412,7 @@ Each model can only be corrupted once per turn.</characteristic>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Turreted Hades Autocannon" hidden="false" id="e5a4-1c59-eb64-81f0" collective="false">
+            <selectionEntry type="upgrade" import="true" name="Turreted Herakles Autocannon" hidden="false" id="e5a4-1c59-eb64-81f0" collective="false">
               <categoryLinks>
                 <categoryLink name="Turret-mounted" hidden="false" id="f1cf-11dd-323d-f94b" targetId="f28c-7e4e-75e1-2474" primary="false"/>
               </categoryLinks>
@@ -16455,13 +16429,33 @@ Each model can only be corrupted once per turn.</characteristic>
                       <comment>Hades</comment>
                       <modifiers>
                         <modifier type="set" value="Heavy 12" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2"/>
-                        <modifier type="set" value="Hades Autocannon" field="name"/>
+                        <modifier type="set" value="Twin Herakles Autocannon" field="name"/>
                         <modifier type="set" value="This weapon ignore the Hard to hit ability." field="837d-5e63-aeb7-1410"/>
                       </modifiers>
                     </modifierGroup>
                   </modifierGroups>
                 </infoLink>
               </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Heavy Gatling cannon" hidden="false" id="61cd-ea38-629b-8cf1">
+              <infoLinks>
+                <infoLink name="Twin Heavy Gatling cannon" id="d7cb-ee43-7439-b4c4" hidden="false" type="profile" targetId="55c0-8057-0831-0bd7">
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="Heavy Gatling cannon" field="name"/>
+                        <modifier type="set" value="Heavy 16" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="10"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>

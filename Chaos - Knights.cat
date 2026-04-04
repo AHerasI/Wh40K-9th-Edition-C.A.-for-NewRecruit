@@ -1874,6 +1874,37 @@ Each time an attack is made with this weapon, invulnerable saving throws cannot 
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Twin Heavy Gatling cannon" hidden="false" id="f87a-aed2-0ea8-2253" collective="false">
+          <costs>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="Pts" typeId="points" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Twin Heavy Gatling cannon" id="b820-3bed-01f1-3155" hidden="false" targetId="55c0-8057-0831-0bd7" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Heavy Gatling cannon" hidden="false" id="3356-80b7-fdf1-56f1" collective="false">
+          <costs>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="Pts" typeId="points" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Twin Heavy Gatling cannon" id="55c5-de2d-ff43-e318" hidden="false" targetId="55c0-8057-0831-0bd7" type="profile">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="Heavy Gatling cannon" field="name"/>
+                    <modifier type="set" value="Heavy 16" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -2401,14 +2432,6 @@ Each time an attack is made with this weapon, invulnerable saving throws cannot 
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e88-5805-e355-1429" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="b452-350f-6bea-5592" name="Punisher Gatling Cannon" hidden="false" collective="false" import="true" targetId="3ee3-74ec-d970-9b43" type="selectionEntry">
-              <entryLinks>
-                <entryLink id="46c0-a0a7-5442-68a1" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="4640-ecff-bdae-4617" type="selectionEntry"/>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="10"/>
-              </costs>
-            </entryLink>
             <entryLink id="a01f-0223-2335-49e2" name="Battle Cannon" hidden="false" collective="false" import="true" targetId="1d7b-4f46-b77b-ead1" type="selectionEntry">
               <entryLinks>
                 <entryLink id="4ca4-cd41-898c-f350" name="Diabolus Heavy Stubber" hidden="false" collective="false" import="true" targetId="496a-c795-c6b8-a3c0" type="selectionEntry"/>
@@ -2418,6 +2441,11 @@ Each time an attack is made with this weapon, invulnerable saving throws cannot 
               </costs>
             </entryLink>
             <entryLink id="734f-638b-f304-9cb7" name="Warpstrike claw" hidden="false" collective="false" import="true" targetId="3b11-2239-8fb5-373c" type="selectionEntry"/>
+            <entryLink import="true" name="Heavy Gatling cannon" hidden="false" id="26a4-b801-34d5-2abe" type="selectionEntry" targetId="3356-80b7-fdf1-56f1">
+              <costs>
+                <cost name="Pts" typeId="points" value="10"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="ea95-efcb-269d-b087" name="Arm weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="624f-2c05-2b84-843f">
@@ -2426,14 +2454,6 @@ Each time an attack is made with this weapon, invulnerable saving throws cannot 
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc2b-8234-6642-1a2c" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="f043-513e-c062-03e6" name="Punisher Gatling Cannon" hidden="false" collective="false" import="true" targetId="3ee3-74ec-d970-9b43" type="selectionEntry">
-              <entryLinks>
-                <entryLink id="0c60-435b-f49f-c97a" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="4640-ecff-bdae-4617" type="selectionEntry"/>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="10"/>
-              </costs>
-            </entryLink>
             <entryLink id="b1ee-280e-27de-101b" name="Battle Cannon" hidden="false" collective="false" import="true" targetId="1d7b-4f46-b77b-ead1" type="selectionEntry">
               <entryLinks>
                 <entryLink id="d638-9f2d-2ed9-d3ef" name="Diabolus Heavy Stubber" hidden="false" collective="false" import="true" targetId="496a-c795-c6b8-a3c0" type="selectionEntry"/>
@@ -2443,6 +2463,11 @@ Each time an attack is made with this weapon, invulnerable saving throws cannot 
               </costs>
             </entryLink>
             <entryLink id="624f-2c05-2b84-843f" name="Reaper chainsword" hidden="false" collective="false" import="true" targetId="bc14-8884-c349-2a49" type="selectionEntry"/>
+            <entryLink import="true" name="Heavy Gatling cannon" hidden="false" id="02c2-7ccd-0367-4275" type="selectionEntry" targetId="3356-80b7-fdf1-56f1">
+              <costs>
+                <cost name="Pts" typeId="points" value="10"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -6439,33 +6464,14 @@ Each time an attack made with this weapon is allocated to a model, that model’
         <categoryLink id="354f-efa3-ad03-bf49" name="Abhorrent" hidden="false" targetId="32e3-e56c-6f9d-9252" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="9b4c-725c-abbb-053c" name="Arm weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="e1ef-be3d-d53b-e2e9">
+        <selectionEntryGroup id="9b4c-725c-abbb-053c" name="Arm weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="e060-4fd2-be30-39c7">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae70-30aa-9d14-7384" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="716d-54d2-f3d7-b3af" type="min"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="e1ef-be3d-d53b-e2e9" name="Heavy Gatling cannon" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="640e-1276-502c-12a5" name="Heavy Gatling cannon" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
-                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 12</characteristic>
-                    <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
-                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
-                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Twin Heavy Gatling cannon" hidden="false" id="e060-4fd2-be30-39c7" type="selectionEntry" targetId="f87a-aed2-0ea8-2253"/>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="127e-2c5d-9814-e5de" name="Arm weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="de53-4a98-d165-7ec2">
           <constraints>

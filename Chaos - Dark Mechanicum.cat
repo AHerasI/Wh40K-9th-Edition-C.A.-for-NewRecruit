@@ -18073,33 +18073,7 @@ At the start of your Command phase, you can select one of the following:
             <categoryLink id="27f9-16ee-4e3d-a801" name="Turret-mounted" hidden="false" targetId="f28c-7e4e-75e1-2474" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="87f0-a64d-1d74-485b" name="Punisher Gatling Cannon" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4035-57c3-d436-e6e9" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="4be6-d9dc-74e0-16b6" name="Punisher Gatling Cannon" hidden="false" collective="false" import="true" targetId="3ee3-74ec-d970-9b43" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8d1-2f94-0721-7c87" type="max"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fa6-cdd2-ba5d-e25b" type="min"/>
-                  </constraints>
-                  <costs>
-                    <cost name="pts" typeId="points" value="30"/>
-                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="2"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="10"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="9095-64ab-ae1e-9ffa" name="Hull-mounted Neutron Projector" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a5a-0786-2ed1-4c39" type="max"/>
-              </constraints>
               <entryLinks>
                 <entryLink id="5632-9ef1-02c3-3347" name="Neutron Projector" hidden="false" collective="false" import="true" targetId="c063-a43f-5f5d-67e4" type="selectionEntry">
                   <constraints>
@@ -18119,7 +18093,7 @@ At the start of your Command phase, you can select one of the following:
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Turreted Hades Autocannon" hidden="false" id="b94f-a8b6-b686-c3fc" collective="false">
+            <selectionEntry type="upgrade" import="true" name="Turreted Herakles Autocannon" hidden="false" id="b94f-a8b6-b686-c3fc" collective="false">
               <categoryLinks>
                 <categoryLink name="Turret-mounted" hidden="false" id="4261-0d63-92e5-8ce0" targetId="f28c-7e4e-75e1-2474" primary="false"/>
               </categoryLinks>
@@ -18136,13 +18110,33 @@ At the start of your Command phase, you can select one of the following:
                       <comment>Hades</comment>
                       <modifiers>
                         <modifier type="set" value="Heavy 12" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2"/>
-                        <modifier type="set" value="Hades Autocannon" field="name"/>
+                        <modifier type="set" value="Twin Herakles Autocannon" field="name"/>
                         <modifier type="set" value="This weapon ignore the Hard to hit ability." field="837d-5e63-aeb7-1410"/>
                       </modifiers>
                     </modifierGroup>
                   </modifierGroups>
                 </infoLink>
               </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Heavy Gatling cannon" hidden="false" id="ef21-ff59-8ee3-0778">
+              <infoLinks>
+                <infoLink name="Twin Heavy Gatling cannon" id="9f38-428a-c77d-ee2d" hidden="false" type="profile" targetId="55c0-8057-0831-0bd7">
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="Heavy Gatling cannon" field="name"/>
+                        <modifier type="set" value="Heavy 16" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="10"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>

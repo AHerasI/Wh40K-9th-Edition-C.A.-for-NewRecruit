@@ -534,34 +534,26 @@ Additional reference data obtained from Wahapedia, https://wahapedia.ru/</readme
           </costs>
         </selectionEntry>
         <selectionEntry id="cfe0-8209-f780-745e" name="Twin Heavy Gatling cannon" hidden="false" collective="false" import="true" type="upgrade">
-          <profiles>
-            <profile id="55c0-8057-0831-0bd7" name="Twin Heavy Gatling cannon" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-              <modifierGroups>
-                <modifierGroup>
-                  <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ba31-e803-840c-a86c" type="equalTo"/>
-                  </conditions>
-                  <modifiers>
-                    <modifier type="set" field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="42&quot;"/>
-                  </modifiers>
-                </modifierGroup>
-              </modifierGroups>
-              <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 24</characteristic>
-                <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
-                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <costs>
             <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
             <cost name="Pts" typeId="points" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink targetId="55c0-8057-0831-0bd7" id="f5c6-4318-8c10-1f82" type="profile" name="Twin Heavy Gatling cannon" hidden="false">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="ba31-e803-840c-a86c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" value="42&quot;" field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </infoLink>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry id="6863-9393-47d9-f094" name="Shock lance" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
@@ -1830,7 +1822,7 @@ Each time an attack made with this weapon is allocated to a model, that model’
                 <modifierGroup type="and">
                   <modifiers>
                     <modifier type="set" value="Heavy Gatling cannon" field="name"/>
-                    <modifier type="set" value="Heavy 12" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2"/>
+                    <modifier type="set" value="Heavy 16" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2"/>
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
