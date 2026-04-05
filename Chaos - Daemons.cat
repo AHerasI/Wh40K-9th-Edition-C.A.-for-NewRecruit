@@ -43,6 +43,17 @@ Additional reference data obtained from Wahapedia, https://wahapedia.ru/</readme
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0258-ddcb-8764-be49" type="max"/>
       </constraints>
     </categoryEntry>
+    <categoryEntry name="Daemonic Summoner" id="c47f-35e6-c08b-7d7d" hidden="false">
+      <profiles>
+        <profile name="[Action] Summon ritual" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="e531-815e-c995-bd82">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">A unit with the Daemonic Summoner Keyword can do this action at the beggining of the Command phase, and it ends at the end of the Movement phase, before the Reinforcements step.
+Roll 3D6, if you roll any double roll result, the unit making this action suffers 1 mortal wound. If you roll three rolls of the same result, the unit making this action suffers 1D3 mortal wounds.
+Then, you can select, from the Chaos - Daemons library, up to two units without CHARACTER Keyword, without any upgrade, with a PL cost equal or lesser than half the result (rounding up), and set it up on the battlefield D3+6&quot; away from enemy models, as reinforcements.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </categoryEntry>
   </categoryEntries>
   <entryLinks>
     <entryLink id="94ab-3587-8a9f-b909" name="Herald" hidden="false" collective="false" import="true" targetId="2dba-8e3e-c7cb-0edd" type="selectionEntry">
@@ -1320,6 +1331,7 @@ Until the start of your next Command phase, each time a model in that unit makes
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="404b-c925-c9c4-df4e" type="min"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Greater summoning Ritual" hidden="false" id="e055-970f-7ff6-c055" type="selectionEntry" targetId="ed6a-f4ad-f51e-7dfc"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="d328-407c-d083-65b9" name="Psychic Disciplines" hidden="false" collective="false" import="true">
@@ -1773,6 +1785,7 @@ At the start of each battle round, if there are 7 or more marks on that tally, a
                         </modifier>
                       </modifiers>
                     </entryLink>
+                    <entryLink import="true" name="Summoning Ritual" hidden="false" id="72b6-9861-e2d5-53d1" type="selectionEntry" targetId="65a3-8c40-bf2c-6f32"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -2351,6 +2364,7 @@ At the start of each battle round, if there are 7 or more marks on that tally, a
                         </modifier>
                       </modifiers>
                     </entryLink>
+                    <entryLink import="true" name="Summoning Ritual" hidden="false" id="2ec2-28d6-406a-2647" type="selectionEntry" targetId="65a3-8c40-bf2c-6f32"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -3136,6 +3150,7 @@ Until that fight is resolved, this model has the same Weapon Skill, Strength and
                         </modifier>
                       </modifiers>
                     </entryLink>
+                    <entryLink import="true" name="Summoning Ritual" hidden="false" id="ca1c-8e9a-9183-7c19" type="selectionEntry" targetId="65a3-8c40-bf2c-6f32"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -3264,6 +3279,7 @@ Until that fight is resolved, this model has the same Weapon Skill, Strength and
                         </modifier>
                       </modifiers>
                     </entryLink>
+                    <entryLink import="true" name="Summoning Ritual" hidden="false" id="bc62-2dd6-0ea7-05ae" type="selectionEntry" targetId="65a3-8c40-bf2c-6f32"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -4470,6 +4486,7 @@ Until that fight is resolved, this model has the same Weapon Skill, Strength and
                         </modifier>
                       </modifiers>
                     </entryLink>
+                    <entryLink import="true" name="Greater summoning Ritual" hidden="false" id="8988-45b1-46cf-9028" type="selectionEntry" targetId="ed6a-f4ad-f51e-7dfc"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -5060,6 +5077,7 @@ Until that fight is resolved, this model has the same Weapon Skill, Strength and
                         </modifier>
                       </modifiers>
                     </entryLink>
+                    <entryLink import="true" name="Greater summoning Ritual" hidden="false" id="3422-767c-4a45-1933" type="selectionEntry" targetId="ed6a-f4ad-f51e-7dfc"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -5244,6 +5262,7 @@ Until that fight is resolved, this model has the same Weapon Skill, Strength and
                         </modifier>
                       </modifiers>
                     </entryLink>
+                    <entryLink import="true" name="Greater summoning Ritual" hidden="false" id="45e7-5a66-97d9-995d" type="selectionEntry" targetId="ed6a-f4ad-f51e-7dfc"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -5454,6 +5473,7 @@ Until that fight is resolved, this model has the same Weapon Skill, Strength and
                         </modifier>
                       </modifiers>
                     </entryLink>
+                    <entryLink import="true" name="Greater summoning Ritual" hidden="false" id="a4b7-24c1-498b-5403" type="selectionEntry" targetId="ed6a-f4ad-f51e-7dfc"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -6673,6 +6693,7 @@ Until that fight is resolved, this model has the same Weapon Skill, Strength and
                         </modifier>
                       </modifiers>
                     </entryLink>
+                    <entryLink import="true" name="Greater summoning Ritual" hidden="false" id="b229-9e2d-7888-2a95" type="selectionEntry" targetId="ed6a-f4ad-f51e-7dfc"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -6841,6 +6862,7 @@ Until that fight is resolved, this model has the same Weapon Skill, Strength and
                         </modifier>
                       </modifiers>
                     </entryLink>
+                    <entryLink import="true" name="Greater summoning Ritual" hidden="false" id="3fb5-a71d-0f1d-e3e2" type="selectionEntry" targetId="ed6a-f4ad-f51e-7dfc"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -6996,6 +7018,7 @@ Until that fight is resolved, this model has the same Weapon Skill, Strength and
                         </modifier>
                       </modifiers>
                     </entryLink>
+                    <entryLink import="true" name="Greater summoning Ritual" hidden="false" id="6e89-532f-f753-f715" type="selectionEntry" targetId="ed6a-f4ad-f51e-7dfc"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -7130,6 +7153,7 @@ Until that fight is resolved, this model has the same Weapon Skill, Strength and
                         </modifier>
                       </modifiers>
                     </entryLink>
+                    <entryLink import="true" name="Greater summoning Ritual" hidden="false" id="2a35-50c4-f298-d326" type="selectionEntry" targetId="ed6a-f4ad-f51e-7dfc"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -7275,6 +7299,7 @@ Until that fight is resolved, this model has the same Weapon Skill, Strength and
                         </modifier>
                       </modifiers>
                     </entryLink>
+                    <entryLink import="true" name="Greater summoning Ritual" hidden="false" id="74a8-1ee6-80e6-38ff" type="selectionEntry" targetId="ed6a-f4ad-f51e-7dfc"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -11275,6 +11300,7 @@ Until that fight is resolved, this model has the same Weapon Skill, Strength and
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af6b-b7f3-3eb0-ca6f" type="min"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Greater summoning Ritual" hidden="false" id="773f-da6c-85c1-c8ee" type="selectionEntry" targetId="ed6a-f4ad-f51e-7dfc"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -11470,6 +11496,7 @@ Until that fight is resolved, this model has the same Weapon Skill, Strength and
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3bd-5a13-9da6-244d" type="min"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Greater summoning Ritual" hidden="false" id="c7eb-ef57-1b2d-8f41" type="selectionEntry" targetId="ed6a-f4ad-f51e-7dfc"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -11678,6 +11705,7 @@ Until that fight is resolved, this model has the same Weapon Skill, Strength and
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4238-3530-4f16-3104" type="min"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Greater summoning Ritual" hidden="false" id="11b6-f470-8732-e657" type="selectionEntry" targetId="ed6a-f4ad-f51e-7dfc"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -11902,6 +11930,7 @@ Until that fight is resolved, this model has the same Weapon Skill, Strength and
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7075-aab6-013b-cb6b" type="min"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Greater summoning Ritual" hidden="false" id="f167-9fe6-984e-58f8" type="selectionEntry" targetId="ed6a-f4ad-f51e-7dfc"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -12239,6 +12268,7 @@ If any enemy models are destroyed as a result of these mortal wounds, gain 1 War
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee44-386b-c83b-7ac3" type="min"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Greater summoning Ritual" hidden="false" id="39e1-9641-e0e2-7748" type="selectionEntry" targetId="ed6a-f4ad-f51e-7dfc"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -13056,6 +13086,49 @@ If every model in that unit has a Wounds characteristic of 1, that unit can inst
         </entryLink>
         <entryLink id="cced-29c6-dfc4-3ef1" name=" Stratagem: Exalted Daemon" hidden="false" collective="false" import="true" targetId="1c0c-6984-9c13-2980" type="selectionEntry"/>
       </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Summoning Ritual" id="fd68-bdb9-ebeb-d134" hidden="true" collective="false" import="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a64-d87b-6c38-2c61" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Greater summoning Ritual" hidden="false" id="ed6a-f4ad-f51e-7dfc" collective="false">
+              <rules>
+                <rule name="Greater Daemonic summoning Ritual [14PL]" id="dfc9-23c6-16d3-030d" hidden="false">
+                  <description>This unit can summon up to 14PL of Daemon units, divided in up to two units. If the Summoner has any CHAOS MARK, the summoned Daemon units must belong to the same CHAOS MARK, with the exception of Undivided, which can select from any other CHAOS MARK, but if it does, it increases the cost of the Summoned unit by 1PL.
+You can Disband any summoned unit in your morale phase. Disbanded units are considered to be routed as if they failed a Morale check.</description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink name="Daemonic Summoner" hidden="false" id="5953-73ae-3b12-4d8b" targetId="c47f-35e6-c08b-7d7d" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="12"/>
+                <cost name="Pts" typeId="points" value="240"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Summoning Ritual" hidden="false" id="65a3-8c40-bf2c-6f32" collective="false">
+              <rules>
+                <rule name="Daemonic summoning Ritual [7PL]" id="c53d-4216-32e4-9695" hidden="false">
+                  <description>This unit can summon up to 7PL of Daemon units, divided in up to two units. If the Summoner has any CHAOS MARK, the summoned Daemon units must belong to the same CHAOS MARK, with the exception of Undivided, which can select from any other CHAOS MARK, but if it does, it increases the cost of the Summoned unit by 1PL.
+You can Disband any summoned unit in your morale phase. Disbanded units are considered to be routed as if they failed a Morale check.</description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink name="Daemonic Summoner" hidden="false" id="bcf8-8452-3d6f-e140" targetId="c47f-35e6-c08b-7d7d" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="6"/>
+                <cost name="Pts" typeId="points" value="120"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntryGroup>
     <selectionEntryGroup id="05b2-99de-d5b3-6e1c" name="Exalted Daemon trait" hidden="false" collective="false" import="true">
       <constraints>
