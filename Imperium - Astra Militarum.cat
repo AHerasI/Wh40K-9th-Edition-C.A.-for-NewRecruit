@@ -15542,7 +15542,7 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6b6-e111-d4ad-202a" type="max"/>
           </constraints>
           <profiles>
-            <profile id="6a9a-76ca-e811-4e70" name="Daemonhost" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="6a9a-76ca-e811-4e70" name="Daemonhost" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
@@ -15553,26 +15553,6 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="792a-ff09-d3e9-64fc" name="Unholy gaze" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-                <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
-                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="6bfd-b933-0d6a-25ca" name="Warp grasp" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 1</characteristic>
-                <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
-                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">When resolving an attack made with this weapon, on an unmodified wound roll of 6 this weapon has a Damage characteristic of 3 for that attack.</characteristic>
               </characteristics>
             </profile>
             <profile id="6105-3087-0b4f-a7b0" name="Daemonic Power" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -15594,6 +15574,44 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
             <cost name="Pts" typeId="points" value="30"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Unholy gaze" hidden="false" id="c685-23f5-0a78-a418" collective="true">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe0f-7325-14a7-4bfb" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="618d-c195-3187-2125" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Unholy gaze" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="792a-ff09-d3e9-64fc">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Warp grasp" hidden="false" id="8a73-75d1-b945-9ae8" collective="true">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6945-4b10-b5d8-8206" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2857-fec4-01fc-c177" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Warp grasp" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="6bfd-b933-0d6a-25ca">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 1</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">When resolving an attack made with this weapon, on an unmodified wound roll of 6 this weapon has a Damage characteristic of 3 for that attack.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
         <selectionEntry id="be2d-dff3-aa43-591d" name="Storm Trooper w/Special Weapon" hidden="false" collective="false" import="true" type="model">
           <infoLinks>
