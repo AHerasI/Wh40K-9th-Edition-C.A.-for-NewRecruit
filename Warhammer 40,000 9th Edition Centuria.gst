@@ -16847,32 +16847,12 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
                           </characteristics>
                         </profile>
-                        <profile id="a243-859b-63b5-2cd1" name="Unholy gaze" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-                          <characteristics>
-                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
-                            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-                            <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
-                            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
-                          </characteristics>
-                        </profile>
-                        <profile id="25df-d585-bcc7-3805" name="Warp grasp" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-                          <characteristics>
-                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
-                            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 1</characteristic>
-                            <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
-                            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">When resolving an attack made with this weapon, on an unmodified wound roll of 6 this weapon has a Damage characteristic of 3 for that attack.</characteristic>
-                          </characteristics>
-                        </profile>
                         <profile id="9828-8936-d23f-f6f5" name="Daemonic Power" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                           <characteristics>
-                            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the start of your Movement phase, roll one D6 for each model with this ability and apply the following result:
-1-2 Daemonic Speed: Until the start of your next turn, this model has a Move characteristic of 12&quot; and can FLY.
-3-4 Re-knit Host Form: This model regains all its lost wounds.
-5-6 Energy Torrent: Roll one D6 for each enemy unit within 3&quot; of this model; on a 2+ that enemy unit suffers D3 mortal wounds.</characteristic>
+                            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the start of your Movement phase, roll one D6 for each unit with a model with this ability and apply the following result:
+1-2 Warptime: Until the start of your next turn, models of this unit add 2&quot; to it&apos;s Move characteristic, and 1 to it&apos;s Attacks characteristic.
+3-4 Re-knit Host Form: Models with this ability regains all its lost wounds. In addition, until the start of your next turn, and once per turn, the first time a saving throw is failed for the unit, the Damage charactertistic of that attack is changed to 0.
+5-6 Energy Torrent: Roll one D6 for each enemy unit within 3&quot; of models with this ability; on a 2+ that enemy unit suffers D3 mortal wounds.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -16887,6 +16867,44 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                         <cost name="Pts" typeId="points" value="0"/>
                         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                       </costs>
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Unholy gaze" hidden="false" id="c775-6d66-4f97-8c9b" collective="true">
+                          <profiles>
+                            <profile name="Unholy gaze" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="a243-859b-63b5-2cd1">
+                              <characteristics>
+                                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                                <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
+                                <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e37a-52b8-63d3-20f0" includeChildSelections="false"/>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f350-c88d-d5be-928f" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Warp grasp" hidden="false" id="4f91-3c2c-8e59-fcc0" collective="true">
+                          <profiles>
+                            <profile name="Warp grasp" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="25df-d585-bcc7-3805">
+                              <characteristics>
+                                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+                                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 1</characteristic>
+                                <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
+                                <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">When resolving an attack made with this weapon, on an unmodified wound roll of 6 this weapon has a Damage characteristic of 3 for that attack.</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21c4-bbec-d0b9-403c" includeChildSelections="false"/>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4d5f-10e7-8f12-1eb5" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                      </selectionEntries>
                     </selectionEntry>
                   </selectionEntries>
                   <costs>
