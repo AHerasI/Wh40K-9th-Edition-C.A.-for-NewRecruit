@@ -3453,7 +3453,7 @@ Until the end of your next Movement phase, if a eligible unit Advances, do not m
                 <characteristic name="Type" typeId="acf4-29e1-933e-277c">PLATOON</characteristic>
                 <characteristic name="Phase" typeId="d253-ed5c-1a09-ebd1">Shooting Phase</characteristic>
                 <characteristic name="Eligible Units" typeId="54d6-e3f7-ad8c-d3a0">&lt;REGIMENT&gt; INFANTRY (6&quot;)</characteristic>
-                <characteristic name="Effect" typeId="a435-9dd9-7056-398e">Until the end of your next Command phase, ranged attacks against affected REGIMENT units must substract 1 from the hit roll and are ignored for the purposes of determining visibility for models in other friendly units. In addition, add 1 to the saving throw against that attack. REGIMENT units affected by this order cannot shoot Overwatch or Search for Targets. If a unit affected by this ORDER declares a Charge, it stops being affected by this order.</characteristic>
+                <characteristic name="Effect" typeId="a435-9dd9-7056-398e">Until the end of your next Command phase, ranged attacks against affected REGIMENT units must substract 1 from the hit roll and are ignored for the purposes of determining visibility for models in other units. In addition, add 1 to the saving throw against that attack. REGIMENT units affected by this order cannot shoot Overwatch or Search for Targets. If a unit affected by this ORDER declares a Charge, it stops being affected by this order.</characteristic>
               </characteristics>
             </profile>
             <profile id="9ee7-ff39-dd3d-ef7d" name="  Suppression fire!" hidden="false" typeId="5e51-6902-58a8-00f5" typeName="Order">
@@ -3551,8 +3551,8 @@ If this unit already has this ability, until the end of your next Command phase,
             <profile id="3e89-e20a-4d39-7a6a" name="Get back in the fight!" hidden="false" typeId="5e51-6902-58a8-00f5" typeName="Order">
               <characteristics>
                 <characteristic name="Type" typeId="acf4-29e1-933e-277c">PREFECTUS</characteristic>
-                <characteristic name="Phase" typeId="d253-ed5c-1a09-ebd1">Movement Phase, Shooting Phase, Charge Phase</characteristic>
-                <characteristic name="Eligible Units" typeId="54d6-e3f7-ad8c-d3a0">REGIMENT INFANTRY, AUXILIA INFANTRY.</characteristic>
+                <characteristic name="Phase" typeId="d253-ed5c-1a09-ebd1">Any phase</characteristic>
+                <characteristic name="Eligible Units" typeId="54d6-e3f7-ad8c-d3a0">&lt;REGIMENT&gt; INFANTRY, AUXILIA INFANTRY (6&quot;)</characteristic>
                 <characteristic name="Effect" typeId="a435-9dd9-7056-398e">Until the start of your next Command phase, this unit is eligible to shoot or charge (but not both) in a turn in which it Fell Back.</characteristic>
               </characteristics>
             </profile>
@@ -3560,7 +3560,7 @@ If this unit already has this ability, until the end of your next Command phase,
               <characteristics>
                 <characteristic name="Type" typeId="acf4-29e1-933e-277c">PREFECTUS</characteristic>
                 <characteristic name="Phase" typeId="d253-ed5c-1a09-ebd1">Any phase</characteristic>
-                <characteristic name="Eligible Units" typeId="54d6-e3f7-ad8c-d3a0">&lt;REGIMENT&gt; INFANTRY, &lt;AUXILIA&gt; INFANTRY.</characteristic>
+                <characteristic name="Eligible Units" typeId="54d6-e3f7-ad8c-d3a0">&lt;REGIMENT&gt; INFANTRY, AUXILIA INFANTRY (6&quot;)</characteristic>
                 <characteristic name="Effect" typeId="a435-9dd9-7056-398e">Until the start of your next Command phase, this unit can still perform actions in a turn in which it Fell Back or Advanced, and it can shoot without any actions it is performing failing.</characteristic>
               </characteristics>
             </profile>
@@ -3584,8 +3584,8 @@ If this unit already has this ability, until the end of your next Command phase,
               <characteristics>
                 <characteristic name="Type" typeId="acf4-29e1-933e-277c">ARMOUR</characteristic>
                 <characteristic name="Phase" typeId="d253-ed5c-1a09-ebd1">Command Phase, Movement Phase</characteristic>
-                <characteristic name="Eligible Units" typeId="54d6-e3f7-ad8c-d3a0">&lt;REGIMENT&gt; VEHICLE (12&quot;)</characteristic>
-                <characteristic name="Effect" typeId="a435-9dd9-7056-398e">Select one Objective Marker. Until your next Command phase, eligible units gains the Objective Secured ability if they are within 6&quot; of that Objective Marker.
+                <characteristic name="Eligible Units" typeId="54d6-e3f7-ad8c-d3a0">&lt;REGIMENT&gt; VEHICLE (9&quot;)</characteristic>
+                <characteristic name="Effect" typeId="a435-9dd9-7056-398e">Select one eligible REGIMENT unit. Until your next Command phase, that unit gain the Objective Secured ability if they are within 6&quot; of a Objective Marker.
 If this unit already has this ability, until the end of your next Command phase, for each remaining Wounds of models in this unit count as having an additional wound when determining control of an objective marker.</characteristic>
               </characteristics>
             </profile>
@@ -3602,7 +3602,7 @@ Until the end of the subsecuent Fighting phase, if the eligible unit has Charged
               <characteristics>
                 <characteristic name="Type" typeId="acf4-29e1-933e-277c">ARMOUR</characteristic>
                 <characteristic name="Phase" typeId="d253-ed5c-1a09-ebd1">Shooting Phase</characteristic>
-                <characteristic name="Eligible Units" typeId="54d6-e3f7-ad8c-d3a0">&lt;REGIMENT&gt; VEHICLE (12&quot;)</characteristic>
+                <characteristic name="Eligible Units" typeId="54d6-e3f7-ad8c-d3a0">&lt;REGIMENT&gt; VEHICLE (9&quot;)</characteristic>
                 <characteristic name="Effect" typeId="a435-9dd9-7056-398e">Until the end of your next Shooting phase, each time a model in this unit makes a ranged attack, re-roll a hit roll of 1.</characteristic>
               </characteristics>
             </profile>
