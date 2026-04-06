@@ -12401,6 +12401,11 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e87f-c8ff-111b-3226" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="1" field="2c60-b590-55cb-db29">
+                  <conditions>
+                    <condition type="lessThan" value="6" field="selections" scope="bd28-a506-cdc5-cd44" childId="model" shared="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c60-b590-55cb-db29" type="max"/>
@@ -12424,21 +12429,37 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
               </categoryLinks>
               <entryLinks>
                 <entryLink id="7fb1-5481-2893-c573" name="Plasma pistol" hidden="false" collective="false" import="true" targetId="4ac9-995a-cb90-b559" type="selectionEntry"/>
-                <entryLink id="8bb9-deb8-a9c2-7afe" name="Chainsword" hidden="false" collective="false" import="true" targetId="68c5-3abd-8fe9-a7ae" type="selectionEntry"/>
                 <entryLink id="7e83-6886-562f-0eab" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="points" value="40"/>
+                <cost name="Pts" typeId="points" value="35"/>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Melee weapon" id="9a03-a204-5f17-12d1" hidden="false" defaultSelectionEntryId="8bb9-deb8-a9c2-7afe">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9324-cf63-dd6e-e7e9" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c300-045c-1a48-3bc9" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Chainsword" hidden="false" id="8bb9-deb8-a9c2-7afe" collective="false" targetId="fe5f-0cd5-5f0d-abc4" type="selectionEntry"/>
+                    <entryLink import="true" name="Chainaxe" hidden="false" id="efd2-35f0-9c06-25fa" collective="false" targetId="5757-4579-2d5a-ec6d" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
             <selectionEntry id="c19e-149e-b0eb-b984" name="Raptor w/Special weapon" hidden="false" collective="false" import="true" type="model">
               <modifiers>
                 <modifier type="decrement" field="points" value="5">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e87f-c8ff-111b-3226" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="f587-6555-0fa9-9d6c">
+                  <conditions>
+                    <condition type="lessThan" value="6" field="selections" scope="bd28-a506-cdc5-cd44" childId="model" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -12510,6 +12531,51 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
               <costs>
                 <cost name="Pts" typeId="points" value="25"/>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Raptor w/Heavy chainaxe" hidden="false" id="75ce-6bc1-2438-06f8" collective="false">
+              <modifiers>
+                <modifier type="decrement" value="5" field="points">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="e87f-c8ff-111b-3226" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="ab57-efc9-00db-4a2e">
+                  <conditions>
+                    <condition type="lessThan" value="6" field="selections" scope="bd28-a506-cdc5-cd44" childId="model" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ab57-efc9-00db-4a2e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Raptor" id="f4cf-5d7c-b1da-3502" hidden="false" targetId="797a-b989-a8cf-7c1b" type="profile">
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="d64e-76c2-6608-1e7e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier type="set" value="5" field="2218-aa3c-265f-2939"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </infoLink>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink name="Ø32mm" hidden="false" id="dc11-82bc-e6a0-220b" targetId="1441-1590-8a0e-24f3" primary="false"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="da4f-3072-88f5-be2d" collective="false" targetId="1da2-aaf4-c4eb-f218" type="selectionEntry"/>
+                <entryLink import="true" name="Heavy Chainaxe" hidden="false" id="ba37-51c3-3caa-2d57" collective="false" targetId="f973-9f2d-25f7-bd59" type="selectionEntry"/>
+                <entryLink import="true" name="Frag &amp; Krak grenades" hidden="false" id="53ac-7d02-0e43-13ea" collective="false" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="35"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
