@@ -12266,6 +12266,51 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
             </modifier>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Special Ammunitions</comment>
+          <modifiers>
+            <modifier type="add" value="ed5a-14d7-45f8-afb3" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="fe8c-9fa3-c71e-d8de" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="7495-cee2-d28a-75af" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="b3c0-69fa-86d1-490c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Chaos Mark Keyword</comment>
+          <modifiers>
+            <modifier type="add" value="51da-3457-1b10-cb14" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="59c9-caad-75a6-351e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="4097-5f68-1097-1f16" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="1c78-3132-46c4-1d1e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2226-f82a-fe58-178d" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="ef34-64c8-1666-c312" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="11a0-1562-512f-d63b" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="21d4-cb9f-44f3-e5a6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="5b82-0ba7-db61-82db" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="d4f1-1152-2843-1e44" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
       </modifierGroups>
       <profiles>
         <profile id="6c86-e5b7-c489-92bf" name="Fearsome [Aura]" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
