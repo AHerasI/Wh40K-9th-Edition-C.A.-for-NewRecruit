@@ -11802,8 +11802,11 @@ No model can have more than one Warlord Trait and the same Warlord Trait cannot 
                     <profile id="5d50-3c46-2c32-e588" name="Increase unit size" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                       <characteristics>
                         <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Purchase this Requisition either before or after a battle.
-Either select one unit from your Army that has the TROOPS Battlefield-role and have not reached Battle-hardened Experience Level or one unit from your Army that does not has the TROOPS Battlefield-role and have not reached Veteran Experience Level.
-Add any number of additional models to this unit (up to the maximum listed on its datasheet) and increase the PL cost accordingly.</characteristic>
+You can select one of the following:
+- One unit from your Army that has the TROOPS Battlefield-role and have not reached Battle-hardened Experience Level
+- One unit from your Army that does not has the TROOPS Battlefield-role and have not reached Veteran Experience Level.
+- One unit from your Army that does not comply with the beforementioned requisites, demoting that unit to the previous Experience Level, with the base Experience points for that level, and removing randomly any excesive traits or weapon upgrades the unit has.
+And add any number of additional models to this unit (up to the maximum listed on its datasheet) and change any wargear options that models in that unit are equipped with as described on that unit’s datasheet, changing the PL cost accordingly.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -12081,9 +12084,14 @@ You cannot purchase this Requisition if doing so would cause your total PL to ex
                 <selectionEntry id="5eb3-da48-443b-567b" name="1RP - The Ghost Warriors walk" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
-                      <conditions>
-                        <condition field="selections" scope="6030-15c5-bda1-858c" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bafc-494f-4fce-550f" type="equalTo"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="a6e9-7968-4980-dcfa" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Aeldari mix (all missions)"/>
+                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="7959-2c70-fa98-9842" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Drukharii"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <profiles>
@@ -12107,9 +12115,14 @@ You cannot purchase this Requisition if doing so would cause your total PL to ex
                 <selectionEntry id="758a-e653-2993-43f2" name="1RP - Exemplar of the Shrines" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
-                      <conditions>
-                        <condition field="selections" scope="6030-15c5-bda1-858c" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bafc-494f-4fce-550f" type="equalTo"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="a6e9-7968-4980-dcfa" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Aeldari"/>
+                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="bafc-494f-4fce-550f" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <profiles>
@@ -12131,9 +12144,14 @@ You cannot purchase this Requisition if doing so would cause your total PL to ex
                 <selectionEntry id="68e8-e181-781a-9f05" name="1RP - Lord of the Dark City" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
-                      <conditions>
-                        <condition field="selections" scope="6030-15c5-bda1-858c" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bafc-494f-4fce-550f" type="equalTo"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="a6e9-7968-4980-dcfa" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Aeldari mix (all missions)"/>
+                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="7959-2c70-fa98-9842" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Drukharii"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <profiles>
@@ -12155,15 +12173,21 @@ You cannot purchase this Requisition if doing so would cause your total PL to ex
                 <selectionEntry id="1923-16ae-7f05-3a37" name="1RP - Soul Trap" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
-                      <conditions>
-                        <condition field="selections" scope="6030-15c5-bda1-858c" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bafc-494f-4fce-550f" type="equalTo"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="a6e9-7968-4980-dcfa" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Aeldari mix (all missions)"/>
+                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="7959-2c70-fa98-9842" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Drukharii"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <profiles>
                     <profile id="cdda-dbe6-f421-882f" name="Soul Trap" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                       <characteristics>
                         <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Purchase this Requisition once after a battle in which two enemy CHARACTER units were destroyed by a melee attack made by an ARCHON, SUCCUBUS or HAEMONCULUS unit from your Army.
+You can purchase the Soul trap upgrade for that unit.
 You cannot purchase this Requisition if doing so would cause your total PL to exceed your Army&apos;s Supply Limit.</characteristic>
                       </characteristics>
                     </profile>
@@ -12178,9 +12202,14 @@ You cannot purchase this Requisition if doing so would cause your total PL to ex
                 <selectionEntry id="b59c-3990-b5a1-69b5" name="1RP - Paths of the Aeldari" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
-                      <conditions>
-                        <condition field="selections" scope="6030-15c5-bda1-858c" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bafc-494f-4fce-550f" type="equalTo"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="a6e9-7968-4980-dcfa" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Aeldari"/>
+                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="bafc-494f-4fce-550f" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <profiles>
@@ -12207,7 +12236,7 @@ If a Battle Honour cannot be applied (e.g. a Weapon Enhancement for a weapon tha
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
                       <conditions>
-                        <condition field="selections" scope="6030-15c5-bda1-858c" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bafc-494f-4fce-550f" type="equalTo"/>
+                        <condition field="selections" scope="6030-15c5-bda1-858c" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a6e9-7968-4980-dcfa" type="equalTo" childName="Aeldari"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -13016,15 +13045,15 @@ BIOLOGIST-ADEPT</description>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="bafc-494f-4fce-550f" name="Aeldari" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="bafc-494f-4fce-550f" name="Aeldari Craftworlds" hidden="false" collective="false" import="true" type="upgrade">
               <rules>
-                <rule id="9d75-6a70-8a09-4d86" name="Specialists (Aeldari)" hidden="false">
-                  <comment>AELDARI</comment>
+                <rule id="9d75-6a70-8a09-4d86" name="Specialists (Craftworlds)" hidden="false">
                   <description>List of Specialist units:
-- Care Specialists:
-HAEMONCULUS
 - Support Specialists:
 BONESINGER</description>
+                </rule>
+                <rule name="Note" id="cddf-f01c-7f9b-8560" hidden="false">
+                  <description>Changing between &quot;Aeldari Craftworlds&quot;, &quot;Drukhari&quot; and &quot;Aeldari mix&quot; is not considered an Army Focus Change</description>
                 </rule>
               </rules>
               <costs>
@@ -13153,6 +13182,46 @@ EARTH CASTE COMBAT ENGINEER</description>
                 <cost name="Pts" typeId="points" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Aeldari mix (all missions)" hidden="false" id="a6e9-7968-4980-dcfa" collective="false">
+              <rules>
+                <rule name="Specialists (Aeldari)" id="780b-0bb4-5b72-72d3" hidden="false">
+                  <comment>AELDARI</comment>
+                  <description>List of Specialist units:
+- Care Specialists:
+HAEMONCULUS
+- Support Specialists:
+BONESINGER</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Note" id="d2c6-f420-5b90-d5ea" hidden="false" type="rule" targetId="cddf-f01c-7f9b-8560"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Drukharii" hidden="false" id="7959-2c70-fa98-9842" collective="false">
+              <rules>
+                <rule name="Specialists (Drukharii)" id="9e87-7b78-45f5-4d6f" hidden="false">
+                  <description>List of Specialist units:
+- Care Specialists:
+HAEMONCULUS
+</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Note" id="48a4-13b1-70e4-545e" hidden="false" type="rule" targetId="cddf-f01c-7f9b-8560"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
