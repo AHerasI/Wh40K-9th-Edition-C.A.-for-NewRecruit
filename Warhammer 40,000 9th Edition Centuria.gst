@@ -10908,7 +10908,7 @@ When sorting the points after a Battle, any excess Requisition Points must be se
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup id="8292-2d8d-9eac-23a1" name="Mission Tally" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="8292-2d8d-9eac-23a1" name="Mission Tally" hidden="false" collective="false" import="true" collapsible="true">
           <selectionEntries>
             <selectionEntry id="a938-ddfd-3580-4fe2" name="Acomplised Mission (+3RP)" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
@@ -10966,7 +10966,7 @@ When sorting the points after a Battle, any excess Requisition Points must be se
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup id="0162-db32-f5ab-21ff" name="Faction-Specific" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="0162-db32-f5ab-21ff" name="Faction-Specific" hidden="false" collective="false" import="true" flatten="true">
               <selectionEntries>
                 <selectionEntry id="9049-575b-9da9-277f" name="Angels of Death (+1RP)" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
@@ -11705,9 +11705,9 @@ At the end of the battle, if at least a unit from your Army were destroyed and a
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
-        <selectionEntryGroup id="ab80-666e-75ff-592c" name="Requisition Point Tally" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="ab80-666e-75ff-592c" name="Requisition Point Tally" hidden="false" collective="false" import="true" collapsible="true">
           <selectionEntryGroups>
-            <selectionEntryGroup id="c3b9-f327-327f-09aa" name="Requisition" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="c3b9-f327-327f-09aa" name="Requisition" hidden="false" collective="false" import="true" flatten="true">
               <selectionEntries>
                 <selectionEntry id="e13e-59ed-7f48-9849" name="1RP - Increase supply limit" hidden="false" collective="false" import="true" type="upgrade">
                   <profiles>
@@ -11748,8 +11748,8 @@ You cannot purchase this Requisition if doing so would cause your total Power Le
                     <profile id="b196-93b5-ddfb-466d" name="Rearm existing unit" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                       <characteristics>
                         <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Purchase this Requisition either before or after a battle.
-Select one unit from your Army. 
-You can change any wargear options that models in that unit are equipped with as described on that unit’s datasheet, changing the PL cost accordingly.</characteristic>
+Select one unit from your Army.
+You can change any wargear options that models in that unit are equipped with, as described on that unit’s datasheet, changing the PL cost accordingly.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -11806,7 +11806,8 @@ You can select one of the following:
 - One unit from your Army that has the TROOPS Battlefield-role and have not reached Battle-hardened Experience Level
 - One unit from your Army that does not has the TROOPS Battlefield-role and have not reached Veteran Experience Level.
 - One unit from your Army that does not comply with the beforementioned requisites, demoting that unit to the previous Experience Level, with the base Experience points for that level, and removing randomly any excesive traits or weapon upgrades the unit has.
-And add any number of additional models to this unit (up to the maximum listed on its datasheet) and change any wargear options that models in that unit are equipped with as described on that unit’s datasheet, changing the PL cost accordingly.</characteristic>
+
+Then, add any number of additional models to this unit (up to the maximum listed on its datasheet), and change any wargear options that models in that unit are equipped with, as described on that unit’s datasheet, changing the PL cost accordingly.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -11853,7 +11854,7 @@ You cannot purchase this Requisition if doing so would cause your total Power Le
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="d32a-6c16-f970-89f1" name="Faction-Specific" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="d32a-6c16-f970-89f1" name="Faction-Specific" hidden="false" collective="false" import="true" flatten="true">
               <selectionEntries>
                 <selectionEntry id="c1c0-83c7-e86c-7860" name="1RP - Even in death I still serve" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
@@ -12088,7 +12089,7 @@ You cannot purchase this Requisition if doing so would cause your total PL to ex
                         <conditionGroup type="and">
                           <conditions>
                             <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="a6e9-7968-4980-dcfa" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Aeldari mix (all missions)"/>
-                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="7959-2c70-fa98-9842" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Drukharii"/>
+                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="bafc-494f-4fce-550f" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Aeldari Craftworlds"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -12895,7 +12896,7 @@ The new unit has the same number of experience points and the same Battle Honour
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
-        <selectionEntryGroup id="6554-6a72-c964-6f06" name="Set Main Faction" hidden="false" collective="false" import="true" defaultSelectionEntryId="6d05-71e3-ca46-1548">
+        <selectionEntryGroup id="6554-6a72-c964-6f06" name="Set Main Faction" hidden="false" collective="false" import="true" defaultSelectionEntryId="6d05-71e3-ca46-1548" collapsible="true">
           <constraints>
             <constraint field="selections" scope="6030-15c5-bda1-858c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2186-6498-d714-8c38" type="max"/>
             <constraint field="selections" scope="6030-15c5-bda1-858c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="08e6-234b-919b-1a1b" type="min"/>
@@ -13169,7 +13170,7 @@ EARTH CASTE COMBAT ENGINEER</description>
             <selectionEntry id="6d05-71e3-ca46-1548" name="Mixed faction (no bonus misions)" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink id="ed14-c3bb-ec72-6f4f" name="Specialists (Imperium)" hidden="false" targetId="8666-fa5a-8250-d93d" type="rule"/>
-                <infoLink id="cec9-506e-87e7-6381" name="Specialists (Aeldari)" hidden="false" targetId="9d75-6a70-8a09-4d86" type="rule"/>
+                <infoLink id="cec9-506e-87e7-6381" name="Specialists (Craftworlds)" hidden="false" targetId="9d75-6a70-8a09-4d86" type="rule"/>
                 <infoLink id="d319-5d73-3bbc-e041" name="Specialists (Chaos)" hidden="false" targetId="3aaf-f4ce-e415-6f2c" type="rule"/>
                 <infoLink id="4ecd-8e0f-fe94-fefc" name="Specialists (Votann)" hidden="false" targetId="3b62-18a6-6e2b-04d3" type="rule"/>
                 <infoLink id="09dc-408d-ecd2-1a51" name="Specialists (Necrons)" hidden="false" targetId="f0e2-e19b-96c5-f6a8" type="rule"/>
@@ -13209,8 +13210,7 @@ BONESINGER</description>
                 <rule name="Specialists (Drukharii)" id="9e87-7b78-45f5-4d6f" hidden="false">
                   <description>List of Specialist units:
 - Care Specialists:
-HAEMONCULUS
-</description>
+HAEMONCULUS</description>
                 </rule>
               </rules>
               <costs>
