@@ -4871,43 +4871,9 @@ In addition, a unit gain a extra EXP point if it managed to do one of the follow
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="00d5-86f2-fe4c-ac90" name="Psyker unit" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b7c-2955-7a54-1d1b" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="0d3f-49f5-e455-1ea2" name="Titanic unit" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="4763-757f-499f-d998" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8319-8ce7-e950-4d41" type="equalTo"/>
-                    <condition field="selections" scope="4763-757f-499f-d998" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4122-8b0f-8063-dfae" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5eaa-d88b-c35f-63b4" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="50d3-9871-64b2-2c5c" name="Battle Honours (D6-Random)" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="50d3-9871-64b2-2c5c" name="Battle Honours (D6-Random)" hidden="false" collective="false" import="true" collapsible="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -5669,7 +5635,7 @@ In addition, a unit gain a extra EXP point if it managed to do one of the follow
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="81ca-12d2-d41e-dd04" name="Battle Scars (D6-Random)" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="81ca-12d2-d41e-dd04" name="Battle Scars (D6-Random)" hidden="false" collective="false" import="true" collapsible="true">
           <constraints>
             <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="eddb-1407-c3ee-b11f" type="max"/>
           </constraints>
@@ -6150,89 +6116,7 @@ If this unit has no aura abilities on its datasheet, then it is unaffected by th
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
-        <selectionEntryGroup id="9003-a532-9299-34c6" name=" Unit type" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63f1-d300-1329-6a65" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9555-1bb0-cb44-41b5" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="2fdd-61c5-0e94-8482" name="1 - Character (Non Vehicle/Monster)" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="5737-39b6-d903-7c4e" name="Out of Order" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-                  <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- When all this unit&apos;s models are destroyed during a Battle, after the battle is finished, you must take an Out of Action test for this unit. To do so, roll a D6.
-- If your Army fields at least 1 CARE SPECIALIST, add 1 to that roll.
-- On a 4+ you can keep that unit in your Army, but it gains 2 Battle Scars.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="4122-8b0f-8063-dfae" name="2 - Vehicle" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="78af-f5c5-c427-ac6c" name="Out of Order" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-                  <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- When all this unit&apos;s models are destroyed during a Battle, after the battle is finished, you must take an Out of Action test for this unit. To do so, roll a D6.
-- If at least half of the models of the unit have Exploded*, substract 1 from that roll.
-- If your Army fields at least 1 SUPPORT SPECIALIST, add 1 to that roll.
-- On a 4+ you can keep that unit in your Army, but it gains 2 Battle Scars.
-
-*If the unit doesn&apos;t have an Explodes rule or similar (which is considered as the Explodes in regard this Rule), consider as if the models has not exploded in regard this Rule.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="8319-8ce7-e950-4d41" name="3 - Monster" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="2d8a-76c2-d53b-e798" name="Out of Order" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-                  <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- When all this unit&apos;s models are destroyed during a Battle, after the battle is finished, you must take an Out of Action test for this unit. To do so, roll a D6.
-- If at least half of the models of the unit have Exploded*, substract 1 from that roll.
-- If your Army fields at least 1 CARE SPECIALIST, add 1 to that roll.
-- On a 4+ you can keep that unit in your Army, but it gains 2 Battle Scars.
-
-*If the unit doesn&apos;t have an Explodes rule or similar (which is considered as the Explodes in regard this Rule), consider as if the models has not exploded in regard this Rule.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="4e24-d956-74c7-9255" name="4 - Other" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="1118-55a3-7e32-fb79" name="Out of Order" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-                  <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- When all this unit&apos;s models are destroyed during a Battle, after the battle is finished, you must take an Out of Action test for this unit. To do so, roll a D6.
-- If your Army fields at least 1 CARE SPECIALIST, add 1 to that roll.
-- On a 3+ you can keep that unit in your Army, but it gains 2 Battle Scars.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="30d8-6ccc-6494-fdde" name="Weapon Enhancements" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="30d8-6ccc-6494-fdde" name="Weapon Enhancements" hidden="true" collective="false" import="true" collapsible="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -6563,6 +6447,128 @@ If this unit has no aura abilities on its datasheet, then it is unaffected by th
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Unit data" id="4868-9d8e-56a2-ca97" hidden="false" sortIndex="1" collapsible="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup name=" Unit type" id="9003-a532-9299-34c6" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="63f1-d300-1329-6a65" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9555-1bb0-cb44-41b5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="1 - Character (Non Vehicle/Monster)" hidden="false" id="2fdd-61c5-0e94-8482" collective="false">
+                  <profiles>
+                    <profile name="Out of Order" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="5737-39b6-d903-7c4e">
+                      <characteristics>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- When all this unit&apos;s models are destroyed during a Battle, after the battle is finished, you must take an Out of Action test for this unit. To do so, roll a D6.
+- If your Army fields at least 1 CARE SPECIALIST, add 1 to that roll.
+- On a 4+ you can keep that unit in your Army, but it gains 2 Battle Scars.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="Pts" typeId="points" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="2 - Vehicle" hidden="false" id="4122-8b0f-8063-dfae" collective="false">
+                  <profiles>
+                    <profile name="Out of Order" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="78af-f5c5-c427-ac6c">
+                      <characteristics>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- When all this unit&apos;s models are destroyed during a Battle, after the battle is finished, you must take an Out of Action test for this unit. To do so, roll a D6.
+- If at least half of the models of the unit have Exploded*, substract 1 from that roll.
+- If your Army fields at least 1 SUPPORT SPECIALIST, add 1 to that roll.
+- On a 4+ you can keep that unit in your Army, but it gains 2 Battle Scars.
+
+*If the unit doesn&apos;t have an Explodes rule or similar (which is considered as the Explodes in regard this Rule), consider as if the models has not exploded in regard this Rule.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="Pts" typeId="points" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="3 - Monster" hidden="false" id="8319-8ce7-e950-4d41" collective="false">
+                  <profiles>
+                    <profile name="Out of Order" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="2d8a-76c2-d53b-e798">
+                      <characteristics>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- When all this unit&apos;s models are destroyed during a Battle, after the battle is finished, you must take an Out of Action test for this unit. To do so, roll a D6.
+- If at least half of the models of the unit have Exploded*, substract 1 from that roll.
+- If your Army fields at least 1 CARE SPECIALIST, add 1 to that roll.
+- On a 4+ you can keep that unit in your Army, but it gains 2 Battle Scars.
+
+*If the unit doesn&apos;t have an Explodes rule or similar (which is considered as the Explodes in regard this Rule), consider as if the models has not exploded in regard this Rule.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="Pts" typeId="points" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="4 - Other" hidden="false" id="4e24-d956-74c7-9255" collective="false">
+                  <profiles>
+                    <profile name="Out of Order" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="1118-55a3-7e32-fb79">
+                      <characteristics>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- When all this unit&apos;s models are destroyed during a Battle, after the battle is finished, you must take an Out of Action test for this unit. To do so, roll a D6.
+- If your Army fields at least 1 CARE SPECIALIST, add 1 to that roll.
+- On a 3+ you can keep that unit in your Army, but it gains 2 Battle Scars.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="Pts" typeId="points" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Psyker unit" hidden="false" id="00d5-86f2-fe4c-ac90" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b7c-2955-7a54-1d1b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Titanic unit" hidden="false" id="0d3f-49f5-e455-1ea2" collective="false">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="4763-757f-499f-d998" childId="8319-8ce7-e950-4d41" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="equalTo" value="0" field="selections" scope="4763-757f-499f-d998" childId="4122-8b0f-8063-dfae" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5eaa-d88b-c35f-63b4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
