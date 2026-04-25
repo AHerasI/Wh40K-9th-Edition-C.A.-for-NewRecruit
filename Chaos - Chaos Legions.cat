@@ -6204,6 +6204,20 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Greater mob" hidden="false" id="6bc1-d61a-957d-9adc">
+          <costs>
+            <cost name="Pts" typeId="points" value="15"/>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2adc-1c0d-d2c5-59ef"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Cultist w/Special weapon" hidden="false" id="2f5e-111b-ddcb-dcdd" type="selectionEntryGroup" targetId="a019-0c3d-96e9-3349"/>
+          </entryLinks>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="6e54-b4f1-5546-2761" name="Cultist Mob" hidden="false" collective="false" import="true" defaultSelectionEntryId="bcfa-f565-5d10-d4e8">
@@ -6277,9 +6291,6 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
           </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="a019-0c3d-96e9-3349" name="Cultist w/Special weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="481a-3348-abf8-e533">
-              <modifiers>
-                <modifier type="set" field="a4d8-fead-6c59-db33" value="-1"/>
-              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0313-ac92-28e4-c983" type="max"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4d8-fead-6c59-db33" type="min"/>
@@ -6348,6 +6359,17 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="18" field="5ed7-569c-9271-16cb"/>
+                <modifier type="set" value="18" field="95bf-0b9a-684b-d489"/>
+              </modifiers>
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="06ea-21c1-b1cb-329f" childId="6bc1-d61a-957d-9adc" shared="true" childName="Greater mob"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>

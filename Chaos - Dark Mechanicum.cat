@@ -21486,6 +21486,20 @@ At the start of your Command phase, you can select one of the following:
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Greater mob" hidden="false" id="8da4-27a9-9455-0534">
+          <costs>
+            <cost name="Pts" typeId="points" value="15"/>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="76cf-d229-6be6-5c5a"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Cultist w/Special weapon" hidden="false" id="b78a-fc9b-753c-8069" type="selectionEntryGroup" targetId="f644-4dbd-acd0-27e2"/>
+          </entryLinks>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="0998-6ba0-429a-d767" name="Cultist Mob" hidden="false" collective="false" import="true" defaultSelectionEntryId="d508-1aca-174c-368d">
@@ -21625,6 +21639,17 @@ At the start of your Command phase, you can select one of the following:
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="18" field="be46-af70-3552-6698"/>
+                <modifier type="set" value="18" field="933a-e6fa-eab9-de1a"/>
+              </modifiers>
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="ba61-28af-fb5a-c56e" childId="8da4-27a9-9455-0534" shared="true" childName="Greater mob"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
