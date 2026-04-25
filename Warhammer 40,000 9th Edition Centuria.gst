@@ -11114,7 +11114,8 @@ ADEPTUS MECHANICUS units also receive 1 experience point for each enemy unit it 
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition field="selections" scope="6030-15c5-bda1-858c" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bafc-494f-4fce-550f" type="equalTo"/>
+                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="a6e9-7968-4980-dcfa" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Aeldari mix (all missions)"/>
+                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="bafc-494f-4fce-550f" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Aeldari Craftworlds"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -11144,7 +11145,7 @@ If any AELDARI unit from your Army gains at least 1 point in the tally, this mis
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition field="selections" scope="6030-15c5-bda1-858c" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bafc-494f-4fce-550f" type="equalTo"/>
+                            <condition field="selections" scope="6030-15c5-bda1-858c" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a6e9-7968-4980-dcfa" type="equalTo" childName="Aeldari mix (all missions)"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -11172,7 +11173,7 @@ At the end of the battle, if all three performance targets have been destroyed b
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition field="selections" scope="6030-15c5-bda1-858c" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bafc-494f-4fce-550f" type="equalTo"/>
+                            <condition field="selections" scope="6030-15c5-bda1-858c" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a6e9-7968-4980-dcfa" type="equalTo" childName="Aeldari mix (all missions)"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -11198,7 +11199,8 @@ At the end of the battle, if all three performance targets have been destroyed b
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition field="selections" scope="6030-15c5-bda1-858c" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bafc-494f-4fce-550f" type="equalTo"/>
+                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="a6e9-7968-4980-dcfa" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Aeldari mix (all missions)"/>
+                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="7959-2c70-fa98-9842" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Drukharii"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
