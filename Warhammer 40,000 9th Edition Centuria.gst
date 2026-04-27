@@ -13524,6 +13524,46 @@ HAEMONCULUS</description>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="a7bd-d64e-5886-bdab" name="Plasma Obliterator" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="0290-f652-7e65-38eb" name="Plasma Obliterator, Standard" page="134" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">72&quot;</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D6</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Splash. Indirect fire.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="630d-ca66-8e12-823c" name="Plasma Obliterator, Overcharge" page="134" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">72&quot;</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D6</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Splash. Indirect fire. Add 1 to the Wound rolls. Each time you roll a hit roll of 1 when firing this weapon, this model suffers a mortal wound after all of its shots have been resolved.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="2b7f-7c60-e849-2f3f" name="Plasma weapon profile" hidden="false" targetId="6a90-8d3d-30d0-71b4" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="4ac4-2adf-b454-f4c8" name="Plasma Weapon" hidden="false" targetId="d691-91d9-76e1-b276" primary="false"/>
+        <categoryLink id="d78d-e46c-f769-a624" name="Turret-mounted" hidden="false" targetId="f28c-7e4e-75e1-2474" primary="false"/>
+        <categoryLink id="eafc-8d28-e368-fa5a" name="Indirect fire" hidden="false" targetId="9f18-f587-3245-07e5" primary="false"/>
+        <categoryLink id="509a-38e6-ff17-1569" name="Blast" hidden="false" targetId="a30d-0055-6710-6284" primary="false"/>
+        <categoryLink id="0c69-daa1-8f5b-6919" name="Splash" hidden="false" targetId="a1e8-34a8-13a9-7a54" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="Pts" typeId="points" value="0"/>
+        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="d442-1f03-d9da-e77f" name="Warlord Traits (BRB)" hidden="false" collective="false" import="true">
@@ -15398,58 +15438,20 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
             <categoryLink id="cfe2-2123-1cc5-cfa8" name="Faction: Unaligned" hidden="false" targetId="9df5-bb14-9326-4108" primary="false"/>
             <categoryLink id="1120-5615-3aaf-c704" name="Reinforced Armour Plating" hidden="false" targetId="45a6-4825-db8c-9cff" primary="false"/>
           </categoryLinks>
-          <selectionEntries>
-            <selectionEntry id="a7bd-d64e-5886-bdab" name="Plasma Obliterator" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8dd1-f32b-2a9f-a971" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c43b-65b8-ee32-2567" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="0290-f652-7e65-38eb" name="Plasma Obliterator, Standard" page="134" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">72&quot;</characteristic>
-                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D6</characteristic>
-                    <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
-                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
-                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Splash. Indirect fire.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="630d-ca66-8e12-823c" name="Plasma Obliterator, Overcharge" page="134" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">72&quot;</characteristic>
-                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D6</characteristic>
-                    <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
-                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
-                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
-                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Splash. Indirect fire. Add 1 to the Wound rolls. Each time you roll a hit roll of 1 when firing this weapon, this model suffers a mortal wound after all of its shots have been resolved.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="2b7f-7c60-e849-2f3f" name="Plasma weapon profile" hidden="false" targetId="6a90-8d3d-30d0-71b4" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="4ac4-2adf-b454-f4c8" name="Plasma Weapon" hidden="false" targetId="d691-91d9-76e1-b276" primary="false"/>
-                <categoryLink id="d78d-e46c-f769-a624" name="Turret-mounted" hidden="false" targetId="f28c-7e4e-75e1-2474" primary="false"/>
-                <categoryLink id="eafc-8d28-e368-fa5a" name="Indirect fire" hidden="false" targetId="9f18-f587-3245-07e5" primary="false"/>
-                <categoryLink id="509a-38e6-ff17-1569" name="Blast" hidden="false" targetId="a30d-0055-6710-6284" primary="false"/>
-                <categoryLink id="0c69-daa1-8f5b-6919" name="Splash" hidden="false" targetId="a1e8-34a8-13a9-7a54" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <costs>
             <cost name="Pts" typeId="points" value="380"/>
             <cost name="PL" typeId="e356-c769-5920-6e14" value="19"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
+          <entryLinks>
+            <entryLink targetId="a7bd-d64e-5886-bdab" id="fd34-9d7e-c8ad-eaab" type="selectionEntry" name="Plasma Obliterator" hidden="false" collective="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8dd1-f32b-2a9f-a971" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c43b-65b8-ee32-2567" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry id="16f8-8a47-07a1-1d6d" name="Tarantula Sentry Battery" hidden="false" collective="false" import="true" type="unit">
           <comment>16f8-8a47-07a1-1d6d</comment>
