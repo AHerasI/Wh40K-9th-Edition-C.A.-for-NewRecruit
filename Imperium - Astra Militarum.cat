@@ -1021,6 +1021,16 @@ In your Command phase, this unit’s PRIEST model can attempt to chant one praye
         </profile>
       </profiles>
     </categoryEntry>
+    <categoryEntry name="Dumb weapon" id="e2fa-b062-134a-0604" hidden="false">
+      <profiles>
+        <profile name="Dumb weapon" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="d36c-1d4d-c574-9bbb">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Instead of following the normal rules of a Tactical Weapon, in your next Shooting phase, you can only let the attack to be executed in the selected point, affecting each unit within the range indicated in the weapon&apos;s datasheet.
+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </categoryEntry>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="399f-f56b-0c0f-6fb5" name="Mechanised Company Command" hidden="true" collective="false" import="true" type="upgrade">
@@ -2732,6 +2742,27 @@ In your Command phase, this unit’s PRIEST model can attempt to chant one praye
       </modifiers>
       <categoryLinks>
         <categoryLink name="Dedicated Transport" hidden="false" id="bab9-bcbc-b03d-22ac" targetId="1b66-3f5f-6705-079a" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Mobile Siege base" hidden="true" id="27fc-fcfa-3d62-b1bc" collective="false" targetId="8828-214b-bc3d-63e7" type="selectionEntry">
+      <comment>Lord of War HQ</comment>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4b65-65ca-65a8-938c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="521a-24b7-f8db-4c46" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="fdfe-3c10-2004-aa2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4b79-6320-95a3-63e1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="06c4-f6da-bb1b-3cbd" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Lord of War" hidden="false" id="9a1d-d41f-9ddd-8aca" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -16948,6 +16979,410 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Mobile Siege base" hidden="false" id="8828-214b-bc3d-63e7">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Model option" id="12cb-c002-64b4-60b2" hidden="false" defaultSelectionEntryId="9861-2a8d-546b-d062" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f73-fc91-f940-9cb6" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cac7-74e4-64eb-1d85" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Leviathan land-cruiser" hidden="false" id="f4e1-7bcf-f73b-749c">
+                  <infoGroups>
+                    <infoGroup name="Leviathan land-cruiser" id="b9a5-412f-ddab-2298" hidden="false">
+                      <profiles>
+                        <profile name="Leviathan land-cruiser [1] (81+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="5a5b-63f7-4305-7619">
+                          <characteristics>
+                            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+                            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+                            <characteristic name="T" typeId="9c9f-9774-a358-3a39">9</characteristic>
+                            <characteristic name="W" typeId="f330-5e6e-4110-0978">160</characteristic>
+                            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+                            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">12</characteristic>
+                            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                          </characteristics>
+                        </profile>
+                        <profile name="Leviathan land-cruiser [2] (41-80 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="d43c-4b05-61a8-9611">
+                          <characteristics>
+                            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">4&quot;</characteristic>
+                            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+                            <characteristic name="T" typeId="9c9f-9774-a358-3a39">9</characteristic>
+                            <characteristic name="W" typeId="f330-5e6e-4110-0978">160</characteristic>
+                            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">12</characteristic>
+                            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                          </characteristics>
+                        </profile>
+                        <profile name="Leviathan land-cruiser [3] (21-40 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="b390-b981-8b52-07ea">
+                          <characteristics>
+                            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">2&quot;</characteristic>
+                            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+                            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+                            <characteristic name="T" typeId="9c9f-9774-a358-3a39">9</characteristic>
+                            <characteristic name="W" typeId="f330-5e6e-4110-0978">160</characteristic>
+                            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
+                            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">12</characteristic>
+                            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                          </characteristics>
+                        </profile>
+                        <profile name="Leviathan land-cruiser [4] (1-20 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="dd80-029b-5f8d-2db9">
+                          <characteristics>
+                            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
+                            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+                            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+                            <characteristic name="T" typeId="9c9f-9774-a358-3a39">9</characteristic>
+                            <characteristic name="W" typeId="f330-5e6e-4110-0978">160</characteristic>
+                            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+                            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">12</characteristic>
+                            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </infoGroup>
+                  </infoGroups>
+                  <costs>
+                    <cost name="Pts" typeId="points" value="4000"/>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="200"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink import="true" name="Reinforced Void Shield system" hidden="false" id="00bd-47f4-89e3-64c8" type="selectionEntry" targetId="a774-7aa3-3975-194c"/>
+                  </entryLinks>
+                  <profiles>
+                    <profile name="Leviathan land-cruiser" typeId="b3a8-0452-7436-44d1" typeName="Transport" hidden="false" id="9ee8-eafe-c054-7b3b">
+                      <characteristics>
+                        <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 150 ASTRA MILITARUM INFANTRY models, 4 VEHICLE models without the FLY keyword and 2 VEHICLE models with the FLY keyword.
+Each Heavy Weapon Team or Veteran Heavy Weapon Team model takes the space of 2 INFANTRY models and each OGRYN model takes the space of 3 INFANTRY models, and each VEHICLE model of 10 or more Wounds characteristic takes the space of 2 VEHICLE models.
+This TRANSPORT cannot embark DEATHSTRIKE or TITANIC models.</characteristic>
+                      </characteristics>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="8828-214b-bc3d-63e7" childId="ed1b-f8b3-7570-b8b8" shared="true" childName="Doomsday cannon"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                    <profile name="Leviathan land-cruiser" typeId="b3a8-0452-7436-44d1" typeName="Transport" hidden="false" id="b88d-48e8-94c3-e8cb">
+                      <characteristics>
+                        <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 300 ASTRA MILITARUM INFANTRY models, 12 VEHICLE models without the FLY keyword and 2 VEHICLE models with the FLY keyword.
+Each Heavy Weapon Team or Veteran Heavy Weapon Team model takes the space of 2 INFANTRY models and each OGRYN model takes the space of 3 INFANTRY models, and each VEHICLE model of 10 or more Wounds characteristic takes the space of 2 VEHICLE models.
+This TRANSPORT cannot embark DEATHSTRIKE or TITANIC models.</characteristic>
+                      </characteristics>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="8828-214b-bc3d-63e7" childId="ed1b-f8b3-7570-b8b8" shared="true" childName="Doomsday cannon"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Capitol Imperialis" hidden="false" id="9861-2a8d-546b-d062">
+                  <infoGroups>
+                    <infoGroup name="Capitol Imperialis" id="4b16-72b3-f4aa-e7e1" hidden="false">
+                      <profiles>
+                        <profile name="Capitol Imperialis [1] (61+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="e279-837c-17bd-473b">
+                          <characteristics>
+                            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
+                            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+                            <characteristic name="T" typeId="9c9f-9774-a358-3a39">9</characteristic>
+                            <characteristic name="W" typeId="f330-5e6e-4110-0978">120</characteristic>
+                            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">5</characteristic>
+                            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">12</characteristic>
+                            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                          </characteristics>
+                        </profile>
+                        <profile name="Capitol Imperialis [2] (31-60 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="f0f2-1e6b-b35f-7672">
+                          <characteristics>
+                            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+                            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+                            <characteristic name="T" typeId="9c9f-9774-a358-3a39">9</characteristic>
+                            <characteristic name="W" typeId="f330-5e6e-4110-0978">120</characteristic>
+                            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+                            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">12</characteristic>
+                            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                          </characteristics>
+                        </profile>
+                        <profile name="Capitol Imperialis [3] (16-30 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="e683-873d-b819-0cd9">
+                          <characteristics>
+                            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">4&quot;</characteristic>
+                            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+                            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+                            <characteristic name="T" typeId="9c9f-9774-a358-3a39">9</characteristic>
+                            <characteristic name="W" typeId="f330-5e6e-4110-0978">120</characteristic>
+                            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">12</characteristic>
+                            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                          </characteristics>
+                        </profile>
+                        <profile name="Capitol Imperialis [4] (1-15 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="1dec-205d-33ee-b4aa">
+                          <characteristics>
+                            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">2&quot;</characteristic>
+                            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+                            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+                            <characteristic name="T" typeId="9c9f-9774-a358-3a39">9</characteristic>
+                            <characteristic name="W" typeId="f330-5e6e-4110-0978">120</characteristic>
+                            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
+                            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">12</characteristic>
+                            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </infoGroup>
+                  </infoGroups>
+                  <costs>
+                    <cost name="Pts" typeId="points" value="2750"/>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink import="true" name="Void Shield system" hidden="false" id="603f-2038-111b-62e5" type="selectionEntry" targetId="2a64-174e-23eb-f29a"/>
+                  </entryLinks>
+                  <profiles>
+                    <profile name="Capitol Imperialis" typeId="b3a8-0452-7436-44d1" typeName="Transport" hidden="false" id="00d0-eac8-c7a2-ed20">
+                      <characteristics>
+                        <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 150 ASTRA MILITARUM INFANTRY models, and 8 VEHICLE models. 
+Each Heavy Weapon Team or Veteran Heavy Weapon Team model takes the space of 2 INFANTRY models and each OGRYN model takes the space of 3 INFANTRY models, and each VEHICLE model of 10 or more Wounds characteristic takes the space of 2 VEHICLE models.
+This TRANSPORT cannot embark DEATHSTRIKE or TITANIC models.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Main weapon" id="c53c-146c-a628-7d24" hidden="false" sortIndex="3" defaultSelectionEntryId="e462-016d-93fd-c0a3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97ee-da77-a0c1-73a4" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5fe9-4467-a7c8-972a" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Plasma Obliterator" hidden="false" id="362b-ec04-e528-3fa6" type="selectionEntry" targetId="a7bd-d64e-5886-bdab"/>
+                <entryLink import="true" name="Aquila Macro-cannon" hidden="false" id="e462-016d-93fd-c0a3" type="selectionEntry" targetId="59be-7ab6-1bf4-b31a"/>
+                <entryLink import="true" name="Overcharged Laser Destructor" hidden="false" id="5704-b333-2750-e22c" type="selectionEntry" targetId="0ddf-18b1-7b80-2b49"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Secondary weapons" id="912e-1b38-956e-f796" hidden="false" sortIndex="4" defaultSelectionEntryId="32b2-39d3-5ff1-2d56">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="2ba5-c621-6420-0b4e" includeChildSelections="false"/>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="e00d-8d0d-1df1-11a7" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="2x Twin Battlecannon" hidden="false" id="32b2-39d3-5ff1-2d56">
+                  <entryLinks>
+                    <entryLink import="true" name="Twin Battle cannon" hidden="false" id="ec98-200e-b490-ab9e" type="selectionEntry" targetId="2d4c-e864-9441-0c33">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d1cf-d314-de48-a48b" includeChildSelections="false"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="641a-2a0d-4e57-20b9" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="2x Twin Heavy Plasma Cannon" hidden="true" id="2cbc-ceac-34df-d614">
+                  <entryLinks>
+                    <entryLink import="true" name="Twin Heavy Plasma cannon" hidden="false" id="55c1-083f-7ce4-1da3" type="selectionEntry" targetId="353e-3e4d-a6ed-d25c">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d163-d6b4-b9eb-1aca" includeChildSelections="false"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c8f7-f51d-c2d7-ceae" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="8828-214b-bc3d-63e7" childId="f4e1-7bcf-f73b-749c" shared="true" childName="Leviathan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="2x Twin Laser Destroyer" hidden="true" id="6afa-5b05-5977-2000">
+                  <entryLinks>
+                    <entryLink import="true" name="Twin Laser Destroyer" hidden="false" id="534e-743c-5011-b1f8" type="selectionEntry" targetId="1d11-b5ed-289b-047b">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f1aa-fefe-215a-6789" includeChildSelections="false"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="533f-6467-7581-95c3" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="8828-214b-bc3d-63e7" childId="f4e1-7bcf-f73b-749c" shared="true" childName="Leviathan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="2x Heavy Plasma Cannon" hidden="false" id="90c5-f008-18a0-d207">
+                  <entryLinks>
+                    <entryLink import="true" name="Heavy Plasma cannon" hidden="false" id="e9f6-067f-a5c1-fa87" type="selectionEntry" targetId="221a-6109-61df-015e">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4e4f-db38-cdcc-15f9" includeChildSelections="false"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a55e-34e9-42f6-117b" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <infoLinks>
+                    <infoLink name="Emergency Plasma Vents" id="2e29-fda4-8462-2c00" hidden="false" type="profile" targetId="5da0-c6c3-0fe5-4917"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Point-defence weapons" id="0ba6-8204-1c28-2038" hidden="false" sortIndex="5" defaultSelectionEntryId="2cb5-f525-c39a-9141">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1851-2f66-8c33-bb49" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ce63-86e2-836b-f86d" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="6x Twin Heavy bolter" hidden="false" id="2cb5-f525-c39a-9141">
+                  <entryLinks>
+                    <entryLink import="true" name="Twin Heavy Bolter" hidden="false" id="3b6e-321f-905e-75be" type="selectionEntry" targetId="09d8-7790-ed3f-4d6d">
+                      <constraints>
+                        <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="7497-0dd4-db75-ff10" includeChildSelections="false"/>
+                        <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="700f-e819-8a40-2742" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="6x Avenger Mega-bolter" hidden="true" id="efb6-1f08-805d-7033">
+                  <entryLinks>
+                    <entryLink import="true" name="Avenger Mega-bolter" hidden="false" id="f1a6-9b31-9375-3254" type="selectionEntry" targetId="5074-2a44-6c58-4c3f">
+                      <constraints>
+                        <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="52a1-4668-c464-9b07" includeChildSelections="false"/>
+                        <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="9cbc-f11d-bf6a-70ef" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="8828-214b-bc3d-63e7" childId="f4e1-7bcf-f73b-749c" shared="true" childName="Leviathan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Anti-Air weapons" id="333a-1bd5-6261-ac05" hidden="false" sortIndex="6" defaultSelectionEntryId="fbd0-a580-5971-61cc">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c66-7f63-5129-723d" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0b6d-d765-7b5f-a356" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="2x Icarus Twin Heavy Autocannon" hidden="false" id="fbd0-a580-5971-61cc">
+                  <entryLinks>
+                    <entryLink import="true" name="Icarus Twin Heavy Autocannon" hidden="false" id="94e1-d081-ff6c-af98" type="selectionEntry" targetId="8bc5-f922-6b91-95bf">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0747-9e9d-8132-3391" includeChildSelections="false"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="5b40-bd9d-cc8a-35df" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="2x Icarus Twin Lascannon" hidden="false" id="144b-e96c-9923-9403">
+                  <entryLinks>
+                    <entryLink import="true" name="Icarus Twin Lascannon" hidden="false" id="af18-ae31-a7f9-858c" type="selectionEntry" targetId="2e50-f562-c0df-3e83">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9890-5a6d-4851-508e" includeChildSelections="false"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="f597-41b9-8bd2-0370" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink name="Titanic" hidden="false" id="039f-41f5-2530-6ec5" targetId="bdda-36f0-4f32-1639" primary="false"/>
+            <categoryLink name="Vehicle" hidden="false" id="955e-17e0-ed9e-f661" targetId="c8fd-783f-3230-493e" primary="false"/>
+            <categoryLink name="Tracked" hidden="false" id="4ef9-d1b4-fc9e-3a0b" targetId="7402-3477-84a2-08f8" primary="false"/>
+            <categoryLink name="Heavy Armour Plating" hidden="false" id="0b92-3e6b-4473-73eb" targetId="b66f-e4bb-3335-6222" primary="false"/>
+            <categoryLink name="Regiment" hidden="false" id="b82c-3966-0367-7464" targetId="3aa8-21df-b483-57dd" primary="false"/>
+            <categoryLink name="Officer" hidden="false" id="97a5-1be6-e524-b1f3" targetId="6f24-1326-b08a-81bc" primary="false"/>
+            <categoryLink name="Militarum Officer" hidden="false" id="4f53-6113-bee3-244b" targetId="4406-8f72-bc90-8949" primary="false"/>
+            <categoryLink name="Prefectus Officer" hidden="false" id="654c-5ac6-cba9-8d8d" targetId="272f-808e-bfb2-23c3" primary="false"/>
+            <categoryLink name="Character" hidden="false" id="b5b3-4239-bf90-3962" targetId="ef18-746a-369f-43a4" primary="false"/>
+            <categoryLink name="Transport" hidden="false" id="cd5d-ccf2-21ab-0100" targetId="6cc4-1b62-8e8a-05cd" primary="false"/>
+            <categoryLink name="Assault Transport" hidden="false" id="2d63-5a86-5b4c-ef27" targetId="3c95-4bac-d4d4-d0b2" primary="false"/>
+            <categoryLink name="Assault ramp" hidden="false" id="23fc-298a-6de6-0993" targetId="d7c1-93c2-0c88-7c3c" primary="false"/>
+            <categoryLink name="Tank Commander" hidden="false" id="177a-0b46-77a4-8892" targetId="9946-33a8-b502-a531" primary="false"/>
+            <categoryLink name="Regimental Command" hidden="false" id="5cb7-69da-6665-25b1" targetId="f8fa-7dd2-6afd-afdd" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="af3f-25b8-ff54-2fac" includeChildSelections="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Mobile Siege base" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="true" id="b7cd-3554-3c12-2c57" page="65">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the beginning of your Command phase, embarked VEHICLE models from your army regains 3 lost wounds (a model can only be repaired once per turn).
+In addition, at the beginning of your Command phase, embarked VEHICLE models are re-armed, and can use any &apos;one use only&apos; weapons and abilities it has on its datasheet that it has already used during the battle one additional time.</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="8828-214b-bc3d-63e7" childId="f4e1-7bcf-f73b-749c" shared="true" childName="Leviathan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Mobile command center" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="73ff-3345-6073-7317">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This unit has a VOX RANGE of 240&quot;.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Doomsday cannon" hidden="false" id="ed1b-f8b3-7570-b8b8" sortIndex="7">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="8828-214b-bc3d-63e7" childId="f4e1-7bcf-f73b-749c" shared="true" childName="Leviathan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6fd-e67e-ff24-4ff4" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Doomsday shell" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="8e2b-d9de-1de5-e742">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Tactical (6&quot;)</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D3</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">14</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Tactical Weapon. Blast. Dumb weapon.
+Each time an attack is made with this weapon against units without MONSTER, VEHICLE or TITANIC Keywords, that attack automatically hits the target.
+When targeting units with 10 or more models, change this weapon&apos;s Type to Heavy D6.
+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink name="Tactical Weapon" hidden="false" id="c38c-cbc4-78a5-7e29" targetId="9369-4930-4f3e-67a4" primary="false"/>
+                <categoryLink name="Blast" hidden="false" id="fc55-30f8-2f8a-80a4" targetId="a30d-0055-6710-6284" primary="false"/>
+                <categoryLink name="Dumb weapon" hidden="false" id="5413-cb48-a7a9-da52" targetId="e2fa-b062-134a-0604" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name=" Character Definition" hidden="false" id="33bd-ec97-89fc-68fd" collective="false" targetId="b8e4-216c-16cc-4263" type="selectionEntryGroup" sortIndex="1"/>
+          </entryLinks>
+        </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -28138,7 +28573,7 @@ When doing so, measure distances to and from this TRANSPORT model.</characterist
     </infoGroup>
     <infoGroup id="07b8-9918-c6ef-1fae" name="Baneblade Chassis" hidden="false">
       <profiles>
-        <profile id="3c2f-4595-4577-404d" name="Baneblade Chassis [1] (16+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="3c2f-4595-4577-404d" name="Baneblade Chassis [1] (16+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <modifiers>
             <modifier type="set" field="0bdf-a96e-9e38-7779" value="12&quot;">
               <conditions>

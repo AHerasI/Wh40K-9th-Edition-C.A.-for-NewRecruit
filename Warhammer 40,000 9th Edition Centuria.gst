@@ -13452,6 +13452,78 @@ HAEMONCULUS</description>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="a774-7aa3-3975-194c" name="Reinforced Void Shield system" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea84-b08a-2998-be4a" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6be-2153-61ce-2039" type="min"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="fc8b-f6ca-6957-3478" name="[Action] Void Shield Recharge" hidden="false" targetId="723a-3186-0153-98ca" type="profile"/>
+        <infoLink id="6ff0-3208-e73c-f3ac" name="Void Shield" hidden="false" targetId="2704-7cf7-6d89-c451" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="38de-dfe7-e7c9-8ab6" name="Void Shield Generator" hidden="false" targetId="60c3-2c5d-0caa-e9ec" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="0725-d4df-3002-45ac" name="Void Shield Layer" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b59f-5600-f12f-4693" type="max"/>
+            <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="367b-e44a-a03d-1146" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="e21c-44f8-7e46-6a98" name="Void Shield Layer" hidden="false" targetId="5115-ae53-da88-2cc5" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="Pts" typeId="points" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="Pts" typeId="points" value="0"/>
+        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0bb8-944e-d4fc-d36e" name="God-engine Void Shield system" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b03b-cebf-7ac9-f25d" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="178c-b431-09ce-23d5" type="min"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="654e-5a45-c191-918c" name="[Action] Void Shield Recharge" hidden="false" targetId="723a-3186-0153-98ca" type="profile"/>
+        <infoLink id="90da-ae01-816b-848c" name="Void Shield" hidden="false" targetId="2704-7cf7-6d89-c451" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="260a-3595-5f07-06c7" name="Void Shield Generator" hidden="false" targetId="60c3-2c5d-0caa-e9ec" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="65e9-04a5-3def-7325" name="Void Shield Layer" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="12" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f42b-9b64-7035-c91f" type="max"/>
+            <constraint field="selections" scope="parent" value="12" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a818-5d14-d61c-41d9" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="91ae-76a3-675b-46b5" name="Void Shield Layer" hidden="false" targetId="5115-ae53-da88-2cc5" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="Pts" typeId="points" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="Pts" typeId="points" value="0"/>
+        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="d442-1f03-d9da-e77f" name="Warlord Traits (BRB)" hidden="false" collective="false" import="true">
@@ -14282,9 +14354,8 @@ Change Configuration (Action): At the end of your Movement phase, one INFANTRY u
 
 Repair and Rearm (Action): At the end of your Shooting phase, one AIRCRAFT unit from your army (excluding those with the Airborne ability) that is on top of a friendly SKYSHIELD LANDING PAD with the Unfurled configuration in effect can start to perform this action. The action is completed at the end of your next Movement phase provided that AIRCRAFT is still on top of the same SKYSHIELD LANDING PAD. Once completed, that model:
 - Is repaired, and regains 3 lost wounds (a model can only be repaired once per turn).
-- Is re-armed, and can use any &apos;one use only&apos; weapons and abilities it has on its datasheet that it has already used during the battle one additional time. In addition, the next time this model is selected to shoot, until the end of the phase, each time it makes a ranged attack, add 1 to that attack&apos;s hit roll.
-
-Each AIRCRAFT model can only perform this action once during a battle.</characteristic>
+- Is re-armed, and can use any &apos;one use only&apos; weapons and abilities it has on its datasheet that it has already used during the battle one additional time.
+</characteristic>
               </characteristics>
             </profile>
             <profile id="51d2-f82d-a022-217b" name="Skyshield Landing Pad" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
@@ -15337,7 +15408,7 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                 <profile id="0290-f652-7e65-38eb" name="Plasma Obliterator, Standard" page="134" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">72&quot;</characteristic>
-                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D6&quot;</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D6</characteristic>
                     <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
                     <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
@@ -15347,7 +15418,7 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                 <profile id="630d-ca66-8e12-823c" name="Plasma Obliterator, Overcharge" page="134" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">72&quot;</characteristic>
-                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D6&quot;</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D6</characteristic>
                     <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
                     <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
