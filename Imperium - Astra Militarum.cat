@@ -17326,18 +17326,11 @@ This TRANSPORT cannot embark DEATHSTRIKE or TITANIC models.</characteristic>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="af3f-25b8-ff54-2fac" includeChildSelections="true"/>
           </constraints>
           <profiles>
-            <profile name="Mobile Siege base" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="true" id="b7cd-3554-3c12-2c57" page="65">
+            <profile name="Mobile Siege base" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="b7cd-3554-3c12-2c57" page="65">
               <characteristics>
                 <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the beginning of your Command phase, embarked VEHICLE models from your army regains 3 lost wounds (a model can only be repaired once per turn).
 In addition, at the beginning of your Command phase, embarked VEHICLE models are re-armed, and can use any &apos;one use only&apos; weapons and abilities it has on its datasheet that it has already used during the battle one additional time.</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="8828-214b-bc3d-63e7" childId="f4e1-7bcf-f73b-749c" shared="true" childName="Leviathan"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </profile>
             <profile name="Mobile command center" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="73ff-3345-6073-7317">
               <characteristics>
