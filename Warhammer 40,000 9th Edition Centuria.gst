@@ -5928,7 +5928,7 @@ If this unit has no aura abilities on its datasheet, then it is unaffected by th
                   <profiles>
                     <profile id="15da-94a4-8605-c6ee" name="Weakened Armour" hidden="false" typeId="9cbe-b8f7-8b06-3bdb" typeName="Crusade Battle Honour">
                       <characteristics>
-                        <characteristic name="Description" typeId="2cb3-f998-da99-e077">Each time this unit is hit by a weapon with a Strength characteristic of 8 or more, this unit suffers 1 mortal wound in addition to any normal damage.</characteristic>
+                        <characteristic name="Description" typeId="2cb3-f998-da99-e077">Each time this unit is wounded by a weapon with a Strength characteristic of 8 or more, this unit suffers 1 mortal wound in addition to any normal damage.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -14394,8 +14394,7 @@ Change Configuration (Action): At the end of your Movement phase, one INFANTRY u
 
 Repair and Rearm (Action): At the end of your Shooting phase, one AIRCRAFT unit from your army (excluding those with the Airborne ability) that is on top of a friendly SKYSHIELD LANDING PAD with the Unfurled configuration in effect can start to perform this action. The action is completed at the end of your next Movement phase provided that AIRCRAFT is still on top of the same SKYSHIELD LANDING PAD. Once completed, that model:
 - Is repaired, and regains 3 lost wounds (a model can only be repaired once per turn).
-- Is re-armed, and can use any &apos;one use only&apos; weapons and abilities it has on its datasheet that it has already used during the battle one additional time.
-</characteristic>
+- Is re-armed, and can use any &apos;one use only&apos; weapons and abilities it has on its datasheet that it has already used during the battle one additional time.</characteristic>
               </characteristics>
             </profile>
             <profile id="51d2-f82d-a022-217b" name="Skyshield Landing Pad" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
