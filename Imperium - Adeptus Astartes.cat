@@ -8290,9 +8290,14 @@ GREY KNIGHTS PSYKER units of your army gain a bonus depending on which Tide of t
             <selectionEntry id="df4c-c078-b176-2119" name="Lieutenant Orastes" hidden="true" collective="false" import="true" type="model">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad68-c80e-d058-88b7" type="atLeast"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="ad68-c80e-d058-88b7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="a1be-ee90-b5b3-388d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Inquisition Agents - Ordo Xenos - Deathwatch"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -8316,12 +8321,23 @@ GREY KNIGHTS PSYKER units of your army gain a bonus depending on which Tide of t
               </profiles>
               <infoLinks>
                 <infoLink id="d8b5-dc8a-a4fa-0b2e" name="Terminator Armour" hidden="false" targetId="f150-98d9-31b2-31cf" type="profile"/>
+                <infoLink name="Knowledge of the Warp" id="7dcf-a2bb-d8c8-d7b1" hidden="false" type="profile" targetId="a776-1889-0f29-6ce3">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Wardens against the Warp" id="54df-85a2-0358-a7ca" hidden="false" type="profile" targetId="cee9-13c6-a264-c5e1">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden"/>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="abe2-f88e-4858-ccbd" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
                 <categoryLink id="1947-2f3b-f825-1114" name="Terminator Armour" hidden="false" targetId="a85f-24e5-cfc3-9345" primary="false"/>
                 <categoryLink id="2c18-4232-0e84-8d59" name="Lieutenant" hidden="false" targetId="7b30-587e-eef8-5264" primary="false"/>
                 <categoryLink id="8dfa-75e4-ef97-9f83" name="Chapter" hidden="false" targetId="9a01-bae4-a01d-7e02" primary="false"/>
+                <categoryLink name="Ordo Xenos" hidden="false" id="081c-3a69-9530-b159" targetId="0eb0-346d-12e6-5924" primary="false"/>
               </categoryLinks>
               <selectionEntries>
                 <selectionEntry id="028c-b503-6fcb-aecb" name="Assault cannon" hidden="false" collective="false" import="true" type="upgrade">
