@@ -5812,7 +5812,7 @@ If this unit has no aura abilities on its datasheet, then it is unaffected by th
                   <profiles>
                     <profile id="3e72-c8b7-4d01-7719" name="Critical Wound" hidden="false" typeId="9cbe-b8f7-8b06-3bdb" typeName="Crusade Battle Honour">
                       <characteristics>
-                        <characteristic name="Description" typeId="2cb3-f998-da99-e077">Each time this unit is hit by a weapon with a Strength characteristic of 8 or more, this unit suffers 1 mortal wound in addition to any normal damage.</characteristic>
+                        <characteristic name="Description" typeId="2cb3-f998-da99-e077">Each time this unit is wounded by a weapon with a Strength characteristic of 8 or more, this unit suffers 1 mortal wound in addition to any normal damage.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
