@@ -671,18 +671,6 @@ Whilst the Assault Doctrine is active, models with this tactic consider the Tact
             <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a INFANTRY model in this unit makes a melee attack, an unmodified hit roll of 6 scores 1 additional hit.</characteristic>
           </characteristics>
         </profile>
-        <profile id="cee9-13c6-a264-c5e1" name="Wardens against the Warp" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3344-cffc-8cd0-1238" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Add 1 to Wound rolls made by attacks from TWILIGHT LURKERS units against DAEMON or DAEMONIC units.</characteristic>
-          </characteristics>
-        </profile>
         <profile id="3056-abd0-b7a0-1d8b" name="Attack from the shadows" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
@@ -706,19 +694,6 @@ Whilst the Assault Doctrine is active, models with this tactic consider the Tact
           </modifiers>
           <characteristics>
             <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">If your Warlord is from TERCIO ULTIMA, you can select two Combat Doctrines to be active in your Command Phase instead of one.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="a776-1889-0f29-6ce3" name="Knowledge of the Warp" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad68-c80e-d058-88b7" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Substract 1 from Psychic test rolls made by enemy units at 18&quot; range from any INFANTRY or BIKER models of ECLIPSE GUARD.
-Add 1 to Psychic test rolls made by friendly ECLIPSE GUARD models at 18&quot;.</characteristic>
           </characteristics>
         </profile>
         <profile id="a475-4b24-af23-c782" name="Seasoned warriors" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -969,6 +944,24 @@ Add 1 to Psychic test rolls made by friendly ECLIPSE GUARD models at 18&quot;.</
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink targetId="a776-1889-0f29-6ce3" id="5602-8006-fe86-b9d5" type="profile" name="Knowledge of the Warp" hidden="false">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="ad68-c80e-d058-88b7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink targetId="cee9-13c6-a264-c5e1" id="41c0-6ad2-9d22-eae5" type="profile" name="Wardens against the Warp" hidden="false">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="3344-cffc-8cd0-1238" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
             </modifier>
           </modifiers>
         </infoLink>
@@ -65954,6 +65947,17 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
       <comment>Character with invulnerable</comment>
       <characteristics>
         <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">In addition, this model does not suffer the penalty for moving and firing Heavy weapons.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a776-1889-0f29-6ce3" name="Knowledge of the Warp" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Substract 1 from Psychic test rolls made by enemy units at 18&quot; range from any INFANTRY or BIKER models of ECLIPSE GUARD.
+Add 1 to Psychic test rolls made by friendly ECLIPSE GUARD models at 18&quot;.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="cee9-13c6-a264-c5e1" name="Wardens against the Warp" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Add 1 to Wound rolls made by attacks from TWILIGHT LURKERS units against DAEMON or DAEMONIC units.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
