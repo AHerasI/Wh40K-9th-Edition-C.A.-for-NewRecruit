@@ -1025,8 +1025,7 @@ In your Command phase, this unit’s PRIEST model can attempt to chant one praye
       <profiles>
         <profile name="Dumb weapon" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="d36c-1d4d-c574-9bbb">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Instead of following the normal rules of a Tactical Weapon, in your next Shooting phase, you can only let the attack to be executed in the selected point, affecting each unit within the range indicated in the weapon&apos;s datasheet.
-</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Instead of following the normal rules of a Tactical Weapon, in your next Shooting phase, you can only let the attack to be executed in the selected point, affecting each unit within the range indicated in the weapon&apos;s datasheet.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5951,7 +5950,7 @@ Each time an attack is made against a &lt;REGIMENT&gt; unit, wound rolls cannot 
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0119-2963-b954-1611" name="Field Ordinance Battalion" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0119-2963-b954-1611" name="Field Ordinance Battalion" hidden="false" collective="false" import="true" type="unit" subType="unit-group">
       <categoryLinks>
         <categoryLink id="3784-140d-c876-1152" name="Vehicle Section" hidden="false" targetId="780f-68a5-fbfb-bdea" primary="false"/>
       </categoryLinks>
@@ -17360,8 +17359,7 @@ In addition, at the beginning of your Command phase, embarked VEHICLE models are
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6</characteristic>
                     <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Tactical Weapon. Blast. Dumb weapon.
 Each time an attack is made with this weapon against units without MONSTER, VEHICLE or TITANIC Keywords, that attack automatically hits the target.
-When targeting units with 10 or more models, change this weapon&apos;s Type to Heavy D6.
-</characteristic>
+When targeting units with 10 or more models, change this weapon&apos;s Type to Heavy D6.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -18691,7 +18689,7 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7c67-98af-968e-4888" name="Heavy Field Ordinance Battalion" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="7c67-98af-968e-4888" name="Heavy Field Ordinance Battalion" hidden="false" collective="false" import="true" type="unit" subType="unit-group">
       <categoryLinks>
         <categoryLink id="12ac-0bd3-0221-1df4" name="Vehicle Section" hidden="false" targetId="780f-68a5-fbfb-bdea" primary="false"/>
       </categoryLinks>
@@ -18702,7 +18700,7 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c4f-36bc-3b0a-4a82" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="0524-198d-8882-6d4f" name="Earthshaker Carriage Battery" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="0524-198d-8882-6d4f" name="Earthshaker Carriage Battery" hidden="false" collective="false" import="true" type="unit">
               <modifiers>
                 <modifier type="add" field="category" value="cee0-4459-2f94-b827">
                   <conditions>
@@ -18787,7 +18785,7 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
                 <categoryLink id="3d44-54d7-94d1-90f1" name="Wheeled" hidden="false" targetId="fd98-5ba2-04bf-821f" primary="false"/>
               </categoryLinks>
               <selectionEntries>
-                <selectionEntry id="a92a-0571-ecf8-eaea" name="Earthshaker Carriage" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="a92a-0571-ecf8-eaea" name="Earthshaker Carriage" hidden="false" collective="false" import="true" type="model">
                   <modifierGroups>
                     <modifierGroup>
                       <comment>IMPERIUM KEYWORDS</comment>
@@ -18869,7 +18867,7 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="51b6-5054-ae61-1994" name="Heavy Mortar Battery" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="51b6-5054-ae61-1994" name="Heavy Mortar Battery" hidden="false" collective="false" import="true" type="unit">
               <modifiers>
                 <modifier type="add" field="category" value="cee0-4459-2f94-b827">
                   <conditions>
@@ -18954,7 +18952,7 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
                 <categoryLink id="c2cb-41d6-1af5-48a7" name="Wheeled" hidden="false" targetId="fd98-5ba2-04bf-821f" primary="false"/>
               </categoryLinks>
               <selectionEntries>
-                <selectionEntry id="4975-6506-e086-9fe3" name="Heavy Mortar Carriage" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="4975-6506-e086-9fe3" name="Heavy Mortar Carriage" hidden="false" collective="false" import="true" type="model">
                   <modifierGroups>
                     <modifierGroup>
                       <comment>IMPERIUM KEYWORDS</comment>
@@ -19036,7 +19034,7 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f86d-655b-e687-712a" name="Medusa Carriage Battery" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="f86d-655b-e687-712a" name="Medusa Carriage Battery" hidden="false" collective="false" import="true" type="unit">
               <modifierGroups>
                 <modifierGroup>
                   <comment>FACTION KEYWORDS</comment>
@@ -19114,7 +19112,7 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
                 <categoryLink id="8029-cd28-b4ce-02d5" name="Wheeled" hidden="false" targetId="fd98-5ba2-04bf-821f" primary="false"/>
               </categoryLinks>
               <selectionEntries>
-                <selectionEntry id="0197-0ccf-9c6d-43de" name="Medusa Carriage" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="0197-0ccf-9c6d-43de" name="Medusa Carriage" hidden="false" collective="false" import="true" type="model">
                   <modifierGroups>
                     <modifierGroup>
                       <comment>IMPERIUM KEYWORDS</comment>
@@ -21736,7 +21734,7 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1853-6386-b9eb-2a57" name="Field Ordinance Battery" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="1853-6386-b9eb-2a57" name="Field Ordinance Battery" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="a1bc-c56c-3f85-ff4f" name="Vehicle Section" hidden="false" targetId="780f-68a5-fbfb-bdea" primary="false"/>
       </categoryLinks>
