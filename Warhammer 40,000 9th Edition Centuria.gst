@@ -2935,11 +2935,11 @@ Battle-Forged amies do not receive the Battle-forged CP bonus every turn.</descr
 If any attacks are generated as a result of an overwatch attack they will also be scored following regular Overwatch rules.</description>
     </rule>
     <rule id="f884-471f-e882-331d" name="Core rule modification: Weapons, Range" hidden="false">
-      <description>Range: How far the weapon can shoot. 
-Weapons with a range of ‘Melee’ are melee weapons and can only be used in hand-to-hand combat. 
+      <description>Range: How far the weapon can shoot.
+Weapons with a range of ‘Melee’ are melee weapons and can only be used in hand-to-hand combat.
 Tactical weapons are weapons that can attack anywhere in the map, within their own set of rules (see Tactical weapons rule).
-Bomb weapons are weapons that can units that have been in the movement path of the bearer, within their own set of rules (see Bomb weapons rule). 
-Both Tactical and Bomb weapons have a range marked between brackets, you must make attacks with the marked Type of weapon against all units, both friendly and foe,  within the specified range.
+Bomb weapons are weapons that can attack units that have been in the movement path of the bearer, within their own set of rules (see Bomb weapons rule).
+Both Tactical and Bomb weapons have a range marked between brackets, you must make attacks with the marked Type of weapon against all units, both friendly and foe, within the specified range.
 All other weapons are ranged weapons. Some weapons have a minimum and maximum range, for example 6&quot;-48&quot;; such weapons cannot target units that are wholly within the shorter range.</description>
     </rule>
     <rule id="594c-c9ca-6caf-57da" name=" [Action] Search for targets" hidden="false">
