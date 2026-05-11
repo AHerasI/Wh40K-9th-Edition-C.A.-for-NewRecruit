@@ -7820,7 +7820,24 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
           </constraints>
           <infoLinks>
             <infoLink id="4172-a207-cd4b-355e" name="Explodes 6+ (6&quot;)" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
-            <infoLink id="46ad-a99f-cc06-40ab" name="Chimera Chassis (Heavy)" hidden="false" targetId="dbaa-2fa9-a287-abcc" type="infoGroup"/>
+            <infoLink id="46ad-a99f-cc06-40ab" name="Chimera Chassis (Heavy)" hidden="false" targetId="dbaa-2fa9-a287-abcc" type="infoGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="0933-3c95-3d92-29e5" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Chimera Chassis (Heavy) (TG)" id="7a5d-0487-5224-dc47" hidden="false" type="infoGroup" targetId="88a1-838f-3fa3-4739">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="0933-3c95-3d92-29e5" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="bf72-69ae-fddc-34fe" name="Vehicle" hidden="false" targetId="c8fd-783f-3230-493e" primary="false"/>
@@ -8949,10 +8966,27 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="2a1f-4513-9b2a-2893" name="Taurox Tracked Chassis" hidden="false" targetId="4093-4799-8e0b-7d6d" type="infoGroup"/>
+            <infoLink id="2a1f-4513-9b2a-2893" name="Taurox Tracked Chassis" hidden="false" targetId="4093-4799-8e0b-7d6d" type="infoGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="fb2a-9e7b-3cd5-9eca" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink id="bb24-6dcb-7cf6-3245" name="Outflank" hidden="false" targetId="1940-602f-f125-e350" type="profile"/>
             <infoLink id="a0df-adff-7afc-9068" name="Additional armour plating" hidden="false" targetId="5b3f-8e7c-f7ae-0f7c" type="profile"/>
             <infoLink id="f559-0b1d-7345-27a8" name="Explodes 6+ (6&quot;)" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
+            <infoLink name="Taurox Tracked Chassis (TG)" id="eb89-22b1-bafb-d30b" hidden="false" type="infoGroup" targetId="1192-b80e-9857-c831">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="fb2a-9e7b-3cd5-9eca" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="794c-84ff-1565-9808" name="Vehicle" hidden="false" targetId="c8fd-783f-3230-493e" primary="false"/>
@@ -9119,8 +9153,25 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
           </profiles>
           <infoLinks>
             <infoLink id="04cf-3fe7-bd2e-0f9d" name="Explodes 6+ (6&quot;)" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
-            <infoLink id="b9cc-7954-52b1-3fd1" name="Chimera Chassis" hidden="false" targetId="8552-3247-a5b3-9937" type="infoGroup"/>
+            <infoLink id="b9cc-7954-52b1-3fd1" name="Chimera Chassis" hidden="false" targetId="8552-3247-a5b3-9937" type="infoGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="4658-d952-cddf-b78a" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink id="febe-e352-a7eb-4937" name="Command Vehicle" hidden="false" targetId="fddf-4b1a-1e17-d5b4" type="profile"/>
+            <infoLink name="Chimera Chassis (TG)" id="8ecd-300c-b152-8db7" hidden="false" type="infoGroup" targetId="31ea-7546-717a-c232">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="4658-d952-cddf-b78a" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="f5e9-df47-43ef-26fc" name="Vehicle" hidden="false" targetId="c8fd-783f-3230-493e" primary="false"/>
@@ -9334,9 +9385,26 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
           </profiles>
           <infoLinks>
             <infoLink id="ade4-a8ab-3fc4-fd91" name="Explodes 6+ (6&quot;)" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
-            <infoLink id="c97e-43ee-7ee0-aa2c" name="Chimera Chassis (Heavy)" hidden="false" targetId="dbaa-2fa9-a287-abcc" type="infoGroup"/>
+            <infoLink id="c97e-43ee-7ee0-aa2c" name="Chimera Chassis (Heavy)" hidden="false" targetId="dbaa-2fa9-a287-abcc" type="infoGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="aa5e-d476-c0e1-e5e5" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink id="6daa-0fbb-6288-763c" name="Command Vehicle" hidden="false" targetId="fddf-4b1a-1e17-d5b4" type="profile"/>
             <infoLink id="575a-e938-d3d9-8ba5" name="Grinding Advance" hidden="false" targetId="f093-6f54-0873-e90c" type="profile"/>
+            <infoLink name="Chimera Chassis (Heavy) (TG)" id="edb4-7fb4-3fc4-0dcf" hidden="false" type="infoGroup" targetId="88a1-838f-3fa3-4739">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="aa5e-d476-c0e1-e5e5" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="ba42-c37b-39f0-1ee5" name="Vehicle" hidden="false" targetId="c8fd-783f-3230-493e" primary="false"/>
@@ -9542,9 +9610,39 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
 Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes up the space of 3 models.</characteristic>
               </characteristics>
             </profile>
+            <profile name="Taurox" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="f927-f124-51d2-daeb">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">6</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">9</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4399-7ac5-26a8-3c81" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" value="3+" field="381b-eb28-74c3-df5f"/>
+                    <modifier type="set" value="8" field="00ca-f8b8-876d-b705"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="9866-e704-4c7f-b387" name="Taurox Wheeled Chassis" hidden="false" targetId="b4f4-7931-4671-e6b4" type="infoGroup"/>
             <infoLink id="385f-e73a-c5b0-11ee" name="Outflank" hidden="false" targetId="1940-602f-f125-e350" type="profile"/>
             <infoLink id="1e72-1610-5bc5-5e19" name="Additional armour plating" hidden="false" targetId="5b3f-8e7c-f7ae-0f7c" type="profile"/>
             <infoLink id="0fc2-238c-f9b9-c318" name="Explodes 6+ (6&quot;)" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
@@ -9750,7 +9848,24 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
           </modifierGroups>
           <infoLinks>
             <infoLink id="fbbe-566a-0c4f-dc94" name="Explodes 6+ (D6+3&quot;)" hidden="false" targetId="296c-b773-7bdb-fcf1" type="rule"/>
-            <infoLink id="d618-0ad6-6637-28cf" name="Chimera Chassis (Heavy)" hidden="false" targetId="dbaa-2fa9-a287-abcc" type="infoGroup"/>
+            <infoLink id="d618-0ad6-6637-28cf" name="Chimera Chassis (Heavy)" hidden="false" targetId="dbaa-2fa9-a287-abcc" type="infoGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="9cc4-458c-63ac-5248" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Chimera Chassis (Heavy) (TG)" id="5e4b-d87f-d6c6-9b1e" hidden="false" type="infoGroup" targetId="88a1-838f-3fa3-4739">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="9cc4-458c-63ac-5248" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="0333-1c93-8da0-9c7b" name="Vehicle" hidden="false" targetId="c8fd-783f-3230-493e" primary="false"/>
@@ -10102,8 +10217,25 @@ Until the start of your next Psychic phase, each time a ranged attack is made ag
             </modifierGroup>
           </modifierGroups>
           <infoLinks>
-            <infoLink id="035e-f592-9bee-72ad" name="Malcador Chassis" hidden="false" targetId="bb19-3bed-f13f-3ebc" type="infoGroup"/>
+            <infoLink id="035e-f592-9bee-72ad" name="Malcador Chassis" hidden="false" targetId="bb19-3bed-f13f-3ebc" type="infoGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="59db-304f-5e40-7d97" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink id="f88e-864f-6e23-0e90" name="Explodes 6+ (6&quot;)" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
+            <infoLink name="Malcador Chassis (TG)" id="6e89-866c-395f-8740" hidden="false" type="infoGroup" targetId="4b34-79c3-2c5c-758a">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="59db-304f-5e40-7d97" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="f889-81c5-0407-336c" name="Vehicle" hidden="false" targetId="c8fd-783f-3230-493e" primary="false"/>
@@ -10781,9 +10913,26 @@ Until the start of your next Psychic phase, each time a ranged attack is made ag
             </modifierGroup>
           </modifierGroups>
           <infoLinks>
-            <infoLink id="37fc-336d-46b2-3f9c" name="Leman Russ Chassis" hidden="false" targetId="41d8-421b-eaf6-7b02" type="infoGroup"/>
+            <infoLink id="37fc-336d-46b2-3f9c" name="Leman Russ Chassis" hidden="false" targetId="41d8-421b-eaf6-7b02" type="infoGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="a9d4-f864-13e9-b098" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink id="a176-1397-ff6c-0232" name="Grinding Advance" hidden="false" targetId="f093-6f54-0873-e90c" type="profile"/>
             <infoLink id="f0b4-b142-82c7-68a3" name="Explodes 6+ (6&quot;)" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
+            <infoLink name="Leman Russ Chassis (TG)" id="f08d-42cd-4df5-ed9b" hidden="false" targetId="31be-c2d0-0f35-0c69" type="infoGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="a9d4-f864-13e9-b098" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="8121-970f-ab7e-5052" name="Vehicle" hidden="false" targetId="c8fd-783f-3230-493e" primary="false"/>
@@ -11037,9 +11186,26 @@ Until the start of your next Psychic phase, each time a ranged attack is made ag
             </modifierGroup>
           </modifierGroups>
           <infoLinks>
-            <infoLink id="cb87-d21a-950a-1cc6" name="Rogal Dorn Chassis" hidden="false" targetId="5010-5e95-1a5c-3ed7" type="infoGroup"/>
+            <infoLink id="cb87-d21a-950a-1cc6" name="Rogal Dorn Chassis" hidden="false" targetId="5010-5e95-1a5c-3ed7" type="infoGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="cd6c-25f6-7c00-38f7" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink id="32c7-0c69-5543-6db9" name="Grinding Advance" hidden="false" targetId="f093-6f54-0873-e90c" type="profile"/>
             <infoLink id="49f2-319d-3936-1ea4" name="Explodes 6+ (6&quot;)" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
+            <infoLink name="Rogal Dorn Chassis (TG)" id="95da-622a-f9e3-65a5" hidden="false" type="infoGroup" targetId="38a8-1633-a5b7-a5e3">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="cd6c-25f6-7c00-38f7" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="37cc-4839-4cc1-0f61" name="Vehicle" hidden="false" targetId="c8fd-783f-3230-493e" primary="false"/>
@@ -11333,8 +11499,25 @@ Until the start of your next Psychic phase, each time a ranged attack is made ag
           </modifierGroups>
           <infoLinks>
             <infoLink id="9c2d-762f-8d96-e2df" name="Explodes 6+ (6&quot;)" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
-            <infoLink id="9f21-b0e2-147b-0b4b" name="Carnodon Chassis" hidden="false" targetId="05f7-4e61-087f-3d62" type="infoGroup"/>
+            <infoLink id="9f21-b0e2-147b-0b4b" name="Carnodon Chassis" hidden="false" targetId="05f7-4e61-087f-3d62" type="infoGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="7e2e-7aca-f8bf-c9d4" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink id="6068-1cd7-1978-b820" name="Grinding Advance" hidden="false" targetId="f093-6f54-0873-e90c" type="profile"/>
+            <infoLink name="Carnodon Chassis (TG)" id="ff12-dc71-1d53-c84f" hidden="false" type="infoGroup" targetId="4983-293a-4ef7-8323">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="7e2e-7aca-f8bf-c9d4" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="c86e-cee4-19e2-0ef9" name="Vehicle" hidden="false" targetId="c8fd-783f-3230-493e" primary="false"/>
@@ -12675,9 +12858,26 @@ A unit can be affected by this hymn once per battle.</characteristic>
             </modifierGroup>
           </modifierGroups>
           <infoLinks>
-            <infoLink id="0140-3c22-bf79-8089" name="Baneblade Chassis" hidden="false" targetId="07b8-9918-c6ef-1fae" type="infoGroup"/>
+            <infoLink id="0140-3c22-bf79-8089" name="Baneblade Chassis" hidden="false" targetId="07b8-9918-c6ef-1fae" type="infoGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="94d5-c0d0-a682-af5f" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink id="5b3f-3421-33d4-1eaa" name="Grinding Advance" hidden="false" targetId="f093-6f54-0873-e90c" type="profile"/>
             <infoLink id="11b4-946f-740f-7fe5" name="Explodes 6+ (D6+3&quot;)" hidden="false" targetId="296c-b773-7bdb-fcf1" type="rule"/>
+            <infoLink name="Baneblade Chassis (TG)" id="c115-6557-791b-9bf4" hidden="false" type="infoGroup" targetId="f859-1450-75c8-aad0">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="94d5-c0d0-a682-af5f" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="183c-0fc8-0deb-d39c" name="Heavy Armour Plating" hidden="false" targetId="b66f-e4bb-3335-6222" primary="false"/>
@@ -13412,6 +13612,7 @@ A unit can be affected by this hymn once per battle.</characteristic>
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Additional equipment" hidden="false" id="4c2c-e66a-94b5-fa3e" collective="false" targetId="eafe-4816-f1ce-0b19" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -13625,8 +13826,25 @@ A unit can be affected by this hymn once per battle.</characteristic>
             </modifierGroup>
           </modifierGroups>
           <infoLinks>
-            <infoLink id="15b8-0dab-998b-c497" name="Macharius Chassis" hidden="false" targetId="b08b-6e4e-f392-a959" type="infoGroup"/>
+            <infoLink id="15b8-0dab-998b-c497" name="Macharius Chassis" hidden="false" targetId="b08b-6e4e-f392-a959" type="infoGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="df74-d8cc-7220-d7f0" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink id="5beb-cee5-323f-aaa4" name="Explodes 6+ (D6+3&quot;)" hidden="false" targetId="296c-b773-7bdb-fcf1" type="rule"/>
+            <infoLink name="Macharius Chassis (TG)" id="ad61-f888-1338-7324" hidden="false" type="infoGroup" targetId="8337-5ec7-d3fc-f7c4">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="df74-d8cc-7220-d7f0" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="c12e-aee7-f991-0e49" name="Heavy Armour Plating" hidden="false" targetId="b66f-e4bb-3335-6222" primary="false"/>
@@ -14234,8 +14452,25 @@ After this unit shoots with Cyclops demolition charge, it is destroyed. In addit
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="e205-61e6-d2e1-1b96" name="Crassus Chassis" hidden="false" targetId="aee9-0740-97d6-3a26" type="infoGroup"/>
+            <infoLink id="e205-61e6-d2e1-1b96" name="Crassus Chassis" hidden="false" targetId="aee9-0740-97d6-3a26" type="infoGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="4dff-88f9-8ffb-c861" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink id="bd06-3628-35e7-1a1f" name="Explodes 6+ (6&quot;)" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
+            <infoLink name="Crassus Chassis (TG)" id="eae2-863c-6cc0-d717" hidden="false" targetId="90ad-b926-b310-8663" type="infoGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="4dff-88f9-8ffb-c861" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="89f5-f5e0-ee85-cb9d" name="Heavy Armour Plating" hidden="false" targetId="b66f-e4bb-3335-6222" primary="false"/>
@@ -14452,8 +14687,25 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. It cannot transport OGRY
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="cc58-c151-2201-4979" name="Crassus Chassis" hidden="false" targetId="aee9-0740-97d6-3a26" type="infoGroup"/>
+            <infoLink id="cc58-c151-2201-4979" name="Crassus Chassis" hidden="false" targetId="aee9-0740-97d6-3a26" type="infoGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="bd5d-3c97-e52b-fd70" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink id="dcf0-52f8-a0f2-121d" name="Explodes 6+ (D6+3&quot;)" hidden="false" targetId="296c-b773-7bdb-fcf1" type="rule"/>
+            <infoLink name="Crassus Chassis (TG)" id="9532-805e-fb14-d381" hidden="false" targetId="90ad-b926-b310-8663" type="infoGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="bd5d-3c97-e52b-fd70" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="6064-53fb-dab5-ce7c" name="Heavy Armour Plating" hidden="false" targetId="b66f-e4bb-3335-6222" primary="false"/>
@@ -14925,7 +15177,24 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. It cannot transport OGRY
           </modifierGroups>
           <infoLinks>
             <infoLink id="dbe7-63f8-a9a5-98ad" name="Explodes 6+ (6&quot;)" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
-            <infoLink id="8680-23ab-1ede-10b3" name="Chimera Chassis" hidden="false" targetId="8552-3247-a5b3-9937" type="infoGroup"/>
+            <infoLink id="8680-23ab-1ede-10b3" name="Chimera Chassis" hidden="false" targetId="8552-3247-a5b3-9937" type="infoGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="68fd-1119-d6eb-3ad8" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Chimera Chassis (TG)" id="d29d-831f-7f15-0c5d" hidden="false" type="infoGroup" targetId="31ea-7546-717a-c232">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="68fd-1119-d6eb-3ad8" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="9a27-dfc1-a947-419e" name="Vehicle" hidden="false" targetId="c8fd-783f-3230-493e" primary="false"/>
@@ -15074,7 +15343,24 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. It cannot transport OGRY
           </modifierGroups>
           <infoLinks>
             <infoLink id="b4ea-9bdd-faac-e7db" name="Explodes 6+ (6&quot;)" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
-            <infoLink id="5c12-125f-c414-9f11" name="Chimera Chassis (Heavy)" hidden="false" targetId="dbaa-2fa9-a287-abcc" type="infoGroup"/>
+            <infoLink id="5c12-125f-c414-9f11" name="Chimera Chassis (Heavy)" hidden="false" targetId="dbaa-2fa9-a287-abcc" type="infoGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="275d-22f3-c044-478b" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Chimera Chassis (Heavy) (TG)" id="7b48-0e7a-0353-4ba0" hidden="false" type="infoGroup" targetId="88a1-838f-3fa3-4739">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="275d-22f3-c044-478b" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="b840-b4e9-92eb-0dde" name="Vehicle" hidden="false" targetId="c8fd-783f-3230-493e" primary="false"/>
@@ -15247,7 +15533,24 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. It cannot transport OGRY
           </modifierGroups>
           <infoLinks>
             <infoLink id="bff2-5826-80e8-8feb" name="Explodes 6+ (6&quot;)" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
-            <infoLink id="7ede-48b2-cdfd-98d9" name="Chimera Chassis (Heavy)" hidden="false" targetId="dbaa-2fa9-a287-abcc" type="infoGroup"/>
+            <infoLink id="7ede-48b2-cdfd-98d9" name="Chimera Chassis (Heavy)" hidden="false" targetId="dbaa-2fa9-a287-abcc" type="infoGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="ed60-f63c-bde0-2a7f" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Chimera Chassis (Heavy) (TG)" id="b8ed-7f4e-dde9-f6fc" hidden="false" type="infoGroup" targetId="88a1-838f-3fa3-4739">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="ed60-f63c-bde0-2a7f" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="3f5b-3793-0bbd-a123" name="Vehicle" hidden="false" targetId="c8fd-783f-3230-493e" primary="false"/>
@@ -15919,7 +16222,24 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
           </modifierGroups>
           <infoLinks>
             <infoLink name="Explodes 6+ (6&quot;)" id="fa87-9081-cc2e-435a" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
-            <infoLink name="Chimera Chassis" id="38b9-3886-25ae-1021" hidden="false" targetId="8552-3247-a5b3-9937" type="infoGroup"/>
+            <infoLink name="Chimera Chassis" id="38b9-3886-25ae-1021" hidden="false" targetId="8552-3247-a5b3-9937" type="infoGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="d94c-a63d-049a-f249" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Chimera Chassis (TG)" id="7509-49bc-c225-7568" hidden="false" type="infoGroup" targetId="31ea-7546-717a-c232">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="d94c-a63d-049a-f249" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink name="Reinforced Armour Plating" hidden="false" id="d870-c618-5f7c-61a5" targetId="45a6-4825-db8c-9cff" primary="false"/>
@@ -18487,7 +18807,24 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
           </constraints>
           <infoLinks>
             <infoLink id="24d8-8de9-6c07-42fc" name="Explodes 6+ (6&quot;)" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
-            <infoLink id="8640-1c5f-8a91-efe6" name="Chimera Chassis (Heavy)" hidden="false" targetId="dbaa-2fa9-a287-abcc" type="infoGroup"/>
+            <infoLink id="8640-1c5f-8a91-efe6" name="Chimera Chassis (Heavy)" hidden="false" targetId="dbaa-2fa9-a287-abcc" type="infoGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="ad94-60ea-8a12-596d" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Chimera Chassis (Heavy) (TG)" id="eb2c-4a86-62f8-e04a" hidden="false" type="infoGroup" targetId="88a1-838f-3fa3-4739">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="ad94-60ea-8a12-596d" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="cdb6-90da-d19b-e195" name="Vehicle" hidden="false" targetId="c8fd-783f-3230-493e" primary="false"/>
@@ -18558,7 +18895,24 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
           </constraints>
           <infoLinks>
             <infoLink id="a0e7-2e60-b2d1-31e4" name="Explodes 6+ (6&quot;)" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
-            <infoLink id="0a6d-ff60-e18f-5e38" name="Chimera Chassis (Heavy)" hidden="false" targetId="dbaa-2fa9-a287-abcc" type="infoGroup"/>
+            <infoLink id="0a6d-ff60-e18f-5e38" name="Chimera Chassis (Heavy)" hidden="false" targetId="dbaa-2fa9-a287-abcc" type="infoGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="1786-2d51-c3b7-5d22" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Chimera Chassis (Heavy) (TG)" id="d1d2-80b4-47d1-a451" hidden="false" type="infoGroup" targetId="88a1-838f-3fa3-4739">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="1786-2d51-c3b7-5d22" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="5299-71b1-752d-2985" name="Vehicle" hidden="false" targetId="c8fd-783f-3230-493e" primary="false"/>
@@ -18654,7 +19008,24 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
           </constraints>
           <infoLinks>
             <infoLink id="d3d1-b234-14e6-4732" name="Explodes 6+ (6&quot;)" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
-            <infoLink id="fc0d-1f08-901d-f253" name="Leman Russ Chassis" hidden="false" targetId="41d8-421b-eaf6-7b02" type="infoGroup"/>
+            <infoLink id="fc0d-1f08-901d-f253" name="Leman Russ Chassis" hidden="false" targetId="41d8-421b-eaf6-7b02" type="infoGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="118f-33e8-6c4c-f89d" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Leman Russ Chassis (TG)" id="147c-9db7-e7f7-3630" hidden="false" targetId="31be-c2d0-0f35-0c69" type="infoGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="118f-33e8-6c4c-f89d" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="e20c-d3ac-66c6-f106" name="Vehicle" hidden="false" targetId="c8fd-783f-3230-493e" primary="false"/>
@@ -19265,7 +19636,24 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
           </constraints>
           <infoLinks>
             <infoLink id="15a0-fa5a-1e10-e53b" name="Explodes 6+ (6&quot;)" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
-            <infoLink id="85ae-3a1c-d670-a165" name="Leman Russ Chassis" hidden="false" targetId="41d8-421b-eaf6-7b02" type="infoGroup"/>
+            <infoLink id="85ae-3a1c-d670-a165" name="Leman Russ Chassis" hidden="false" targetId="41d8-421b-eaf6-7b02" type="infoGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="1ce4-f811-1426-3010" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Leman Russ Chassis (TG)" id="d04f-38ab-2bfd-1693" hidden="false" targetId="31be-c2d0-0f35-0c69" type="infoGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="1ce4-f811-1426-3010" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="8aa8-90ba-c0cf-99ce" name="Vehicle" hidden="false" targetId="c8fd-783f-3230-493e" primary="false"/>
@@ -19373,7 +19761,24 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
           </constraints>
           <infoLinks>
             <infoLink id="0fa4-3491-75d6-62ed" name="Explodes 6+ (6&quot;)" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
-            <infoLink id="71d0-ce6c-a9e5-c336" name="Chimera Chassis (Heavy)" hidden="false" targetId="dbaa-2fa9-a287-abcc" type="infoGroup"/>
+            <infoLink id="71d0-ce6c-a9e5-c336" name="Chimera Chassis (Heavy)" hidden="false" targetId="dbaa-2fa9-a287-abcc" type="infoGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="b533-6952-10ff-0dbf" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Chimera Chassis (Heavy) (TG)" id="0cca-84fa-dee5-e132" hidden="false" type="infoGroup" targetId="88a1-838f-3fa3-4739">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="b533-6952-10ff-0dbf" childId="ad71-f801-daa5-bae2" shared="true" childName="Track guards" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="f6a1-fc39-eb11-9979" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
@@ -28097,7 +28502,7 @@ When doing so, measure distances to and from this TRANSPORT model.</characterist
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
         </profile>
-        <profile id="9312-2f5e-b0d4-5d20" name="Chimera Chassis [2] (3-5 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="9312-2f5e-b0d4-5d20" name="Chimera Chassis [2] (3-5 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <modifiers>
             <modifier type="set" field="0bdf-a96e-9e38-7779" value="12&quot;">
               <conditions>
@@ -28279,7 +28684,7 @@ When doing so, measure distances to and from this TRANSPORT model.</characterist
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
         </profile>
-        <profile id="132c-8f61-5d83-a836" name="Taurox Chassis [2] (3-5 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="132c-8f61-5d83-a836" name="Taurox Chassis [2] (3-5 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <modifiers>
             <modifier type="set" field="0bdf-a96e-9e38-7779" value="14&quot;">
               <conditions>
@@ -28649,7 +29054,7 @@ When doing so, measure distances to and from this TRANSPORT model.</characterist
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
         </profile>
-        <profile id="ad3f-fff1-139f-f64e" name="Leman Russ [2] (3-6 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="ad3f-fff1-139f-f64e" name="Leman Russ [2] (3-6 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <modifiers>
             <modifier type="set" field="0bdf-a96e-9e38-7779" value="9&quot;">
               <conditions>
@@ -29054,29 +29459,75 @@ When doing so, measure distances to and from this TRANSPORT model.</characterist
         </profile>
       </profiles>
     </infoGroup>
-    <infoGroup id="b4f4-7931-4671-e6b4" name="Taurox Wheeled Chassis" hidden="false">
+    <infoGroup name="Carnodon Chassis (TG)" id="4983-293a-4ef7-8323" hidden="false">
       <profiles>
-        <profile id="9575-85e2-0e27-aa8c" name="Taurox Chassis [1] (6+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+        <profile name="Carnodon Chassis [1] (7+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="2207-e477-f6b8-7266">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+          </characteristics>
           <modifiers>
-            <modifier type="set" field="0bdf-a96e-9e38-7779" value="18&quot;">
+            <modifier type="set" value="14&quot;" field="0bdf-a96e-9e38-7779">
               <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b57-b312-e2e6-ffc6" type="equalTo"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4399-7ac5-26a8-3c81" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="381b-eb28-74c3-df5f" value="3+"/>
-                <modifier type="set" field="00ca-f8b8-876d-b705" value="8"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
+        </profile>
+        <profile name="Carnodon Chassis [2] (3-5 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="ff61-5814-c04f-4114">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="14&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Carnodon Chassis [3] (1-2 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="3cb6-55b8-fca7-19f6">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="14&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+    </infoGroup>
+    <infoGroup name="Chimera Chassis (TG)" id="31ea-7546-717a-c232" hidden="false">
+      <profiles>
+        <profile name="Chimera Chassis [1] (6+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="11f2-98d7-89e1-311f">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
@@ -29086,26 +29537,474 @@ When doing so, measure distances to and from this TRANSPORT model.</characterist
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
-        </profile>
-        <profile id="9452-ea18-b18a-e93b" name="Taurox Chassis [2] (3-5 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
           <modifiers>
-            <modifier type="set" field="0bdf-a96e-9e38-7779" value="16&quot;">
+            <modifier type="set" value="14&quot;" field="0bdf-a96e-9e38-7779">
               <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b57-b312-e2e6-ffc6" type="equalTo"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Chimera Chassis [2] (3-5 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="08a7-d760-5214-ec99">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">6</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">10</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="14&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Chimera Chassis [3] (1-2 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="4e09-68b8-0817-3580">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">6</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">10</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="14&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+    </infoGroup>
+    <infoGroup name="Chimera Chassis (Heavy) (TG)" id="88a1-838f-3fa3-4739" hidden="false">
+      <profiles>
+        <profile name="Chimera Chassis [1] (6+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="4103-de6c-88dc-fa5f">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">11</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Chimera Chassis [2] (3-5 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="bb39-8c22-0047-dffc">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">11</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Chimera Chassis [3] (1-2 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="e4a7-1208-e416-0b41">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">11</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+    </infoGroup>
+    <infoGroup name="Baneblade Chassis (TG)" id="f859-1450-75c8-aad0" hidden="false">
+      <profiles>
+        <profile name="Baneblade Chassis [1] (16+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="f853-f1b0-ec3b-ee51">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">9</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">9</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">30</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">6</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Baneblade Chassis [3] (1-7 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="f9fa-fb64-2b0a-7ba5">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">9</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">9</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">30</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Baneblade Chassis [2] (8-15 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="b21d-cd76-8fb9-4ad8">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">9</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">9</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">30</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D6</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+    </infoGroup>
+    <infoGroup name="Crassus Chassis (TG)" id="90ad-b926-b310-8663" hidden="false">
+      <profiles>
+        <profile name="Crassus Chassis [1] (8+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="5c27-9a84-bc46-eaf7">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">16</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">6</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Crassus Chassis [3] (1-9 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="8052-4af6-0dc5-da12">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">16</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Crassus Chassis [2] (4-7 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="5262-e72a-e886-5f14">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">16</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D6</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+    </infoGroup>
+    <infoGroup name="Macharius Chassis (TG)" id="8337-5ec7-d3fc-f7c4" hidden="false">
+      <profiles>
+        <profile name="Macharius Chassis [1] (12+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="af44-afeb-13bc-666e">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">22</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">6</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Macharius Chassis [3] (1-5 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="f9b4-4842-ba20-0bf7">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">22</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Macharius Chassis [2] (6-11 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="7039-3abb-d588-31a7">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">22</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D6</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+    </infoGroup>
+    <infoGroup name="Malcador Chassis (TG)" id="4b34-79c3-2c5c-758a" hidden="false">
+      <profiles>
+        <profile name="Malcador [1] (7+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="e2ec-1ebe-f7ab-dc9e">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">9&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">15</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="11&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Malcador [2] (3-6 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="4f56-2548-a604-886e">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">9&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">15</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="11&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Malcador [3] (1-3 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="3e2b-56e6-4997-cd28">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">9&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">15</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="11&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+    </infoGroup>
+    <infoGroup name="Rogal Dorn Chassis (TG)" id="38a8-1633-a5b7-a5e3" hidden="false">
+      <profiles>
+        <profile name="Rogal Dorn [1] (7+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="ec63-71d3-5d8d-5077">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">14</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Rogal Dorn [2] (3-6 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="ccdc-2233-f795-4746">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">14</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Rogal Dorn [3] (1-3 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="d07d-3801-04c5-a8ba">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">14</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+    </infoGroup>
+    <infoGroup name="Taurox Tracked Chassis (TG)" id="1192-b80e-9857-c831" hidden="false">
+      <profiles>
+        <profile name="Taurox Chassis [1] (6+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="1742-3fab-3dea-fcaa">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">14&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">6</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">10</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="16&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
           <modifierGroups>
-            <modifierGroup>
+            <modifierGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4399-7ac5-26a8-3c81" type="equalTo"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4399-7ac5-26a8-3c81" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
               <modifiers>
-                <modifier type="set" field="381b-eb28-74c3-df5f" value="3+"/>
-                <modifier type="set" field="00ca-f8b8-876d-b705" value="8"/>
+                <modifier type="set" value="3+" field="381b-eb28-74c3-df5f"/>
+                <modifier type="set" value="8" field="00ca-f8b8-876d-b705"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
+        </profile>
+        <profile name="Taurox Chassis [2] (3-5 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="2577-ca25-cf72-fb4f">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">14&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
@@ -29117,28 +30016,28 @@ When doing so, measure distances to and from this TRANSPORT model.</characterist
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
-        </profile>
-        <profile id="7ea9-61ef-9f1a-7bf2" name="Taurox Chassis [3] (1-2 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
           <modifiers>
-            <modifier type="set" field="0bdf-a96e-9e38-7779" value="12&quot;">
+            <modifier type="set" value="16&quot;" field="0bdf-a96e-9e38-7779">
               <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b57-b312-e2e6-ffc6" type="equalTo"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
           <modifierGroups>
-            <modifierGroup>
+            <modifierGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4399-7ac5-26a8-3c81" type="equalTo"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4399-7ac5-26a8-3c81" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
               <modifiers>
-                <modifier type="set" field="381b-eb28-74c3-df5f" value="4+"/>
-                <modifier type="set" field="00ca-f8b8-876d-b705" value="8"/>
+                <modifier type="set" value="3+" field="381b-eb28-74c3-df5f"/>
+                <modifier type="set" value="8" field="00ca-f8b8-876d-b705"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
+        </profile>
+        <profile name="Taurox Chassis [3] (1-2 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="1808-e15b-5b2a-827e">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">14&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
@@ -29148,6 +30047,88 @@ When doing so, measure distances to and from this TRANSPORT model.</characterist
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="16&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4399-7ac5-26a8-3c81" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="4+" field="381b-eb28-74c3-df5f"/>
+                <modifier type="set" value="8" field="00ca-f8b8-876d-b705"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </profile>
+      </profiles>
+    </infoGroup>
+    <infoGroup name="Leman Russ Chassis (TG)" id="31be-c2d0-0f35-0c69" hidden="false">
+      <profiles>
+        <profile name="Leman Russ [1] (7+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="8b38-82fc-9060-131f">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Leman Russ [2] (3-6 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="361e-07a6-6197-b2b8">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Leman Russ [3] (1-3 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="c958-48cb-6dcd-f121">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
     </infoGroup>
