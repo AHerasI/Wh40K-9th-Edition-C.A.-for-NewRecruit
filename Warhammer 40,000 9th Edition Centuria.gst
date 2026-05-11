@@ -1604,7 +1604,6 @@ When a INFANTRY  or INORGANIC BEAST unit from Faction: Dark Mechanicus fires Ove
       </rules>
     </categoryEntry>
     <categoryEntry id="a9a5-a716-6444-034e" name="Radium weapon" hidden="false">
-      <comment>a9a5-a716-6444-034e</comment>
       <rules>
         <rule id="6d8d-a8e5-dad3-2453" name="Radium weapon" hidden="false">
           <description>Each time an attack is made with RADIUM weapons against an enemy unit without INORGANIC, VEHICLE or TITANIC Keywords, an unmodified hit roll of 6 automatically wounds the target.</description>
@@ -1635,7 +1634,6 @@ If the unit has the INFANTRY Keyword and is in a terrain with the DEFENSIBLE tra
       </rules>
     </categoryEntry>
     <categoryEntry id="1724-9147-143d-875e" name="Platoon" hidden="false">
-      <comment>1724-9147-143d-875e</comment>
       <rules>
         <rule id="59af-5b42-a6a9-b9be" name="Platoon" hidden="false">
           <description>The first time this unit is set up, all squads in this unit must be placed within 3&quot; of each other. From that point onwards, each squad operates independently and is treated as a separate unit for all rules purposes.</description>
