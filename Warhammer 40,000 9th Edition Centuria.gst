@@ -7795,9 +7795,9 @@ Each Multi-Purpose Reactive Armour packcage can be used once per battle.</descri
     <selectionEntry id="bfaa-9426-8370-d92f" name="Reactive Armour System" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="increment" field="e356-c769-5920-6e14" value="1">
-          <conditions>
-            <condition field="selections" scope="bfaa-9426-8370-d92f" value="4" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c85-56b9-179b-9c0d" type="atLeast"/>
-          </conditions>
+          <repeats>
+            <repeat value="2" repeats="1" field="selections" scope="parent" childId="9c85-56b9-179b-9c0d" shared="true" roundUp="false" childName="Reactive Armour packcage" includeChildSelections="true" percentValue="false"/>
+          </repeats>
         </modifier>
       </modifiers>
       <selectionEntryGroups>
@@ -7816,7 +7816,7 @@ Each Multi-Purpose Reactive Armour packcage can be used once per battle.</descri
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="27e6-a468-dd95-c013" type="max"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="points" value="5"/>
+                <cost name="pts" typeId="points" value="10"/>
               </costs>
             </entryLink>
             <entryLink id="58de-4560-2178-3e20" name="Multi-Purpose Reactive Armour packcage" hidden="true" collective="false" import="true" targetId="c22b-7bfb-d18c-4ead" type="selectionEntry">
@@ -7876,7 +7876,7 @@ Each Multi-Purpose Reactive Armour packcage can be used once per battle.</descri
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7a02-86ce-f996-0bad" type="max"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="points" value="5"/>
+                <cost name="pts" typeId="points" value="10"/>
               </costs>
             </entryLink>
             <entryLink id="1d71-a476-f261-e906" name="Reactive Armour packcage" hidden="false" collective="false" import="true" targetId="9c85-56b9-179b-9c0d" type="selectionEntry">
@@ -7886,7 +7886,7 @@ Each Multi-Purpose Reactive Armour packcage can be used once per battle.</descri
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a81f-454d-736a-4920" type="min"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="points" value="5"/>
+                <cost name="pts" typeId="points" value="10"/>
               </costs>
             </entryLink>
           </entryLinks>
