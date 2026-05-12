@@ -7745,7 +7745,7 @@ Each Multi-Purpose Reactive Armour packcage can be used once per battle.</descri
         <categoryLink id="8a89-765d-db9c-ac42" name="Smokescreen" hidden="false" targetId="43bc-4b29-4482-4d3a" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="9c68-2e76-29e9-e7ad" name="Charges" hidden="false" collective="false" import="true" defaultSelectionEntryId="b5a9-2b61-b876-5374">
+        <selectionEntryGroup id="9c68-2e76-29e9-e7ad" name="Charges (+1PL if 3 or more selections)" hidden="false" collective="false" import="true" defaultSelectionEntryId="b5a9-2b61-b876-5374">
           <modifiers>
             <modifier type="increment" field="9689-dcdb-750a-b837" value="1">
               <conditions>
