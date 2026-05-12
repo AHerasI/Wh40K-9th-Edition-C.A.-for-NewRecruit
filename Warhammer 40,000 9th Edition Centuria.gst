@@ -7801,7 +7801,7 @@ Each Multi-Purpose Reactive Armour packcage can be used once per battle.</descri
         </modifier>
       </modifiers>
       <selectionEntryGroups>
-        <selectionEntryGroup id="b3e8-0eec-8711-80d1" name="Packcages" hidden="false" collective="false" import="true" defaultSelectionEntryId="b293-3da1-bc25-a4a5">
+        <selectionEntryGroup id="b3e8-0eec-8711-80d1" name="Packcages (+1PL if 2 or more selections)" hidden="false" collective="false" import="true" defaultSelectionEntryId="b293-3da1-bc25-a4a5">
           <entryLinks>
             <entryLink id="b293-3da1-bc25-a4a5" name="Reactive Armour packcage" hidden="true" collective="false" import="true" targetId="9c85-56b9-179b-9c0d" type="selectionEntry">
               <comment>b293-3da1-bc25-a4a5</comment>
