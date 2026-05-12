@@ -8342,7 +8342,6 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
     <selectionEntry id="7e8f-2351-68d9-7c97" name=" Single Models" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntries>
         <selectionEntry id="4850-9a6f-905a-94ea" name="Sentinel" hidden="false" collective="false" import="true" type="model">
-          <comment>4850-9a6f-905a-94ea</comment>
           <modifiers>
             <modifier type="increment" field="e356-c769-5920-6e14" value="1">
               <conditionGroups>
@@ -8516,16 +8515,6 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
           <entryLinks>
             <entryLink id="5928-e569-1222-cce7" name="Crushing bulk" hidden="false" collective="false" import="true" targetId="502f-45c2-6fd1-443b" type="selectionEntry"/>
             <entryLink id="42c2-e5b3-2b2a-06db" name="Sentinel Weapon Selection" hidden="false" collective="false" import="true" targetId="c396-0ded-8f4f-9f3e" type="selectionEntryGroup"/>
-            <entryLink id="aa5c-867e-0a1f-1d48" name="Hunter-killer missile launcher [1]" hidden="false" collective="false" import="true" targetId="76ce-74fa-9676-1a4b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1367-c43c-e1bb-b768" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="8e9f-be9c-2117-2499" name="Smokescreen Launcher" hidden="false" collective="false" import="true" targetId="bded-2b06-5ea3-d7d5" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55e2-e112-c1e1-f86c" type="max"/>
-              </constraints>
-            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="points" value="50"/>
@@ -8533,6 +8522,22 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="+1PL for 2 selections" id="394c-47bd-832b-af8d" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Hunter-killer missile launcher [1]" hidden="false" id="aa5c-867e-0a1f-1d48" collective="false" targetId="76ce-74fa-9676-1a4b" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1367-c43c-e1bb-b768" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Smokescreen Launcher" hidden="false" id="8e9f-be9c-2117-2499" collective="false" targetId="bded-2b06-5ea3-d7d5" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55e2-e112-c1e1-f86c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
         <selectionEntry id="6020-ee3e-6eee-94b5" name="Commissar" hidden="false" collective="false" import="true" type="model">
           <comment>6020-ee3e-6eee-94b5</comment>
@@ -26544,7 +26549,7 @@ Re-roll Invulnerable saving throws of 1 for this WARLORD.</characteristic>
         </entryLink>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="1PL for 2 selections" id="a7ee-fd80-d4d0-49c3" hidden="false">
+        <selectionEntryGroup name="+1PL for 2 selections" id="a7ee-fd80-d4d0-49c3" hidden="false">
           <entryLinks>
             <entryLink import="true" name="Track guards" hidden="false" id="7b07-8119-3268-5437" collective="false" targetId="ad71-f801-daa5-bae2" type="selectionEntry">
               <constraints>
