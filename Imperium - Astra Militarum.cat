@@ -9004,6 +9004,11 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
               </constraints>
             </entryLink>
             <entryLink id="71f3-c6d6-e62c-b729" name="Turret Weapon" hidden="false" collective="false" import="true" targetId="e048-0cb7-559e-8aef" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Track guards" hidden="false" id="1f75-40ab-2c65-b465" type="selectionEntry" targetId="ad71-f801-daa5-bae2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5bdb-47f4-de6a-1bb5"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="points" value="60"/>
@@ -26513,19 +26518,6 @@ Re-roll Invulnerable saving throws of 1 for this WARLORD.</characteristic>
     </selectionEntryGroup>
     <selectionEntryGroup id="eafe-4816-f1ce-0b19" name="Additional equipment" hidden="false" collective="false" import="true">
       <entryLinks>
-        <entryLink id="413a-6017-4e71-ab0a" name="Hunter-killer missile launcher [1]" hidden="false" collective="false" import="true" targetId="76ce-74fa-9676-1a4b" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e649-0934-5e23-974e" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="7b07-8119-3268-5437" name="Track guards" hidden="false" collective="false" import="true" targetId="ad71-f801-daa5-bae2" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f45e-0231-a17a-71f1" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="5"/>
-          </costs>
-        </entryLink>
         <entryLink id="08f9-76ac-2552-baaf" name="Auspex Array" hidden="false" collective="false" import="true" targetId="6b37-8631-7433-2379" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97f0-1d4f-394c-0cab" type="max"/>
@@ -26536,6 +26528,25 @@ Re-roll Invulnerable saving throws of 1 for this WARLORD.</characteristic>
           </costs>
         </entryLink>
       </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="1PL for 2 selections" id="a7ee-fd80-d4d0-49c3" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Track guards" hidden="false" id="7b07-8119-3268-5437" collective="false" targetId="ad71-f801-daa5-bae2" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f45e-0231-a17a-71f1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Hunter-killer missile launcher [1]" hidden="false" id="413a-6017-4e71-ab0a" collective="false" targetId="76ce-74fa-9676-1a4b" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e649-0934-5e23-974e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntryGroup>
     <selectionEntryGroup id="e8c7-c0dc-ecbe-f1e7" name="Hatch Weapon selection" hidden="false" collective="false" import="true">
       <constraints>
