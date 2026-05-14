@@ -6279,66 +6279,6 @@ Until the end of the phase, this unit cannot fire Overwatch, Set to Defend or ma
             <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 12 YNARII INFANTRY or ASURYANI &lt;CRAFTWORLD&gt; INFANTRY models. Each WRAITHBONE model takes the space of two INFANTRY models. It cannot transport JUMP PACK models.</characteristic>
           </characteristics>
         </profile>
-        <profile id="1d99-05ba-c63b-dfb9" name="Wave Serpent [1] (7+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <modifiers>
-            <modifier type="set" field="0bdf-a96e-9e38-7779" value="18&quot;">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb21-30f8-d7e1-cdb9" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">6</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="ed03-9981-1c9a-14ca" name="Wave Serpent [2] (4-6 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <modifiers>
-            <modifier type="set" field="0bdf-a96e-9e38-7779" value="14&quot;">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb21-30f8-d7e1-cdb9" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">6</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="1f01-40f9-8e4a-638f" name="Wave Serpent [3] (1-3 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <modifiers>
-            <modifier type="set" field="0bdf-a96e-9e38-7779" value="10&quot;">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb21-30f8-d7e1-cdb9" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">6</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="fc84-b206-2d43-b553" name="Additional armour plating" hidden="false" targetId="5b3f-8e7c-f7ae-0f7c" type="profile"/>
@@ -6416,6 +6356,150 @@ Until the end of the phase, this unit cannot fire Overwatch, Set to Defend or ma
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <infoGroups>
+        <infoGroup name="Wave Serpent" id="9f13-31ab-7305-9a89" hidden="false">
+          <profiles>
+            <profile name="Wave Serpent [1] (7+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="1d99-05ba-c63b-dfb9">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">6</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Wave Serpent [2] (4-6 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="ed03-9981-1c9a-14ca">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">6</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="14&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Wave Serpent [3] (1-3 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="1f01-40f9-8e4a-638f">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">6</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="10&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="e2d9-8408-6d22-ec6c" childId="50ee-1221-ae84-ba4a" shared="true" childName="Star engines"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoGroup>
+        <infoGroup name="Wave Serpent (Star Engines)" id="7354-0a25-b90b-4f6b" hidden="false">
+          <profiles>
+            <profile name="Wave Serpent [1] (7+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="b30f-dbb3-55eb-24eb">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">6</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Wave Serpent [2] (4-6 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="a956-5940-7d94-6d5d">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">6</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Wave Serpent [3] (1-3 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="602e-a1dc-375e-eedd">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">6</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="e2d9-8408-6d22-ec6c" childId="50ee-1221-ae84-ba4a" shared="true" childName="Star engines"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoGroup>
+      </infoGroups>
     </selectionEntry>
     <selectionEntry id="bd95-6cd9-7a0f-0ef1" name="Starweaver" hidden="true" collective="false" import="true" type="model">
       <modifiers>
@@ -11418,11 +11502,50 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Asuryani Vehicle equipment" id="d816-6c6d-6c79-3bb4" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Crystal targeting matrix" hidden="false" id="0c56-2d31-f388-aaef" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="31ff-9620-475a-0f65" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Crystal targeting matrix" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="8fbe-6324-cd86-1f6e">
+                      <characteristics>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time this model makes a ranged attack, you can ignore any or all modifiers to the hit roll.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="points" value="10"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Vectored engines" hidden="false" id="9289-b77d-cb9e-606b" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="18fa-3da8-5ec4-9984" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Vectored engines" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="5ece-0166-741e-64b0">
+                      <characteristics>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">If a model with vectored engines Advances, your opponent must subtract 1 from all hit rolls for ranged weapons that target it until your next Movement phase.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="points" value="5"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink id="79f0-4513-75cb-aeed" name="Crushing bulk" hidden="false" collective="false" import="true" targetId="502f-45c2-6fd1-443b" type="selectionEntry"/>
             <entryLink id="72c9-292a-29ba-db63" name="Weapon option" hidden="false" collective="false" import="true" targetId="a253-196d-0f41-99c8" type="selectionEntryGroup"/>
-            <entryLink id="fa48-8960-1217-6d95" name="Asuryani Vehicle equipment" hidden="false" collective="false" import="true" targetId="776a-cdbb-7e74-3017" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="points" value="80"/>
@@ -11430,6 +11553,13 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="increment" value="1" field="e356-c769-5920-6e14">
+              <conditions>
+                <condition type="atLeast" value="2" field="selections" scope="6d75-19e5-11f2-63ed" childId="d816-6c6d-6c79-3bb4" shared="true" childName="Asuryani Vehicle equipment" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -12197,66 +12327,6 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
             <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 6 YNARII INFANTRY or ASURYANI &lt;CRAFTWORLD&gt; INFANTRY models. Each WRAITHBONE model takes the space of two INFANTRY models. It cannot transport JUMP PACK models.</characteristic>
           </characteristics>
         </profile>
-        <profile id="14e1-bf73-b3c1-9dc1" name="Falcon [1] (7+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <modifiers>
-            <modifier type="set" field="0bdf-a96e-9e38-7779" value="18&quot;">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb21-30f8-d7e1-cdb9" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="2d1b-3c84-d201-8d77" name="Falcon [2] (4-6 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <modifiers>
-            <modifier type="set" field="0bdf-a96e-9e38-7779" value="14&quot;">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb21-30f8-d7e1-cdb9" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="4c1b-747b-ee76-74bc" name="Falcon [3] (1-3 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <modifiers>
-            <modifier type="set" field="0bdf-a96e-9e38-7779" value="10&quot;">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb21-30f8-d7e1-cdb9" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="00ad-24ee-71dc-ed82" name="Explodes 6+ (6&quot;)" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
@@ -12349,6 +12419,150 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <infoGroups>
+        <infoGroup name="Falcon" id="b439-304c-5aae-d3bc" hidden="false">
+          <profiles>
+            <profile name="Falcon [1] (7+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="14e1-bf73-b3c1-9dc1">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Falcon [2] (4-6 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="2d1b-3c84-d201-8d77">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="14&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Falcon [3] (1-3 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="4c1b-747b-ee76-74bc">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="10&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="7e64-07bc-b14e-e41f" childId="50ee-1221-ae84-ba4a" shared="true" childName="Star engines"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoGroup>
+        <infoGroup name="Falcon (Star Engines)" id="5056-368f-b75a-6e53" hidden="false">
+          <profiles>
+            <profile name="Falcon [1] (7+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="d800-1c32-643b-29e2">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Falcon [2] (4-6 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="f5cf-a91f-7a46-cccd">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Falcon [3] (1-3 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="6522-7ce2-1554-fd56">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="7e64-07bc-b14e-e41f" childId="50ee-1221-ae84-ba4a" shared="true" childName="Star engines"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoGroup>
+      </infoGroups>
     </selectionEntry>
     <selectionEntry id="22e9-c09f-0408-a4cf" name="Fire Prism" hidden="true" collective="false" import="true" type="model">
       <modifiers>
@@ -12411,68 +12625,6 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
           </modifierGroups>
         </modifierGroup>
       </modifierGroups>
-      <profiles>
-        <profile id="1f0b-403f-1859-d9d8" name="Fire Prism [1] (7+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <modifiers>
-            <modifier type="set" field="0bdf-a96e-9e38-7779" value="18&quot;">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb21-30f8-d7e1-cdb9" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="0923-c202-9add-f595" name="Fire Prism [2] (4-6 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <modifiers>
-            <modifier type="set" field="0bdf-a96e-9e38-7779" value="14&quot;">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb21-30f8-d7e1-cdb9" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="11c6-e3fb-83c4-6128" name="Fire Prism [3] (1-3 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <modifiers>
-            <modifier type="set" field="0bdf-a96e-9e38-7779" value="10&quot;">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb21-30f8-d7e1-cdb9" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="e11c-2971-aed4-643a" name="Explodes 6+ (6&quot;)" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
         <infoLink id="9d80-aeb3-e3b3-89cd" name="Holo-fields" hidden="false" targetId="b658-ed22-322c-3bef" type="profile"/>
@@ -12527,6 +12679,216 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <infoGroups>
+        <infoGroup name="Fire Prism" id="c87e-3c78-8320-8fec" hidden="false">
+          <profiles>
+            <profile name="Fire Prism [1] (7+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="1f0b-403f-1859-d9d8">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Fire Prism [2] (4-6 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="0923-c202-9add-f595">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="14&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Fire Prism [3] (1-3 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="11c6-e3fb-83c4-6128">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="10&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <infoGroups>
+            <infoGroup name="Fire Prism" id="077c-7988-5cf1-bd00" hidden="false">
+              <profiles>
+                <profile name="Fire Prism [1] (7+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="6e8e-4227-804c-5a73">
+                  <characteristics>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+                <profile name="Fire Prism [2] (4-6 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="3732-6f4b-fbba-5e19">
+                  <characteristics>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="14&quot;" field="0bdf-a96e-9e38-7779">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+                <profile name="Fire Prism [3] (1-3 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="4f49-3b8f-5f43-c46c">
+                  <characteristics>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="10&quot;" field="0bdf-a96e-9e38-7779">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+            </infoGroup>
+          </infoGroups>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="22e9-c09f-0408-a4cf" childId="50ee-1221-ae84-ba4a" shared="true" childName="Star engines"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoGroup>
+        <infoGroup name="Fire Prism (Star Engines)" id="1ee8-2b39-73b8-59fd" hidden="false">
+          <profiles>
+            <profile name="Fire Prism [1] (7+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="df1b-b57d-5fc7-f96e">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Fire Prism [2] (4-6 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="442b-5373-5b79-94cd">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Fire Prism [3] (1-3 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="7ce5-5acb-340f-d256">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="22e9-c09f-0408-a4cf" childId="50ee-1221-ae84-ba4a" shared="true" childName="Star engines"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoGroup>
+      </infoGroups>
     </selectionEntry>
     <selectionEntry id="0a70-e656-1822-5ed4" name="Night Spinner" hidden="true" collective="false" import="true" type="model">
       <modifiers>
@@ -12589,68 +12951,6 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
           </modifierGroups>
         </modifierGroup>
       </modifierGroups>
-      <profiles>
-        <profile id="f33f-68a4-890c-a0e6" name="Night Spinner [1] (7+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <modifiers>
-            <modifier type="set" field="0bdf-a96e-9e38-7779" value="18&quot;">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb21-30f8-d7e1-cdb9" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="93b5-f585-d690-e1ee" name="Night Spinner [2] (4-6 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <modifiers>
-            <modifier type="set" field="0bdf-a96e-9e38-7779" value="14&quot;">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb21-30f8-d7e1-cdb9" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="38e2-dd7c-d3b7-3baa" name="Night Spinner [3] (1-3 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <modifiers>
-            <modifier type="set" field="0bdf-a96e-9e38-7779" value="10&quot;">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb21-30f8-d7e1-cdb9" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="ff0d-c8f3-b411-0343" name="Explodes 6+ (6&quot;)" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
         <infoLink id="9086-e595-f300-7c2f" name="Holo-fields" hidden="false" targetId="b658-ed22-322c-3bef" type="profile"/>
@@ -12728,6 +13028,150 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <infoGroups>
+        <infoGroup name="Night Spinner" id="f418-4106-cc78-cbbd" hidden="false">
+          <profiles>
+            <profile name="Night Spinner [1] (7+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="f33f-68a4-890c-a0e6">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Night Spinner [2] (4-6 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="93b5-f585-d690-e1ee">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="14&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Night Spinner [3] (1-3 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="38e2-dd7c-d3b7-3baa">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="10&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="0a70-e656-1822-5ed4" childId="50ee-1221-ae84-ba4a" shared="true" childName="Star engines"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoGroup>
+        <infoGroup name="Night Spinner (Star Engines)" id="1a9e-10a8-3185-e5f2" hidden="false">
+          <profiles>
+            <profile name="Night Spinner [1] (7+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="0bb3-b8b9-e4d6-bd7b">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Night Spinner [2] (4-6 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="e561-4527-122a-0a10">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Night Spinner [3] (1-3 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="26e1-2114-107e-8aed">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="0a70-e656-1822-5ed4" childId="50ee-1221-ae84-ba4a" shared="true" childName="Star engines"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoGroup>
+      </infoGroups>
     </selectionEntry>
     <selectionEntry id="7b32-e786-6618-a360" name="Heavy Weapon Platforms" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
@@ -13125,66 +13569,6 @@ If an enemy unit (excluding units that can FLY, or has INORGANIC, VEHICLE or TIT
         </modifierGroup>
       </modifierGroups>
       <profiles>
-        <profile id="ff70-f18c-60d1-7eb6" name="Lynx [1] (7+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <modifiers>
-            <modifier type="set" field="0bdf-a96e-9e38-7779" value="18&quot;">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb21-30f8-d7e1-cdb9" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="3e50-5be7-89ad-d9fe" name="Lynx [2] (4-6 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <modifiers>
-            <modifier type="set" field="0bdf-a96e-9e38-7779" value="14&quot;">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb21-30f8-d7e1-cdb9" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="1147-fec3-c62d-d8f5" name="Lynx [3] (1-3 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <modifiers>
-            <modifier type="set" field="0bdf-a96e-9e38-7779" value="10&quot;">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb21-30f8-d7e1-cdb9" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
         <profile id="89ff-b344-cd79-1bcf" name="Speed of Vaul" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time this model Advances, do not make an Advance roll. Instead, until the end of the phase, add 12&quot; to the Move characteristic of this model.</characteristic>
@@ -13275,6 +13659,150 @@ If an enemy unit (excluding units that can FLY, or has INORGANIC, VEHICLE or TIT
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <infoGroups>
+        <infoGroup name="Lynx" id="4a97-6b08-996b-ecba" hidden="false">
+          <profiles>
+            <profile name="Lynx [1] (7+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="ff70-f18c-60d1-7eb6">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Lynx [2] (4-6 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="3e50-5be7-89ad-d9fe">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="14&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Lynx [3] (1-3 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="1147-fec3-c62d-d8f5">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="10&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="08ef-0008-8561-aeff" childId="50ee-1221-ae84-ba4a" shared="true" childName="Star engines"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoGroup>
+        <infoGroup name="Lynx (Star Engines)" id="7553-2484-a61e-30f4" hidden="false">
+          <profiles>
+            <profile name="Lynx [1] (7+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="4cdb-b591-41d5-20d5">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Lynx [2] (4-6 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="081b-b0de-4685-4769">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Lynx [3] (1-3 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="0692-054b-2ba8-73fd">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="08ef-0008-8561-aeff" childId="50ee-1221-ae84-ba4a" shared="true" childName="Star engines"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoGroup>
+      </infoGroups>
     </selectionEntry>
     <selectionEntry id="f8ad-9520-a722-ed5c" name="Warp Hunter" hidden="true" collective="false" import="true" type="model">
       <modifiers>
@@ -13337,68 +13865,6 @@ If an enemy unit (excluding units that can FLY, or has INORGANIC, VEHICLE or TIT
           </modifierGroups>
         </modifierGroup>
       </modifierGroups>
-      <profiles>
-        <profile id="919a-a39d-a15d-f6c9" name="Warp Hunter [1] (7+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <modifiers>
-            <modifier type="set" field="0bdf-a96e-9e38-7779" value="18&quot;">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb21-30f8-d7e1-cdb9" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="455d-c478-7cf1-fc56" name="Warp Hunter [2] (4-6 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <modifiers>
-            <modifier type="set" field="0bdf-a96e-9e38-7779" value="14&quot;">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb21-30f8-d7e1-cdb9" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="e3f8-2ca6-fa25-54be" name="Warp Hunter [3] (1-3 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <modifiers>
-            <modifier type="set" field="0bdf-a96e-9e38-7779" value="10&quot;">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb21-30f8-d7e1-cdb9" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="d9dd-2155-4feb-bcb5" name="Explodes 6+ (6&quot;)" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
         <infoLink id="94b2-574e-dbe3-d360" name="Holo-fields" hidden="false" targetId="b658-ed22-322c-3bef" type="profile"/>
@@ -13465,6 +13931,150 @@ If an enemy unit (excluding units that can FLY, or has INORGANIC, VEHICLE or TIT
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <infoGroups>
+        <infoGroup name="Warp Hunter" id="7510-0bf5-33b8-e4a6" hidden="false">
+          <profiles>
+            <profile name="Warp Hunter [1] (7+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="919a-a39d-a15d-f6c9">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Warp Hunter [2] (4-6 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="455d-c478-7cf1-fc56">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="14&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Warp Hunter [3] (1-3 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="e3f8-2ca6-fa25-54be">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="10&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="f8ad-9520-a722-ed5c" childId="50ee-1221-ae84-ba4a" shared="true" childName="Star engines"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoGroup>
+        <infoGroup name="Warp Hunter (Star Engines)" id="3eed-f067-6892-a511" hidden="false">
+          <profiles>
+            <profile name="Warp Hunter [1] (7+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="9e66-a3ae-8c7c-e999">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Warp Hunter [2] (4-6 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="874a-034b-59e4-a076">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Warp Hunter [3] (1-3 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="8fbb-95d9-a496-199a">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="f8ad-9520-a722-ed5c" childId="50ee-1221-ae84-ba4a" shared="true" childName="Star engines"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoGroup>
+      </infoGroups>
     </selectionEntry>
     <selectionEntry id="a2f6-a41c-e637-45f0" name="Wraithseer" hidden="true" collective="false" import="true" type="model">
       <modifiers>
@@ -13741,66 +14351,6 @@ If an enemy unit (excluding units that can FLY, or has INORGANIC, VEHICLE or TIT
         </modifierGroup>
       </modifierGroups>
       <profiles>
-        <profile id="599a-5101-0af4-d2e1" name="Firestorm [1] (7+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <modifiers>
-            <modifier type="set" field="0bdf-a96e-9e38-7779" value="18&quot;">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb21-30f8-d7e1-cdb9" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="e72e-6e24-99b5-db51" name="Firestorm [2] (4-6 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <modifiers>
-            <modifier type="set" field="0bdf-a96e-9e38-7779" value="14&quot;">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb21-30f8-d7e1-cdb9" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="c176-f70b-9b7e-c6ed" name="Firestorm [3] (1-3 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <modifiers>
-            <modifier type="set" field="0bdf-a96e-9e38-7779" value="10&quot;">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb21-30f8-d7e1-cdb9" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
         <profile id="d473-8018-1d6e-4998" name="Firestorm" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model has a transport capacity of 6 YNARII INFANTRY or ASURYANI &lt;CRAFTWORLD&gt; INFANTRY models. Each WRAITHBONE model takes the space of two INFANTRY models. It cannot transport JUMP PACK models.</characteristic>
@@ -13865,9 +14415,15 @@ If an enemy unit (excluding units that can FLY, or has INORGANIC, VEHICLE or TIT
             <entryLink id="b8a0-a4c7-1414-3397" name="Shuriken cannon" hidden="false" collective="false" import="true" targetId="3691-b24f-77b6-8ee5" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Asuryani Vehicle equipment" id="329b-23b1-17cf-8780" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Spirit stones" hidden="false" id="1204-b151-36fd-ebce" type="selectionEntry" targetId="6c22-d6e9-6c7f-b915"/>
+            <entryLink import="true" name="Star engines" hidden="false" id="f2c8-424e-074e-d373" type="selectionEntry" targetId="50ee-1221-ae84-ba4a"/>
+            <entryLink import="true" name="Vectored engines" hidden="false" id="9c87-0972-d5a5-0f8d" type="selectionEntry" targetId="b61d-0861-af38-a930"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="aae6-5277-2786-1977" name="Asuryani Vehicle equipment" hidden="false" collective="false" import="true" targetId="776a-cdbb-7e74-3017" type="selectionEntryGroup"/>
         <entryLink id="597a-171e-e7a4-d977" name="Crushing bulk" hidden="false" collective="false" import="true" targetId="502f-45c2-6fd1-443b" type="selectionEntry"/>
         <entryLink id="b975-044e-ff4c-2bcc" name="Crystal targeting matrix" hidden="false" collective="false" import="true" targetId="2a5b-d212-bb96-4144" type="selectionEntry">
           <constraints>
@@ -13882,6 +14438,150 @@ If an enemy unit (excluding units that can FLY, or has INORGANIC, VEHICLE or TIT
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <infoGroups>
+        <infoGroup name="Firestorm" id="dab6-8684-8dc6-7707" hidden="false">
+          <profiles>
+            <profile name="Firestorm [1] (7+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="599a-5101-0af4-d2e1">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Firestorm [2] (4-6 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="e72e-6e24-99b5-db51">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="14&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Firestorm [3] (1-3 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="c176-f70b-9b7e-c6ed">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="10&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="515d-f3e2-aa19-3086" childId="50ee-1221-ae84-ba4a" shared="true" childName="Star engines"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoGroup>
+        <infoGroup name="Firestorm (Star Engines)" id="037d-ebe9-d80a-f92f" hidden="false">
+          <profiles>
+            <profile name="Firestorm [1] (7+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="a024-57ef-fa85-068f">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Firestorm [2] (4-6 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="f3c7-527c-94d0-6ae8">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Firestorm [3] (1-3 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="33c6-c86a-3be6-f2bc">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="515d-f3e2-aa19-3086" childId="50ee-1221-ae84-ba4a" shared="true" childName="Star engines"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoGroup>
+      </infoGroups>
     </selectionEntry>
     <selectionEntry id="8378-da3e-f331-7b0f" name="Vampire Hunter" hidden="true" collective="false" import="true" type="model">
       <modifiers>
@@ -14978,68 +15678,6 @@ Remove this model from the battlefield. In the Reinforcements step of one of you
           </modifierGroups>
         </modifierGroup>
       </modifierGroups>
-      <profiles>
-        <profile id="1c50-4645-316d-9d4e" name="Scorpion [1] (14+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <modifiers>
-            <modifier type="set" field="0bdf-a96e-9e38-7779" value="16&quot;">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb21-30f8-d7e1-cdb9" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">14&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">26</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">6</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="5bb1-df75-d1de-59c6" name="Scorpion [2] (7-13 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <modifiers>
-            <modifier type="set" field="0bdf-a96e-9e38-7779" value="12&quot;">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb21-30f8-d7e1-cdb9" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">26</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3+3</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="c977-08dc-fff9-a591" name="Scorpion [3] (1-6 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <modifiers>
-            <modifier type="set" field="0bdf-a96e-9e38-7779" value="8&quot;">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb21-30f8-d7e1-cdb9" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">26</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="3825-4a35-c97f-860b" name="Explodes 6+ (6&quot;)" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
         <infoLink id="507d-0e56-29fc-ff6c" name="Forceshield" hidden="false" targetId="1f21-f836-36fd-d65e" type="profile"/>
@@ -15125,6 +15763,150 @@ Remove this model from the battlefield. In the Reinforcements step of one of you
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <infoGroups>
+        <infoGroup name="Scorpion" id="e435-2481-7a54-6ced" hidden="false">
+          <profiles>
+            <profile name="Scorpion [1] (14+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="1c50-4645-316d-9d4e">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">14&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">26</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">6</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="16&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Scorpion [2] (7-13 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="5bb1-df75-d1de-59c6">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">26</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3+3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Scorpion [3] (1-6 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="c977-08dc-fff9-a591">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">26</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="8&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="ba58-0252-b96e-7515" childId="50ee-1221-ae84-ba4a" shared="true" childName="Star engines"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoGroup>
+        <infoGroup name="Scorpion (Star Engines)" id="1b6b-a0ac-2d77-22ee" hidden="false">
+          <profiles>
+            <profile name="Scorpion [1] (14+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="8b89-cb90-9f7f-d0ec">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">14&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">26</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">6</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="16&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Scorpion [2] (7-13 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="6676-b8d1-64fc-bb6f">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">14&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">26</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3+3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="16&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Scorpion [3] (1-6 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="16d4-b6ba-10bc-caf2">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">14&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">26</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="16&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="ba58-0252-b96e-7515" childId="50ee-1221-ae84-ba4a" shared="true" childName="Star engines"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoGroup>
+      </infoGroups>
     </selectionEntry>
     <selectionEntry id="b27a-9b78-75a2-176a" name="Cobra" hidden="true" collective="false" import="true" type="model">
       <modifiers>
@@ -15187,47 +15969,6 @@ Remove this model from the battlefield. In the Reinforcements step of one of you
           </modifierGroups>
         </modifierGroup>
       </modifierGroups>
-      <profiles>
-        <profile id="5a63-e898-a446-5f97" name="Cobra [1] (14+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">14&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">26</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">6</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="7bdc-0de0-8099-442c" name="Cobra [2] (7-13 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">26</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3+3</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="19fe-d18b-abe3-c8a3" name="Cobra [3] (1-6 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">26</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="1abb-b795-e87f-f822" name="Explodes 6+ (6&quot;)" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
         <infoLink id="b911-8942-bb6f-2b21" name="Forceshield" hidden="false" targetId="1f21-f836-36fd-d65e" type="profile"/>
@@ -15294,6 +16035,150 @@ Remove this model from the battlefield. In the Reinforcements step of one of you
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <infoGroups>
+        <infoGroup name="Cobra" id="46bf-b90f-eed6-ee8f" hidden="false">
+          <profiles>
+            <profile name="Cobra [1] (14+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="5a63-e898-a446-5f97">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">14&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">26</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">6</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="16&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Cobra [2] (7-13 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="7bdc-0de0-8099-442c">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">26</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3+3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Cobra [3] (1-6 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="19fe-d18b-abe3-c8a3">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">26</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="8&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="b27a-9b78-75a2-176a" childId="50ee-1221-ae84-ba4a" shared="true" childName="Star engines"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoGroup>
+        <infoGroup name="Cobra (Star Engines)" id="0d2c-cf96-be82-382d" hidden="false">
+          <profiles>
+            <profile name="Cobra [1] (14+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="068f-7f93-d465-66e4">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">14&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">26</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">6</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="16&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Cobra [2] (7-13 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="1fd1-f951-1ab2-b7ca">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">26</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3+3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="16&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Cobra [3] (1-6 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="4f66-4e54-ecd5-396c">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">26</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="16&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="b27a-9b78-75a2-176a" childId="50ee-1221-ae84-ba4a" shared="true" childName="Star engines"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoGroup>
+      </infoGroups>
     </selectionEntry>
     <selectionEntry id="e212-8691-ed5c-4f6b" name="Archon" hidden="true" collective="false" import="true" type="model">
       <modifiers>
@@ -31952,6 +32837,60 @@ Until the start of your next Command phase, each time a model in that unit makes
             <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Spirit stones" hidden="false" id="5f0e-7199-be75-fe8e" collective="false">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="0" field="selections" scope="parent" childId="45a6-4825-db8c-9cff" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="45a6-4825-db8c-9cff" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <modifiers>
+                        <modifier type="set" value="1" field="e356-c769-5920-6e14"/>
+                        <modifier type="set" value="20" field="points"/>
+                      </modifiers>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="0" field="selections" scope="parent" childId="b66f-e4bb-3335-6222" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b66f-e4bb-3335-6222" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <modifiers>
+                        <modifier type="set" value="3" field="e356-c769-5920-6e14"/>
+                        <modifier type="set" value="60" field="points"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </modifierGroup>
+              </modifierGroups>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15dd-d3cb-0175-cb7e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Spirit stones" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="4e48-e11e-91dd-5bbb">
+                  <characteristics>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model is considered to have double the number of wounds remaining for the purposes of determining what characteristics on its profile to use.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="points" value="10"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
         <selectionEntry id="50ee-1221-ae84-ba4a" name="Star engines" hidden="false" collective="false" import="true" type="upgrade">
           <modifierGroups>
