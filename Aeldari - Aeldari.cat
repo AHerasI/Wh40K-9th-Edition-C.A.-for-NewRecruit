@@ -16131,7 +16131,7 @@ Remove this model from the battlefield. In the Reinforcements step of one of you
             </profile>
             <profile name="Cobra [2] (7-13 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="1fd1-f951-1ab2-b7ca">
               <characteristics>
-                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">14&quot;</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
                 <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
                 <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
@@ -16151,7 +16151,7 @@ Remove this model from the battlefield. In the Reinforcements step of one of you
             </profile>
             <profile name="Cobra [3] (1-6 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="4f66-4e54-ecd5-396c">
               <characteristics>
-                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">14&quot;</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
                 <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
                 <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
@@ -32837,60 +32837,6 @@ Until the start of your next Command phase, each time a model in that unit makes
             <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Spirit stones" hidden="false" id="5f0e-7199-be75-fe8e" collective="false">
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="instanceOf" value="0" field="selections" scope="parent" childId="45a6-4825-db8c-9cff" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                            <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="45a6-4825-db8c-9cff" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                      <modifiers>
-                        <modifier type="set" value="1" field="e356-c769-5920-6e14"/>
-                        <modifier type="set" value="20" field="points"/>
-                      </modifiers>
-                    </modifierGroup>
-                    <modifierGroup type="and">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="instanceOf" value="0" field="selections" scope="parent" childId="b66f-e4bb-3335-6222" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                            <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b66f-e4bb-3335-6222" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                      <modifiers>
-                        <modifier type="set" value="3" field="e356-c769-5920-6e14"/>
-                        <modifier type="set" value="60" field="points"/>
-                      </modifiers>
-                    </modifierGroup>
-                  </modifierGroups>
-                </modifierGroup>
-              </modifierGroups>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15dd-d3cb-0175-cb7e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Spirit stones" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="4e48-e11e-91dd-5bbb">
-                  <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model is considered to have double the number of wounds remaining for the purposes of determining what characteristics on its profile to use.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Pts" typeId="points" value="10"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
         </selectionEntry>
         <selectionEntry id="50ee-1221-ae84-ba4a" name="Star engines" hidden="false" collective="false" import="true" type="upgrade">
           <modifierGroups>
