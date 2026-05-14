@@ -15710,7 +15710,7 @@ Remove this model from the battlefield. In the Reinforcements step of one of you
                     <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 12</characteristic>
                     <characteristic name="S" typeId="59b1-319e-ec13-d466">12</characteristic>
                     <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
-                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">4</characteristic>
                     <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, you can re-roll Wound rolls of 1.</characteristic>
                   </characteristics>
                 </profile>
@@ -25743,28 +25743,6 @@ While an enemy unit is within Engagement Range of the bearer, if the bearer’s 
           </costs>
         </selectionEntry>
         <selectionEntry id="d6db-7dac-51ec-93af" name="D-Flail" hidden="false" collective="false" import="true" type="upgrade">
-          <profiles>
-            <profile id="9053-2876-f176-b374" name="D-Flail, Blast" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D3</characteristic>
-                <characteristic name="S" typeId="59b1-319e-ec13-d466">12</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
-                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Indirect Fire. Blast.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="3093-518d-180a-3ca6" name="D-Flail, Rift" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 3</characteristic>
-                <characteristic name="S" typeId="59b1-319e-ec13-d466">12</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
-                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <categoryLinks>
             <categoryLink id="4d73-eed5-d6ea-649b" name="Indirect fire" hidden="false" targetId="9f18-f587-3245-07e5" primary="false"/>
             <categoryLink id="fdc4-47e0-9c68-f64c" name="Torrent" hidden="false" targetId="795f-a8d3-dc18-cb2e" primary="false"/>
@@ -25776,6 +25754,10 @@ While an enemy unit is within Engagement Range of the bearer, if the bearer’s 
             <cost name="Pts" typeId="points" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink targetId="3093-518d-180a-3ca6" id="226d-f8b8-cf08-97db" type="profile" name="D-Flail, Rift" hidden="false"/>
+            <infoLink targetId="9053-2876-f176-b374" id="1379-e2ce-2438-2d9d" type="profile" name="D-Flail, Blast" hidden="false"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry id="664c-4603-59c4-6f69" name="D-Impaler" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
@@ -34998,6 +34980,26 @@ Each time an enemy unit without FLY, VEHICLE or TITANIC Keywords moves within th
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9053-2876-f176-b374" name="D-Flail, Blast" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D3</characteristic>
+        <characteristic name="S" typeId="59b1-319e-ec13-d466">12</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
+        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Indirect Fire. Blast. Each time an attack is made with this weapon, an unmodified wound roll of 6 inflicts D3 mortal wounds on the target in addition to any normal damage.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3093-518d-180a-3ca6" name="D-Flail, Rift" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 3</characteristic>
+        <characteristic name="S" typeId="59b1-319e-ec13-d466">12</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
+        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent. Each time an attack is made with this weapon, an unmodified wound roll of 6 inflicts D3 mortal wounds on the target in addition to any normal damage.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
