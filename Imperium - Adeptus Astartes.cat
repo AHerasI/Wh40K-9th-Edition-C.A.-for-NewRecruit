@@ -7607,7 +7607,6 @@ GREY KNIGHTS PSYKER units of your army gain a bonus depending on which Tide of t
               </categoryLinks>
               <entryLinks>
                 <entryLink id="f24f-3466-7d73-9431" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
-                <entryLink id="8850-b7e7-d594-f441" name="Hand Weapons" hidden="false" collective="false" import="true" targetId="3001-d1d8-ee6b-0abe" type="selectionEntryGroup"/>
                 <entryLink id="ba63-5c37-8791-6481" name="Character Melee Weapons" hidden="false" collective="false" import="true" targetId="a5bf-567f-f8da-ab99" type="selectionEntryGroup"/>
                 <entryLink import="true" name="Storm Shield" hidden="false" id="4338-645c-1f65-71ee" type="selectionEntry" targetId="38b5-ef30-f87f-5275">
                   <costs>
@@ -7624,6 +7623,112 @@ GREY KNIGHTS PSYKER units of your army gain a bonus depending on which Tide of t
                 <cost name="Pts" typeId="points" value="95"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Hand Weapons" id="4ec4-1147-02c8-1742" hidden="false" collective="false" import="true" defaultSelectionEntryId="fbc8-84ad-99ed-76b1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac31-b2a2-d7e7-d678" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c4c6-c0e9-e58f-a5f2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Helfrost pistol" hidden="true" id="7c7b-4e54-77da-9421" collective="false">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="atLeast" value="1" field="selections" scope="force" childId="3fde-546f-54d3-9266" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="force" childId="fd82-de03-6ee0-61e8" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                      <profiles>
+                        <profile name="Helfrost pistol (Dispersed)" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="f1e4-f71f-f4b8-84cf">
+                          <characteristics>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+                            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol D3</characteristic>
+                            <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
+                          </characteristics>
+                        </profile>
+                        <profile name="Helfrost pistol (Focused)" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="bab9-f17e-583f-0745">
+                          <characteristics>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+                            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol 1</characteristic>
+                            <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
+                            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
+                            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Helfrost weapon profile" id="79c7-17db-4070-bb1f" hidden="false" targetId="4ef9-7104-9097-df89" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="Pts" typeId="points" value="5"/>
+                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <entryLinks>
+                    <entryLink import="true" name="Master-crafted Bolt Pistol" hidden="false" id="e65e-f309-5d2a-741f" collective="false" targetId="eb68-be72-b493-1a34" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="points" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Grav-Pistol" hidden="false" id="61aa-f20f-4c45-7220" collective="false" targetId="7b66-cac7-e582-a518" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="points" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Hand Flamer" hidden="false" id="efb4-bab5-14a2-e8dc" collective="false" targetId="7d34-2164-8036-b626" type="selectionEntry"/>
+                    <entryLink import="true" name="Heavy Bolt Pistol" hidden="false" id="70f9-5d0f-a46d-822f" collective="false" targetId="1165-a7ea-918c-d49b" type="selectionEntry"/>
+                    <entryLink import="true" name="Plasma pistol" hidden="false" id="e90a-f0b8-1eac-079e" collective="false" targetId="83be-1ba9-c326-4760" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="points" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Inferno pistol" hidden="false" id="6741-ed62-29a8-d1a2" collective="false" targetId="83f0-56d1-b852-f21c" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="points" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Paired weapon" hidden="true" id="7ac4-ab84-d5e2-d909" collective="false" targetId="7603-6241-ab8b-4603" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="parent" childId="90de-7b01-e401-888b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                                <condition type="equalTo" value="0" field="selections" scope="parent" childId="5b68-23b9-23ef-150f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Bolt pistol" hidden="false" id="c298-759e-d022-2938" collective="false" targetId="0334-f487-8229-0c1a" type="selectionEntry"/>
+                    <entryLink import="true" name="Master-crafted Heavy Bolt Pistol" hidden="false" id="4885-4fcb-9ac6-f284" collective="false" targetId="f3dd-ac37-ab09-31e4" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="points" value="5"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
             <selectionEntry id="091a-98bf-b6d2-dbce" name="Company Champion in Terminator Armour" hidden="false" collective="false" import="true" type="model">
               <infoLinks>
