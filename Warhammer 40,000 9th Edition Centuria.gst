@@ -11017,7 +11017,7 @@ When sorting the points after a Battle, any excess Requisition Points must be se
                   <profiles>
                     <profile id="8296-c444-97d1-016c" name="Quest of Atonement" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                       <characteristics>
-                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the end of a Battle, select one unit in your army that has one of the following Battle Scars: Shell Shock, Disgraced or Non communicative. At the end of the battle, if a melee attack made by that unit during the battle destroyed an enemy CHARACTER, or a WARLORD, MONSTER or VEHICLE unit, then the selected unit loses one of the aforementioned Battle Scars, gains 5 experience points and this mision is achieved.</characteristic>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the end of a Battle, select one unit in your army that has one of the following Battle Scars: Shell Shock, Disgraced or Non communicative. At the end of the battle, if an attack made by that unit during the battle destroyed an enemy CHARACTER, or a WARLORD, MONSTER or VEHICLE unit, then the selected unit loses one of the aforementioned Battle Scars, gains 5 experience points and this mision is achieved.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -11128,7 +11128,7 @@ ADEPTUS MECHANICUS units also receive 1 experience point for each enemy unit it 
                   <profiles>
                     <profile id="eeab-c550-69ca-ca97" name="Fight for the Future" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                       <characteristics>
-                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Keep a Fight for the Future tally for each AELDARI unit from your army. Each time an AELDARI unit destroys a CHAOS unit, add 1 to that AELDARI unit’s Fight for the Future tally. If that CHAOS unit was a SLAANESH unit, add 2 to that AELDARI unit’s tally instead.
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Keep a Fight for the Future tally for each AELDARI unit from your army. Each time an AELDARI unit destroys an enemy unit, add 1 to that AELDARI unit’s Fight for the Future tally. If that unit was a SLAANESH unit, add 2 to that AELDARI unit’s tally instead.
 
 At the end of the battle, each unit that has any marks on its Fight for the Future tally gains 1 experience point. If that unit has 3 or more marks, it gains 3 experience points instead.
 
@@ -11213,7 +11213,7 @@ At the end of the battle, if all three performance targets have been destroyed b
                   <profiles>
                     <profile id="9238-7008-e209-eaa8" name="Send a message" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                       <characteristics>
-                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the end of a Battle, select a DRUKHARI unit from your Army that, due it&apos;s acions, has made an enemy unit to fail a morale test. That DRUKHARI unit gains 3 experience points and this mision is achieved.</characteristic>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the end of a Battle, select a DRUKHARI unit from your Army that, due it&apos;s actions, has made an enemy unit to fail a morale test. That DRUKHARI unit gains 3 experience points and this mision is achieved.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -11603,6 +11603,9 @@ Each LEAGUES OF VOTANN unit that destroyed at least an enemy unit with at least 
                         <conditionGroup type="and">
                           <conditions>
                             <condition field="selections" scope="6030-15c5-bda1-858c" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9d4e-db4a-1629-8f29" type="equalTo"/>
+                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="a6e9-7968-4980-dcfa" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Aeldari mix (all missions)"/>
+                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="bafc-494f-4fce-550f" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Aeldari Craftworlds"/>
+                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="7959-2c70-fa98-9842" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Drukharii"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -11611,7 +11614,7 @@ Each LEAGUES OF VOTANN unit that destroyed at least an enemy unit with at least 
                   <profiles>
                     <profile id="f155-148c-ee25-b3a4" name="Show of force" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                       <characteristics>
-                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the end of the battle, if at least a enemy unit were destroyed during the Morale phase, this mision is achieved, and each unit from your army that is on the Battlefield gains 2 experience points.</characteristic>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the end of the battle, if at least an enemy unit was destroyed during the Morale phase, this mision is achieved, and each unit from your army that is on the Battlefield gains 2 experience points.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -11666,7 +11669,7 @@ In addition for each time the action were completed, the ETHEREAL unit wich made
                   <profiles>
                     <profile id="8663-7195-08d6-b484" name="A excelent outcome" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                       <characteristics>
-                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the end of the battle, if all units of your Army have survived the engagemet, each unit from your army gains 2 experience points and this mision is achieved.
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the end of the battle, if all units of your Army, ignoring those with the DRONE Keyword, have survived the engagement, each unit from your army gains 2 experience points and this mision is achieved.
 In addition each COMMANDER unit that were present on the Battlefield gains 1 additional experience point.</characteristic>
                       </characteristics>
                     </profile>
@@ -11692,11 +11695,10 @@ In addition each COMMANDER unit that were present on the Battlefield gains 1 add
                   </modifiers>
                   <profiles>
                     <profile id="9867-8f08-0a0d-a3e4" name="Angels of Death" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-                      <comment>gains 1 experience point for each of the following:</comment>
                       <characteristics>
-                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time an ADEPTUS ASTARTES INFANTRY or ADEPTUS ASTARTES BIKER unit from your Army is killed in Battle, place an objective marker in the spot of the last model of the unit. This objective marker does not count as an objective marker for any rules purposes other than for this mision.
-ADEPTUS ASTARTES APOTHECARY units in your Army within 3&quot; of that objective marker can attempt to make a Recover Progenoids [Action] at the end of a Movement phase. That action is completed at the end of the turn, the Marker is removed, and at the end of the Battle the APOTHECARY unit gain 3 experience point.
-At the end of the battle, if at least a unit from your Army were destroyed and all of these objective markers either are under control of units from your Army or removed by an APOTHECARY, each unit from your Army capturing a marker gains 1 experience point and this mision is achieved.</characteristic>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time an ADEPTUS ASTARTES INFANTRY or ADEPTUS ASTARTES BIKER unit from your Army is destroyed in Battle, place an objective marker in the spot of the last model of the unit. This objective marker does not count as an objective marker for any rules purposes other than for this mision.
+ADEPTUS ASTARTES APOTHECARY units in your Army within 3&quot; of that objective marker can attempt to make a Recover Progenoids [Action] at the end of a Movement phase. That action is completed at the end of the player&apos;s turn, the Marker is removed, and at the end of the Battle the APOTHECARY unit gain 3 experience points.
+At the end of the battle, if at least a unit from your Army was destroyed and all of these objective markers either are under control of units from your Army or removed by an APOTHECARY, each unit from your Army gains 1 experience point and this mision is achieved.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
