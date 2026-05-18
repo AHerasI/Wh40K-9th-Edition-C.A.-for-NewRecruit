@@ -11735,6 +11735,62 @@ At the end of the battle, if at least a unit from your Army was destroyed and al
                     <cost name="RP" typeId="ed03-25cc-2681-bdce" value="1"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="A well planned assault (+1RP)" hidden="false" id="aed6-3e01-cafb-2d60" collective="false">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="11ce-a278-40c1-3c3a" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Astra Militarum"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <profiles>
+                    <profile name="A well planned assault" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="9f3a-333c-a1c2-b6c9">
+                      <characteristics>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the end of the battle you can select up to six ASTRA MILITARUM units from your army (excluding AIRCRAFT units) that are within your opponent’s deployment zone. 
+Each of those units earns 1 experience point. If one of that units has the CHARACTER Keyword, it earns 2 additional experience points.
+If at leas one unit was selected, this mision is achieved.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="Pts" typeId="points" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="1"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Propagandistic coup (+1RP)" hidden="false" id="d266-22f8-6d29-8d4a" collective="false">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="11ce-a278-40c1-3c3a" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Astra Militarum"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <profiles>
+                    <profile name="Propagandistic coup" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="3a0f-78ca-470a-330c">
+                      <characteristics>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the start of the battle, your opponent must select three VEHICLE or MONSTER units from their army. If your opponent does not have three such units in their army, they must select as many such units as possible.
+Each time an ASTRA MILITARUM unit from your army destroys one of those selected units, it gains 2 experience points.
+If, at the end of the battle all, with a minimun of one, of the selected units are destroyed, this mission is achieved.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="Pts" typeId="points" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="1"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
