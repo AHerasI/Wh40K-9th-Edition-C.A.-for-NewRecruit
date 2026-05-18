@@ -11017,7 +11017,7 @@ When sorting the points after a Battle, any excess Requisition Points must be se
                   <profiles>
                     <profile id="8296-c444-97d1-016c" name="Quest of Atonement" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                       <characteristics>
-                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the end of a Battle, select one unit in your army that has one of the following Battle Scars: Shell Shock, Disgraced or Non communicative. At the end of the battle, if an attack made by that unit during the battle destroyed an enemy CHARACTER, or a WARLORD, MONSTER or VEHICLE unit, then the selected unit loses one of the aforementioned Battle Scars, gains 5 experience points and this mision is achieved.</characteristic>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the end of a Battle, you can select units in your army that has one of the following Battle Scars: Shell Shock, Disgraced or Non communicative. If during the battle, an attack made by that unit during the battle destroyed an enemy CHARACTER, or a WARLORD, MONSTER or VEHICLE unit, then the selected unit loses one of the aforementioned Battle Scars, gains 5 experience points and this mision is achieved.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -11699,6 +11699,32 @@ In addition each COMMANDER unit that were present on the Battlefield gains 1 add
                         <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time an ADEPTUS ASTARTES INFANTRY or ADEPTUS ASTARTES BIKER unit from your Army is destroyed in Battle, place an objective marker in the spot of the last model of the unit. This objective marker does not count as an objective marker for any rules purposes other than for this mision.
 ADEPTUS ASTARTES APOTHECARY units in your Army within 3&quot; of that objective marker can attempt to make a Recover Progenoids [Action] at the end of a Movement phase. That action is completed at the end of the player&apos;s turn, the Marker is removed, and at the end of the Battle the APOTHECARY unit gain 3 experience points.
 At the end of the battle, if at least a unit from your Army was destroyed and all of these objective markers either are under control of units from your Army or removed by an APOTHECARY, each unit from your Army gains 1 experience point and this mision is achieved.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="Pts" typeId="points" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="1"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Act of Faith (+1RP)" hidden="false" id="5b1e-3caf-6554-ee5c" collective="false">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="f892-bc01-eb8f-678f" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <profiles>
+                    <profile name="Act of Faith" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="4b65-12a3-9539-bf92">
+                      <characteristics>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the end of a Battle, if the tally of Miracle Dices does not exceed the number of units without Imperium Servants Keyword of your army, the aforementioned units, gains 1 experience point and this mision is achieved.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
