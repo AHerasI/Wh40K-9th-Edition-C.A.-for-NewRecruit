@@ -24913,6 +24913,187 @@ You can use this Stratagem up to 3 times.</characteristic>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Shroud Runners" hidden="true" id="92a2-75a0-261c-2e19" collective="false">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="6732-8eda-123a-a370" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4435-0896-94ff-cebd" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Craftworld Keyword</comment>
+          <modifiers>
+            <modifier type="add" value="05b0-1ce8-5fba-fd01" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="d294-6bda-13ec-342f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="d00f-3a42-1d30-0dfc" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="da2c-5fae-83dd-0b61" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="927a-0b95-1bc0-d72f" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="6e4e-cccc-1761-35a6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8877-cf68-d519-d6f5" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="f93e-b6a1-6bc4-6cbb" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="d0e8-385c-2bdd-a06a" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="2940-0543-965f-7783" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="0235-d280-c6d1-8ef6" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="7d5c-0041-1b41-a04d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="6732-8eda-123a-a370" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+              <modifiers>
+                <modifier type="remove" value="1114-7875-d463-df17" field="category"/>
+                <modifier type="add" value="a898-c576-fd0c-3c21" field="category"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </modifierGroup>
+      </modifierGroups>
+      <profiles>
+        <profile name="Swift Demise" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="e3d2-fa52-18c4-fb85">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a model in this unit makes an attack against an enemy unit that is within range of any objective markers, re-roll a hit roll of 1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Ride the Wind" id="f9ff-bb23-c22f-a3c5" hidden="false" targetId="7003-97a5-90f8-2c3d" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Biker" hidden="false" id="3b26-9463-01fa-b350" targetId="1c6f-0311-3eba-3180" primary="false"/>
+        <categoryLink name="Fly" hidden="false" id="f732-8473-dc7e-5b4d" targetId="3117-16d8-fcef-4f56" primary="false"/>
+        <categoryLink name="Faction: Aeldari" hidden="false" id="ff61-2371-0f72-cfe6" targetId="1924-ef18-000b-d2ba" primary="false"/>
+        <categoryLink name="Core" hidden="false" id="0ce6-938e-8ab9-a94b" targetId="08f1-d244-eb44-7e01" primary="false"/>
+        <categoryLink name="Faction: Asuryani" hidden="false" id="9379-ba39-1c78-06e0" targetId="1114-7875-d463-df17" primary="false"/>
+        <categoryLink name="Levitating" hidden="false" id="423f-1756-2472-7125" targetId="96e8-7e9d-42d7-2fea" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Shroud Runners" id="5fbb-ab5a-bd65-8b62" hidden="false" collective="false" import="true" defaultSelectionEntryId="2748-0025-ebe9-b9c8">
+          <constraints>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="b879-87d1-e03f-559a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="62bd-30c8-e1ba-710d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Shroud Runner w/Twin Shuriken" hidden="false" id="81f8-08a1-fe8e-adbf" collective="false">
+              <profiles>
+                <profile name="Shroud Runner" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="34d1-581f-8ada-0600">
+                  <characteristics>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Twin Shuriken rifle" hidden="false" id="d4e8-7f9d-5fb2-3288" collective="false" targetId="ff3d-42fe-2ba4-3026" type="selectionEntry"/>
+                <entryLink import="true" name="Crushing bulk" hidden="false" id="c097-b4c7-b404-2e46" collective="false" targetId="502f-45c2-6fd1-443b" type="selectionEntry"/>
+                <entryLink import="true" name="Combat knife" hidden="false" id="59cb-d8ac-81a1-3787" collective="false" targetId="92e8-af3a-fe14-06c1" type="selectionEntry">
+                  <infoLinks>
+                    <infoLink name="Off-hand weapon" id="ae58-aa67-1b01-c8e1" hidden="false" type="profile" targetId="e14b-37da-f8e9-1752"/>
+                  </infoLinks>
+                </entryLink>
+                <entryLink import="true" name="Ranger long rifle" hidden="false" id="9eb3-93e6-2e38-f003" collective="false" targetId="c3ba-5323-a9a3-8cff" type="selectionEntry"/>
+                <entryLink import="true" name="Shuriken pistol" hidden="false" id="c0a4-bcb1-510a-cbb2" collective="false" targetId="3b3a-02da-8bf9-dac6" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="30"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Shroud Runner w/Shuriken cannon" hidden="false" id="8c41-4293-2c2d-6a99" collective="false">
+              <infoLinks>
+                <infoLink name="Shroud Runner" id="8285-4ca1-a5e7-636d" hidden="false" targetId="34d1-581f-8ada-0600" type="profile"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Shuriken cannon" hidden="false" id="fde9-f7b5-ac2f-dd38" collective="false" targetId="8299-2e24-9b9c-959b" type="selectionEntry"/>
+                <entryLink import="true" name="Crushing bulk" hidden="false" id="b005-4152-0a49-ad88" collective="false" targetId="502f-45c2-6fd1-443b" type="selectionEntry"/>
+                <entryLink import="true" name="Combat knife" hidden="false" id="49a2-d82d-b29a-53bf" collective="false" targetId="92e8-af3a-fe14-06c1" type="selectionEntry">
+                  <infoLinks>
+                    <infoLink name="Off-hand weapon" id="b838-7b5e-2ed9-4174" hidden="false" type="profile" targetId="e14b-37da-f8e9-1752"/>
+                  </infoLinks>
+                </entryLink>
+                <entryLink import="true" name="Ranger long rifle" hidden="false" id="7926-b482-2474-0d8b" collective="false" targetId="c3ba-5323-a9a3-8cff" type="selectionEntry"/>
+                <entryLink import="true" name="Shuriken pistol" hidden="false" id="a9c0-a814-e0d7-c065" collective="false" targetId="3b3a-02da-8bf9-dac6" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="35"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Shroud Runner w/Scatter" hidden="false" id="7309-18de-1ad2-994e" collective="false">
+              <infoLinks>
+                <infoLink name="Shroud Runner" id="aea2-7858-6e43-bb23" hidden="false" targetId="34d1-581f-8ada-0600" type="profile"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Scatter laser" hidden="false" id="f8d0-dd70-933b-e834" collective="false" targetId="d44e-3899-0049-b13d" type="selectionEntry"/>
+                <entryLink import="true" name="Crushing bulk" hidden="false" id="2a99-018b-ce48-1b70" collective="false" targetId="502f-45c2-6fd1-443b" type="selectionEntry"/>
+                <entryLink import="true" name="Combat knife" hidden="false" id="7f07-58ff-999c-49d2" collective="false" targetId="92e8-af3a-fe14-06c1" type="selectionEntry">
+                  <infoLinks>
+                    <infoLink name="Off-hand weapon" id="2518-93ee-f86f-8f8d" hidden="false" type="profile" targetId="e14b-37da-f8e9-1752"/>
+                  </infoLinks>
+                </entryLink>
+                <entryLink import="true" name="Ranger long rifle" hidden="false" id="ef1a-fac1-f64d-effd" collective="false" targetId="c3ba-5323-a9a3-8cff" type="selectionEntry"/>
+                <entryLink import="true" name="Shuriken pistol" hidden="false" id="87c5-d402-a95b-4b5e" collective="false" targetId="3b3a-02da-8bf9-dac6" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="35"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="Pts" typeId="points" value="0"/>
+        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="fe42-2c16-a719-f2fe" name="Equipment" hidden="false" collective="false" import="true">
