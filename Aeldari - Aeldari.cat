@@ -6218,6 +6218,7 @@ Until the end of the phase, this unit cannot fire Overwatch, Set to Defend or ma
               <conditions>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6732-8eda-123a-a370" type="equalTo"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4435-0896-94ff-cebd" type="equalTo"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="2df9-0654-4bc5-0651" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -6281,7 +6282,7 @@ Until the end of the phase, this unit cannot fire Overwatch, Set to Defend or ma
         </profile>
         <profile id="8759-b41e-960e-f027" name="Wave Serpent" hidden="false" typeId="b3a8-0452-7436-44d1" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 12 YNARII INFANTRY or ASURYANI &lt;CRAFTWORLD&gt; INFANTRY models. Each WRAITHBONE model takes the space of two INFANTRY models. It cannot transport JUMP PACK models.</characteristic>
+            <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 12 YNARII INFANTRY, ANHRATHE INFANTRY or ASURYANI &lt;CRAFTWORLD&gt; INFANTRY models. Each WRAITHBONE model takes the space of two INFANTRY models. It cannot transport JUMP PACK models.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -11185,6 +11186,22 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
                   </costs>
                 </entryLink>
               </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Disintegrator&amp;GL" hidden="false" id="0a1a-d60d-6f0d-5078">
+                  <comment>Starfang</comment>
+                  <infoLinks>
+                    <infoLink name="Disintegrator cannon" id="7859-422f-67cc-f007" hidden="false" type="profile" targetId="3d2e-fa2e-748b-1534"/>
+                    <infoLink name="Phantasm grenade launcher" id="5f82-e666-3880-c13d" hidden="false" type="profile" targetId="f0dd-edeb-bc33-1842"/>
+                  </infoLinks>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="0" field="selections" scope="force" childId="2df9-0654-4bc5-0651" shared="true" includeChildSelections="true" childName="4 - Anhrathe"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
@@ -12273,6 +12290,7 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
               <conditions>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6732-8eda-123a-a370" type="equalTo"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4435-0896-94ff-cebd" type="equalTo"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="2df9-0654-4bc5-0651" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -12329,7 +12347,7 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
       <profiles>
         <profile id="1d3d-6823-937b-34b4" name="Falcon" hidden="false" typeId="b3a8-0452-7436-44d1" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 6 YNARII INFANTRY or ASURYANI &lt;CRAFTWORLD&gt; INFANTRY models. Each WRAITHBONE model takes the space of two INFANTRY models. It cannot transport JUMP PACK models.</characteristic>
+            <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 6 YNARII INFANTRY, ANHRATHE INFANTRY or ASURYANI &lt;CRAFTWORLD&gt; INFANTRY models. Each WRAITHBONE model takes the space of two INFANTRY models. It cannot transport JUMP PACK models.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -17175,7 +17193,7 @@ Remove this model from the battlefield. In the Reinforcements step of one of you
       <profiles>
         <profile id="0f53-9040-99da-1dd5" name="Venom" hidden="false" typeId="b3a8-0452-7436-44d1" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 6 YNARII INFANTRY or DRUKHARI INFANTRY models. It cannot transport JUMP PACK,  SCOURGES, GROTESQUES  or SKYBOARD models.</characteristic>
+            <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 6 YNARII INFANTRY, ANHRATHE INFANTRY or DRUKHARI INFANTRY models. It cannot transport JUMP PACK, SCOURGES, GROTESQUES or SKYBOARD models.</characteristic>
           </characteristics>
         </profile>
         <profile id="5938-b9f8-c839-c168" name="Venom" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
