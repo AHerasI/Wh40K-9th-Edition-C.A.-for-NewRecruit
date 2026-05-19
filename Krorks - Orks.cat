@@ -7199,14 +7199,35 @@ The range of this aura cannot be modified.</characteristic>
                 <entryLink import="true" name="Grot oiler" hidden="false" id="e871-967e-6b92-7708" collective="false" targetId="f109-db7b-8c2b-9cf1" type="selectionEntry"/>
                 <entryLink import="true" name="Rokkit launcha" hidden="false" id="9598-3ab8-9058-0cba" collective="false" targetId="b8f9-84f0-3181-c5c4" type="selectionEntry"/>
                 <entryLink import="true" name=" Character definition" hidden="false" id="9328-3fde-ae0f-6411" collective="false" targetId="e3da-f3e6-6da5-e6d9" type="selectionEntryGroup"/>
-                <entryLink import="true" name="Supa-shoota" hidden="false" id="e2a8-313f-53b5-d4e2" collective="false" targetId="cfc3-48e9-56d2-9229" type="selectionEntry">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6e7-3da7-acfe-131f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4798-f153-0961-e872" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                </entryLink>
                 <entryLink import="true" name="Crushing bulk" hidden="false" id="6dae-7aed-63cb-b72d" type="selectionEntry" targetId="502f-45c2-6fd1-443b"/>
               </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Big weapon" id="b3d9-c77d-a628-4f2f" hidden="false" defaultSelectionEntryId="f68d-ac40-69c4-3166">
+                  <entryLinks>
+                    <entryLink import="true" name="Kustom mega-blasta" hidden="false" id="ad74-0e68-64cf-2d3b" collective="false" targetId="a9d4-ff8b-e5c7-ea26" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="points" value="0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d43-682d-37c7-30c8" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="66e3-e780-770f-9cc3" includeChildSelections="false"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Souper-up Supa-shoota" hidden="false" id="f68d-ac40-69c4-3166">
+                      <infoLinks>
+                        <infoLink name="Supa-shoota" id="12fa-c9e1-136b-4765" hidden="false" type="profile" targetId="effe-f0e0-dfec-a7cc">
+                          <modifiers>
+                            <modifier type="set" value="Souper-up Supa-shoota" field="name"/>
+                            <modifier type="set" value="Dakka 12/8" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2"/>
+                          </modifiers>
+                        </infoLink>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <profiles>
                 <profile name="Big Mek in Dakkarig" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="ade0-174b-a40c-1a61">
                   <characteristics>
