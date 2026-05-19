@@ -11372,13 +11372,21 @@ At the end of the battle, if all of the objective markers were claimed, this mis
                     <cost name="RP" typeId="ed03-25cc-2681-bdce" value="1"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="403f-c9af-191b-4604" name="Telepathic Domination(+1RP)" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="403f-c9af-191b-4604" name="Telepathic Domination (+1RP)" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
                             <condition field="selections" scope="6030-15c5-bda1-858c" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3946-f015-8019-54da" type="equalTo"/>
+                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="ddba-b7dd-66ae-23e6" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="8e1a-293a-a6e6-316d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="9d4e-db4a-1629-8f29" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="9f73-3cbc-b65a-bff5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="bafc-494f-4fce-550f" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Aeldari Craftworlds"/>
+                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="a6e9-7968-4980-dcfa" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Aeldari mix (all missions)"/>
+                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="1e69-eb92-7fcf-fde8" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Imperial Knights"/>
+                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="314a-66cb-3014-3ab1" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -11862,6 +11870,36 @@ If, at the end of the battle all, with a minimun of one, of the selected units a
                     <profile name="Flawless incursion" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="7011-35fb-db94-311d">
                       <characteristics>
                         <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the end of the battle, if there are no models from the enemy army remaining on the battlefield, each unit from your army that is on the battlefield gains 2 experience points and this mision is achieved.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="Pts" typeId="points" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="1"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Topple the False Temple (+1RP)" hidden="false" id="97e7-9b25-3c46-dbfa" collective="false">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="3946-f015-8019-54da" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <profiles>
+                    <profile name="Topple the False Temple" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="36d1-b3b1-826d-40f1">
+                      <characteristics>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">After both sides have finished deploying, your opponent must set up one additional objective marker anywhere on the battlefield that is not within 6&quot; of other existing objective marker, edge or center of the battlefield.
+This objective marker does not count as an objective marker for any rules purposes other than for this mision.
+One GENESTEALER CULTS INFANTRY CORE or REDUCTUS SABOTEUR unit from your army can start to perform &quot;[Action] Topple the False Temple&quot; action at the end of the Move Units step of your Movement phase. The unit performing this action must be within the false temple and more than 3&quot; away from any enemy units (excluding AIRCRAFT units), and your opponent’s false temple must not have been toppled. 
+The action is completed at the start of your next Command phase, provided the unit performing this action is still within your opponent’s false temple.
+The unit that has performed the action gains 3 experience points and the mission is achieved.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
