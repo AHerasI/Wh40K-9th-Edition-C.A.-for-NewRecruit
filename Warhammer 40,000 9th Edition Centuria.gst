@@ -11797,7 +11797,7 @@ If, at the end of the battle all, with a minimun of one, of the selected units a
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="11ce-a278-40c1-3c3a" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Astra Militarum"/>
+                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="1e69-eb92-7fcf-fde8" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Imperial Knights"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -11823,7 +11823,7 @@ If, at the end of the battle all, with a minimun of one, of the selected units a
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="11ce-a278-40c1-3c3a" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Astra Militarum"/>
+                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="1e69-eb92-7fcf-fde8" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Imperial Knights"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
