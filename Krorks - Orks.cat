@@ -6620,7 +6620,7 @@ Until your next Command phase, when a model in that unit makes a ranged attack, 
                 </modifierGroup>
               </modifierGroups>
               <profiles>
-                <profile id="f963-64d1-dc20-8a40" name="Big Mek" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+                <profile id="f963-64d1-dc20-8a40" name="Big Mek" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <modifiers>
                     <modifier type="set" field="c0df-df94-abd7-e8d3" value="2+">
                       <conditions>
@@ -7187,6 +7187,73 @@ The range of this aura cannot be modified.</characteristic>
                 <cost name="Pts" typeId="points" value="40"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Big Mek in Dakkarig" hidden="false" id="358c-a4a1-5519-bb8a">
+              <entryLinks>
+                <entryLink import="true" name="&apos;Eavy Armour" hidden="false" id="7f1c-3797-a40a-aebb" collective="false" targetId="d3ef-3cd2-891c-ef8b" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="points" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Cybork body" hidden="false" id="0b4c-20e9-f2dc-bbff" collective="false" targetId="3eae-cf41-c78d-fbb3" type="selectionEntry"/>
+                <entryLink import="true" name="Grot oiler" hidden="false" id="e871-967e-6b92-7708" collective="false" targetId="f109-db7b-8c2b-9cf1" type="selectionEntry"/>
+                <entryLink import="true" name="Rokkit launcha" hidden="false" id="9598-3ab8-9058-0cba" collective="false" targetId="b8f9-84f0-3181-c5c4" type="selectionEntry"/>
+                <entryLink import="true" name=" Character definition" hidden="false" id="9328-3fde-ae0f-6411" collective="false" targetId="e3da-f3e6-6da5-e6d9" type="selectionEntryGroup"/>
+                <entryLink import="true" name="Supa-shoota" hidden="false" id="e2a8-313f-53b5-d4e2" collective="false" targetId="cfc3-48e9-56d2-9229" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6e7-3da7-acfe-131f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4798-f153-0961-e872" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Crushing bulk" hidden="false" id="6dae-7aed-63cb-b72d" type="selectionEntry" targetId="502f-45c2-6fd1-443b"/>
+              </entryLinks>
+              <profiles>
+                <profile name="Big Mek in Dakkarig" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="ade0-174b-a40c-1a61">
+                  <characteristics>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">7</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="increment" value="2" field="f330-5e6e-4110-0978">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="358c-a4a1-5519-bb8a" childId="3eae-cf41-c78d-fbb3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="2+" field="c0df-df94-abd7-e8d3">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="358c-a4a1-5519-bb8a" childId="d3ef-3cd2-891c-ef8b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="9&quot;" field="0bdf-a96e-9e38-7779">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="fa11-3740-fe17-de0f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="points" value="40"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink name="Vehicle" hidden="false" id="5995-517a-e875-7b73" targetId="c8fd-783f-3230-493e" primary="false"/>
+                <categoryLink name="Ork" hidden="false" id="e32e-c3b3-8272-5cbe" targetId="9e66-151e-9a63-7fa4" primary="false"/>
+                <categoryLink name="Character" hidden="false" id="eb4d-59d3-3854-ab90" targetId="ef18-746a-369f-43a4" primary="false"/>
+                <categoryLink name="Ramshackle" hidden="false" id="e276-7c6a-5ab3-df1f" targetId="bc61-0bad-5371-b83f" primary="false"/>
+              </categoryLinks>
+              <infoLinks>
+                <infoLink name="Additional armour plating" id="9fb6-3e16-9782-59a7" hidden="false" type="profile" targetId="5b3f-8e7c-f7ae-0f7c"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -9422,36 +9489,6 @@ Each time an attack is made with this weapon, an unmodified wound roll of 6 infl
         </modifierGroup>
       </modifierGroups>
       <profiles>
-        <profile id="c3b4-d328-bdbd-c319" name="Mek" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
-          <modifiers>
-            <modifier type="increment" field="f330-5e6e-4110-0978" value="2">
-              <conditions>
-                <condition field="selections" scope="8882-6666-7c6b-a9bb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3eae-cf41-c78d-fbb3" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="c0df-df94-abd7-e8d3" value="3+">
-              <conditions>
-                <condition field="selections" scope="8882-6666-7c6b-a9bb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3ef-3cd2-891c-ef8b" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="0bdf-a96e-9e38-7779" value="6&quot;">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa11-3740-fe17-de0f" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
-          </characteristics>
-        </profile>
         <profile id="28ae-41bf-0aed-a710" name="Mekaniak" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the end of your Movement phase, this model can repair one friendly &lt;CLAN&gt; VEHICLE model within 3&quot; of it. That VEHICLE model regains up to 1 lost wounds. Each model can only be repaired once per turn.</characteristic>
@@ -9462,36 +9499,148 @@ Each time an attack is made with this weapon, an unmodified wound roll of 6 infl
         <categoryLink id="5e89-430b-53dd-93df" name="Faction: Orks" hidden="false" targetId="946d-1c4c-20d6-9eda" primary="false"/>
         <categoryLink id="e035-692b-9a53-aade" name="Ork" hidden="false" targetId="9e66-151e-9a63-7fa4" primary="false"/>
         <categoryLink id="c187-e7db-f363-7736" name="Character" hidden="false" targetId="ef18-746a-369f-43a4" primary="false"/>
-        <categoryLink id="ed33-1957-9456-6caf" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
         <categoryLink id="44a2-d5e6-e3ea-83ee" name="Mek" hidden="false" targetId="9daa-b6ae-fc06-236a" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="7453-6e00-6a1a-fe3d" name="Weapon option" hidden="false" collective="false" import="true" defaultSelectionEntryId="837f-b22f-6097-c55a">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b318-94cd-e30c-72e6" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb14-4899-9c42-6836" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="837f-b22f-6097-c55a" name="Choppa" hidden="false" collective="false" import="true" targetId="3b17-14a3-7ca4-a879" type="selectionEntry"/>
-            <entryLink id="49f6-323a-c617-bf37" name="Killsaw" hidden="false" collective="false" import="true" targetId="1465-b2ad-f31d-9a02" type="selectionEntry">
+        <selectionEntryGroup name="Mek" id="7092-36e1-96e2-a7d6" hidden="false" defaultSelectionEntryId="34a1-d930-da84-957a">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Mek" hidden="false" id="34a1-d930-da84-957a">
+              <entryLinks>
+                <entryLink import="true" name="&apos;Eavy Armour" hidden="false" id="2c73-04eb-aaeb-35b1" collective="false" targetId="d3ef-3cd2-891c-ef8b" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="points" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Cybork body" hidden="false" id="94d3-4c68-ab39-34eb" collective="false" targetId="3eae-cf41-c78d-fbb3" type="selectionEntry"/>
+                <entryLink import="true" name="Grot oiler" hidden="false" id="5419-d024-0837-94a7" collective="false" targetId="f109-db7b-8c2b-9cf1" type="selectionEntry"/>
+                <entryLink import="true" name="Kustom mega-slugga" hidden="false" id="4ed0-5175-634a-eacd" collective="false" targetId="559f-2b39-abf4-d370" type="selectionEntry"/>
+                <entryLink import="true" name=" Character definition" hidden="false" id="67f5-9dd5-8f41-d908" collective="false" targetId="e3da-f3e6-6da5-e6d9" type="selectionEntryGroup"/>
+              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon option" id="7453-6e00-6a1a-fe3d" hidden="false" collective="false" import="true" defaultSelectionEntryId="837f-b22f-6097-c55a">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b318-94cd-e30c-72e6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bb14-4899-9c42-6836" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Choppa" hidden="false" id="837f-b22f-6097-c55a" collective="false" targetId="3b17-14a3-7ca4-a879" type="selectionEntry"/>
+                    <entryLink import="true" name="Killsaw" hidden="false" id="49f6-323a-c617-bf37" collective="false" targetId="1465-b2ad-f31d-9a02" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="points" value="10"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <profiles>
+                <profile name="Mek" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="c3b4-d328-bdbd-c319">
+                  <characteristics>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
+                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
+                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="increment" value="2" field="f330-5e6e-4110-0978">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="8882-6666-7c6b-a9bb" childId="3eae-cf41-c78d-fbb3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="3+" field="c0df-df94-abd7-e8d3">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="8882-6666-7c6b-a9bb" childId="d3ef-3cd2-891c-ef8b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="6&quot;" field="0bdf-a96e-9e38-7779">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="fa11-3740-fe17-de0f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink name="Infantry" hidden="false" id="50bc-8fe8-f40e-5626" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+                <categoryLink name="Ork" hidden="false" id="5541-b471-ecb2-a41c" targetId="9e66-151e-9a63-7fa4" primary="false"/>
+                <categoryLink name="Character" hidden="false" id="15e9-c391-e901-e834" targetId="ef18-746a-369f-43a4" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Mek in Dakkarig" hidden="false" id="19a4-7a4f-bf65-cedd">
+              <entryLinks>
+                <entryLink import="true" name="&apos;Eavy Armour" hidden="false" id="d224-e016-d6ff-5ca5" collective="false" targetId="d3ef-3cd2-891c-ef8b" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="points" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Cybork body" hidden="false" id="47e0-1dea-1e0b-aeb3" collective="false" targetId="3eae-cf41-c78d-fbb3" type="selectionEntry"/>
+                <entryLink import="true" name="Grot oiler" hidden="false" id="beef-01a9-e735-d471" collective="false" targetId="f109-db7b-8c2b-9cf1" type="selectionEntry"/>
+                <entryLink import="true" name="Rokkit launcha" hidden="false" id="0ea5-1951-de90-c123" collective="false" targetId="b8f9-84f0-3181-c5c4" type="selectionEntry"/>
+                <entryLink import="true" name=" Character definition" hidden="false" id="b5f4-4de3-c2b7-6706" collective="false" targetId="e3da-f3e6-6da5-e6d9" type="selectionEntryGroup"/>
+                <entryLink import="true" name="Supa-shoota" hidden="false" id="5b6d-7d18-2ecf-0c43" collective="false" targetId="cfc3-48e9-56d2-9229" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0154-1faf-10d5-ee64" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="be13-14ac-ac31-7a95" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Crushing bulk" hidden="false" id="fbb1-2f22-b817-cd24" type="selectionEntry" targetId="502f-45c2-6fd1-443b"/>
+              </entryLinks>
+              <profiles>
+                <profile name="Mek in Dakkarig" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="7ea8-2ab1-1f59-d3da">
+                  <characteristics>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
+                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">6</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">7</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
+                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="increment" value="2" field="f330-5e6e-4110-0978">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="19a4-7a4f-bf65-cedd" childId="3eae-cf41-c78d-fbb3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="2+" field="c0df-df94-abd7-e8d3">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="19a4-7a4f-bf65-cedd" childId="d3ef-3cd2-891c-ef8b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="9&quot;" field="0bdf-a96e-9e38-7779">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="fa11-3740-fe17-de0f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
               <costs>
-                <cost name="pts" typeId="points" value="10"/>
+                <cost name="Pts" typeId="points" value="40"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
-            </entryLink>
-          </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Vehicle" hidden="false" id="9f09-ec6d-da3b-0582" targetId="c8fd-783f-3230-493e" primary="false"/>
+                <categoryLink name="Ork" hidden="false" id="1c43-d663-9a4a-7858" targetId="9e66-151e-9a63-7fa4" primary="false"/>
+                <categoryLink name="Character" hidden="false" id="a061-26d2-c780-e8e4" targetId="ef18-746a-369f-43a4" primary="false"/>
+                <categoryLink name="Ramshackle" hidden="false" id="ff26-101c-d193-322a" targetId="bc61-0bad-5371-b83f" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd90-b61c-0db8-93f2" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9a29-0411-a120-7d92" includeChildSelections="false"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="67f5-9dd5-8f41-d908" name=" Character definition" hidden="false" collective="false" import="true" targetId="e3da-f3e6-6da5-e6d9" type="selectionEntryGroup"/>
-        <entryLink id="4ed0-5175-634a-eacd" name="Kustom mega-slugga" hidden="false" collective="false" import="true" targetId="559f-2b39-abf4-d370" type="selectionEntry"/>
-        <entryLink id="5419-d024-0837-94a7" name="Grot oiler" hidden="false" collective="false" import="true" targetId="f109-db7b-8c2b-9cf1" type="selectionEntry"/>
-        <entryLink id="94d3-4c68-ab39-34eb" name="Cybork body" hidden="false" collective="false" import="true" targetId="3eae-cf41-c78d-fbb3" type="selectionEntry"/>
-        <entryLink id="2c73-04eb-aaeb-35b1" name="&apos;Eavy Armour" hidden="false" collective="false" import="true" targetId="d3ef-3cd2-891c-ef8b" type="selectionEntry">
-          <costs>
-            <cost name="Pts" typeId="points" value="10"/>
-          </costs>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="Pts" typeId="points" value="20"/>
         <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
