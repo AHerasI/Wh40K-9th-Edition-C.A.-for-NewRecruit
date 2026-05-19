@@ -11372,7 +11372,7 @@ At the end of the battle, if all of the objective markers were claimed, this mis
                     <cost name="RP" typeId="ed03-25cc-2681-bdce" value="1"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="403f-c9af-191b-4604" name="Flawless incursion (+1RP)" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="403f-c9af-191b-4604" name="Telepathic Domination(+1RP)" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
                       <conditionGroups>
@@ -11385,9 +11385,12 @@ At the end of the battle, if all of the objective markers were claimed, this mis
                     </modifier>
                   </modifiers>
                   <profiles>
-                    <profile id="f487-af15-c75f-fc4d" name="Flawless incursion" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+                    <profile id="f487-af15-c75f-fc4d" name="Telepathic Domination" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                       <characteristics>
-                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the end of the battle, if there are no models from the enemy army remaining on the battlefield, each unit from your army that is on the battlefield gains 2 experience points and this mision is achieved.</characteristic>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Keep a Telepathic Domination tally for each PSYKER unit from your army. 
+Add 1 to a unit’s Telepathic Domination tally each time it successfully Deny the Witch against a enemy PSYKER Psychic power.
+Each unit gains one experience point for each mark, to a maximum of 4 experience points.
+If at least one mark of Telepathic Domination is gained, the mission is achieved.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -11833,6 +11836,32 @@ If, at the end of the battle all, with a minimun of one, of the selected units a
                     <profile name="Slayer of Beasts" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="2e43-555d-2cdb-1be4">
                       <characteristics>
                         <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the end of the battle, for each model from your army that has destroyed at least 3 models with VEHICLE or BEAST Keywords, or 1 model with TITANIC Keyword, the model&apos;s unit gains 1 experience point. If at least one unit achieves this, the mission is achieved.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="Pts" typeId="points" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="1"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Flawless incursion (+1RP)" hidden="false" id="54f4-31ab-fa5f-6b93" collective="false">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="6030-15c5-bda1-858c" childId="3946-f015-8019-54da" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <profiles>
+                    <profile name="Flawless incursion" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="7011-35fb-db94-311d">
+                      <characteristics>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the end of the battle, if there are no models from the enemy army remaining on the battlefield, each unit from your army that is on the battlefield gains 2 experience points and this mision is achieved.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
