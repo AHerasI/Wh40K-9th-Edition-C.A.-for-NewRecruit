@@ -14026,6 +14026,314 @@ Each JUMP PACK, TERMINATOR or POSSESSED model takes the space of two other model
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry type="model" import="true" name="Land Raider Helios" hidden="true" id="b7bc-b939-22e4-6e22" collective="false">
+              <comment>Land Raider Excelsior</comment>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="force" childId="33b3-f2a3-9749-2f10" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true" childName="XIV - Death Guard"/>
+                        <condition type="equalTo" value="0" field="selections" scope="force" childId="5a9a-c8d5-2570-8459" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true" childName="XII - World Eaters"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Land Raider Helios [1] (9+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="602e-a41d-c941-3870">
+                  <characteristics>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">16</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">6</characteristic>
+                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Land Raider Helios [2] (5-8 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="e3fc-1cb7-a752-15f0">
+                  <characteristics>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">16</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D6</characteristic>
+                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Land Raider Helios [3] (1-4 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="014b-854a-a13b-07c1">
+                  <characteristics>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">3&quot;</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">16</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Land Raider Helios" typeId="b3a8-0452-7436-44d1" typeName="Transport" hidden="false" id="72c6-bae0-f79d-5261">
+                  <characteristics>
+                    <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 6 &lt;CHAPTER&gt; INFANTRY models. 
+Each JUMP PACK or TERMINATOR model takes the space of two other models and each CENTURION model takes the space of three other models.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Helios Array" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="e12d-3020-d943-8c13">
+                  <characteristics>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time an attack is made by this unit with it&apos;s Vengeance launchers against an AIRCRAFT unit, ignore the rule Hard to hit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink name="Transport" hidden="false" id="009c-d246-1003-aadd" targetId="6cc4-1b62-8e8a-05cd" primary="false"/>
+                <categoryLink name="Assault Transport" hidden="false" id="d0aa-1a42-3df3-3d0e" targetId="3c95-4bac-d4d4-d0b2" primary="false"/>
+                <categoryLink name="Assault ramp" hidden="false" id="fab3-d0b3-62d9-321b" targetId="d7c1-93c2-0c88-7c3c" primary="false"/>
+              </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Hatch weapon" id="959c-faef-4cab-c836" hidden="false" collective="false" import="true" defaultSelectionEntryId="7b84-7794-709f-82bb">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94e7-cfaa-88c0-011f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Storm Bolter" hidden="false" id="7b84-7794-709f-82bb" collective="false" targetId="2b03-8d64-3711-f300" type="selectionEntry">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aede-e6b1-1837-e4e6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Sponsor Weapon selection" id="0a0e-7785-39b5-3092" hidden="false" collective="false" import="true" defaultSelectionEntryId="3366-7709-78fe-a2dc">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6474-45cb-0e66-67f4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ac26-65b3-5ed9-4ddf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="2x Twin Lascannon" hidden="false" id="3366-7709-78fe-a2dc" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d790-d191-0e75-958a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink import="true" name="Twin Lascannon" hidden="false" id="f3c5-6076-79ea-5fcc" collective="false" targetId="ee18-b1cd-6b60-464d" type="selectionEntry">
+                          <constraints>
+                            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="83ad-6bc3-bebc-a6e4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="e0ce-26e1-759e-029c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <costs>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                        <cost name="Pts" typeId="points" value="0"/>
+                        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Front Weapon selection" id="0815-6b5b-ea18-eeb6" hidden="false" collective="false" import="true" defaultSelectionEntryId="80fd-36d4-52c9-7723">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aca8-064f-8d60-79cd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e73-7c17-3059-f6d3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="2x Vengeance launcher" hidden="false" id="80fd-36d4-52c9-7723" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="694a-cba5-bd89-47f6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e0e-7c84-d54f-f45d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink import="true" name="Vengeance launcher" hidden="false" id="35a9-0874-0397-b055" collective="false" targetId="79a5-23f2-b542-a73f" type="selectionEntry">
+                          <constraints>
+                            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8785-5edd-a55d-e0ea" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c2e8-c503-dbc6-2583" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <costs>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                        <cost name="Pts" typeId="points" value="0"/>
+                        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Adamantium tracks" hidden="false" id="fdec-2032-f851-bdce" collective="false" targetId="fc47-2ff1-30e3-7bce" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f47-2c51-1d96-1899" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c551-c590-d78e-5bee" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="30"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Land Raider Ares" hidden="true" id="3e01-3c4d-57cb-2169" collective="false">
+              <comment>Land Raider Excelsior</comment>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="233f-1dfd-37f9-301f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Warband - Heirs of Truth"/>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="da52-2f5e-e9c2-cd62" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="I - Dark Angels Secessionist - Fallen"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Land Raider Ares [1] (9+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="fefb-2520-6a6a-9030">
+                  <characteristics>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">16</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">6</characteristic>
+                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Land Raider Ares [2] (5-8 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="fe76-ac32-3648-0a89">
+                  <characteristics>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">16</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D6</characteristic>
+                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Land Raider Ares [3] (1-4 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="0fd4-74c1-dd5c-f7d3">
+                  <characteristics>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">3&quot;</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">16</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Hatch weapon" id="a19e-c8e6-9f56-3911" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf4d-5903-36db-1234" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Storm Bolter" hidden="false" id="5000-8d2e-376f-5029" collective="false" targetId="2b03-8d64-3711-f300" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="points" value="5"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Sponsor Weapon selection" id="a2d2-1d70-b4a1-9e00" hidden="false" collective="false" import="true" defaultSelectionEntryId="c2c9-107d-524c-14c3">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e08-a785-0932-2dc7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d0bf-62a9-9594-9579" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="2x Twin Lascannon" hidden="false" id="c2c9-107d-524c-14c3" collective="false">
+                      <entryLinks>
+                        <entryLink import="true" name="Twin Lascannon" hidden="false" id="13d6-eff2-e172-26fa" collective="false" targetId="ee18-b1cd-6b60-464d" type="selectionEntry">
+                          <constraints>
+                            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d7b1-d152-3526-1dbe" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="268b-e358-104f-e34a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <costs>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                        <cost name="Pts" typeId="points" value="10"/>
+                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="2x Twin Multi-melta" hidden="false" id="f328-4ab8-763b-2188" collective="false">
+                      <entryLinks>
+                        <entryLink import="true" name="Twin Multi-melta" hidden="false" id="143a-1cf8-c5ec-e517" collective="false" targetId="d496-bdd5-426e-3e80" type="selectionEntry">
+                          <constraints>
+                            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0d29-6d44-432c-3154" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8a16-6fac-3c28-6405" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <costs>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                        <cost name="Pts" typeId="points" value="0"/>
+                        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Hatch weapon" id="10a6-9e2a-f910-42d3" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="28a2-afdd-d494-48b5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Multi-melta" hidden="false" id="2f8e-62b4-a4cd-d74a" collective="false" targetId="2b37-65ee-9443-b4ef" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="points" value="10"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Front Weapon selection" id="cf61-2d6c-71a5-2df8" hidden="false" collective="false" import="true" defaultSelectionEntryId="915a-4e42-599a-9aef">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2796-0959-bde2-5d37" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fadb-78bb-2b11-c4a2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Demolisher cannon" hidden="false" id="915a-4e42-599a-9aef" collective="false" targetId="1f7e-32c4-61af-510f" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Adamantium tracks" hidden="false" id="c647-5951-b1e0-7a5f" collective="false" targetId="fc47-2ff1-30e3-7bce" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ba8-cca4-7eb9-6be8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5cbf-54c0-182a-caa2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Dozer Blade" hidden="false" id="e7be-08df-d924-9bc3" collective="false" targetId="9d99-accd-e51a-355a" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="998a-468b-2705-df0b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7674-e481-575b-043c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="35"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
