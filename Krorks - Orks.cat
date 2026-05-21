@@ -642,11 +642,6 @@ Bike--&gt;10p</comment>
         <categoryLink id="025f-d704-5bc2-7493" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="6cb5-1c7d-4a70-f4a9" name="Nob with Waaagh! Banner" hidden="false" collective="false" import="true" targetId="b5dd-c569-8914-f485" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="0e12-9a6c-b553-1c17" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="48f0-f900-5c6b-ccca" name="Nobz" hidden="false" collective="false" import="true" targetId="5ce5-bdc4-128e-88cb" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="40df-67e4-fedc-d890" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
@@ -4555,7 +4550,7 @@ From that point, and until an enemy unit captures that Objective marker, enemy u
                 </modifierGroup>
               </modifierGroups>
               <profiles>
-                <profile id="4a84-38f9-3f27-e4c6" name="Warboss" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+                <profile id="4a84-38f9-3f27-e4c6" name="Warboss" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <modifiers>
                     <modifier type="set" field="c0df-df94-abd7-e8d3" value="2+">
                       <conditions>
@@ -4584,6 +4579,18 @@ From that point, and until an enemy unit captures that Objective marker, enemy u
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>MIGHT IS RIGHT</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f"/>
+                        <modifier type="increment" value="1" field="2218-aa3c-265f-2939"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="8658-dafb-168b-8295" childId="77ee-ba49-5cb1-626b" shared="true" includeChildSelections="true" childName="O - 6 - Might is right"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <categoryLinks>
@@ -4742,7 +4749,7 @@ From that point, and until an enemy unit captures that Objective marker, enemy u
                 </modifierGroup>
               </modifierGroups>
               <profiles>
-                <profile id="fa92-7745-4f4a-b4a3" name="Warboss in Mega armour" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+                <profile id="fa92-7745-4f4a-b4a3" name="Warboss in Mega armour" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <modifiers>
                     <modifier type="increment" field="f330-5e6e-4110-0978" value="2">
                       <conditions>
@@ -4766,6 +4773,18 @@ From that point, and until an enemy unit captures that Objective marker, enemy u
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>MIGHT IS RIGHT</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f"/>
+                        <modifier type="increment" value="1" field="2218-aa3c-265f-2939"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="6ccb-d6c6-8015-113c" childId="77ee-ba49-5cb1-626b" shared="true" includeChildSelections="true" childName="O - 6 - Might is right"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <infoLinks>
@@ -4901,7 +4920,7 @@ From that point, and until an enemy unit captures that Objective marker, enemy u
                 </modifierGroup>
               </modifierGroups>
               <profiles>
-                <profile id="a9d1-b1fe-161f-7a45" name="Warboss on Warbike" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+                <profile id="a9d1-b1fe-161f-7a45" name="Warboss on Warbike" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <modifiers>
                     <modifier type="increment" field="f330-5e6e-4110-0978" value="1">
                       <conditions>
@@ -4930,6 +4949,18 @@ From that point, and until an enemy unit captures that Objective marker, enemy u
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>MIGHT IS RIGHT</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f"/>
+                        <modifier type="increment" value="1" field="2218-aa3c-265f-2939"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="98ff-43a0-f9df-1ea6" childId="77ee-ba49-5cb1-626b" shared="true" includeChildSelections="true" childName="O - 6 - Might is right"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <infoLinks>
@@ -5066,7 +5097,7 @@ From that point, and until an enemy unit captures that Objective marker, enemy u
                 </modifierGroup>
               </modifierGroups>
               <profiles>
-                <profile id="aca3-0692-2a42-674d" name="Beastboss" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+                <profile id="aca3-0692-2a42-674d" name="Beastboss" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <modifiers>
                     <modifier type="set" field="c0df-df94-abd7-e8d3" value="2+">
                       <conditions>
@@ -5095,6 +5126,18 @@ From that point, and until an enemy unit captures that Objective marker, enemy u
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>MIGHT IS RIGHT</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f"/>
+                        <modifier type="increment" value="1" field="2218-aa3c-265f-2939"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="2a93-abba-aaa7-2221" childId="77ee-ba49-5cb1-626b" shared="true" includeChildSelections="true" childName="O - 6 - Might is right"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <categoryLinks>
@@ -5226,7 +5269,7 @@ From that point, and until an enemy unit captures that Objective marker, enemy u
                 </modifierGroup>
               </modifierGroups>
               <profiles>
-                <profile id="d539-b74e-880b-81b8" name="Beastboss on Squigosaur" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+                <profile id="d539-b74e-880b-81b8" name="Beastboss on Squigosaur" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <modifiers>
                     <modifier type="set" field="c0df-df94-abd7-e8d3" value="2+">
                       <conditions>
@@ -5255,6 +5298,18 @@ From that point, and until an enemy unit captures that Objective marker, enemy u
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>MIGHT IS RIGHT</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f"/>
+                        <modifier type="increment" value="1" field="2218-aa3c-265f-2939"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="832b-3c70-a8d6-03e3" childId="77ee-ba49-5cb1-626b" shared="true" includeChildSelections="true" childName="O - 6 - Might is right"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
                 <profile id="c1f6-cadc-99b2-6fc4" name="Thick Hide" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
@@ -5336,7 +5391,7 @@ From that point, and until an enemy unit captures that Objective marker, enemy u
             </selectionEntry>
             <selectionEntry id="bb70-19de-13b1-b453" name="Deffkilla Wartrike" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="c036-b658-c8cf-68bc" name="Deffkilla Wartrike" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+                <profile id="c036-b658-c8cf-68bc" name="Deffkilla Wartrike" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <modifiers>
                     <modifier type="set" field="0bdf-a96e-9e38-7779" value="15&quot;">
                       <conditions>
@@ -5370,13 +5425,25 @@ From that point, and until an enemy unit captures that Objective marker, enemy u
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>MIGHT IS RIGHT</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f"/>
+                        <modifier type="increment" value="1" field="2218-aa3c-265f-2939"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="bb70-19de-13b1-b453" childId="77ee-ba49-5cb1-626b" shared="true" includeChildSelections="true" childName="O - 6 - Might is right"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
                 <profile id="7177-998a-c6f2-e5b5" name="Fuel-mixa Grot" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
                     <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Once per battle, when this model Advances, do not make an Advance roll. Instead, until the end of the phase, add 9&quot; to the Move characteristic of this model.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="0174-09d9-56a2-e7d1" name="Deffkilla Wartrike" hidden="true" typeId="800f-21d0-4387-c943" typeName="Unit">
+                <profile id="0174-09d9-56a2-e7d1" name="Deffkilla Wartrike" hidden="true" typeId="800f-21d0-4387-c943" typeName="Model">
                   <modifiers>
                     <modifier type="set" field="0bdf-a96e-9e38-7779" value="17&quot;">
                       <conditions>
@@ -5410,6 +5477,18 @@ From that point, and until an enemy unit captures that Objective marker, enemy u
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>MIGHT IS RIGHT</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f"/>
+                        <modifier type="increment" value="1" field="2218-aa3c-265f-2939"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="bb70-19de-13b1-b453" childId="77ee-ba49-5cb1-626b" shared="true" includeChildSelections="true" childName="O - 6 - Might is right"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <infoLinks>
@@ -5558,7 +5637,7 @@ From that point, and until an enemy unit captures that Objective marker, enemy u
           <selectionEntries>
             <selectionEntry id="e67a-271c-28c7-8e5a" name="Warboss" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="dd2f-613a-0354-abd1" name="Warboss" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+                <profile id="dd2f-613a-0354-abd1" name="Warboss" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <modifiers>
                     <modifier type="set" field="c0df-df94-abd7-e8d3" value="2+">
                       <conditions>
@@ -5582,6 +5661,18 @@ From that point, and until an enemy unit captures that Objective marker, enemy u
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>MIGHT IS RIGHT</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f"/>
+                        <modifier type="increment" value="1" field="2218-aa3c-265f-2939"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="e67a-271c-28c7-8e5a" childId="77ee-ba49-5cb1-626b" shared="true" includeChildSelections="true" childName="O - 6 - Might is right"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <infoLinks>
@@ -5678,7 +5769,7 @@ From that point, and until an enemy unit captures that Objective marker, enemy u
             </selectionEntry>
             <selectionEntry id="860a-b21d-4608-f713" name="Warboss in Mega armour" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="d66d-270c-0573-e4e6" name="Warboss in Mega armour" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+                <profile id="d66d-270c-0573-e4e6" name="Warboss in Mega armour" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <modifiers>
                     <modifier type="increment" field="f330-5e6e-4110-0978" value="2">
                       <conditions>
@@ -5697,6 +5788,18 @@ From that point, and until an enemy unit captures that Objective marker, enemy u
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>MIGHT IS RIGHT</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f"/>
+                        <modifier type="increment" value="1" field="2218-aa3c-265f-2939"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="860a-b21d-4608-f713" childId="77ee-ba49-5cb1-626b" shared="true" includeChildSelections="true" childName="O - 6 - Might is right"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <infoLinks>
@@ -5767,7 +5870,7 @@ From that point, and until an enemy unit captures that Objective marker, enemy u
             </selectionEntry>
             <selectionEntry id="52bf-0151-fe68-d6ca" name="Warboss on Warbike" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="3b2f-bc08-c250-6f43" name="Warboss on Warbike" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+                <profile id="3b2f-bc08-c250-6f43" name="Warboss on Warbike" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <modifiers>
                     <modifier type="increment" field="f330-5e6e-4110-0978" value="2">
                       <conditions>
@@ -5791,6 +5894,18 @@ From that point, and until an enemy unit captures that Objective marker, enemy u
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>MIGHT IS RIGHT</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f"/>
+                        <modifier type="increment" value="1" field="2218-aa3c-265f-2939"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="52bf-0151-fe68-d6ca" childId="77ee-ba49-5cb1-626b" shared="true" includeChildSelections="true" childName="O - 6 - Might is right"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <infoLinks>
@@ -5995,7 +6110,7 @@ Each unit can only be healed once per turn.</characteristic>
                 </modifierGroup>
               </modifierGroups>
               <profiles>
-                <profile id="61d3-baf5-fb7e-fef0" name="Painboy" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+                <profile id="61d3-baf5-fb7e-fef0" name="Painboy" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <modifiers>
                     <modifier type="increment" field="f330-5e6e-4110-0978" value="2">
                       <conditions>
@@ -6024,6 +6139,18 @@ Each unit can only be healed once per turn.</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>MIGHT IS RIGHT</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f"/>
+                        <modifier type="increment" value="1" field="2218-aa3c-265f-2939"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="71da-5fcd-c3da-21fd" childId="77ee-ba49-5cb1-626b" shared="true" includeChildSelections="true" childName="O - 6 - Might is right"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <categoryLinks>
@@ -6173,7 +6300,7 @@ Each unit can only be healed once per turn.</characteristic>
                 </modifierGroup>
               </modifierGroups>
               <profiles>
-                <profile id="93d0-462e-8863-9029" name="Painboy on Warbike" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+                <profile id="93d0-462e-8863-9029" name="Painboy on Warbike" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <modifiers>
                     <modifier type="set" field="c0df-df94-abd7-e8d3" value="2+">
                       <conditions>
@@ -6202,6 +6329,18 @@ Each unit can only be healed once per turn.</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>MIGHT IS RIGHT</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f"/>
+                        <modifier type="increment" value="1" field="2218-aa3c-265f-2939"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="ba1b-2cab-14cf-2801" childId="77ee-ba49-5cb1-626b" shared="true" includeChildSelections="true" childName="O - 6 - Might is right"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <infoLinks>
@@ -6297,7 +6436,7 @@ Each unit can only be healed once per turn.</characteristic>
           <selectionEntries>
             <selectionEntry id="f42d-13c2-4ef0-5b8d" name="Painboy" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="3be3-d1cc-95f6-9681" name="Blood Axes Painboy" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+                <profile id="3be3-d1cc-95f6-9681" name="Blood Axes Painboy" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <modifiers>
                     <modifier type="set" field="c0df-df94-abd7-e8d3" value="3+">
                       <conditions>
@@ -6321,6 +6460,18 @@ Each unit can only be healed once per turn.</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>MIGHT IS RIGHT</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f"/>
+                        <modifier type="increment" value="1" field="2218-aa3c-265f-2939"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="f42d-13c2-4ef0-5b8d" childId="77ee-ba49-5cb1-626b" shared="true" includeChildSelections="true" childName="O - 6 - Might is right"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <categoryLinks>
@@ -6400,7 +6551,7 @@ Each unit can only be healed once per turn.</characteristic>
             </selectionEntry>
             <selectionEntry id="8cd0-f1d5-0e02-c8f4" name="Painboy on Warbike" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="7811-4a89-a416-1adb" name="Painboy on Warbike" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+                <profile id="7811-4a89-a416-1adb" name="Painboy on Warbike" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <modifiers>
                     <modifier type="increment" field="f330-5e6e-4110-0978" value="2">
                       <conditions>
@@ -6424,6 +6575,18 @@ Each unit can only be healed once per turn.</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>MIGHT IS RIGHT</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f"/>
+                        <modifier type="increment" value="1" field="2218-aa3c-265f-2939"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="8cd0-f1d5-0e02-c8f4" childId="77ee-ba49-5cb1-626b" shared="true" includeChildSelections="true" childName="O - 6 - Might is right"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <infoLinks>
@@ -7317,7 +7480,7 @@ The range of this aura cannot be modified.</characteristic>
           <selectionEntries>
             <selectionEntry id="1dd5-0e28-6418-76ed" name="Big Mek" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="67c5-ca6d-ab95-8cf1" name="Big Mek" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+                <profile id="67c5-ca6d-ab95-8cf1" name="Big Mek" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <modifiers>
                     <modifier type="set" field="c0df-df94-abd7-e8d3" value="2+">
                       <conditions>
@@ -7341,6 +7504,18 @@ The range of this aura cannot be modified.</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>MIGHT IS RIGHT</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f"/>
+                        <modifier type="increment" value="1" field="2218-aa3c-265f-2939"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="1dd5-0e28-6418-76ed" childId="77ee-ba49-5cb1-626b" shared="true" includeChildSelections="true" childName="O - 6 - Might is right"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <categoryLinks>
@@ -7368,7 +7543,7 @@ The range of this aura cannot be modified.</characteristic>
             </selectionEntry>
             <selectionEntry id="1ea1-771b-fa08-1689" name="Big Mek in Mega armour" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="5471-8cbf-4cc5-96d9" name="Big Mek in Mega armour" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+                <profile id="5471-8cbf-4cc5-96d9" name="Big Mek in Mega armour" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <modifiers>
                     <modifier type="increment" field="f330-5e6e-4110-0978" value="2">
                       <conditions>
@@ -7387,6 +7562,18 @@ The range of this aura cannot be modified.</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>MIGHT IS RIGHT</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f"/>
+                        <modifier type="increment" value="1" field="2218-aa3c-265f-2939"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="1ea1-771b-fa08-1689" childId="77ee-ba49-5cb1-626b" shared="true" includeChildSelections="true" childName="O - 6 - Might is right"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <infoLinks>
@@ -7436,6 +7623,18 @@ The range of this aura cannot be modified.</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>MIGHT IS RIGHT</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f"/>
+                        <modifier type="increment" value="1" field="2218-aa3c-265f-2939"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="3bb8-3898-80c9-f32e" childId="77ee-ba49-5cb1-626b" shared="true" includeChildSelections="true" childName="O - 6 - Might is right"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <infoLinks>
@@ -7497,6 +7696,18 @@ The range of this aura cannot be modified.</characteristic>
                       </conditions>
                     </modifier>
                   </modifiers>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>MIGHT IS RIGHT</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f"/>
+                        <modifier type="increment" value="1" field="2218-aa3c-265f-2939"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="6d97-4f8d-6be3-3b71" childId="77ee-ba49-5cb1-626b" shared="true" includeChildSelections="true" childName="O - 6 - Might is right"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <infoLinks>
@@ -8354,160 +8565,6 @@ The range of this aura cannot be modified.</characteristic>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b5dd-c569-8914-f485" name="Nob with Waaagh! Banner" hidden="true" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e81a-31ba-e294-766d" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <modifierGroups>
-        <modifierGroup>
-          <comment>Clan</comment>
-          <modifiers>
-            <modifier type="add" field="category" value="03ee-2a15-d7ab-2cdc">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="99ef-00df-5cfe-4131" type="equalTo"/>
-                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a11a-0d79-f017-1b6b" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="add" field="category" value="24a6-92ea-fb6e-3d26">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6a20-431f-c9af-6ef5" type="equalTo"/>
-                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a11a-0d79-f017-1b6b" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="add" field="category" value="cb0f-c0a8-d22d-7968">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa11-3740-fe17-de0f" type="equalTo"/>
-                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a11a-0d79-f017-1b6b" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="add" field="category" value="6368-1d48-f654-48a7">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8be2-c624-b93f-0d46" type="equalTo"/>
-                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a11a-0d79-f017-1b6b" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="add" field="category" value="c4a3-3598-259d-aaa0">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c93f-077d-e535-89e2" type="equalTo"/>
-                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a11a-0d79-f017-1b6b" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="add" field="category" value="96fe-0640-387e-f912">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2de-0a50-e4ce-91d8" type="equalTo"/>
-                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a11a-0d79-f017-1b6b" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="add" field="category" value="9e2d-9350-03a5-df5d">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a11a-0d79-f017-1b6b" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
-      <profiles>
-        <profile id="4f30-1cc9-bd0b-865c" name="Nob with Waaagh! Banner" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
-          <modifiers>
-            <modifier type="set" field="0bdf-a96e-9e38-7779" value="6&quot;">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa11-3740-fe17-de0f" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="d677-ced6-cced-aaaa" name="Waaagh! Banner [Aura]" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly &lt;CLAN&gt; ORKS unit is within 6&quot; of this model, each time a model in that unit makes a melee attack, add 1 to that attack’s hit roll.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="cd8d-b057-7302-8ea9" name="Faction: Orks" hidden="false" targetId="946d-1c4c-20d6-9eda" primary="false"/>
-        <categoryLink id="4e29-4d46-9f6f-006f" name="Ork" hidden="false" targetId="9e66-151e-9a63-7fa4" primary="false"/>
-        <categoryLink id="cae4-8f37-4641-08d4" name="Character" hidden="false" targetId="ef18-746a-369f-43a4" primary="false"/>
-        <categoryLink id="0701-699a-cd1a-7b4d" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="dccd-8964-4714-af21" name="Waaagh! Banner" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09c5-2573-6d83-f1fc" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f1f-80d5-32ea-2c1c" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="0cf8-f2cc-ccd9-4c86" name="Waaagh! Banner" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-                <characteristic name="S" typeId="59b1-319e-ec13-d466">+2</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
-                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="a698-c5b2-c6db-0cf8" name=" Character definition" hidden="false" collective="false" import="true" targetId="e3da-f3e6-6da5-e6d9" type="selectionEntryGroup"/>
-        <entryLink id="2748-ff6c-c4a5-b757" name="Kustom shoota" hidden="false" collective="false" import="true" targetId="d81a-314d-11d0-114b" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="points" value="40"/>
-        <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
-        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="5ce5-bdc4-128e-88cb" name="Nobz" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -8723,6 +8780,81 @@ The range of this aura cannot be modified.</characteristic>
               </entryLinks>
               <costs>
                 <cost name="Pts" typeId="points" value="15"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="unit" import="true" name="Nob with Waaagh! Banner" hidden="false" id="b5dd-c569-8914-f485" collective="false">
+              <profiles>
+                <profile name="Nob with Waaagh! Banner" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="4f30-1cc9-bd0b-865c">
+                  <characteristics>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
+                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="6&quot;" field="0bdf-a96e-9e38-7779">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="fa11-3740-fe17-de0f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="5ce5-bdc4-128e-88cb" childId="d3ef-3cd2-891c-ef8b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier type="set" value="&apos;Ard Nob with Waaagh! Banner" field="name"/>
+                        <modifier type="set" value="3+" field="c0df-df94-abd7-e8d3"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </profile>
+                <profile name="Waaagh! Banner [Aura]" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="d677-ced6-cced-aaaa">
+                  <characteristics>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly &lt;CLAN&gt; ORKS unit is within 6&quot; of this model, each time a model in that unit makes a melee attack, add 1 to that attack’s hit roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Waaagh! Banner" hidden="false" id="dccd-8964-4714-af21" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="09c5-2573-6d83-f1fc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5f1f-80d5-32ea-2c1c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Waaagh! Banner" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="0cf8-f2cc-ccd9-4c86">
+                      <characteristics>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                        <characteristic name="S" typeId="59b1-319e-ec13-d466">+2</characteristic>
+                        <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
+                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="Pts" typeId="points" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Kustom shoota" hidden="false" id="2748-ff6c-c4a5-b757" collective="false" targetId="d81a-314d-11d0-114b" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="20"/>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
@@ -9662,6 +9794,18 @@ Each time an attack is made with this weapon, an unmodified wound roll of 6 infl
                       </conditions>
                     </modifier>
                   </modifiers>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>MIGHT IS RIGHT</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f"/>
+                        <modifier type="increment" value="1" field="2218-aa3c-265f-2939"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="34a1-d930-da84-957a" childId="77ee-ba49-5cb1-626b" shared="true" includeChildSelections="true" childName="O - 6 - Might is right"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <categoryLinks>
@@ -9719,6 +9863,18 @@ Each time an attack is made with this weapon, an unmodified wound roll of 6 infl
                       </conditions>
                     </modifier>
                   </modifiers>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>MIGHT IS RIGHT</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f"/>
+                        <modifier type="increment" value="1" field="2218-aa3c-265f-2939"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="19a4-7a4f-bf65-cedd" childId="77ee-ba49-5cb1-626b" shared="true" includeChildSelections="true" childName="O - 6 - Might is right"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <costs>
@@ -15922,7 +16078,7 @@ Each MEGA ARMOUR or JUMP PACK model takes up the space of 2 models.</characteris
         </modifierGroup>
       </modifierGroups>
       <profiles>
-        <profile id="fed4-c189-972a-1dd2" name="Kill Rig [1] (6+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="fed4-c189-972a-1dd2" name="Kill Rig [1] (6+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <modifiers>
             <modifier type="set" field="0bdf-a96e-9e38-7779" value="13&quot;">
               <conditions>
@@ -15941,8 +16097,20 @@ Each MEGA ARMOUR or JUMP PACK model takes up the space of 2 models.</characteris
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>MIGHT IS RIGHT</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f"/>
+                <modifier type="increment" value="1" field="2218-aa3c-265f-2939"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="008e-3c73-617d-25f5" childId="77ee-ba49-5cb1-626b" shared="true" includeChildSelections="true" childName="O - 6 - Might is right"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
-        <profile id="1648-8556-d38b-db3a" name="Kill Rig [2] (3-5 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="1648-8556-d38b-db3a" name="Kill Rig [2] (3-5 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <modifiers>
             <modifier type="set" field="0bdf-a96e-9e38-7779" value="10&quot;">
               <conditions>
@@ -15961,8 +16129,20 @@ Each MEGA ARMOUR or JUMP PACK model takes up the space of 2 models.</characteris
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>MIGHT IS RIGHT</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f"/>
+                <modifier type="increment" value="1" field="2218-aa3c-265f-2939"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="008e-3c73-617d-25f5" childId="77ee-ba49-5cb1-626b" shared="true" includeChildSelections="true" childName="O - 6 - Might is right"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
-        <profile id="f1fd-0385-8c03-6ddd" name="Kill Rig [3] (1-2 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="f1fd-0385-8c03-6ddd" name="Kill Rig [3] (1-2 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <modifiers>
             <modifier type="set" field="0bdf-a96e-9e38-7779" value="7&quot;">
               <conditions>
@@ -15981,6 +16161,18 @@ Each MEGA ARMOUR or JUMP PACK model takes up the space of 2 models.</characteris
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>MIGHT IS RIGHT</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f"/>
+                <modifier type="increment" value="1" field="2218-aa3c-265f-2939"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="008e-3c73-617d-25f5" childId="77ee-ba49-5cb1-626b" shared="true" includeChildSelections="true" childName="O - 6 - Might is right"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile id="3f5d-aa79-d73e-9d53" name="Kill Rig" hidden="false" typeId="b3a8-0452-7436-44d1" typeName="Transport">
           <characteristics>
@@ -16405,7 +16597,7 @@ Each MEGA ARMOUR or JUMP PACK model takes up the space of 2 models.</characteris
         </modifierGroup>
       </modifierGroups>
       <profiles>
-        <profile id="4307-a1cc-9d35-267e" name="Weirdboy" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="4307-a1cc-9d35-267e" name="Weirdboy" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <modifiers>
             <modifier type="set" field="0bdf-a96e-9e38-7779" value="6&quot;">
               <conditions>
@@ -16424,6 +16616,16 @@ Each MEGA ARMOUR or JUMP PACK model takes up the space of 2 models.</characteris
                 <modifier type="set" field="00ca-f8b8-876d-b705" value="7"/>
                 <modifier type="set" field="name" value="Blood Axes Weirdboy"/>
               </modifiers>
+            </modifierGroup>
+            <modifierGroup type="and">
+              <comment>MIGHT IS RIGHT</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f"/>
+                <modifier type="increment" value="1" field="2218-aa3c-265f-2939"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="aa5c-6efe-4380-31ee" childId="77ee-ba49-5cb1-626b" shared="true" includeChildSelections="true" childName="O - 6 - Might is right"/>
+              </conditions>
             </modifierGroup>
           </modifierGroups>
           <characteristics>
@@ -19779,7 +19981,7 @@ Each MEGA ARMOUR or JUMP PACK model takes up the space of 2 models.</characteris
             <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly &lt;CLAN&gt; INFANTRY or &lt;CLAN&gt; BIKER unit is within 6&quot; of this model, each time a model in that unit would lose a wound, roll one D6: on a 6, that wound is not lost.</characteristic>
           </characteristics>
         </profile>
-        <profile id="dea5-857a-fe7c-2102" name="Painboss" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="dea5-857a-fe7c-2102" name="Painboss" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <modifiers>
             <modifier type="increment" field="f330-5e6e-4110-0978" value="2">
               <conditions>
@@ -19808,6 +20010,18 @@ Each MEGA ARMOUR or JUMP PACK model takes up the space of 2 models.</characteris
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>MIGHT IS RIGHT</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f"/>
+                <modifier type="increment" value="1" field="2218-aa3c-265f-2939"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="fded-7e0c-57b6-dc54" childId="77ee-ba49-5cb1-626b" shared="true" includeChildSelections="true" childName="O - 6 - Might is right"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile id="1825-d044-0c5b-eab2" name="Orky know-wotz" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
@@ -20014,7 +20228,7 @@ Each MEGA ARMOUR or JUMP PACK model takes up the space of 2 models.</characteris
         </modifierGroup>
       </modifierGroups>
       <profiles>
-        <profile id="a3c0-8f69-413e-de73" name="Wurrboy" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="a3c0-8f69-413e-de73" name="Wurrboy" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <modifiers>
             <modifier type="set" field="0bdf-a96e-9e38-7779" value="6&quot;">
               <conditions>
@@ -20033,6 +20247,18 @@ Each MEGA ARMOUR or JUMP PACK model takes up the space of 2 models.</characteris
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>MIGHT IS RIGHT</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f"/>
+                <modifier type="increment" value="1" field="2218-aa3c-265f-2939"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="dbc8-fa05-4100-f97c" childId="77ee-ba49-5cb1-626b" shared="true" includeChildSelections="true" childName="O - 6 - Might is right"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile id="24d0-1928-948b-64b7" name="Wurrboy" hidden="false" typeId="bc97-dea9-9e88-bb7d" typeName="Psyker">
           <characteristics>
@@ -23610,6 +23836,18 @@ Each MEGA ARMOUR or JUMP PACK model takes up the space of 2 models.</characteris
                       </conditions>
                     </modifier>
                   </modifiers>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>MIGHT IS RIGHT</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f"/>
+                        <modifier type="increment" value="1" field="2218-aa3c-265f-2939"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="e150-62ec-d987-8c39" childId="77ee-ba49-5cb1-626b" shared="true" includeChildSelections="true" childName="O - 6 - Might is right"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <entryLinks>
@@ -23648,6 +23886,18 @@ Each MEGA ARMOUR or JUMP PACK model takes up the space of 2 models.</characteris
                       </conditions>
                     </modifier>
                   </modifiers>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>MIGHT IS RIGHT</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f"/>
+                        <modifier type="increment" value="1" field="2218-aa3c-265f-2939"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="0c0b-cca8-b6a0-5132" childId="77ee-ba49-5cb1-626b" shared="true" includeChildSelections="true" childName="O - 6 - Might is right"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <entryLinks>
@@ -23703,6 +23953,18 @@ Each MEGA ARMOUR or JUMP PACK model takes up the space of 2 models.</characteris
                       </conditions>
                     </modifier>
                   </modifiers>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>MIGHT IS RIGHT</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f"/>
+                        <modifier type="increment" value="1" field="2218-aa3c-265f-2939"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="c662-81f5-9256-2a3c" childId="77ee-ba49-5cb1-626b" shared="true" includeChildSelections="true" childName="O - 6 - Might is right"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <entryLinks>
