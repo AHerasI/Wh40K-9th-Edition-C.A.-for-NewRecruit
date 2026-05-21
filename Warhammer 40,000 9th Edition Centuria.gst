@@ -2862,7 +2862,6 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bf67-ed45-5950-955b" type="equalTo"/>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a283-177a-bb55-d926" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2879,7 +2878,6 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bf67-ed45-5950-955b" type="equalTo"/>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a283-177a-bb55-d926" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -6824,18 +6822,18 @@ If this unit has no aura abilities on its datasheet, then it is unaffected by th
             <selectionEntry id="09f9-b586-8d63-7635" name="3. Strike Force (76-150 Total PL / 1501-3000 Points) " hidden="false" collective="false" import="true" type="upgrade">
               <comment>3. Strike Force (51-100 Total PL / 1001-2000 Points)</comment>
               <costs>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="12"/>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                 <cost name="Pts" typeId="points" value="0"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="9"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="fad2-035f-88a7-60c0" name="4. Onslaught (151-300 Total PL / 3001-6000 Points) " hidden="false" collective="false" import="true" type="upgrade">
               <comment>4. Onslaught (101-150 Total PL / 2001-3000 Points)</comment>
               <costs>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="18"/>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                 <cost name="Pts" typeId="points" value="0"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="12"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>
@@ -6875,6 +6873,21 @@ If this unit has no aura abilities on its datasheet, then it is unaffected by th
                 <cost name="Pts" typeId="points" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <constraints>
+                <constraint type="min" value="18" field="selections" scope="parent" shared="true" id="9d5f-854c-9799-f40f"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="9d5f-854c-9799-f40f">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="a283-177a-bb55-d926" shared="true" includeChildSelections="true" includeChildForces="true" childName="Narrative: Non Crusade"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="bf67-ed45-5950-955b" shared="true" includeChildSelections="true" includeChildForces="true" childName="Narrative: Crusade"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
