@@ -8685,7 +8685,15 @@ The range of this aura cannot be modified.</characteristic>
         </modifierGroup>
       </modifierGroups>
       <infoLinks>
-        <infoLink id="7ba7-89ab-a752-a41a" name="Impervious to small weapons fire" hidden="false" targetId="b48e-9a4a-2fdc-5d7c" type="profile"/>
+        <infoLink id="7ba7-89ab-a752-a41a" name="Impervious to small weapons fire" hidden="false" targetId="b48e-9a4a-2fdc-5d7c" type="profile">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="5ce5-bdc4-128e-88cb" childId="d3ef-3cd2-891c-ef8b" shared="true" includeChildSelections="true" childName="&apos;Eavy Armour"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4872-bb55-1c02-362e" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
