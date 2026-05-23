@@ -6467,23 +6467,44 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
               </constraints>
               <selectionEntries>
                 <selectionEntry id="4332-6e20-6984-5fc3" name="2x Graviton Hammer" hidden="false" collective="false" import="true" type="upgrade">
-                  <entryLinks>
-                    <entryLink id="d457-3501-5c1d-82ad" name="Graviton hammer" hidden="false" collective="false" import="true" targetId="e805-862b-45c7-e53e" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23a4-d102-6af8-2712" type="max"/>
-                        <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="327a-3816-98e2-a75d" type="min"/>
-                      </constraints>
-                      <infoLinks>
-                        <infoLink id="23f8-826f-5957-ac24" name="Off-hand weapon" hidden="false" targetId="e14b-37da-f8e9-1752" type="profile"/>
-                      </infoLinks>
-                    </entryLink>
-                  </entryLinks>
                   <costs>
                     <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                     <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                     <cost name="Pts" typeId="points" value="0"/>
                     <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                   </costs>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Graviton hammer" hidden="false" id="45bd-9a44-8cff-0678">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="23a4-d102-6af8-2712" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="327a-3816-98e2-a75d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Graviton hammer" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="dc01-45ef-ee5b-388a">
+                          <characteristics>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                            <characteristic name="S" typeId="59b1-319e-ec13-d466">+4</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack made with this weapon is allocated to a model with a Save characteristic of 3+ or better, that attack has a Damage characteristic of 3.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <categoryLinks>
+                        <categoryLink name="Grav Weapon" hidden="false" id="fe6e-c27d-8616-b075" targetId="9f63-fd50-c890-bf0f" primary="false"/>
+                      </categoryLinks>
+                      <costs>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                        <cost name="Pts" typeId="points" value="0"/>
+                        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Graviton hammer" id="756d-b4f1-6bbb-f19f" hidden="false" type="profile" targetId="913c-0a40-02bf-33fc"/>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
                 </selectionEntry>
                 <selectionEntry id="ca8a-fab7-dbd2-b00b" name="Hvy Graviton Hammer&amp;Hvy Shield" hidden="false" collective="false" import="true" type="upgrade">
                   <entryLinks>
