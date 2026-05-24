@@ -6111,6 +6111,11 @@ If this unit has no aura abilities on its datasheet, then it is unaffected by th
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <rules>
+            <rule name="Rest and recover" id="e619-056f-8f67-e111" hidden="false">
+              <description>If none of this unit&apos;s models were deployed on the battlefield during a Battle, after the battle is finished, you can remove one Battle Scar the unit has.</description>
+            </rule>
+          </rules>
         </selectionEntryGroup>
         <selectionEntryGroup id="30d8-6ccc-6494-fdde" name="Weapon Enhancements" hidden="true" collective="false" import="true" collapsible="true">
           <modifiers>
