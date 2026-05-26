@@ -10788,6 +10788,15 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
                     <modifier type="set" field="f330-5e6e-4110-0978" value="2"/>
                   </modifiers>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="3052-0050-ef3e-004f" childId="7145-4661-6ddf-a735" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" value="2+" field="381b-eb28-74c3-df5f"/>
+                    <modifier type="set" value="3" field="f330-5e6e-4110-0978"/>
+                  </modifiers>
+                </modifierGroup>
               </modifierGroups>
             </infoLink>
           </infoLinks>
@@ -25018,7 +25027,7 @@ You can use this Stratagem up to 3 times.</characteristic>
       <selectionEntryGroups>
         <selectionEntryGroup name="Shroud Runners" id="5fbb-ab5a-bd65-8b62" hidden="false" collective="false" import="true" defaultSelectionEntryId="2748-0025-ebe9-b9c8">
           <constraints>
-            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="b879-87d1-e03f-559a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="b879-87d1-e03f-559a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="62bd-30c8-e1ba-710d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <selectionEntries>
