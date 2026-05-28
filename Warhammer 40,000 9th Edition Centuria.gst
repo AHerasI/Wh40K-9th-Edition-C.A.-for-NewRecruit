@@ -516,7 +516,7 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
             </modifier>
           </modifiers>
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">&lt;CRAFTWORLD&gt; units with this ability are eligible to shoot in a turn in which it Advanced, but if it does so, then until the end of the phase, models in this unit can only make attacks with Assault or Pistol weapons they are equipped with, and when resolving those attacks, that unit is treated as having Remained Stationary.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">ASURYANI INFANTRY and BIKER units this ability are eligible to shoot in a turn in which it Advanced, but if it does so, then until the end of the phase, models in this unit can only make attacks with Assault or Pistol weapons they are equipped with, and when resolving those attacks, that unit is treated as having Remained Stationary.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1188,7 +1188,7 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
             </modifier>
           </modifiers>
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">&lt;ANHRATHE&gt; INFANTRY and BIKER units are eligible to shoot in a turn in which it Advanced, but if it does so, then until the end of the phase, models in this unit can only make attacks with Assault or Pistol weapons they are equipped with, and when resolving those attacks, that unit is treated as having Remained Stationary.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">ANHRATHE INFANTRY and BIKER units are eligible to shoot in a turn in which it Advanced, but if it does so, then until the end of the phase, models in this unit can only make attacks with Assault or Pistol weapons they are equipped with, and when resolving those attacks, that unit is treated as having Remained Stationary.</characteristic>
           </characteristics>
         </profile>
       </profiles>
