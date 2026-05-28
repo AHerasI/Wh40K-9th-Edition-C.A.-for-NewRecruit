@@ -3048,9 +3048,9 @@ Each instance of a dice result allows you to manipulate a different type of roll
                     <characteristic name="Effect" typeId="40cd-b21b-c79c-c496">You can manipulate a Save throw for a unit with ANHRATHE or ASURYANI Keywords. A manipulated roll is considered to be a roll of 6.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="d5ec-3b0e-2963-fdb9" name="Battle focus move" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" noindex="true">
+                <profile id="d5ec-3b0e-2963-fdb9" name="Battle focus move" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" noindex="false">
                   <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">In your Shooting phase, after a &lt;ASURYANI&gt; INFANTRY or BIKER unit has finished making its attacks, unless it Fell Back or Advanced this turn, can make a Battle Focus move.
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">In your Shooting phase, after an ASURYANI INFANTRY, ASURYANI BIKER, ANHRATHE INFANTRY or ANHRATHE BIKER unit has finished making its attacks, unless it Fell Back or Advanced this turn, can make a Battle Focus move.
 
 When it does so, roll one D6, each BIKER model in the unit can move up to a distance in inches equal to the result, INFANTRY models up to half to the result rounding up to the full inch, as if it were your Movement phase.
 
@@ -4310,19 +4310,6 @@ Each model can only be healed once per turn.
                   </conditionGroups>
                 </modifier>
               </modifiers>
-              <profiles>
-                <profile id="8291-9911-30ea-4a12" name="Battle focus move" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" noindex="true">
-                  <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">In your Shooting phase, after a &lt;ANHRATHE&gt; INFANTRY or BIKER unit has finished making its attacks, unless it Fell Back or Advanced this turn, can make a Battle Focus move.
-
-When it does so, roll one D6, each BIKER model in the unit can move up to a distance in inches equal to the result, INFANTRY models up to half to the result rounding up to the full inch, as if it were your Movement phase.
-
-A unit that makes a Battle Focus move cannot embark within a TRANSPORT model at the end of that move, and until the end of the turn, such a unit is not eligible to declare a charge.
-
-A unit cannot make a Battle Focus move if it arrived as Reinforcements this turn.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <infoLinks>
                 <infoLink id="060e-ecae-e602-574b" name="Strands of fate" hidden="false" targetId="0231-22c7-3877-109c" type="profile"/>
                 <infoLink id="a0f9-8ac3-19da-682e" name="1" hidden="false" targetId="8ec9-deef-0823-148e" type="profile"/>
@@ -4331,6 +4318,7 @@ A unit cannot make a Battle Focus move if it arrived as Reinforcements this turn
                 <infoLink id="4ca8-d32b-76b7-2445" name="4" hidden="false" targetId="7e7c-25f4-0938-fbef" type="profile"/>
                 <infoLink id="f2cb-5d7a-a4e8-4690" name="5" hidden="false" targetId="da8b-5731-a083-8a29" type="profile"/>
                 <infoLink id="d838-505b-e945-36cf" name="6" hidden="false" targetId="0de9-81ca-63b6-4b4b" type="profile"/>
+                <infoLink name="Battle focus move" id="d433-07c3-6f8d-c496" hidden="false" type="profile" targetId="d5ec-3b0e-2963-fdb9"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="5f92-1c7a-a7d1-b778" name="Faction: Anhrathe" hidden="false" targetId="e4fb-5ce1-c38a-63ae" primary="false"/>
