@@ -7691,7 +7691,6 @@ Until the end of the phase, this unit cannot fire Overwatch, Set to Defend or ma
                 <selectionEntry id="bdeb-05ed-3f5d-076d" name="Shuriken Rifle&amp;Knife" hidden="false" collective="false" import="true" type="upgrade">
                   <entryLinks>
                     <entryLink id="e835-9545-326e-7f57" name="Combat knife" hidden="false" collective="false" import="true" targetId="92e8-af3a-fe14-06c1" type="selectionEntry"/>
-                    <entryLink id="f434-c5af-e801-0c6e" name="Shuriken rifle" hidden="false" collective="false" import="true" targetId="1bbe-1dd8-298d-dd12" type="selectionEntry"/>
                   </entryLinks>
                   <costs>
                     <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -7699,6 +7698,38 @@ Until the end of the phase, this unit cannot fire Overwatch, Set to Defend or ma
                     <cost name="Pts" typeId="points" value="0"/>
                     <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                   </costs>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Shuriken rifle" hidden="false" id="659b-8c02-7543-980a" collective="true">
+                      <profiles>
+                        <profile name="Shuriken rifle" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="c2be-fb33-1c90-a466">
+                          <characteristics>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
+                            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 4</characteristic>
+                            <characteristic name="S" typeId="59b1-319e-ec13-d466">3</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Shuriken.</characteristic>
+                          </characteristics>
+                          <modifierGroups>
+                            <modifierGroup type="and">
+                              <comment>Superior Shurikens</comment>
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="force" childId="39ac-c421-60b9-20fe" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                              </conditions>
+                              <modifiers>
+                                <modifier type="set" value="27&quot;" field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464"/>
+                                <modifier type="set" value="Assault 5" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2"/>
+                              </modifiers>
+                            </modifierGroup>
+                          </modifierGroups>
+                        </profile>
+                      </profiles>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b239-251b-71b0-f27f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3380-eb1b-3ac0-9cd6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </selectionEntry>
+                  </selectionEntries>
                 </selectionEntry>
                 <selectionEntry id="7d6c-bf0d-46b6-c56f" name="Shuriken Pistol&amp;Glaive" hidden="false" collective="false" import="true" type="upgrade">
                   <entryLinks>
@@ -7726,12 +7757,6 @@ Until the end of the phase, this unit cannot fire Overwatch, Set to Defend or ma
                 </selectionEntry>
                 <selectionEntry id="76f1-ee2c-7702-c55b" name="2x Shuriken Rifle" hidden="false" collective="false" import="true" type="upgrade">
                   <entryLinks>
-                    <entryLink id="8460-f23e-bd5f-504e" name="Shuriken rifle" hidden="false" collective="false" import="true" targetId="81d0-8873-35fa-419e" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b239-251b-71b0-f27f" type="max"/>
-                        <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b64-893d-44fb-b99f" type="min"/>
-                      </constraints>
-                    </entryLink>
                     <entryLink id="0539-3034-c1d0-a68c" name="Combat knife" hidden="false" collective="false" import="true" targetId="92e8-af3a-fe14-06c1" type="selectionEntry"/>
                   </entryLinks>
                   <costs>
@@ -7740,6 +7765,17 @@ Until the end of the phase, this unit cannot fire Overwatch, Set to Defend or ma
                     <cost name="Pts" typeId="points" value="0"/>
                     <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                   </costs>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Shuriken rifle" hidden="false" id="1c29-f257-9b44-374b">
+                      <infoLinks>
+                        <infoLink name="Shuriken rifle" id="aca0-5bed-ccf7-0257" hidden="false" type="profile" targetId="c2be-fb33-1c90-a466"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1ce9-f92a-f49e-d508" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c5db-bb33-2d8e-e877" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </selectionEntry>
+                  </selectionEntries>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -7774,7 +7810,7 @@ Until the end of the phase, this unit cannot fire Overwatch, Set to Defend or ma
               <entryLinks>
                 <entryLink id="f19c-bbcc-58a0-22fd" name="Plasma grenades" hidden="false" collective="false" import="true" targetId="bda9-e3dd-9a43-fd07" type="selectionEntry"/>
                 <entryLink id="2fc5-9594-7ca3-8da8" name="Combat knife" hidden="false" collective="false" import="true" targetId="92e8-af3a-fe14-06c1" type="selectionEntry"/>
-                <entryLink id="efcc-bcc0-47ce-14ac" name="Shuriken rifle" hidden="false" collective="false" import="true" targetId="1bbe-1dd8-298d-dd12" type="selectionEntry"/>
+                <entryLink id="efcc-bcc0-47ce-14ac" name="Shuriken rifle" hidden="false" collective="false" import="true" targetId="659b-8c02-7543-980a" type="selectionEntry"/>
               </entryLinks>
               <costs>
                 <cost name="Pts" typeId="points" value="15"/>
@@ -34416,6 +34452,18 @@ Each time an enemy unit without FLY, VEHICLE or TITANIC Keywords moves within th
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Shuriken. Each time you select a target for this weapon, you can ignore the Look Out, Sir rule. Each time an attack is made with this weapon, an unmodified wound roll of 6 inflicts 1 mortal wound on the target in addition to any normal damage.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Superior Shurikens</comment>
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="39ac-c421-60b9-20fe" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <modifiers>
+            <modifier type="set" value="39&quot;" field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464"/>
+            <modifier type="set" value="Assault 3" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile id="84cb-abf4-d399-9c8f" name="Blaster rifle" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <modifiers>
