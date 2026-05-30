@@ -3682,7 +3682,7 @@ Each time an attack is made with this weapon, on an unmodified wound roll of 6, 
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">+2</characteristic>
                 <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410"/>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7841,7 +7841,12 @@ If the battle ends and this unit is not on the battlefield it is considered to b
             <infoLink id="d833-ba00-78e4-5b6b" name="Explodes 6+ (3&quot;)" hidden="false" targetId="a90c-078f-b826-e2d4" type="rule"/>
           </infoLinks>
           <entryLinks>
-            <entryLink id="b977-28a1-1363-b28d" name="Piercing apendages" hidden="false" collective="false" import="true" targetId="3300-35b8-c1ab-4891" type="selectionEntry"/>
+            <entryLink id="b977-28a1-1363-b28d" name="Canoptek claws" hidden="false" collective="false" import="true" targetId="3ef2-0e3b-6e20-e8e4" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="683b-b234-9941-8287" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d83f-5447-d817-d454" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
             <entryLink id="acd3-2c10-afdc-e85e" name="Scouring eye" hidden="false" collective="false" import="true" targetId="72be-800d-814e-95d7" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9d8-b463-2ca8-f7d4" type="max"/>
