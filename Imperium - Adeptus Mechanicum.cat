@@ -11320,7 +11320,7 @@ Blast.</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
         </profile>
-        <profile id="a689-bd3b-0e84-30b6" name="Krios [2] (4-6 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="a689-bd3b-0e84-30b6" name="Krios [2] (4-6 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">9&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
@@ -11383,6 +11383,40 @@ Blast.</characteristic>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="3"/>
               </costs>
             </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Sponsor weapons" id="0303-5c4f-62a7-8012" hidden="false" collective="false" import="true" defaultSelectionEntryId="7f96-c16d-460b-180e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b9fd-f076-2823-0763" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Sponsor-mounted" hidden="false" id="98fb-3dee-db73-9594" targetId="ceeb-83af-6f77-8baa" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="2x Lightning lock" hidden="false" id="f368-d2e3-20ca-7cd0" collective="false">
+              <entryLinks>
+                <entryLink import="true" name="Lightning lock" hidden="false" id="f144-7464-c160-adc9" collective="false" targetId="be80-0b7e-7cef-4ca2" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1ee4-c975-af2b-97f0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0378-a072-e607-1ffc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="10"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="2x Plasma Blaster" hidden="false" id="d784-4f5e-5c3c-15da" type="selectionEntry" targetId="c516-73fe-4c85-3515">
+              <costs>
+                <cost name="Pts" typeId="points" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="2x Volkite Charger" hidden="false" id="6e3b-4714-1c81-b643" type="selectionEntry" targetId="f5a7-aecc-288c-bed7"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
