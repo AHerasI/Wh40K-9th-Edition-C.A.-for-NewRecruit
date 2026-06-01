@@ -8760,7 +8760,7 @@ If the battle ends and this unit is not on the battlefield it is considered to b
             <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="962a-12db-a0fa-8382" type="min"/>
           </constraints>
           <profiles>
-            <profile id="17a4-a336-8510-cbea" name="Canoptek Scarab Swarm" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="17a4-a336-8510-cbea" name="Canoptek Scarab Swarm" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
@@ -8772,6 +8772,13 @@ If the battle ends and this unit is not on the battlefield it is considered to b
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <costs>
