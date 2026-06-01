@@ -135,15 +135,6 @@
             </modifier>
           </modifiers>
         </infoLink>
-        <infoLink id="97f1-93df-f388-8c3d" name="The Ancients stir" hidden="false" targetId="c4a6-b653-b9b3-1678" type="profile">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="84f4-b0d6-c550-b537" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
         <infoLink id="618b-789c-f598-bae7" name="Relentlessly expansionist" hidden="false" targetId="8199-764e-69d9-8054" type="profile">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
@@ -226,6 +217,20 @@
           </modifiers>
         </infoLink>
       </infoLinks>
+      <profiles>
+        <profile name="The Ancients stir" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="8362-175d-d44a-b705">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a CANOPTEK unit with this code makes an attack, add 1 to the Hit roll and you can ignore any or all Hit roll modifiers.</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="84f4-b0d6-c550-b537" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
     </categoryEntry>
     <categoryEntry id="0f0d-0754-1f81-403e" name="Dynasty: Mephrit" hidden="false">
       <infoLinks>
@@ -3874,7 +3879,7 @@ Each time an attack is made with this weapon, on an unmodified wound roll of 6, 
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5561-1564-6f8f-9b9e" type="max"/>
           </constraints>
           <profiles>
-            <profile id="4d14-9872-0401-8f87" name="Canoptek Plasmacyte" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="4d14-9872-0401-8f87" name="Canoptek Plasmacyte" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
@@ -3886,6 +3891,13 @@ Each time an attack is made with this weapon, on an unmodified wound roll of 6, 
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="10&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="84f4-b0d6-c550-b537" shared="true" includeChildSelections="true" childName="The Ancients stir"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
             <profile id="ff51-c684-c768-6f54" name="Infused Madness" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
@@ -7520,7 +7532,7 @@ If the battle ends and this unit is not on the battlefield it is considered to b
         </modifierGroup>
       </modifierGroups>
       <profiles>
-        <profile id="4ae2-31b8-5359-623b" name="Canoptek Reanimator" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="4ae2-31b8-5359-623b" name="Canoptek Reanimator" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
@@ -7532,6 +7544,13 @@ If the battle ends and this unit is not on the battlefield it is considered to b
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="10&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="84f4-b0d6-c550-b537" shared="true" includeChildSelections="true" childName="The Ancients stir"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile id="7751-ba77-9b3d-325f" name="Nanoscarab Reanimation Beam [Aura]" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
@@ -7669,7 +7688,7 @@ If the battle ends and this unit is not on the battlefield it is considered to b
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8b4-ea5a-d419-15bc" type="min"/>
           </constraints>
           <profiles>
-            <profile id="233c-19df-e80f-03f4" name="Canoptek Spyder" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="233c-19df-e80f-03f4" name="Canoptek Spyder" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
@@ -7681,6 +7700,13 @@ If the battle ends and this unit is not on the battlefield it is considered to b
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="8&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="84f4-b0d6-c550-b537" shared="true" includeChildSelections="true" childName="The Ancients stir"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <infoLinks>
@@ -7835,6 +7861,13 @@ If the battle ends and this unit is not on the battlefield it is considered to b
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="84f4-b0d6-c550-b537" shared="true" includeChildSelections="true" childName="The Ancients stir"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <infoLinks>
@@ -8540,7 +8573,7 @@ If the battle ends and this unit is not on the battlefield it is considered to b
         </modifierGroup>
       </modifierGroups>
       <profiles>
-        <profile id="b592-402d-cedc-d273" name="Canoptek Tombstalker" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="b592-402d-cedc-d273" name="Canoptek Tombstalker" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
@@ -8552,6 +8585,13 @@ If the battle ends and this unit is not on the battlefield it is considered to b
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="84f4-b0d6-c550-b537" shared="true" includeChildSelections="true" childName="The Ancients stir"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
@@ -8775,7 +8815,7 @@ If the battle ends and this unit is not on the battlefield it is considered to b
               <modifiers>
                 <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="84f4-b0d6-c550-b537" shared="true" includeChildSelections="true" childName="The Ancients stir"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8861,7 +8901,7 @@ If the battle ends and this unit is not on the battlefield it is considered to b
             <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d30b-66fa-96e9-d91a" type="min"/>
           </constraints>
           <profiles>
-            <profile id="420a-9361-8e2c-8e1d" name="Canoptek Acanthrite" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="420a-9361-8e2c-8e1d" name="Canoptek Acanthrite" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
@@ -8873,6 +8913,13 @@ If the battle ends and this unit is not on the battlefield it is considered to b
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="14&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="84f4-b0d6-c550-b537" shared="true" includeChildSelections="true" childName="The Ancients stir"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <infoLinks>
@@ -9017,7 +9064,7 @@ If the battle ends and this unit is not on the battlefield it is considered to b
             </selectionEntry>
             <selectionEntry id="97ec-bf42-30b4-6dd2" name="Canoptek Wraith" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="fae1-7d42-3db5-3f05" name="Canoptek Wraith" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+                <profile id="fae1-7d42-3db5-3f05" name="Canoptek Wraith" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
@@ -9029,6 +9076,13 @@ If the battle ends and this unit is not on the battlefield it is considered to b
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="14&quot;" field="0bdf-a96e-9e38-7779">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="84f4-b0d6-c550-b537" shared="true" includeChildSelections="true" childName="The Ancients stir"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <entryLinks>
@@ -9150,7 +9204,7 @@ If the battle ends and this unit is not on the battlefield it is considered to b
         </modifierGroup>
       </modifierGroups>
       <profiles>
-        <profile id="d492-575a-92df-ef9f" name="Canoptek Tomb Sentinel" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="d492-575a-92df-ef9f" name="Canoptek Tomb Sentinel" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
@@ -9162,6 +9216,13 @@ If the battle ends and this unit is not on the battlefield it is considered to b
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="84f4-b0d6-c550-b537" shared="true" includeChildSelections="true" childName="The Ancients stir"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
@@ -10285,7 +10346,7 @@ If the battle ends and this unit is not on the battlefield it is considered to b
         </modifierGroup>
       </modifierGroups>
       <profiles>
-        <profile id="59e5-89d7-1d72-b31f" name="Canoptek Doomstalker [1] (7+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="59e5-89d7-1d72-b31f" name="Canoptek Doomstalker [1] (7+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
@@ -10297,8 +10358,15 @@ If the battle ends and this unit is not on the battlefield it is considered to b
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="14&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="84f4-b0d6-c550-b537" shared="true" includeChildSelections="true" childName="The Ancients stir"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
-        <profile id="7532-e791-1b9a-c21a" name="Canoptek Doomstalker [2] (4-6 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="7532-e791-1b9a-c21a" name="Canoptek Doomstalker [2] (4-6 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">9&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
@@ -10310,8 +10378,15 @@ If the battle ends and this unit is not on the battlefield it is considered to b
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="11&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="84f4-b0d6-c550-b537" shared="true" includeChildSelections="true" childName="The Ancients stir"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
-        <profile id="de49-f3a4-0e68-afb7" name="Canoptek Doomstalker [3] (1-3 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="de49-f3a4-0e68-afb7" name="Canoptek Doomstalker [3] (1-3 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
@@ -10323,6 +10398,13 @@ If the battle ends and this unit is not on the battlefield it is considered to b
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="8&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="84f4-b0d6-c550-b537" shared="true" includeChildSelections="true" childName="The Ancients stir"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile id="f2dd-ddb8-55d6-e11d" name="Sentinel Construct" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
@@ -12528,7 +12610,7 @@ Remaining Wounds	Powers of the C&apos;tan
           <selectionEntries>
             <selectionEntry id="338a-d10f-ea75-bf6c" name="Canoptek Macrocyte Warrior" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="a1fe-6094-d3aa-969b" name="Canoptek Macrocyte" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+                <profile id="a1fe-6094-d3aa-969b" name="Canoptek Macrocyte" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
@@ -12540,6 +12622,13 @@ Remaining Wounds	Powers of the C&apos;tan
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="84f4-b0d6-c550-b537" shared="true" includeChildSelections="true" childName="The Ancients stir"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <entryLinks>
@@ -12671,7 +12760,7 @@ Remaining Wounds	Powers of the C&apos;tan
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6402-2f75-c184-b2e3" type="min"/>
           </constraints>
           <profiles>
-            <profile id="be35-d697-fa9f-a452" name="Canoptek Spyder" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="be35-d697-fa9f-a452" name="Canoptek Tomb Crawler" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
@@ -12683,6 +12772,13 @@ Remaining Wounds	Powers of the C&apos;tan
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="8&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="84f4-b0d6-c550-b537" shared="true" includeChildSelections="true" childName="The Ancients stir"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <selectionEntryGroups>
