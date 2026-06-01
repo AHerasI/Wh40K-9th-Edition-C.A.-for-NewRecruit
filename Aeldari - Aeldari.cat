@@ -1313,6 +1313,11 @@ Additional reference data obtained from Wahapedia, https://wahapedia.ru/</readme
         <categoryLink name="Fast Attack" hidden="false" id="6074-f70a-a16e-b078" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Lhykhis" hidden="false" id="fb37-5c05-bf06-db3c" type="selectionEntry" targetId="b058-f098-f411-d074">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="913e-b6ed-f1a5-a539" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="38a9-1c34-cef8-17e8" name="Corsair Voidreavers" hidden="true" collective="false" import="true" type="unit">
@@ -4960,26 +4965,15 @@ Each Luck re-roll can be used to re-roll one hit roll, wound roll, damage roll, 
               </categoryLinks>
               <entryLinks>
                 <entryLink id="785e-056d-1667-60aa" name="Melee weapon" hidden="false" collective="false" import="true" targetId="129f-0b5f-09b0-035d" type="selectionEntryGroup"/>
-                <entryLink id="11af-4d94-b597-8bcd" name="Ranged weapon" hidden="false" collective="false" import="true" targetId="4ed4-bace-29e1-d713" type="selectionEntryGroup"/>
+                <entryLink id="11af-4d94-b597-8bcd" name="Ranged weapon" hidden="false" collective="false" import="true" targetId="4ed4-bace-29e1-d713" type="selectionEntryGroup">
+                  <entryLinks>
+                    <entryLink import="true" name="Spinneret rifle" hidden="false" id="b4a4-0c8a-f183-fafa" type="selectionEntry" targetId="a29d-3909-b8a3-4534"/>
+                  </entryLinks>
+                </entryLink>
                 <entryLink id="3a64-5714-6490-da21" name="Wargear" hidden="false" collective="false" import="true" targetId="2a05-ead5-69f7-f16d" type="selectionEntryGroup"/>
                 <entryLink id="5d4e-decc-01d9-5162" name="Plasma grenades" hidden="false" collective="false" import="true" targetId="bda9-e3dd-9a43-fd07" type="selectionEntry"/>
                 <entryLink id="3d7f-b92e-488c-6f39" name="Warp Spider jump generator" hidden="false" collective="false" import="true" targetId="6ccc-6705-8a87-5ac0" type="selectionEntry"/>
-                <entryLink id="e968-f012-bf93-eda1" name="Death spinner" hidden="false" collective="false" import="true" targetId="471b-97e8-5e51-49ab" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f7bc-a2e1-97d2-33cc" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="pts" typeId="points" value="5"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="2fe6-96bc-9552-117b" name="Power Sword" hidden="false" collective="false" import="true" targetId="bc9e-551d-9afb-78d5" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7d47-c270-803d-768a" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="pts" typeId="points" value="5"/>
-                  </costs>
-                </entryLink>
+                <entryLink import="true" name="Secondary weapon" hidden="false" id="5ef4-9dde-0141-6984" type="selectionEntryGroup" targetId="a6ba-7eb7-6b95-1bf7"/>
               </entryLinks>
               <costs>
                 <cost name="Pts" typeId="points" value="20"/>
@@ -30236,12 +30230,12 @@ Enervate (Malediction): Select one enemy unit within 18&quot; of this PSYKER. Un
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="51b3-94a4-a182-ed0e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <profiles>
-            <profile name="Fuegan" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="4e0e-c349-9e94-def0">
+            <profile name="Lhykhis" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="4e0e-c349-9e94-def0">
               <characteristics>
-                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
                 <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2+</characteristic>
-                <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
                 <characteristic name="W" typeId="f330-5e6e-4110-0978">6</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">6</characteristic>
@@ -30249,20 +30243,21 @@ Enervate (Malediction): Select one enemy unit within 18&quot; of this PSYKER. Un
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
               </characteristics>
             </profile>
-            <profile name="Burning Lance [Aura]" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="3640-6e97-b90c-f792">
+            <profile name="The Whispering Web [Aura]" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="3640-6e97-b90c-f792">
               <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly FIRE DRAGONS unit is within 6&quot; of this model, add 2 to the Leadership characteristic of models in that unit and that unit has the Objective Secured ability.</characteristic>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly WARP SPIDERS unit is within 6&quot; of this model, add 2 to the Leadership characteristic of models in that unit and that unit has the Objective Secured ability.</characteristic>
               </characteristics>
             </profile>
-            <profile name="Unquenchable Resolve" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="401c-4d89-1a92-232a">
+            <profile name="Empyric Ambush" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="401c-4d89-1a92-232a">
               <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While this model has lost any wounds, add 1 to its Strength and Attacks characteristics.</characteristic>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While this model is leading a unit, that unit is eligible to declare an Heroic Intervention in a turn in which it used its Flickerjump ability, and it can move up to 6&quot; when doing so.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink name="Phoenix Lord" id="d50b-726b-dc08-b66c" hidden="false" targetId="de43-d1a3-6d0b-95fd" type="profile"/>
-            <infoLink name="Assured Destruction" id="3189-e0cd-e664-bbbd" hidden="false" targetId="66ab-f5b0-875a-1f11" type="profile"/>
+            <infoLink name="Flickerjump" id="3189-e0cd-e664-bbbd" hidden="false" targetId="f629-4d87-bc75-c657" type="profile"/>
+            <infoLink name="Warp Spider jump generator" id="f400-95d4-24fb-5eda" hidden="false" type="profile" targetId="d570-6e39-906a-db71"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink name="Faction: Aeldari" hidden="false" id="bcb5-9276-5b48-9f2f" targetId="1924-ef18-000b-d2ba" primary="false"/>
@@ -30272,30 +30267,20 @@ Enervate (Malediction): Select one enemy unit within 18&quot; of this PSYKER. Un
             <categoryLink name="Ø40mm" hidden="false" id="ef4e-8de4-af13-185d" targetId="2ec1-217a-555a-b171" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Searsong" hidden="false" id="6639-62e8-d2c1-a256" collective="false">
+            <selectionEntry type="upgrade" import="true" name="Brood Twain" hidden="false" id="6639-62e8-d2c1-a256" collective="false">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="65c3-a4db-7cce-da43" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ce09-2ea5-c37d-01e0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <profiles>
-                <profile name="Searsong, Lance" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="09ff-e890-81e5-8339">
-                  <characteristics>
-                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18&quot;</characteristic>
-                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 1</characteristic>
-                    <characteristic name="S" typeId="59b1-319e-ec13-d466">10</characteristic>
-                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
-                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6+4</characteristic>
-                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Searsong, Beam." typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="6b61-619b-e978-88bf">
+                <profile name="Brood Twain" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="e9db-9d19-4d96-6ffc">
                   <characteristics>
                     <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
-                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 1</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault D3+3</characteristic>
                     <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
-                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
-                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">4</characteristic>
-                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Beam.</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">If the unit of the weapon&apos;s bearer is in engagement range of enemy units, this weapon changes it&apos;s profile to Pistol D3+3.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -30315,13 +30300,13 @@ Enervate (Malediction): Select one enemy unit within 18&quot; of this PSYKER. Un
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2e22-0eea-6f19-674c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <profiles>
-                <profile name="The Fire Axe" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="e385-4356-e7b8-85fd">
+                <profile name="Weaverender " typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="e385-4356-e7b8-85fd">
                   <characteristics>
                     <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                     <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-                    <characteristic name="S" typeId="59b1-319e-ec13-d466">+2</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">+3</characteristic>
                     <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
-                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                     <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
                   </characteristics>
                 </profile>
