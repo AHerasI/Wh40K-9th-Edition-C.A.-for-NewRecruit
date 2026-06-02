@@ -4321,9 +4321,9 @@ Starting with the player whose turn is not taking place, the players must altern
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="03fd-db47-5333-1e1f" name="Smite" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="03fd-db47-5333-1e1f" name="Smite" hidden="false" collective="false" import="true" type="upgrade" exportable="false">
       <infoLinks>
-        <infoLink id="72f4-48ff-fafb-c876" name="Smite" hidden="false" targetId="5821-6c45-8572-7e0e" type="profile"/>
+        <infoLink id="72f4-48ff-fafb-c876" name="Smite" hidden="false" targetId="5821-6c45-8572-7e0e" type="profile" exportable="false"/>
       </infoLinks>
       <costs>
         <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
