@@ -28225,29 +28225,9 @@ Enervate (Malediction): Select one enemy unit within 18&quot; of this PSYKER. Un
               <profiles>
                 <profile name="[Aura] Dispersion Field" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="2185-2365-3e25-211f">
                   <characteristics>
-                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">7</characteristic>
                     <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">Self</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing: Shield of Ynnead has a warp charge value of 6. If manifested, select one friendly YNNARI unit (excluding TITANIC units) within 12&quot; of this PSYKER. Until the start of your next Psychic phase, models in that unit have a 4+ invulnerable save.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="2 - Spiritshield" hidden="false" id="3c71-4dc5-dbe9-54a4" collective="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89f5-09b9-39f2-62e6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <profiles>
-                <profile name="[Aura] Spiritshield" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="1943-e0c1-1213-d761">
-                  <characteristics>
-                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
-                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">Self</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing: Shield of Ynnead has a warp charge value of 6. If manifested, select one friendly YNNARI unit (excluding TITANIC units) within 12&quot; of this PSYKER. Until the start of your next Psychic phase, models in that unit have a 4+ invulnerable save.</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing: Dispersion Field has a warp charge value of 7. If manifested, until the start of your next Psychic phase, friendly ANHRATHE units (excluding TITANIC units) within 6&quot; of this PSYKER have a 5+ invulnerable save.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -28265,9 +28245,10 @@ Enervate (Malediction): Select one enemy unit within 18&quot; of this PSYKER. Un
               <profiles>
                 <profile name="Warp Blink" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="4bc3-571f-01e8-7faf">
                   <characteristics>
-                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">8</characteristic>
                     <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">6&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing: Word of the Phoenix has a warp charge value of 6. If manifested, select one friendly YNNARI INFANTRY unit within 6&quot; of this PSYKER. One of that unit’s destroyed models (or D3 of its destroyed models if that unit has the Troops Battlefield Role) can be added back to that unit with full wounds remaining. These models can only be set up within Engagement Range of enemy units that are already within Engagement Range of the unit they are being added back to.</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Malediction: Warp Blink has a warp charge value of 8. If manifested, select one enemy unit within 6&quot; of this PSYKER. Remove that unit from the Battlefield, and set-up the unit anywhere on the battlefield, more than 12&quot; away from your models and 9&quot; from your Deployment zone.
+If the unit cannot be set-up, it&apos;s placed in the Strategic Reserves of your opponent</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -28344,6 +28325,26 @@ Enervate (Malediction): Select one enemy unit within 18&quot; of this PSYKER. Un
               </constraints>
               <profiles>
                 <profile name="Path-Ward" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="7687-8689-41ee-2d97">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">7</characteristic>
+                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing: Path-Ward has a warp charge value of 7. If manifested, select one friendly ANHRATHE CORE unit within 18&quot; of this PSYKER. Until the start of your next Psychic phase, unless that unit has remain stationary, models in that unit cannot be targeted by ranged attacks unless the attacking model is within 12&quot;.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="0 - Spiritshield" hidden="true" id="3c71-4dc5-dbe9-54a4" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89f5-09b9-39f2-62e6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="[Aura] Spiritshield" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="1943-e0c1-1213-d761">
                   <characteristics>
                     <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
                     <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">Self</characteristic>
