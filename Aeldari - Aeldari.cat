@@ -6722,7 +6722,7 @@ Until the end of the phase, this unit cannot fire Overwatch, Set to Defend or ma
             <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
             <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
             <characteristic name="W" typeId="f330-5e6e-4110-0978">5</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">5</characteristic>
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
           </characteristics>
@@ -6788,7 +6788,7 @@ Until the end of the phase, this unit cannot fire Overwatch, Set to Defend or ma
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">+3</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
               </characteristics>
@@ -25230,6 +25230,247 @@ You can use this Stratagem up to 3 times.</characteristic>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Void Dreamer" hidden="true" id="5a14-eff0-82ff-60d7" collective="false">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="6732-8eda-123a-a370" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4435-0896-94ff-cebd" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Craftworld Keyword</comment>
+          <modifiers>
+            <modifier type="add" value="05b0-1ce8-5fba-fd01" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="d294-6bda-13ec-342f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="d00f-3a42-1d30-0dfc" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="da2c-5fae-83dd-0b61" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="927a-0b95-1bc0-d72f" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="6e4e-cccc-1761-35a6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8877-cf68-d519-d6f5" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="f93e-b6a1-6bc4-6cbb" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="d0e8-385c-2bdd-a06a" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="2940-0543-965f-7783" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="0235-d280-c6d1-8ef6" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="7d5c-0041-1b41-a04d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="6732-8eda-123a-a370" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+              <modifiers>
+                <modifier type="remove" value="1114-7875-d463-df17" field="category"/>
+                <modifier type="add" value="a898-c576-fd0c-3c21" field="category"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="3d52-fccf-10c0-3fae" field="category">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="5a14-eff0-82ff-60d7" childId="8c31-58c6-2066-a9c3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="1c6f-0311-3eba-3180" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="5a14-eff0-82ff-60d7" childId="8c31-58c6-2066-a9c3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <profiles>
+        <profile name="Runes of the Farseer" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="f013-98c6-baa5-24bf">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the start of each battle round, after making a Strands of Fate roll but before selecting which of those dice to retain, for each FARSEER model from your army that is on the battlefield and not within Engagement Range of any enemy units, you can re-roll one of those dice.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ghosthelm" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="c448-8675-6bf6-a51e">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model never suffers Perils of the Warp.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Farseer" typeId="bc97-dea9-9e88-bb7d" typeName="Psyker" hidden="false" id="50c8-0147-b453-f6c6">
+          <characteristics>
+            <characteristic name="Cast" typeId="5afb-9914-904b-d3b3">2</characteristic>
+            <characteristic name="Deny" typeId="b5ac-9c20-5d5a-6f9b">2</characteristic>
+            <characteristic name="Powers Known" typeId="69d7-b45e-00a2-7e46">Smite or 1 Runes of Fortune, 2 Runes of Fate.</characteristic>
+            <characteristic name="Other" typeId="c2e2-f115-0003-5d7b">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rune armour" id="f679-1fb5-f095-432c" hidden="false" targetId="2c3c-bf97-572f-ed11" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Character" hidden="false" id="0c15-6a24-5160-7940" targetId="ef18-746a-369f-43a4" primary="false"/>
+        <categoryLink name="Psyker" hidden="false" id="c83b-618e-1fb4-94f8" targetId="e691-aad7-d21c-1023" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Farseer equipment" id="e2bb-4e39-ff26-9f4d" hidden="false" collective="false" import="true" defaultSelectionEntryId="3b53-c074-0927-e91e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a178-f38e-6d8d-2e09" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="54f4-37c8-492e-6bf9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Farseer w/Skyrunner" hidden="false" id="8c31-58c6-2066-a9c3" collective="false">
+              <profiles>
+                <profile name="Farseer in Skyrunner" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="ad35-b866-7611-30fb">
+                  <characteristics>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2+</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">6</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Ride the Wind" id="8a27-a92c-8f23-3d7b" hidden="false" targetId="7003-97a5-90f8-2c3d" type="profile"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink name="Biker" hidden="false" id="a692-4832-4f8a-fbf0" targetId="1c6f-0311-3eba-3180" primary="false"/>
+                <categoryLink name="Fly" hidden="false" id="c9c9-ac97-9411-869f" targetId="3117-16d8-fcef-4f56" primary="false"/>
+                <categoryLink name="Levitating" hidden="false" id="33bc-4dd7-a6ac-4413" targetId="96e8-7e9d-42d7-2fea" primary="false"/>
+                <categoryLink name="Faction: Aeldari" hidden="false" id="44bb-ad0f-6eb7-a685" targetId="1924-ef18-000b-d2ba" primary="false"/>
+                <categoryLink name="Faction: Asuryani" hidden="false" id="8f7c-811f-75a1-4877" targetId="1114-7875-d463-df17" primary="false"/>
+                <categoryLink name="Ø-HULL" hidden="false" id="23eb-6c6e-d445-0f3a" targetId="a078-f38c-d38c-0808" primary="false"/>
+              </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon option" id="8cd0-6e72-fa49-6e2f" hidden="false" collective="false" import="true" defaultSelectionEntryId="846e-a2d1-bd9c-61b0">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee01-5ebb-fc83-6bd9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="68d7-90c5-ad20-3df8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Singing spear" hidden="false" id="5676-f5e9-531e-cb73" collective="false" targetId="6006-2628-238f-b379" type="selectionEntry"/>
+                    <entryLink import="true" name="Witchblade" hidden="false" id="dc83-efea-c7ef-70c3" collective="false" targetId="5b24-0d30-12af-df18" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Twin Shuriken rifle" hidden="false" id="3cd7-02bb-5122-07a9" collective="false" targetId="ff3d-42fe-2ba4-3026" type="selectionEntry"/>
+                <entryLink import="true" name="Shuriken pistol" hidden="false" id="4be6-36be-e3b1-69c6" collective="false" targetId="3b3a-02da-8bf9-dac6" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="30"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Farseer" hidden="false" id="dba8-b607-bbf8-c391" collective="false">
+              <profiles>
+                <profile name="Farseer" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="1ec8-2319-2014-c003">
+                  <characteristics>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2+</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">5</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="8&quot;" field="0bdf-a96e-9e38-7779">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink name="Infantry" hidden="false" id="d236-a62e-f410-0753" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+                <categoryLink name="Faction: Aeldari" hidden="false" id="6b2e-dbdf-a7db-a034" targetId="1924-ef18-000b-d2ba" primary="false"/>
+                <categoryLink name="Faction: Asuryani" hidden="false" id="8654-a323-25ca-eca6" targetId="1114-7875-d463-df17" primary="false"/>
+                <categoryLink name="Ø25mm" hidden="false" id="9aeb-2064-f314-873d" targetId="a9eb-ffb1-e9f2-2b60" primary="false"/>
+              </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Melee weapon" id="7517-0ed7-c9a5-7923" hidden="false" collective="false" import="true" defaultSelectionEntryId="2c8f-5407-2825-542b">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1060-5a20-d344-1dfc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7352-9818-b66e-0ac5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Singing spear" hidden="false" id="0b97-8a72-755e-f86c" collective="false" targetId="6006-2628-238f-b379" type="selectionEntry"/>
+                    <entryLink import="true" name="Witchblade" hidden="false" id="2d79-1c7e-f3e1-56e5" collective="false" targetId="5b24-0d30-12af-df18" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Shuriken pistol" hidden="false" id="2afa-eefb-8eaf-0d0b" collective="false" targetId="3b3a-02da-8bf9-dac6" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Psychic powers" id="fe82-2cee-fc13-83ed" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6f71-7884-7236-d17c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="895d-14f7-f432-1df7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Runes of Fate" hidden="false" id="3184-fe31-0d53-c88d" collective="false" targetId="3818-867e-48ff-e7d8" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Revenant Discipline" hidden="false" id="f0d0-79d1-bfd0-ed6b" collective="false" targetId="d7f8-edc6-8fa0-7afd" type="selectionEntryGroup"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name=" Character definition" hidden="false" id="5ab9-cbb7-2116-3f3a" collective="false" targetId="e0a8-6e59-4681-1912" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Runes of Fortune &amp; Smite" hidden="false" id="5b3b-7521-0da4-ea17" collective="false" targetId="fe10-bfed-ecb8-b54c" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="6"/>
+        <cost name="Pts" typeId="points" value="125"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="fe42-2c16-a719-f2fe" name="Equipment" hidden="false" collective="false" import="true">
@@ -27224,7 +27465,7 @@ While an enemy unit is within Engagement Range of the bearer, if the bearer’s 
                   <characteristics>
                     <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">7</characteristic>
                     <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Witchfire: Executioner has a warp charge value of 7. If manifested, select one enemy unit (excluding CHARACTER units with a Wounds characteristic of 9 or less) within 18&quot; of this PSYKER. That enemy unit suffers D3 mortal wounds. If any enemy models are destroyed as a result of these mortal wounds, that enemy unit suffers an additional D3 mortal wounds. If the result of the Psychic test was 10 or more, you can select one enemy unit (excluding CHARACTER units with a Wounds characteristic of 9 or less) within 24&quot; of this PSYKER instead.</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Witchfire: Executioner has a warp charge value of 7. If manifested, select one enemy unit (excluding CHARACTER units with a Wounds characteristic of 9 or less) within 18&quot; of this PSYKER. That enemy unit suffers D3 mortal wounds. If any enemy models are destroyed as a result of these mortal wounds, that enemy unit suffers an additional D3 mortal wounds. If the result of the Psychic test was 10 or more, you can select one enemy unit (excluding CHARACTER units with a Wounds characteristic of 9 or less) within 24&quot; of this PSYKER instead.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -27251,8 +27492,8 @@ While an enemy unit is within Engagement Range of the bearer, if the bearer’s 
                   <characteristics>
                     <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">7</characteristic>
                     <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Malediction: Doom has a warp charge value of 7. If manifested, select one enemy unit within 18&quot; of this PSYKER. 
-Until the start of your next Psychic phase, each time a &lt;CRAFTWORLD&gt; CORE or &lt;CRAFTWORLD&gt; CHARACTER unit from your army makes an attack that targets that enemy unit, you can re-roll the wound roll. 
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Malediction: Doom has a warp charge value of 7. If manifested, select one enemy unit within 18&quot; of this PSYKER.
+Until the start of your next Psychic phase, each time a CRAFTWORLD CORE or CRAFTWORLD CHARACTER unit from your army makes an attack that targets that enemy unit, you can re-roll the wound roll.
 If the result of the Psychic test was 10 or more, you can select one enemy unit within 24&quot; of this PSYKER instead.</characteristic>
                   </characteristics>
                 </profile>
@@ -27280,9 +27521,9 @@ If the result of the Psychic test was 10 or more, you can select one enemy unit 
                   <characteristics>
                     <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
                     <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Blessing: Fortune has a warp charge value of 6. If manifested, select one friendly &lt;CRAFTWORLD&gt; CORE or &lt;CRAFTWORLD&gt; CHARACTER unit within 18&quot; of this PSYKER. 
-Until the start of your next Psychic phase, each time a model in that unit would lose a wound, roll one D6: on a 5+, that wound is not lost. 
-If the result of the Psychic test was 10 or more, you can select one friendly &lt;CRAFTWORLD&gt; CORE or &lt;CRAFTWORLD&gt; CHARACTER unit within 24&quot; of this PSYKER instead.</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing: Fortune has a warp charge value of 6. If manifested, select one friendly CRAFTWORLD CORE or CRAFTWORLD CHARACTER unit within 18&quot; of this PSYKER.
+Until the start of your next Psychic phase, each time a model in that unit would lose a wound, roll one D6: on a 5+, that wound is not lost.
+If the result of the Psychic test was 10 or more, you can select one friendly CRAFTWORLD CORE or CRAFTWORLD CHARACTER unit within 24&quot; of this PSYKER instead.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -27309,7 +27550,7 @@ If the result of the Psychic test was 10 or more, you can select one friendly &l
                   <characteristics>
                     <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
                     <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Blessing: Will of Asuryan has a warp charge value of 6. If manifested, select one friendly &lt;CRAFTWORLD&gt; CORE or &lt;CRAFTWORLD&gt; CHARACTER unit within 18&quot; of this PSYKER. 
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing: Will of Asuryan has a warp charge value of 6. If manifested, select one friendly CRAFTWORLD CORE or CRAFTWORLD CHARACTER unit within 18&quot; of this PSYKER.
 Until the start of your next Psychic phase:
 
 - That unit gains the Objective Secured ability.
@@ -27335,7 +27576,7 @@ Until the start of your next Psychic phase:
                   <characteristics>
                     <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">7</characteristic>
                     <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Witchfire: Mind War has a warp charge value of 7. If manifested, select one enemy CHARACTER model within 18&quot; of this PSYKER. Roll one D6 and add this PSYKER’s Leadership characteristic to the result of your roll. Your opponent then rolls one D6 and adds the Leadership characteristic of that enemy CHARACTER model to the result of their roll. If your total result is greater than your opponent’s total result, that enemy CHARACTER model suffers a number of mortal wounds equal to the difference. If the result of the Psychic test was 10 or more, you can roll 2D3 instead of one D6, and add the result to the Leadership characteristic of this PSYKER.</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Witchfire: Mind War has a warp charge value of 7. If manifested, select one enemy CHARACTER model within 18&quot; of this PSYKER. Roll one D6 and add this PSYKER’s Leadership characteristic to the result of your roll. Your opponent then rolls one D6 and adds the Leadership characteristic of that enemy CHARACTER model to the result of their roll. If your total result is greater than your opponent’s total result, that enemy CHARACTER model suffers a number of mortal wounds equal to the difference. If the result of the Psychic test was 10 or more, you can roll 2D3 instead of one D6, and add the result to the Leadership characteristic of this PSYKER.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -27362,9 +27603,9 @@ Until the start of your next Psychic phase:
                   <characteristics>
                     <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
                     <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Blessing: Guide has a warp charge value of 6. If manifested, select one friendly &lt;CRAFTWORLD&gt; CORE or &lt;CRAFTWORLD&gt; CHARACTER unit within 18&quot; of this PSYKER. 
-Until the start of your next Psychic phase, each time a model in that unit makes an attack, you can re-roll the hit roll. 
-If the result of the Psychic test was 10 or more, you can select one friendly &lt;CRAFTWORLD&gt; CORE or &lt;CRAFTWORLD&gt; CHARACTER unit within 24&quot; of this PSYKER instead.</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing: Guide has a warp charge value of 6. If manifested, select one friendly CRAFTWORLD CORE or CRAFTWORLD CHARACTER unit within 18&quot; of this PSYKER.
+Until the start of your next Psychic phase, each time a model in that unit makes an attack, you can re-roll the hit roll.
+If the result of the Psychic test was 10 or more, you can select one friendly CRAFTWORLD CORE or CRAFTWORLD CHARACTER unit within 24&quot; of this PSYKER instead.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -27405,7 +27646,7 @@ If the result of the Psychic test was 10 or more, you can select one friendly &l
                   <characteristics>
                     <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
                     <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">Self</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Blessing: Fateful Divergence has a warp charge value of 6. If manifested, you gain 1 Command point. 
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing: Fateful Divergence has a warp charge value of 6. If manifested, you gain 1 Command point.
 You cannot attempt to manifest this Psychic power more than once in the same battle round.</characteristic>
                   </characteristics>
                 </profile>
@@ -27426,7 +27667,7 @@ You cannot attempt to manifest this Psychic power more than once in the same bat
                   <characteristics>
                     <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">5</characteristic>
                     <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">Self</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Witch Strike has a warp charge value of 5, unless the unit attempting to manifest this Psychic power has the VEHICLE or MONSTER Keyword, when the warp charge has a value of 8. If manifested, select one PSYKER model from the unit that manifested the power. 
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing: Witch Strike has a warp charge value of 5, unless the unit attempting to manifest this Psychic power has the VEHICLE or MONSTER Keyword, when the warp charge has a value of 8. If manifested, select one PSYKER model from the unit that manifested the power.
 Until the start of your next Psychic phase, each time the selected model makes a melee attack, if that attack successfully wounds the target, it inflicts the damage of that attack as mortal wounds.</characteristic>
                   </characteristics>
                 </profile>
@@ -27447,7 +27688,7 @@ Until the start of your next Psychic phase, each time the selected model makes a
                   <characteristics>
                     <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">5</characteristic>
                     <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Blessing: Ghostwalk has a warp charge value of 5. If manifested, select one friendly ASURYANI CORE or ASURYANI CHARACTER unit within 18&quot; of this PSYKER. 
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing: Ghostwalk has a warp charge value of 5. If manifested, select one friendly ASURYANI CORE or ASURYANI CHARACTER unit within 18&quot; of this PSYKER.
 Until the start of your next Psychic phase, add 2 to charge rolls made for that unit.</characteristic>
                   </characteristics>
                 </profile>
@@ -27468,7 +27709,7 @@ Until the start of your next Psychic phase, add 2 to charge rolls made for that 
                   <characteristics>
                     <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
                     <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Witchfire: Crushing Orb has a warp charge value of 6. If manifested, select one enemy unit within 18&quot; of and visible to this PSYKER and roll three D6, adding 2 to each result if that enemy unit is a VEHICLE or MONSTER unit, or it contains 6 or more models. For each 4+, that enemy unit suffers 1 mortal wound.</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Witchfire: Crushing Orb has a warp charge value of 6. If manifested, select one enemy unit within 18&quot; of and visible to this PSYKER and roll three D6, adding 2 to each result if that enemy unit is a VEHICLE or MONSTER unit, or it contains 6 or more models. For each 4+, that enemy unit suffers 1 mortal wound.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -27488,8 +27729,8 @@ Until the start of your next Psychic phase, add 2 to charge rolls made for that 
                   <characteristics>
                     <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
                     <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">24&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Blessing: Focus Will has a warp charge value of 6.
-If manifested, select one friendly ASURYANI PSYKER unit within 24&quot; of this PSYKER. 
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing: Focus Will has a warp charge value of 6.
+If manifested, select one friendly ASURYANI PSYKER unit within 24&quot; of this PSYKER.
 Until the start of your next Psychic phase, add 2 to Psychic tests and Deny the Witch tests taken for that unit.</characteristic>
                   </characteristics>
                 </profile>
@@ -27510,7 +27751,7 @@ Until the start of your next Psychic phase, add 2 to Psychic tests and Deny the 
                   <characteristics>
                     <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
                     <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Malediction: Impair Senses has a warp charge value of 6. If manifested, select one enemy unit within 18&quot; of and visible to this PSYKER. 
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Malediction: Impair Senses has a warp charge value of 6. If manifested, select one enemy unit within 18&quot; of and visible to this PSYKER.
 Until the start of your next Psychic phase, that enemy unit cannot be affected by the aura abilities of units from your opponent’s army.</characteristic>
                   </characteristics>
                 </profile>
@@ -27560,7 +27801,7 @@ Until the start of your next Psychic phase, that enemy unit cannot be affected b
                   <characteristics>
                     <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
                     <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">6&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Blessing: Twilight Pathways has a warp charge value of 6. If manifested, select one friendly &lt;SAEDATH&gt; CORE or &lt;SAEDATH&gt; CHARACTER unit within 6&quot; of this PSYKER. That unit can immediately make a normal Move, Advance or Fall Back as if it were your Movement phase. If it does so, that unit is not eligible to declare a charge this turn.</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing: Twilight Pathways has a warp charge value of 6. If manifested, select one friendly SAEDATH CORE or SAEDATH CHARACTER unit within 6&quot; of this PSYKER. That unit can immediately make a normal Move, Advance or Fall Back as if it were your Movement phase. If it does so, that unit is not eligible to declare a charge this turn.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -27580,7 +27821,7 @@ Until the start of your next Psychic phase, that enemy unit cannot be affected b
                   <characteristics>
                     <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
                     <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">12&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Blessing: Fog of Dreams has a warp charge value of 6. If manifested, select one friendly &lt;SAEDATH&gt; CORE or &lt;SAEDATH&gt; CHARACTER unit within 12&quot; of this PSYKER. Until the start of your next Psychic phase, that unit can only be selected as the target of a ranged attack if it is the closest eligible target for that attack or is within 12&quot; of the shooting model.</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing: Fog of Dreams has a warp charge value of 6. If manifested, select one friendly SAEDATH CORE or SAEDATH CHARACTER unit within 12&quot; of this PSYKER. Until the start of your next Psychic phase, that unit can only be selected as the target of a ranged attack if it is the closest eligible target for that attack or is within 12&quot; of the shooting model.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -27600,7 +27841,7 @@ Until the start of your next Psychic phase, that enemy unit cannot be affected b
                   <characteristics>
                     <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">9</characteristic>
                     <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Witchfire: Mirror of Minds has a warp charge value of 9. If manifested, select one enemy unit within 18&quot; of this PSYKER. That enemy unit suffers D3 mortal wounds, then roll off with your opponent. If you win or draw that roll off, that enemy unit suffers 1 mortal wound. Repeat this roll off process until either that enemy unit has suffered 6 mortal wounds, that enemy unit is destroyed, or your opponent wins the roll off.</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Witchfire: Mirror of Minds has a warp charge value of 9. If manifested, select one enemy unit within 18&quot; of this PSYKER. That enemy unit suffers D3 mortal wounds, then roll off with your opponent. If you win or draw that roll off, that enemy unit suffers 1 mortal wound. Repeat this roll off process until either that enemy unit has suffered 6 mortal wounds, that enemy unit is destroyed, or your opponent wins the roll off.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -27620,7 +27861,7 @@ Until the start of your next Psychic phase, that enemy unit cannot be affected b
                   <characteristics>
                     <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">7</characteristic>
                     <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Malediction: Veil of Tears has a warp charge value of 7. If manifested, select one enemy unit within 18&quot; of and visible to this PSYKER. Until the start of your next Psychic phase, models in that enemy unit cannot target &lt;SAEDATH&gt; units from your army that are more than 18&quot; away with ranged attacks.</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Malediction: Veil of Tears has a warp charge value of 7. If manifested, select one enemy unit within 18&quot; of and visible to this PSYKER. Until the start of your next Psychic phase, models in that enemy unit cannot target SAEDATH units from your army that are more than 18&quot; away with ranged attacks.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -27640,7 +27881,7 @@ Until the start of your next Psychic phase, that enemy unit cannot be affected b
                   <characteristics>
                     <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
                     <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Witchfire: Shards of Light has a warp charge value of 6. If manifested, select one enemy unit within 18&quot; of and visible to this PSYKER.
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Witchfire: Shards of Light has a warp charge value of 6. If manifested, select one enemy unit within 18&quot; of and visible to this PSYKER.
 - That enemy unit suffers 1 mortal wound. If it is a VEHICLE or MONSTER unit, or a unit that contains 6 or more models, it suffers D3 mortal wounds instead.
 - Until the start of your next Psychic phase, subtract 2 from the Leadership characteristic of models in that enemy unit.</characteristic>
                   </characteristics>
@@ -27662,7 +27903,7 @@ Until the start of your next Psychic phase, that enemy unit cannot be affected b
                   <characteristics>
                     <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">7</characteristic>
                     <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">Self</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Blessing: Webway Dance has a warp charge value of 7. If manifested, until the start of your next Psychic phase, while a friendly &lt;SAEDATH&gt; unit is within 6&quot; of this PSYKER, each time a model in that unit would lose a wound, roll one D6: on a 6, that wound is not lost.</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing: Webway Dance has a warp charge value of 7. If manifested, until the start of your next Psychic phase, while a friendly SAEDATH unit is within 6&quot; of this PSYKER, each time a model in that unit would lose a wound, roll one D6: on a 6, that wound is not lost.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -27697,7 +27938,7 @@ Until the start of your next Psychic phase, that enemy unit cannot be affected b
                   <characteristics>
                     <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
                     <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Witchfire: Gaze of Ynnead has a warp charge value of 6. If manifested, select one enemy unit within 18&quot; of this PSYKER and roll one D6, subtracting 2 from the result if that unit had a Starting Strength of 1. On a 1 or less, that unit suffers 1 mortal wound. On a 2-5, that unit suffers D3 mortal wounds. On a 6, that unit suffers D6 mortal wounds.</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Witchfire: Gaze of Ynnead has a warp charge value of 6. If manifested, select one enemy unit within 18&quot; of this PSYKER and roll one D6, subtracting 2 from the result if that unit had a Starting Strength of 1. On a 1 or less, that unit suffers 1 mortal wound. On a 2-5, that unit suffers D3 mortal wounds. On a 6, that unit suffers D6 mortal wounds.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -27717,7 +27958,7 @@ Until the start of your next Psychic phase, that enemy unit cannot be affected b
                   <characteristics>
                     <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
                     <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">9&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Witchfire: Storm of Whispers has a warp charge value of 6. If manifested, roll three D6 for each enemy unit within 9&quot; of this PSYKER. For each 4+, the enemy unit being rolled for suffers 1 mortal wound.</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Witchfire: Storm of Whispers has a warp charge value of 6. If manifested, roll three D6 for each enemy unit within 9&quot; of this PSYKER. For each 4+, the enemy unit being rolled for suffers 1 mortal wound.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -27737,7 +27978,7 @@ Until the start of your next Psychic phase, that enemy unit cannot be affected b
                   <characteristics>
                     <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
                     <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">6&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Blessing: Word of the Phoenix has a warp charge value of 6. If manifested, select one friendly YNNARI INFANTRY unit within 6&quot; of this PSYKER. One of that unit’s destroyed models (or D3 of its destroyed models if that unit has the Troops Battlefield Role) can be added back to that unit with full wounds remaining. These models can only be set up within Engagement Range of enemy units that are already within Engagement Range of the unit they are being added back to.</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing: Word of the Phoenix has a warp charge value of 6. If manifested, select one friendly YNNARI INFANTRY unit within 6&quot; of this PSYKER. One of that unit’s destroyed models (or D3 of its destroyed models if that unit has the Troops Battlefield Role) can be added back to that unit with full wounds remaining. These models can only be set up within Engagement Range of enemy units that are already within Engagement Range of the unit they are being added back to.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -27777,7 +28018,7 @@ Until the start of your next Psychic phase, that enemy unit cannot be affected b
                   <characteristics>
                     <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
                     <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">12&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing: Shield of Ynnead has a warp charge value of 6. If manifested, select one friendly YNNARI unit (excluding TITANIC units) within 12&quot; of this PSYKER. Until the start of your next Psychic phase, models in that unit have a 4+ invulnerable save.</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Shield of Ynnead has a warp charge value of 6. If manifested, select one friendly YNNARI unit (excluding TITANIC units) within 12&quot; of this PSYKER. Until the start of your next Psychic phase, models in that unit have a 4+ invulnerable save.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -27797,7 +28038,7 @@ Until the start of your next Psychic phase, that enemy unit cannot be affected b
                   <characteristics>
                     <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">8</characteristic>
                     <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Blessing: Ancestors’ Grace has a warp charge value of 8. If manifested, select one friendly YNNARI unit within 18&quot; of this PSYKER. Until the start of your next Psychic phase, each time a model in that unit makes a melee attack, add 1 to that attack’s wound roll.</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing: Ancestors’ Grace has a warp charge value of 8. If manifested, select one friendly YNNARI unit within 18&quot; of this PSYKER. Until the start of your next Psychic phase, each time a model in that unit makes a melee attack, add 1 to that attack’s wound roll.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -27821,7 +28062,7 @@ Until the start of your next Psychic phase, that enemy unit cannot be affected b
                   <characteristics>
                     <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
                     <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Conceal/Reveal has a warp charge value of 6. If manifested, select one of the following effects:
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Conceal/Reveal has a warp charge value of 6. If manifested, select one of the following effects:
 
 Conceal (Blessing): Select one friendly &lt;CRAFTWORLD&gt; ASURYANI CORE or &lt;CRAFTWORLD&gt; ASURYANI CHARACTER unit within 18&quot; of this PSYKER. Until the start of your next Psychic phase, that unit receives the benefits of Light Cover.
 
@@ -27873,7 +28114,7 @@ Horrify (Malediction): Select one enemy unit within 18&quot; of this PSYKER. Unt
                   <characteristics>
                     <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
                     <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Enhance/Drain has a warp charge value of 6. If manifested, select one of the following effects:
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Enhance/Drain has a warp charge value of 6. If manifested, select one of the following effects:
 
 Enhance (Blessing): Select one friendly &lt;CRAFTWORLD&gt; ASURYANI CORE or &lt;CRAFTWORLD&gt; ASURYANI CHARACTER unit within 18&quot; of this PSYKER. Until the start of your next Psychic phase, each time a model in that unit makes a melee attack, add 1 to that attack’s hit roll.
 
@@ -27897,7 +28138,7 @@ Drain (Malediction): Select one enemy unit within 18&quot; of this PSYKER. Until
                   <characteristics>
                     <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">7</characteristic>
                     <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Protect/Jinx has a warp charge value of 7. If manifested, select one of the following effects:
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Protect/Jinx has a warp charge value of 7. If manifested, select one of the following effects:
 
 Protect (Blessing): Select one friendly &lt;CRAFTWORLD&gt; ASURYANI CORE or &lt;CRAFTWORLD&gt; ASURYANI CHARACTER unit within 18&quot; of this PSYKER. Until the start of your next Psychic phase, improve the Save characteristic of models in that unit by 1.
 
@@ -27921,9 +28162,9 @@ Jinx (Malediction): Select one enemy unit within 18&quot; of this PSYKER. Until 
                   <characteristics>
                     <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
                     <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Quicken/Restrain has a warp charge value of 6. If manifested, select one of the following effects:
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Quicken/Restrain has a warp charge value of 6. If manifested, select one of the following effects:
 
-Quicken (Blessing): Select one friendly &lt;CRAFTWORLD&gt; ASURYANI CORE or &lt;CRAFTWORLD&gt; ASURYANI CHARACTER unit within 18&quot; of this PSYKER. That unit can immediately make a Normal Move, Advance or Fall Back as if it were the Movement phase. If the selected unit have Fell back in this turn, that unit is not eligible to shoot or declare a charge with this turn.
+Quicken (Blessing): Select one friendly CRAFTWORLD ASURYANI CORE or CRAFTWORLD ASURYANI CHARACTER unit within 18&quot; of this PSYKER. That unit can immediately make a Normal Move, Advance or Fall Back as if it were the Movement phase. If the selected unit have Fell back in this turn, that unit is not eligible to shoot or declare a charge with this turn.
 
 Restrain (Malediction): Select one enemy unit within 18&quot; of this PSYKER. Until the start of your next Psychic phase:
 - Halve the Move characteristic of models in that unit.
@@ -27947,11 +28188,166 @@ Restrain (Malediction): Select one enemy unit within 18&quot; of this PSYKER. Un
                   <characteristics>
                     <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">7</characteristic>
                     <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Empower/Enervate has a warp charge value of 7. If manifested, select one of the following effects:
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Empower/Enervate has a warp charge value of 7. If manifested, select one of the following effects:
 
-Empower (Blessing): Select one friendly &lt;CRAFTWORLD&gt; ASURYANI CORE or &lt;CRAFTWORLD&gt; ASURYANI CHARACTER unit within 18&quot; of this PSYKER. Until the start of your next Psychic phase, each time a model in that unit makes a melee attack, add 1 to that attack’s wound roll.
+Empower (Blessing): Select one friendly CRAFTWORLD ASURYANI CORE or CRAFTWORLD ASURYANI CHARACTER unit within 18&quot; of this PSYKER. Until the start of your next Psychic phase, each time a model in that unit makes a melee attack, add 1 to that attack’s wound roll.
 
 Enervate (Malediction): Select one enemy unit within 18&quot; of this PSYKER. Until the start of your next Psychic phase, each time a model in that unit makes a melee attack, subtract 1 from that attack’s wound roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Aethermancy Discipline" id="1943-746c-a25b-8bc2" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="6732-8eda-123a-a370" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="1 - Dispersion Field" hidden="false" id="5879-f383-26ed-f1f0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="88ad-02b2-b0a4-abb5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="[Aura] Dispersion Field" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="2185-2365-3e25-211f">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
+                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">Self</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing: Shield of Ynnead has a warp charge value of 6. If manifested, select one friendly YNNARI unit (excluding TITANIC units) within 12&quot; of this PSYKER. Until the start of your next Psychic phase, models in that unit have a 4+ invulnerable save.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="2 - Spiritshield" hidden="false" id="3c71-4dc5-dbe9-54a4" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89f5-09b9-39f2-62e6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="[Aura] Spiritshield" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="1943-e0c1-1213-d761">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
+                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">Self</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing: Shield of Ynnead has a warp charge value of 6. If manifested, select one friendly YNNARI unit (excluding TITANIC units) within 12&quot; of this PSYKER. Until the start of your next Psychic phase, models in that unit have a 4+ invulnerable save.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="3 - Warp Blink" hidden="false" id="fc0f-b338-1bfa-9fc7" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d1bb-5a1e-17a6-1a46" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Warp Blink" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="4bc3-571f-01e8-7faf">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
+                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">6&quot;</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing: Word of the Phoenix has a warp charge value of 6. If manifested, select one friendly YNNARI INFANTRY unit within 6&quot; of this PSYKER. One of that unit’s destroyed models (or D3 of its destroyed models if that unit has the Troops Battlefield Role) can be added back to that unit with full wounds remaining. These models can only be set up within Engagement Range of enemy units that are already within Engagement Range of the unit they are being added back to.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="4 - Withering Radiance" hidden="false" id="d560-039b-132e-8029" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f011-f3ea-b87c-138b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Withering Radiance" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="ca2b-d3ba-da9d-64c4">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
+                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Malediction: Withering Radiance has a warp charge value of 6. If manifested, select one enemy unit within 18&quot; of this PSYKER.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="5 - Aethersense" hidden="false" id="82b0-e2f6-38ee-d681" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5673-df18-b048-a729" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Aethersense" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="6449-565e-afa8-d64d">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
+                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">12&quot;</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing: Aethersense has a warp charge value of 6. If manifested, select one friendly YNNARI unit (excluding TITANIC units) within 12&quot; of this PSYKER. Until the start of your next Psychic phase, models in that unit have a 4+ invulnerable save.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="6 - Dread of the Deep Void" hidden="false" id="bf45-b4ab-8e44-d4a3" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c72-8eec-e27f-2777" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Dread of the Deep Void" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="3e56-dbc4-43d2-1301">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">8</characteristic>
+                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Witchfire: Dread of the Deep Void has a warp charge value of 8. If manifested, select one friendly YNNARI unit within 18&quot; of this PSYKER. Until the start of your next Psychic phase, each time a model in that unit makes a melee attack, add 1 to that attack’s wound roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="2 - Path-Ward" hidden="false" id="396a-c657-4129-f09f" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10fc-5a4e-7e3a-5d9a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Path-Ward" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="7687-8689-41ee-2d97">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
+                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">Self</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing: Shield of Ynnead has a warp charge value of 6. If manifested, select one friendly YNNARI unit (excluding TITANIC units) within 12&quot; of this PSYKER. Until the start of your next Psychic phase, models in that unit have a 4+ invulnerable save.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>

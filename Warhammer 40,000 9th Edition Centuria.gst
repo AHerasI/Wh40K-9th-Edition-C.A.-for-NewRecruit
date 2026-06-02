@@ -19942,7 +19942,7 @@ Enemy models cannot target a model in this unit with ranged attacks unless they 
       <characteristics>
         <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">5</characteristic>
         <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
-        <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Smite has a warp charge value of 5. If manifested, the closest visible enemy unit within 18&quot; of the psyker suffers D3 mortal wounds. If the result of the Psychic test was more than 10 the target suffers D6 mortal wounds instead.</characteristic>
+        <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Witchfire: Smite has a warp charge value of 5. If manifested, the closest visible enemy unit within 18&quot; of the psyker suffers D3 mortal wounds. If the result of the Psychic test was more than 10 the target suffers D6 mortal wounds instead.</characteristic>
       </characteristics>
     </profile>
     <profile id="6420-416a-af53-4b63" name="Inferno pistol" page="157" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
