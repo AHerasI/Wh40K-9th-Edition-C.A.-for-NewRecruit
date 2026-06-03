@@ -12521,53 +12521,6 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
         <categoryLink name="Assault Transport" hidden="false" id="dbf8-8711-77bc-efdd" targetId="3c95-4bac-d4d4-d0b2" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="bf47-d710-d48b-d4a0" name="Turret weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="2f74-9655-66a3-3463">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01ce-0d6d-655d-cd11" type="max"/>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a824-945f-57cd-c5f9" type="min"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="f38b-9c9a-ac38-027e" name="Turret-mounted" hidden="false" targetId="f28c-7e4e-75e1-2474" primary="false"/>
-          </categoryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="6e98-1c71-ea56-7899" name="Secondary weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="bdf8-0aac-2ac1-fdbb">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5722-06e7-1f45-9fa1" type="max"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac93-dd6c-242d-f609" type="min"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="c637-e36f-7a63-f34d" name="Asuryani missile launcher" hidden="false" collective="false" import="true" targetId="3fcf-5cd4-8611-1d89" type="selectionEntry">
-                  <costs>
-                    <cost name="pts" typeId="points" value="10"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="f19c-e667-8db7-1379" name="Bright Lance" hidden="false" collective="false" import="true" targetId="5e65-eceb-686c-8a33" type="selectionEntry">
-                  <costs>
-                    <cost name="pts" typeId="points" value="10"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="101d-e633-9501-e2c8" name="Scatter laser" hidden="false" collective="false" import="true" targetId="bc00-c737-73c7-0625" type="selectionEntry"/>
-                <entryLink id="6228-f267-f3fa-4d3f" name="Starcannon" hidden="false" collective="false" import="true" targetId="b738-7084-a2eb-2c55" type="selectionEntry">
-                  <costs>
-                    <cost name="pts" typeId="points" value="5"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="bdf8-0aac-2ac1-fdbb" name="Shuriken cannon" hidden="false" collective="false" import="true" targetId="3691-b24f-77b6-8ee5" type="selectionEntry"/>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <entryLinks>
-            <entryLink id="2f74-9655-66a3-3463" name="Pulse laser" hidden="false" collective="false" import="true" targetId="2cf1-675c-481b-b5e3" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="275d-b305-2221-a4c0" type="max"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="578b-352f-6054-eb78" type="min"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="aa76-1c45-256d-c199" name="Laser Weapon" hidden="false" targetId="f74f-8bb9-7448-707c" primary="false"/>
-              </categoryLinks>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup id="defb-5cdb-6363-6a6e" name="Hull weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="b346-a2d6-bf3f-cf5a">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0ad-136d-c039-01af" type="max"/>
@@ -12740,6 +12693,55 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
           </modifiers>
         </infoGroup>
       </infoGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Turret weapon" hidden="false" id="6f77-f4e0-0cd4-effd">
+          <categoryLinks>
+            <categoryLink name="Turret-mounted" hidden="false" id="3683-8eed-e460-8782" targetId="f28c-7e4e-75e1-2474" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Pulse laser" hidden="false" id="2f74-9655-66a3-3463" collective="false" targetId="2cf1-675c-481b-b5e3" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="275d-b305-2221-a4c0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="578b-352f-6054-eb78" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink name="Laser Weapon" hidden="false" id="aa76-1c45-256d-c199" targetId="f74f-8bb9-7448-707c" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Secondary weapon" id="6e98-1c71-ea56-7899" hidden="false" collective="false" import="true" defaultSelectionEntryId="bdf8-0aac-2ac1-fdbb">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5722-06e7-1f45-9fa1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ac93-dd6c-242d-f609" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Asuryani missile launcher" hidden="false" id="c637-e36f-7a63-f34d" collective="false" targetId="3fcf-5cd4-8611-1d89" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="points" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Bright Lance" hidden="false" id="f19c-e667-8db7-1379" collective="false" targetId="5e65-eceb-686c-8a33" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="points" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Scatter laser" hidden="false" id="101d-e633-9501-e2c8" collective="false" targetId="bc00-c737-73c7-0625" type="selectionEntry"/>
+                <entryLink import="true" name="Starcannon" hidden="false" id="6228-f267-f3fa-4d3f" collective="false" targetId="b738-7084-a2eb-2c55" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="points" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Shuriken cannon" hidden="false" id="bdf8-0aac-2ac1-fdbb" collective="false" targetId="3691-b24f-77b6-8ee5" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2075-874a-241b-d820" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c52a-6e6e-25ce-1bec" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="22e9-c09f-0408-a4cf" name="Fire Prism" hidden="true" collective="false" import="true" type="model">
       <modifiers>
