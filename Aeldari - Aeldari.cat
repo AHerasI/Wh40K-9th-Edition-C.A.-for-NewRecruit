@@ -12710,7 +12710,7 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Secondary weapon" id="6e98-1c71-ea56-7899" hidden="false" collective="false" import="true" defaultSelectionEntryId="bdf8-0aac-2ac1-fdbb">
+            <selectionEntryGroup name="Secondary weapon" id="6e98-1c71-ea56-7899" hidden="false" collective="false" import="true" defaultSelectionEntryId="d825-5505-e256-018d">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5722-06e7-1f45-9fa1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="ac93-dd6c-242d-f609" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -12732,8 +12732,17 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
                     <cost name="pts" typeId="points" value="5"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Shuriken cannon" hidden="false" id="bdf8-0aac-2ac1-fdbb" collective="false" targetId="3691-b24f-77b6-8ee5" type="selectionEntry"/>
               </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Shuriken cannon" hidden="false" id="d825-5505-e256-018d">
+                  <infoLinks>
+                    <infoLink name="Shuriken cannon" id="6068-d10e-64ed-c06f" hidden="false" targetId="cc9e-5418-89c5-b8f9" type="profile"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink name="Shuriken weapon" hidden="false" id="0281-7216-255f-cb4c" targetId="3fbb-02be-3bb6-a18b" primary="false"/>
+                  </categoryLinks>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <constraints>
