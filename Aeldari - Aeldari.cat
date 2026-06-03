@@ -20262,6 +20262,7 @@ From that point onwards, each operates independently and is treated as a separat
       <infoLinks>
         <infoLink id="d7d6-d626-2760-69c0" name="Holo-fields" hidden="false" targetId="b658-ed22-322c-3bef" type="profile"/>
         <infoLink id="dc68-863e-233a-4cfe" name="Tormentors" hidden="false" targetId="6ec2-c7a5-2208-970a" type="profile"/>
+        <infoLink name="Skillful Parry" id="9bbc-c66f-cbda-9c6f" hidden="false" type="profile" targetId="4ee4-0937-e94e-6728"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="e057-d29b-7df8-f9f0" name="Faction: Aeldari" hidden="false" targetId="1924-ef18-000b-d2ba" primary="false"/>
@@ -20282,7 +20283,7 @@ From that point onwards, each operates independently and is treated as a separat
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
                 <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
-                <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
                 <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
@@ -20373,7 +20374,7 @@ From that point onwards, each operates independently and is treated as a separat
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
                     <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
-                    <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
                     <characteristic name="W" typeId="f330-5e6e-4110-0978">1</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
@@ -20475,7 +20476,12 @@ From that point onwards, each operates independently and is treated as a separat
       <profiles>
         <profile id="9b91-57d9-25b5-eb94" name="Fade Away" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Once per battle, at the start of your Movement phase, you can remove this unit from the battlefield and then, in the Reinforcements step of your next Movement phase, you can set this unit back up anywhere on the battlefield and more than 9&quot; from any enemy models. If the battle ends and this unit is not on the battlefield, it is destroyed.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the start of your Movement phase, if this unit is within 12&quot; of the edge of the battlefield, you can remove it from the battlefield and then, in the Reinforcements step of your next Movement phase, you can set this unit back up wholly within 12&quot; of the edge of the battlefield and more than D3+6&quot; from any enemy models.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Shade Weavers" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="e671-ec1c-bcb1-3a09">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This unit cannot be targeted by ranged attacks unless the attacking model is within 18&quot;.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -20528,6 +20534,49 @@ From that point onwards, each operates independently and is treated as a separat
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                     <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, an unmodified wound roll of 6 inflicts 1 mortal wound on the target in addition to any normal damage.</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="24&quot;" field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="70cf-a42e-acd7-8d11" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="0" field="selections" scope="parent" childId="395b-75d9-5ac9-7a81" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                                <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="395b-75d9-5ac9-7a81" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Glimmersteel blade" hidden="false" id="cc62-8990-cfb4-b8b3" collective="true">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="665d-19d3-d500-f1a1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8070-61ef-d3b7-9d7a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Glimmersteel blade" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="a2d1-688c-1410-cdee">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                  </characteristics>
                 </profile>
               </profiles>
               <costs>
@@ -20538,9 +20587,6 @@ From that point onwards, each operates independently and is treated as a separat
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <entryLinks>
-            <entryLink id="058d-40c5-57ff-d7e7" name="Combat knife" hidden="false" collective="false" import="true" targetId="92e8-af3a-fe14-06c1" type="selectionEntry"/>
-          </entryLinks>
           <costs>
             <cost name="Pts" typeId="points" value="15"/>
             <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -20574,7 +20620,7 @@ From that point onwards, each operates independently and is treated as a separat
               </profiles>
               <entryLinks>
                 <entryLink id="a778-87ae-4341-e3bb" name="Baleblast" hidden="false" collective="false" import="true" targetId="3f62-8347-5dee-15f7" type="selectionEntry"/>
-                <entryLink id="d29b-f463-5fae-dbec" name="Combat knife" hidden="false" collective="false" import="true" targetId="92e8-af3a-fe14-06c1" type="selectionEntry"/>
+                <entryLink id="d29b-f463-5fae-dbec" name="Glimmersteel blade" hidden="false" collective="false" import="true" targetId="cc62-8990-cfb4-b8b3" type="selectionEntry"/>
               </entryLinks>
               <costs>
                 <cost name="Pts" typeId="points" value="15"/>
