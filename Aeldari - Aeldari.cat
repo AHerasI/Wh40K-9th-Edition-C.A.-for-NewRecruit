@@ -29993,7 +29993,12 @@ If the unit cannot be set-up, it&apos;s placed in the Strategic Reserves of your
               </selectionEntries>
             </entryLink>
             <entryLink id="dc4f-6923-6d1a-ed72" name="Shuriken pistol" hidden="false" collective="false" import="true" targetId="3b3a-02da-8bf9-dac6" type="selectionEntry"/>
-            <entryLink id="f4dc-eaaf-a1f1-d7f8" name="Runes of Fortune &amp; Smite" hidden="false" collective="false" import="true" targetId="fe10-bfed-ecb8-b54c" type="selectionEntryGroup"/>
+            <entryLink id="f4dc-eaaf-a1f1-d7f8" name="Runes of Fortune &amp; Smite" hidden="false" collective="false" import="true" targetId="fe10-bfed-ecb8-b54c" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" value="2" field="0da2-acc2-b8ae-a582"/>
+                <modifier type="set" value="2" field="cedb-87ec-a6c2-a3cf"/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="PL" typeId="e356-c769-5920-6e14" value="8"/>
@@ -30615,7 +30620,7 @@ If the unit cannot be set-up, it&apos;s placed in the Strategic Reserves of your
             <profile name="Kharseth" typeId="bc97-dea9-9e88-bb7d" typeName="Psyker" hidden="false" id="a80b-1590-b193-e95c">
               <characteristics>
                 <characteristic name="Cast" typeId="5afb-9914-904b-d3b3">3</characteristic>
-                <characteristic name="Deny" typeId="b5ac-9c20-5d5a-6f9b">3</characteristic>
+                <characteristic name="Deny" typeId="b5ac-9c20-5d5a-6f9b">2</characteristic>
                 <characteristic name="Powers Known" typeId="69d7-b45e-00a2-7e46">Spiritshield, Smite or 1 Runes of Fortune, and 4 Aethermancy discipline.</characteristic>
                 <characteristic name="Other" typeId="c2e2-f115-0003-5d7b">-</characteristic>
               </characteristics>
@@ -30643,7 +30648,6 @@ If the unit cannot be set-up, it&apos;s placed in the Strategic Reserves of your
             <infoLink name="Reavers of the Void" id="78c3-6b02-d9f7-a56c" hidden="false" targetId="bb84-c0d7-f47f-72af" type="profile"/>
             <infoLink name="Lodestar helm" id="a72c-05f0-36e2-b2c4" hidden="false" type="profile" targetId="9664-4599-3e9f-069e"/>
             <infoLink name="Rune armour" id="c664-166c-b8b6-bd5b" hidden="false" targetId="2c3c-bf97-572f-ed11" type="profile"/>
-            <infoLink name="Lodestar helm" id="5371-162a-4672-dcf3" hidden="false" targetId="9664-4599-3e9f-069e" type="profile"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink name="Character" hidden="false" id="ec75-4885-442d-879f" targetId="ef18-746a-369f-43a4" primary="false"/>
@@ -30654,8 +30658,8 @@ If the unit cannot be set-up, it&apos;s placed in the Strategic Reserves of your
           <selectionEntryGroups>
             <selectionEntryGroup name="Psychic powers" id="2476-3c70-e72d-759d" hidden="false" collective="false" import="true">
               <constraints>
-                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="8932-01db-3390-eebe" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="c596-f721-f689-358d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="8932-01db-3390-eebe" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="c596-f721-f689-358d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Aethermancy Discipline" hidden="false" id="6c54-2f44-dcb3-d576" collective="false" targetId="1943-746c-a25b-8bc2" type="selectionEntryGroup"/>
