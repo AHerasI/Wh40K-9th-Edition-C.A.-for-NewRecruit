@@ -4549,53 +4549,47 @@ If this action is successfully completed, place a Remote explosives marker withi
                 <categoryLink name="Character" hidden="false" id="237c-b7a6-e042-142a" targetId="ef18-746a-369f-43a4" primary="false"/>
                 <categoryLink name="Minor Character" hidden="false" id="9b5e-6a05-23e4-eb61" targetId="e08d-6d7f-854d-57c7" primary="false"/>
               </categoryLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Weapon option" id="4506-2bbb-5767-9ee4" hidden="false" collective="false" import="true" defaultSelectionEntryId="00ed-22b0-fd4f-12a7">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6323-28b9-bdb3-3cb4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cacb-31ec-5b19-be23" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Bio-dagger" hidden="false" id="00ed-22b0-fd4f-12a7" collective="false">
-                      <profiles>
-                        <profile name="Bio-dagger" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="00bd-a079-7227-f16d">
-                          <characteristics>
-                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
-                            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-                            <characteristic name="S" typeId="59b1-319e-ec13-d466">1</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
-                            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, no more than 1 attack can be made with this weapon. Each time an attack is made with this weapon against a unit without INORGANIC, VEHICLE or TITANIC Keywords, an unmodified wound roll of 3+ inflicts 1 mortal wound on the target and the attack sequence ends.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                        <cost name="Pts" typeId="points" value="0"/>
-                        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <entryLinks>
-                    <entryLink import="true" name="Long Lasgun" hidden="false" id="5741-f6a6-327c-71b3" collective="false" targetId="3299-d979-4331-a77d" type="selectionEntry">
-                      <costs>
-                        <cost name="pts" typeId="points" value="20"/>
-                        <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
               <entryLinks>
                 <entryLink import="true" name="Familiar claws" hidden="false" id="109d-975e-f10c-6006" collective="false" targetId="aaf7-8bd1-bee7-9a13" type="selectionEntry"/>
+                <entryLink import="true" name="Long Lasgun" hidden="false" id="5741-f6a6-327c-71b3" collective="false" targetId="3299-d979-4331-a77d" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
               <costs>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="50"/>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
-                <cost name="Pts" typeId="points" value="40"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Bio-dagger" hidden="false" id="00ed-22b0-fd4f-12a7" collective="true">
+                  <profiles>
+                    <profile name="Bio-dagger" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="00bd-a079-7227-f16d">
+                      <characteristics>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                        <characteristic name="S" typeId="59b1-319e-ec13-d466">1</characteristic>
+                        <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
+                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, no more than 1 attack can be made with this weapon. Each time an attack is made with this weapon against a unit without INORGANIC, VEHICLE or TITANIC Keywords, an unmodified wound roll of 3+ inflicts 1 mortal wound on the target and the attack sequence ends.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="Pts" typeId="points" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e45-563f-a89e-32a0" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c06a-84ad-bb2b-5d0b" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Nexos" hidden="false" id="6f96-10b5-9952-47b9" collective="false">
               <profiles>
