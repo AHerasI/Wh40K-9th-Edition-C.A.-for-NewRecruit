@@ -3948,11 +3948,23 @@ Until the start of your next Command phase, each time a model in that unit makes
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="Pts" typeId="points" value="0"/>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="increment" value="1" field="e356-c769-5920-6e14">
+          <repeats>
+            <repeat value="4" repeats="1" field="selections" scope="fd1c-70c2-ad4f-ede3" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="decrement" value="1" field="e356-c769-5920-6e14">
+          <conditions>
+            <condition type="atLeast" value="5" field="selections" scope="fd1c-70c2-ad4f-ede3" childId="model" shared="true" childName="model"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="a639-f277-4d34-c5f8" name="Celestian Sacresants Squad" hidden="false" collective="false" import="true" type="unit">
       <modifierGroups>
@@ -7898,7 +7910,7 @@ Each time an attack with this weapon’s blessed stake profile is allocated to a
             </profile>
           </profiles>
           <categoryLinks>
-            <categoryLink id="4123-4d9c-81db-560f" name="Beam weapon" hidden="false" targetId="e0a1-e75a-bb09-b142" primary="false"/>
+            <categoryLink id="4123-4d9c-81db-560f" name="Beam" hidden="false" targetId="e0a1-e75a-bb09-b142" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
