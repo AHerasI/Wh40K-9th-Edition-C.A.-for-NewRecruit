@@ -3844,13 +3844,6 @@ Until the start of your next Command phase, each time a model in that unit makes
       </costs>
     </selectionEntry>
     <selectionEntry id="fd1c-70c2-ad4f-ede3" name="Arco-flagellants" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="c8e2-515e-3ed9-9239" name="Instrument of Pain and Penance" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This unit cannot perform any actions.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <categoryLinks>
         <categoryLink id="3201-1037-c42a-40e8" name="Faction: Imperium&apos;s Servants" hidden="false" targetId="3c6d-c9b3-cd33-e5e5" primary="false"/>
         <categoryLink id="78fe-d721-e89d-d579" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
@@ -3868,7 +3861,7 @@ Until the start of your next Command phase, each time a model in that unit makes
                 <constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ec8-f35a-5a0e-8074" type="max"/>
               </constraints>
               <profiles>
-                <profile id="5af9-04b0-3cc3-5141" name="Arco-flagellant" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+                <profile id="5af9-04b0-3cc3-5141" name="Arco-flagellant" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
@@ -3965,6 +3958,11 @@ Until the start of your next Command phase, each time a model in that unit makes
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink targetId="c8e2-515e-3ed9-9239" id="52ec-523d-79ea-4a29" type="profile" name="Instrument of Pain and Penance" hidden="false"/>
+        <infoLink name="Berserk Killing Machines" id="7ee1-1f21-1845-beb6" hidden="false" targetId="a14c-88d7-b6f2-09ff" type="profile"/>
+        <infoLink name="Anguish of the Unredeemed" id="cdef-63b6-d806-e349" hidden="false" targetId="b02b-90f7-000a-1a10" type="profile"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="a639-f277-4d34-c5f8" name="Celestian Sacresants Squad" hidden="false" collective="false" import="true" type="unit">
       <modifierGroups>
@@ -6261,20 +6259,10 @@ This unit&apos;s models can move and shoot Heavy Weapons without penalty to the 
       </costs>
     </selectionEntry>
     <selectionEntry id="b5c6-e4cd-af35-95a8" name="Mortifiers" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="7bdf-652e-d0f1-2395" name="Berserk Killing Machines" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a model in this unit would lose a wound, roll one D6: on a 5+, that wound is not lost.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="b02b-90f7-000a-1a10" name="Anguish of the Unredeemed" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a model in this unit is destroyed by a melee attack, if this unit has not yet been selected to fight this phase, roll one D6 before removing that model from play. On a 5+. do not remove it from play. The destroyed model can fight after the attacking model’s unit has finished making attacks. After doing so, any other rules that affect this model ‘when it is destroyed’ are triggered (if any) and then the model is removed from play.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
+        <infoLink targetId="b02b-90f7-000a-1a10" id="bfaf-8605-4330-2644" type="profile" name="Anguish of the Unredeemed" hidden="false"/>
         <infoLink id="5b4a-7467-1311-e7f1" name="Instrument of Pain and Penance" hidden="false" targetId="c8e2-515e-3ed9-9239" type="profile"/>
+        <infoLink name="Berserk Killing Machines" id="8cf8-1051-a26b-4581" hidden="false" targetId="a14c-88d7-b6f2-09ff" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="12a4-4abf-6f76-39f8" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
@@ -6293,7 +6281,7 @@ This unit&apos;s models can move and shoot Heavy Weapons without penalty to the 
                 <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8403-2743-e0e3-dd9b" type="max"/>
               </constraints>
               <profiles>
-                <profile id="a00a-d5a2-e51f-3cce" name="Mortifier" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+                <profile id="a00a-d5a2-e51f-3cce" name="Mortifier" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
@@ -6301,7 +6289,7 @@ This unit&apos;s models can move and shoot Heavy Weapons without penalty to the 
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
                     <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
-                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
                   </characteristics>
@@ -6440,7 +6428,7 @@ This unit&apos;s models can move and shoot Heavy Weapons without penalty to the 
                         <entryLink id="e764-680d-fe3b-15f9" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="327e-1af5-d908-9245" type="selectionEntry"/>
                       </entryLinks>
                       <costs>
-                        <cost name="Pts" typeId="points" value="10"/>
+                        <cost name="Pts" typeId="points" value="5"/>
                         <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
@@ -6463,17 +6451,17 @@ This unit&apos;s models can move and shoot Heavy Weapons without penalty to the 
               </selectionEntryGroups>
               <costs>
                 <cost name="Pts" typeId="points" value="45"/>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="3"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="4a4d-4d70-c427-0a11" name="Mortifier w/Sarcophagus" hidden="false" collective="false" import="true" type="model">
               <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24cc-7536-363b-2a95" type="max"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="8bbd-d5f1-5d6e-8fdb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <profiles>
-                <profile id="1194-f411-b0c3-f12e" name="Anchorite Mortifier" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+                <profile id="1194-f411-b0c3-f12e" name="Anchorite Mortifier" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
@@ -6481,7 +6469,7 @@ This unit&apos;s models can move and shoot Heavy Weapons without penalty to the 
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
                     <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
-                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
                   </characteristics>
@@ -6509,19 +6497,9 @@ This unit&apos;s models can move and shoot Heavy Weapons without penalty to the 
       </costs>
     </selectionEntry>
     <selectionEntry id="2b37-2f46-94ff-14bd" name="Penitent Engines" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="a14c-88d7-b6f2-09ff" name="Berserk Killing Machines" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a model in this unit would lose a wound, roll one D6: on a 5+, that wound is not lost.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="1ef0-d206-8c46-fa78" name="Endless Suffering" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This unit is eligible to declare a charge with even if it Advanced this turn. In addition, each time this unit makes a pile-in move or consolidation move, models in this unit can move an additional 2&quot;.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
+        <infoLink targetId="1ef0-d206-8c46-fa78" id="f996-e191-0515-3887" type="profile" name="Endless Suffering" hidden="false"/>
+        <infoLink targetId="a14c-88d7-b6f2-09ff" id="1c84-135d-7b10-1a2e" type="profile" name="Berserk Killing Machines" hidden="false"/>
         <infoLink id="c8c5-2ee9-a05d-f4fa" name="Instrument of Pain and Penance" hidden="false" targetId="c8e2-515e-3ed9-9239" type="profile"/>
       </infoLinks>
       <categoryLinks>
@@ -6536,17 +6514,17 @@ This unit&apos;s models can move and shoot Heavy Weapons without penalty to the 
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b712-0a5f-8c7c-35e0" type="min"/>
           </constraints>
           <profiles>
-            <profile id="514c-ffe7-977b-7de3" name="Penitent Engines" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="514c-ffe7-977b-7de3" name="Penitent Engines" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
-                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
                 <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
                 <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
-                <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
-                <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">6</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
-                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6556,7 +6534,7 @@ This unit&apos;s models can move and shoot Heavy Weapons without penalty to the 
             <entryLink id="00cb-1724-0821-7c8a" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="327e-1af5-d908-9245" type="selectionEntry"/>
           </entryLinks>
           <costs>
-            <cost name="Pts" typeId="points" value="45"/>
+            <cost name="Pts" typeId="points" value="55"/>
             <cost name="PL" typeId="e356-c769-5920-6e14" value="3"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
@@ -8954,6 +8932,26 @@ A unit can be affected by this hymn once per battle.</characteristic>
         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a14c-88d7-b6f2-09ff" name="Berserk Killing Machines" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a model in this unit would lose a wound, roll one D6: on a 5+, that wound is not lost.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1ef0-d206-8c46-fa78" name="Endless Suffering" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This unit is eligible to declare a charge with even if it Advanced this turn. In addition, each time this unit makes a pile-in move or consolidation move, models in this unit can move an additional 2&quot;.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b02b-90f7-000a-1a10" name="Anguish of the Unredeemed" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a model in this unit is destroyed by a melee attack, if this unit has not yet been selected to fight this phase, roll one D6 before removing that model from play. On a 5+. do not remove it from play. The destroyed model can fight after the attacking model’s unit has finished making attacks. After doing so, any other rules that affect this model ‘when it is destroyed’ are triggered (if any) and then the model is removed from play.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c8e2-515e-3ed9-9239" name="Instrument of Pain and Penance" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This unit cannot perform any actions.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
