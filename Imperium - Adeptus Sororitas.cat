@@ -3956,12 +3956,12 @@ Until the start of your next Command phase, each time a model in that unit makes
       <modifiers>
         <modifier type="increment" value="1" field="e356-c769-5920-6e14">
           <repeats>
-            <repeat value="4" repeats="1" field="selections" scope="fd1c-70c2-ad4f-ede3" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <repeat value="4" repeats="1" field="selections" scope="fd1c-70c2-ad4f-ede3" childId="model" shared="true" roundUp="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </repeats>
         </modifier>
         <modifier type="decrement" value="1" field="e356-c769-5920-6e14">
           <conditions>
-            <condition type="atLeast" value="5" field="selections" scope="fd1c-70c2-ad4f-ede3" childId="model" shared="true" childName="model"/>
+            <condition type="atLeast" value="3" field="selections" scope="fd1c-70c2-ad4f-ede3" childId="model" shared="true" childName="model"/>
           </conditions>
         </modifier>
       </modifiers>
