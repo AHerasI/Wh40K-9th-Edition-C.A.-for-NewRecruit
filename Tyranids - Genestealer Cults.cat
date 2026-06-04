@@ -3769,6 +3769,22 @@ Halve Advance rolls made for that unit.
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="increment" value="1" field="508c-354c-93b4-1f96">
+                  <conditions>
+                    <condition type="atMost" value="1" field="selections" scope="94d2-797b-dfe1-1b15" childId="96ad-fc9b-046d-4fb7" shared="true" childName="Atalan Wolfquad"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="508c-354c-93b4-1f96">
+                  <conditions>
+                    <condition type="atMost" value="0" field="selections" scope="94d2-797b-dfe1-1b15" childId="96ad-fc9b-046d-4fb7" shared="true" childName="Atalan Wolfquad"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -4321,48 +4337,6 @@ Each time a model in that unit fights, it can frenzy. If it does so, until that 
           </constraints>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Biophagus" hidden="false" id="60e2-e08e-a8dd-6675" collective="false">
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <comment>Cult</comment>
-                  <modifiers>
-                    <modifier type="add" value="6bd6-a16d-dd9b-8b43" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="a749-518d-57df-0013" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="c7df-5ee2-a5e8-2e77" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="c582-907d-dee6-cb77" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="19be-93df-01f8-dcee" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="916f-416a-c93e-b97c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="c876-c853-b0df-2ae1" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="0659-8403-e3b1-245f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="1058-1dc2-3f99-a474" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1291-1267-3510-78d2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="9dd5-fc12-63be-9e5b" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="f70f-6634-fd4d-95a7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="8858-ffdc-2f32-7b5a" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="343d-e226-d330-1ec8" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </modifierGroup>
-              </modifierGroups>
               <profiles>
                 <profile name="Alchemicus familiar" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="4d9b-1c19-5e4e-e374">
                   <characteristics>
@@ -4450,7 +4424,6 @@ Roll one D3 to randomly generate one genomic enhancement.
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink import="true" name="Proficient Planning" hidden="false" id="2bf7-d03a-c00b-bd6c" collective="false" targetId="32c7-7c61-5b02-b929" type="selectionEntryGroup"/>
                 <entryLink import="true" name="Autopistol" hidden="false" id="54c7-7512-cc66-cfcc" collective="false" targetId="2940-1984-b9fa-0b34" type="selectionEntry"/>
               </entryLinks>
               <costs>
@@ -4461,48 +4434,6 @@ Roll one D3 to randomly generate one genomic enhancement.
               </costs>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Reductus Saboteur" hidden="false" id="accd-218f-bd58-d5b1" collective="false">
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <comment>Cult</comment>
-                  <modifiers>
-                    <modifier type="add" value="6bd6-a16d-dd9b-8b43" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="a749-518d-57df-0013" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="c7df-5ee2-a5e8-2e77" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="c582-907d-dee6-cb77" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="19be-93df-01f8-dcee" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="916f-416a-c93e-b97c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="c876-c853-b0df-2ae1" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="0659-8403-e3b1-245f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="1058-1dc2-3f99-a474" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1291-1267-3510-78d2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="9dd5-fc12-63be-9e5b" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="f70f-6634-fd4d-95a7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="8858-ffdc-2f32-7b5a" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="343d-e226-d330-1ec8" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </modifierGroup>
-              </modifierGroups>
               <profiles>
                 <profile name="Clandestine" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="5568-84cd-6067-8bc6">
                   <characteristics>
@@ -4564,7 +4495,6 @@ If this action is successfully completed, place a Remote explosives marker withi
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink import="true" name="Proficient Planning" hidden="false" id="8c8a-d95e-d360-290f" collective="false" targetId="32c7-7c61-5b02-b929" type="selectionEntryGroup"/>
                 <entryLink import="true" name="Autopistol" hidden="false" id="143a-10d0-4079-0a85" collective="false" targetId="2940-1984-b9fa-0b34" type="selectionEntry"/>
                 <entryLink import="true" name="Frag grenades" hidden="false" id="8b61-1d0f-24ab-368a" collective="false" targetId="f68e-9984-71fe-6bca" type="selectionEntry"/>
                 <entryLink import="true" name="Blasting charges" hidden="false" id="52f4-c4a3-2d05-6216" collective="false" targetId="c0d5-86da-3254-2533" type="selectionEntry"/>
@@ -4578,48 +4508,6 @@ If this action is successfully completed, place a Remote explosives marker withi
               </costs>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Sanctus" hidden="false" id="46c4-07c9-6fdf-e18f" collective="false">
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <comment>Cult</comment>
-                  <modifiers>
-                    <modifier type="add" value="6bd6-a16d-dd9b-8b43" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="a749-518d-57df-0013" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="c7df-5ee2-a5e8-2e77" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="c582-907d-dee6-cb77" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="19be-93df-01f8-dcee" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="916f-416a-c93e-b97c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="c876-c853-b0df-2ae1" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="0659-8403-e3b1-245f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="1058-1dc2-3f99-a474" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1291-1267-3510-78d2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="9dd5-fc12-63be-9e5b" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="f70f-6634-fd4d-95a7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="8858-ffdc-2f32-7b5a" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="343d-e226-d330-1ec8" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </modifierGroup>
-              </modifierGroups>
               <profiles>
                 <profile name="Soulsight" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="fc49-dc95-714a-dbfc">
                   <characteristics>
@@ -4699,7 +4587,6 @@ If this action is successfully completed, place a Remote explosives marker withi
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
-                <entryLink import="true" name="Proficient Planning" hidden="false" id="a5a1-8f8a-2cf5-7e1d" collective="false" targetId="32c7-7c61-5b02-b929" type="selectionEntryGroup"/>
                 <entryLink import="true" name="Familiar claws" hidden="false" id="109d-975e-f10c-6006" collective="false" targetId="aaf7-8bd1-bee7-9a13" type="selectionEntry"/>
               </entryLinks>
               <costs>
@@ -4710,48 +4597,6 @@ If this action is successfully completed, place a Remote explosives marker withi
               </costs>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Nexos" hidden="false" id="6f96-10b5-9952-47b9" collective="false">
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <comment>Cult</comment>
-                  <modifiers>
-                    <modifier type="add" value="6bd6-a16d-dd9b-8b43" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="a749-518d-57df-0013" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="c7df-5ee2-a5e8-2e77" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="c582-907d-dee6-cb77" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="19be-93df-01f8-dcee" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="916f-416a-c93e-b97c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="c876-c853-b0df-2ae1" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="0659-8403-e3b1-245f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="1058-1dc2-3f99-a474" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1291-1267-3510-78d2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="9dd5-fc12-63be-9e5b" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="f70f-6634-fd4d-95a7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="8858-ffdc-2f32-7b5a" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="343d-e226-d330-1ec8" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </modifierGroup>
-              </modifierGroups>
               <profiles>
                 <profile name="Strategic Coordination" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="9e18-9d15-c73d-ac23">
                   <characteristics>
@@ -4783,7 +4628,6 @@ If this action is successfully completed, place a Remote explosives marker withi
                 <categoryLink name="Minor Character" hidden="false" id="6107-a3d4-544e-4cea" targetId="e08d-6d7f-854d-57c7" primary="false"/>
               </categoryLinks>
               <entryLinks>
-                <entryLink import="true" name="Proficient Planning" hidden="false" id="c366-77d2-1232-2ca0" collective="false" targetId="32c7-7c61-5b02-b929" type="selectionEntryGroup"/>
                 <entryLink import="true" name="Autopistol" hidden="false" id="ebc5-aa27-27e3-b72a" collective="false" targetId="2940-1984-b9fa-0b34" type="selectionEntry"/>
               </entryLinks>
               <costs>
@@ -4794,48 +4638,6 @@ If this action is successfully completed, place a Remote explosives marker withi
               </costs>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Locus" hidden="false" id="1a3f-63cb-c4c1-4a19" collective="false">
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <comment>Cult</comment>
-                  <modifiers>
-                    <modifier type="add" value="6bd6-a16d-dd9b-8b43" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="a749-518d-57df-0013" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="c7df-5ee2-a5e8-2e77" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="c582-907d-dee6-cb77" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="19be-93df-01f8-dcee" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="916f-416a-c93e-b97c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="c876-c853-b0df-2ae1" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="0659-8403-e3b1-245f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="1058-1dc2-3f99-a474" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1291-1267-3510-78d2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="9dd5-fc12-63be-9e5b" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="f70f-6634-fd4d-95a7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="8858-ffdc-2f32-7b5a" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="343d-e226-d330-1ec8" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </modifierGroup>
-              </modifierGroups>
               <profiles>
                 <profile name="Sudden Assault" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="5b46-4439-cb56-df74">
                   <characteristics>
@@ -4894,7 +4696,6 @@ If this action is successfully completed, place a Remote explosives marker withi
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink import="true" name="Proficient Planning" hidden="false" id="bbc2-b366-12ef-dae5" collective="false" targetId="32c7-7c61-5b02-b929" type="selectionEntryGroup"/>
                 <entryLink import="true" name="Hypermorph tail" hidden="false" id="9cd1-3840-5ca9-fe22" collective="false" targetId="1f96-c049-120b-72ea" type="selectionEntry"/>
               </entryLinks>
               <costs>
@@ -4905,48 +4706,6 @@ If this action is successfully completed, place a Remote explosives marker withi
               </costs>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Kelermorph" hidden="false" id="59c8-5b51-3303-6b8c" collective="false">
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <comment>Cult</comment>
-                  <modifiers>
-                    <modifier type="add" value="6bd6-a16d-dd9b-8b43" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="a749-518d-57df-0013" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="c7df-5ee2-a5e8-2e77" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="c582-907d-dee6-cb77" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="19be-93df-01f8-dcee" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="916f-416a-c93e-b97c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="c876-c853-b0df-2ae1" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="0659-8403-e3b1-245f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="1058-1dc2-3f99-a474" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1291-1267-3510-78d2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="9dd5-fc12-63be-9e5b" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="f70f-6634-fd4d-95a7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="8858-ffdc-2f32-7b5a" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="343d-e226-d330-1ec8" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </modifierGroup>
-              </modifierGroups>
               <profiles>
                 <profile name="Hypersensory Abilities" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="2146-fa03-98de-27f2">
                   <characteristics>
@@ -5004,9 +4763,6 @@ If this action is successfully completed, place a Remote explosives marker withi
                   </costs>
                 </selectionEntry>
               </selectionEntries>
-              <entryLinks>
-                <entryLink import="true" name="Proficient Planning" hidden="false" id="3188-ecc8-54de-d1fc" collective="false" targetId="32c7-7c61-5b02-b929" type="selectionEntryGroup"/>
-              </entryLinks>
               <costs>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
@@ -5015,48 +4771,6 @@ If this action is successfully completed, place a Remote explosives marker withi
               </costs>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Clamavus" hidden="false" id="9746-0bac-c97f-7522" collective="false">
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <comment>Cult</comment>
-                  <modifiers>
-                    <modifier type="add" value="6bd6-a16d-dd9b-8b43" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="a749-518d-57df-0013" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="c7df-5ee2-a5e8-2e77" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="c582-907d-dee6-cb77" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="19be-93df-01f8-dcee" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="916f-416a-c93e-b97c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="c876-c853-b0df-2ae1" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="0659-8403-e3b1-245f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="1058-1dc2-3f99-a474" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1291-1267-3510-78d2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="9dd5-fc12-63be-9e5b" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="f70f-6634-fd4d-95a7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="8858-ffdc-2f32-7b5a" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="343d-e226-d330-1ec8" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </modifierGroup>
-              </modifierGroups>
               <profiles>
                 <profile name="Scrambler Array" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="a502-da2f-d481-d2f7">
                   <characteristics>
@@ -5097,7 +4811,6 @@ If this action is successfully completed, place a Remote explosives marker withi
                 <categoryLink name="Minor Character" hidden="false" id="24aa-eb30-8c10-7969" targetId="e08d-6d7f-854d-57c7" primary="false"/>
               </categoryLinks>
               <entryLinks>
-                <entryLink import="true" name="Proficient Planning" hidden="false" id="688d-09c2-7ca9-083e" collective="false" targetId="32c7-7c61-5b02-b929" type="selectionEntryGroup"/>
                 <entryLink import="true" name="Autopistol" hidden="false" id="77a4-132e-e104-de0f" collective="false" targetId="2940-1984-b9fa-0b34" type="selectionEntry"/>
               </entryLinks>
               <costs>
@@ -5110,6 +4823,51 @@ If this action is successfully completed, place a Remote explosives marker withi
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Proficient Planning" hidden="false" id="2bf7-d03a-c00b-bd6c" collective="false" targetId="32c7-7c61-5b02-b929" type="selectionEntryGroup"/>
+      </entryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Cult</comment>
+          <modifiers>
+            <modifier type="add" value="6bd6-a16d-dd9b-8b43" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="a749-518d-57df-0013" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="c7df-5ee2-a5e8-2e77" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="c582-907d-dee6-cb77" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="19be-93df-01f8-dcee" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="916f-416a-c93e-b97c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="c876-c853-b0df-2ae1" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="0659-8403-e3b1-245f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="1058-1dc2-3f99-a474" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="1291-1267-3510-78d2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9dd5-fc12-63be-9e5b" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="f70f-6634-fd4d-95a7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8858-ffdc-2f32-7b5a" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="343d-e226-d330-1ec8" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
