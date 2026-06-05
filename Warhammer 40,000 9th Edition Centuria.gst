@@ -15861,13 +15861,6 @@ This unit can use a Grenade weapon both in engagement range of enemy units and i
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b2b4-9980-26a4-ee8a" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="d330-126a-2734-65ca" name="Lone Operative" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-              <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This unit can never have a Warlord Trait.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <categoryLinks>
             <categoryLink id="fc05-3149-19d4-de72" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
             <categoryLink id="5a4a-ab6a-1206-65c8" name="Faction: Agents of the Imperium" hidden="false" targetId="3df1-502a-7c81-42fc" primary="false"/>
@@ -16303,6 +16296,9 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
             <cost name="Pts" typeId="points" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink targetId="d330-126a-2734-65ca" id="0196-ce77-5ec3-d581" type="profile" name="Lone Operative" hidden="false"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry id="c977-722f-9737-a2de" name="Inquisitor" hidden="false" collective="false" import="true" type="unit">
           <modifierGroups>
@@ -21652,6 +21648,11 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d330-126a-2734-65ca" name="Lone Operative" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This unit can never have a Warlord Trait.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
