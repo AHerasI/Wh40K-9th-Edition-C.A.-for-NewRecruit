@@ -18896,7 +18896,7 @@ Each JUMP PACK, GRAVIS or TERMINATOR model takes the space of two other models a
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="bd01-8165-82d7-51eb" name="Leviathan Dreadnought [3] (1-3 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+                <profile id="bd01-8165-82d7-51eb" name="Leviathan Dreadnought [3] (1-3 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">4&quot;</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
@@ -18972,15 +18972,15 @@ Each JUMP PACK, GRAVIS or TERMINATOR model takes the space of two other models a
                     <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3973-cb81-8318-c6d5" type="max"/>
                   </constraints>
                   <entryLinks>
+                    <entryLink targetId="3c1f-8f02-513c-38cf" id="20a5-c4cd-b0a0-c277" type="selectionEntry" name="Multiple Hunter-killer missile launcher" hidden="false">
+                      <costs>
+                        <cost name="Pts" typeId="points" value="20"/>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                      </costs>
+                    </entryLink>
                     <entryLink id="a527-6810-63e8-d9c5" name="Smokescreen Launcher" hidden="false" collective="false" import="true" targetId="bded-2b06-5ea3-d7d5" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca80-4fce-9bbb-1fbf" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="b5b6-a0aa-04a1-b795" name="Hunter-killer missile launcher [3]" hidden="false" collective="false" import="true" targetId="7b7c-c2fb-c79b-597f" type="selectionEntry">
-                      <comment>7b7c-c2fb-c79b-597f</comment>
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="977a-d8dc-5199-1dac" type="max"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
@@ -52318,13 +52318,7 @@ WT: Stoic Defender (Aura)</comment>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47d6-a516-2e95-35aa" type="min"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="817d-7957-9005-d321" name="Hunter-killer missile launcher [3]" hidden="false" collective="false" import="true" targetId="7b7c-c2fb-c79b-597f" type="selectionEntry">
-                  <comment>7b7c-c2fb-c79b-597f</comment>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a984-a450-045c-0684" type="max"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b97-614f-d1a9-92f0" type="min"/>
-                  </constraints>
-                </entryLink>
+                <entryLink import="true" name="Multiple Hunter-killer missile launcher" hidden="false" id="c83c-9e27-de97-afe2" targetId="3c1f-8f02-513c-38cf" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="9e3f-0c10-f434-5572" name="Left Arm Weapon option" hidden="false" collective="false" import="true" defaultSelectionEntryId="56e7-3937-84b9-1731">

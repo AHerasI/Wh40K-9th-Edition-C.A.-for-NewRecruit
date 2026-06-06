@@ -8496,30 +8496,12 @@ Ranged attacks made by friendly IMPERIUM units against the selected unit can ign
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="76ce-74fa-9676-1a4b" name="Hunter-killer missile launcher [1]" hidden="false" collective="false" import="true" type="upgrade">
-      <comment>76ce-74fa-9676-1a4b</comment>
+    <selectionEntry id="76ce-74fa-9676-1a4b" name="Hunter-killer missile launcher" hidden="false" collective="false" import="true" type="upgrade">
       <entryLinks>
         <entryLink id="eaf0-ad71-c45b-8881" name="Hunter-killer missile" hidden="false" collective="false" import="true" targetId="32bf-b117-4ecf-5165" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddec-ead0-3600-2a0e" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7eb-c57a-f8e9-561d" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-        <cost name="Pts" typeId="points" value="0"/>
-        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="7b7c-c2fb-c79b-597f" name="Hunter-killer missile launcher [3]" hidden="false" collective="false" import="true" type="upgrade">
-      <comment>7b7c-c2fb-c79b-597f</comment>
-      <entryLinks>
-        <entryLink id="eabb-3c27-3cfe-ddb1" name="Hunter-killer missile" hidden="false" collective="false" import="true" targetId="32bf-b117-4ecf-5165" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d249-cacf-017d-9e22" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf47-f8d9-7924-704f" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -10763,7 +10745,6 @@ If the battle ends and this unit is not on the battlefield it is considered to b
       </costs>
     </selectionEntry>
     <selectionEntry id="39fd-4f42-230f-b199" name="Hellstrike Missile Rack" hidden="false" collective="false" import="true" type="upgrade">
-      <comment>db3c-028f-c5cf-a2f2</comment>
       <infoLinks>
         <infoLink id="6794-60c2-2ec2-5745" name="Hellstrike Missile Rack" hidden="false" targetId="0edd-d5a5-013e-8f2c" type="profile"/>
       </infoLinks>
@@ -13782,6 +13763,15 @@ HAEMONCULUS</description>
         <cost name="Pts" typeId="points" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Multiple Hunter-killer missile launcher" hidden="false" id="3c1f-8f02-513c-38cf">
+      <infoLinks>
+        <infoLink name="Hunter-killer missile" id="9e39-4008-df59-17d1" hidden="false" targetId="e2a9-e8fc-3a6b-2eec" type="profile">
+          <modifiers>
+            <modifier type="set" value="-" field="837d-5e63-aeb7-1410"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
