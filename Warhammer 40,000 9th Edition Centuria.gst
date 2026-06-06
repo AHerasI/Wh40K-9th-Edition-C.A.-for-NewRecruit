@@ -16013,7 +16013,7 @@ This unit can use a Grenade weapon both in engagement range of enemy units and i
                     </profile>
                     <profile id="9654-83b4-81ec-a2fd" name="Faultless Aim" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                       <characteristics>
-                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Attacks made with ranged weapons by this model always hit on a 2+ if this model did not move this turn (hit rolls of 4+ when firing Overwatch or when Searching for targets).</characteristic>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time this model makes a ranged attack, it automatically hits the target.</characteristic>
                       </characteristics>
                     </profile>
                     <profile id="2362-5277-d51e-3673" name="Deadshot" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
