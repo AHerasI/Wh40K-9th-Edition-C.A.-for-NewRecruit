@@ -6223,7 +6223,7 @@ In addition, after the first turn begins, when this unit is deployed on the Batt
         </modifierGroup>
       </modifierGroups>
       <profiles>
-        <profile id="79db-c4d0-c8cb-f38b" name="Exorcist [1] (6+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="79db-c4d0-c8cb-f38b" name="Exorcist [1] (6+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
@@ -6236,7 +6236,7 @@ In addition, after the first turn begins, when this unit is deployed on the Batt
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
         </profile>
-        <profile id="20d1-4dae-4fb3-35d4" name="Exorcist [2] (3-5 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="20d1-4dae-4fb3-35d4" name="Exorcist [2] (3-5 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
@@ -6249,7 +6249,7 @@ In addition, after the first turn begins, when this unit is deployed on the Batt
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
         </profile>
-        <profile id="46c4-0eb5-d1b0-bcd9" name="Exorcist [3] (1-3 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="46c4-0eb5-d1b0-bcd9" name="Exorcist [3] (1-3 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">3&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
@@ -6285,7 +6285,7 @@ In addition, after the first turn begins, when this unit is deployed on the Batt
             <entryLink id="dfb5-9fe7-f60f-3219" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="e8a1-aee7-852b-ec88" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="3757-5d15-0dbd-c5b8" name="Main weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="9ad1-0637-11e8-21c2">
+        <selectionEntryGroup id="3757-5d15-0dbd-c5b8" name="Main weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="28d6-e4b2-2630-0f73">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27bf-8cfb-1837-2eac" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a275-ff3f-7275-b7b8" type="max"/>
@@ -6294,33 +6294,31 @@ In addition, after the first turn begins, when this unit is deployed on the Batt
             <categoryLink id="fab6-41b6-baea-9b29" name="Turret-mounted" hidden="false" targetId="f28c-7e4e-75e1-2474" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="8697-6f3a-92ff-8ad6" name="Multiple Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry type="upgrade" import="true" name="Exorcist MMLS" hidden="false" id="28d6-e4b2-2630-0f73">
               <infoLinks>
-                <infoLink id="b487-16fc-3e00-6020" name="Launcher, Frag missile" hidden="false" targetId="603d-3e82-38f6-c5c3" type="profile">
+                <infoLink name="Vengeance launcher" id="4536-c7ba-a418-25f8" hidden="false" targetId="f4df-b39c-08a7-5255" type="profile">
                   <modifiers>
-                    <modifier type="set" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy 6D6"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="c23a-02db-afc0-16f8" name="Launcher, Krak missile" hidden="false" targetId="8161-3b0e-8048-0e83" type="profile">
-                  <modifiers>
-                    <modifier type="set" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy 2D3"/>
+                    <modifier type="set" value="Barrage, Vengeance rockets" field="name"/>
                   </modifiers>
                 </infoLink>
               </infoLinks>
-              <categoryLinks>
-                <categoryLink id="9fdf-31d0-734b-072b" name="Blast" hidden="false" targetId="a30d-0055-6710-6284" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name="Pts" typeId="points" value="60"/>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="3"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
+              <profiles>
+                <profile name="Barrage, Conflagration rockets" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="e616-5dce-b289-dd33">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D6+6</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Indirect fire. Each time an attack is made with this profile, the target cannot have the Benefit of Cover against that attack.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
-          <entryLinks>
-            <entryLink id="9ad1-0637-11e8-21c2" name="Field rocket launcher" hidden="false" collective="false" import="true" targetId="07b3-6bfd-263b-a085" type="selectionEntry"/>
-          </entryLinks>
+          <infoLinks>
+            <infoLink name="Variable weapon profile" id="9e5b-ef88-3824-6f69" hidden="false" type="rule" targetId="2dd5-c9f0-aa5a-818a"/>
+          </infoLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -6342,9 +6340,9 @@ In addition, after the first turn begins, when this unit is deployed on the Batt
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="e356-c769-5920-6e14" value="5"/>
+        <cost name="Pts" typeId="points" value="120"/>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="6"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-        <cost name="Pts" typeId="points" value="95"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
     </selectionEntry>
