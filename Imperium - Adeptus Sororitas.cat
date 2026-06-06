@@ -1592,9 +1592,6 @@ If you do so, 1 Miracle dice you use in that Act of Faith is considered to be a 
               </constraints>
               <selectionEntries>
                 <selectionEntry id="52ce-ddc7-fdbb-1572" name="Battle Sister w/Special weapon" hidden="false" collective="false" import="true" type="model">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d29e-c12f-6adc-ff92" type="max"/>
-                  </constraints>
                   <infoLinks>
                     <infoLink id="92d6-b6d2-eae1-882c" name="Battle Sister" hidden="false" targetId="d095-e005-25ce-e62e" type="profile"/>
                   </infoLinks>
@@ -1612,9 +1609,6 @@ If you do so, 1 Miracle dice you use in that Act of Faith is considered to be a 
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="b2b5-46e2-c9a3-3e38" name="Battle Sister w/Heavy weapon" hidden="false" collective="false" import="true" type="model">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9cad-f6e1-c5e0-969c" type="max"/>
-                  </constraints>
                   <infoLinks>
                     <infoLink id="0527-4be6-13f2-1b98" name="Battle Sister" hidden="false" targetId="d095-e005-25ce-e62e" type="profile"/>
                   </infoLinks>
@@ -1632,26 +1626,6 @@ If you do so, 1 Miracle dice you use in that Act of Faith is considered to be a 
                   </costs>
                 </selectionEntry>
               </selectionEntries>
-              <entryLinks>
-                <entryLink id="df58-54d2-6e54-a406" name="Battle Sister w/Heavy weapon" hidden="false" collective="false" import="true" targetId="b2b5-46e2-c9a3-3e38" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditions>
-                        <condition field="selections" scope="c2db-b2d3-5460-98d1" value="11" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="lessThan"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="444e-a819-17a0-966a" name="Battle Sister w/Special weapon" hidden="false" collective="false" import="true" targetId="52ce-ddc7-fdbb-1572" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditions>
-                        <condition field="selections" scope="c2db-b2d3-5460-98d1" value="11" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="lessThan"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
