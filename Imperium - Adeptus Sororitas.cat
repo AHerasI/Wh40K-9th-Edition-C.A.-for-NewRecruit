@@ -56,12 +56,6 @@ If you do so, 1 Miracle dice you use in that Act of Faith is considered to be a 
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="52df-c2da-d280-5d91" name="Daughters of the Emperor" hidden="false">
-          <description>If any units in your army have this conviction, when you are determining which sacred rites are active for your army after you have determined your mission, you cannot randomly select two sacred rites. 
-Instead, after you have selected one sacred rite you must then select a second. Both of these sacred rites are active for all units from your army with the Sacred Rites ability.</description>
-        </rule>
-      </rules>
     </categoryEntry>
     <categoryEntry id="b779-6d8f-9558-fbb9" name="Order of the Argent Shroud" hidden="false">
       <profiles>
@@ -85,15 +79,6 @@ Instead, after you have selected one sacred rite you must then select a second. 
     </categoryEntry>
     <categoryEntry id="d226-4b71-35aa-c00b" name="Order Militant" hidden="false">
       <infoLinks>
-        <infoLink id="6b08-380c-43e1-93e8" name="Conviction of Faith" hidden="false" targetId="9aaf-fc5c-7207-e5b5" type="rule">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c496-c44d-9409-807d" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
         <infoLink id="8aae-f2a6-a93b-af93" name="Righterous suffering" hidden="false" targetId="396e-109a-12a3-d319" type="profile">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
@@ -644,16 +629,21 @@ Alternatively, you can randomly determine two Sacred rites from the table to be 
               </costs>
             </selectionEntry>
             <selectionEntry id="f806-c07a-8031-a8c8" name="Order of the Ebon Chalice" hidden="false" collective="false" import="true" type="upgrade">
-              <infoLinks>
-                <infoLink id="9963-7586-38d1-2938" name="Daughters of the Emperor" hidden="false" targetId="bd41-2e04-06d3-bcab" type="profile"/>
-                <infoLink id="b045-f935-c7f8-3abd" name="Daughters of the Emperor" hidden="false" targetId="52df-c2da-d280-5d91" type="rule"/>
-              </infoLinks>
               <costs>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="Pts" typeId="points" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <profiles>
+                <profile name="Daughters of the Emperor" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="917d-92be-d422-6d82">
+                  <characteristics>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Each time a model or unit with this conviction performs an Act of Faith, you can first discard 1 Miracle dice.
+If you do so, 1 Miracle dice you use in that Act of Faith is considered to be a 6 (irrespective of its actual value).
+- If any units in your army have this conviction, when you are determining which sacred rites are active for your army after you have determined your mission, you select two sacred rites instead of doing randomly .</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
             <selectionEntry id="041b-1973-e313-1c63" name="Other Order Militant" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntryGroups>
@@ -703,17 +693,19 @@ Alternatively, you can randomly determine two Sacred rites from the table to be 
                       <constraints>
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2eed-fa04-54a0-c9c3" type="max"/>
                       </constraints>
-                      <rules>
-                        <rule id="9aaf-fc5c-7207-e5b5" name="Conviction of Faith" hidden="false">
-                          <description>Each time you gain a Miracle dice, if the value of that dice is a 1, you can re-roll that dice before adding it to your Miracle dice pool.</description>
-                        </rule>
-                      </rules>
                       <costs>
                         <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                         <cost name="Pts" typeId="points" value="0"/>
                         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                       </costs>
+                      <profiles>
+                        <profile name="Conviction of Faith" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="d601-fd52-84f3-ff0c">
+                          <characteristics>
+                            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time you gain a Miracle dice, if the value of that dice is a 1, you can re-roll that dice before adding it to your Miracle dice pool.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
                     </selectionEntry>
                     <selectionEntry id="e1e1-7045-5ecf-340e" name="Devout fanaticism" hidden="false" collective="false" import="true" type="upgrade">
                       <constraints>
