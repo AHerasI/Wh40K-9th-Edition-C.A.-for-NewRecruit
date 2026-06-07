@@ -7632,8 +7632,8 @@ Until the end of the phase, this unit cannot fire Overwatch, Set to Defend or ma
                 <modifierGroup>
                   <modifiers>
                     <modifier type="set" field="name" value="Asuryani Aspect Exarch"/>
-                    <modifier type="set" field="13fc-b29b-31f2-ab9f" value="3"/>
-                    <modifier type="set" field="f330-5e6e-4110-0978" value="2"/>
+                    <modifier type="increment" field="13fc-b29b-31f2-ab9f" value="1"/>
+                    <modifier type="increment" field="f330-5e6e-4110-0978" value="1"/>
                     <modifier type="set" value="8" field="00ca-f8b8-876d-b705"/>
                   </modifiers>
                 </modifierGroup>
@@ -7643,7 +7643,7 @@ Until the end of the phase, this unit cannot fire Overwatch, Set to Defend or ma
                   </conditions>
                   <modifiers>
                     <modifier type="set" field="381b-eb28-74c3-df5f" value="2+"/>
-                    <modifier type="set" field="f330-5e6e-4110-0978" value="3"/>
+                    <modifier type="increment" field="f330-5e6e-4110-0978" value="1"/>
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
@@ -7890,8 +7890,8 @@ Until the end of the phase, this unit cannot fire Overwatch, Set to Defend or ma
                 <modifierGroup>
                   <modifiers>
                     <modifier type="set" field="name" value="Asuryani Aspect Exarch"/>
-                    <modifier type="set" field="13fc-b29b-31f2-ab9f" value="3"/>
-                    <modifier type="set" field="f330-5e6e-4110-0978" value="2"/>
+                    <modifier type="increment" field="13fc-b29b-31f2-ab9f" value="1"/>
+                    <modifier type="increment" field="f330-5e6e-4110-0978" value="1"/>
                     <modifier type="set" value="8" field="00ca-f8b8-876d-b705"/>
                   </modifiers>
                 </modifierGroup>
@@ -7901,7 +7901,7 @@ Until the end of the phase, this unit cannot fire Overwatch, Set to Defend or ma
                   </conditions>
                   <modifiers>
                     <modifier type="set" field="381b-eb28-74c3-df5f" value="2+"/>
-                    <modifier type="set" field="f330-5e6e-4110-0978" value="3"/>
+                    <modifier type="increment" field="f330-5e6e-4110-0978" value="1"/>
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
@@ -8655,8 +8655,8 @@ When the bearer’s unit makes a Battle Focus move, you can roll 2D6 instead of 
                 <modifierGroup>
                   <modifiers>
                     <modifier type="set" field="name" value="Asuryani Aspect Exarch"/>
-                    <modifier type="set" field="13fc-b29b-31f2-ab9f" value="3"/>
-                    <modifier type="set" field="f330-5e6e-4110-0978" value="2"/>
+                    <modifier type="increment" field="13fc-b29b-31f2-ab9f" value="1"/>
+                    <modifier type="increment" field="f330-5e6e-4110-0978" value="1"/>
                     <modifier type="set" value="8" field="00ca-f8b8-876d-b705"/>
                   </modifiers>
                 </modifierGroup>
@@ -8666,7 +8666,7 @@ When the bearer’s unit makes a Battle Focus move, you can roll 2D6 instead of 
                   </conditions>
                   <modifiers>
                     <modifier type="set" field="381b-eb28-74c3-df5f" value="2+"/>
-                    <modifier type="set" field="f330-5e6e-4110-0978" value="3"/>
+                    <modifier type="increment" field="f330-5e6e-4110-0978" value="1"/>
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
@@ -10918,8 +10918,8 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
                 <modifierGroup>
                   <modifiers>
                     <modifier type="set" field="name" value="Asuryani Aspect Exarch"/>
-                    <modifier type="set" field="13fc-b29b-31f2-ab9f" value="3"/>
-                    <modifier type="set" field="f330-5e6e-4110-0978" value="2"/>
+                    <modifier type="increment" field="13fc-b29b-31f2-ab9f" value="1"/>
+                    <modifier type="increment" field="f330-5e6e-4110-0978" value="1"/>
                     <modifier type="set" value="8" field="00ca-f8b8-876d-b705"/>
                   </modifiers>
                 </modifierGroup>
@@ -10929,7 +10929,7 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
                   </conditions>
                   <modifiers>
                     <modifier type="set" value="2+" field="381b-eb28-74c3-df5f"/>
-                    <modifier type="set" value="3" field="f330-5e6e-4110-0978"/>
+                    <modifier type="increment" value="1" field="f330-5e6e-4110-0978"/>
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
@@ -10991,6 +10991,16 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
                       <conditions>
                         <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb21-30f8-d7e1-cdb9" type="equalTo"/>
                       </conditions>
+                    </modifier>
+                    <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="d294-6bda-13ec-342f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Biel-tan"/>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="a047-936d-df4a-7d58" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Elite citizenry"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <characteristics>
@@ -35428,6 +35438,16 @@ Each time an enemy unit without FLY, VEHICLE or TITANIC Keywords moves within th
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb21-30f8-d7e1-cdb9" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="d294-6bda-13ec-342f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Biel-tan"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="a047-936d-df4a-7d58" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Elite citizenry"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <characteristics>
         <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
@@ -35607,6 +35627,16 @@ Each time an enemy unit without FLY, VEHICLE or TITANIC Keywords moves within th
           <conditions>
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb21-30f8-d7e1-cdb9" type="equalTo"/>
           </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="d294-6bda-13ec-342f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Biel-tan"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="a047-936d-df4a-7d58" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Elite citizenry"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <characteristics>
