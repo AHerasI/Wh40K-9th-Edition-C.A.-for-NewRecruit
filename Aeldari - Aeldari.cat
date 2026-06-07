@@ -3123,7 +3123,7 @@ A unit cannot make a Battle Focus move if it arrived as Reinforcements this turn
                         <profile id="b43c-6cab-9a0c-0022" name="Swordwind" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                           <characteristics>
                             <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Each time a unit with this attribute Advances or makes a Battle Focus move, roll 2D3 instead a D6.
-- Each time an INFANTRY unit with this attribute fights, add 1 to it&apos;s models Attacks characteristic.</characteristic>
+- Each time an INFANTRY or ASPECT WARRIOR unit with this attribute fights, add 1 to it&apos;s models Attacks characteristic.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -5817,7 +5817,7 @@ Until the end of the phase, this unit cannot fire Overwatch, Set to Defend or ma
           <selectionEntries>
             <selectionEntry id="e6a4-203c-a05f-5d10" name="Ranger" hidden="false" collective="false" import="true" type="model">
               <infoLinks>
-                <infoLink id="77f6-d979-0a06-fb67" name="Asuryani Warrior" hidden="false" targetId="e610-b11c-2b6c-438c" type="profile"/>
+                <infoLink targetId="5fd7-16bd-38db-9b01" id="3acc-d58e-865e-0a5c" type="profile" name="Asuryani Oucast" hidden="false"/>
               </infoLinks>
               <entryLinks>
                 <entryLink id="bc30-1ba8-8945-af88" name="Shuriken pistol" hidden="false" collective="false" import="true" targetId="3b3a-02da-8bf9-dac6" type="selectionEntry"/>
@@ -5861,7 +5861,7 @@ Until the end of the phase, this unit cannot fire Overwatch, Set to Defend or ma
                     </profile>
                   </profiles>
                   <infoLinks>
-                    <infoLink id="796b-3a5c-d76d-0c80" name="Asuryani Warrior" hidden="false" targetId="e610-b11c-2b6c-438c" type="profile"/>
+                    <infoLink id="796b-3a5c-d76d-0c80" name="Asuryani Oucast" hidden="false" targetId="5fd7-16bd-38db-9b01" type="profile"/>
                   </infoLinks>
                   <entryLinks>
                     <entryLink id="73c9-540d-2fcc-37d2" name="Shuriken pistol" hidden="false" collective="false" import="true" targetId="3b3a-02da-8bf9-dac6" type="selectionEntry"/>
@@ -5890,7 +5890,7 @@ Until the end of the phase, this unit cannot fire Overwatch, Set to Defend or ma
                     </profile>
                   </profiles>
                   <infoLinks>
-                    <infoLink id="9f53-50cb-62e2-803e" name="Asuryani Warrior" hidden="false" targetId="e610-b11c-2b6c-438c" type="profile"/>
+                    <infoLink id="9f53-50cb-62e2-803e" name="Asuryani Oucast" hidden="false" targetId="5fd7-16bd-38db-9b01" type="profile"/>
                   </infoLinks>
                   <entryLinks>
                     <entryLink id="b612-fac2-5f43-4766" name="Shuriken pistol" hidden="false" collective="false" import="true" targetId="3b3a-02da-8bf9-dac6" type="selectionEntry"/>
@@ -10002,6 +10002,11 @@ When the bearer’s unit makes a Battle Focus move, you can roll 2D6 instead of 
                         <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb21-30f8-d7e1-cdb9" type="equalTo"/>
                       </conditions>
                     </modifier>
+                    <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="d294-6bda-13ec-342f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Biel-tan"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
@@ -10232,6 +10237,11 @@ When the bearer’s unit makes a Battle Focus move, you can roll 2D6 instead of 
                             <modifier type="set" field="0bdf-a96e-9e38-7779" value="8&quot;">
                               <conditions>
                                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb21-30f8-d7e1-cdb9" type="equalTo"/>
+                              </conditions>
+                            </modifier>
+                            <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="force" childId="d294-6bda-13ec-342f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Biel-tan"/>
                               </conditions>
                             </modifier>
                           </modifiers>
@@ -11261,6 +11271,11 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
             <modifier type="set" field="0bdf-a96e-9e38-7779" value="8&quot;">
               <conditions>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb21-30f8-d7e1-cdb9" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="d294-6bda-13ec-342f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Biel-tan"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -24603,6 +24618,11 @@ You can use this Stratagem up to 3 times.</characteristic>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb21-30f8-d7e1-cdb9" type="equalTo"/>
               </conditions>
             </modifier>
+            <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="d294-6bda-13ec-342f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Biel-tan"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
@@ -36067,6 +36087,31 @@ Each time an enemy unit without FLY, VEHICLE or TITANIC Keywords moves within th
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent. Each time an attack is made with this weapon, an unmodified wound roll of 6 inflicts D3 mortal wounds on the target in addition to any normal damage.</characteristic>
       </characteristics>
+    </profile>
+    <profile name="Asuryani Oucast" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="5fd7-16bd-38db-9b01">
+      <characteristics>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+        <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+        <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
+        <characteristic name="W" typeId="f330-5e6e-4110-0978">1</characteristic>
+        <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+        <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
+      </characteristics>
+      <modifiers>
+        <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="d294-6bda-13ec-342f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Biel-tan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="8&quot;" field="0bdf-a96e-9e38-7779">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </profile>
   </sharedProfiles>
 </catalogue>
