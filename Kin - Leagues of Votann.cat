@@ -1320,7 +1320,7 @@ When a friendly &lt;LEAGUE&gt; unit from your Army is performing an action, mode
           <profiles>
             <profile id="c183-f81c-af2c-fb1e" name="Heavy Magna-rail cannon" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <modifiers>
-                <modifier type="set" field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="42&quot;">
+                <modifier type="set" field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="54&quot;">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
@@ -1332,8 +1332,8 @@ When a friendly &lt;LEAGUE&gt; unit from your Army is performing an action, mode
                 </modifier>
               </modifiers>
               <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 1</characteristic>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">14</characteristic>
                 <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+6</characteristic>
@@ -1963,11 +1963,11 @@ When a friendly &lt;LEAGUE&gt; unit from your Army is performing an action, mode
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="2b4b-bc70-3ff7-2eb2" name="SP conversion beamer" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="2b4b-bc70-3ff7-2eb2" name="SP Conversion beamer" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
-            <profile id="7425-84f1-1af8-038d" name="SP conversion beamer" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+            <profile id="7425-84f1-1af8-038d" name="SP C.Beamer, Long range" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <modifiers>
-                <modifier type="set" field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="36&quot;">
+                <modifier type="set" field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="27&quot;-54&quot;">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
@@ -1979,13 +1979,35 @@ When a friendly &lt;LEAGUE&gt; unit from your Army is performing an action, mode
                 </modifier>
               </modifiers>
               <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30&quot;</characteristic>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;-48&quot;</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 1</characteristic>
+                <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Beam.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="SP C.Beamer, Short range" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="ba98-1e71-7568-8eb1">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 1</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">7</characteristic>
                 <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
-                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Beam. Each time an attack made with this weapon hits a unit, if the unit that was hit is wholly more than 15&quot; from the firing model, one additional hit is scored against that unit.</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Beam.</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="27&quot;" field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="7673-0aa0-a7e8-a890" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="ecb0-7027-8977-8755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <categoryLinks>
@@ -1997,12 +2019,22 @@ When a friendly &lt;LEAGUE&gt; unit from your Army is performing an action, mode
             <cost name="Pts" typeId="points" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Variable weapon profile" id="7bfd-836d-8315-f74f" hidden="false" type="rule" targetId="2dd5-c9f0-aa5a-818a"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Conversion beam" hidden="false" id="24b3-7bc1-07c2-d1d1" type="selectionEntry" targetId="fbb1-9dd6-aefc-eba2">
+              <infoLinks>
+                <infoLink name="Variable weapon profile" id="7a56-15d0-b065-9110" hidden="false" type="rule" targetId="2dd5-c9f0-aa5a-818a"/>
+              </infoLinks>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
-        <selectionEntry id="2389-8253-39cb-124c" name="SP heavy conversion beamer" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="2389-8253-39cb-124c" name="SP Heavy Conversion beamer" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
-            <profile id="79cb-c258-1f70-2dab" name="SP heavy conversion beamer" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+            <profile id="79cb-c258-1f70-2dab" name="SP Heavy Conversion beamer" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <modifiers>
-                <modifier type="set" field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="36&quot;">
+                <modifier type="set" field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="66&quot;">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
@@ -2014,13 +2046,35 @@ When a friendly &lt;LEAGUE&gt; unit from your Army is performing an action, mode
                 </modifier>
               </modifiers>
               <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30&quot;</characteristic>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36-72&quot;</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 2</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
                 <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">4</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Beam. Attacks from a conversion beamer that target enemies at over half its range are resolved at Strength 9, AP -4 and Damage 6.</characteristic>
               </characteristics>
+            </profile>
+            <profile name="SP Heavy Conversion beamer" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="cde9-8239-c8a7-a93f">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">32&quot;</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 2</characteristic>
+                <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">4</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Beam. Attacks from a conversion beamer that target enemies at over half its range are resolved at Strength 9, AP -4 and Damage 6.</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="66&quot;" field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="7673-0aa0-a7e8-a890" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="ecb0-7027-8977-8755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <categoryLinks>
@@ -2032,6 +2086,16 @@ When a friendly &lt;LEAGUE&gt; unit from your Army is performing an action, mode
             <cost name="Pts" typeId="points" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
+          <entryLinks>
+            <entryLink import="true" name="Conversion beam cannon" hidden="false" id="9cb0-5948-2428-e449" type="selectionEntry" targetId="62f8-165c-f44d-a2dd">
+              <infoLinks>
+                <infoLink name="Variable weapon profile" id="5e8f-6d48-56f2-dfec" hidden="false" type="rule" targetId="2dd5-c9f0-aa5a-818a"/>
+              </infoLinks>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Variable weapon profile" id="1739-eb73-2171-4963" hidden="false" type="rule" targetId="2dd5-c9f0-aa5a-818a"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry id="be62-d921-4138-5ba8" name="Volkanite disintegrator" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
@@ -2837,10 +2901,10 @@ In addition, in each of your Command phases, if the bearer&apos;s unit is not in
               </modifiers>
               <characteristics>
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60&quot;</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D6+6</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D3+3</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">9</characteristic>
                 <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
-                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Each time the bearer shoots with this weapon profile, if rolls any number of unmodified hit rolls of 1, the bearer suffers 1 mortal wound after shooting with this weapon. For each unmodified wound roll of 6 against a VEHICLE, it suffers 1 mortal wounds.</characteristic>
               </characteristics>
             </profile>
@@ -5954,7 +6018,7 @@ If this unit’s BRÔKHYR IRON-MASTER model is ever destroyed, all of this unit�
       <profiles>
         <profile id="772c-1e06-48a6-d799" name="Hekaton Land Fortress" hidden="false" typeId="b3a8-0452-7436-44d1" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 15 &lt;LEAGUE&gt; INFANTRY models. Each EXO-ARMOUR model takes the space of 2 models.</characteristic>
+            <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 16 &lt;LEAGUE&gt; INFANTRY models. Each EXO-ARMOUR model takes the space of 2 models.</characteristic>
           </characteristics>
         </profile>
         <profile id="63ef-9a2e-937c-b78d" name="Hekaton Land Fortress [1] (9+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
@@ -5983,7 +6047,7 @@ If this unit’s BRÔKHYR IRON-MASTER model is ever destroyed, all of this unit�
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
         </profile>
-        <profile id="96f9-145b-1c42-1ec7" name="Hekaton Land Fortress [3] (1-4 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="96f9-145b-1c42-1ec7" name="Hekaton Land Fortress [3] (1-4 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
@@ -6513,9 +6577,9 @@ If this unit’s BRÔKHYR IRON-MASTER model is ever destroyed, all of this unit�
             </selectionEntry>
             <selectionEntry id="cd0b-3f58-a875-6224" name="Iron Eagle attack Gunship" hidden="false" collective="false" import="true" type="model">
               <infoLinks>
-                <infoLink id="b582-d32c-d2d2-d2fd" name="Iron Eagle [1] (9+ Wounds remaining)" hidden="false" targetId="2308-b4b9-3967-271b" type="profile"/>
-                <infoLink id="bfad-c427-625e-bdb1" name="Iron Eagle [2] (5-8 Wounds remaining)" hidden="false" targetId="8820-1326-72c4-cd77" type="profile"/>
-                <infoLink id="57dd-8f40-65b0-15ed" name="Iron Eagle [3] (1-4 Wounds remaining)" hidden="false" targetId="274a-9805-7ec7-6889" type="profile"/>
+                <infoLink id="b582-d32c-d2d2-d2fd" name="Iron Eagle [1] (7+ Wounds remaining)" hidden="false" targetId="2308-b4b9-3967-271b" type="profile"/>
+                <infoLink id="bfad-c427-625e-bdb1" name="Iron Eagle [2] (4-6 Wounds remaining)" hidden="false" targetId="8820-1326-72c4-cd77" type="profile"/>
+                <infoLink id="57dd-8f40-65b0-15ed" name="Iron Eagle [3] (1-3 Wounds remaining)" hidden="false" targetId="274a-9805-7ec7-6889" type="profile"/>
                 <infoLink id="57b7-889e-38c9-0d79" name="Hover Jet" hidden="false" targetId="8170-e49b-25ed-eff6" type="profile"/>
                 <infoLink id="8860-5a82-b053-363b" name="Supersonic" hidden="false" targetId="9287-7a45-71ff-3a46" type="profile"/>
               </infoLinks>

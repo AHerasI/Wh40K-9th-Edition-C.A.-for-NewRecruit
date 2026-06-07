@@ -3437,7 +3437,8 @@ Starting with the player whose turn is not taking place, the players must altern
     </selectionEntry>
     <selectionEntry id="fbb1-9dd6-aefc-eba2" name="Conversion beam" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="0dbd-c07a-36c2-a637" name="Conversion beam" hidden="false" targetId="60d6-1b2a-e2a8-5106" type="profile"/>
+        <infoLink id="0dbd-c07a-36c2-a637" name="C. Beam, Short range" hidden="false" targetId="60d6-1b2a-e2a8-5106" type="profile"/>
+        <infoLink name="C. Beam, Long range" id="9c29-aea0-a59b-0486" hidden="false" targetId="ed24-63db-0ddf-dac2" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2eb8-cff4-0622-d11b" name="Beam" hidden="false" targetId="e0a1-e75a-bb09-b142" primary="false"/>
@@ -19369,14 +19370,14 @@ Before using it, select one of the available ammo.
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
       </characteristics>
     </profile>
-    <profile id="60d6-1b2a-e2a8-5106" name="Conversion beam" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+    <profile id="60d6-1b2a-e2a8-5106" name="C. Beam, Short range" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D3</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">7</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Beam. Attacks from a conversion beamer that target enemies at over half its range are resolved at Strength 8, AP -2 and Damage 2.</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Beam.</characteristic>
       </characteristics>
     </profile>
     <profile id="5207-ef08-27f7-166d" name="Cyclone missile launcher, Frag missile" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -20684,7 +20685,7 @@ Its Move characteristic becomes 20&quot;, and it loses the Hard to Hit and Super
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack made with this weapon is allocated to a model with a Save characteristic of 3+ or better, that attack has a Damage characteristic of 2.</characteristic>
       </characteristics>
     </profile>
-    <profile id="c7e3-3ec3-e212-dc62" name="Conversion beam cannon, Long range" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+    <profile id="c7e3-3ec3-e212-dc62" name="C. Beam cannon, Long range" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48-72&quot;</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D3</characteristic>
@@ -20694,7 +20695,7 @@ Its Move characteristic becomes 20&quot;, and it loses the Hard to Hit and Super
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Beam. Blast.</characteristic>
       </characteristics>
     </profile>
-    <profile id="d3c2-5035-36cc-46bd" name="Conversion beam cannon, Medium range" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+    <profile id="d3c2-5035-36cc-46bd" name="C. Beam cannon, Medium range" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24-48&quot;</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D3</characteristic>
@@ -20704,7 +20705,7 @@ Its Move characteristic becomes 20&quot;, and it loses the Hard to Hit and Super
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Beam. Blast.</characteristic>
       </characteristics>
     </profile>
-    <profile id="ed55-bf50-e69e-298f" name="Conversion beam cannon, Short range" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+    <profile id="ed55-bf50-e69e-298f" name="C. Beam cannon, Short range" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">0-24&quot;</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D3</characteristic>
@@ -21643,6 +21644,16 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
     <profile id="d330-126a-2734-65ca" name="Lone Operative" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
       <characteristics>
         <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This unit can never have a Warlord Trait.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="C. Beam, Long range" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="ed24-63db-0ddf-dac2">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;-48&quot;</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D3</characteristic>
+        <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Beam.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
