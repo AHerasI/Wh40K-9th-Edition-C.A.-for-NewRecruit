@@ -8767,7 +8767,7 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
           <selectionEntryGroups>
             <selectionEntryGroup name="+1PL for 2 selections" id="394c-47bd-832b-af8d" hidden="false">
               <entryLinks>
-                <entryLink import="true" name="Hunter-killer missile launcher [1]" hidden="false" id="aa5c-867e-0a1f-1d48" collective="false" targetId="76ce-74fa-9676-1a4b" type="selectionEntry">
+                <entryLink import="true" name="Hunter-killer missile launcher" hidden="false" id="aa5c-867e-0a1f-1d48" collective="false" targetId="76ce-74fa-9676-1a4b" type="selectionEntry">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1367-c43c-e1bb-b768" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
@@ -10262,146 +10262,8 @@ This weapon can only be fired once per battle. Each time an attack is made with 
             <categoryLink id="f14f-c870-3442-2f91" name="Faction: Astra Militarum" hidden="false" targetId="3263-4233-4344-6228" primary="false"/>
             <categoryLink id="fe6e-26d4-8270-aaf7" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
           </categoryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="531b-f5ce-80c1-f3c7" name="Psykana Discipline" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c487-e1cd-f175-e25e" type="max"/>
-                <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc06-e678-dbfc-c903" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="5277-820c-a7a7-f8b2" name="1) Terrifying Visions" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e99d-952c-5947-e46d" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="e7eb-bd06-bbc3-9b5c" name="Terrifying Visions" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
-                      <characteristics>
-                        <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
-                        <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
-                        <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Malediction: Terrifying Visions has a warp charge value of 6. 
-If manifested, select one enemy unit within 18&quot; of this PSYKER. Until the start of your next Command phase:
-- Subtract 2 from the Leadership characteristic of models in that unit.
-- Your opponent cannot select that unit for the Insane Bravery Stratagem, nor can they use any rule that would enable them to re-roll a Morale test taken for that unit.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                    <cost name="Pts" typeId="points" value="0"/>
-                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="10b5-82f2-45fd-50f4" name="2) Gaze Of The Emperor" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5276-0370-3cf7-a658" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="1727-db08-4255-82f8" name="Gaze Of The Emperor" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
-                      <characteristics>
-                        <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
-                        <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">12&quot;</characteristic>
-                        <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Witchfire: Gaze Of The Emperor has a warp charge value of 6. 
-If manifested, select one enemy model within 12&quot; of and visible to this PSYKER. 
-Draw a straight line between any part of that model’s base (or hull) and this PSYKER’s base. 
-Roll one D6 for that enemy model’s unit, and one D6 for each other unit that this line passes over: on a 1-5, the unit being rolled for suffers 1 mortal wound; on a 6, the unit being rolled for suffers D3 mortal wounds.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                    <cost name="Pts" typeId="points" value="0"/>
-                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="0b9b-8c0f-479e-f98d" name="3) Psychic Barrier" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aaf2-b0d2-450c-88fb" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="2310-07e0-2992-152a" name="Psychic Barrier" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
-                      <characteristics>
-                        <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
-                        <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">12&quot;</characteristic>
-                        <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing: Psychic Barrier has a warp charge value of 6. If manifested, select one friendly ASTRA MILITARUM unit within 12&quot; of this PSYKER. Until the start of your next Psychic phase, models in that unit have a 5+ invulnerable save.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                    <cost name="Pts" typeId="points" value="0"/>
-                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="9338-1c5d-d089-25a6" name="4) Nightshroud" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3522-859b-fa39-f56e" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="fa7f-81b9-237c-718b" name="Nightshroud" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
-                      <characteristics>
-                        <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">8</characteristic>
-                        <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">12&quot;</characteristic>
-                        <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing: Nightshroud has a warp charge value of 6. If manifested, select one friendly ASTRA MILITARUM unit within 12&quot; of this PSYKER. You cannot select a TITANIC unit unless the result of the Psychic test was an unmodified 11+. 
-Until the start of your next Psychic phase, each time a ranged attack is made against that unit, a hit roll of 1-3 for that attack fails. Substract 1 from that attack&apos;s hit roll. In addition, enemy models cannot target a model in that unit with ranged attacks unless they are within 18&quot; of it.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                    <cost name="Pts" typeId="points" value="0"/>
-                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="d9c8-74e4-cd76-e4b6" name="5) Mental Shackles" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f35e-b842-1c91-22ec" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="d51b-b8d3-2e21-68e0" name="Mental Shackles" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
-                      <characteristics>
-                        <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
-                        <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
-                        <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Malediction: Mental Shackles has a warp charge value of 6. If manifested, select one enemy unit within 18&quot; of this PSYKER. Until the start of your next Psychic phase:
-- Subtract 2&quot; from the Move characteristic of models in that unit.
-- Subtract 2 from Advance and charge rolls made for that unit.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                    <cost name="Pts" typeId="points" value="0"/>
-                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="83fd-9178-0693-60e1" name="6) Psychic Maelstrom" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0f5-52f0-ff60-39e2" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="a26d-1f02-4133-9ca7" name="Psychic Maelstrom" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
-                      <characteristics>
-                        <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">8</characteristic>
-                        <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
-                        <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Witchfire: Psychic Maelstrom has a warp charge value of 8. If manifested, roll a number of D6 equal to the result of the Psychic test: for each 5+, the closest enemy unit that is within 18&quot; of and visible to this PSYKER suffers 1 mortal wound.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                    <cost name="Pts" typeId="points" value="0"/>
-                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
           <entryLinks>
+            <entryLink targetId="531b-f5ce-80c1-f3c7" id="99ba-74d9-bd5a-1cfc" type="selectionEntryGroup" name="Psykana Discipline" hidden="false"/>
             <entryLink id="c171-c03d-cf9d-66f5" name="Laspistol" hidden="false" collective="false" import="true" targetId="0e60-b904-c3ed-5c38" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="739a-b8a6-51ef-f050" type="max"/>
@@ -20199,7 +20061,7 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
           </selectionEntryGroups>
           <entryLinks>
             <entryLink id="590d-d319-a568-89c2" name="Crushing bulk" hidden="false" collective="false" import="true" targetId="502f-45c2-6fd1-443b" type="selectionEntry"/>
-            <entryLink id="f293-3824-dfd3-5f17" name="Hunter-killer missile launcher [1]" hidden="false" collective="false" import="true" targetId="76ce-74fa-9676-1a4b" type="selectionEntry">
+            <entryLink id="f293-3824-dfd3-5f17" name="Hunter-killer missile launcher" hidden="false" collective="false" import="true" targetId="76ce-74fa-9676-1a4b" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="points" value="5"/>
               </costs>
@@ -26801,7 +26663,7 @@ Re-roll Invulnerable saving throws of 1 for this WARLORD.</characteristic>
                 <cost name="pts" typeId="points" value="10"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Hunter-killer missile launcher [1]" hidden="false" id="413a-6017-4e71-ab0a" collective="false" targetId="76ce-74fa-9676-1a4b" type="selectionEntry">
+            <entryLink import="true" name="Hunter-killer missile launcher" hidden="false" id="413a-6017-4e71-ab0a" collective="false" targetId="76ce-74fa-9676-1a4b" type="selectionEntry">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e649-0934-5e23-974e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
@@ -27501,196 +27363,6 @@ If this model would lose a wound as the result of a mortal wound during other ph
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Discipline of the Dark Hereticus" id="02e5-246c-098a-37a0" hidden="false" collective="false" import="true">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="11 - Infernal Gaze" hidden="false" id="34b7-a8b4-32f3-1fd9" collective="false">
-          <comment>GAZE OF HATE</comment>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7320-c7bd-226d-5088" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Infernal Gaze" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="bdbf-a235-2ffc-c085">
-              <characteristics>
-                <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">5</characteristic>
-                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
-                <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Witchfire: Infernal Gaze has a warp charge value of 5. If manifested, select one enemy unit within 18&quot; of and visible to this PSYKER and roll three D6. For each 4+, that enemy unit suffers 1 mortal wound. If the result of the Psychic test was an unmodified 10+, roll six D6 instead.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="12 - Prescience" hidden="false" id="24fc-3196-b210-58b5" collective="false">
-          <comment>EMPYRIC GUIDANCE</comment>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f24-e1e7-7387-bd96" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Prescience" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="7fcd-1c31-413d-aa21">
-              <characteristics>
-                <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">7</characteristic>
-                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
-                <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Blessing: Prescience has a warp charge value of 7. If manifested, select one friendly &lt;LEGION&gt; unit within 18&quot; of this PSYKER. Until the start of your next Psychic phase, each time a model in that unit makes an attack, add 1 to that attack’s hit roll.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="13 - Diabolic Strength" hidden="false" id="4dfc-5e65-0630-cb0a" collective="false">
-          <comment>SWELLED BY THE WARP</comment>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1e3-e10e-1bae-046f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Diabolic Strength" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="d97b-2d1f-d51b-a1c6">
-              <characteristics>
-                <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
-                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">12&quot;</characteristic>
-                <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Blessing: Diabolic Strength has a warp charge value of 6. If manifested, select one friendly &lt;LEGION&gt; INFANTRY or CHAOS SPAWN model within 12&quot; of this PSYKER. Until the start of your next Psychic phase, add 2 to the Strength and Attacks characteristics of that model.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="21 - Death Hex" hidden="false" id="091d-4e6e-b8b1-004e" collective="false">
-          <comment>TWIST OF FATE</comment>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c742-100a-3779-39e3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Death Hex" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="5491-a13c-f2af-947a">
-              <characteristics>
-                <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">8</characteristic>
-                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">12&quot;</characteristic>
-                <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Malediction: Death Hex has a warp charge value of 8. If manifested, select one enemy unit within 12&quot; of this PSYKER. Until the start of your next Psychic phase, models in that unit cannot use any invulnerable saves.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="22 - Gift of Chaos" hidden="false" id="859b-ee66-bafb-6e83" collective="false">
-          <comment>DARK BLESSING</comment>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d31-e179-b3d7-5803" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Gift of Chaos" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="738b-2ba1-bbb8-8454">
-              <characteristics>
-                <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">7</characteristic>
-                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
-                <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Witchfire: Gift of Chaos has a warp charge value of 7. If manifested, the closest enemy unit within 18&quot; of and visible to this PSYKER suffers D3 mortal wounds, and you must roll one D6 for every other enemy unit within 6&quot; of that unit: on a 4+, the unit being rolled for suffers 1 mortal wound.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="23 - Warptime" hidden="false" id="20bb-8fa9-7936-e963" collective="false">
-          <comment>TEMPORAL SURGE</comment>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d91f-fe42-7361-de86" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Warptime" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="80aa-fe86-7af0-acf4">
-              <characteristics>
-                <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
-                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">6&quot;</characteristic>
-                <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Blessing: Warptime has a warp charge value of 6. If manifested, select one friendly &lt;LEGION&gt; INFANTRY, BIKER, CAVALRY or BEAST unit within 6&quot; of this PSYKER. That unit can make a Normal Move (if that unit Advanced in your previous Movement phase, it still counts as having Advanced this turn).</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="33 - Desecration of Worlds" hidden="false" id="4a5e-04b4-6a32-2a6c" collective="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bbdd-d534-15d1-03e8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Desecration of Worlds" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="abfc-289d-cac0-0b20">
-              <characteristics>
-                <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">7</characteristic>
-                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">24&quot;</characteristic>
-                <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Malediction: Desecration of Worlds has a warp charge value of 7. If manifested, select one enemy unit within 24&quot; of and visible to this PSYKER. Until the start of your next Psychic phase, each time that unit makes a Normal Move, Advances, Falls Back or makes a charge move, roll one D6 for each model in that unit. For each result of 6, that unit suffers 1 mortal wound.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="32 - Psychic Stalk" hidden="false" id="ceea-6e3b-5232-9c64" collective="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="394f-9cb6-7638-f78e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Psychic Stalk" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="f129-9b2b-cce0-b99e">
-              <characteristics>
-                <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
-                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
-                <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Witchfire: Psychic Stalk has a warp charge value of 6. If manifested, select one enemy unit that is not a VEHICLE, MONSTER or CHARACTER within 18&quot; of and visible to this PSYKER. Roll 2D6: if the result is greater than the unmodified Leadership characteristic of that unit, one model in that unit selected by your opponent is slain.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="31 - Dark Blessing" hidden="false" id="404b-173a-4f22-3289" collective="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3543-5533-4778-ea98" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Dark Blessing" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="e88b-d25b-89b1-983d">
-              <characteristics>
-                <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">7</characteristic>
-                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
-                <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Witchfire: Dark Blessing has a warp charge value of 7. If manifested, select one enemy model within 6&quot; of and visible to this PYKER and roll one D6: if the result is greater than the target’s Toughness characteristic, its unit suffers D3+3 mortal wounds. If the target unit is slained by this power, and it had the CHARACTER Keyword, you can add a CHAOS SPAWN model to your army. Set up the CHAOS SPAWN model on the battlefield as close as possible to where the CHARACTER unit was destroyed and more than 1&quot; away from any enemy models.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
     <selectionEntryGroup name="Daemonic Summoning Ritual" id="ac45-5667-2dca-c6d8" hidden="false" collective="false" import="true">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d56e-9871-13af-7661" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -27745,6 +27417,337 @@ You can Disband any summoned unit in your morale phase. Disbanded units are cons
           </costs>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Psychic disciplines" id="e30d-12cb-cb89-e238" hidden="false">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Psykana Discipline" id="531b-f5ce-80c1-f3c7" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c487-e1cd-f175-e25e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="bc06-e678-dbfc-c903" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="1 - Terrifying Visions" hidden="false" id="5277-820c-a7a7-f8b2" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e99d-952c-5947-e46d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Terrifying Visions" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="e7eb-bd06-bbc3-9b5c">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
+                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Malediction: Terrifying Visions has a warp charge value of 6. 
+If manifested, select one enemy unit within 18&quot; of this PSYKER. Until the start of your next Command phase:
+- Subtract 2 from the Leadership characteristic of models in that unit.
+- Your opponent cannot select that unit for the Insane Bravery Stratagem, nor can they use any rule that would enable them to re-roll a Morale test taken for that unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="2 - Gaze Of The Emperor" hidden="false" id="10b5-82f2-45fd-50f4" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5276-0370-3cf7-a658" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Gaze Of The Emperor" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="1727-db08-4255-82f8">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
+                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">12&quot;</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Witchfire: Gaze Of The Emperor has a warp charge value of 6. 
+If manifested, select one enemy model within 12&quot; of and visible to this PSYKER. 
+Draw a straight line between any part of that model’s base (or hull) and this PSYKER’s base. 
+Roll one D6 for that enemy model’s unit, and one D6 for each other unit that this line passes over: on a 1-5, the unit being rolled for suffers 1 mortal wound; on a 6, the unit being rolled for suffers D3 mortal wounds.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="3 - Psychic Barrier" hidden="false" id="0b9b-8c0f-479e-f98d" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aaf2-b0d2-450c-88fb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Psychic Barrier" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="2310-07e0-2992-152a">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
+                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">12&quot;</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing: Psychic Barrier has a warp charge value of 6. If manifested, select one friendly ASTRA MILITARUM unit within 12&quot; of this PSYKER. Until the start of your next Psychic phase, models in that unit have a 5+ invulnerable save.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="4 - Nightshroud" hidden="false" id="9338-1c5d-d089-25a6" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3522-859b-fa39-f56e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Nightshroud" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="fa7f-81b9-237c-718b">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">8</characteristic>
+                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">12&quot;</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing: Nightshroud has a warp charge value of 6. If manifested, select one friendly ASTRA MILITARUM unit within 12&quot; of this PSYKER. You cannot select a TITANIC unit unless the result of the Psychic test was an unmodified 11+. 
+Until the start of your next Psychic phase, each time a ranged attack is made against that unit, a hit roll of 1-3 for that attack fails. Substract 1 from that attack&apos;s hit roll. In addition, enemy models cannot target a model in that unit with ranged attacks unless they are within 18&quot; of it.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="5 - Mental Shackles" hidden="false" id="d9c8-74e4-cd76-e4b6" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f35e-b842-1c91-22ec" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Mental Shackles" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="d51b-b8d3-2e21-68e0">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
+                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Malediction: Mental Shackles has a warp charge value of 6. If manifested, select one enemy unit within 18&quot; of this PSYKER. Until the start of your next Psychic phase:
+- Subtract 2&quot; from the Move characteristic of models in that unit.
+- Subtract 2 from Advance and charge rolls made for that unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="6 - Psychic Maelstrom" hidden="false" id="83fd-9178-0693-60e1" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0f5-52f0-ff60-39e2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Psychic Maelstrom" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="a26d-1f02-4133-9ca7">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">8</characteristic>
+                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Witchfire: Psychic Maelstrom has a warp charge value of 8. If manifested, roll a number of D6 equal to the result of the Psychic test: for each 5+, the closest enemy unit that is within 18&quot; of and visible to this PSYKER suffers 1 mortal wound.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Discipline of the Dark Hereticus" id="02e5-246c-098a-37a0" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="33 - Desecration of Worlds" hidden="false" id="62b6-786b-0d52-83a5" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a7e3-e74f-e22f-ae02" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Desecration of Worlds" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="d14a-c591-bdd5-afc2">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">7</characteristic>
+                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">24&quot;</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Malediction: Desecration of Worlds has a warp charge value of 7. If manifested, select one enemy unit within 24&quot; of and visible to this PSYKER. Until the start of your next Psychic phase, each time that unit makes a Normal Move, Advances, Falls Back or makes a charge move, roll one D6 for each model in that unit. For each result of 6, that unit suffers 1 mortal wound.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="32 - Psychic Stalk" hidden="false" id="8e03-6f1a-9a36-30f8" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1a0-13d8-5f60-daa9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Psychic Stalk" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="0440-4a92-68ab-21b6">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
+                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Witchfire: Psychic Stalk has a warp charge value of 6. If manifested, select one enemy unit that is not a VEHICLE, MONSTER or CHARACTER within 18&quot; of and visible to this PSYKER. Roll 2D6: if the result is greater than the unmodified Leadership characteristic of that unit, one model in that unit selected by your opponent is slain.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="31 - Dark Blessing" hidden="false" id="2ede-647e-40d0-aef8" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5604-0806-245c-bea4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Dark Blessing" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="5378-a863-a536-3b4b">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">7</characteristic>
+                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Witchfire: Dark Blessing has a warp charge value of 7. If manifested, select one enemy model within 6&quot; of and visible to this PSYKER and roll one D6: if the result is greater than the target’s Toughness characteristic, its unit suffers D3+3 mortal wounds. If the target unit is slained by this power, and it had the CHARACTER Keyword, you can add a CHAOS SPAWN model to your army. Set up the CHAOS SPAWN model on the battlefield as close as possible to where the CHARACTER unit was destroyed and more than 1&quot; away from any enemy models.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="23 - Warptime" hidden="false" id="61e5-2f63-1d46-4031" collective="false">
+              <comment>TEMPORAL SURGE</comment>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ade5-3ebd-33ec-3662" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Warptime" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="9f01-1342-0f9d-7586">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
+                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">6&quot;</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing: Warptime has a warp charge value of 6. If manifested, select one friendly ASTRA MILITARUM INFANTRY, BIKER, CAVALRY or BEAST unit within 6&quot; of this PSYKER. That unit can make a Normal Move (if that unit Advanced in your previous Movement phase, it still counts as having Advanced this turn).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="22 - Gift of Chaos" hidden="false" id="bd1a-45d7-d89d-9c58" collective="false">
+              <comment>DARK BLESSING</comment>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec14-b823-e02f-736c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Gift of Chaos" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="3032-679b-c93c-e3c4">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">7</characteristic>
+                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Witchfire: Gift of Chaos has a warp charge value of 7. If manifested, the closest enemy unit within 18&quot; of and visible to this PSYKER suffers D3 mortal wounds, and you must roll one D6 for every other enemy unit within 6&quot; of that unit: on a 4+, the unit being rolled for suffers 1 mortal wound.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="21 - Death Hex" hidden="false" id="48c3-af73-fe35-4107" collective="false">
+              <comment>TWIST OF FATE</comment>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b4be-a4c3-b59d-80db" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Death Hex" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="f50f-5969-6a41-97cb">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">8</characteristic>
+                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">12&quot;</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Malediction: Death Hex has a warp charge value of 8. If manifested, select one enemy unit within 12&quot; of this PSYKER. Until the start of your next Psychic phase, models in that unit cannot use any invulnerable saves.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="13 - Diabolic Strength" hidden="false" id="566c-b0b0-b6f7-f52b" collective="false">
+              <comment>SWELLED BY THE WARP</comment>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7d3-5e75-d6d3-0b02" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Diabolic Strength" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="dc1e-dc18-fc95-3303">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
+                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">12&quot;</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing: Diabolic Strength has a warp charge value of 6. If manifested, select one friendly ASTRA MILITARUM INFANTRY or CHAOS SPAWN model within 12&quot; of this PSYKER. Until the start of your next Psychic phase, add 2 to the Strength and Attacks characteristics of that model.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="12 - Prescience" hidden="false" id="30ef-1998-31ea-e35e" collective="false">
+              <comment>EMPYRIC GUIDANCE</comment>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="183f-a220-b1b3-79cf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Prescience" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="9cb2-8340-a2c1-7677">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">7</characteristic>
+                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing: Prescience has a warp charge value of 7. If manifested, select one friendly ASTRA MILITARUM unit within 18&quot; of this PSYKER. Until the start of your next Psychic phase, each time a model in that unit makes an attack, add 1 to that attack’s hit roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="11 - Infernal Gaze" hidden="false" id="7400-5993-b189-4bdc" collective="false">
+              <comment>GAZE OF HATE</comment>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2cd2-266d-a50e-d81f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Infernal Gaze" typeId="ae70-4738-0161-bec0" typeName="Psychic Power" hidden="false" id="0265-a086-5d00-ef42">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">5</characteristic>
+                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Witchfire: Infernal Gaze has a warp charge value of 5. If manifested, select one enemy unit within 18&quot; of and visible to this PSYKER and roll three D6. For each 4+, that enemy unit suffers 1 mortal wound. If the result of the Psychic test was an unmodified 10+, roll six D6 instead.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
