@@ -5471,7 +5471,7 @@ In addition, a unit gain a extra EXP point if it managed to do one of the follow
                   <profiles>
                     <profile id="14cb-b1fe-d780-1935" name="Master of Lore" hidden="false" typeId="9cbe-b8f7-8b06-3bdb" typeName="Crusade Battle Honour">
                       <characteristics>
-                        <characteristic name="Description" typeId="2cb3-f998-da99-e077">Re-roll rolls of 1 or 2 for Psychic test made by this unit. If the unit already have a similar ability, you can re-roll the Psychic test.</characteristic>
+                        <characteristic name="Description" typeId="2cb3-f998-da99-e077">Re-roll rolls of 1 or 2 for Psychic test made by this unit. If the unit already have a similar ability, you can re-roll any or all of the dices of the Psychic test.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
