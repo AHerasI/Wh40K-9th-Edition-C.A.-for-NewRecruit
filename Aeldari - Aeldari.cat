@@ -8311,6 +8311,16 @@ When the bearer’s unit makes a Battle Focus move, you can roll 2D6 instead of 
                         <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb21-30f8-d7e1-cdb9" type="equalTo"/>
                       </conditions>
                     </modifier>
+                    <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="d294-6bda-13ec-342f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Biel-tan"/>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="a047-936d-df4a-7d58" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Elite citizenry"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
                   </modifiers>
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
