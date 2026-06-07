@@ -22411,42 +22411,6 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
           <costs>
             <cost name="pts" typeId="points" value="5"/>
           </costs>
-          <entryLinks>
-            <entryLink import="true" name="Multi-tracker" hidden="false" id="7856-1dc6-1718-4e33" collective="false" targetId="7985-ad8b-3f83-430f" type="selectionEntry">
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <comment>Point cost modifier</comment>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <comment>Reinforced</comment>
-                      <conditions>
-                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="45a6-4825-db8c-9cff" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                      <modifiers>
-                        <modifier type="set" value="10" field="points"/>
-                      </modifiers>
-                    </modifierGroup>
-                    <modifierGroup type="and">
-                      <comment>Heavy</comment>
-                      <conditions>
-                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b66f-e4bb-3335-6222" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                      <modifiers>
-                        <modifier type="set" value="20" field="points"/>
-                        <modifier type="set" value="1" field="e356-c769-5920-6e14"/>
-                      </modifiers>
-                    </modifierGroup>
-                  </modifierGroups>
-                </modifierGroup>
-              </modifierGroups>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="49b8-330a-cbe5-7578" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="5"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
         </entryLink>
         <entryLink id="6d93-8d7c-c155-7929" name="Shield Generator" hidden="true" collective="false" import="true" targetId="7baa-10f2-1cc8-43be" type="selectionEntry">
           <modifiers>
