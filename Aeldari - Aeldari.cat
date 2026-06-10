@@ -11412,37 +11412,51 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup id="9af8-8479-73a7-7bcd" name="Weapon option" hidden="false" collective="false" import="true" defaultSelectionEntryId="5bd1-2baf-7dda-43e1">
+            <selectionEntryGroup id="9af8-8479-73a7-7bcd" name="Model option" hidden="false" collective="false" import="true" defaultSelectionEntryId="da1b-0893-414e-3b70">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5766-ee4d-679e-edc9" type="max"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a803-bfd6-0ecf-8376" type="min"/>
               </constraints>
-              <entryLinks>
-                <entryLink id="dde4-b9c3-4a3e-3f0a" name="Asuryani missile launcher" hidden="false" collective="false" import="true" targetId="3fcf-5cd4-8611-1d89" type="selectionEntry">
-                  <costs>
-                    <cost name="pts" typeId="points" value="10"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="1e3e-d4cf-c582-1d88" name="Bright Lance" hidden="false" collective="false" import="true" targetId="5e65-eceb-686c-8a33" type="selectionEntry">
-                  <costs>
-                    <cost name="pts" typeId="points" value="15"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="1667-66aa-0b5e-d761" name="Scatter laser" hidden="false" collective="false" import="true" targetId="bc00-c737-73c7-0625" type="selectionEntry"/>
-                <entryLink id="5bd1-2baf-7dda-43e1" name="Shuriken cannon" hidden="false" collective="false" import="true" targetId="3691-b24f-77b6-8ee5" type="selectionEntry"/>
-                <entryLink id="47ac-ffd6-c828-fb42" name="Starcannon" hidden="false" collective="false" import="true" targetId="b738-7084-a2eb-2c55" type="selectionEntry">
-                  <costs>
-                    <cost name="pts" typeId="points" value="10"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Disintegrator&amp;GL" hidden="false" id="0a1a-d60d-6f0d-5078">
-                  <comment>Starfang</comment>
-                  <infoLinks>
-                    <infoLink name="Disintegrator cannon" id="7859-422f-67cc-f007" hidden="false" type="profile" targetId="3d2e-fa2e-748b-1534"/>
-                    <infoLink name="Phantasm grenade launcher" id="5f82-e666-3880-c13d" hidden="false" type="profile" targetId="f0dd-edeb-bc33-1842"/>
-                  </infoLinks>
+                <selectionEntry type="upgrade" import="true" name="Vyper (Light)" hidden="false" id="da1b-0893-414e-3b70">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Turret Weapon" id="50c6-4803-bbed-62ed" hidden="false" collective="false" import="true" defaultSelectionEntryId="f57f-6cd8-1134-3092">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10cb-bf77-61da-e7e4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c749-96ef-7e9c-241e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink import="true" name="Asuryani missile launcher" hidden="false" id="f3b8-462e-735f-a18c" collective="false" targetId="3fcf-5cd4-8611-1d89" type="selectionEntry">
+                          <costs>
+                            <cost name="pts" typeId="points" value="10"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Bright Lance" hidden="false" id="2522-abb5-2c01-0cc4" collective="false" targetId="5e65-eceb-686c-8a33" type="selectionEntry">
+                          <costs>
+                            <cost name="pts" typeId="points" value="15"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Scatter laser" hidden="false" id="ed42-60d2-198b-d90d" collective="false" targetId="bc00-c737-73c7-0625" type="selectionEntry"/>
+                        <entryLink import="true" name="Shuriken cannon" hidden="false" id="f57f-6cd8-1134-3092" collective="false" targetId="3691-b24f-77b6-8ee5" type="selectionEntry"/>
+                        <entryLink import="true" name="Starcannon" hidden="false" id="1fcb-0479-e5a2-e735" collective="false" targetId="b738-7084-a2eb-2c55" type="selectionEntry">
+                          <costs>
+                            <cost name="pts" typeId="points" value="10"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup name="Hull Weapon" id="d1bf-c572-3ee6-f5b9" hidden="false" defaultSelectionEntryId="1429-ae82-9451-6763">
+                      <entryLinks>
+                        <entryLink import="true" name="Twin Shuriken rifle" hidden="false" id="1429-ae82-9451-6763" collective="false" targetId="ff3d-42fe-2ba4-3026" type="selectionEntry"/>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c62-cdcc-1af8-122c" includeChildSelections="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4da5-3cab-0d4d-487e" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Starfang" hidden="false" id="36e3-c499-7070-a1c2">
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
                       <conditions>
@@ -11450,12 +11464,86 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
                       </conditions>
                     </modifier>
                   </modifiers>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Hull Weapon" id="91d4-3a23-f964-8552" hidden="false" defaultSelectionEntryId="e620-ddc5-eec6-3559">
+                      <entryLinks>
+                        <entryLink import="true" name="Shuriken cannon" hidden="false" id="e620-ddc5-eec6-3559" type="selectionEntry" targetId="3691-b24f-77b6-8ee5">
+                          <entryLinks>
+                            <entryLink import="true" name="Shuriken cannon" hidden="false" id="f81e-ef8a-32df-e9ee" type="selectionEntry" targetId="3691-b24f-77b6-8ee5"/>
+                          </entryLinks>
+                        </entryLink>
+                        <entryLink import="true" name="Asuryani missile launcher" hidden="false" id="6051-a92d-2086-2dc3" type="selectionEntry" targetId="3fcf-5cd4-8611-1d89">
+                          <costs>
+                            <cost name="Pts" typeId="points" value="10"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38e4-c3ef-5216-fcbe" includeChildSelections="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4f69-188e-ce8b-21c8" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup name="Turret Weapon" id="81fa-4e1f-e4f5-7d7a" hidden="false" defaultSelectionEntryId="abaf-5daf-a8ed-ba75">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1b9-a889-4547-446d" includeChildSelections="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8ffe-1860-d878-02a1" includeChildSelections="false"/>
+                      </constraints>
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Disintegrator&amp;GL" hidden="false" id="abaf-5daf-a8ed-ba75">
+                          <comment>Starfang</comment>
+                          <infoLinks>
+                            <infoLink name="Disintegrator cannon" id="a9c7-f417-cda4-f248" hidden="false" type="profile" targetId="3d2e-fa2e-748b-1534"/>
+                            <infoLink name="Phantasm grenade launcher" id="90a8-8bdb-5618-ffa5" hidden="false" type="profile" targetId="f0dd-edeb-bc33-1842"/>
+                          </infoLinks>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <costs>
+                    <cost name="Pts" typeId="points" value="10"/>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Vyper" hidden="false" id="3d49-3775-6f09-24e0">
+                  <entryLinks>
+                    <entryLink import="true" name="Hull Weapon" hidden="false" id="a063-e226-15b9-efb2" type="selectionEntryGroup" targetId="91d4-3a23-f964-8552"/>
+                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Turret Weapon" id="0958-692e-49ab-84a3" hidden="false" defaultSelectionEntryId="9ce4-a5a9-0383-ab3f">
+                      <entryLinks>
+                        <entryLink import="true" name="Bright Lance" hidden="false" id="9ce4-a5a9-0383-ab3f" collective="false" targetId="5e65-eceb-686c-8a33" type="selectionEntry">
+                          <costs>
+                            <cost name="pts" typeId="points" value="15"/>
+                            <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Scatter laser" hidden="false" id="55d9-eb26-397c-0b35" collective="false" targetId="bc00-c737-73c7-0625" type="selectionEntry"/>
+                        <entryLink import="true" name="Starcannon" hidden="false" id="54b0-0e7d-97c7-fbfa" collective="false" targetId="b738-7084-a2eb-2c55" type="selectionEntry">
+                          <costs>
+                            <cost name="pts" typeId="points" value="10"/>
+                            <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b761-2372-14d5-f0b7" includeChildSelections="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fa00-00c8-5cac-cadb" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <costs>
+                    <cost name="Pts" typeId="points" value="10"/>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="1429-ae82-9451-6763" name="Twin Shuriken rifle" hidden="false" collective="false" import="true" targetId="ff3d-42fe-2ba4-3026" type="selectionEntry"/>
             <entryLink id="7660-e9f6-5a33-dab8" name="Crushing bulk" hidden="false" collective="false" import="true" targetId="502f-45c2-6fd1-443b" type="selectionEntry"/>
           </entryLinks>
           <costs>
