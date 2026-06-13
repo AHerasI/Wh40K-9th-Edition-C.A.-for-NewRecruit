@@ -12897,6 +12897,13 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Twin Lascannon" hidden="false" id="3be9-0a05-a5ec-1b3b" collective="false" targetId="ee18-b1cd-6b60-464d" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="points" value="30"/>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="2"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Reaper Autocannon" hidden="false" id="8a38-90b9-c7a4-83f1" collective="false" targetId="5ab4-1ee7-95ad-7e15" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="7b70-7bc2-0470-8202" name="Right arm weapon option" hidden="false" collective="false" import="true" defaultSelectionEntryId="2c8d-a60d-3fb9-16c6">
@@ -12915,29 +12922,6 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
             <entryLink id="fd68-2f5f-748b-12a5" name="Twin Heavy Bolter" hidden="false" collective="false" import="true" targetId="09d8-7790-ed3f-4d6d" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="f465-f8fe-b48f-5001" name="Additional Weapon option" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7c56-ceed-d8a1-d166" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="9634-3404-64c9-54ee" name="Combi-Boltgun (Melta)" hidden="false" collective="false" import="true" targetId="95eb-a5a5-4147-9def" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="points" value="5"/>
-              </costs>
-            </entryLink>
-            <entryLink id="a3a9-6f26-fe60-67a0" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="2b03-8d64-3711-f300" type="selectionEntry"/>
-            <entryLink id="06c2-1126-52a9-7242" name="Combi-Boltgun (Flamer)" hidden="false" collective="false" import="true" targetId="6fd3-0b23-4197-dc47" type="selectionEntry"/>
-            <entryLink id="c4b5-cf99-1497-9c19" name="Combi-Boltgun (Warpflamer)" hidden="false" collective="false" import="true" targetId="6342-d447-e0d0-cc73" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="aa78-8665-986f-cd89" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Chest weapon" id="473d-88f2-213b-7ab6" hidden="false" defaultSelectionEntryId="74df-81e9-a905-504f">
           <entryLinks>
             <entryLink import="true" name="Battle Cannon" hidden="false" id="74df-81e9-a905-504f" collective="false" targetId="1d7b-4f46-b77b-ead1" type="selectionEntry"/>
@@ -12953,6 +12937,40 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9d90-1dd7-190a-d0a8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Additional Weapon option" id="4f22-bfae-dc93-c6e5" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="11f0-e144-83db-9207" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Combi-Boltgun (Melta)" hidden="false" id="6753-aa62-935d-3e49" collective="false" targetId="95eb-a5a5-4147-9def" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Storm Bolter" hidden="false" id="88ab-8ad7-5031-2754" collective="false" targetId="2b03-8d64-3711-f300" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="points" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Combi-Boltgun (Flamer)" hidden="false" id="4973-c31c-9745-fc0c" collective="false" targetId="6fd3-0b23-4197-dc47" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="points" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Combi-Boltgun (Warpflamer)" hidden="false" id="e65d-32fe-ecce-bbf7" collective="false" targetId="6342-d447-e0d0-cc73" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="aa78-8665-986f-cd89" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="Pts" typeId="points" value="5"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="d601-79fd-ff64-7377" name="Unit upgrades" hidden="false" collective="false" import="true" targetId="867f-e3d9-541a-3498" type="selectionEntryGroup"/>
@@ -12962,10 +12980,11 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="be27-6cf7-b9b7-6bc6" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Additional Weapon option" hidden="false" id="8270-9918-3cbd-f7a6" type="selectionEntryGroup" targetId="4f22-bfae-dc93-c6e5"/>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="points" value="230"/>
-        <cost name="PL" typeId="e356-c769-5920-6e14" value="12"/>
+        <cost name="Pts" typeId="points" value="240"/>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="13"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
