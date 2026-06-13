@@ -14208,7 +14208,7 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
         </profile>
-        <profile id="c57a-8c92-edd8-edb0" name="Defiler [2] (4-7 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="c57a-8c92-edd8-edb0" name="Defiler [2] (4-7 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
@@ -14282,11 +14282,19 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
           <entryLinks>
             <entryLink import="true" name="Combi-Boltgun (Melta)" hidden="false" id="12a4-0e63-bb7c-b596" collective="false" targetId="95eb-a5a5-4147-9def" type="selectionEntry">
               <costs>
-                <cost name="pts" typeId="points" value="5"/>
+                <cost name="pts" typeId="points" value="10"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Storm Bolter" hidden="false" id="6f4f-5b08-0d0d-e34e" collective="false" targetId="2b03-8d64-3711-f300" type="selectionEntry"/>
-            <entryLink import="true" name="Combi-Boltgun (Flamer)" hidden="false" id="d14b-b67f-2a36-e064" collective="false" targetId="6fd3-0b23-4197-dc47" type="selectionEntry"/>
+            <entryLink import="true" name="Storm Bolter" hidden="false" id="6f4f-5b08-0d0d-e34e" collective="false" targetId="2b03-8d64-3711-f300" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="points" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Combi-Boltgun (Flamer)" hidden="false" id="d14b-b67f-2a36-e064" collective="false" targetId="6fd3-0b23-4197-dc47" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="points" value="5"/>
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Combi-Boltgun (Warpflamer)" hidden="false" id="8fbc-741a-ed9c-583a" collective="false" targetId="6342-d447-e0d0-cc73" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="points" value="5"/>
@@ -14384,6 +14392,14 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Reaper Autocannon" hidden="false" id="e849-e1cc-02ea-de43" collective="false" targetId="5ab4-1ee7-95ad-7e15" type="selectionEntry"/>
+            <entryLink import="true" name="Twin Heavy Bolter" hidden="false" id="f1f8-8953-5ed6-2d28" collective="false" targetId="09d8-7790-ed3f-4d6d" type="selectionEntry"/>
+            <entryLink import="true" name="Twin Lascannon" hidden="false" id="1f3e-763f-3140-ba4c" collective="false" targetId="ee18-b1cd-6b60-464d" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="points" value="30"/>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="2"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Right arm weapon option" id="8c78-ba8a-0a64-d4ed" hidden="false" collective="false" import="true" defaultSelectionEntryId="0100-6d60-de4c-c503">
@@ -14411,10 +14427,11 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="66b4-f912-ef21-cb78" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Additional Weapon option" hidden="false" id="5058-3689-be0d-7ff7" type="selectionEntryGroup" targetId="d268-04df-34ec-cf1d"/>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="points" value="230"/>
-        <cost name="PL" typeId="e356-c769-5920-6e14" value="12"/>
+        <cost name="Pts" typeId="points" value="240"/>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="13"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
