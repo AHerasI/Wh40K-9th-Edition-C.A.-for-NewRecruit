@@ -171,11 +171,13 @@
       </profiles>
       <rules>
         <rule id="b96a-ad9b-f372-6883" name="Artificial Helpers" hidden="false">
-          <comment>4de0-9696-d9c5-ae7a</comment>
           <description>The following rules apply to DRONE models:
 - DRONE models are ignored for the purposes of determing a unit&apos;s Starting Strength, and whether or not it is at Half Strength.
 - DRONE models are ignored for the purpose of Morale Tests.
 - DRONE models are ignored for the purposes of determing a unit&apos;s toughness characteristic, if it also contains models without the DRONE keyword.</description>
+        </rule>
+        <rule name="Limited Parameters" id="7d6a-a72a-3b09-c783" hidden="false">
+          <description>If this unit contains only DRONE models, this unit cannot perform actions, except for Searching for targets, and loses the Objective Secured ability if it has it, and cannot gain it through any means.</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -4570,7 +4572,7 @@ If a wound is scored against a target without the FLY, VEHICLE or TITANIC keywor
                     <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
                   </costs>
                 </entryLink>
-                <entryLink id="8408-962c-c9cd-dfc2" name="SP conversion beamer" hidden="false" collective="false" import="true" targetId="2b4b-bc70-3ff7-2eb2" type="selectionEntry">
+                <entryLink id="8408-962c-c9cd-dfc2" name="SP Conversion beamer" hidden="false" collective="false" import="true" targetId="2b4b-bc70-3ff7-2eb2" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e5a-5215-00a0-ce6d" type="max"/>
                   </constraints>
@@ -6106,7 +6108,7 @@ If this unit’s BRÔKHYR IRON-MASTER model is ever destroyed, all of this unit�
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
               </costs>
             </entryLink>
-            <entryLink id="780d-d36e-62c4-4730" name="SP heavy conversion beamer" hidden="false" collective="false" import="true" targetId="2389-8253-39cb-124c" type="selectionEntry">
+            <entryLink id="780d-d36e-62c4-4730" name="SP Heavy Conversion beamer" hidden="false" collective="false" import="true" targetId="2389-8253-39cb-124c" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="points" value="20"/>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
