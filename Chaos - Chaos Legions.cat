@@ -4535,6 +4535,30 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Plaguespurt gauntlet" hidden="false" id="2306-b7d6-fe87-39d5">
+          <profiles>
+            <profile name="Plaguespurt gauntlet" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="781e-8e1e-df76-6839">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol D6</characteristic>
+                <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Plague Weapon. Torrent.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink name="Plague weapon" hidden="false" id="911f-bfb5-db37-c539" targetId="56a9-eae2-7298-9256" primary="false"/>
+            <categoryLink name="Torrent" hidden="false" id="f989-ec02-56c1-d37a" targetId="795f-a8d3-dc18-cb2e" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="Pts" typeId="points" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -25655,33 +25679,6 @@ In addition, models in this unit do not suffer the penalty to hit rolls incurred
             <categoryLink id="273f-70d0-a011-c736" name="Ø40mm" hidden="false" targetId="2ec1-217a-555a-b171" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="2306-b7d6-fe87-39d5" name="Plaguespurt gauntlet" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c5c9-e089-b265-e11b" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="781e-8e1e-df76-6839" name="Plaguespurt gauntlet" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
-                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol D6</characteristic>
-                    <characteristic name="S" typeId="59b1-319e-ec13-d466">3</characteristic>
-                    <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
-                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Plague Weapon. Torrent.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <categoryLinks>
-                <categoryLink id="911f-bfb5-db37-c539" name="Plage weapon" hidden="false" targetId="56a9-eae2-7298-9256" primary="false"/>
-                <categoryLink id="f989-ec02-56c1-d37a" name="Torrent" hidden="false" targetId="795f-a8d3-dc18-cb2e" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="b03a-133c-3247-3c6b" name="Chimes of contagion" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb87-f56c-33fc-3e70" type="max"/>
@@ -25702,6 +25699,12 @@ In addition, models in this unit do not suffer the penalty to hit rolls incurred
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
+            <entryLink targetId="2306-b7d6-fe87-39d5" id="cfcb-1ed9-925c-4212" type="selectionEntry" name="Plaguespurt gauntlet" hidden="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc64-22a6-611a-1e9b" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dca0-4963-2b84-05a2" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
             <entryLink id="d378-9898-c3ba-92d8" name="Deadly Pathogens" hidden="false" collective="false" import="true" targetId="7619-b1c6-3a01-9cb2" type="selectionEntryGroup"/>
             <entryLink id="e1ac-3c9e-c619-e525" name="Manreaper" hidden="false" collective="false" import="true" targetId="f5fb-5da4-1919-5a13" type="selectionEntry"/>
             <entryLink id="08b6-e128-5cb7-d111" name="Plaguespurt gauntlet" hidden="false" collective="false" import="true" targetId="2306-b7d6-fe87-39d5" type="selectionEntry">
@@ -25749,6 +25752,7 @@ In addition, models in this unit do not suffer the penalty to hit rolls incurred
                 <entryLink id="915d-4d5e-71d3-9a2b" name="Plaguespurt gauntlet" hidden="false" collective="false" import="true" targetId="2306-b7d6-fe87-39d5" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e4f-3af1-3b30-f9a1" type="min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="792f-9fb3-276e-de89" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="ed1d-20da-7fb7-1e6c" name="Manreaper" hidden="false" collective="false" import="true" targetId="f5fb-5da4-1919-5a13" type="selectionEntry"/>
