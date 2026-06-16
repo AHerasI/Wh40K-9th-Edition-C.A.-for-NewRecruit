@@ -47513,12 +47513,12 @@ If you selected a CORE, DAEMONIC or DAEMON unit and that unit is not at its Star
           <selectionEntries>
             <selectionEntry id="b31c-51d0-c8e3-7dee" name="Acidic malady" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f80-1b36-42a7-c805" type="max"/>
+                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2f80-1b36-42a7-c805" type="max"/>
               </constraints>
               <profiles>
                 <profile id="8270-6aca-4dd9-a24e" name="Acidic malady" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a model from this unit makes an attack with a Plage weapon against units without the VEHICLE, TITANIC or INORGANIC Keywords, that attack ignore any modifiers to the Armor saving throw.</characteristic>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a model from this unit makes an attack with a Plague weapon against units without the VEHICLE, TITANIC or INORGANIC Keywords, that attack ignore any modifiers to the Armor saving throw.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -47528,10 +47528,36 @@ If you selected a CORE, DAEMONIC or DAEMON unit and that unit is not at its Star
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="2f80-1b36-42a7-c805">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="5686-7cd9-6664-635b" shared="true" includeChildSelections="true" childName="2. Incursion (39-75 Total PL / 751-1500 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="2f80-1b36-42a7-c805">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="09f9-b586-8d63-7635" shared="true" includeChildSelections="true" childName="3. Strike Force (76-150 Total PL / 1501-3000 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="3" field="2f80-1b36-42a7-c805">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="fad2-035f-88a7-60c0" shared="true" includeChildSelections="true" childName="4. Onslaught (151-300 Total PL / 3001-6000 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="4" field="2f80-1b36-42a7-c805">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="e6c7-87a2-73a3-a475" shared="true" includeChildSelections="true" childName="5. Onslaught++ (301+ Total PL / 6001+ Points) "/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </selectionEntry>
             <selectionEntry id="4d80-4e45-7dd2-e30b" name="Explosive outbreak" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78a9-f579-0733-94d3" type="max"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d82c-0f20-3c80-3ca0" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <profiles>
                 <profile id="52d5-2b48-c095-8bef" name="Explosive outbreak" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -47546,10 +47572,36 @@ If you selected a CORE, DAEMONIC or DAEMON unit and that unit is not at its Star
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="d82c-0f20-3c80-3ca0">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="5686-7cd9-6664-635b" shared="true" includeChildSelections="true" childName="2. Incursion (39-75 Total PL / 751-1500 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="d82c-0f20-3c80-3ca0">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="09f9-b586-8d63-7635" shared="true" includeChildSelections="true" childName="3. Strike Force (76-150 Total PL / 1501-3000 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="3" field="d82c-0f20-3c80-3ca0">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="fad2-035f-88a7-60c0" shared="true" includeChildSelections="true" childName="4. Onslaught (151-300 Total PL / 3001-6000 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="4" field="d82c-0f20-3c80-3ca0">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="e6c7-87a2-73a3-a475" shared="true" includeChildSelections="true" childName="5. Onslaught++ (301+ Total PL / 6001+ Points) "/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </selectionEntry>
             <selectionEntry id="7928-8c06-f453-f10d" name="Virulen fever" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f95d-9c5a-ed4e-5a7c" type="max"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a4a2-ddf2-68a8-f31d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <profiles>
                 <profile id="a34d-2df0-87c3-9c93" name="Virulen fever" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -47564,10 +47616,36 @@ If you selected a CORE, DAEMONIC or DAEMON unit and that unit is not at its Star
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="a4a2-ddf2-68a8-f31d">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="5686-7cd9-6664-635b" shared="true" includeChildSelections="true" childName="2. Incursion (39-75 Total PL / 751-1500 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="a4a2-ddf2-68a8-f31d">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="09f9-b586-8d63-7635" shared="true" includeChildSelections="true" childName="3. Strike Force (76-150 Total PL / 1501-3000 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="3" field="a4a2-ddf2-68a8-f31d">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="fad2-035f-88a7-60c0" shared="true" includeChildSelections="true" childName="4. Onslaught (151-300 Total PL / 3001-6000 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="4" field="a4a2-ddf2-68a8-f31d">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="e6c7-87a2-73a3-a475" shared="true" includeChildSelections="true" childName="5. Onslaught++ (301+ Total PL / 6001+ Points) "/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </selectionEntry>
             <selectionEntry id="b5ec-320f-755e-8675" name="Befouling runoff" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4ef-d833-bed1-08b2" type="max"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="65f2-4dbe-9c54-f3a9" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <profiles>
                 <profile id="8dca-5551-b954-e1b9" name="Befouling runoff" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -47582,10 +47660,36 @@ If you selected a CORE, DAEMONIC or DAEMON unit and that unit is not at its Star
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="65f2-4dbe-9c54-f3a9">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="5686-7cd9-6664-635b" shared="true" includeChildSelections="true" childName="2. Incursion (39-75 Total PL / 751-1500 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="65f2-4dbe-9c54-f3a9">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="09f9-b586-8d63-7635" shared="true" includeChildSelections="true" childName="3. Strike Force (76-150 Total PL / 1501-3000 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="3" field="65f2-4dbe-9c54-f3a9">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="fad2-035f-88a7-60c0" shared="true" includeChildSelections="true" childName="4. Onslaught (151-300 Total PL / 3001-6000 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="4" field="65f2-4dbe-9c54-f3a9">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="e6c7-87a2-73a3-a475" shared="true" includeChildSelections="true" childName="5. Onslaught++ (301+ Total PL / 6001+ Points) "/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </selectionEntry>
             <selectionEntry id="02b2-b866-670f-cce9" name="Unstable sickness" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f0d-8c22-06b0-8f86" type="max"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4c2f-aa15-1a43-84fd" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <profiles>
                 <profile id="56a1-9b5c-3e1c-7e86" name="Unstable sickness" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -47600,10 +47704,36 @@ If you selected a CORE, DAEMONIC or DAEMON unit and that unit is not at its Star
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="4c2f-aa15-1a43-84fd">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="5686-7cd9-6664-635b" shared="true" includeChildSelections="true" childName="2. Incursion (39-75 Total PL / 751-1500 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="4c2f-aa15-1a43-84fd">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="09f9-b586-8d63-7635" shared="true" includeChildSelections="true" childName="3. Strike Force (76-150 Total PL / 1501-3000 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="3" field="4c2f-aa15-1a43-84fd">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="fad2-035f-88a7-60c0" shared="true" includeChildSelections="true" childName="4. Onslaught (151-300 Total PL / 3001-6000 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="4" field="4c2f-aa15-1a43-84fd">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="e6c7-87a2-73a3-a475" shared="true" includeChildSelections="true" childName="5. Onslaught++ (301+ Total PL / 6001+ Points) "/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </selectionEntry>
             <selectionEntry id="d22a-4168-a85c-5235" name="Corrosive filth" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e99-34d0-98b9-330b" type="max"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6dba-51fb-5a73-6bb6" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <profiles>
                 <profile id="5b94-a05d-3545-a5a1" name="Corrosive filth" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -47618,10 +47748,36 @@ If you selected a CORE, DAEMONIC or DAEMON unit and that unit is not at its Star
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="6dba-51fb-5a73-6bb6">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="5686-7cd9-6664-635b" shared="true" includeChildSelections="true" childName="2. Incursion (39-75 Total PL / 751-1500 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="6dba-51fb-5a73-6bb6">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="09f9-b586-8d63-7635" shared="true" includeChildSelections="true" childName="3. Strike Force (76-150 Total PL / 1501-3000 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="3" field="6dba-51fb-5a73-6bb6">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="fad2-035f-88a7-60c0" shared="true" includeChildSelections="true" childName="4. Onslaught (151-300 Total PL / 3001-6000 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="4" field="6dba-51fb-5a73-6bb6">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="e6c7-87a2-73a3-a475" shared="true" includeChildSelections="true" childName="5. Onslaught++ (301+ Total PL / 6001+ Points) "/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </selectionEntry>
             <selectionEntry id="cca7-1024-168f-9cff" name="Viscous death" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a753-dd35-12a8-6206" type="max"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b55f-76e7-b243-49b3" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <profiles>
                 <profile id="9d98-447a-534e-509e" name="Viscous death" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -47636,6 +47792,32 @@ If you selected a CORE, DAEMONIC or DAEMON unit and that unit is not at its Star
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="b55f-76e7-b243-49b3">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="5686-7cd9-6664-635b" shared="true" includeChildSelections="true" childName="2. Incursion (39-75 Total PL / 751-1500 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="b55f-76e7-b243-49b3">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="09f9-b586-8d63-7635" shared="true" includeChildSelections="true" childName="3. Strike Force (76-150 Total PL / 1501-3000 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="3" field="b55f-76e7-b243-49b3">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="fad2-035f-88a7-60c0" shared="true" includeChildSelections="true" childName="4. Onslaught (151-300 Total PL / 3001-6000 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="4" field="b55f-76e7-b243-49b3">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="e6c7-87a2-73a3-a475" shared="true" includeChildSelections="true" childName="5. Onslaught++ (301+ Total PL / 6001+ Points) "/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -48491,7 +48673,7 @@ If you selected a CORE, DAEMONIC or DAEMON unit and that unit is not at its Star
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="928a-5a80-3ef3-783f" type="max"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="be5b-ac61-4f20-3176" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <profiles>
                 <profile id="eee7-cf08-b5a5-befe" name="Rehati" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -48506,6 +48688,32 @@ If you selected a CORE, DAEMONIC or DAEMON unit and that unit is not at its Star
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="be5b-ac61-4f20-3176">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="5686-7cd9-6664-635b" shared="true" includeChildSelections="true" childName="2. Incursion (39-75 Total PL / 751-1500 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="be5b-ac61-4f20-3176">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="09f9-b586-8d63-7635" shared="true" includeChildSelections="true" childName="3. Strike Force (76-150 Total PL / 1501-3000 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="3" field="be5b-ac61-4f20-3176">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="fad2-035f-88a7-60c0" shared="true" includeChildSelections="true" childName="4. Onslaught (151-300 Total PL / 3001-6000 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="4" field="be5b-ac61-4f20-3176">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="e6c7-87a2-73a3-a475" shared="true" includeChildSelections="true" childName="5. Onslaught++ (301+ Total PL / 6001+ Points) "/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </selectionEntry>
             <selectionEntry id="e8b7-320f-3129-e7ea" name="Paradigm of Change" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -48516,7 +48724,7 @@ If you selected a CORE, DAEMONIC or DAEMON unit and that unit is not at its Star
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b323-bfae-a059-de59" type="max"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="feff-b76a-5f3f-6d5b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <profiles>
                 <profile id="24d8-c07c-ff73-be7e" name="Paradigm of Change" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -48531,6 +48739,32 @@ If you selected a CORE, DAEMONIC or DAEMON unit and that unit is not at its Star
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="feff-b76a-5f3f-6d5b">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="5686-7cd9-6664-635b" shared="true" includeChildSelections="true" childName="2. Incursion (39-75 Total PL / 751-1500 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="feff-b76a-5f3f-6d5b">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="09f9-b586-8d63-7635" shared="true" includeChildSelections="true" childName="3. Strike Force (76-150 Total PL / 1501-3000 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="3" field="feff-b76a-5f3f-6d5b">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="fad2-035f-88a7-60c0" shared="true" includeChildSelections="true" childName="4. Onslaught (151-300 Total PL / 3001-6000 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="4" field="feff-b76a-5f3f-6d5b">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="e6c7-87a2-73a3-a475" shared="true" includeChildSelections="true" childName="5. Onslaught++ (301+ Total PL / 6001+ Points) "/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </selectionEntry>
             <selectionEntry id="ee6c-3519-a7e0-98eb" name="Dilettante" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -48541,7 +48775,7 @@ If you selected a CORE, DAEMONIC or DAEMON unit and that unit is not at its Star
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b80-d316-504d-9a9b" type="max"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ffac-821f-eb8a-a957" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <profiles>
                 <profile id="e38e-a3a1-565f-e43b" name="Dilettante" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -48559,6 +48793,32 @@ If you selected a CORE, DAEMONIC or DAEMON unit and that unit is not at its Star
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="ffac-821f-eb8a-a957">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="5686-7cd9-6664-635b" shared="true" includeChildSelections="true" childName="2. Incursion (39-75 Total PL / 751-1500 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="ffac-821f-eb8a-a957">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="09f9-b586-8d63-7635" shared="true" includeChildSelections="true" childName="3. Strike Force (76-150 Total PL / 1501-3000 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="3" field="ffac-821f-eb8a-a957">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="fad2-035f-88a7-60c0" shared="true" includeChildSelections="true" childName="4. Onslaught (151-300 Total PL / 3001-6000 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="4" field="ffac-821f-eb8a-a957">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="e6c7-87a2-73a3-a475" shared="true" includeChildSelections="true" childName="5. Onslaught++ (301+ Total PL / 6001+ Points) "/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </selectionEntry>
             <selectionEntry id="1095-bd1b-cb51-c5c3" name="Loyal Thrall" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -48574,7 +48834,7 @@ If you selected a CORE, DAEMONIC or DAEMON unit and that unit is not at its Star
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c26-5d9a-96c2-38f9" type="max"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7188-57d3-2867-9235" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <profiles>
                 <profile id="dbf5-36ac-6cab-6067" name="Loyal Thrall" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -48589,6 +48849,32 @@ If you selected a CORE, DAEMONIC or DAEMON unit and that unit is not at its Star
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="7188-57d3-2867-9235">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="5686-7cd9-6664-635b" shared="true" includeChildSelections="true" childName="2. Incursion (39-75 Total PL / 751-1500 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="7188-57d3-2867-9235">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="09f9-b586-8d63-7635" shared="true" includeChildSelections="true" childName="3. Strike Force (76-150 Total PL / 1501-3000 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="3" field="7188-57d3-2867-9235">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="fad2-035f-88a7-60c0" shared="true" includeChildSelections="true" childName="4. Onslaught (151-300 Total PL / 3001-6000 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="4" field="7188-57d3-2867-9235">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="e6c7-87a2-73a3-a475" shared="true" includeChildSelections="true" childName="5. Onslaught++ (301+ Total PL / 6001+ Points) "/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </selectionEntry>
             <selectionEntry id="dd40-4c45-eb83-0f2f" name="Witch-warrior" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -48604,7 +48890,7 @@ If you selected a CORE, DAEMONIC or DAEMON unit and that unit is not at its Star
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29a3-8161-656b-19b7" type="max"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6794-f974-9558-0cb9" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <profiles>
                 <profile id="2a3b-5ae2-6856-7092" name="Witch-warrior" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -48619,6 +48905,32 @@ If you selected a CORE, DAEMONIC or DAEMON unit and that unit is not at its Star
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="6794-f974-9558-0cb9">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="5686-7cd9-6664-635b" shared="true" includeChildSelections="true" childName="2. Incursion (39-75 Total PL / 751-1500 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="6794-f974-9558-0cb9">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="09f9-b586-8d63-7635" shared="true" includeChildSelections="true" childName="3. Strike Force (76-150 Total PL / 1501-3000 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="3" field="6794-f974-9558-0cb9">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="fad2-035f-88a7-60c0" shared="true" includeChildSelections="true" childName="4. Onslaught (151-300 Total PL / 3001-6000 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="4" field="6794-f974-9558-0cb9">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="e6c7-87a2-73a3-a475" shared="true" includeChildSelections="true" childName="5. Onslaught++ (301+ Total PL / 6001+ Points) "/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </selectionEntry>
             <selectionEntry id="eaad-6c35-6cf9-bd25" name="Battle-psyker" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -48634,7 +48946,7 @@ If you selected a CORE, DAEMONIC or DAEMON unit and that unit is not at its Star
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1743-9830-a00f-aea7" type="max"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6aa0-90e7-3aea-eb82" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <profiles>
                 <profile id="82e6-115b-0519-ebbb" name="Battle-psyker" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -48649,6 +48961,32 @@ If you selected a CORE, DAEMONIC or DAEMON unit and that unit is not at its Star
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="6aa0-90e7-3aea-eb82">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="5686-7cd9-6664-635b" shared="true" includeChildSelections="true" childName="2. Incursion (39-75 Total PL / 751-1500 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="6aa0-90e7-3aea-eb82">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="09f9-b586-8d63-7635" shared="true" includeChildSelections="true" childName="3. Strike Force (76-150 Total PL / 1501-3000 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="3" field="6aa0-90e7-3aea-eb82">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="fad2-035f-88a7-60c0" shared="true" includeChildSelections="true" childName="4. Onslaught (151-300 Total PL / 3001-6000 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="4" field="6aa0-90e7-3aea-eb82">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="e6c7-87a2-73a3-a475" shared="true" includeChildSelections="true" childName="5. Onslaught++ (301+ Total PL / 6001+ Points) "/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </selectionEntry>
             <selectionEntry id="c143-9f8f-c9eb-6580" name="Ardent Automata" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -48664,7 +49002,7 @@ If you selected a CORE, DAEMONIC or DAEMON unit and that unit is not at its Star
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39b5-f66b-899b-4624" type="max"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="27b8-fb28-312a-dc47" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <profiles>
                 <profile id="5476-f525-9d6e-cf0f" name="Ardent Automata" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -48679,6 +49017,32 @@ If you selected a CORE, DAEMONIC or DAEMON unit and that unit is not at its Star
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="27b8-fb28-312a-dc47">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="5686-7cd9-6664-635b" shared="true" includeChildSelections="true" childName="2. Incursion (39-75 Total PL / 751-1500 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="27b8-fb28-312a-dc47">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="09f9-b586-8d63-7635" shared="true" includeChildSelections="true" childName="3. Strike Force (76-150 Total PL / 1501-3000 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="3" field="27b8-fb28-312a-dc47">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="fad2-035f-88a7-60c0" shared="true" includeChildSelections="true" childName="4. Onslaught (151-300 Total PL / 3001-6000 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="4" field="27b8-fb28-312a-dc47">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="e6c7-87a2-73a3-a475" shared="true" includeChildSelections="true" childName="5. Onslaught++ (301+ Total PL / 6001+ Points) "/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </selectionEntry>
             <selectionEntry id="ba53-ebeb-1267-5dd6" name="Protégé" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -48694,7 +49058,7 @@ If you selected a CORE, DAEMONIC or DAEMON unit and that unit is not at its Star
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90eb-8a33-4716-0e77" type="max"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4f95-4549-15b7-8cb7" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <profiles>
                 <profile id="ff18-92a9-767b-b7fb" name="Protégé" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -48709,6 +49073,32 @@ If you selected a CORE, DAEMONIC or DAEMON unit and that unit is not at its Star
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="4f95-4549-15b7-8cb7">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="5686-7cd9-6664-635b" shared="true" includeChildSelections="true" childName="2. Incursion (39-75 Total PL / 751-1500 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="4f95-4549-15b7-8cb7">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="09f9-b586-8d63-7635" shared="true" includeChildSelections="true" childName="3. Strike Force (76-150 Total PL / 1501-3000 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="3" field="4f95-4549-15b7-8cb7">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="fad2-035f-88a7-60c0" shared="true" includeChildSelections="true" childName="4. Onslaught (151-300 Total PL / 3001-6000 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="4" field="4f95-4549-15b7-8cb7">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="e6c7-87a2-73a3-a475" shared="true" includeChildSelections="true" childName="5. Onslaught++ (301+ Total PL / 6001+ Points) "/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </selectionEntry>
             <selectionEntry id="68ed-012f-6579-7064" name="Rites of Coalescence" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -48724,7 +49114,7 @@ If you selected a CORE, DAEMONIC or DAEMON unit and that unit is not at its Star
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f5c-7d79-cd2d-55ac" type="max"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="fe5d-5c63-0a05-0442" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <profiles>
                 <profile id="e35d-98dd-ab63-dcb0" name="Rites of Coalescence" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -48739,6 +49129,32 @@ If you selected a CORE, DAEMONIC or DAEMON unit and that unit is not at its Star
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="fe5d-5c63-0a05-0442">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="5686-7cd9-6664-635b" shared="true" includeChildSelections="true" childName="2. Incursion (39-75 Total PL / 751-1500 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="fe5d-5c63-0a05-0442">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="09f9-b586-8d63-7635" shared="true" includeChildSelections="true" childName="3. Strike Force (76-150 Total PL / 1501-3000 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="3" field="fe5d-5c63-0a05-0442">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="fad2-035f-88a7-60c0" shared="true" includeChildSelections="true" childName="4. Onslaught (151-300 Total PL / 3001-6000 Points) "/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="4" field="fe5d-5c63-0a05-0442">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="e6c7-87a2-73a3-a475" shared="true" includeChildSelections="true" childName="5. Onslaught++ (301+ Total PL / 6001+ Points) "/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
