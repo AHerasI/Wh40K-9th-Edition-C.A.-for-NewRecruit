@@ -15134,6 +15134,16 @@ Each JUMP PACK or TERMINATOR model takes the space of two other models and each 
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
+                <modifier type="increment" value="1" field="f330-5e6e-4110-0978">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="b3bb-9740-47e7-9f1a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="9c9f-9774-a358-3a39">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="33b3-f2a3-9749-2f10" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="XIV - Death Guard"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <modifierGroups>
                 <modifierGroup>
@@ -15307,6 +15317,16 @@ Each JUMP PACK or TERMINATOR model takes the space of two other models and each 
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
+                <modifier type="increment" value="1" field="f330-5e6e-4110-0978">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="b3bb-9740-47e7-9f1a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="9c9f-9774-a358-3a39">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="33b3-f2a3-9749-2f10" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="XIV - Death Guard"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <modifierGroups>
                 <modifierGroup type="and">
@@ -15330,7 +15350,7 @@ Each JUMP PACK or TERMINATOR model takes the space of two other models and each 
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="41e0-60fb-17d9-c427" childId="d0b9-14c2-fcd3-a2db" shared="true" childName="Terminator armour"/>
+                <condition type="atLeast" value="0" field="selections" scope="41e0-60fb-17d9-c427" childId="d0b9-14c2-fcd3-a2db" shared="true" childName="Terminator armour"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -15485,6 +15505,15 @@ Each JUMP PACK or TERMINATOR model takes the space of two other models and each 
           <entryLinks>
             <entryLink id="852d-c482-5f6c-41c3" name="Unit upgrades" hidden="false" collective="false" import="true" targetId="867f-e3d9-541a-3498" type="selectionEntryGroup"/>
           </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="Teleport homer" hidden="false" id="ecfd-61df-96bb-f2ea" collective="false" targetId="d647-9207-6032-c587" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="0" field="selections" scope="41e0-60fb-17d9-c427" childId="d0b9-14c2-fcd3-a2db" shared="true" childName="Terminator armour"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <costs>
