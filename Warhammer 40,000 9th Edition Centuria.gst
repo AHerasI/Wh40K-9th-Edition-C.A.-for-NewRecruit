@@ -1747,9 +1747,9 @@ If the unit has the INFANTRY Keyword and is in a terrain with the DEFENSIBLE tra
         </rule>
       </rules>
     </categoryEntry>
-    <categoryEntry id="56a9-eae2-7298-9256" name="Plage weapon" hidden="false">
+    <categoryEntry id="56a9-eae2-7298-9256" name="Plague weapon" hidden="false">
       <rules>
-        <rule id="5e6c-3179-5220-b644" name="Plage weapon" hidden="false">
+        <rule id="5e6c-3179-5220-b644" name="Plague weapon" hidden="false">
           <description>Re-roll wound rolls of 1 against units without the VEHICLE, TITANIC or INORGANIC Keywords.</description>
         </rule>
       </rules>
@@ -7697,9 +7697,9 @@ Each Multi-Purpose Reactive Armour packcage can be used once per battle.</descri
     </selectionEntry>
     <selectionEntry id="62f8-165c-f44d-a2dd" name="Conversion beam cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="ede5-5de1-d2ff-fd79" name="Conversion beam cannon, Long range" hidden="false" targetId="c7e3-3ec3-e212-dc62" type="profile"/>
-        <infoLink id="280e-d31a-b677-b409" name="Conversion beam cannon, Medium range" hidden="false" targetId="d3c2-5035-36cc-46bd" type="profile"/>
-        <infoLink id="8974-742c-9da5-cec7" name="Conversion beam cannon, Short range" hidden="false" targetId="ed55-bf50-e69e-298f" type="profile"/>
+        <infoLink id="ede5-5de1-d2ff-fd79" name="C. Beam cannon, Long range" hidden="false" targetId="c7e3-3ec3-e212-dc62" type="profile"/>
+        <infoLink id="280e-d31a-b677-b409" name="C. Beam cannon, Medium range" hidden="false" targetId="d3c2-5035-36cc-46bd" type="profile"/>
+        <infoLink id="8974-742c-9da5-cec7" name="C. Beam cannon, Short range" hidden="false" targetId="ed55-bf50-e69e-298f" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="08d0-9f35-c282-2d09" name="Blast" hidden="false" targetId="a30d-0055-6710-6284" primary="false"/>
@@ -7714,17 +7714,17 @@ Each Multi-Purpose Reactive Armour packcage can be used once per battle.</descri
     </selectionEntry>
     <selectionEntry id="b7c8-5b2d-59ef-6037" name="Twin Conversion beam cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="b832-e34a-b7f1-0f69" name="Conversion beam cannon, Long range" hidden="false" targetId="c7e3-3ec3-e212-dc62" type="profile">
+        <infoLink id="b832-e34a-b7f1-0f69" name="C. Beam cannon, Long range" hidden="false" targetId="c7e3-3ec3-e212-dc62" type="profile">
           <modifiers>
             <modifier type="set" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="4D3"/>
           </modifiers>
         </infoLink>
-        <infoLink id="b07e-4099-6c20-c810" name="Conversion beam cannon, Medium range" hidden="false" targetId="d3c2-5035-36cc-46bd" type="profile">
+        <infoLink id="b07e-4099-6c20-c810" name="C. Beam cannon, Medium range" hidden="false" targetId="d3c2-5035-36cc-46bd" type="profile">
           <modifiers>
             <modifier type="set" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="4D3"/>
           </modifiers>
         </infoLink>
-        <infoLink id="6507-d584-9baf-c630" name="Conversion beam cannon, Short range" hidden="false" targetId="ed55-bf50-e69e-298f" type="profile">
+        <infoLink id="6507-d584-9baf-c630" name="C. Beam cannon, Short range" hidden="false" targetId="ed55-bf50-e69e-298f" type="profile">
           <modifiers>
             <modifier type="set" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="4D3"/>
           </modifiers>
