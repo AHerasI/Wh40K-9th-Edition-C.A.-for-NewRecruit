@@ -1374,8 +1374,11 @@ If those &lt;HIVE FLEET&gt; SYNAPSE units also have other &lt;HIVE FLEET&gt; SYN
     </categoryEntry>
     <categoryEntry id="e0a1-e75a-bb09-b142" name="Beam" hidden="false">
       <rules>
-        <rule id="52d1-bafc-6b7f-9c59" name="Beam weapon" hidden="false">
+        <rule id="52d1-bafc-6b7f-9c59" name="Beam" hidden="false">
           <description>Each time an attack is made with this weapon, if a hit is scored, draw a straight line between the closest point of this model’s base (or hull) and that of the closest model in the target unit. Make one wound roll against the target unit, and each other unit this line passes over.</description>
+          <modifiers>
+            <modifier type="set" value="Beam weapon" field="name"/>
+          </modifiers>
         </rule>
       </rules>
     </categoryEntry>
