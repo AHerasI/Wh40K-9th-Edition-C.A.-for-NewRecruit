@@ -36,9 +36,14 @@ Additional reference data obtained from Wahapedia, https://wahapedia.ru/</readme
       </infoLinks>
     </categoryEntry>
     <categoryEntry id="05b0-1ce8-5fba-fd01" name="Craftworld: Biel-tan" hidden="false">
-      <infoLinks>
-        <infoLink id="a34a-fae5-245f-cca2" name="Swordwind" hidden="false" targetId="b43c-6cab-9a0c-0022" type="profile"/>
-      </infoLinks>
+      <profiles>
+        <profile name="Swordwind" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="dedc-8334-8dcb-98c8">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a unit with this attribute Advances or makes a Battle Focus move, roll 2D3 instead a D6.
+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </categoryEntry>
     <categoryEntry id="927a-0b95-1bc0-d72f" name="Craftworld: Far-flung Craftworld" hidden="false">
       <profiles>
@@ -54,8 +59,7 @@ Additional reference data obtained from Wahapedia, https://wahapedia.ru/</readme
             <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time an Advance roll is made for a unit with this attribute, treat a dice roll of 1-2 as 3 instead.</characteristic>
           </characteristics>
         </profile>
-        <profile id="f9c3-c082-7446-f384" name=" " hidden="true" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <comment>Students of Vaul</comment>
+        <profile id="f9c3-c082-7446-f384" name="Students of Vaul" hidden="true" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
@@ -79,8 +83,7 @@ Additional reference data obtained from Wahapedia, https://wahapedia.ru/</readme
             <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time an attack with Strength characteristic of 7 or less is allocated to a VEHICLE model with this attribute, add 1 to any armour saving throws made against that attack.</characteristic>
           </characteristics>
         </profile>
-        <profile id="d92f-5cdc-335e-72c5" name=" " hidden="true" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <comment>WRATH OF THE DEAD</comment>
+        <profile id="d92f-5cdc-335e-72c5" name="Wrath of the dead" hidden="true" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
@@ -235,15 +238,6 @@ Additional reference data obtained from Wahapedia, https://wahapedia.ru/</readme
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c350-12e8-8123-cb35" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
-        <infoLink id="6bfc-ef5d-73c6-40bb" name="Elite citizenry" hidden="false" targetId="56a9-0825-ed15-b607" type="profile">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a047-936d-df4a-7d58" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
