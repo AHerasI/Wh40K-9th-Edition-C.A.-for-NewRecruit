@@ -39,8 +39,7 @@ Additional reference data obtained from Wahapedia, https://wahapedia.ru/</readme
       <profiles>
         <profile name="Swordwind" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="dedc-8334-8dcb-98c8">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a unit with this attribute Advances or makes a Battle Focus move, roll 2D3 instead a D6.
-</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a unit with this attribute Advances or makes a Battle Focus move, roll 2D3 instead a D6.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -723,6 +722,14 @@ Additional reference data obtained from Wahapedia, https://wahapedia.ru/</readme
     </categoryEntry>
     <categoryEntry id="7ea4-c13c-383c-315e" name="Blades for hire" hidden="false"/>
     <categoryEntry id="0678-6ad5-d4f7-1a97" name="Aspect Warrior" hidden="false"/>
+    <categoryEntry name="Phoenix Lord" id="84b6-d4e4-52a4-3ea5" hidden="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b640-03d4-6e75-bd70" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Phoenix Lord" id="0a9f-eb21-ce4f-dbaa" hidden="false" targetId="de43-d1a3-6d0b-95fd" type="profile"/>
+      </infoLinks>
+    </categoryEntry>
   </categoryEntries>
   <entryLinks>
     <entryLink id="79af-2293-71dd-aa90" name=" Aeldari" hidden="false" collective="false" import="true" targetId="19d6-8c37-59e1-12e6" type="selectionEntry">
@@ -4880,6 +4887,9 @@ Each Luck re-roll can be used to re-roll one hit roll, wound roll, damage roll, 
                 <cost name="Pts" typeId="points" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Battlefield tactics" id="2f88-f481-823f-dc70" hidden="false" type="profile" targetId="4a49-7e1f-fe62-0367"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry id="ff37-342e-3986-e207" name="Autarch w/Wings" hidden="false" collective="false" import="true" type="model">
               <modifierGroups>
@@ -8991,6 +9001,7 @@ When the bearer’s unit makes a Battle Focus move, you can roll 2D6 instead of 
       <infoLinks>
         <infoLink id="7f83-347a-ed38-41c6" name="Aspect Armour" hidden="false" targetId="d818-39a7-5521-efd3" type="profile"/>
         <infoLink id="1e6f-6018-a964-fff7" name="Concealed Positions" hidden="false" targetId="a6dc-059d-a47a-a49c" type="profile"/>
+        <infoLink name="Battlefield tactics" id="3f13-a267-4223-724f" hidden="false" type="profile" targetId="4a49-7e1f-fe62-0367"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="0020-7f0d-fdd6-6f4a" name="Faction: Asuryani" hidden="false" targetId="1114-7875-d463-df17" primary="false"/>
@@ -9546,6 +9557,7 @@ When the bearer’s unit makes a Battle Focus move, you can roll 2D6 instead of 
       <infoLinks>
         <infoLink id="eee6-58ba-43de-1aba" name="Aspect Armour" hidden="false" targetId="d818-39a7-5521-efd3" type="profile"/>
         <infoLink id="f98d-bf0d-e17b-835a" name="Howling Banshee mask" hidden="false" targetId="153a-6906-7262-1ef3" type="profile"/>
+        <infoLink name="Battlefield tactics" id="3bc6-3cbd-fee9-bfbc" hidden="false" type="profile" targetId="4a49-7e1f-fe62-0367"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="3122-009d-4f59-acb1" name="Faction: Asuryani" hidden="false" targetId="1114-7875-d463-df17" primary="false"/>
@@ -28789,7 +28801,6 @@ If the unit cannot be set-up, it&apos;s placed in the Strategic Reserves of your
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="6bfc-90b8-568f-f44e" name="Phoenix Lord" hidden="false" targetId="de43-d1a3-6d0b-95fd" type="profile"/>
             <infoLink id="0ba3-b55e-c494-531c" name="Skyleap" hidden="false" targetId="42e5-7315-d586-be3a" type="profile"/>
           </infoLinks>
           <categoryLinks>
@@ -28800,6 +28811,7 @@ If the unit cannot be set-up, it&apos;s placed in the Strategic Reserves of your
             <categoryLink id="5af3-b9e8-229a-a12c" name="Fly" hidden="false" targetId="3117-16d8-fcef-4f56" primary="false"/>
             <categoryLink id="251d-43ce-8466-644e" name="Jump Pack" hidden="false" targetId="f627-f23e-a3b4-dc2c" primary="false"/>
             <categoryLink targetId="2ec1-217a-555a-b171" id="d498-1d8e-e928-b092" primary="false" name="Ø40mm"/>
+            <categoryLink name="Phoenix Lord" hidden="false" id="27de-aa47-de08-1572" targetId="84b6-d4e4-52a4-3ea5" primary="false"/>
           </categoryLinks>
           <selectionEntries>
             <selectionEntry id="11f7-a8e8-bb6b-6615" name="Fury of the Tempest" hidden="false" collective="false" import="true" type="upgrade">
@@ -29092,7 +29104,6 @@ If the unit cannot be set-up, it&apos;s placed in the Strategic Reserves of your
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="19b8-c68d-86f3-e9fb" name="Phoenix Lord" hidden="false" targetId="de43-d1a3-6d0b-95fd" type="profile"/>
             <infoLink id="087e-a2e3-3567-718d" name="Assured Destruction" hidden="false" targetId="66ab-f5b0-875a-1f11" type="profile"/>
           </infoLinks>
           <categoryLinks>
@@ -29101,6 +29112,7 @@ If the unit cannot be set-up, it&apos;s placed in the Strategic Reserves of your
             <categoryLink id="7f47-5121-127f-6d93" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
             <categoryLink id="7ff5-9a2a-a4f9-4b9a" name="Faction: Asuryani" hidden="false" targetId="1114-7875-d463-df17" primary="false"/>
             <categoryLink targetId="2ec1-217a-555a-b171" id="fa3c-10fd-a403-a090" primary="false" name="Ø40mm"/>
+            <categoryLink name="Phoenix Lord" hidden="false" id="dfab-5aaf-fe01-34c6" targetId="84b6-d4e4-52a4-3ea5" primary="false"/>
           </categoryLinks>
           <selectionEntries>
             <selectionEntry id="5c8f-9a8f-b6d5-a2c0" name="Searsong" hidden="false" collective="false" import="true" type="upgrade">
@@ -29217,8 +29229,8 @@ If the unit cannot be set-up, it&apos;s placed in the Strategic Reserves of your
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="2d5c-8f9a-241c-562b" name="Phoenix Lord" hidden="false" targetId="de43-d1a3-6d0b-95fd" type="profile"/>
             <infoLink id="e342-7152-487b-4717" name="Acrobatic" hidden="false" targetId="d253-1dac-2535-75fa" type="profile"/>
+            <infoLink name="Battlefield tactics" id="d535-5823-0060-d992" hidden="false" type="profile" targetId="4a49-7e1f-fe62-0367"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="2215-26b7-c774-bb25" name="Faction: Aeldari" hidden="false" targetId="1924-ef18-000b-d2ba" primary="false"/>
@@ -29226,6 +29238,7 @@ If the unit cannot be set-up, it&apos;s placed in the Strategic Reserves of your
             <categoryLink id="22a1-e3e7-dcdc-9cfa" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
             <categoryLink id="ef8f-ec2a-d568-8ac0" name="Faction: Asuryani" hidden="false" targetId="1114-7875-d463-df17" primary="false"/>
             <categoryLink targetId="2ec1-217a-555a-b171" id="d470-5d48-41e7-1bbc" primary="false" name="Ø40mm"/>
+            <categoryLink name="Phoenix Lord" hidden="false" id="6fdb-b9a3-a6cb-e5b8" targetId="84b6-d4e4-52a4-3ea5" primary="false"/>
           </categoryLinks>
           <selectionEntries>
             <selectionEntry id="a218-958f-9df6-397e" name="The Silent Death" hidden="false" collective="false" import="true" type="upgrade">
@@ -29344,7 +29357,7 @@ If the unit cannot be set-up, it&apos;s placed in the Strategic Reserves of your
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="ce8e-1430-9a0e-cbfc" name="Phoenix Lord" hidden="false" targetId="de43-d1a3-6d0b-95fd" type="profile"/>
+            <infoLink name="Battlefield tactics" id="5ad5-ff09-e0e1-9914" hidden="false" type="profile" targetId="4a49-7e1f-fe62-0367"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="9488-183f-f0bf-c1c6" name="Faction: Aeldari" hidden="false" targetId="1924-ef18-000b-d2ba" primary="false"/>
@@ -29352,6 +29365,7 @@ If the unit cannot be set-up, it&apos;s placed in the Strategic Reserves of your
             <categoryLink id="6af4-6c6d-d5c1-e4e2" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
             <categoryLink id="1ea3-5854-0369-ff8e" name="Faction: Asuryani" hidden="false" targetId="1114-7875-d463-df17" primary="false"/>
             <categoryLink targetId="2ec1-217a-555a-b171" id="7884-e89b-7780-9ad2" primary="false" name="Ø40mm"/>
+            <categoryLink name="Phoenix Lord" hidden="false" id="f274-9e03-7d6b-92cd" targetId="84b6-d4e4-52a4-3ea5" primary="false"/>
           </categoryLinks>
           <selectionEntries>
             <selectionEntry id="a010-376c-8858-dd4b" name="Isirmathil" hidden="false" collective="false" import="true" type="upgrade">
@@ -29466,7 +29480,6 @@ If the unit cannot be set-up, it&apos;s placed in the Strategic Reserves of your
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="fd13-7218-2844-2aea" name="Phoenix Lord" hidden="false" targetId="de43-d1a3-6d0b-95fd" type="profile"/>
             <infoLink id="af72-b32c-cb90-8dbd" name="Inescapable Accuracy" hidden="false" targetId="35e4-c32d-7828-8319" type="profile"/>
           </infoLinks>
           <categoryLinks>
@@ -29475,6 +29488,7 @@ If the unit cannot be set-up, it&apos;s placed in the Strategic Reserves of your
             <categoryLink id="3c45-67c9-95f4-2d81" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
             <categoryLink id="d79c-6dc1-8f2e-d0b1" name="Faction: Asuryani" hidden="false" targetId="1114-7875-d463-df17" primary="false"/>
             <categoryLink targetId="2ec1-217a-555a-b171" id="8c1f-0d05-0bb9-70dd" primary="false" name="Ø40mm"/>
+            <categoryLink name="Phoenix Lord" hidden="false" id="5ccf-e7a1-8f8d-aff1" targetId="84b6-d4e4-52a4-3ea5" primary="false"/>
           </categoryLinks>
           <selectionEntries>
             <selectionEntry id="9b03-c15a-83e4-3b46" name="The Maugetar" hidden="false" collective="false" import="true" type="upgrade">
@@ -29564,7 +29578,6 @@ If the unit cannot be set-up, it&apos;s placed in the Strategic Reserves of your
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="4831-5993-c38f-eca6" name="Phoenix Lord" hidden="false" targetId="de43-d1a3-6d0b-95fd" type="profile"/>
             <infoLink id="f4cb-1c62-d74b-fc51" name="Shadow of Death [Aura]" hidden="false" targetId="56e2-8058-e567-1135" type="profile"/>
           </infoLinks>
           <categoryLinks>
@@ -29575,6 +29588,7 @@ If the unit cannot be set-up, it&apos;s placed in the Strategic Reserves of your
             <categoryLink id="15bc-ae65-78f6-be6a" name="Fly" hidden="false" targetId="3117-16d8-fcef-4f56" primary="false"/>
             <categoryLink id="fa53-188b-697c-5774" name="Jump Pack" hidden="false" targetId="f627-f23e-a3b4-dc2c" primary="false"/>
             <categoryLink targetId="a9eb-ffb1-e9f2-2b60" id="411a-6b27-8828-4fb5" primary="false" name="Ø25mm"/>
+            <categoryLink name="Phoenix Lord" hidden="false" id="6bb3-23bb-51a9-2a77" targetId="84b6-d4e4-52a4-3ea5" primary="false"/>
           </categoryLinks>
           <selectionEntries>
             <selectionEntry id="3681-769f-d5b5-16ec" name="Spear of Starlight" hidden="false" collective="false" import="true" type="upgrade">
@@ -30768,7 +30782,6 @@ If the unit cannot be set-up, it&apos;s placed in the Strategic Reserves of your
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Phoenix Lord" id="d50b-726b-dc08-b66c" hidden="false" targetId="de43-d1a3-6d0b-95fd" type="profile"/>
             <infoLink name="Flickerjump" id="3189-e0cd-e664-bbbd" hidden="false" targetId="f629-4d87-bc75-c657" type="profile"/>
             <infoLink name="Warp Spider jump generator" id="f400-95d4-24fb-5eda" hidden="false" type="profile" targetId="d570-6e39-906a-db71"/>
           </infoLinks>
@@ -30778,6 +30791,7 @@ If the unit cannot be set-up, it&apos;s placed in the Strategic Reserves of your
             <categoryLink name="Infantry" hidden="false" id="c5fe-f845-b529-fdb6" targetId="3d52-fccf-10c0-3fae" primary="false"/>
             <categoryLink name="Faction: Asuryani" hidden="false" id="1a29-0c13-5e7d-5866" targetId="1114-7875-d463-df17" primary="false"/>
             <categoryLink name="Ø40mm" hidden="false" id="ef4e-8de4-af13-185d" targetId="2ec1-217a-555a-b171" primary="false"/>
+            <categoryLink name="Phoenix Lord" hidden="false" id="b7c3-f9ba-517a-84d9" targetId="84b6-d4e4-52a4-3ea5" primary="false"/>
           </categoryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Brood Twain" hidden="false" id="6639-62e8-d2c1-a256" collective="false">
@@ -36148,6 +36162,11 @@ Each time an enemy unit without FLY, VEHICLE or TITANIC Keywords moves within th
           </conditions>
         </modifier>
       </modifiers>
+    </profile>
+    <profile name="Battlefield tactics" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="4a49-7e1f-fe62-0367">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">When this unit consolidates, it&apos;s models do not have to end this move closer to the nearest enemy model.</characteristic>
+      </characteristics>
     </profile>
   </sharedProfiles>
 </catalogue>
