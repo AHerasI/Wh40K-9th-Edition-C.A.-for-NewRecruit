@@ -2957,7 +2957,8 @@ Units that disembark can, so long as the TRANSPORT model itself has made a Norma
     </rule>
     <rule id="64a0-0075-f8a9-7ff1" name="Core rule modification: Fight phase" hidden="false">
       <description>Instead units that made a charge move during a turn fight before all other units, that units gain the ability to Fight first during that turn.
-Starting with the player whose turn is not taking place, the players must alternate selecting an eligible unit from their army and fighting with it, being first units with the ability to Fight first, then the units that both don&apos;t fight first and don&apos;t fight last, and then the units wich have to fight last.</description>
+Starting with the player whose turn is not taking place, the players must alternate selecting an eligible unit from their army and fighting with it, being first units with the ability to Fight first, then the units that both don&apos;t fight first and don&apos;t fight last, and then the units wich have to Fight last.
+Instead units being eligible to fight if they are in engagement range or if they charged in the previous Charge phase, if a unit begins the Fight phase in engagement range of an enemy unit, that unit can pile-in, fight, and if it fights, consolidate.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
@@ -13567,7 +13568,7 @@ HAEMONCULUS</description>
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="3235-50c3-3bd4-2c97" name="Plage weapon" hidden="false" targetId="56a9-eae2-7298-9256" primary="false"/>
+        <categoryLink id="3235-50c3-3bd4-2c97" name="Plague weapon" hidden="false" targetId="56a9-eae2-7298-9256" primary="false"/>
         <categoryLink id="fcfa-46bf-cf92-c6b2" name="Torrent" hidden="false" targetId="795f-a8d3-dc18-cb2e" primary="false"/>
       </categoryLinks>
       <costs>
