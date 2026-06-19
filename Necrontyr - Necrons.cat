@@ -233,9 +233,13 @@
       </profiles>
     </categoryEntry>
     <categoryEntry id="0f0d-0754-1f81-403e" name="Dynasty: Mephrit" hidden="false">
-      <infoLinks>
-        <infoLink id="44ff-f847-2e6c-1ea8" name="Solar Fury" hidden="false" targetId="924e-46dd-0638-69e7" type="profile"/>
-      </infoLinks>
+      <profiles>
+        <profile name="Solar Fury" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="924e-46dd-0638-69e7">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a model with this code makes a ranged attack that targets a unit within half range, the Armour Penetration characteristic of that attack is improved by 1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </categoryEntry>
     <categoryEntry id="3ce2-9eb6-e429-3102" name="Dynasty: Nephrekh" hidden="false">
       <infoLinks>
@@ -1082,9 +1086,10 @@ The designated Protocol of a Named Dynasty always have both of it&apos;s Directi
                 <constraint field="selections" scope="parent" value="-1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1325-af76-f830-822f" type="max"/>
               </constraints>
               <profiles>
-                <profile id="924e-46dd-0638-69e7" name="Solar Fury" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+                <profile name="Solar Fury" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="5923-bd6f-e409-988e">
                   <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a model with this code makes a ranged attack that targets a unit within half range, the Armour Penetration characteristic of that attack is improved by 1.</characteristic>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Add 6&quot; to the Range characteristic of ranged weapons of model with this code.
+- Each time a model with this code makes a ranged attack that targets a unit within half range, the Armour Penetration characteristic of that attack is improved by 1.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1563,7 +1568,7 @@ The designated Protocol of a Named Dynasty always have both of it&apos;s Directi
               <profiles>
                 <profile id="e786-8e82-c138-1345" name="Relentless Advance" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Each time you make Reanimation Protocol rolls for this unit, you can re-roll one of the dice.
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Each time you make Reanimation Protocol rolls for this unit, you can re-roll any number of the dice.
 - Instead of following the normal rules for Rapid Fire weapons, models with this code shooting Rapid Fire weapons make double the number of attacks either the shooting model&apos;s target is within 18&quot; or the attacking unit has Remained Stationary in the previous Movement phase.</characteristic>
                   </characteristics>
                 </profile>
@@ -14239,7 +14244,7 @@ If the battle ends and this unit is not on the battlefield it is considered to b
               <profiles>
                 <profile id="21fa-9e60-b6b1-d501" name="Extermination Command" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">In your Command phase, you can select one friendly &lt;DYNASTY&gt; DESTROYER CULT unit within 9&quot; of this WARLORD. Until the start of your next Command phase,that unit is considered to be Remain stationary, evein if their unit has made an Advance move or Fell back.</characteristic>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">In your Command phase, you can select one friendly DYNASTY DESTROYER CULT unit within 9&quot; of this WARLORD. Until the start of your next Command phase,that unit is considered to be Remain stationary, evein if their unit has made an Advance move or Fell back.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -14258,7 +14263,7 @@ If the battle ends and this unit is not on the battlefield it is considered to b
               <profiles>
                 <profile id="5767-a79f-54ee-6922" name="Destroyer Hatred" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time this WARLORD makes a ranged attack, you can ignore any or all hit roll, Weapon Skill and Ballistic Skill modifiers.</characteristic>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time this WARLORD makes an attack, you can ignore any or all hit roll, Weapon Skill and Ballistic Skill modifiers.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -14294,7 +14299,7 @@ If the battle ends and this unit is not on the battlefield it is considered to b
               <profiles>
                 <profile id="7644-213c-12a1-ff56" name="Implacable Conqueror [Aura]" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly &lt;DYNASTY&gt; CORE or &lt;DYNASTY&gt; CHARACTER unit is within 6&quot; of this WARLORD, you can re-roll charge rolls made for that unit.</characteristic>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly DYNASTY CORE or DYNASTY CHARACTER unit is within 6&quot; of this WARLORD, you can re-roll charge rolls made for that unit.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -14337,7 +14342,7 @@ If it does, select one enemy CHARACTER unit within Engagement Range; until the e
               <profiles>
                 <profile id="fcfd-1eb8-39f7-d94f" name="Ageless Tactics" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly &lt;DYNASTY&gt; CORE or &lt;DYNASTY&gt; CHARACTER unit is within 6&quot; of this WARLORD, that unit is eligible to shoot and declare a Charge with in a turn in which they Fell Back.</characteristic>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly DYNASTY CORE or DYNASTY CHARACTER unit is within 6&quot; of this WARLORD, that unit is eligible to shoot and declare a Charge with in a turn in which they Fell Back.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
