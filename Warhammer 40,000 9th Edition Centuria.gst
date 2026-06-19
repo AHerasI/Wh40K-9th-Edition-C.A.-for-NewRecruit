@@ -391,7 +391,7 @@ If the unit has the INFANTRY Keyword and is in a DEFENSIBLE terrain feature, it 
         </rule>
       </rules>
     </categoryEntry>
-    <categoryEntry id="c845-c72c-6afe-3fc2" name="Stratagems" hidden="false"/>
+    <categoryEntry id="c845-c72c-6afe-3fc2" name="Crusade Management" hidden="false"/>
     <categoryEntry id="fcff-0f21-93e6-1ddc" name="Configuration" hidden="false"/>
     <categoryEntry id="f475-3e56-fd5f-4737" name="Faction: Adeptus Sororitas" hidden="false">
       <profiles>
@@ -2871,7 +2871,7 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="6e0c-10da-7286-a6aa" name="No Force Org Slot" hidden="false" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" primary="true"/>
+        <categoryLink name="Crusade Management" hidden="false" id="5798-f2ca-2bad-5665" targetId="c845-c72c-6afe-3fc2" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="19bf-bce0-2206-e247" name=" Crusade Management" hidden="false" collective="false" import="true" targetId="6030-15c5-bda1-858c" type="selectionEntry">
@@ -2887,7 +2887,7 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="9658-f644-827f-b756" name="Configuration" hidden="false" targetId="fcff-0f21-93e6-1ddc" primary="true"/>
+        <categoryLink name="Crusade Management" hidden="false" id="335e-628f-cfff-f446" targetId="c845-c72c-6afe-3fc2" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
