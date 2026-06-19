@@ -12106,7 +12106,7 @@ The new DREADNOUGHT starts with the same number of experience points as the CHAR
                   <profiles>
                     <profile id="f9bf-3156-c720-c5dd" name="Chapter Command" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                       <characteristics>
-                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Purchase this Requisition when a CAPTAIN, LIBRARIAN, CHAPLAIN, APOTHECARY, ANCIENT, COMPANY CHAMPION or TECHMARINE from your Army gains the Expert, Heroic or Legendary rank. 
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Purchase this Requisition either before or after a battle, when a CAPTAIN, LIBRARIAN, CHAPLAIN, APOTHECARY, ANCIENT, COMPANY CHAMPION or TECHMARINE from your Army has the Expert, Heroic or Legendary rank.
 That model is upgraded to the Chapter Command; increase its PL accordingly.
 You cannot purchase this Requisition if doing so would cause your total PL to exceed your Army&apos;s Supply Limit.</characteristic>
                       </characteristics>
@@ -12183,7 +12183,7 @@ If a Battle Honour cannot be applied (e.g. a Weapon Enhancement for a weapon tha
                   <profiles>
                     <profile id="1a67-51ba-3704-0f79" name="Captain-Commander" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                       <characteristics>
-                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Purchase this Requisition when a SHIELD CAPTAIN from your Army gains the Expert, Heroic or Legendary rank. 
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Purchase this Requisition either before or after a battle, when a SHIELD CAPTAIN from your Army has the Expert, Heroic or Legendary rank.
 That model is upgraded to a Captain-Commander; increase its PL accordingly.
 You cannot purchase this Requisition if doing so would cause your total PL to exceed your Army&apos;s Supply Limit.</characteristic>
                       </characteristics>
