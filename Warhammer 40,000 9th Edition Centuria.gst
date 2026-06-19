@@ -1517,8 +1517,8 @@ Add 1 to the Charge rolls of this unit if the target of that charge has CHAOS or
         <profile id="945f-32e2-4ad4-420c" name="Living Metal" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the start of your Command phase, each unit regains up to 1D3 lost wounds.
-- For each Wound regained, restore one Wound of one Model within the unit that have less Wounds remaining that it&apos;s Wounds Characteristic.
-- If all the models within the unit have all it&apos;s Wounds, but the unit it&apos;s not at it&apos;s Starting Strength, one destroyed model is returned with one Wound remaining. Up to one model per unit can be restored by this Ability per phase.</characteristic>
+For each Wound that can be regained, restore one Wound of one Model within the unit that have less Wounds remaining that it&apos;s Wounds Characteristic.
+If all the models within the unit have all it&apos;s Wounds, but the unit it&apos;s not at it&apos;s Starting Strength, one destroyed model is returned with one Wound remaining.</characteristic>
           </characteristics>
         </profile>
         <profile id="ff2f-1948-6fdd-78f9" name="Mechanical endurance" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
