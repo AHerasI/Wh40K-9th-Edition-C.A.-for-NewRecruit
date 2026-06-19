@@ -2858,7 +2858,7 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
         <categoryLink id="a7d5-9a78-2254-2a59" name="Configuration" hidden="false" targetId="fcff-0f21-93e6-1ddc" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="ef25-a10d-2450-fa80" name=" Battle Honours" hidden="false" collective="false" import="true" targetId="4763-757f-499f-d998" type="selectionEntry">
+    <entryLink id="ef25-a10d-2450-fa80" name="Battle Honours" hidden="false" collective="false" import="true" targetId="4763-757f-499f-d998" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
