@@ -979,8 +979,16 @@ The designated Protocol of a Named Dynasty always have both of it&apos;s Directi
               <entryLinks>
                 <entryLink id="9a25-5350-5fb9-1b86" name="Protocol List" hidden="false" collective="false" import="true" targetId="c3f7-d21d-8dfa-1395" type="selectionEntryGroup">
                   <modifiers>
-                    <modifier type="set" field="3661-f4d1-b8f9-7e3c" value="2"/>
-                    <modifier type="set" field="543f-3a20-d4a0-1295" value="2"/>
+                    <modifier type="set" field="3661-f4d1-b8f9-7e3c" value="2">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="b269-e7e8-f08e-7cbe" childId="9636-aaa3-cc3c-0f0b" shared="true" childName="0 - List of Protocols" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="543f-3a20-d4a0-1295" value="2">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="b269-e7e8-f08e-7cbe" childId="9636-aaa3-cc3c-0f0b" shared="true" childName="0 - List of Protocols" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                 </entryLink>
               </entryLinks>
