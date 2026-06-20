@@ -367,15 +367,6 @@ Additional reference data obtained from Wahapedia, https://wahapedia.ru/</readme
             </modifier>
           </modifiers>
         </infoLink>
-        <infoLink id="6e20-5f15-41ff-e7b1" name="Turbo-Jets" hidden="false" targetId="b061-8be6-576a-2905" type="profile">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="148f-59dc-129a-4bb3" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
       </infoLinks>
     </categoryEntry>
     <categoryEntry id="bf09-6007-1a8f-792b" name="Dal&apos;yth Sept" hidden="false">
@@ -618,7 +609,7 @@ In addition, add 1 to the Attacks characteristic of AUXILIARY models of a FARSIG
             </modifier>
           </modifiers>
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a AUXILIARY unit of a T&apos;AU Sept Detachment or a CUSTOM Sept Detachment makes an attack against a unit within 12&quot;, re-roll hit rolls of 1.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a AUXILIARY unit of a T&apos;AU Sept Detachment or a CUSTOM Sept Detachment makes an attack against a unit within 12&quot;, you can re-roll hit rolls of 1.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1704,7 +1695,7 @@ The table below describes the benefits T&apos;AU EMPIRE models have when shootin
               <profiles>
                 <profile id="6516-8b16-f0fb-ab2d" name="Trading Partners" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Each time a ranged attack is made against an INFANTRY unit with this tenet, if the attacker is not within 18&quot; of that unit, models in that unit receive the benefits of Light Cover against that attack.</characteristic>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Each time an attack is made against an INFANTRY unit with this tenet, models in that unit receive the benefits of Light Cover and Heavy Cover against that attack.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1769,7 +1760,7 @@ The table below describes the benefits T&apos;AU EMPIRE models have when shootin
               <profiles>
                 <profile id="ac6e-9160-336c-4f12" name="Focused in the T&apos;au&apos;va" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Each time a melee attack with an Armour Penetration characteristic of -1 or -2 is allocated to a model with this tenet, if that model was charged this turn, that attack has an Armour Penetration characteristic of 0 instead.
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Each time a melee attack is allocated to a model with this tenet, if that model was charged this turn, substract 2 from that attack Armour Penetration characteristic. (AP -2 --&gt; AP 0)
 - T&apos;AU EMPIRE INFANTRY models with this tenet can move and shoot Heavy Weapons without penalty to the hit roll.
 - T&apos;AU EMPIRE models with this tenet add 2 to their Leadership characteristic.</characteristic>
                   </characteristics>
@@ -1806,8 +1797,8 @@ The table below describes the benefits T&apos;AU EMPIRE models have when shootin
               <profiles>
                 <profile id="ce7c-0e83-333f-cac2" name="Masters of Urban Warfare" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Each time a ranged attack targets a VEHICLE or MONSTER unit with this tenet, if the attacker is more than 12&quot; away, then the target is treated as having the benefits of Light and Dense Cover against that attack.
-- Each time a ranged attack targets an INFANTRY or BEAST unit with this tenet, if the attacker is more than 9&quot; away, then the target is treated as having the benefits of Light and Dense Cover against that attack.
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Each time a ranged attack targets a unit with this tenet, if the attacker is more than 9&quot; away, then the target is treated as having the benefits of Light and Dense Cover against that attack.
+- Each time an INFANTRY or BEAST unit with this tenet is selected as target of a Charge move, if that unit is benefitting of Cover, is considered to be in a Defensible terrain.
 - VEHICLE and BATTLESUIT models with this tenet do not suffer the penalty incurred to their hit rolls for firing Heavy weapons at enemy units that are within Engagement Range of them.</characteristic>
                   </characteristics>
                 </profile>
@@ -1837,7 +1828,7 @@ The table below describes the benefits T&apos;AU EMPIRE models have when shootin
                 <profile id="04f5-763a-d399-d7f7" name="Coordinated Fire Arcs" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <comment>04f5-763a-d399-d7f7</comment>
                   <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Each time a unit with this tenet is selected to shoot or fight, you can re-roll one hit roll or one wound roll when resolving that unit&apos;s attacks.
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Each time a unit with this tenet is selected to shoot or fight, you can re-roll one hit roll and one wound roll when resolving that unit&apos;s attacks.
 - Add 3&quot; to the range of aura abilities of models with this tenet.
 - Each time a model with this tenet uses an ability that specifies a range, add 3&quot; to the range of that ability (to a maximum of 12&quot;).</characteristic>
                   </characteristics>
@@ -1986,7 +1977,7 @@ The table below describes the benefits T&apos;AU EMPIRE models have when shootin
                         <profile id="0220-8836-c66d-953a" name="Calm Under Pressure" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                           <characteristics>
                             <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- T&apos;AU EMPIRE INFANTRY models with this tenet can move and shoot Heavy Weapons without penalty to the hit roll.
-- T&apos;AU EMPIRE models with this tenet add 2 to their Leadership characteristic.</characteristic>
+- T&apos;AU EMPIRE models with this tenet add 1 to their Armour saving throws against Melee attacks.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -2278,7 +2269,7 @@ The table below describes the benefits T&apos;AU EMPIRE models have when shootin
                       <profiles>
                         <profile id="b061-8be6-576a-2905" name="Turbo-Jets" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                           <characteristics>
-                            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Add 2&quot; to the Move characteristic of models with this tenet that can FLY.</characteristic>
+                            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Add 3&quot; to the Move characteristic of models with this tenet that can FLY.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -2297,7 +2288,7 @@ The table below describes the benefits T&apos;AU EMPIRE models have when shootin
                         <profile id="582b-47a7-4326-d44c" name="Loyal to the End" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                           <characteristics>
                             <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Add 1 to the Leadership characteristic of models with this tenet.
-- Each time a Morale test is taken for a unit with this tenet, you can re-roll that turn.</characteristic>
+- Each time a Morale test is taken for a unit with this tenet, you can re-roll that test.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -2333,7 +2324,7 @@ The table below describes the benefits T&apos;AU EMPIRE models have when shootin
                       <profiles>
                         <profile id="05e2-1db0-9cda-4ad8" name="Enriched Reactors" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                           <characteristics>
-                            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a model with this tenet makes a ranged attack with a plasma weapon, an unmodified wound roll of 6 inflicts 1 mortal wound on the target and the attack sequence ends.</characteristic>
+                            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a model with this tenet makes a ranged attack with a plasma weapon, an unmodified wound roll of 6 inflicts the weapon&apos;s Damage characteristic as mortal wounds on the target and the attack sequence ends.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -2433,7 +2424,7 @@ The table below describes the benefits T&apos;AU EMPIRE models have when shootin
           <selectionEntries>
             <selectionEntry id="0807-903b-105a-40e5" name="MV11 Heavy Gun Drone w/ 2x BC" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="953c-2b06-454c-8470" name="MV11 Heavy Gun Drone" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+                <profile id="953c-2b06-454c-8470" name="MV11 Heavy Gun Drone" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
@@ -2445,6 +2436,13 @@ The table below describes the benefits T&apos;AU EMPIRE models have when shootin
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="10&quot;" field="0bdf-a96e-9e38-7779">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <categoryLinks>
@@ -2463,21 +2461,6 @@ The table below describes the benefits T&apos;AU EMPIRE models have when shootin
               </costs>
             </selectionEntry>
             <selectionEntry id="f068-4eda-633b-5421" name="MV11 Heavy Gun Drone w/ BC &amp; Markerlight" hidden="false" collective="false" import="true" type="model">
-              <profiles>
-                <profile id="679c-dc84-c33f-13a2" name="MV11 Heavy Gun Drone" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
-                  <characteristics>
-                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
-                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
-                    <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
-                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
-                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
-                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <categoryLinks>
                 <categoryLink id="c411-cdef-0840-3589" name="MV11 Heavy Gun Drones" hidden="false" targetId="c74f-0090-e5c6-4b8b" primary="false"/>
                 <categoryLink id="7592-0dd1-768b-b2d7" name="Drone" hidden="false" targetId="4394-33d7-3b6d-537d" primary="false"/>
@@ -2493,6 +2476,9 @@ The table below describes the benefits T&apos;AU EMPIRE models have when shootin
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <infoLinks>
+                <infoLink name="MV11 Heavy Gun Drone" id="ddd7-fd63-5ea4-48b2" hidden="false" type="profile" targetId="953c-2b06-454c-8470"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -4092,7 +4078,7 @@ Use this Stratagem in any phase, when a saving throw is failed for a model in a 
         </modifierGroup>
       </modifierGroups>
       <profiles>
-        <profile id="47d8-e7c4-8394-6fa9" name="AX0 Manta [1] (31+ Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="47d8-e7c4-8394-6fa9" name="AX0 Manta [1] (31+ Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20&quot;-60&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
@@ -4104,8 +4090,15 @@ Use this Stratagem in any phase, when a saving throw is failed for a model in a 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="20&quot;-63&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
-        <profile id="d34b-c294-d997-710f" name="AX0 Manta [2] (16-30 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="d34b-c294-d997-710f" name="AX0 Manta [2] (16-30 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20&quot;-50&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
@@ -4117,8 +4110,15 @@ Use this Stratagem in any phase, when a saving throw is failed for a model in a 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="20&quot;-53&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
-        <profile id="c39d-3295-b357-a3e0" name="AX0 Manta [3] (7-15 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="c39d-3295-b357-a3e0" name="AX0 Manta [3] (7-15 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20&quot;-40&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
@@ -4130,8 +4130,15 @@ Use this Stratagem in any phase, when a saving throw is failed for a model in a 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="20&quot;-43&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
-        <profile id="ba51-b6d7-252f-0c59" name="AX0 Manta [4] (1-6 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="ba51-b6d7-252f-0c59" name="AX0 Manta [4] (1-6 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20&quot;-30&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
@@ -4143,6 +4150,13 @@ Use this Stratagem in any phase, when a saving throw is failed for a model in a 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="20&quot;-33&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile id="899b-76df-4470-9433" name="AX0 Manta" hidden="false" typeId="b3a8-0452-7436-44d1" typeName="Transport">
           <characteristics>
@@ -4289,7 +4303,7 @@ Any models embarked within another model when it embarks upon this model do not 
         </modifierGroup>
       </modifierGroups>
       <profiles>
-        <profile id="12fc-fda3-4436-46b5" name="AX10 Tiger Shark [1] (13+ Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="12fc-fda3-4436-46b5" name="AX10 Tiger Shark [1] (13+ Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20&quot;-65&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
@@ -4301,8 +4315,15 @@ Any models embarked within another model when it embarks upon this model do not 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="20&quot;-68&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
-        <profile id="0cd1-9021-1d57-f1f3" name="AX10 Tiger Shark [2] (7-12 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="0cd1-9021-1d57-f1f3" name="AX10 Tiger Shark [2] (7-12 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20&quot;-45&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
@@ -4314,10 +4335,17 @@ Any models embarked within another model when it embarks upon this model do not 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="20&quot;-48&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
-        <profile id="01fc-9ad8-4640-454e" name="AX10 Tiger Shark [3] (1-6 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="01fc-9ad8-4640-454e" name="AX10 Tiger Shark [3] (1-6 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20&quot;-30&quot;</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20&quot;-35&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
@@ -4327,6 +4355,13 @@ Any models embarked within another model when it embarks upon this model do not 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="20&quot;-38&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -4486,7 +4521,7 @@ Any models embarked within another model when it embarks upon this model do not 
         </modifierGroup>
       </modifierGroups>
       <profiles>
-        <profile id="044f-114c-42f7-47b0" name="AX11 Tiger Shark [1] (13+ Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="044f-114c-42f7-47b0" name="AX11 Tiger Shark [1] (13+ Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20&quot;-65&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
@@ -4498,8 +4533,15 @@ Any models embarked within another model when it embarks upon this model do not 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="20&quot;-68&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
-        <profile id="78c5-c1f2-10f7-5201" name="AX11 Tiger Shark [2] (7-12 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="78c5-c1f2-10f7-5201" name="AX11 Tiger Shark [2] (7-12 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20&quot;-45&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
@@ -4511,10 +4553,17 @@ Any models embarked within another model when it embarks upon this model do not 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="20&quot;-48&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
-        <profile id="bba2-729d-92c8-dd25" name="AX11 Tiger Shark [3] (1-6 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="bba2-729d-92c8-dd25" name="AX11 Tiger Shark [3] (1-6 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20&quot;-30&quot;</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20&quot;-35&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
@@ -4524,6 +4573,13 @@ Any models embarked within another model when it embarks upon this model do not 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="20&quot;-38&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -4743,7 +4799,7 @@ Any models embarked within another model when it embarks upon this model do not 
 - One of the following: 6 BATTLESUIT models with a Wounds characteristic of 9 or less (each XV88 BROADSIDE BATTLESUIT model takes the space of 2 models); 24 more T&apos;AU EMPIRE INFANTRY or T&apos;AU EMPIRE DRONES models.</characteristic>
           </characteristics>
         </profile>
-        <profile id="4cef-40af-36b8-c11d" name="AX2 Orca Dropship [1] (14+ Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="4cef-40af-36b8-c11d" name="AX2 Orca Dropship [1] (14+ Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20&quot;-55&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
@@ -4755,8 +4811,15 @@ Any models embarked within another model when it embarks upon this model do not 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="20&quot;-58&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
-        <profile id="749e-cfe4-564c-e3d2" name="AX2 Orca Dropship [2] (7-13 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="749e-cfe4-564c-e3d2" name="AX2 Orca Dropship [2] (7-13 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20&quot;-40&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
@@ -4768,8 +4831,15 @@ Any models embarked within another model when it embarks upon this model do not 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="20&quot;-43&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
-        <profile id="7c16-6fb8-694f-b79d" name="AX2 Orca Dropship [3] (1-6 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="7c16-6fb8-694f-b79d" name="AX2 Orca Dropship [3] (1-6 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20&quot;-25&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
@@ -4781,6 +4851,13 @@ Any models embarked within another model when it embarks upon this model do not 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="20&quot;-28&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -4908,7 +4985,7 @@ Any models embarked within another model when it embarks upon this model do not 
         </modifierGroup>
       </modifierGroups>
       <profiles>
-        <profile id="adf1-02c9-2225-f330" name="AX3 Razorshark Strike Fighter [1] (8+ Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="adf1-02c9-2225-f330" name="AX3 Razorshark Strike Fighter [1] (8+ Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20&quot;-50&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
@@ -4920,10 +4997,17 @@ Any models embarked within another model when it embarks upon this model do not 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="20&quot;-53&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
-        <profile id="3dc1-9a90-c740-5949" name="AX3 Razorshark Strike Fighter [2] (4-7 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="3dc1-9a90-c740-5949" name="AX3 Razorshark Strike Fighter [2] (4-7 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20&quot;-30&quot;</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20&quot;-40&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
@@ -4933,10 +5017,17 @@ Any models embarked within another model when it embarks upon this model do not 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="20&quot;-43&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
-        <profile id="57d4-cdf2-ef90-57d2" name="AX3 Razorshark Strike Fighter [3] (1-3 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="57d4-cdf2-ef90-57d2" name="AX3 Razorshark Strike Fighter [3] (1-3 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20&quot;-25&quot;</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20&quot;-30&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
@@ -4946,6 +5037,13 @@ Any models embarked within another model when it embarks upon this model do not 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="20&quot;-33&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -5059,7 +5157,7 @@ Any models embarked within another model when it embarks upon this model do not 
         </modifierGroup>
       </modifierGroups>
       <profiles>
-        <profile id="56e1-426c-65d1-81bc" name="AX52 Barracuda [1] (9+ Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="56e1-426c-65d1-81bc" name="AX52 Barracuda [1] (9+ Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20&quot;-65&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
@@ -5071,8 +5169,15 @@ Any models embarked within another model when it embarks upon this model do not 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="20&quot;-68&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
-        <profile id="61f8-39e2-c59d-eecf" name="AX52 Barracuda [2] (5-8 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="61f8-39e2-c59d-eecf" name="AX52 Barracuda [2] (5-8 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20&quot;-45&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
@@ -5084,10 +5189,17 @@ Any models embarked within another model when it embarks upon this model do not 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="20&quot;-48&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
-        <profile id="7d4f-e3b8-fa6c-0d73" name="AX52 Barracuda [3] (1-4 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="7d4f-e3b8-fa6c-0d73" name="AX52 Barracuda [3] (1-4 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20&quot;-30&quot;</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20&quot;-35&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
@@ -5097,6 +5209,13 @@ Any models embarked within another model when it embarks upon this model do not 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="20&quot;-38&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -5287,7 +5406,7 @@ Any models embarked within another model when it embarks upon this model do not 
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2fa-87b9-9e2d-454f" type="min"/>
           </constraints>
           <profiles>
-            <profile id="ad78-6c4a-36ae-0bac" name="AX39 Sun Shark Bomber [1] (8+ Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="ad78-6c4a-36ae-0bac" name="AX39 Sun Shark Bomber [1] (8+ Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20&quot;-50&quot;</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
@@ -5299,10 +5418,17 @@ Any models embarked within another model when it embarks upon this model do not 
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="20&quot;-53&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
-            <profile id="c6db-35a1-8179-d64f" name="AX39 Sun Shark Bomber [2] (4-7 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="c6db-35a1-8179-d64f" name="AX39 Sun Shark Bomber [2] (4-7 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
-                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20&quot;-30&quot;</characteristic>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20&quot;-40&quot;</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
                 <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
                 <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
@@ -5312,10 +5438,17 @@ Any models embarked within another model when it embarks upon this model do not 
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="20&quot;-43&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
-            <profile id="edba-3081-5860-21b6" name="AX39 Sun Shark Bomber [3] (1-3 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="edba-3081-5860-21b6" name="AX39 Sun Shark Bomber [3] (1-3 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
-                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20&quot;-25&quot;</characteristic>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20&quot;-30&quot;</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
                 <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
                 <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
@@ -5325,6 +5458,13 @@ Any models embarked within another model when it embarks upon this model do not 
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="20&quot;-33&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
             <profile id="0ebd-aef9-dca6-403e" name="Docked Drones [AX39]" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
@@ -9423,19 +9563,23 @@ Each time a successful hit is made for an attack made with this weapon, if the t
           <infoLinks>
             <infoLink id="a2d6-0edd-0461-ab6b" name="Commander in XV8 Crisis Battlesuit" hidden="false" targetId="0f18-103c-0bf8-75a7" type="profile">
               <modifiers>
-                <modifier type="set" field="c0df-df94-abd7-e8d3" value="2+">
+                <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f2fa-afa7-fb9c-55b4" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="0bdf-a96e-9e38-7779" value="8&quot;">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f2fa-afa7-fb9c-55b4" type="equalTo"/>
+                    <condition type="equalTo" value="1" field="selections" scope="7902-d343-853d-e561" childId="f2fa-afa7-fb9c-55b4" shared="true" childName="XV8-02 Iridium battlesuit" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
             </infoLink>
             <infoLink id="e22c-7a7c-146c-0bb8" name="Tactical Acumen" hidden="false" targetId="7b64-91d0-528c-8c57" type="profile"/>
+            <infoLink name="Commander in XV8-02 Iridium Crisis Battlesuit" id="a278-4765-d282-b5bd" hidden="false" type="profile" targetId="ffa9-a9f3-aa38-d016">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="7902-d343-853d-e561" childId="f2fa-afa7-fb9c-55b4" shared="true" childName="XV8-02 Iridium battlesuit" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="836e-2310-39b3-3c42" name="Battlesuit" hidden="false" targetId="0caa-53ee-34da-cda1" primary="false"/>
@@ -9600,10 +9744,8 @@ Each time a successful hit is made for an attack made with this weapon, if the t
           </constraints>
           <infoLinks>
             <infoLink id="98f8-987c-c5ee-5805" name="Tactical Acumen" hidden="false" targetId="7b64-91d0-528c-8c57" type="profile"/>
-            <infoLink id="42cd-eb9e-b142-1bf6" name="Commander in XV8 Crisis Battlesuit" hidden="false" targetId="0f18-103c-0bf8-75a7" type="profile">
+            <infoLink id="42cd-eb9e-b142-1bf6" name="Commander in XV8-02 Crisis Battlesuit" hidden="false" targetId="ffa9-a9f3-aa38-d016" type="profile">
               <modifiers>
-                <modifier type="set" field="c0df-df94-abd7-e8d3" value="2+"/>
-                <modifier type="set" field="0bdf-a96e-9e38-7779" value="8&quot;"/>
                 <modifier type="set" field="name" value="Commander in XV81 Crisis Battlesuit"/>
               </modifiers>
             </infoLink>
@@ -9787,11 +9929,16 @@ Each time a successful hit is made for an attack made with this weapon, if the t
                 <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">In your Command phase, you can select one friendly &lt;SEPT&gt; BATTLESUIT CORE unit within 9&quot; of this unit&apos;s XV85 ENFORCER BATTLESUIT model. Until the start of your next Command phase, that unit gains the Objective Secured ability.</characteristic>
               </characteristics>
             </profile>
-            <profile id="d8a9-c7e4-b65b-dda5" name="Commander in XV85 Enforcer Battlesuit" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="d8a9-c7e4-b65b-dda5" name="Commander in XV85 Enforcer Battlesuit" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <modifiers>
                 <modifier type="set" field="e7f0-1278-0250-df0c" value="2+">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e82-c782-b939-36b4" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="10&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -9965,11 +10112,16 @@ Each time a successful hit is made for an attack made with this weapon, if the t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9145-28fd-853c-aa3d" type="max"/>
           </constraints>
           <profiles>
-            <profile id="5d48-a4e3-1ee6-60cc" name="Commander in XV86 Coldstar Battlesuit" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="5d48-a4e3-1ee6-60cc" name="Commander in XV86 Coldstar Battlesuit" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <modifiers>
                 <modifier type="set" field="e7f0-1278-0250-df0c" value="2+">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e82-c782-b939-36b4" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="16&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10953,7 +11105,7 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2396-d2d5-a7e9-b49d" type="min"/>
           </constraints>
           <profiles>
-            <profile id="58ed-eb15-2776-c0e0" name="TX3 Tetra" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="58ed-eb15-2776-c0e0" name="TX3 Tetra" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">18&quot;</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
@@ -10965,6 +11117,13 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="20&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <categoryLinks>
@@ -11094,7 +11253,7 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="959d-4c78-4aa5-3f32" type="min"/>
           </constraints>
           <profiles>
-            <profile id="9795-361c-51b2-ee33" name="TX4 Piranha" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="9795-361c-51b2-ee33" name="TX4 Piranha" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
@@ -11106,6 +11265,13 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <infoLinks>
@@ -11276,7 +11442,7 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55bb-c146-34a5-2c4b" type="min"/>
           </constraints>
           <profiles>
-            <profile id="a48f-60a2-f1f0-ad62" name="TX42 Piranha" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="a48f-60a2-f1f0-ad62" name="TX42 Piranha" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
@@ -11288,6 +11454,13 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="18&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <infoLinks>
@@ -11637,6 +11810,13 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="14&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile id="bef4-78f0-4880-cd58" name="TX78 Sky Ray Gunship [2] (4-7 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
@@ -11650,6 +11830,13 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="8&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile id="1cf5-8263-09d9-58d2" name="TX78 Sky Ray Gunship [3] (1-3 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
@@ -11663,6 +11850,13 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="6&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile id="7830-8280-86db-e268" name="Aerial Scanners" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
@@ -11823,6 +12017,13 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="14&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile id="da7e-fba6-dbc4-0340" name="TY7 Devilfish Transport [2] (4-7 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
@@ -11836,6 +12037,13 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="8&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile id="dc52-414b-6428-eaad" name="TY7 Devilfish Transport [3] (1-3 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
@@ -11849,6 +12057,13 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="6&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile id="4c37-407a-6ca8-a7c7" name="TY7 Devilfish Transport" hidden="false" typeId="b3a8-0452-7436-44d1" typeName="Transport">
           <characteristics>
@@ -12220,6 +12435,11 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fa10-5b69-9887-b4c1" type="atLeast"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="14&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
@@ -12240,6 +12460,11 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fa10-5b69-9887-b4c1" type="atLeast"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
@@ -12258,6 +12483,11 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                 <modifier type="set" field="e7f0-1278-0250-df0c" value="4+">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fa10-5b69-9887-b4c1" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="10&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -12705,6 +12935,11 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fa10-5b69-9887-b4c1" type="atLeast"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="20&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">18&quot;</characteristic>
@@ -12725,6 +12960,11 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fa10-5b69-9887-b4c1" type="atLeast"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="14&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
@@ -12743,6 +12983,11 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                 <modifier type="set" field="e7f0-1278-0250-df0c" value="4+">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fa10-5b69-9887-b4c1" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="10&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -13211,6 +13456,31 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="a354-0bcb-66fb-51f3" childId="f2fa-afa7-fb9c-55b4" shared="true" childName="XV8-02 Iridium battlesuit" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink name="XV8-02 Crisis Shas&apos;ui" id="4209-a2f5-cbf6-3ee1" hidden="false" targetId="1dd7-4343-0ada-e7be" type="profile">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="XV8 Crisis Shas&apos;vre" field="name"/>
+                    <modifier type="set" value="9" field="00ca-f8b8-876d-b705"/>
+                    <modifier type="set" value="4" field="13fc-b29b-31f2-ab9f"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="a354-0bcb-66fb-51f3" childId="f2fa-afa7-fb9c-55b4" shared="true" childName="XV8-02 Iridium battlesuit" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </infoLink>
           </infoLinks>
           <categoryLinks>
@@ -13264,7 +13534,24 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d82-0954-c445-b316" type="min"/>
           </constraints>
           <infoLinks>
-            <infoLink id="1b3b-2cc0-9d47-3656" name="XV8 Crisis Shas&apos;ui" hidden="false" targetId="5262-9f47-f602-8277" type="profile"/>
+            <infoLink id="1b3b-2cc0-9d47-3656" name="XV8 Crisis Shas&apos;ui" hidden="false" targetId="5262-9f47-f602-8277" type="profile">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="a354-0bcb-66fb-51f3" childId="f2fa-afa7-fb9c-55b4" shared="true" childName="XV8-02 Iridium battlesuit" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink name="XV8-02 Crisis Shas&apos;ui" id="c74d-35a5-4a7f-78e9" hidden="false" targetId="1dd7-4343-0ada-e7be" type="profile">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="a354-0bcb-66fb-51f3" childId="f2fa-afa7-fb9c-55b4" shared="true" childName="XV8-02 Iridium battlesuit" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="275d-f5b8-da86-b52b" name="Fly" hidden="false" targetId="3117-16d8-fcef-4f56" primary="false"/>
@@ -13445,6 +13732,31 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="bc15-1ae1-591e-2565" childId="f2fa-afa7-fb9c-55b4" shared="true" childName="XV8-02 Iridium battlesuit" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink name="XV8-02 Crisis Bodyguard Shas&apos;ui" id="537f-25fd-743e-d8f3" hidden="false" targetId="f4f1-ceb6-f2f8-0b53" type="profile">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="XV8-02 Crisis Bodyguard Shas&apos;vre" field="name"/>
+                    <modifier type="set" value="9" field="00ca-f8b8-876d-b705"/>
+                    <modifier type="set" value="4" field="13fc-b29b-31f2-ab9f"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="bc15-1ae1-591e-2565" childId="f2fa-afa7-fb9c-55b4" shared="true" childName="XV8-02 Iridium battlesuit" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </infoLink>
           </infoLinks>
           <categoryLinks>
@@ -13498,7 +13810,24 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5c3-6f2e-408e-94fa" type="min"/>
           </constraints>
           <infoLinks>
-            <infoLink id="e36c-164c-d20e-ea9b" name="XV8 Crisis Bodyguard Shas&apos;ui" hidden="false" targetId="85a8-8705-72e2-d5c9" type="profile"/>
+            <infoLink id="e36c-164c-d20e-ea9b" name="XV8 Crisis Bodyguard Shas&apos;ui" hidden="false" targetId="85a8-8705-72e2-d5c9" type="profile">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="bc15-1ae1-591e-2565" childId="f2fa-afa7-fb9c-55b4" shared="true" childName="XV8-02 Iridium battlesuit" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink name="XV8-02 Crisis Bodyguard Shas&apos;ui" id="d2d0-140c-4306-ea11" hidden="false" targetId="f4f1-ceb6-f2f8-0b53" type="profile">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="bc15-1ae1-591e-2565" childId="f2fa-afa7-fb9c-55b4" shared="true" childName="XV8-02 Iridium battlesuit" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="a455-d1ae-7c64-8ab5" name="Fly" hidden="false" targetId="3117-16d8-fcef-4f56" primary="false"/>
@@ -14071,6 +14400,11 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fa10-5b69-9887-b4c1" type="atLeast"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="14&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
@@ -14091,6 +14425,11 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fa10-5b69-9887-b4c1" type="atLeast"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="10&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
@@ -14109,6 +14448,11 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                 <modifier type="set" field="e7f0-1278-0250-df0c" value="4+">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fa10-5b69-9887-b4c1" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="6&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -14552,7 +14896,7 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21f8-2257-80c7-e37c" type="min"/>
           </constraints>
           <profiles>
-            <profile id="499f-797f-62e5-29f7" name="DX6 Remora Stealth Drone" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="499f-797f-62e5-29f7" name="DX6 Remora Stealth Drone" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">30&quot;</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
@@ -14564,6 +14908,13 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="32&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <infoLinks>
@@ -19348,7 +19699,7 @@ Farsight - Selection</characteristic>
       <selectionEntries>
         <selectionEntry id="023e-bd70-2cba-51b3" name="MV1 Gun Drone" hidden="false" collective="false" import="true" type="model">
           <profiles>
-            <profile id="6f15-62dc-3ee7-dc0a" name="MV1 Gun Drone" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="6f15-62dc-3ee7-dc0a" name="MV1 Gun Drone" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
@@ -19360,6 +19711,13 @@ Farsight - Selection</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <infoLinks>
@@ -19384,7 +19742,7 @@ Farsight - Selection</characteristic>
         </selectionEntry>
         <selectionEntry id="34a6-4e69-d6f6-b62a" name="MV17 Interceptor Drone" hidden="false" collective="false" import="true" type="model">
           <profiles>
-            <profile id="28c0-b66f-817d-8780" name="MV17 Interceptor Drone" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="28c0-b66f-817d-8780" name="MV17 Interceptor Drone" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20&quot;</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
@@ -19396,6 +19754,13 @@ Farsight - Selection</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="22&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <infoLinks>
@@ -19424,7 +19789,7 @@ Farsight - Selection</characteristic>
         </selectionEntry>
         <selectionEntry id="edba-6078-b6e0-d6c9" name="MV3 Recon Drone" hidden="false" collective="false" import="true" type="model">
           <profiles>
-            <profile id="554a-d19b-fffc-4e71" name="MV3 Recon Drone" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="554a-d19b-fffc-4e71" name="MV3 Recon Drone" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
@@ -19436,6 +19801,13 @@ Farsight - Selection</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
             <profile id="d2b1-2608-2cd5-765c" name="Recon Suite" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
@@ -19472,7 +19844,7 @@ Farsight - Selection</characteristic>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ffa-0d19-058f-7e32" type="max"/>
           </constraints>
           <profiles>
-            <profile id="b954-4320-d50e-d479" name="MV31 Pulse Accelerator Drone" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="b954-4320-d50e-d479" name="MV31 Pulse Accelerator Drone" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
@@ -19484,6 +19856,13 @@ Farsight - Selection</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
             <profile id="5957-8c12-2394-9bfa" name="Pulse Accelerator" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
@@ -19528,7 +19907,7 @@ Farsight - Selection</characteristic>
             <profile id="3871-2d38-8a9d-55fa" name="Grav-Inhibitor Field" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
                 <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- At the start of the Fight phase, all enemy units within Engagement Range of bearer are not eligible to fight this phase until after all eligible units from your army have done so.
-- Each time a melee attack is made against the bearer, subtract 1 from that attack&apos;s hit roll.</characteristic>
+- Each time a melee attack is made against the bearer&apos;s unit, subtract 1 from that attack&apos;s hit roll.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -19553,7 +19932,7 @@ Farsight - Selection</characteristic>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ae5-9c01-cb07-3b92" type="max"/>
           </constraints>
           <profiles>
-            <profile id="8f82-4ef5-ac2e-0a8c" name="MV36 Guardian Drone" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="8f82-4ef5-ac2e-0a8c" name="MV36 Guardian Drone" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
@@ -19565,6 +19944,13 @@ Farsight - Selection</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
             <profile id="4ade-bf66-df83-7bc0" name="Guardian Shield Generator" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
@@ -19595,7 +19981,7 @@ T&apos;AU FIRE CASTE WARRIOR units within 3&quot; of this model has a 5+ invulne
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7acd-aca5-4715-92ba" type="max"/>
           </constraints>
           <profiles>
-            <profile id="b37a-1c31-b75e-9b30" name="MV365 Advanced Guardian Drone" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="b37a-1c31-b75e-9b30" name="MV365 Advanced Guardian Drone" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
@@ -19607,6 +19993,13 @@ T&apos;AU FIRE CASTE WARRIOR units within 3&quot; of this model has a 5+ invulne
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
             <profile id="1902-3883-7202-aa90" name="Advanced Guardian Shield Generator" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
@@ -19645,6 +20038,13 @@ T&apos;AU FIRE CASTE WARRIOR units within 3&quot; of this model has a 5+ invulne
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
             <profile id="4d00-2910-3c79-1888" name="Drone Shield Generator" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
@@ -19670,7 +20070,7 @@ T&apos;AU FIRE CASTE WARRIOR units within 3&quot; of this model has a 5+ invulne
         </selectionEntry>
         <selectionEntry id="120f-5064-5aee-9eb8" name="MV5 Stealth Drone" hidden="false" collective="false" import="true" type="model">
           <profiles>
-            <profile id="d95d-e754-2e58-e363" name="MV5 Stealth Drone" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="d95d-e754-2e58-e363" name="MV5 Stealth Drone" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
@@ -19682,6 +20082,13 @@ T&apos;AU FIRE CASTE WARRIOR units within 3&quot; of this model has a 5+ invulne
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <infoLinks>
@@ -19708,7 +20115,7 @@ T&apos;AU FIRE CASTE WARRIOR units within 3&quot; of this model has a 5+ invulne
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a865-5dd5-f9ba-6777" type="min"/>
           </constraints>
           <profiles>
-            <profile id="1bc4-ed1e-a3dc-121c" name="MV62 Command-link Drone" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="1bc4-ed1e-a3dc-121c" name="MV62 Command-link Drone" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
@@ -19720,6 +20127,13 @@ T&apos;AU FIRE CASTE WARRIOR units within 3&quot; of this model has a 5+ invulne
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
             <profile id="8e45-9fdc-1267-2993" name="Command-link" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
@@ -19745,7 +20159,7 @@ T&apos;AU FIRE CASTE WARRIOR units within 3&quot; of this model has a 5+ invulne
         </selectionEntry>
         <selectionEntry id="e29a-716e-e430-5079" name="MV7 Marker Drone" hidden="false" collective="false" import="true" type="model">
           <profiles>
-            <profile id="7cd5-41e6-25d4-0a85" name="MV7 Marker Drone" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="7cd5-41e6-25d4-0a85" name="MV7 Marker Drone" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
@@ -19757,6 +20171,13 @@ T&apos;AU FIRE CASTE WARRIOR units within 3&quot; of this model has a 5+ invulne
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <infoLinks>
@@ -19780,7 +20201,7 @@ T&apos;AU FIRE CASTE WARRIOR units within 3&quot; of this model has a 5+ invulne
         </selectionEntry>
         <selectionEntry id="e453-5145-b84f-242c" name="MV71 Sniper Drone" hidden="false" collective="false" import="true" type="model">
           <profiles>
-            <profile id="f8e0-074e-6efb-a8b0" name="MV71 Sniper Drone" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="f8e0-074e-6efb-a8b0" name="MV71 Sniper Drone" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
@@ -19792,6 +20213,13 @@ T&apos;AU FIRE CASTE WARRIOR units within 3&quot; of this model has a 5+ invulne
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <infoLinks>
@@ -19822,7 +20250,7 @@ T&apos;AU FIRE CASTE WARRIOR units within 3&quot; of this model has a 5+ invulne
         </selectionEntry>
         <selectionEntry id="c93e-c9f6-1122-ffb4" name="MV8 Missile Drone" hidden="false" collective="false" import="true" type="model">
           <profiles>
-            <profile id="dbdc-22d4-f952-6ee4" name="MV8 Missile Drone" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="dbdc-22d4-f952-6ee4" name="MV8 Missile Drone" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
@@ -19834,6 +20262,13 @@ T&apos;AU FIRE CASTE WARRIOR units within 3&quot; of this model has a 5+ invulne
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <infoLinks>
@@ -19863,7 +20298,7 @@ T&apos;AU FIRE CASTE WARRIOR units within 3&quot; of this model has a 5+ invulne
         </selectionEntry>
         <selectionEntry id="9dfd-0891-6104-dceb" name="MV84 Shielded Missile Drone" hidden="false" collective="false" import="true" type="model">
           <profiles>
-            <profile id="a6dd-6d4d-c25d-9985" name="MV84 Shielded Missile Drone" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="a6dd-6d4d-c25d-9985" name="MV84 Shielded Missile Drone" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
@@ -19875,6 +20310,13 @@ T&apos;AU FIRE CASTE WARRIOR units within 3&quot; of this model has a 5+ invulne
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="14&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
             <profile id="ab50-4f47-d4be-808f" name="Drone Shield Generator" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
@@ -19988,7 +20430,7 @@ T&apos;AU FIRE CASTE WARRIOR units within 3&quot; of this model has a 5+ invulne
                 <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c77-1511-df8c-e2b1" type="max"/>
               </constraints>
               <profiles>
-                <profile id="0c38-3361-52ab-9dde" name="DX4 Technical Drone" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+                <profile id="0c38-3361-52ab-9dde" name="DX4 Technical Drone" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
@@ -20000,6 +20442,13 @@ T&apos;AU FIRE CASTE WARRIOR units within 3&quot; of this model has a 5+ invulne
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="14&quot;" field="0bdf-a96e-9e38-7779">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <infoLinks>
@@ -24035,20 +24484,10 @@ If the unit of the weapon&apos;s bearer is in engagement range of enemy units, t
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">The bearer can only shoot with each destroyer missile it is equipped with once per battle. Each time the bearer is selected to shoot, it cannot shoot with more than two of the destroyer missiles it is equipped with.</characteristic>
       </characteristics>
     </profile>
-    <profile id="0f18-103c-0bf8-75a7" name="Commander in XV8 Crisis Battlesuit" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+    <profile id="0f18-103c-0bf8-75a7" name="Commander in XV8 Crisis Battlesuit" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <modifierGroups>
         <modifierGroup>
           <modifiers>
-            <modifier type="set" field="0bdf-a96e-9e38-7779" value="8&quot;">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f2fa-afa7-fb9c-55b4" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="c0df-df94-abd7-e8d3" value="2+">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f2fa-afa7-fb9c-55b4" type="equalTo"/>
-              </conditions>
-            </modifier>
             <modifier type="set" field="e7f0-1278-0250-df0c" value="2+">
               <conditions>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e82-c782-b939-36b4" type="equalTo"/>
@@ -24068,6 +24507,13 @@ If the unit of the weapon&apos;s bearer is in engagement range of enemy units, t
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
       </characteristics>
+      <modifiers>
+        <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </profile>
     <profile id="9bea-e189-e2e1-a192" name="High-output Burst Cannon" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -24130,7 +24576,7 @@ Each time a successful hit is made for an attack made with this weapon, if the t
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Bomb. Blast.</characteristic>
       </characteristics>
     </profile>
-    <profile id="f7ba-87b9-23a6-bf20" name="Fire Warrior" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+    <profile id="f7ba-87b9-23a6-bf20" name="Fire Warrior" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <modifiers>
         <modifier type="set" field="e7f0-1278-0250-df0c" value="4+">
           <conditions>
@@ -24150,7 +24596,7 @@ Each time a successful hit is made for an attack made with this weapon, if the t
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
       </characteristics>
     </profile>
-    <profile id="7569-a585-2d8f-0546" name="Pathfinder" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+    <profile id="7569-a585-2d8f-0546" name="Pathfinder" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <modifiers>
         <modifier type="set" field="e7f0-1278-0250-df0c" value="4+">
           <conditions>
@@ -24295,7 +24741,7 @@ In addition, if a wound is scored against a target without the INORGANIC, VEHICL
         <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This TRANSPORT has a 5+ invulnerable save.</characteristic>
       </characteristics>
     </profile>
-    <profile id="6c7b-d017-229c-2cd3" name="XV9 Hazard Shas&apos;ui" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+    <profile id="6c7b-d017-229c-2cd3" name="XV9 Hazard Shas&apos;ui" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <modifierGroups>
         <modifierGroup>
           <modifiers>
@@ -24318,6 +24764,13 @@ In addition, if a wound is scored against a target without the INORGANIC, VEHICL
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
       </characteristics>
+      <modifiers>
+        <modifier type="set" value="10&quot;" field="0bdf-a96e-9e38-7779">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </profile>
     <profile id="55d3-7cea-7545-348e" name="XV88 Broadside Shas&apos;ui" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <modifierGroups>
@@ -24343,23 +24796,13 @@ In addition, if a wound is scored against a target without the INORGANIC, VEHICL
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
       </characteristics>
     </profile>
-    <profile id="5262-9f47-f602-8277" name="XV8 Crisis Shas&apos;ui" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+    <profile id="5262-9f47-f602-8277" name="XV8 Crisis Shas&apos;ui" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <modifierGroups>
         <modifierGroup>
           <modifiers>
             <modifier type="set" field="e7f0-1278-0250-df0c" value="4+">
               <conditions>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e82-c782-b939-36b4" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="c0df-df94-abd7-e8d3" value="2+">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f2fa-afa7-fb9c-55b4" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="0bdf-a96e-9e38-7779" value="8&quot;">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f2fa-afa7-fb9c-55b4" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -24376,8 +24819,15 @@ In addition, if a wound is scored against a target without the INORGANIC, VEHICL
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
       </characteristics>
+      <modifiers>
+        <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </profile>
-    <profile id="85a8-8705-72e2-d5c9" name="XV8 Crisis Bodyguard Shas&apos;ui" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+    <profile id="85a8-8705-72e2-d5c9" name="XV8 Crisis Bodyguard Shas&apos;ui" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <modifierGroups>
         <modifierGroup>
           <modifiers>
@@ -24410,8 +24860,15 @@ In addition, if a wound is scored against a target without the INORGANIC, VEHICL
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
       </characteristics>
+      <modifiers>
+        <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </profile>
-    <profile id="7b0e-2b99-f93a-b3f5" name="XV25 Stealth Shas&apos;ui" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+    <profile id="7b0e-2b99-f93a-b3f5" name="XV25 Stealth Shas&apos;ui" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <modifierGroups>
         <modifierGroup>
           <modifiers>
@@ -24434,8 +24891,15 @@ In addition, if a wound is scored against a target without the INORGANIC, VEHICL
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
       </characteristics>
+      <modifiers>
+        <modifier type="set" value="10&quot;" field="0bdf-a96e-9e38-7779">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </profile>
-    <profile id="fecf-1667-eda1-fbc4" name="DS9 Drone Sentry Turret" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+    <profile id="fecf-1667-eda1-fbc4" name="DS9 Drone Sentry Turret" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
         <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
         <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
@@ -24448,7 +24912,7 @@ In addition, if a wound is scored against a target without the INORGANIC, VEHICL
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
       </characteristics>
     </profile>
-    <profile id="ff18-2aac-4f81-a1ce" name="XV15 Stealth Shas&apos;ui" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+    <profile id="ff18-2aac-4f81-a1ce" name="XV15 Stealth Shas&apos;ui" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <modifierGroups>
         <modifierGroup>
           <modifiers>
@@ -24471,6 +24935,13 @@ In addition, if a wound is scored against a target without the INORGANIC, VEHICL
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
       </characteristics>
+      <modifiers>
+        <modifier type="set" value="10&quot;" field="0bdf-a96e-9e38-7779">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </profile>
     <profile id="c98b-e42e-3076-0427" name="Concussion Mace" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -24592,6 +25063,99 @@ In addition, if a wound is scored against a target without the INORGANIC, VEHICL
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">If the target is within half range of this weapon, add 1 to the Strength characteristic of the attack and the AP characteristic changes to -2.</characteristic>
       </characteristics>
+    </profile>
+    <profile name="Commander in XV8-02 Crisis Battlesuit" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="ffa9-a9f3-aa38-d016">
+      <characteristics>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2+</characteristic>
+        <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
+        <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
+        <characteristic name="W" typeId="f330-5e6e-4110-0978">6</characteristic>
+        <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+        <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+      </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="2+" field="e7f0-1278-0250-df0c">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="9e82-c782-b939-36b4" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="10&quot;" field="0bdf-a96e-9e38-7779">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </profile>
+    <profile name="XV8-02 Crisis Shas&apos;ui" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="1dd7-4343-0ada-e7be">
+      <characteristics>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+        <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
+        <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
+        <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
+        <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+        <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+      </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="4+" field="e7f0-1278-0250-df0c">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="9e82-c782-b939-36b4" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="10&quot;" field="0bdf-a96e-9e38-7779">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </profile>
+    <profile name="XV8-02 Crisis Bodyguard Shas&apos;ui" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="f4f1-ceb6-f2f8-0b53">
+      <characteristics>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+        <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
+        <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
+        <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
+        <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+        <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+      </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="3+" field="e7f0-1278-0250-df0c">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="9e82-c782-b939-36b4" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="10&quot;" field="0bdf-a96e-9e38-7779">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </profile>
   </sharedProfiles>
 </catalogue>
