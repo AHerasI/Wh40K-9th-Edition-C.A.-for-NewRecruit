@@ -1174,6 +1174,11 @@ By default, standard ammo will be shot (no changes to the weapon&apos;s profile)
     </categoryEntry>
   </categoryEntries>
   <entryLinks>
+    <entryLink targetId="9c67-9aa2-4b30-b96b" id="9bd7-396a-fd05-2686" type="selectionEntry" name="Foetid Virion" hidden="true">
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="9cb1-5a0b-7278-fc7f" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="7b0d-5b89-4690-df7e" name="Terrax-Pattern Termite" hidden="false" collective="false" import="true" targetId="732b-967e-1bca-5846" type="selectionEntry">
       <modifierGroups>
         <modifierGroup>
@@ -20614,11 +20619,6 @@ Until the end of the phase, add 1 to the Strength characteristic of models in th
             <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a Combat Attrition test is taken for this unit, ignore any or all modifiers.</characteristic>
           </characteristics>
         </profile>
-        <profile id="8447-6a42-bfdc-f8bb" name="Unrelenting" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This unit is not affected by modifiers to Movement and Charge by Difficult ground.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="c090-3704-e8c8-5e94" name="Core" hidden="false" targetId="08f1-d244-eb44-7e01" primary="false"/>
@@ -20730,9 +20730,6 @@ Until the end of the phase, add 1 to the Strength characteristic of models in th
               </costs>
             </selectionEntry>
             <selectionEntry id="e449-e6cb-6752-a4b3" name="Plague Legionary w/Dual Knife" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cd0-5339-9af6-efc7" type="max"/>
-              </constraints>
               <infoLinks>
                 <infoLink id="3eea-8feb-05d5-3e8c" name="Plague Legionary" hidden="false" targetId="2caf-8503-b59e-d399" type="profile">
                   <modifiers>
@@ -20760,9 +20757,6 @@ Until the end of the phase, add 1 to the Strength characteristic of models in th
               </costs>
             </selectionEntry>
             <selectionEntry id="45b5-f61d-0ce5-b0a6" name="Plague Legionary w/Axe" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1db-2482-00a8-ff31" type="max"/>
-              </constraints>
               <profiles>
                 <profile id="5761-da38-d05c-5242" name="Vectors of Death" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
@@ -20815,6 +20809,13 @@ Until the end of the phase, add 1 to the Strength characteristic of models in th
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="increment" value="1" field="a840-085c-f223-2008">
+                  <conditions>
+                    <condition type="atLeast" value="10" field="selections" scope="9180-d5d0-ea45-9548" childId="model" shared="true" childName="model"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry id="9595-1b26-d499-2789" name="Plague Legionary w/Flail" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -20837,6 +20838,13 @@ Until the end of the phase, add 1 to the Strength characteristic of models in th
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="increment" value="1" field="da2c-163b-131f-d867">
+                  <conditions>
+                    <condition type="atLeast" value="10" field="selections" scope="9180-d5d0-ea45-9548" childId="model" shared="true" childName="model"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry id="ad6c-e64e-5939-c714" name="Plague Legionary w/Cleaver" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -20859,6 +20867,13 @@ Until the end of the phase, add 1 to the Strength characteristic of models in th
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="increment" value="1" field="991c-e1d6-547b-24a1">
+                  <conditions>
+                    <condition type="atLeast" value="10" field="selections" scope="9180-d5d0-ea45-9548" childId="model" shared="true" childName="model"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry id="98c1-0df7-052f-911c" name="Plague Legionary w/Icon of despair" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -20922,24 +20937,6 @@ Until the end of the phase, add 1 to the Strength characteristic of models in th
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup id="1b32-246b-b27d-c0a1" name="Aviable with 10 selections in squad" hidden="true" collective="false" import="true">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="9180-d5d0-ea45-9548" value="9" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <entryLinks>
-                <entryLink id="45de-8009-7ff9-e7cb" name="Plague Legionary w/Plage weapon" hidden="false" collective="false" import="true" targetId="abe1-fe91-8a6b-216a" type="selectionEntryGroup"/>
-                <entryLink id="941e-8b28-e7b5-7ecb" name="Plague Legionary w/Axe" hidden="false" collective="false" import="true" targetId="45b5-f61d-0ce5-b0a6" type="selectionEntry"/>
-                <entryLink id="ca12-7575-4a79-8a26" name="Plague Legionary w/Axe&amp;Mace" hidden="false" collective="false" import="true" targetId="3a3f-67c9-7c51-3292" type="selectionEntry"/>
-                <entryLink id="6209-f7e4-353c-554a" name="Plague Legionary w/Cleaver" hidden="false" collective="false" import="true" targetId="ad6c-e64e-5939-c714" type="selectionEntry"/>
-                <entryLink id="c764-5e18-5403-55f6" name="Plague Legionary w/Dual Knife" hidden="false" collective="false" import="true" targetId="e449-e6cb-6752-a4b3" type="selectionEntry"/>
-                <entryLink id="36c8-0661-499f-ed73" name="Plague Legionary w/Special weapon" hidden="false" collective="false" import="true" targetId="dfe0-7e3c-b634-f2dd" type="selectionEntryGroup"/>
-                <entryLink id="a527-8929-2125-4aa2" name="Plague Legionary w/Flail" hidden="false" collective="false" import="true" targetId="9595-1b26-d499-2789" type="selectionEntry"/>
-              </entryLinks>
-            </selectionEntryGroup>
             <selectionEntryGroup id="dfe0-7e3c-b634-f2dd" name="Plague Legionary w/Special weapon" hidden="false" collective="false" import="true">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d3e7-c229-9884-6fe7" type="max"/>
@@ -21006,8 +21003,15 @@ Until the end of the phase, add 1 to the Strength characteristic of models in th
                   </costs>
                 </selectionEntry>
               </selectionEntries>
+              <modifiers>
+                <modifier type="increment" value="1" field="d3e7-c229-9884-6fe7">
+                  <conditions>
+                    <condition type="atLeast" value="10" field="selections" scope="9180-d5d0-ea45-9548" childId="model" shared="true" childName="model"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup id="abe1-fe91-8a6b-216a" name="Plague Legionary w/Plage weapon" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="abe1-fe91-8a6b-216a" name="Plague Legionary w/Plague weapon" hidden="false" collective="false" import="true">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="21ee-73e1-ab16-f134" type="max"/>
               </constraints>
@@ -21053,6 +21057,13 @@ Until the end of the phase, add 1 to the Strength characteristic of models in th
                   </costs>
                 </selectionEntry>
               </selectionEntries>
+              <modifiers>
+                <modifier type="increment" value="1" field="21ee-73e1-ab16-f134">
+                  <conditions>
+                    <condition type="atLeast" value="10" field="selections" scope="9180-d5d0-ea45-9548" childId="model" shared="true" childName="model"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
@@ -25257,127 +25268,6 @@ In addition, models in this unit do not suffer the penalty to hit rolls incurred
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9d2f-4ce2-9ce7-7b6f" name="Biologus Putrifier" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="33b3-f2a3-9749-2f10" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <profiles>
-        <profile id="9df1-74e6-3529-cb1d" name="Biologus Putrifier" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="ac15-11e0-64e6-c3a8" name="Blight Racks [Aura]" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly &lt;PLAGUE COMPANY&gt; ASTARTES unit is within 6&quot; of this model, blight grenades models in that unit are equipped have an Armour Penetration characteristic of -1 and a Damage characteristic of 2.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="6515-d36a-49a1-ddd8" name="Foul Infusion" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Once per turn, at the start of either your Charge phase or the Fight phase, you can select one friendly &lt;PLAGUE COMPANY&gt; CORE unit within 6&quot; of this model. Until the start of your next Command phase, each time a model in that unit makes a melee attack with a Plague Weapon, an unmodified wound roll of 6 inflicts 1 mortal wound on the target in addition to any normal damage. Each unit can only be selected for this ability once per turn.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="0511-714d-8267-5482" name="Putrid Explosion" hidden="false" targetId="8dae-f25a-7a9e-0f09" type="profile"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="eddd-beb0-b5ff-75e7" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
-        <categoryLink id="2890-d578-020d-3734" name="Character" hidden="false" targetId="ef18-746a-369f-43a4" primary="false"/>
-        <categoryLink id="5ebb-98c7-4dbe-6c1c" name="Faction: Chaos" hidden="false" targetId="5cf1-acf2-ca3b-c2e5" primary="false"/>
-        <categoryLink id="1350-61ee-35c1-2f07" name="Chaotic Astartes" hidden="false" targetId="62d9-3cd6-aed7-34fe" primary="false"/>
-        <categoryLink id="539e-c0f7-4927-83f4" name="Faction: Chaotic Astartes" hidden="false" targetId="b096-59fd-a5eb-5739" primary="false"/>
-        <categoryLink id="be51-e264-ab33-6ad0" name="Legion: Death Guard" hidden="false" targetId="5ade-55c4-cc5e-750b" primary="false"/>
-        <categoryLink id="c4a3-f330-b8cb-6d2d" name="Chaos Mark: Nurgle" hidden="false" targetId="2226-f82a-fe58-178d" primary="false"/>
-        <categoryLink id="ffcd-0ed9-6672-4d30" name="Ø40mm" hidden="false" targetId="2ec1-217a-555a-b171" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="a46b-02c5-5d8a-b262" name="Injector pistol" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d4a9-7bea-8bdf-f871" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65cc-6e4d-ac44-ede5" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="6956-41b1-3c3a-ff69" name="Injector pistol" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">3&quot;</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol 1</characteristic>
-                <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
-                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Plague Weapon. Each time an attack is made with this weapon against an non INORGANIC INFANTRY, CAVALRY, SWARM or BEAST unit, if the attack successfully wounds the target, it inflicts D3 mortal wounds in addition to any normal damage.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="68f9-8845-09ec-78c8" name="Hyper blight grenade" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f02-96b8-d8c7-72f3" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4678-25a9-5667-f220" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="ca65-f808-4d39-a242" name="Hyper blight grenade" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">6&quot;</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Grenade D6</characteristic>
-                <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
-                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Plague Weapon</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="bade-c826-6dd3-6502" name="   Character definition:" hidden="false" collective="false" import="true" targetId="3bcc-c51f-ca44-aca4" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="9780-d721-2f49-1321" name="Unit upgrades" hidden="false" collective="false" import="true" targetId="867f-e3d9-541a-3498" type="selectionEntryGroup"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="56d5-9f13-ed79-d120" name="Plague knife" hidden="false" collective="false" import="true" targetId="4afe-d471-a779-9916" type="selectionEntry"/>
-        <entryLink id="bdd5-6818-d20d-f33a" name="Krak grenades" hidden="false" collective="false" import="true" targetId="0f23-cd69-d106-371e" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b98-2fd3-0283-4b8f" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36c6-3389-2fee-9eac" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="points" value="40"/>
-        <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
-        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="2435-0ef1-2d0d-114e" name="Blightlord Terminators" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -25780,359 +25670,6 @@ In addition, models in this unit do not suffer the penalty to hit rolls incurred
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
         <cost name="Pts" typeId="points" value="0"/>
-        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="ed0a-5968-c931-0a38" name="Foul Blightspawn" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="33b3-f2a3-9749-2f10" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <profiles>
-        <profile id="cf30-4503-9024-5134" name="Foul Blightspawn" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="d783-f071-a19e-fca0" name="Putrefying Stink" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the start of the Fight phase, you can select one enemy unit within 3&quot; of this model. That unit is not eligible to fight this phase until after all eligible units from your army have done so.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="aa5f-ad6c-da09-e1f8" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
-        <categoryLink id="cc08-2aac-90d3-9bb5" name="Character" hidden="false" targetId="ef18-746a-369f-43a4" primary="false"/>
-        <categoryLink id="de8f-38d5-db80-2b23" name="Faction: Chaos" hidden="false" targetId="5cf1-acf2-ca3b-c2e5" primary="false"/>
-        <categoryLink id="114b-4fb1-9e12-3320" name="Chaotic Astartes" hidden="false" targetId="62d9-3cd6-aed7-34fe" primary="false"/>
-        <categoryLink id="9cd9-9ed4-7442-3493" name="Faction: Chaotic Astartes" hidden="false" targetId="b096-59fd-a5eb-5739" primary="false"/>
-        <categoryLink id="efbf-15be-c496-11e6" name="Legion: Death Guard" hidden="false" targetId="5ade-55c4-cc5e-750b" primary="false"/>
-        <categoryLink id="5cde-e09e-4916-5f81" name="Ø40mm" hidden="false" targetId="2ec1-217a-555a-b171" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="6a5e-b38a-fc0b-7b24" name="Unholy death’s head grenade" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d90-94e8-6091-ffa3" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="968b-2b4e-c300-483f" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="b7ed-8c97-ee58-8f8a" name="Unholy death’s head grenade" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">6&quot;</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Grenade 2D6</characteristic>
-                <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
-                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Plague Weapon. The bearer can only shoot with this weapon once per battle.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink id="eb02-204c-6eae-b3b5" name="Plague weapon" hidden="false" targetId="56a9-eae2-7298-9256" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="da68-3f3d-f6ba-12ab" name="Plague sprayer" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fb1-a487-9e12-ca31" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7296-c7ff-8584-fc33" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="514f-f586-e1ec-b913" name="Plague sprayer" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault D6</characteristic>
-                <characteristic name="S" typeId="59b1-319e-ec13-d466">7</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
-                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Plague Weapon. Torrent.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink id="9657-a0a6-493d-84d9" name="Plague weapon" hidden="false" targetId="56a9-eae2-7298-9256" primary="false"/>
-            <categoryLink id="8a00-b950-4d90-14a5" name="Torrent" hidden="false" targetId="795f-a8d3-dc18-cb2e" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="37d2-c1b6-8d7a-c7fb" name="   Character definition:" hidden="false" collective="false" import="true" targetId="3bcc-c51f-ca44-aca4" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="e8ef-6b0a-74e8-ca13" name="Unit upgrades" hidden="false" collective="false" import="true" targetId="867f-e3d9-541a-3498" type="selectionEntryGroup"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="5b22-a9d8-d211-a9b5" name="Plague knife" hidden="false" collective="false" import="true" targetId="4afe-d471-a779-9916" type="selectionEntry"/>
-        <entryLink id="32fa-31c3-6c5a-a7ec" name="Krak &amp; Blight Grenades" hidden="false" collective="false" import="true" targetId="9856-7ac5-0453-2f59" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="points" value="80"/>
-        <cost name="PL" typeId="e356-c769-5920-6e14" value="4"/>
-        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="d9c9-26ca-61a0-46dc" name="Noxious Blightbringer" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="33b3-f2a3-9749-2f10" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <profiles>
-        <profile id="0f46-28a6-ef74-98d3" name="Noxious Blightbringer" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="8e1f-18af-2602-ca35" name="Sickening Vitality [Aura]" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly &lt;PLAGUE COMPANY&gt; CORE or &lt;PLAGUE COMPANY&gt; FOETID VIRION unit is within 6&quot; of this model, each time that unit is selected to make a Normal Move or Advance, until the end of the phase, add 1&quot; to the Move characteristic of models in that unit.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="549c-abcc-3a7f-dc4d" name="Empyric Malaise [Aura]" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While an enemy PSYKER unit is within 6&quot; of this model, subtract 1 from Psychic tests taken for that unit.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="b076-ca2a-85a9-7198" name="Toxin of Misery [Aura]" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While an enemy unit is within 6&quot; of this model, subtract 1 from Combat Attrition tests taken for that unit.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="30db-ed30-387d-3742" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
-        <categoryLink id="57ef-e402-538c-4a17" name="Character" hidden="false" targetId="ef18-746a-369f-43a4" primary="false"/>
-        <categoryLink id="7ba1-8f2c-083d-e596" name="Faction: Chaos" hidden="false" targetId="5cf1-acf2-ca3b-c2e5" primary="false"/>
-        <categoryLink id="d9c4-4907-0c9d-81da" name="Chaotic Astartes" hidden="false" targetId="62d9-3cd6-aed7-34fe" primary="false"/>
-        <categoryLink id="e6a9-9943-e491-fb59" name="Faction: Chaotic Astartes" hidden="false" targetId="b096-59fd-a5eb-5739" primary="false"/>
-        <categoryLink id="0776-6d89-4f6a-e0ae" name="Legion: Death Guard" hidden="false" targetId="5ade-55c4-cc5e-750b" primary="false"/>
-        <categoryLink id="0dd5-ffe0-3416-f75b" name="Ø40mm" hidden="false" targetId="2ec1-217a-555a-b171" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="54f8-f193-1bbb-e598" name="Cursed plague bell" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab84-59d9-8daa-3236" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c828-5849-b9f3-31fc" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="95cc-4d78-bec4-23c6" name="Cursed plague bell" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-                <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
-                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Plague Weapon.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink id="456d-c8b2-a8c3-63e2" name="Plague weapon" hidden="false" targetId="56a9-eae2-7298-9256" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="1349-58df-ab8c-31d1" name="   Character definition:" hidden="false" collective="false" import="true" targetId="3bcc-c51f-ca44-aca4" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="e2e0-eb51-009a-f22d" name="Unit upgrades" hidden="false" collective="false" import="true" targetId="867f-e3d9-541a-3498" type="selectionEntryGroup"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="13d2-3c33-784a-c9c7" name="Plasma pistol" hidden="false" collective="false" import="true" targetId="4ac9-995a-cb90-b559" type="selectionEntry"/>
-        <entryLink id="70c7-3dc5-8dae-9210" name="Krak &amp; Blight Grenades" hidden="false" collective="false" import="true" targetId="9856-7ac5-0453-2f59" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="points" value="45"/>
-        <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
-        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="e8d0-9982-6c67-d2b2" name="Plague Surgeon" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="33b3-f2a3-9749-2f10" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <modifierGroups>
-        <modifierGroup>
-          <comment>Special Ammunitions</comment>
-          <modifiers>
-            <modifier type="add" field="category" value="ed5a-14d7-45f8-afb3">
-              <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fe8c-9fa3-c71e-d8de" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
-      <profiles>
-        <profile id="efbd-2153-58ae-b3ad" name="Plague Surgeon" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="503b-b486-5f2a-0718" name="Tainted Narthecium [Aura]" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly &lt;DEATH GUARD&gt; INFANTRY unit is within 3&quot; of this model, each time a model in that unit uses the Mark of Nurgle ability, add 1 to the result of each roll.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="314e-0534-64ba-2c2c" name="Revitalising Malignancy" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the end of your Movement phase, this model can heal one friendly &lt;DEATH GUARD&gt; INFANTRY model whose unit is within 3&quot; of it. That model regains up to D3 lost wounds. Each model can only be healed once per turn.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="4aa7-fc3e-66c8-217a" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
-        <categoryLink id="a268-790a-e42d-6d02" name="Character" hidden="false" targetId="ef18-746a-369f-43a4" primary="false"/>
-        <categoryLink id="5da6-34cf-5fd3-96d0" name="Faction: Chaos" hidden="false" targetId="5cf1-acf2-ca3b-c2e5" primary="false"/>
-        <categoryLink id="cd25-c1fe-26ad-eaeb" name="Chaotic Astartes" hidden="false" targetId="62d9-3cd6-aed7-34fe" primary="false"/>
-        <categoryLink id="c795-e575-0aad-a418" name="Faction: Chaotic Astartes" hidden="false" targetId="b096-59fd-a5eb-5739" primary="false"/>
-        <categoryLink id="33ca-b66a-8a39-b6ea" name="Legion: Death Guard" hidden="false" targetId="5ade-55c4-cc5e-750b" primary="false"/>
-        <categoryLink id="2fd4-17f7-7d56-579f" name="Chaos Mark: Nurgle" hidden="false" targetId="2226-f82a-fe58-178d" primary="false"/>
-        <categoryLink id="788f-ec0a-1711-d32e" name="Ø40mm" hidden="false" targetId="2ec1-217a-555a-b171" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="8642-21bb-15ca-50b6" name="   Character definition:" hidden="false" collective="false" import="true" targetId="3bcc-c51f-ca44-aca4" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="1645-0cc5-f9b5-c6c9" name="Unit upgrades" hidden="false" collective="false" import="true" targetId="867f-e3d9-541a-3498" type="selectionEntryGroup"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="4836-bced-1059-7c93" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="1da2-aaf4-c4eb-f218" type="selectionEntry"/>
-        <entryLink id="5369-bb56-ff6a-d9ff" name="Krak &amp; Blight Grenades" hidden="false" collective="false" import="true" targetId="9856-7ac5-0453-2f59" type="selectionEntry"/>
-        <entryLink id="b13a-0496-8e21-2961" name="Balesword" hidden="false" collective="false" import="true" targetId="3c53-5076-28d8-508d" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6195-e5e7-c93b-da65" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a8d-5390-09eb-526b" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="points" value="60"/>
-        <cost name="PL" typeId="e356-c769-5920-6e14" value="3"/>
-        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="f12c-32ca-4024-cd43" name="Tallyman" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="33b3-f2a3-9749-2f10" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <profiles>
-        <profile id="c010-d926-f28a-7c16" name="Tallyman" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="e30c-fdb3-470a-3213" name="Malicious Calculation" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">In your Command phase, this model can tally for one friendly &lt;PLAGUE COMPANY&gt; CORE unit within 6&quot; of it. Until the start of your next Command phase, each time a model in that unit makes an attack, add 1 to that attack’s hit roll. Each unit can only be tallied for once per turn.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="9f59-990c-1a41-43f6" name="The Seven-fold Chant" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the start of the Command phase, if this model is on the battlefield, roll 2D6: on a 7+, you gain 1 Command point.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="78da-1ab3-ed64-7119" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
-        <categoryLink id="277d-abb8-a944-9b10" name="Character" hidden="false" targetId="ef18-746a-369f-43a4" primary="false"/>
-        <categoryLink id="cb6c-78de-cc9f-f0fc" name="Faction: Chaos" hidden="false" targetId="5cf1-acf2-ca3b-c2e5" primary="false"/>
-        <categoryLink id="661e-9ae2-480c-b621" name="Chaotic Astartes" hidden="false" targetId="62d9-3cd6-aed7-34fe" primary="false"/>
-        <categoryLink id="031d-754b-4649-ee9c" name="Faction: Chaotic Astartes" hidden="false" targetId="b096-59fd-a5eb-5739" primary="false"/>
-        <categoryLink id="159d-c99c-e0cc-19ca" name="Legion: Death Guard" hidden="false" targetId="5ade-55c4-cc5e-750b" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="6bfa-f739-8347-db4c" name="   Character definition:" hidden="false" collective="false" import="true" targetId="3bcc-c51f-ca44-aca4" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="db84-415d-0b62-c9cd" name="Unit upgrades" hidden="false" collective="false" import="true" targetId="867f-e3d9-541a-3498" type="selectionEntryGroup"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="a943-509e-cf00-cd28" name="Plasma pistol" hidden="false" collective="false" import="true" targetId="4ac9-995a-cb90-b559" type="selectionEntry"/>
-        <entryLink id="b735-f9a3-3903-7123" name="Krak &amp; Blight Grenades" hidden="false" collective="false" import="true" targetId="9856-7ac5-0453-2f59" type="selectionEntry"/>
-        <entryLink id="01c8-f28a-f53c-268c" name="Plague knife" hidden="false" collective="false" import="true" targetId="4afe-d471-a779-9916" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="points" value="60"/>
-        <cost name="PL" typeId="e356-c769-5920-6e14" value="3"/>
-        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
     </selectionEntry>
@@ -41279,6 +40816,496 @@ If completed, until the end of the battle, add 1 to the Strength characteristic 
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Foetid Virion" hidden="false" id="9c67-9aa2-4b30-b96b">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Foetid Virion" id="f5a7-331c-f4fa-277a" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Biologus Putrifier" hidden="true" id="9d2f-4ce2-9ce7-7b6f" collective="false">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="33b3-f2a3-9749-2f10" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Biologus Putrifier" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="9df1-74e6-3529-cb1d">
+                  <characteristics>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
+                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Blight Racks [Aura]" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="ac15-11e0-64e6-c3a8">
+                  <characteristics>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly &lt;PLAGUE COMPANY&gt; ASTARTES unit is within 6&quot; of this model, blight grenades models in that unit are equipped have an Armour Penetration characteristic of -1 and a Damage characteristic of 2.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Foul Infusion" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="6515-d36a-49a1-ddd8">
+                  <characteristics>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Once per turn, at the start of either your Charge phase or the Fight phase, you can select one friendly &lt;PLAGUE COMPANY&gt; CORE unit within 6&quot; of this model. Until the start of your next Command phase, each time a model in that unit makes a melee attack with a Plague Weapon, an unmodified wound roll of 6 inflicts 1 mortal wound on the target in addition to any normal damage. Each unit can only be selected for this ability once per turn.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Putrid Explosion" id="0511-714d-8267-5482" hidden="false" targetId="8dae-f25a-7a9e-0f09" type="profile"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink name="Infantry" hidden="false" id="eddd-beb0-b5ff-75e7" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+                <categoryLink name="Character" hidden="false" id="2890-d578-020d-3734" targetId="ef18-746a-369f-43a4" primary="false"/>
+                <categoryLink name="Chaotic Astartes" hidden="false" id="1350-61ee-35c1-2f07" targetId="62d9-3cd6-aed7-34fe" primary="false"/>
+                <categoryLink name="Legion: Death Guard" hidden="false" id="be51-e264-ab33-6ad0" targetId="5ade-55c4-cc5e-750b" primary="false"/>
+                <categoryLink name="Chaos Mark: Nurgle" hidden="false" id="c4a3-f330-b8cb-6d2d" targetId="2226-f82a-fe58-178d" primary="false"/>
+                <categoryLink name="Ø40mm" hidden="false" id="ffcd-0ed9-6672-4d30" targetId="2ec1-217a-555a-b171" primary="false"/>
+              </categoryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Injector pistol" hidden="false" id="a46b-02c5-5d8a-b262" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4a9-7bea-8bdf-f871" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="65cc-6e4d-ac44-ede5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Injector pistol" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="6956-41b1-3c3a-ff69">
+                      <characteristics>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">3&quot;</characteristic>
+                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol 1</characteristic>
+                        <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
+                        <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Plague Weapon. Each time an attack is made with this weapon against an non INORGANIC INFANTRY, CAVALRY, SWARM or BEAST unit, if the attack successfully wounds the target, it inflicts D3 mortal wounds in addition to any normal damage.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="Pts" typeId="points" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Hyper blight grenade" hidden="false" id="68f9-8845-09ec-78c8" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f02-96b8-d8c7-72f3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4678-25a9-5667-f220" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Hyper blight grenade" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="ca65-f808-4d39-a242">
+                      <characteristics>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">6&quot;</characteristic>
+                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Grenade D6</characteristic>
+                        <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
+                        <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Plague Weapon</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="Pts" typeId="points" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="   Character definition:" hidden="false" id="bade-c826-6dd3-6502" collective="false" targetId="3bcc-c51f-ca44-aca4" type="selectionEntryGroup">
+                  <entryLinks>
+                    <entryLink import="true" name="Unit upgrades" hidden="false" id="9780-d721-2f49-1321" collective="false" targetId="867f-e3d9-541a-3498" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Plague knife" hidden="false" id="56d5-9f13-ed79-d120" collective="false" targetId="4afe-d471-a779-9916" type="selectionEntry"/>
+                <entryLink import="true" name="Krak grenades" hidden="false" id="bdd5-6818-d20d-f33a" collective="false" targetId="0f23-cd69-d106-371e" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b98-2fd3-0283-4b8f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="36c6-3389-2fee-9eac" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="40"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eac7-169e-bee9-2b9c" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Foul Blightspawn" hidden="true" id="ed0a-5968-c931-0a38" collective="false">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="33b3-f2a3-9749-2f10" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Foul Blightspawn" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="cf30-4503-9024-5134">
+                  <characteristics>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
+                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Putrefying Stink" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="d783-f071-a19e-fca0">
+                  <characteristics>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the start of the Fight phase, you can select one enemy unit within 3&quot; of this model. That unit is not eligible to fight this phase until after all eligible units from your army have done so.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink name="Infantry" hidden="false" id="aa5f-ad6c-da09-e1f8" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+                <categoryLink name="Character" hidden="false" id="cc08-2aac-90d3-9bb5" targetId="ef18-746a-369f-43a4" primary="false"/>
+                <categoryLink name="Chaotic Astartes" hidden="false" id="114b-4fb1-9e12-3320" targetId="62d9-3cd6-aed7-34fe" primary="false"/>
+                <categoryLink name="Legion: Death Guard" hidden="false" id="efbf-15be-c496-11e6" targetId="5ade-55c4-cc5e-750b" primary="false"/>
+                <categoryLink name="Ø40mm" hidden="false" id="5cde-e09e-4916-5f81" targetId="2ec1-217a-555a-b171" primary="false"/>
+                <categoryLink name="Chaos Mark: Nurgle" hidden="false" id="6f67-e313-7a48-e7c4" targetId="2226-f82a-fe58-178d" primary="false"/>
+              </categoryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Unholy death’s head grenade" hidden="false" id="6a5e-b38a-fc0b-7b24" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d90-94e8-6091-ffa3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="968b-2b4e-c300-483f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Unholy death’s head grenade" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="b7ed-8c97-ee58-8f8a">
+                      <characteristics>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">6&quot;</characteristic>
+                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Grenade 2D6</characteristic>
+                        <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
+                        <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Plague Weapon. The bearer can only shoot with this weapon once per battle.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <categoryLinks>
+                    <categoryLink name="Plague weapon" hidden="false" id="eb02-204c-6eae-b3b5" targetId="56a9-eae2-7298-9256" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="Pts" typeId="points" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Plague sprayer" hidden="false" id="da68-3f3d-f6ba-12ab" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fb1-a487-9e12-ca31" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7296-c7ff-8584-fc33" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Plague sprayer" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="514f-f586-e1ec-b913">
+                      <characteristics>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault D6</characteristic>
+                        <characteristic name="S" typeId="59b1-319e-ec13-d466">7</characteristic>
+                        <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Plague Weapon. Torrent.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <categoryLinks>
+                    <categoryLink name="Plague weapon" hidden="false" id="9657-a0a6-493d-84d9" targetId="56a9-eae2-7298-9256" primary="false"/>
+                    <categoryLink name="Torrent" hidden="false" id="8a00-b950-4d90-14a5" targetId="795f-a8d3-dc18-cb2e" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="Pts" typeId="points" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="   Character definition:" hidden="false" id="37d2-c1b6-8d7a-c7fb" collective="false" targetId="3bcc-c51f-ca44-aca4" type="selectionEntryGroup">
+                  <entryLinks>
+                    <entryLink import="true" name="Unit upgrades" hidden="false" id="e8ef-6b0a-74e8-ca13" collective="false" targetId="867f-e3d9-541a-3498" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Plague knife" hidden="false" id="5b22-a9d8-d211-a9b5" collective="false" targetId="4afe-d471-a779-9916" type="selectionEntry"/>
+                <entryLink import="true" name="Krak &amp; Blight Grenades" hidden="false" id="32fa-31c3-6c5a-a7ec" collective="false" targetId="9856-7ac5-0453-2f59" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="80"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="4"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c25b-978b-fb9b-15ba" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Noxious Blightbringer" hidden="true" id="d9c9-26ca-61a0-46dc" collective="false">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="33b3-f2a3-9749-2f10" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Noxious Blightbringer" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="0f46-28a6-ef74-98d3">
+                  <characteristics>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
+                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Sickening Vitality [Aura]" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="8e1f-18af-2602-ca35">
+                  <characteristics>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly &lt;PLAGUE COMPANY&gt; CORE or &lt;PLAGUE COMPANY&gt; FOETID VIRION unit is within 6&quot; of this model, each time that unit is selected to make a Normal Move or Advance, until the end of the phase, add 1&quot; to the Move characteristic of models in that unit.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Empyric Malaise [Aura]" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="549c-abcc-3a7f-dc4d">
+                  <characteristics>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While an enemy PSYKER unit is within 6&quot; of this model, subtract 1 from Psychic tests taken for that unit.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Toxin of Misery [Aura]" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="b076-ca2a-85a9-7198">
+                  <characteristics>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While an enemy unit is within 6&quot; of this model, subtract 1 from Combat Attrition tests taken for that unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink name="Infantry" hidden="false" id="30db-ed30-387d-3742" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+                <categoryLink name="Character" hidden="false" id="57ef-e402-538c-4a17" targetId="ef18-746a-369f-43a4" primary="false"/>
+                <categoryLink name="Chaotic Astartes" hidden="false" id="d9c4-4907-0c9d-81da" targetId="62d9-3cd6-aed7-34fe" primary="false"/>
+                <categoryLink name="Legion: Death Guard" hidden="false" id="0776-6d89-4f6a-e0ae" targetId="5ade-55c4-cc5e-750b" primary="false"/>
+                <categoryLink name="Ø40mm" hidden="false" id="0dd5-ffe0-3416-f75b" targetId="2ec1-217a-555a-b171" primary="false"/>
+                <categoryLink name="Chaos Mark: Nurgle" hidden="false" id="2ae8-022f-a476-791c" targetId="2226-f82a-fe58-178d" primary="false"/>
+              </categoryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Cursed plague bell" hidden="false" id="54f8-f193-1bbb-e598" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab84-59d9-8daa-3236" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c828-5849-b9f3-31fc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Cursed plague bell" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="95cc-4d78-bec4-23c6">
+                      <characteristics>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                        <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
+                        <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Plague Weapon.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <categoryLinks>
+                    <categoryLink name="Plague weapon" hidden="false" id="456d-c8b2-a8c3-63e2" targetId="56a9-eae2-7298-9256" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="Pts" typeId="points" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="   Character definition:" hidden="false" id="1349-58df-ab8c-31d1" collective="false" targetId="3bcc-c51f-ca44-aca4" type="selectionEntryGroup">
+                  <entryLinks>
+                    <entryLink import="true" name="Unit upgrades" hidden="false" id="e2e0-eb51-009a-f22d" collective="false" targetId="867f-e3d9-541a-3498" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Plasma pistol" hidden="false" id="13d2-3c33-784a-c9c7" collective="false" targetId="4ac9-995a-cb90-b559" type="selectionEntry"/>
+                <entryLink import="true" name="Krak &amp; Blight Grenades" hidden="false" id="70c7-3dc5-8dae-9210" collective="false" targetId="9856-7ac5-0453-2f59" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="45"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Tallyman" hidden="true" id="f12c-32ca-4024-cd43" collective="false">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="33b3-f2a3-9749-2f10" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Tallyman" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="c010-d926-f28a-7c16">
+                  <characteristics>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
+                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Malicious Calculation" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="e30c-fdb3-470a-3213">
+                  <characteristics>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">In your Command phase, this model can tally for one friendly &lt;PLAGUE COMPANY&gt; CORE unit within 6&quot; of it. Until the start of your next Command phase, each time a model in that unit makes an attack, add 1 to that attack’s hit roll. Each unit can only be tallied for once per turn.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="The Seven-fold Chant" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="9f59-990c-1a41-43f6">
+                  <characteristics>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the start of the Command phase, if this model is on the battlefield, roll 2D6: on a 7+, you gain 1 Command point.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink name="Infantry" hidden="false" id="78da-1ab3-ed64-7119" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+                <categoryLink name="Character" hidden="false" id="277d-abb8-a944-9b10" targetId="ef18-746a-369f-43a4" primary="false"/>
+                <categoryLink name="Chaotic Astartes" hidden="false" id="661e-9ae2-480c-b621" targetId="62d9-3cd6-aed7-34fe" primary="false"/>
+                <categoryLink name="Legion: Death Guard" hidden="false" id="159d-c99c-e0cc-19ca" targetId="5ade-55c4-cc5e-750b" primary="false"/>
+                <categoryLink name="Chaos Mark: Nurgle" hidden="false" id="dd96-2d9d-f45f-8bf8" targetId="2226-f82a-fe58-178d" primary="false"/>
+                <categoryLink name="Ø40mm" hidden="false" id="e38c-f086-7c87-e98c" targetId="2ec1-217a-555a-b171" primary="false"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink import="true" name="   Character definition:" hidden="false" id="6bfa-f739-8347-db4c" collective="false" targetId="3bcc-c51f-ca44-aca4" type="selectionEntryGroup">
+                  <entryLinks>
+                    <entryLink import="true" name="Unit upgrades" hidden="false" id="db84-415d-0b62-c9cd" collective="false" targetId="867f-e3d9-541a-3498" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Plasma pistol" hidden="false" id="a943-509e-cf00-cd28" collective="false" targetId="4ac9-995a-cb90-b559" type="selectionEntry"/>
+                <entryLink import="true" name="Krak &amp; Blight Grenades" hidden="false" id="b735-f9a3-3903-7123" collective="false" targetId="9856-7ac5-0453-2f59" type="selectionEntry"/>
+                <entryLink import="true" name="Plague knife" hidden="false" id="01c8-f28a-f53c-268c" collective="false" targetId="4afe-d471-a779-9916" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="60"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="3"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Plague Surgeon" hidden="true" id="e8d0-9982-6c67-d2b2" collective="false">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="33b3-f2a3-9749-2f10" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Special Ammunitions</comment>
+                  <modifiers>
+                    <modifier type="add" value="ed5a-14d7-45f8-afb3" field="category">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="fe8c-9fa3-c71e-d8de" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <profiles>
+                <profile name="Plague Surgeon" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="efbd-2153-58ae-b3ad">
+                  <characteristics>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
+                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Tainted Narthecium [Aura]" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="503b-b486-5f2a-0718">
+                  <characteristics>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly &lt;DEATH GUARD&gt; INFANTRY unit is within 3&quot; of this model, each time a model in that unit uses the Mark of Nurgle ability, add 1 to the result of each roll.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Revitalising Malignancy" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="314e-0534-64ba-2c2c">
+                  <characteristics>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the end of your Movement phase, this model can heal one friendly &lt;DEATH GUARD&gt; INFANTRY model whose unit is within 3&quot; of it. That model regains up to D3 lost wounds. Each model can only be healed once per turn.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink name="Infantry" hidden="false" id="4aa7-fc3e-66c8-217a" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+                <categoryLink name="Character" hidden="false" id="a268-790a-e42d-6d02" targetId="ef18-746a-369f-43a4" primary="false"/>
+                <categoryLink name="Chaotic Astartes" hidden="false" id="cd25-c1fe-26ad-eaeb" targetId="62d9-3cd6-aed7-34fe" primary="false"/>
+                <categoryLink name="Legion: Death Guard" hidden="false" id="33ca-b66a-8a39-b6ea" targetId="5ade-55c4-cc5e-750b" primary="false"/>
+                <categoryLink name="Chaos Mark: Nurgle" hidden="false" id="2fd4-17f7-7d56-579f" targetId="2226-f82a-fe58-178d" primary="false"/>
+                <categoryLink name="Ø40mm" hidden="false" id="788f-ec0a-1711-d32e" targetId="2ec1-217a-555a-b171" primary="false"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink import="true" name="   Character definition:" hidden="false" id="8642-21bb-15ca-50b6" collective="false" targetId="3bcc-c51f-ca44-aca4" type="selectionEntryGroup">
+                  <entryLinks>
+                    <entryLink import="true" name="Unit upgrades" hidden="false" id="1645-0cc5-f9b5-c6c9" collective="false" targetId="867f-e3d9-541a-3498" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="4836-bced-1059-7c93" collective="false" targetId="1da2-aaf4-c4eb-f218" type="selectionEntry"/>
+                <entryLink import="true" name="Krak &amp; Blight Grenades" hidden="false" id="5369-bb56-ff6a-d9ff" collective="false" targetId="9856-7ac5-0453-2f59" type="selectionEntry"/>
+                <entryLink import="true" name="Balesword" hidden="false" id="b13a-0496-8e21-2961" collective="false" targetId="3c53-5076-28d8-508d" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6195-e5e7-c93b-da65" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7a8d-5390-09eb-526b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="60"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="3"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c627-f14b-a057-a719" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="320f-7b20-d200-2f45" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink name="Faction: Chaos" hidden="false" id="821c-5cae-3806-05d5" targetId="5cf1-acf2-ca3b-c2e5" primary="false"/>
+        <categoryLink name="Faction: Chaotic Astartes" hidden="false" id="4c01-ad3b-7326-cc64" targetId="b096-59fd-a5eb-5739" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="6ca5-c0b4-3afb-b638" name="Warlord Traits" hidden="true" collective="false" import="true">
@@ -47674,9 +47701,9 @@ If you selected a CORE, DAEMONIC or DAEMON unit and that unit is not at its Star
                     <conditionGroup type="or">
                       <conditions>
                         <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef18-746a-369f-43a4" type="instanceOf"/>
-                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="74fb-c596-866f-f8a3" type="instanceOf"/>
-                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3219-ec93-d982-2975" type="instanceOf"/>
-                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb77-d817-b4e2-dda7" type="instanceOf"/>
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2435-0ef1-2d0d-114e" type="instanceOf" childName="Blightlord Terminators"/>
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9180-d5d0-ea45-9548" type="instanceOf" childName="Plague Legionaries"/>
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6ad-de10-90e4-189f" type="instanceOf" childName="Deathshroud Terminators"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -51817,57 +51844,4 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
       </characteristics>
     </profile>
   </sharedProfiles>
-  <selectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Foetid Virion" hidden="true" id="2c4c-8f76-da71-3262">
-      <categoryLinks>
-        <categoryLink name="Elites" hidden="false" id="c31f-9189-1405-628f" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Foetid Virion" id="c8b6-95b4-d6af-2c6d" hidden="false">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="29bb-ada0-dd58-bc18"/>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="743b-f30b-8c54-e682"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Biologus Putrifier" hidden="false" id="4b73-3651-4b9f-4e85" collective="false" targetId="9d2f-4ce2-9ce7-7b6f" type="selectionEntry">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb53-322e-8539-12da"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Foul Blightspawn" hidden="false" id="974a-311b-b7ad-4140" collective="false" targetId="ed0a-5968-c931-0a38" type="selectionEntry">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ea4-0ed5-604a-d761"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Noxious Blightbringer" hidden="false" id="37af-e8c0-4c0c-3015" collective="false" targetId="d9c9-26ca-61a0-46dc" type="selectionEntry">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="176b-4a80-ff4b-ad9c" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Plague Surgeon" hidden="false" id="864d-6a6a-02da-84a9" collective="false" targetId="e8d0-9982-6c67-d2b2" type="selectionEntry">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8f7-d867-17f2-ba63" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Tallyman" hidden="false" id="a38a-be73-a621-bc49" collective="false" targetId="f12c-32ca-4024-cd43" type="selectionEntry">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d71-996d-a17c-aeac" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="33b3-f2a3-9749-2f10" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-    </selectionEntry>
-  </selectionEntries>
 </catalogue>
