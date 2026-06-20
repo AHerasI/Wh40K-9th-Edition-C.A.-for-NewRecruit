@@ -349,15 +349,6 @@ Additional reference data obtained from Wahapedia, https://wahapedia.ru/</readme
             </modifier>
           </modifiers>
         </infoLink>
-        <infoLink id="4392-eeeb-f78b-3a0b" name="Loyal to the End" hidden="false" targetId="582b-47a7-4326-d44c" type="profile">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4395-6d64-41c4-24ef" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
         <infoLink id="d8fd-4f44-0a4e-0361" name="Rapid Retreat" hidden="false" targetId="6ca1-6104-e209-fd71" type="profile">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
@@ -368,6 +359,20 @@ Additional reference data obtained from Wahapedia, https://wahapedia.ru/</readme
           </modifiers>
         </infoLink>
       </infoLinks>
+      <profiles>
+        <profile name="Loyal to the End" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="026e-cdf8-51a0-f21d">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a Morale test is taken for a unit with this tenet, you can re-roll that test.</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
     </categoryEntry>
     <categoryEntry id="bf09-6007-1a8f-792b" name="Dal&apos;yth Sept" hidden="false">
       <infoLinks>
@@ -3904,7 +3909,7 @@ Use this Stratagem in any phase, when a saving throw is failed for a model in a 
                 <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model knows two invocations from the Invocations of the Ethereals. In your Command phase, if this model is on the battlefield, it can intone one Invocation it knows that has not already been inspired by a friendly model this turn. Roll one D6: on a 3+, the intoned invocation is inspiring and takes affect until the start of your next Command phase.</characteristic>
               </characteristics>
             </profile>
-            <profile id="484f-64a8-f608-d4ac" name="Ethereal" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="484f-64a8-f608-d4ac" name="Ethereal" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <modifiers>
                 <modifier type="set" field="0bdf-a96e-9e38-7779" value="10&quot;">
                   <conditions>
@@ -3923,6 +3928,23 @@ Use this Stratagem in any phase, when a saving throw is failed for a model in a 
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Ld modifiers</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
             <profile id="cfa6-f23c-4fb4-0a91" name="Embodiments of the Empire" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
@@ -4097,6 +4119,23 @@ Use this Stratagem in any phase, when a saving throw is failed for a model in a 
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile id="d34b-c294-d997-710f" name="AX0 Manta [2] (16-30 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
@@ -4117,6 +4156,23 @@ Use this Stratagem in any phase, when a saving throw is failed for a model in a 
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile id="c39d-3295-b357-a3e0" name="AX0 Manta [3] (7-15 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
@@ -4137,6 +4193,23 @@ Use this Stratagem in any phase, when a saving throw is failed for a model in a 
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile id="ba51-b6d7-252f-0c59" name="AX0 Manta [4] (1-6 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
@@ -4157,6 +4230,23 @@ Use this Stratagem in any phase, when a saving throw is failed for a model in a 
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile id="899b-76df-4470-9433" name="AX0 Manta" hidden="false" typeId="b3a8-0452-7436-44d1" typeName="Transport">
           <characteristics>
@@ -4322,6 +4412,23 @@ Any models embarked within another model when it embarks upon this model do not 
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile id="0cd1-9021-1d57-f1f3" name="AX10 Tiger Shark [2] (7-12 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
@@ -4342,6 +4449,23 @@ Any models embarked within another model when it embarks upon this model do not 
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile id="01fc-9ad8-4640-454e" name="AX10 Tiger Shark [3] (1-6 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
@@ -4362,6 +4486,23 @@ Any models embarked within another model when it embarks upon this model do not 
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <infoLinks>
@@ -4540,6 +4681,23 @@ Any models embarked within another model when it embarks upon this model do not 
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile id="78c5-c1f2-10f7-5201" name="AX11 Tiger Shark [2] (7-12 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
@@ -4560,6 +4718,23 @@ Any models embarked within another model when it embarks upon this model do not 
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile id="bba2-729d-92c8-dd25" name="AX11 Tiger Shark [3] (1-6 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
@@ -4580,6 +4755,23 @@ Any models embarked within another model when it embarks upon this model do not 
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <infoLinks>
@@ -4818,6 +5010,23 @@ Any models embarked within another model when it embarks upon this model do not 
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile id="749e-cfe4-564c-e3d2" name="AX2 Orca Dropship [2] (7-13 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
@@ -4838,6 +5047,23 @@ Any models embarked within another model when it embarks upon this model do not 
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile id="7c16-6fb8-694f-b79d" name="AX2 Orca Dropship [3] (1-6 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
@@ -4858,6 +5084,23 @@ Any models embarked within another model when it embarks upon this model do not 
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <infoLinks>
@@ -5004,6 +5247,23 @@ Any models embarked within another model when it embarks upon this model do not 
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile id="3dc1-9a90-c740-5949" name="AX3 Razorshark Strike Fighter [2] (4-7 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
@@ -5024,6 +5284,23 @@ Any models embarked within another model when it embarks upon this model do not 
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile id="57d4-cdf2-ef90-57d2" name="AX3 Razorshark Strike Fighter [3] (1-3 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
@@ -5044,6 +5321,23 @@ Any models embarked within another model when it embarks upon this model do not 
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <infoLinks>
@@ -5176,6 +5470,23 @@ Any models embarked within another model when it embarks upon this model do not 
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile id="61f8-39e2-c59d-eecf" name="AX52 Barracuda [2] (5-8 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
@@ -5196,6 +5507,23 @@ Any models embarked within another model when it embarks upon this model do not 
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile id="7d4f-e3b8-fa6c-0d73" name="AX52 Barracuda [3] (1-4 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
@@ -5216,6 +5544,23 @@ Any models embarked within another model when it embarks upon this model do not 
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <infoLinks>
@@ -5425,6 +5770,23 @@ Any models embarked within another model when it embarks upon this model do not 
                   </conditions>
                 </modifier>
               </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Ld modifiers</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
             <profile id="c6db-35a1-8179-d64f" name="AX39 Sun Shark Bomber [2] (4-7 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
@@ -5445,6 +5807,23 @@ Any models embarked within another model when it embarks upon this model do not 
                   </conditions>
                 </modifier>
               </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Ld modifiers</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
             <profile id="edba-3081-5860-21b6" name="AX39 Sun Shark Bomber [3] (1-3 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
@@ -5465,6 +5844,23 @@ Any models embarked within another model when it embarks upon this model do not 
                   </conditions>
                 </modifier>
               </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Ld modifiers</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
             <profile id="0ebd-aef9-dca6-403e" name="Docked Drones [AX39]" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
@@ -6151,7 +6547,7 @@ Any models embarked within another model when it embarks upon this model do not 
                 <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly &lt;SEPT&gt; INFANTRY CORE unit is within 6&quot; of this model, each time a CORE model in that unit, excluding BATTLESUIT models, makes an attack with a pulse weapon, an unmodified hit roll of 6 scores one additional hit.</characteristic>
               </characteristics>
             </profile>
-            <profile id="b98c-042d-41e8-9e4e" name="Cadre Fireblade" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="b98c-042d-41e8-9e4e" name="Cadre Fireblade" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <modifiers>
                 <modifier type="set" field="e7f0-1278-0250-df0c" value="3+">
                   <conditions>
@@ -6170,6 +6566,23 @@ Any models embarked within another model when it embarks upon this model do not 
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Ld modifiers</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <categoryLinks>
@@ -6302,7 +6715,7 @@ Any models embarked within another model when it embarks upon this model do not 
 - Stabilization Protocol: This model can bring back one friendly destroyed VEHICLE or BATTLESUIT model from a unit 3&quot; of it. That VEHICLE or BATTLESUIT model is set up within 3&quot; of the EARTH CASTE ENGINEER and in coherency with the unit, with up to 3 wounds remaining. Each unit can be affected once by Stabilization Protocol per turn.</characteristic>
               </characteristics>
             </profile>
-            <profile id="bdd5-3b1a-764d-46f3" name="Earth Caste Combat Engineer" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="bdd5-3b1a-764d-46f3" name="Earth Caste Combat Engineer" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <modifiers>
                 <modifier type="set" field="e7f0-1278-0250-df0c" value="4+">
                   <conditions>
@@ -6321,6 +6734,23 @@ Any models embarked within another model when it embarks upon this model do not 
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">5</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Ld modifiers</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
             <profile id="fcc2-b8eb-2db1-b5e4" name="Member of the Earth Caste" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
@@ -6687,7 +7117,7 @@ Any models embarked within another model when it embarks upon this model do not 
                 <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This unit cannot be selected as a target for ranged attacks unless it is the closest eligible target to the firing model or is within 12&quot; of the firing model. In your Movement phase, if this unit does not Remain Stationary, it loses this ability until the start of your next Movement phase.</characteristic>
               </characteristics>
             </profile>
-            <profile id="8223-9fc3-abf8-d721" name="Firesight Marksman" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="8223-9fc3-abf8-d721" name="Firesight Marksman" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
@@ -6699,6 +7129,23 @@ Any models embarked within another model when it embarks upon this model do not 
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Ld modifiers</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <infoLinks>
@@ -7815,7 +8262,7 @@ Any models embarked within another model when it embarks upon this model do not 
         </modifierGroup>
       </modifierGroups>
       <profiles>
-        <profile id="f3fe-c56b-e3b7-3ec9" name="KV128 Stormsurge [1] (12+ Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="f3fe-c56b-e3b7-3ec9" name="KV128 Stormsurge [1] (12+ Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <modifiers>
             <modifier type="set" field="e7f0-1278-0250-df0c" value="4+">
               <conditions>
@@ -7834,8 +8281,25 @@ Any models embarked within another model when it embarks upon this model do not 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
-        <profile id="f107-caec-2527-4837" name="KV128 Stormsurge [2] (6-11 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="f107-caec-2527-4837" name="KV128 Stormsurge [2] (6-11 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <modifiers>
             <modifier type="set" field="e7f0-1278-0250-df0c" value="4+">
               <conditions>
@@ -7854,8 +8318,25 @@ Any models embarked within another model when it embarks upon this model do not 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
-        <profile id="51ca-f2bf-e122-cf6f" name="KV128 Stormsurge [3] (1-5 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="51ca-f2bf-e122-cf6f" name="KV128 Stormsurge [3] (1-5 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <modifiers>
             <modifier type="set" field="e7f0-1278-0250-df0c" value="4+">
               <conditions>
@@ -7874,6 +8355,23 @@ Any models embarked within another model when it embarks upon this model do not 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile id="757b-313e-6cf0-4cc1" name="[Action] Deploy Stabilising Anchors" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
@@ -8072,6 +8570,23 @@ Any models embarked within another model when it embarks upon this model do not 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile id="febb-7089-efc2-5945" name="KV139 Ta&apos;unar Supremacy Armour [2] (11-20 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
           <modifiers>
@@ -8092,8 +8607,25 @@ Any models embarked within another model when it embarks upon this model do not 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
-        <profile id="4c15-d028-8046-7944" name="KV139 Ta&apos;unar Supremacy Armour [3] (1-10 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="4c15-d028-8046-7944" name="KV139 Ta&apos;unar Supremacy Armour [3] (1-10 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <modifiers>
             <modifier type="set" field="e7f0-1278-0250-df0c" value="4+">
               <conditions>
@@ -8112,6 +8644,23 @@ Any models embarked within another model when it embarks upon this model do not 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile id="b3b6-fd97-6107-223d" name="Titanic" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
@@ -8579,7 +9128,7 @@ Any models embarked within another model when it embarks upon this model do not 
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="50af-f354-3100-5fbc" type="max"/>
       </constraints>
       <profiles>
-        <profile id="4197-f0d5-43bb-f9bf" name="Commander Shovah" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="4197-f0d5-43bb-f9bf" name="Commander Shovah" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
@@ -9131,7 +9680,7 @@ In addition, at the end of each Fight phase, if any number of enemy models were 
                 <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model has a 4+ invulnerable save. In addition, add 1 to armour saving throws for this model.</characteristic>
               </characteristics>
             </profile>
-            <profile id="5754-e5eb-b37a-c641" name="Commander Vesu&apos;r Ra&apos;lai" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="5754-e5eb-b37a-c641" name="Commander Vesu&apos;r Ra&apos;lai" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
@@ -9140,7 +9689,7 @@ In addition, at the end of each Fight phase, if any number of enemy models were 
                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
                 <characteristic name="W" typeId="f330-5e6e-4110-0978">7</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
-                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">12</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
               </characteristics>
             </profile>
@@ -9953,6 +10502,23 @@ Each time a successful hit is made for an attack made with this weapon, if the t
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Ld modifiers</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <categoryLinks>
@@ -10136,6 +10702,23 @@ Each time a successful hit is made for an attack made with this weapon, if the t
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Ld modifiers</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
             <profile id="3375-1353-bf48-c2a7" name="High-altitude Manoeuvres" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
@@ -11124,6 +11707,23 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                   </conditions>
                 </modifier>
               </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Ld modifiers</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <categoryLinks>
@@ -11272,6 +11872,23 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                   </conditions>
                 </modifier>
               </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Ld modifiers</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <infoLinks>
@@ -11461,6 +12078,23 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                   </conditions>
                 </modifier>
               </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Ld modifiers</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <infoLinks>
@@ -11661,6 +12295,30 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <modifiers>
+            <modifier type="set" value="14&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile id="3928-c65c-59c0-6d88" name="TX7 Hammerhead Gunship [2] (4-7 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
@@ -11674,6 +12332,30 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <modifiers>
+            <modifier type="set" value="8&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile id="e44c-1baf-e054-b293" name="TX7 Hammerhead Gunship [3] (1-3 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
@@ -11687,6 +12369,30 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <modifiers>
+            <modifier type="set" value="6&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
@@ -11817,6 +12523,23 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile id="bef4-78f0-4880-cd58" name="TX78 Sky Ray Gunship [2] (4-7 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
@@ -11837,6 +12560,23 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile id="1cf5-8263-09d9-58d2" name="TX78 Sky Ray Gunship [3] (1-3 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
@@ -11857,6 +12597,23 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile id="7830-8280-86db-e268" name="Aerial Scanners" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
@@ -12024,6 +12781,23 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile id="da7e-fba6-dbc4-0340" name="TY7 Devilfish Transport [2] (4-7 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
@@ -12044,6 +12818,23 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile id="dc52-414b-6428-eaad" name="TY7 Devilfish Transport [3] (1-3 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
@@ -12064,6 +12855,23 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile id="4c37-407a-6ca8-a7c7" name="TY7 Devilfish Transport" hidden="false" typeId="b3a8-0452-7436-44d1" typeName="Transport">
           <characteristics>
@@ -12452,6 +13260,23 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Ld modifiers</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
             <profile id="93a5-1cad-a4a5-14de" name="XV104 Riptide Battlesuit [2] (4-6 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <modifiers>
@@ -12477,6 +13302,23 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Ld modifiers</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
             <profile id="cc70-4778-f126-0f66" name="XV104 Riptide Battlesuit [3] (1-3 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <modifiers>
@@ -12502,6 +13344,23 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Ld modifiers</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <infoLinks>
@@ -12737,6 +13596,23 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Ld modifiers</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
             <profile id="67c7-85cd-d35a-4a32" name="XV107 R&apos;varna Battlesuit [2] (5-8 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <modifiers>
@@ -12757,6 +13633,23 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Ld modifiers</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
             <profile id="e290-0294-0e05-1b47" name="XV107 R&apos;varna Battlesuit [3] (1-4 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <modifiers>
@@ -12777,6 +13670,23 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Ld modifiers</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <infoLinks>
@@ -12952,6 +13862,23 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Ld modifiers</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
             <profile id="57be-c9c9-4b16-3dbd" name="XV109 Y&apos;vahra Battlesuit [2] (4-7 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <modifiers>
@@ -12977,6 +13904,23 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Ld modifiers</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
             <profile id="8494-a5ad-7f7f-6362" name="XV109 Y&apos;vahra Battlesuit [3] (1-3 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <modifiers>
@@ -13002,6 +13946,23 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Ld modifiers</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <infoLinks>
@@ -14417,6 +15378,23 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Ld modifiers</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
             <profile id="8b82-d46b-e256-1f43" name="XV95 Ghostkeel Shas&apos;vre [2] (4-6 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <modifiers>
@@ -14442,6 +15420,23 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Ld modifiers</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
             <profile id="a688-27bc-6e74-d512" name="XV95 Ghostkeel Shas&apos;vre [3] (1-3 Wounds Remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <modifiers>
@@ -14467,6 +15462,23 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Ld modifiers</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <categoryLinks>
@@ -24495,6 +25507,21 @@ If the unit of the weapon&apos;s bearer is in engagement range of enemy units, t
             </modifier>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Ld modifiers</comment>
+          <modifiers>
+            <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
       </modifierGroups>
       <characteristics>
         <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
@@ -24595,6 +25622,23 @@ Each time a successful hit is made for an attack made with this weapon, if the t
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Ld modifiers</comment>
+          <modifiers>
+            <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile id="7569-a585-2d8f-0546" name="Pathfinder" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <modifiers>
@@ -24615,6 +25659,23 @@ Each time a successful hit is made for an attack made with this weapon, if the t
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Ld modifiers</comment>
+          <modifiers>
+            <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile id="eb02-3010-2c00-6ac3" name="DS8 Support Turret" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
       <characteristics>
@@ -24752,6 +25813,21 @@ In addition, if a wound is scored against a target without the INORGANIC, VEHICL
             </modifier>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Ld modifiers</comment>
+          <modifiers>
+            <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
       </modifierGroups>
       <characteristics>
         <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
@@ -24783,6 +25859,21 @@ In addition, if a wound is scored against a target without the INORGANIC, VEHICL
             </modifier>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Ld modifiers</comment>
+          <modifiers>
+            <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
       </modifierGroups>
       <characteristics>
         <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
@@ -24795,9 +25886,6 @@ In addition, if a wound is scored against a target without the INORGANIC, VEHICL
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
       </characteristics>
-      <modifiers>
-        <modifier type="increment" value="1" field="00ca-f8b8-876d-b705"/>
-      </modifiers>
     </profile>
     <profile id="5262-9f47-f602-8277" name="XV8 Crisis Shas&apos;ui" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <modifierGroups>
@@ -24806,6 +25894,21 @@ In addition, if a wound is scored against a target without the INORGANIC, VEHICL
             <modifier type="set" field="e7f0-1278-0250-df0c" value="4+">
               <conditions>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e82-c782-b939-36b4" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Ld modifiers</comment>
+          <modifiers>
+            <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -24851,6 +25954,21 @@ In addition, if a wound is scored against a target without the INORGANIC, VEHICL
             </modifier>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Ld modifiers</comment>
+          <modifiers>
+            <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
       </modifierGroups>
       <characteristics>
         <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
@@ -24878,6 +25996,21 @@ In addition, if a wound is scored against a target without the INORGANIC, VEHICL
             <modifier type="set" field="e7f0-1278-0250-df0c" value="4+">
               <conditions>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e82-c782-b939-36b4" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Ld modifiers</comment>
+          <modifiers>
+            <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -24922,6 +26055,21 @@ In addition, if a wound is scored against a target without the INORGANIC, VEHICL
             <modifier type="set" field="e7f0-1278-0250-df0c" value="4+">
               <conditions>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e82-c782-b939-36b4" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Ld modifiers</comment>
+          <modifiers>
+            <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -25089,6 +26237,21 @@ In addition, if a wound is scored against a target without the INORGANIC, VEHICL
             </modifier>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Ld modifiers</comment>
+          <modifiers>
+            <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
       </modifierGroups>
       <modifiers>
         <modifier type="set" value="10&quot;" field="0bdf-a96e-9e38-7779">
@@ -25120,6 +26283,21 @@ In addition, if a wound is scored against a target without the INORGANIC, VEHICL
             </modifier>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Ld modifiers</comment>
+          <modifiers>
+            <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
       </modifierGroups>
       <modifiers>
         <modifier type="set" value="10&quot;" field="0bdf-a96e-9e38-7779">
@@ -25147,6 +26325,21 @@ In addition, if a wound is scored against a target without the INORGANIC, VEHICL
             <modifier type="set" value="3+" field="e7f0-1278-0250-df0c">
               <conditions>
                 <condition type="equalTo" value="1" field="selections" scope="force" childId="9e82-c782-b939-36b4" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Ld modifiers</comment>
+          <modifiers>
+            <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="00ca-f8b8-876d-b705">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="1743-c8d8-9cd2-7d78" shared="true" includeChildSelections="true" childName="Ke&apos;lshan Sept"/>
               </conditions>
             </modifier>
           </modifiers>
