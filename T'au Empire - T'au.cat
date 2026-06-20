@@ -3912,9 +3912,32 @@ Use this Stratagem in any phase, when a saving throw is failed for a model in a 
             <profile id="484f-64a8-f608-d4ac" name="Ethereal" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <modifiers>
                 <modifier type="set" field="0bdf-a96e-9e38-7779" value="10&quot;">
-                  <conditions>
-                    <condition field="selections" scope="ce23-a05f-68ce-86b8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="97c1-7200-c3ae-4980" type="equalTo"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="ce23-a05f-68ce-86b8" childId="97c1-7200-c3ae-4980" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="equalTo" value="0" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="ce23-a05f-68ce-86b8" childId="97c1-7200-c3ae-4980" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="ce23-a05f-68ce-86b8" childId="97c1-7200-c3ae-4980" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <characteristics>
@@ -3965,13 +3988,6 @@ Use this Stratagem in any phase, when a saving throw is failed for a model in a 
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0bc-a301-ca92-b8b6" type="max"/>
               </constraints>
-              <profiles>
-                <profile id="7057-c042-3846-a750" name="Hover Drone" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-                  <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The bearer has a Move characteristic of 10 and the FLY keyword.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <categoryLinks>
                 <categoryLink id="032c-5c84-644e-7a6a" name="Fly" hidden="false" targetId="3117-16d8-fcef-4f56" primary="false"/>
               </categoryLinks>
