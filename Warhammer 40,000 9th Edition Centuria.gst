@@ -2962,7 +2962,7 @@ Starting with the player whose turn is not taking place, the players must altern
 Instead units being eligible to fight if they are in engagement range or if they charged in the previous Charge phase, if a unit begins the Fight phase in engagement range of an enemy unit, that unit can pile-in, fight, and if it fights, consolidate.</description>
     </rule>
     <rule name="Narrative Play rule modification: Split units" id="07df-38d7-a812-a182" hidden="false">
-      <description>Some units have an ability that instructs you to deploy the unit at the same time, but then treat different models (or groups of models) in that unit as separate units for the duration of the battle. These are referred to as split units. If you have any such units in your Order of Battle, every model or group of models that is part of the unit regarding Army making, the parted new units are considered as the same unit in regard experiencie, mission acomplishment, Kill count, being destroyed, Battle-honours, Battle scars and Out of Action tests.</description>
+      <description>Some units have an ability that instructs you to deploy the unit at the same time, but then treat different models (or groups of models) in that unit as separate units for the duration of the battle. These are referred to as split units. If you have any such units in your Order of Battle, every model (or groups of models) that is part of the unit regarding Army making, the parted new units are considered as the same unit in regard experiencie, mission acomplishment, Kill count, being destroyed, Battle-honours, Battle scars and Out of Action tests.</description>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
