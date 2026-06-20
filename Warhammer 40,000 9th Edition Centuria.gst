@@ -2961,6 +2961,21 @@ Units that disembark can, so long as the TRANSPORT model itself has made a Norma
 Starting with the player whose turn is not taking place, the players must alternate selecting an eligible unit from their army and fighting with it, being first units with the ability to Fight first, then the units that both don&apos;t fight first and don&apos;t fight last, and then the units wich have to Fight last.
 Instead units being eligible to fight if they are in engagement range or if they charged in the previous Charge phase, if a unit begins the Fight phase in engagement range of an enemy unit, that unit can pile-in, fight, and if it fights, consolidate.</description>
     </rule>
+    <rule name="Narrative Play rule modification: Split units" id="07df-38d7-a812-a182" hidden="false">
+      <description>Some units have an ability that instructs you to deploy the unit at the same time, but then treat different models (or groups of models) in that unit as separate units for the duration of the battle. These are referred to as split units. If you have any such units in your Order of Battle, every model or group of models that is part of the unit regarding Army making, the parted new units are considered as the same unit in regard experiencie, mission acomplishment, Kill count, being destroyed, Battle-honours, Battle scars and Out of Action tests.</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="bf67-ed45-5950-955b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Narrative: Crusade"/>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="a283-177a-bb55-d926" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Narrative: Non Crusade"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </rule>
   </rules>
   <sharedSelectionEntries>
     <selectionEntry id="fd22-6743-2d4c-dd62" name="Flamer" hidden="false" collective="false" import="true" type="upgrade">
