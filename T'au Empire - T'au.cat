@@ -1949,8 +1949,8 @@ The table below describes the benefits T&apos;AU EMPIRE models have when shootin
                       <profiles>
                         <profile id="dd72-5607-5c0d-046a" name="Play Their Part" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                           <characteristics>
-                            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- BATTLESUIT models with this tenet that have a Wounds characteristic of 9 or less count as having two additional Wounds when determining control of an objective marker.
-- BATTLESUIT models with this tenet that have a Wounds characteristic of 10 or more count as having 5 additional Wounds when determining control of an objective marker.</characteristic>
+                            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Units with this tennet without ETHEREAL Keyword gain the SACRIFICABLE trait. 
+- Units with this tennet can make Heroic Interventions as they were a CHARACTER.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -2366,6 +2366,11 @@ The table below describes the benefits T&apos;AU EMPIRE models have when shootin
           <repeats>
             <repeat field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b54e-9a10-185a-7ec3" repeats="1" roundUp="false"/>
           </repeats>
+        </modifier>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
+          </conditions>
         </modifier>
       </modifiers>
       <modifierGroups>
@@ -2997,6 +3002,11 @@ Use this Stratagem in any phase, when a saving throw is failed for a model in a 
         <modifier type="increment" field="e356-c769-5920-6e14" value="1">
           <conditions>
             <condition field="selections" scope="6234-ef4a-da52-7ffb" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1fc-325a-4b92-bb25" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4361,6 +4371,13 @@ Any models embarked within another model when it embarks upon this model do not 
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="4a58-28c6-60d6-a862" name="AX10 Tiger Shark" hidden="false" collective="false" import="true" type="model">
       <modifierGroups>
@@ -4630,6 +4647,13 @@ Any models embarked within another model when it embarks upon this model do not 
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="f947-b8ef-9f33-61e0" name="AX11 Tiger Shark" hidden="false" collective="false" import="true" type="model">
       <modifierGroups>
@@ -4951,6 +4975,13 @@ Any models embarked within another model when it embarks upon this model do not 
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="8b84-e910-4c55-de45" name="AX2 Orca Dropship" hidden="false" collective="false" import="true" type="model">
       <modifierGroups>
@@ -5196,6 +5227,13 @@ Any models embarked within another model when it embarks upon this model do not 
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="79e2-5a3d-a7f6-eabb" name="AX3 Razorshark Strike Fighter" hidden="false" collective="false" import="true" type="model">
       <modifierGroups>
@@ -5419,6 +5457,13 @@ Any models embarked within another model when it embarks upon this model do not 
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="926d-ba8f-937d-0888" name="AX52 Barracuda" hidden="false" collective="false" import="true" type="model">
       <modifierGroups>
@@ -5710,6 +5755,13 @@ Any models embarked within another model when it embarks upon this model do not 
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="0e25-75b2-88c3-18ac" name="AX39 Sun Shark Bomber" hidden="false" collective="false" import="true" type="upgrade">
       <modifierGroups>
@@ -5995,6 +6047,13 @@ Any models embarked within another model when it embarks upon this model do not 
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="7765-2944-b498-9be0" name="Bentu&apos;sin Assault Drones" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -6332,6 +6391,11 @@ Any models embarked within another model when it embarks upon this model do not 
             <condition field="selections" scope="ba02-1d94-0302-aa4d" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1fc-325a-4b92-bb25" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <modifierGroups>
         <modifierGroup>
@@ -6495,6 +6559,11 @@ Any models embarked within another model when it embarks upon this model do not 
         <modifier type="increment" field="e356-c769-5920-6e14" value="1">
           <conditions>
             <condition field="selections" scope="b44b-1bd9-b112-fe0d" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1fc-325a-4b92-bb25" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -6666,6 +6735,11 @@ Any models embarked within another model when it embarks upon this model do not 
         <modifier type="increment" field="e356-c769-5920-6e14" value="1">
           <conditions>
             <condition field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1fc-325a-4b92-bb25" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -6860,6 +6934,11 @@ Any models embarked within another model when it embarks upon this model do not 
         <modifier type="increment" field="e356-c769-5920-6e14" value="1">
           <conditions>
             <condition field="selections" scope="2065-1316-d0b9-982b" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1fc-325a-4b92-bb25" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -7064,6 +7143,11 @@ Any models embarked within another model when it embarks upon this model do not 
           <repeats>
             <repeat field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9638-dc72-0f42-ddbe" repeats="1" roundUp="true"/>
           </repeats>
+        </modifier>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
+          </conditions>
         </modifier>
       </modifiers>
       <modifierGroups>
@@ -8519,6 +8603,13 @@ Any models embarked within another model when it embarks upon this model do not 
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="f0b7-ee74-02db-15a8" name="KX139 Ta&apos;unar Supremacy Armour" hidden="false" collective="false" import="true" type="model">
       <modifierGroups>
@@ -8881,6 +8972,13 @@ Any models embarked within another model when it embarks upon this model do not 
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="1b9b-2e4d-aa19-3e4c" name="Longstrike" hidden="true" collective="false" import="true" type="model">
       <modifiers>
@@ -9870,6 +9968,11 @@ Each time a successful hit is made for an attack made with this weapon, if the t
             <condition field="selections" scope="9e4d-8857-2412-6a3a" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1fc-325a-4b92-bb25" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <modifierGroups>
         <modifierGroup>
@@ -10049,6 +10152,11 @@ Each time a successful hit is made for an attack made with this weapon, if the t
         <modifier type="increment" field="e356-c769-5920-6e14" value="1">
           <conditions>
             <condition field="selections" scope="7902-d343-853d-e561" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1fc-325a-4b92-bb25" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -10233,6 +10341,11 @@ Each time a successful hit is made for an attack made with this weapon, if the t
             <condition field="selections" scope="058e-ab71-07da-b666" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1fc-325a-4b92-bb25" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <modifierGroups>
         <modifierGroup>
@@ -10407,6 +10520,11 @@ Each time a successful hit is made for an attack made with this weapon, if the t
         <modifier type="increment" field="e356-c769-5920-6e14" value="1">
           <conditions>
             <condition field="selections" scope="27a5-410b-97e9-add7" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1fc-325a-4b92-bb25" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -10617,6 +10735,11 @@ Each time a successful hit is made for an attack made with this weapon, if the t
         <modifier type="increment" field="e356-c769-5920-6e14" value="1">
           <conditions>
             <condition field="selections" scope="52a4-e8a6-c931-212e" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1fc-325a-4b92-bb25" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -11136,6 +11259,13 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
       <infoLinks>
         <infoLink name="Bonding knife ritual" id="0c77-eb22-154a-415b" hidden="false" targetId="9a3b-be62-187b-98b0" type="profile"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="0158-8321-0d8e-b212" name="Tactical Drones" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -11165,6 +11295,11 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
             <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0156-7a7c-16f3-8d8d" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9083-35f7-9050-c9e9" repeats="1" roundUp="false"/>
           </repeats>
+        </modifier>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
+          </conditions>
         </modifier>
       </modifiers>
       <modifierGroups>
@@ -11392,6 +11527,13 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="7943-7e13-0754-5162" name="Tidewall Gunrig" hidden="false" collective="false" import="true" type="model">
       <modifierGroups>
@@ -11494,6 +11636,13 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="759d-c721-0e74-c461" name="Tidewall Shieldline" hidden="false" collective="false" import="true" type="unit">
       <modifierGroups>
@@ -11639,6 +11788,13 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
         <cost name="Pts" typeId="points" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="f410-1b49-db2d-e95c" name="TX3 Tetra Section" hidden="false" collective="false" import="true" type="unit">
       <modifierGroups>
@@ -11803,6 +11959,13 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
         <cost name="Pts" typeId="points" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="4a6a-8f9e-25af-9d7f" name="TX4 Piranha Section" hidden="false" collective="false" import="true" type="unit">
       <modifierGroups>
@@ -12009,6 +12172,13 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
         <cost name="Pts" typeId="points" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="1441-bdae-05bb-c16e" name="TX42 Piranha Section" hidden="false" collective="false" import="true" type="unit">
       <modifierGroups>
@@ -12239,12 +12409,24 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
         <cost name="Pts" typeId="points" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="9534-072c-cc76-6c04" name="TX7 Hammerhead Gunship" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="increment" field="e356-c769-5920-6e14" value="1">
           <conditions>
             <condition field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5e8-5d51-937d-8667" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -12471,6 +12653,11 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
         <modifier type="increment" field="e356-c769-5920-6e14" value="1">
           <conditions>
             <condition field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5e8-5d51-937d-8667" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -12726,6 +12913,11 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
         <modifier type="increment" field="e356-c769-5920-6e14" value="1">
           <conditions>
             <condition field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5e8-5d51-937d-8667" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -13521,12 +13713,24 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
         <cost name="Pts" typeId="points" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="38e6-fae6-695d-0a03" name="XV107 R&apos;varna Battlesuit" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="increment" field="e356-c769-5920-6e14" value="1">
           <conditions>
             <condition field="selections" scope="38e6-fae6-695d-0a03" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1fc-325a-4b92-bb25" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -13788,6 +13992,11 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
         <modifier type="increment" field="e356-c769-5920-6e14" value="1">
           <conditions>
             <condition field="selections" scope="7b3a-e470-95ee-d572" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1fc-325a-4b92-bb25" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -14073,6 +14282,11 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
         <modifier type="increment" field="e356-c769-5920-6e14" value="1">
           <conditions>
             <condition field="selections" scope="d99f-cadf-14c3-6475" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1fc-325a-4b92-bb25" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -14363,6 +14577,11 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
             <condition field="selections" scope="a354-0bcb-66fb-51f3" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f2fa-afa7-fb9c-55b4" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <modifierGroups>
         <modifierGroup>
@@ -14619,6 +14838,11 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
         <modifier type="increment" field="e356-c769-5920-6e14" value="1">
           <conditions>
             <condition field="selections" scope="bc15-1ae1-591e-2565" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f2fa-afa7-fb9c-55b4" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -14892,6 +15116,11 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
             <condition field="selections" scope="eac2-5dfa-d139-903b" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1fc-325a-4b92-bb25" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <modifierGroups>
         <modifierGroup>
@@ -15092,6 +15321,11 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
         <modifier type="increment" field="e356-c769-5920-6e14" value="1">
           <conditions>
             <condition field="selections" scope="6960-3f01-2a36-f3cc" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1fc-325a-4b92-bb25" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -15655,6 +15889,13 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
         <cost name="Pts" typeId="points" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="8716-5f60-8c7a-baaf" name="Darkstrider" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
@@ -15866,6 +16107,13 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="3349-f37b-6a05-fabb" name="DX6 Remora Stealth Drones" hidden="false" collective="false" import="true" type="unit">
       <modifierGroups>
@@ -15988,6 +16236,13 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="3b00-d699-23ea-67cc" name="DS9 Drone Sentry Turrets" hidden="false" collective="false" import="true" type="unit">
       <modifierGroups>
@@ -16181,12 +16436,24 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="adca-d911-fde7-5b57" name="XV15 Stealth Battlesuit Team" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="increment" field="e356-c769-5920-6e14" value="1">
           <conditions>
             <condition field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1fc-325a-4b92-bb25" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
           </conditions>
         </modifier>
       </modifiers>
