@@ -591,7 +591,7 @@ In addition, add 1 to the Attacks characteristic of AUXILIARY models of a FARSIG
             </modifier>
           </modifiers>
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a AUXILIARY unit of a SA&apos;CEA Detachment makes an attack with a weapon that targets a unit within 9&quot;, you can re-roll the Hit roll.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a AUXILIARY unit of a SA&apos;CEA Detachment makes a ranged attack with a weapon that targets a unit within 12&quot;, you can re-roll the Hit roll.</characteristic>
           </characteristics>
         </profile>
         <profile id="8d1a-5855-2c2f-94b4" name="Coordinated Strikes" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -1797,7 +1797,7 @@ The table below describes the benefits T&apos;AU EMPIRE models have when shootin
               <profiles>
                 <profile id="ce7c-0e83-333f-cac2" name="Masters of Urban Warfare" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Each time a ranged attack targets a unit with this tenet, if the attacker is more than 9&quot; away, then the target is treated as having the benefits of Light and Dense Cover against that attack.
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Each time a ranged attack targets a unit with this tenet, if the attacker is more than 12&quot; away, then the target is treated as having the benefits of Light and Dense Cover against that attack.
 - Each time an INFANTRY or BEAST unit with this tenet is selected as target of a Charge move, if that unit is benefitting of Cover, is considered to be in a Defensible terrain.
 - VEHICLE and BATTLESUIT models with this tenet do not suffer the penalty incurred to their hit rolls for firing Heavy weapons at enemy units that are within Engagement Range of them.</characteristic>
                   </characteristics>
@@ -24795,6 +24795,9 @@ In addition, if a wound is scored against a target without the INORGANIC, VEHICL
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
       </characteristics>
+      <modifiers>
+        <modifier type="increment" value="1" field="00ca-f8b8-876d-b705"/>
+      </modifiers>
     </profile>
     <profile id="5262-9f47-f602-8277" name="XV8 Crisis Shas&apos;ui" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <modifierGroups>
