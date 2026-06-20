@@ -16177,7 +16177,7 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
       <selectionEntries>
         <selectionEntry id="298a-8290-29d6-b7ca" name="DX-6 Remora Stealth Drone" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a60e-1b6a-0c35-be47" type="max"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a60e-1b6a-0c35-be47" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21f8-2257-80c7-e37c" type="min"/>
           </constraints>
           <profiles>
@@ -20422,6 +20422,7 @@ Farsight - Selection</characteristic>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="0bd1-4a90-e416-8a47" name="Indirect fire" hidden="false" targetId="9f18-f587-3245-07e5" primary="false"/>
+            <categoryLink name="Missile weapon" hidden="false" id="f94d-fd20-6251-90d2" targetId="3ecc-9cea-226c-1cc0" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -24990,7 +24991,8 @@ Each seeker missile can only be used once per battle.</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">This weapon can be used once per battle. This weapon is considered a seeker missile for the purposes of markerlights.</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">This weapon can be fired at units with 3+ markerlights that are not visible to the bearer, as if it were an Indirect fire weapon.
+Each seeker missile can only be used once per battle.</characteristic>
       </characteristics>
     </profile>
     <profile id="9e4f-46f1-3c99-c23d" name="Railgun" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
