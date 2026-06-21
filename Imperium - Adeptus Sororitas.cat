@@ -3008,7 +3008,7 @@ When this model suffers damage that reduces its number of relics, select which o
             <categoryLink id="2a4d-531d-d880-81eb" name="Turret-mounted" hidden="false" targetId="f28c-7e4e-75e1-2474" primary="false"/>
           </categoryLinks>
         </entryLink>
-        <entryLink id="99fa-3e16-a313-b7da" name="Hunter-killer missile launcher [1]" hidden="false" collective="false" import="true" targetId="76ce-74fa-9676-1a4b" type="selectionEntry">
+        <entryLink id="99fa-3e16-a313-b7da" name="Hunter-killer missile launcher" hidden="false" collective="false" import="true" targetId="76ce-74fa-9676-1a4b" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0f3-ecae-287e-b0d1" type="max"/>
           </constraints>
@@ -3179,7 +3179,7 @@ When this model suffers damage that reduces its number of relics, select which o
             <cost name="pts" typeId="points" value="5"/>
           </costs>
         </entryLink>
-        <entryLink id="d931-cff2-89fa-b0b6" name="Hunter-killer missile launcher [1]" hidden="false" collective="false" import="true" targetId="76ce-74fa-9676-1a4b" type="selectionEntry">
+        <entryLink id="d931-cff2-89fa-b0b6" name="Hunter-killer missile launcher" hidden="false" collective="false" import="true" targetId="76ce-74fa-9676-1a4b" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d20d-9d9e-e25e-5424" type="max"/>
           </constraints>
@@ -3319,7 +3319,7 @@ When this model suffers damage that reduces its number of relics, select which o
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="6614-105f-46f4-fff9" name="Hunter-killer missile launcher [1]" hidden="false" collective="false" import="true" targetId="76ce-74fa-9676-1a4b" type="selectionEntry">
+            <entryLink id="6614-105f-46f4-fff9" name="Hunter-killer missile launcher" hidden="false" collective="false" import="true" targetId="76ce-74fa-9676-1a4b" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ac2-840a-45a0-deee" type="max"/>
               </constraints>
@@ -3537,7 +3537,7 @@ When this model suffers damage that reduces its number of relics, select which o
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="8f67-ff69-7ec1-8105" name="Hunter-killer missile launcher [1]" hidden="false" collective="false" import="true" targetId="76ce-74fa-9676-1a4b" type="selectionEntry">
+        <entryLink id="8f67-ff69-7ec1-8105" name="Hunter-killer missile launcher" hidden="false" collective="false" import="true" targetId="76ce-74fa-9676-1a4b" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e158-3f88-e8cb-c310" type="max"/>
           </constraints>
@@ -6307,7 +6307,7 @@ In addition, after the first turn begins, when this unit is deployed on the Batt
           </constraints>
         </entryLink>
         <entryLink id="736e-ed28-d64c-fc2d" name="Crushing bulk" hidden="false" collective="false" import="true" targetId="502f-45c2-6fd1-443b" type="selectionEntry"/>
-        <entryLink id="c8c5-f499-0164-1695" name="Hunter-killer missile launcher [1]" hidden="false" collective="false" import="true" targetId="76ce-74fa-9676-1a4b" type="selectionEntry">
+        <entryLink id="c8c5-f499-0164-1695" name="Hunter-killer missile launcher" hidden="false" collective="false" import="true" targetId="76ce-74fa-9676-1a4b" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4ed-b92a-61f2-b689" type="max"/>
           </constraints>
@@ -6474,8 +6474,12 @@ In addition, after the first turn begins, when this unit is deployed on the Batt
                   <selectionEntries>
                     <selectionEntry id="1eee-3cbf-2ede-cbfa" name="2x Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
                       <entryLinks>
-                        <entryLink id="e724-2cbf-6e83-e90c" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="e8a1-aee7-852b-ec88" type="selectionEntry"/>
-                        <entryLink id="46dd-3f21-419d-a70e" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="e8a1-aee7-852b-ec88" type="selectionEntry"/>
+                        <entryLink id="e724-2cbf-6e83-e90c" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="05ab-e7cc-e856-c36f" type="selectionEntry">
+                          <constraints>
+                            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3ef2-b59c-f80b-36c6" includeChildSelections="false"/>
+                            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3902-f60b-b344-a20a" includeChildSelections="false"/>
+                          </constraints>
+                        </entryLink>
                       </entryLinks>
                       <costs>
                         <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -6498,8 +6502,12 @@ In addition, after the first turn begins, when this unit is deployed on the Batt
                     </selectionEntry>
                     <selectionEntry id="14fb-c984-09d5-6e09" name="2x Heavy Flamer" hidden="false" collective="false" import="true" type="upgrade">
                       <entryLinks>
-                        <entryLink id="d6a1-513b-f184-b31c" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="327e-1af5-d908-9245" type="selectionEntry"/>
-                        <entryLink id="f8cf-26b5-6675-724a" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="327e-1af5-d908-9245" type="selectionEntry"/>
+                        <entryLink id="d6a1-513b-f184-b31c" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="18bc-b335-29c2-2ae2" type="selectionEntry">
+                          <constraints>
+                            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0678-fa01-2535-0b41" includeChildSelections="false"/>
+                            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="991e-2991-23eb-c489" includeChildSelections="false"/>
+                          </constraints>
+                        </entryLink>
                       </entryLinks>
                       <costs>
                         <cost name="Pts" typeId="points" value="5"/>
