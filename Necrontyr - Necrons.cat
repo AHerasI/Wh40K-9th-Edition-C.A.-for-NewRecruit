@@ -285,7 +285,7 @@
         </profile>
         <profile id="516d-80b0-08d2-d892" name="Relentless March [Aura]" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly &lt;DYNASTY&gt; CORE unit is within 6&quot; of this model, each time that unit is selected to make a Normal Move or Advance, until the end of the phase, add 1&quot; to the Move characteristic of models in that unit.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly DYNASTY CORE unit is within 6&quot; of this model, each time that unit is selected to make a Normal Move or Advance, until the end of the phase, add 1&quot; to the Move characteristic of models in that unit.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -684,6 +684,37 @@
     <entryLink id="1162-304b-c6fc-68dd" name="Pariah" hidden="false" collective="false" import="true" targetId="53f4-4001-a4c9-27c4" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="84ba-75de-f360-18e1" name="No Force Org Slot" hidden="false" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Royal Warden" hidden="false" id="8e39-9b93-b9bf-6a2a" type="selectionEntry" targetId="2f9e-26a1-08e7-c6c4">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="feee-4a20-cf77-d171" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Royal Warden" hidden="true" id="bbe6-8c37-455c-405d" type="selectionEntry" targetId="2f9e-26a1-08e7-c6c4">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="df0e-b56b-b0a6-f043" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="11f5-c086-fe63-9e29" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="2" field="8560-327d-cead-7f09">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="df0e-b56b-b0a6-f043" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="11f5-c086-fe63-9e29" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8560-327d-cead-7f09" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="No Force Org Slot" hidden="false" id="223c-858e-b5e6-d625" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -13267,6 +13298,107 @@ Remaining Wounds	Powers of the C&apos;tan
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Royal Warden" hidden="false" id="2f9e-26a1-08e7-c6c4" collective="false">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Dynasty</comment>
+          <modifiers>
+            <modifier type="add" value="a290-6ce0-1d63-8799" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="b269-e7e8-f08e-7cbe" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="0592-88e5-cc5c-5957" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4661-cc70-eef4-d362" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="ed73-d309-ce11-9f96" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4967-3d89-59cd-6593" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6b9c-4411-1132-a2e5" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="1149-f4d5-1bec-586f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="0f0d-0754-1f81-403e" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="75b2-67d9-55ae-154f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="3ce2-9eb6-e429-3102" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="c487-4501-98e2-8ddd" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="5556-9654-d7f9-5087" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="17bb-62e9-d77e-7d9f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <categoryLinks>
+        <categoryLink name="Character" hidden="false" id="08fd-6e77-c58e-0f3c" targetId="ef18-746a-369f-43a4" primary="false"/>
+        <categoryLink name="Faction: Necrons" hidden="false" id="f8c6-f74a-2b7c-4793" targetId="7d00-3cab-35df-e030" primary="false"/>
+        <categoryLink name="Inorganic" hidden="false" id="d5b0-10da-2082-8bfa" targetId="378d-72a9-b8f6-b98b" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="84e6-6158-1030-b4b3" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Set option" id="0f58-e62c-e7b8-a350" hidden="false" collective="false" import="true" defaultSelectionEntryId="508f-109a-4ba4-ff06">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c9b-3aca-167c-cc02" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="68e2-56b6-c2ef-e755" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Hyperphase Sword and Shield" hidden="false" id="fc2a-ec4f-7730-adbc">
+              <infoLinks>
+                <infoLink name="Hyperphase sword" id="be55-cdc9-bbb9-71e1" hidden="false" targetId="5d72-7b29-17ba-4666" type="profile"/>
+                <infoLink name="Dispersion shield" id="3c42-b874-4f70-bb15" hidden="false" type="profile" targetId="f8f8-5b59-7144-2c43"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Hyperphase Warscythe and Shield" hidden="false" id="0e9b-33bd-ef7d-9574">
+              <infoLinks>
+                <infoLink name="Hyperphase Warscythe" id="4ee4-10ca-1dda-fe84" hidden="false" targetId="a5bc-9154-f36e-d752" type="profile"/>
+                <infoLink name="Dispersion shield" id="f98e-1552-928a-5617" hidden="false" type="profile" targetId="f8f8-5b59-7144-2c43"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Gauss blaster" hidden="false" id="da7c-334a-b280-a6bf">
+              <infoLinks>
+                <infoLink name="Piercing apendages" id="241d-ab36-d3ee-ffa4" hidden="false" type="profile" targetId="7249-f803-bda8-ec5c"/>
+                <infoLink name="Gauss blaster" id="5c36-a739-5deb-dd32" hidden="false" targetId="ff44-c276-0feb-40bf" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Tesla carbine" hidden="false" id="508f-109a-4ba4-ff06">
+              <infoLinks>
+                <infoLink name="Piercing apendages" id="eda1-e12e-bf68-0553" hidden="false" type="profile" targetId="7249-f803-bda8-ec5c"/>
+                <infoLink name="Tesla carbine" id="86e2-06a7-c506-ca4d" hidden="false" targetId="3f3a-f25b-9f53-c75c" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="points" value="45"/>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Necron Immortal" id="d026-646c-4785-9fa2" hidden="false" targetId="1619-89d4-f645-536b" type="profile"/>
+        <infoLink name="Martial training" id="8945-f67a-5340-9092" hidden="false" targetId="5c5f-4783-ba47-6b80" type="profile">
+          <modifiers>
+            <modifier type="set" value="Martial Heritage" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Impervious to small weapons fire" id="1307-7a48-d457-a199" hidden="false" targetId="b48e-9a4a-2fdc-5d7c" type="profile"/>
+        <infoLink name="Relentless March [Aura]" id="c900-c7cf-bf42-dde2" hidden="false" targetId="516d-80b0-08d2-d892" type="profile"/>
+        <infoLink name="The Lord’s Will [Aura]" id="674c-c8cf-28b0-e7d4" hidden="false" targetId="e483-2495-bd87-87d5" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="c3f7-d21d-8dfa-1395" name="Protocol List" hidden="false" collective="false" import="true" defaultSelectionEntryId="9636-aaa3-cc3c-0f0b">
@@ -14973,7 +15105,7 @@ If it does, select one enemy CHARACTER unit within Engagement Range; until the e
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
       </characteristics>
     </profile>
-    <profile id="1619-89d4-f645-536b" name="Necron Immortal" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+    <profile id="1619-89d4-f645-536b" name="Necron Immortal" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
         <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
         <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
@@ -15020,7 +15152,7 @@ If it does, select one enemy CHARACTER unit within Engagement Range; until the e
     <profile id="e483-2495-bd87-87d5" name="The Lord’s Will [Aura]" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
       <comment>e483-2495-bd87-87d5</comment>
       <characteristics>
-        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly &lt;DYNASTY&gt; CORE unit is within 6&quot; of this model, each time a model in that unit makes an attack, re-roll a hit roll of 1.</characteristic>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly DYNASTY CORE unit is within 6&quot; of this model, each time a model in that unit makes an attack, re-roll a hit roll of 1.</characteristic>
       </characteristics>
     </profile>
     <profile id="5dba-36aa-2139-3532" name="United in Destruction [Aura]" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
