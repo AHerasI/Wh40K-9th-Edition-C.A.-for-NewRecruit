@@ -3997,6 +3997,44 @@ Each time an attack is made with this weapon, on an unmodified wound roll of 6, 
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Phylactery" hidden="false" id="6332-4364-929c-bf82" collective="false">
+          <profiles>
+            <profile name="Phylactery" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="bc81-ef9f-f430-5e2b">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time this model uses its Living Metal ability, it regains 3 lost wounds instead of D3.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="points" value="5"/>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Gauntlet of Fire" hidden="false" id="2c14-5df5-d15f-2166">
+          <profiles>
+            <profile name="Gauntlet of Fire" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="3dfb-8d0f-688c-b23d">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol 1</characteristic>
+                <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent. Instead of making a normal wound roll, roll one D6 for each model in the target unit.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="points" value="5"/>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Torrent" hidden="false" id="c878-3873-bfcc-bc9f" targetId="795f-a8d3-dc18-cb2e" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -4153,12 +4191,14 @@ Each time an attack is made with this weapon, on an unmodified wound roll of 6, 
                 <categoryLink id="051d-6705-67fa-12a2" name="Cryptek" hidden="false" targetId="93f8-38ec-317b-1a61" primary="false"/>
               </categoryLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup id="9720-892d-4238-9b19" name="Wargear" hidden="false" collective="false" import="true">
+                <selectionEntryGroup name="Wargear" id="2d32-7fd2-bc22-dcf0" hidden="false">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d17-59a4-6533-592b" type="max"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8f4-6c75-11db-9fb9" includeChildSelections="false"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="770d-de4c-4121-ed5c" name="Canoptek control node" hidden="false" collective="false" import="true" targetId="f1c1-1330-2a1b-43ff" type="selectionEntry">
+                    <entryLink import="true" name="Gauntlet of Fire" hidden="false" id="2d3e-44bc-4d68-ac65" targetId="2c14-5df5-d15f-2166" type="selectionEntry"/>
+                    <entryLink import="true" name="Phylactery" hidden="false" id="7e97-d26e-c62e-bb4c" targetId="6332-4364-929c-bf82" type="selectionEntry" collective="false"/>
+                    <entryLink import="true" name="Canoptek control node" hidden="false" id="770d-de4c-4121-ed5c" collective="false" targetId="f1c1-1330-2a1b-43ff" type="selectionEntry">
                       <costs>
                         <cost name="pts" typeId="points" value="5"/>
                       </costs>
@@ -4267,6 +4307,7 @@ Halve Advance rolls and charge rolls made for the selected unit.
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffbd-cf7b-7d04-ec23" type="min"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Wargear" hidden="false" id="4eb2-748f-f208-6745" type="selectionEntryGroup" targetId="f6d6-736a-2302-d673"/>
               </entryLinks>
               <costs>
                 <cost name="Pts" typeId="points" value="100"/>
@@ -4356,6 +4397,7 @@ Halve Advance rolls and charge rolls made for the selected unit.
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3295-ceb2-6253-1df0" type="min"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Wargear" hidden="false" id="c435-6f12-061f-ba74" type="selectionEntryGroup" targetId="f6d6-736a-2302-d673"/>
               </entryLinks>
               <costs>
                 <cost name="Pts" typeId="points" value="60"/>
@@ -4781,6 +4823,15 @@ Each unit can only be selected for this ability once per battle.</characteristic
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
+                <selectionEntryGroup name="Wargear" id="f6d6-736a-2302-d673" hidden="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa47-dd28-88c0-d42a" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Gauntlet of Fire" hidden="false" id="d089-b128-8101-9bfd" targetId="2c14-5df5-d15f-2166" type="selectionEntry"/>
+                    <entryLink import="true" name="Phylactery" hidden="false" id="c296-96ae-2202-592d" targetId="6332-4364-929c-bf82" type="selectionEntry" collective="false"/>
+                  </entryLinks>
+                </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="533a-97b5-d2af-9681" name=" Character definition" hidden="false" collective="false" import="true" targetId="44f7-f8e4-9f20-9228" type="selectionEntryGroup"/>
@@ -4889,6 +4940,7 @@ Each unit can only be selected for this ability once per battle.</characteristic
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="519b-431c-4df3-94f3" type="min"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Wargear" hidden="false" id="a6fb-17c3-4c0d-6b33" type="selectionEntryGroup" targetId="f6d6-736a-2302-d673"/>
               </entryLinks>
               <costs>
                 <cost name="Pts" typeId="points" value="120"/>
@@ -5051,19 +5103,7 @@ Each unit can only be selected for this ability once per battle.</characteristic
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="8871-31e9-b44c-7f69" name=" Character definition" hidden="false" collective="false" import="true" targetId="44f7-f8e4-9f20-9228" type="selectionEntryGroup"/>
-                <entryLink id="3fa5-9509-9170-a25c" name="Resurrection Orb" hidden="false" collective="false" import="true" targetId="6fbe-35d4-f291-ab52" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5a4-b4ba-8b9e-440b" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <costs>
-                    <cost name="pts" typeId="points" value="40"/>
-                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="2"/>
-                  </costs>
-                </entryLink>
+                <entryLink import="true" name="Wargear" hidden="false" id="8301-c333-c833-5102" type="selectionEntryGroup" targetId="e525-3e75-f036-9932"/>
               </entryLinks>
               <costs>
                 <cost name="Pts" typeId="points" value="120"/>
@@ -5154,12 +5194,7 @@ Each unit can only be selected for this ability once per battle.</characteristic
               <entryLinks>
                 <entryLink id="fd98-18db-0a67-2e28" name="Quantum Shielding" hidden="false" collective="false" import="true" targetId="dfca-9378-ff14-ecb2" type="selectionEntry"/>
                 <entryLink id="f3f7-84ae-5016-93a5" name=" Character definition" hidden="false" collective="false" import="true" targetId="44f7-f8e4-9f20-9228" type="selectionEntryGroup"/>
-                <entryLink id="5d68-66f4-98cd-b4b4" name="Resurrection Orb" hidden="false" collective="false" import="true" targetId="6fbe-35d4-f291-ab52" type="selectionEntry">
-                  <costs>
-                    <cost name="pts" typeId="points" value="40"/>
-                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="2"/>
-                  </costs>
-                </entryLink>
+                <entryLink import="true" name="Wargear" hidden="false" id="d80e-6a06-78e2-ad27" type="selectionEntryGroup" targetId="e525-3e75-f036-9932"/>
               </entryLinks>
               <costs>
                 <cost name="Pts" typeId="points" value="160"/>
@@ -5985,15 +6020,24 @@ D3	Result
                     <entryLink id="b01d-3a97-e2b5-211e" name="Voidblade" hidden="false" collective="false" import="true" targetId="89d2-4463-888a-5ebc" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
+                <selectionEntryGroup name="Wargear" id="e525-3e75-f036-9932" hidden="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55b3-01be-bdbe-5ce2" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink targetId="2c14-5df5-d15f-2166" id="65c6-3878-0a32-9118" type="selectionEntry" name="Gauntlet of Fire" hidden="false"/>
+                    <entryLink import="true" name="Resurrection Orb" hidden="false" id="8ead-7a4d-c6c9-cd40" collective="false" targetId="6fbe-35d4-f291-ab52" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="points" value="40"/>
+                        <cost name=" PL" typeId="e356-c769-5920-6e14" value="2"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Phylactery" hidden="false" id="46d2-7f89-0578-d69d" targetId="6332-4364-929c-bf82" type="selectionEntry" collective="false"/>
+                  </entryLinks>
+                </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="4a75-5f00-50d0-f55a" name=" Character definition" hidden="false" collective="false" import="true" targetId="44f7-f8e4-9f20-9228" type="selectionEntryGroup"/>
-                <entryLink id="8ead-7a4d-c6c9-cd40" name="Resurrection Orb" hidden="false" collective="false" import="true" targetId="6fbe-35d4-f291-ab52" type="selectionEntry">
-                  <costs>
-                    <cost name="pts" typeId="points" value="40"/>
-                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="2"/>
-                  </costs>
-                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="Pts" typeId="points" value="80"/>
@@ -6198,24 +6242,8 @@ D3	Result
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05cd-1116-e81c-61ca" type="max"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0316-e47f-61e8-9e0f" type="min"/>
                   </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="6332-4364-929c-bf82" name="Phylactery" hidden="false" collective="false" import="true" type="upgrade">
-                      <profiles>
-                        <profile id="bc81-ef9f-f430-5e2b" name="Phylactery" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-                          <characteristics>
-                            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time this model uses its Living Metal ability, it regains 3 lost wounds instead of D3.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name="Pts" typeId="points" value="5"/>
-                        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
                   <entryLinks>
+                    <entryLink targetId="6332-4364-929c-bf82" id="6afe-427c-e855-0942" type="selectionEntry" name="Phylactery" hidden="false" collective="false"/>
                     <entryLink id="d35b-607b-a5b0-c27a" name="Resurrection Orb" hidden="false" collective="false" import="true" targetId="6fbe-35d4-f291-ab52" type="selectionEntry">
                       <costs>
                         <cost name="pts" typeId="points" value="40"/>
@@ -6412,12 +6440,7 @@ D3	Result
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="3dcf-c931-61d5-6f5b" name=" Character definition" hidden="false" collective="false" import="true" targetId="44f7-f8e4-9f20-9228" type="selectionEntryGroup"/>
-                <entryLink id="f5b8-da61-9cb5-9c8b" name="Resurrection Orb" hidden="false" collective="false" import="true" targetId="6fbe-35d4-f291-ab52" type="selectionEntry">
-                  <costs>
-                    <cost name="pts" typeId="points" value="40"/>
-                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="2"/>
-                  </costs>
-                </entryLink>
+                <entryLink import="true" name="Wargear" hidden="false" id="fee2-54b7-500b-12ab" type="selectionEntryGroup" targetId="e525-3e75-f036-9932"/>
               </entryLinks>
               <costs>
                 <cost name="Pts" typeId="points" value="80"/>
