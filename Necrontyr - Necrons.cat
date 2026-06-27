@@ -3840,13 +3840,10 @@ Each time an attack is made with this weapon, on an unmodified wound roll of 6, 
         </selectionEntry>
         <selectionEntry id="6fbe-35d4-f291-ab52" name="Resurrection Orb" hidden="false" collective="false" import="true" type="upgrade">
           <comment>6fbe-35d4-f291-ab52</comment>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a890-0351-2a52-9dcb" type="max"/>
-          </constraints>
           <profiles>
             <profile id="23e3-e1b0-bfaa-e7fe" name="Resurrection Orb" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Once per battle, in your Command phase, the bearer can use this Relic. If it does, every destroyed model of all friendly &lt;DYNASTY&gt; units within 6&quot; of the bearer that are not at its Starting Strength is Reanimated.</characteristic>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Once per battle, in your Command phase, the bearer can use this wargear. If it does, every destroyed model of all friendly DYNASTY units within 6&quot; of the bearer that are not at its Starting Strength is Reanimated.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6020,24 +6017,10 @@ D3	Result
                     <entryLink id="b01d-3a97-e2b5-211e" name="Voidblade" hidden="false" collective="false" import="true" targetId="89d2-4463-888a-5ebc" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Wargear" id="e525-3e75-f036-9932" hidden="false">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55b3-01be-bdbe-5ce2" includeChildSelections="false"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink targetId="2c14-5df5-d15f-2166" id="65c6-3878-0a32-9118" type="selectionEntry" name="Gauntlet of Fire" hidden="false"/>
-                    <entryLink import="true" name="Resurrection Orb" hidden="false" id="8ead-7a4d-c6c9-cd40" collective="false" targetId="6fbe-35d4-f291-ab52" type="selectionEntry">
-                      <costs>
-                        <cost name="pts" typeId="points" value="40"/>
-                        <cost name=" PL" typeId="e356-c769-5920-6e14" value="2"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Phylactery" hidden="false" id="46d2-7f89-0578-d69d" targetId="6332-4364-929c-bf82" type="selectionEntry" collective="false"/>
-                  </entryLinks>
-                </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="4a75-5f00-50d0-f55a" name=" Character definition" hidden="false" collective="false" import="true" targetId="44f7-f8e4-9f20-9228" type="selectionEntryGroup"/>
+                <entryLink targetId="e525-3e75-f036-9932" id="1f83-e947-447e-cb12" type="selectionEntryGroup" name="Wargear" hidden="false"/>
               </entryLinks>
               <costs>
                 <cost name="Pts" typeId="points" value="80"/>
@@ -6445,6 +6428,114 @@ D3	Result
               <costs>
                 <cost name="Pts" typeId="points" value="80"/>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="4"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Ophydian Lord" hidden="false" id="ee25-b911-1304-f301" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e96d-9291-6757-2050" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Ophydian Lord" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="0d2e-b07d-05e5-eb7b">
+                  <characteristics>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2+</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">6</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">6</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">12</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+                  </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Sempiternal Weave Modifiers</comment>
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="ee25-b911-1304-f301" childId="9307-ef10-ac6b-b71e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="9c9f-9774-a358-3a39"/>
+                        <modifier type="increment" value="1" field="f330-5e6e-4110-0978"/>
+                      </modifiers>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <comment>Merciless Tyrant Modifiers</comment>
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="ee25-b911-1304-f301" childId="4528-b4a6-f6a8-e1ed" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier type="increment" value="2" field="13fc-b29b-31f2-ab9f"/>
+                        <modifier type="increment" value="2" field="2218-aa3c-265f-2939"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Impervious to small weapons fire" id="9554-085e-4f1b-ad2d" hidden="false" targetId="b48e-9a4a-2fdc-5d7c" type="profile"/>
+                <infoLink name="United in Destruction [Aura]" id="c4ec-b709-65b0-a4eb" hidden="false" targetId="5dba-36aa-2139-3532" type="profile"/>
+                <infoLink name="Multi-threat Eliminator" id="4714-506e-6350-fd63" hidden="false" type="profile" targetId="d679-d678-2a4d-69a1"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink name="Infantry" hidden="false" id="c3f5-c96e-88de-aa45" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+                <categoryLink name="Destroyer Cult" hidden="false" id="2740-2701-21c2-6a8c" targetId="6542-a980-6290-dbc3" primary="false"/>
+              </categoryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Hyperphase claw" hidden="false" id="bc45-a18d-99d1-0fc2" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62c8-cb1d-64b2-83f8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f3ce-7969-0cf0-7984" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Hyperphase claw" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="ed55-17c6-921a-62cb">
+                      <characteristics>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                        <characteristic name="S" typeId="59b1-319e-ec13-d466">x2</characteristic>
+                        <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
+                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
+                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, invulnerable saving throws cannot be made against that attack.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="Pts" typeId="points" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="4x Enmitic disintegrator pistol" hidden="false" id="dc9f-62e5-2469-a8d2">
+                  <entryLinks>
+                    <entryLink import="true" name="Enmitic disintegrator pistol" hidden="false" id="31ba-aa74-dc23-d249" collective="false" targetId="08ba-b0e3-970f-0dca" type="selectionEntry">
+                      <constraints>
+                        <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="56f5-2173-4f66-0798" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="ce67-28dd-0f08-0ecd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name=" Character definition" hidden="false" id="87a7-cc94-35af-ed38" collective="false" targetId="44f7-f8e4-9f20-9228" type="selectionEntryGroup"/>
+                <entryLink import="true" name="Blade tail&amp;Whip coils" hidden="false" id="5c20-f2e1-8e80-503f" collective="false" targetId="4aa3-b008-05c1-27a4" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e96-4798-099b-f473" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="08fb-036a-14f6-154e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Enmitic exterminator" hidden="false" id="057e-ae0c-81fe-f7d6" collective="false" targetId="39b0-c454-c121-21e7" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b78-2a03-a254-334d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7fc5-9c36-605d-b3f2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="120"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="6"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
@@ -9382,7 +9473,7 @@ If the battle ends and this unit is not on the battlefield it is considered to b
                 <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6365-00bb-35ee-4e91" type="min"/>
               </constraints>
               <profiles>
-                <profile id="13e2-8a4a-c769-68f6" name="Ophydian Destroyer" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+                <profile id="13e2-8a4a-c769-68f6" name="Ophydian Destroyer" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
@@ -9401,20 +9492,20 @@ If the battle ends and this unit is not on the battlefield it is considered to b
                 <categoryLink id="e210-5b64-d06f-1fee" name="Destroyer Cult" hidden="false" targetId="6542-a980-6290-dbc3" primary="false"/>
               </categoryLinks>
               <selectionEntries>
-                <selectionEntry id="4aa3-b008-05c1-27a4" name="Ophydian claws" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="4aa3-b008-05c1-27a4" name="Blade tail&amp;Whip coils" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b845-3d93-0b3e-7925" type="max"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f235-f5d6-eb30-1b5f" type="min"/>
                   </constraints>
                   <profiles>
-                    <profile id="a777-8a2d-ff65-0f37" name="Ophydian claws" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                    <profile id="a777-8a2d-ff65-0f37" name="Blade tail" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                       <characteristics>
                         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                         <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
                         <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
                         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it makes 2 additional attacks with this weapon.</characteristic>
+                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it makes 2 additional attacks with this weapon, and only 2 attacks can be made by this weapon.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -9424,6 +9515,10 @@ If the battle ends and this unit is not on the battlefield it is considered to b
                     <cost name="Pts" typeId="points" value="0"/>
                     <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                   </costs>
+                  <infoLinks>
+                    <infoLink name="Whip coils" id="55ef-f2f5-a51e-be32" hidden="false" type="profile" targetId="6912-945d-f849-da18"/>
+                    <infoLink name="Off-hand weapon" id="56b4-0af2-5234-6cea" hidden="false" type="profile" targetId="e14b-37da-f8e9-1752"/>
+                  </infoLinks>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
@@ -9453,21 +9548,6 @@ If the battle ends and this unit is not on the battlefield it is considered to b
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4438-0ec1-1646-b6d8" type="max"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6053-a837-e072-dbfe" type="min"/>
               </constraints>
-              <profiles>
-                <profile id="f8b3-47db-ac79-0157" name="Ophydian Destroyer" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
-                  <characteristics>
-                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
-                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
-                    <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
-                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
-                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
-                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <categoryLinks>
                 <categoryLink id="a626-21a1-6fcc-6f37" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
                 <categoryLink id="d882-e78a-fc8a-bef3" name="Destroyer Cult" hidden="false" targetId="6542-a980-6290-dbc3" primary="false"/>
@@ -9487,6 +9567,9 @@ If the battle ends and this unit is not on the battlefield it is considered to b
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Ophydian Destroyer" id="2b09-84fc-a08b-7ddc" hidden="false" type="profile" targetId="13e2-8a4a-c769-68f6"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -14694,6 +14777,21 @@ If it does, select one enemy CHARACTER unit within Engagement Range; until the e
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Character wargear" id="e525-3e75-f036-9932" hidden="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55b3-01be-bdbe-5ce2" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink targetId="2c14-5df5-d15f-2166" id="65c6-3878-0a32-9118" type="selectionEntry" name="Gauntlet of Fire" hidden="false"/>
+        <entryLink import="true" name="Resurrection Orb" hidden="false" id="8ead-7a4d-c6c9-cd40" collective="false" targetId="6fbe-35d4-f291-ab52" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="points" value="40"/>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="2"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Phylactery" hidden="false" id="46d2-7f89-0578-d69d" targetId="6332-4364-929c-bf82" type="selectionEntry" collective="false"/>
+      </entryLinks>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="2524-2016-11d6-09a5" name="Necron Warrior" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
@@ -14761,7 +14859,7 @@ If it does, select one enemy CHARACTER unit within Engagement Range; until the e
     </profile>
     <profile id="5dba-36aa-2139-3532" name="United in Destruction [Aura]" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly &lt;DYNASTY&gt; DESTROYER CULT unit is within 6&quot; of this model, each time a model in that unit makes an attack, re-roll a wound roll of 1.</characteristic>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly DYNASTY DESTROYER CULT unit is within 6&quot; of this model, each time a model in that unit makes an attack, re-roll a wound roll of 1.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
