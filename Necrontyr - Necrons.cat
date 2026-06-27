@@ -6546,40 +6546,18 @@ D3	Result
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="cb68-1725-d712-efdb" includeChildSelections="true"/>
               </constraints>
               <profiles>
-                <profile name="Ophydian Lord" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="54ab-60fc-026e-0755">
+                <profile name="Nekrosor Ammentar" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="54ab-60fc-026e-0755">
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
                     <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2+</characteristic>
-                    <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">6</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">6</characteristic>
-                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">7</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">5</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">12</characteristic>
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
                   </characteristics>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <comment>Sempiternal Weave Modifiers</comment>
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="6a66-6542-32d4-862e" childId="9307-ef10-ac6b-b71e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                      <modifiers>
-                        <modifier type="increment" value="1" field="9c9f-9774-a358-3a39"/>
-                        <modifier type="increment" value="1" field="f330-5e6e-4110-0978"/>
-                      </modifiers>
-                    </modifierGroup>
-                    <modifierGroup type="and">
-                      <comment>Merciless Tyrant Modifiers</comment>
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="6a66-6542-32d4-862e" childId="4528-b4a6-f6a8-e1ed" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                      <modifiers>
-                        <modifier type="increment" value="2" field="13fc-b29b-31f2-ab9f"/>
-                        <modifier type="increment" value="2" field="2218-aa3c-265f-2939"/>
-                      </modifiers>
-                    </modifierGroup>
-                  </modifierGroups>
                 </profile>
                 <profile name="Infectious Murder-madness [Aura]" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="7a56-af9b-47b1-bb00">
                   <characteristics>
@@ -6656,7 +6634,6 @@ D3	Result
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink import="true" name=" Character definition" hidden="false" id="f593-9699-64ca-bac6" collective="false" targetId="44f7-f8e4-9f20-9228" type="selectionEntryGroup"/>
                 <entryLink import="true" name="Blade tail&amp;Whip coils" hidden="false" id="c7eb-892d-3f95-4031" collective="false" targetId="4aa3-b008-05c1-27a4" type="selectionEntry">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a3d-0da5-4624-5eff" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -6677,6 +6654,65 @@ D3	Result
                   </conditions>
                 </modifier>
               </modifiers>
+              <selectionEntryGroups>
+                <selectionEntryGroup name=" Character definition" id="f0c9-51b3-6796-d2a6" hidden="false" collective="false" import="true">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Warlord traits" id="13cf-bd52-7d63-42f8" hidden="true" collective="false" import="true">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="parent" childId="15e7-ffe5-1f1b-384e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                                <condition type="equalTo" value="1" field="selections" scope="parent" childId="fa67-f063-630b-daab" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                      <entryLinks>
+                        <entryLink import="true" name="1 - Extermination Command" hidden="false" id="07d1-3454-4a97-ad13" collective="false" targetId="0bd8-5112-d569-6ab3" type="selectionEntry"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <entryLinks>
+                    <entryLink import="true" name=" Warlord" hidden="true" id="8327-e2d1-f4b0-6e86" collective="false" targetId="15e7-ffe5-1f1b-384e" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="equalTo" value="0" field="selections" scope="parent" childId="fa67-f063-630b-daab" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name=" Stratagem: Rarefied Nobility" hidden="true" id="4788-4df7-fc20-db8b" collective="false" targetId="fa67-f063-630b-daab" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="equalTo" value="0" field="selections" scope="parent" childId="15e7-ffe5-1f1b-384e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name=" Stratagem: Hand of the Phaeron" hidden="false" id="5d13-4105-2378-e65a" collective="false" targetId="58a2-6912-c319-ec92" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" value="0" field="2d3b-b544-ad49-fb75"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0a55-bc5f-fb2a-bed1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
