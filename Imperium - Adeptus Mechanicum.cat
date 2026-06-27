@@ -4677,7 +4677,7 @@ Until the start of your next Command phase:
         </profile>
         <profile id="4a44-d01d-60a8-2b43" name="Lord of the Machine Cult [Aura]" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly FORGE WORLD CORE unit is within 6&quot; of this model, each time a model in that unit makes an attack, re-roll a hit roll of 1.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly FORGE WORLD CORE unit is within 9&quot; of this model, each time a model in that unit makes an attack, re-roll a hit roll of 1.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -14705,6 +14705,13 @@ Each time an attack made with this weapon hits a VEHICLE unit, that attack infli
               <characteristics>
                 <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly FORGE WORLD CORE unit is within 6&quot; of this model, each time a model in that unit makes a ranged attack, add 1 to the Strength characteristic of that attack.</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="While a friendly FORGE WORLD CORE unit is within 9&quot; of this model, each time a model in that unit makes a ranged attack, add 1 to the Strength characteristic of that attack." field="21befb24-fc85-4f52-a745-64b2e48f8228">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="1b74-612e-87f1-91cd" shared="true" includeChildSelections="true" childName="Tech-Priest Dominus"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
             <profile id="d3eb-3c3d-0628-b5e2" name="Fabrications of the artisan [Aura] - Initial" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
