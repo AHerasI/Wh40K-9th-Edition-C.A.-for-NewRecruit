@@ -203,6 +203,7 @@ Roll	Out of Bounds Malus
         </profile>
       </profiles>
     </categoryEntry>
+    <categoryEntry name="Phosphor weapon." id="eece-8ef4-ea28-175b" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="1cf5-4942-44db-d8f0" name=" Heretek Cults" hidden="false" collective="false" import="true" targetId="ea6d-e6f8-94d0-e336" type="selectionEntry">
@@ -2209,7 +2210,7 @@ Blast.</characteristic>
               <profiles>
                 <profile id="b4be-8ea8-6315-687d" name="1CP Phospex weaponary" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Use this Stratagem in your Shooting phase when an HERETEK CULT unit from your army is selected to shoot. Until the end of the phase, each time a model in that unit makes an attack with a flame weapon, on a wound roll of 6+, the target suffers 1 mortal wound in addition to any normal damage.</characteristic>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Use this Stratagem in your Shooting phase when an HERETEK CULT unit from your army is selected to shoot. Until the end of the phase, each time a model in that unit makes an attack with a flame weapon or a phosphor weapon, on a wound roll of 6+, the target suffers 1 mortal wound in addition to any normal damage.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3641,9 +3642,9 @@ If the result is equal or lesser than the current Battle round, HERETEK CULT uni
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="56e1-f668-921b-1cb2" name="Heavy phosphor blaster" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="56e1-f668-921b-1cb2" name="Heavy Phosphor blaster" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
-            <profile id="5f1c-29b4-7d66-8eab" name="Heavy phosphor blaster" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+            <profile id="5f1c-29b4-7d66-8eab" name="Heavy Phosphor blaster" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <modifiers>
                 <modifier type="set" field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="42&quot;">
                   <conditions>
@@ -3657,7 +3658,7 @@ If the result is equal or lesser than the current Battle round, HERETEK CULT uni
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
                 <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, the target does not receive the benefits of Cover against that attack.</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Phosphor weapon.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3667,6 +3668,9 @@ If the result is equal or lesser than the current Battle round, HERETEK CULT uni
             <cost name="Pts" typeId="points" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink name="Phosphor weapon" hidden="false" id="735d-7a91-396b-d82c" targetId="1260-984e-7ae5-c458" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry id="8d4f-a493-22f0-ef42" name="Incendine combustor" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
@@ -3692,33 +3696,6 @@ If the result is equal or lesser than the current Battle round, HERETEK CULT uni
             <categoryLink id="66e7-a75c-a86d-7fa8" name="Flame Weapon" hidden="false" targetId="dbad-8265-94be-9c47" primary="false"/>
             <categoryLink id="d31c-73f2-6fe6-0d48" name="Torrent" hidden="false" targetId="795f-a8d3-dc18-cb2e" primary="false"/>
           </categoryLinks>
-          <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="c110-83b2-66f9-7d9b" name="Kastelan phosphor blaster" hidden="false" collective="false" import="true" type="upgrade">
-          <profiles>
-            <profile id="76d9-ad41-d2cf-21b9" name="Kastelan phosphor blaster" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-              <modifiers>
-                <modifier type="set" field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="30&quot;">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2fb6-68a0-ab00-ab32" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 3</characteristic>
-                <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
-                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, the target does not receive the benefits of Cover against that attack.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <costs>
             <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
@@ -3868,7 +3845,7 @@ If the result is equal or lesser than the current Battle round, HERETEK CULT uni
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
                 <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, the target does not receive the benefits of Cover against that attack.</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Phosphor weapon.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3878,6 +3855,9 @@ If the result is equal or lesser than the current Battle round, HERETEK CULT uni
             <cost name="Pts" typeId="points" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink name="Phosphor weapon." hidden="false" id="b9ee-0e80-41ab-d7e1" targetId="eece-8ef4-ea28-175b" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry id="9fa0-4595-1b8d-9197" name="Phosphor blaster" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
@@ -3895,7 +3875,7 @@ If the result is equal or lesser than the current Battle round, HERETEK CULT uni
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
                 <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, the target does not receive the benefits of Cover against that attack.</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Phosphor weapon.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3905,6 +3885,9 @@ If the result is equal or lesser than the current Battle round, HERETEK CULT uni
             <cost name="Pts" typeId="points" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink name="Phosphor weapon." hidden="false" id="f8ef-7ca6-fad2-bec1" targetId="eece-8ef4-ea28-175b" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry id="3d32-9253-5c55-ed62" name="Phosphor pistol" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
@@ -3926,7 +3909,7 @@ If the result is equal or lesser than the current Battle round, HERETEK CULT uni
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
                 <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, the target does not receive the benefits of Cover against that attack.</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Phosphor weapon..</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3936,6 +3919,9 @@ If the result is equal or lesser than the current Battle round, HERETEK CULT uni
             <cost name="Pts" typeId="points" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink name="Phosphor weapon." hidden="false" id="ee5b-91b4-61cf-aac6" targetId="eece-8ef4-ea28-175b" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry id="349b-39bc-ea27-529c" name="Phosphor serpenta" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
@@ -3949,11 +3935,11 @@ If the result is equal or lesser than the current Battle round, HERETEK CULT uni
               </modifiers>
               <characteristics>
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18&quot;</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 1</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 2</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
                 <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, the target does not receive the benefits of Cover against that attack.</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Phosphor weapon.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3963,6 +3949,9 @@ If the result is equal or lesser than the current Battle round, HERETEK CULT uni
             <cost name="Pts" typeId="points" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink name="Phosphor weapon." hidden="false" id="aabe-8d87-b336-39a1" targetId="eece-8ef4-ea28-175b" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry id="f44f-0ce1-5412-9273" name="Phosphor torch" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
@@ -3984,12 +3973,13 @@ If the result is equal or lesser than the current Battle round, HERETEK CULT uni
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
                 <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent. Each time an attack is made with this weapon, the target does not receive the benefits of Cover against that attack.</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent. Phosphor weapon.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <categoryLinks>
             <categoryLink id="5447-d48d-a4d0-ae14" name="Torrent" hidden="false" targetId="795f-a8d3-dc18-cb2e" primary="false"/>
+            <categoryLink name="Phosphor weapon." hidden="false" id="5f15-b547-839d-4603" targetId="eece-8ef4-ea28-175b" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -4211,7 +4201,7 @@ If the result is equal or lesser than the current Battle round, HERETEK CULT uni
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
                 <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, the target does not receive the benefits of Cover against that attack.</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Phosphor weapon.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4221,6 +4211,9 @@ If the result is equal or lesser than the current Battle round, HERETEK CULT uni
             <cost name="Pts" typeId="points" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink name="Phosphor weapon." hidden="false" id="cbe5-4eb2-d4f2-75c2" targetId="eece-8ef4-ea28-175b" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry id="7a83-7d3d-9211-358f" name="Volkite blaster" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
@@ -6868,7 +6861,7 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
               </constraints>
               <entryLinks>
                 <entryLink id="af24-2854-3762-f468" name="Kastelan fist" hidden="false" collective="false" import="true" targetId="c59e-5efb-76a8-b4c6" type="selectionEntry"/>
-                <entryLink id="33d3-7a11-040f-db20" name="Kastelan phosphor blaster" hidden="false" collective="false" import="true" targetId="c110-83b2-66f9-7d9b" type="selectionEntry"/>
+                <entryLink id="33d3-7a11-040f-db20" name="Heavy Phosphor blaster" hidden="false" collective="false" import="true" targetId="56e1-f668-921b-1cb2" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -12905,7 +12898,7 @@ Each SERVITOR takes up the space of 2 models</characteristic>
               </constraints>
               <entryLinks>
                 <entryLink id="73cd-cf2e-5752-480d" name="Kastelan fist" hidden="false" collective="false" import="true" targetId="c59e-5efb-76a8-b4c6" type="selectionEntry"/>
-                <entryLink id="6906-87ab-0b59-d2a1" name="Kastelan phosphor blaster" hidden="false" collective="false" import="true" targetId="c110-83b2-66f9-7d9b" type="selectionEntry"/>
+                <entryLink id="6906-87ab-0b59-d2a1" name="Heavy Phosphor blaster" hidden="false" collective="false" import="true" targetId="56e1-f668-921b-1cb2" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>

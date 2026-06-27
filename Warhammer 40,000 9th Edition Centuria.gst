@@ -1773,6 +1773,13 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
       </profiles>
     </categoryEntry>
     <categoryEntry name="Missile weapon" id="3ecc-9cea-226c-1cc0" hidden="false"/>
+    <categoryEntry name="Phosphor weapon" id="1260-984e-7ae5-c458" hidden="false">
+      <rules>
+        <rule name="Phosphor weapon" id="2d97-9b90-5e99-f469" hidden="false">
+          <description>Each time an attack is made with a PHOSPHOR weapon against an enemy unit, if a wound is scored, until the end of the phase, it cannot be affected by any benefits of Cover.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="a0c7-2a71-bae0-215d" name="Patrol Detachment -2CP" hidden="false">
