@@ -10573,49 +10573,50 @@ Blast.</characteristic>
             </infoLink>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry id="9720-2145-aca9-7066" name="Mechadendrite" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7a5-b10c-f873-e9a1" type="max"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ecc8-2fab-6ae6-50a1" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="0a34-db97-0567-e976" name="Mechadendrite" hidden="false" targetId="b8d6-aad9-c7ec-2c78" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="bde7-657b-a99f-a113" name="Servo-Taser goad" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7b2-56ad-9808-f790" type="max"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdd5-5fb7-ad3f-c89b" type="min"/>
-              </constraints>
+            <selectionEntry type="upgrade" import="true" name="Servo-weapon nest" hidden="false" id="7a6c-8a8a-0405-9fbb" collective="true">
               <profiles>
-                <profile id="fa0c-3c99-87ac-a6eb" name="Servo-Taser goad" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                <profile name="Servo-weapon, Taser" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="36ac-ced7-9f93-c357">
                   <characteristics>
                     <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                     <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                     <characteristic name="S" typeId="59b1-319e-ec13-d466">+2</characteristic>
-                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it does one additional attack with this weapon and only one attack can be done with this weapon. Each time an attack is made with this weapon, an unmodified hit roll of 6 scores 2 additional hits.</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it does 2 additional attacks with this weapon profile and only 2 attacks can be done with this weapon profile. Each time an attack is made with this weapon profile, an unmodified hit roll of 6 scores 2 additional hits.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Servo-weapon, Crush" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="d796-adf1-24e5-a94a">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">x2</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it does 2 additional attacks with this weapon profile and only 2 attacks can be done with this weapon profile.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Servo-weapon, Mechadendrites" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="0b0b-aba1-b1dc-63db">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it does 8 additional attacks with this weapon profile and only 8 attacks can be done with this weapon profile. Each time an attack is made with this weapon profile, an unmodified hit roll of 6 scores 2 additional hits.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
-              <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc02-6876-a651-8971" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fcdd-144e-6f71-28d2" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Variable weapon profile" id="33a1-4c0d-ead6-590b" hidden="false" type="rule" targetId="2dd5-c9f0-aa5a-818a"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
             <entryLink id="4fdc-91d2-65d2-6a28" name="Chainsword" hidden="false" collective="false" import="true" targetId="68c5-3abd-8fe9-a7ae" type="selectionEntry"/>
-            <entryLink id="ff12-80c8-69c7-83c9" name="Servo-arm" hidden="false" collective="false" import="true" targetId="14cd-b045-05d9-b6b0" type="selectionEntry"/>
           </entryLinks>
           <costs>
             <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
