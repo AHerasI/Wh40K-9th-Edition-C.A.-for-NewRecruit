@@ -25713,8 +25713,8 @@ You can use this Stratagem up to 3 times.</characteristic>
               <categoryLinks>
                 <categoryLink name="Infantry" hidden="false" id="dd6d-22e5-884a-8ada" targetId="3d52-fccf-10c0-3fae" primary="false"/>
                 <categoryLink name="Faction: Aeldari" hidden="false" id="8fba-a4c5-a3df-03ab" targetId="1924-ef18-000b-d2ba" primary="false"/>
-                <categoryLink name="Faction: Asuryani" hidden="false" id="8ce0-0865-215b-81cb" targetId="1114-7875-d463-df17" primary="false"/>
                 <categoryLink name="Ø25mm" hidden="false" id="7272-c038-bc82-0059" targetId="a9eb-ffb1-e9f2-2b60" primary="false"/>
+                <categoryLink name="Faction: Aeldari Exodites" hidden="false" id="e99d-2277-f215-911d" targetId="4a67-024a-2ab2-8193" primary="false"/>
               </categoryLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Melee weapon" id="ab07-fc86-6a73-16c2" hidden="false" collective="false" import="true" defaultSelectionEntryId="2c8f-5407-2825-542b">
@@ -25776,6 +25776,11 @@ You can use this Stratagem up to 3 times.</characteristic>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <categoryLinks>
+                <categoryLink name="Faction: Aeldari Exodites" hidden="false" id="eeea-63d6-9bcd-b4f6" targetId="4a67-024a-2ab2-8193" primary="false"/>
+                <categoryLink name="Faction: Aeldari" hidden="false" id="f35f-7923-3b0a-78db" targetId="1924-ef18-000b-d2ba" primary="false"/>
+                <categoryLink name="Cavalry" hidden="false" id="d165-4583-1083-b71b" targetId="ad01-caec-17d9-cb8d" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -26029,6 +26034,367 @@ You can use this Stratagem up to 3 times.</characteristic>
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Exodite Rangers" hidden="true" id="e56f-7e53-e727-fefd" collective="false">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="61f4-aa1a-6422-27e1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="6 - Aeldari Exodites"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" value="1" field="e356-c769-5920-6e14">
+          <repeats>
+            <repeat value="2" repeats="1" field="selections" scope="e56f-7e53-e727-fefd" childId="model" shared="true" roundUp="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="decrement" value="3" field="e356-c769-5920-6e14">
+          <conditions>
+            <condition type="atLeast" value="5" field="selections" scope="e56f-7e53-e727-fefd" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Ranger Cloak" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="12c5-98c0-6851-b930">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a ranged attack is allocated to a model in this unit while it is receiving the benefits of cover, add an additional 1 to any armour saving throw made against that attack.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Concealed Positions" id="43c2-4bd1-2ccd-d211" hidden="false" targetId="a6dc-059d-a47a-a49c" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Faction: Aeldari" hidden="false" id="1644-7fdf-8899-3751" targetId="1924-ef18-000b-d2ba" primary="false"/>
+        <categoryLink name="Core" hidden="false" id="bfc3-1a13-66ab-d155" targetId="08f1-d244-eb44-7e01" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="f924-3f6d-94df-ee1d" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+        <categoryLink name="Faction: Aeldari Exodites" hidden="false" id="11c5-4f0a-c652-ac79" targetId="4a67-024a-2ab2-8193" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Rangers" id="15c4-ef16-a15f-fcd7" hidden="false" collective="false" import="true" defaultSelectionEntryId="67bf-14d9-50f7-1135">
+          <constraints>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="9008-a52d-18c4-3726" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="b296-d469-381a-5bec" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Ranger" hidden="false" id="67bf-14d9-50f7-1135" collective="false">
+              <infoLinks>
+                <infoLink name="Asuryani Oucast" id="8b68-c632-4f25-b781" hidden="false" targetId="5fd7-16bd-38db-9b01" type="profile"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Shuriken pistol" hidden="false" id="5241-eb47-f797-3662" collective="false" targetId="3b3a-02da-8bf9-dac6" type="selectionEntry"/>
+                <entryLink import="true" name="Combat knife" hidden="false" id="dfc3-625b-efb1-8c4c" collective="false" targetId="92e8-af3a-fe14-06c1" type="selectionEntry"/>
+                <entryLink import="true" name="Ranger long rifle" hidden="false" id="ea50-5477-735a-566c" collective="false" targetId="c3ba-5323-a9a3-8cff" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="10"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink name="Ø28mm" hidden="false" id="c764-931c-77c9-9e1d" targetId="7faf-04a8-3770-87b5" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Ranger w/Splinter rifle" hidden="false" id="367e-38e7-609d-e0b5" collective="false">
+              <infoLinks>
+                <infoLink name="Asuryani Oucast" id="439e-ab04-4944-225b" hidden="false" targetId="5fd7-16bd-38db-9b01" type="profile"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Splinter pistol" hidden="false" id="4672-acb9-a579-c204" collective="false" targetId="8baa-e14e-5a6a-972d" type="selectionEntry"/>
+                <entryLink import="true" name="Combat knife" hidden="false" id="30ff-8da9-76bb-add4" collective="false" targetId="92e8-af3a-fe14-06c1" type="selectionEntry"/>
+                <entryLink import="true" name="Splinter rifle" hidden="false" id="4b8c-54ed-c95a-837c" collective="false" targetId="8e23-000e-50d5-2fd2" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="10"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink name="Ø28mm" hidden="false" id="e209-35a5-fc4a-afd2" targetId="7faf-04a8-3770-87b5" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Ranger w/Recurve Bow" hidden="false" id="6a09-6c06-47ef-1e10" collective="false">
+              <infoLinks>
+                <infoLink name="Asuryani Oucast" id="55bc-58f7-972f-4951" hidden="false" targetId="5fd7-16bd-38db-9b01" type="profile"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink targetId="e8e2-56ed-f1d7-1651" id="1fe9-172a-0bed-df64" type="selectionEntry" name="Wraithbone Recurve Bow" hidden="false" collective="true"/>
+                <entryLink import="true" name="Shuriken pistol" hidden="false" id="2f96-bc11-dcdc-0ccf" collective="false" targetId="3b3a-02da-8bf9-dac6" type="selectionEntry"/>
+                <entryLink import="true" name="Combat knife" hidden="false" id="1ec0-f726-351a-6524" collective="false" targetId="92e8-af3a-fe14-06c1" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="10"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink name="Ø28mm" hidden="false" id="2959-71db-6cbe-0cb4" targetId="7faf-04a8-3770-87b5" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Ranger w/Special equipment" id="05dc-3364-6f10-f741" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" value="2" field="fe3b-fbf5-47e1-ce23">
+                  <conditions>
+                    <condition type="atLeast" value="10" field="selections" scope="e56f-7e53-e727-fefd" childId="15c4-ef16-a15f-fcd7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe3b-fbf5-47e1-ce23" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="Ranger w/Wireweave net" hidden="false" id="c3ec-2d31-03ba-ddf0" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="700d-f250-bb27-0624" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Wireweave net" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="ba28-25a9-0d66-ae01">
+                      <characteristics>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Once per battle, when the bearer’s unit is selected as a target of a charge, you can select for the bearer to activate the wireweave net. If you do so, roll one D6. On a 2+:
+- The charging unit suffers D3 mortal wounds.
+- Until the end of the phase, subtract 2 from charge rolls made for any unit that declares a charge against the bearer’s unit.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Asuryani Oucast" id="059a-3b7d-3447-9256" hidden="false" targetId="5fd7-16bd-38db-9b01" type="profile"/>
+                  </infoLinks>
+                  <entryLinks>
+                    <entryLink import="true" name="Shuriken pistol" hidden="false" id="034a-d89c-c55a-f475" collective="false" targetId="3b3a-02da-8bf9-dac6" type="selectionEntry"/>
+                    <entryLink import="true" name="Plasma grenades" hidden="false" id="e3b3-80ec-8f94-8996" collective="false" targetId="bda9-e3dd-9a43-fd07" type="selectionEntry"/>
+                    <entryLink import="true" name="Combat knife" hidden="false" id="4bcf-58b5-02d3-f1c7" collective="false" targetId="92e8-af3a-fe14-06c1" type="selectionEntry"/>
+                    <entryLink import="true" name="Ranger long rifle" hidden="false" id="f20b-4e36-d1d6-06ae" collective="false" targetId="c3ba-5323-a9a3-8cff" type="selectionEntry"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="points" value="15"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="3"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="Pts" typeId="points" value="0"/>
+        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Exodite Clan Warriors" hidden="true" id="ce9a-1267-cc6b-3928" collective="false">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="61f4-aa1a-6422-27e1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="6 - Aeldari Exodites"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" value="1" field="e356-c769-5920-6e14">
+          <repeats>
+            <repeat value="2" repeats="1" field="selections" scope="ce9a-1267-cc6b-3928" childId="model" shared="true" roundUp="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="decrement" value="3" field="e356-c769-5920-6e14">
+          <conditions>
+            <condition type="atLeast" value="5" field="selections" scope="ce9a-1267-cc6b-3928" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Concealed Positions" id="2437-ad42-0326-d045" hidden="false" targetId="a6dc-059d-a47a-a49c" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Faction: Aeldari" hidden="false" id="53d7-9c7c-8209-ee6b" targetId="1924-ef18-000b-d2ba" primary="false"/>
+        <categoryLink name="Core" hidden="false" id="8ea9-0d19-4c4b-97db" targetId="08f1-d244-eb44-7e01" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="3587-ae95-d13b-4f33" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+        <categoryLink name="Faction: Aeldari Exodites" hidden="false" id="c8fb-03d3-863c-13e5" targetId="4a67-024a-2ab2-8193" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Clan Warriors" id="dae1-0c22-3842-1272" hidden="false" collective="false" import="true" defaultSelectionEntryId="a3a7-7f7f-6a96-34e6">
+          <constraints>
+            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="f823-10c2-d83d-102e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="82ce-9e4b-38f0-5ecd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Clan Warrior" hidden="false" id="af22-8e3c-bb46-2b54" collective="false">
+              <infoLinks>
+                <infoLink name="Asuryani Oucast" id="a9aa-3781-b140-52e8" hidden="false" targetId="5fd7-16bd-38db-9b01" type="profile"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Shuriken pistol" hidden="false" id="3a4b-17a4-24b8-5383" collective="false" targetId="3b3a-02da-8bf9-dac6" type="selectionEntry"/>
+                <entryLink import="true" name="Power Lance" hidden="false" id="0a8b-5d4e-ef43-9683" collective="false" targetId="37ad-6fbf-4bb5-264d" type="selectionEntry"/>
+                <entryLink import="true" name="Storm Shield" hidden="false" id="45c2-739a-c909-86e3" collective="false" targetId="5d5f-55bb-690a-8737" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="15"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink name="Ø28mm" hidden="false" id="4210-c600-3421-f0e7" targetId="7faf-04a8-3770-87b5" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Clan Warrior w/Sword" hidden="false" id="c8f6-fd8a-fc17-d962" collective="false">
+              <infoLinks>
+                <infoLink name="Asuryani Oucast" id="ef74-2f68-337f-f82b" hidden="false" targetId="5fd7-16bd-38db-9b01" type="profile"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Power Sword" hidden="false" id="f6f4-d354-3f27-8302" collective="false" targetId="6168-426f-d99c-ad99" type="selectionEntry"/>
+                <entryLink import="true" name="Shuriken pistol" hidden="false" id="69b4-0e53-4e1b-18de" collective="false" targetId="3b3a-02da-8bf9-dac6" type="selectionEntry"/>
+                <entryLink import="true" name="Storm Shield" hidden="false" id="34c6-30b9-be67-55a7" collective="false" targetId="5d5f-55bb-690a-8737" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="10"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink name="Ø28mm" hidden="false" id="6875-7751-3a95-ece9" targetId="7faf-04a8-3770-87b5" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Clan Warrior w/Axe" hidden="false" id="a3a7-7f7f-6a96-34e6" collective="false">
+              <infoLinks>
+                <infoLink name="Asuryani Oucast" id="a8dc-d3a5-3a98-5370" hidden="false" targetId="5fd7-16bd-38db-9b01" type="profile"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Power Axe" hidden="false" id="2347-cd2c-835d-1db8" collective="false" targetId="c95a-21b1-4988-2a86" type="selectionEntry"/>
+                <entryLink import="true" name="Shuriken pistol" hidden="false" id="f354-865c-1b2e-f0e0" collective="false" targetId="3b3a-02da-8bf9-dac6" type="selectionEntry"/>
+                <entryLink import="true" name="Storm Shield" hidden="false" id="f7d4-b5a7-e3e7-3fb7" collective="false" targetId="5d5f-55bb-690a-8737" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="10"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink name="Ø28mm" hidden="false" id="d93b-d25d-9f2d-733f" targetId="7faf-04a8-3770-87b5" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Clan Warrior w/Axe&amp;Sword" hidden="false" id="3cd9-81e7-1baf-d970" collective="false">
+              <infoLinks>
+                <infoLink name="Asuryani Oucast" id="fb94-66ed-a489-fc52" hidden="false" targetId="5fd7-16bd-38db-9b01" type="profile"/>
+                <infoLink name="Off-hand weapon" id="f34e-1e72-0b58-a5ee" hidden="false" type="profile" targetId="e14b-37da-f8e9-1752"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Power Axe" hidden="false" id="050c-090b-ea8a-5aca" collective="false" targetId="c95a-21b1-4988-2a86" type="selectionEntry"/>
+                <entryLink import="true" name="Power Sword" hidden="false" id="d7cf-a5dc-53b8-1555" collective="false" targetId="6168-426f-d99c-ad99" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="15"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink name="Ø28mm" hidden="false" id="a21c-2a57-7edf-e763" targetId="7faf-04a8-3770-87b5" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="3"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="Pts" typeId="points" value="0"/>
+        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Exodite Worldsinger" hidden="true" id="609a-fd47-9182-045d" collective="false">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="6732-8eda-123a-a370" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4435-0896-94ff-cebd" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Path of the Shaper" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="93bb-8e93-5552-d44d">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">In your Psychic phase, instead of attempting to manifest psychic powers, this model can reknit the wraithbone of one friendly WRAITHBONE model from unit within 3&quot;. If it does, either a model regains D3 lost wounds or bring back a destroyed model of that unit with all it&apos;s Wounds remaining. That model is set up within 3&quot; of the BONESINGER and in coherency with the unit. Each unit can have a model reknit once per turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Worldsinger" typeId="bc97-dea9-9e88-bb7d" typeName="Psyker" hidden="false" id="6f15-0caa-b0e4-7d03">
+          <characteristics>
+            <characteristic name="Cast" typeId="5afb-9914-904b-d3b3">1</characteristic>
+            <characteristic name="Deny" typeId="b5ac-9c20-5d5a-6f9b">1</characteristic>
+            <characteristic name="Powers Known" typeId="69d7-b45e-00a2-7e46">Smite or 1 Runes of Fortune.</characteristic>
+            <characteristic name="Other" typeId="c2e2-f115-0003-5d7b">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Worldsinger" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="f35e-651f-0f44-9a66">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="8&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="d294-6bda-13ec-342f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Biel-tan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Shaper&apos;s song" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="f5ed-68e4-31a3-e5e7">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly WRAITHBONE unit is within 6&quot; of this model, each time a model in that unit uses it&apos;s Wraithbone regeneration ability, it regains 1 additional Wound.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rune armour" id="dba6-7ad3-7176-892d" hidden="false" targetId="2c3c-bf97-572f-ed11" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Character" hidden="false" id="045c-c99d-f08a-b509" targetId="ef18-746a-369f-43a4" primary="false"/>
+        <categoryLink name="Psyker" hidden="false" id="4451-7305-87d2-3170" targetId="e691-aad7-d21c-1023" primary="false"/>
+        <categoryLink name="Faction: Asuryani" hidden="false" id="cb0f-ffa4-d883-33c2" targetId="1114-7875-d463-df17" primary="false"/>
+        <categoryLink name="Faction: Aeldari" hidden="false" id="e5ee-46d7-6ae4-4662" targetId="1924-ef18-000b-d2ba" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="9e33-4004-cf17-f182" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name=" Character definition" hidden="false" id="6706-9099-0808-58ba" collective="false" targetId="e0a8-6e59-4681-1912" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Runes of Fortune &amp; Smite" hidden="false" id="5b45-8ac1-93ac-4021" collective="false" targetId="fe10-bfed-ecb8-b54c" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Witch staff" hidden="false" id="15d9-2533-2f46-50d8" collective="false" targetId="6b04-7bba-bd9f-561a" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="3"/>
+        <cost name="Pts" typeId="points" value="60"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -28014,6 +28380,36 @@ While an enemy unit is within Engagement Range of the bearer, if the bearer’s 
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3de9-2ce4-5593-97aa" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b02-71e9-251e-4b85" includeChildSelections="false"/>
           </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Wraithbone Recurve Bow" hidden="false" id="e8e2-56ed-f1d7-1651" collective="true">
+          <profiles>
+            <profile name="Arrow, piercing" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="f105-5dfe-087f-f676">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Rapid Fire 1</characteristic>
+                <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">If the target is within half range, add 1 to this weapon&apos;s Strength.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Arrow, explosive" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="d865-9349-60eb-5cb7">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18&quot;</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Rapid Fire D6</characteristic>
+                <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Variable weapon profile" id="4f46-85eb-0a27-12d9" hidden="false" type="rule" targetId="2dd5-c9f0-aa5a-818a"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Blast" hidden="false" id="cacf-672e-c1cb-faef" targetId="a30d-0055-6710-6284" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -36574,6 +36970,17 @@ Each time an enemy unit without FLY, VEHICLE or TITANIC Keywords moves within th
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="Clan Warrior" field="name"/>
+            <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f"/>
+          </modifiers>
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="61f4-aa1a-6422-27e1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="6 - Aeldari Exodites"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Swift Engagement" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="4a49-7e1f-fe62-0367">
       <characteristics>
