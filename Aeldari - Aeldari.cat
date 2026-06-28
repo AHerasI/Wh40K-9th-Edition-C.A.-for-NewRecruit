@@ -733,6 +733,7 @@ Additional reference data obtained from Wahapedia, https://wahapedia.ru/</readme
     <categoryEntry name="Faction: Aeldari Exodites" id="4a67-024a-2ab2-8193" hidden="false">
       <infoLinks>
         <infoLink name="Aeldari Exodites" id="c4fe-36fe-153a-e7b6" hidden="false" type="profile" targetId="f1c7-8631-a283-5331"/>
+        <infoLink name="Quick Response" id="745d-d52a-54d7-df8a" hidden="false" targetId="9334-58b2-273b-198c" type="profile"/>
       </infoLinks>
     </categoryEntry>
   </categoryEntries>
@@ -25737,7 +25738,7 @@ You can use this Stratagem up to 3 times.</characteristic>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Exodite Seer on Drakesteed" hidden="false" id="b33a-f90b-5921-dc55">
+            <selectionEntry type="model" import="true" name="Exodite Seer on Drakesteed" hidden="false" id="b33a-f90b-5921-dc55">
               <entryLinks>
                 <entryLink import="true" name="Drakesteed bite" hidden="false" id="d59e-202b-0a60-d335" type="selectionEntry" targetId="4e18-d68e-36d9-5e2e"/>
                 <entryLink import="true" name="Shuriken pistol" hidden="false" id="1afc-290e-ba51-0d07" collective="false" targetId="3b3a-02da-8bf9-dac6" type="selectionEntry"/>
@@ -25804,8 +25805,6 @@ You can use this Stratagem up to 3 times.</characteristic>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Exodite Warlocks" hidden="true" id="a4ce-aa2a-7f56-c830">
       <costs>
-        <cost name="Pts" typeId="points" value="125"/>
-        <cost name="PL" typeId="e356-c769-5920-6e14" value="6"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
@@ -25861,8 +25860,8 @@ You can use this Stratagem up to 3 times.</characteristic>
               <categoryLinks>
                 <categoryLink name="Infantry" hidden="false" id="7ff3-5ba4-dc9e-8f27" targetId="3d52-fccf-10c0-3fae" primary="false"/>
                 <categoryLink name="Faction: Aeldari" hidden="false" id="ebb5-f482-9796-78d9" targetId="1924-ef18-000b-d2ba" primary="false"/>
-                <categoryLink name="Faction: Asuryani" hidden="false" id="15e7-18e0-a192-eb58" targetId="1114-7875-d463-df17" primary="false"/>
                 <categoryLink name="Ø25mm" hidden="false" id="48dd-a61a-70b3-f065" targetId="a9eb-ffb1-e9f2-2b60" primary="false"/>
+                <categoryLink name="Faction: Aeldari Exodites" hidden="false" id="378a-eb00-4eed-8a1a" targetId="4a67-024a-2ab2-8193" primary="false"/>
               </categoryLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Melee weapon" id="1e25-bc7d-8ff6-59fd" hidden="false" collective="false" import="true" defaultSelectionEntryId="1a5e-5e22-164a-1a64">
@@ -25880,9 +25879,9 @@ You can use this Stratagem up to 3 times.</characteristic>
                 <entryLink import="true" name="Shuriken pistol" hidden="false" id="1dfe-dbec-9e21-35b9" collective="false" targetId="3b3a-02da-8bf9-dac6" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="Pts" typeId="points" value="30"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
               <modifiers>
@@ -25896,7 +25895,7 @@ You can use this Stratagem up to 3 times.</characteristic>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a6db-1674-f38e-10a9" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Exodite Warlock on Drakesteed" hidden="false" id="baf8-c8ec-aac2-90ea">
+            <selectionEntry type="model" import="true" name="Exodite Warlock on Drakesteed" hidden="false" id="baf8-c8ec-aac2-90ea">
               <entryLinks>
                 <entryLink import="true" name="Drakesteed bite" hidden="false" id="6fed-312d-f84e-c3e9" type="selectionEntry" targetId="4e18-d68e-36d9-5e2e"/>
                 <entryLink import="true" name="Shuriken pistol" hidden="false" id="6d74-01f3-6150-41f0" collective="false" targetId="3b3a-02da-8bf9-dac6" type="selectionEntry"/>
@@ -25929,7 +25928,7 @@ You can use this Stratagem up to 3 times.</characteristic>
                 </profile>
               </profiles>
               <costs>
-                <cost name="Pts" typeId="points" value="30"/>
+                <cost name="Pts" typeId="points" value="45"/>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
@@ -25944,6 +25943,11 @@ You can use this Stratagem up to 3 times.</characteristic>
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="80e5-f8c3-0815-6ce1" includeChildSelections="false"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink name="Cavalry" hidden="false" id="ef5a-a916-e974-c54c" targetId="ad01-caec-17d9-cb8d" primary="false"/>
+                <categoryLink name="Faction: Aeldari" hidden="false" id="fd89-74f5-e300-a727" targetId="1924-ef18-000b-d2ba" primary="false"/>
+                <categoryLink name="Faction: Aeldari Exodites" hidden="false" id="908a-6b78-ca2f-1226" targetId="4a67-024a-2ab2-8193" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -25973,7 +25977,7 @@ You can use this Stratagem up to 3 times.</characteristic>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="notEqualTo" value="1" field="selections" scope="6270-cc4b-0b7a-6b4b" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="notEqualTo" value="1" field="selections" scope="a4ce-aa2a-7f56-c830" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -25989,7 +25993,7 @@ You can use this Stratagem up to 3 times.</characteristic>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="notEqualTo" value="2" field="selections" scope="6270-cc4b-0b7a-6b4b" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="notEqualTo" value="2" field="selections" scope="model" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -26005,7 +26009,7 @@ You can use this Stratagem up to 3 times.</characteristic>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="notEqualTo" value="3" field="selections" scope="6270-cc4b-0b7a-6b4b" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="notEqualTo" value="3" field="selections" scope="a4ce-aa2a-7f56-c830" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
