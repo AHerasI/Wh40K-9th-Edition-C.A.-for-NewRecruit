@@ -2871,7 +2871,7 @@ D6--&gt;Result
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
           </characteristics>
         </profile>
-        <profile id="2d1f-de50-f8bb-07bc" name="Trukk [3] (1-2 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="2d1f-de50-f8bb-07bc" name="Trukk [3] (1-2 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <modifiers>
             <modifier type="set" field="381b-eb28-74c3-df5f" value="5+">
               <conditions>
@@ -2907,7 +2907,7 @@ D6--&gt;Result
 Each MEGA ARMOUR or JUMP PACK model takes up the space of 2 models.</characteristic>
           </characteristics>
         </profile>
-        <profile id="736d-102a-942e-c769" name="Trukk [1] (6+ Wounds remaining)" hidden="true" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="736d-102a-942e-c769" name="Trukk [1] (6+ Wounds remaining)" hidden="true" typeId="800f-21d0-4387-c943" typeName="Model">
           <modifiers>
             <modifier type="set" field="381b-eb28-74c3-df5f" value="4+">
               <conditions>
@@ -3036,8 +3036,16 @@ Each MEGA ARMOUR or JUMP PACK model takes up the space of 2 models.</characteris
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink targetId="bd31-4b5f-2a39-727f" id="b85b-a040-f875-4193" type="selectionEntry" name="Wreckin’ ball" hidden="false" collective="false"/>
-            <entryLink targetId="3061-5ad9-3220-6eb0" id="fe4f-13b4-14e7-549f" type="selectionEntry" name="Grabbin’ klaw" hidden="false" collective="false"/>
+            <entryLink targetId="bd31-4b5f-2a39-727f" id="b85b-a040-f875-4193" type="selectionEntry" name="Wreckin’ ball" hidden="false" collective="false">
+              <costs>
+                <cost name="Pts" typeId="points" value="1"/>
+              </costs>
+            </entryLink>
+            <entryLink targetId="3061-5ad9-3220-6eb0" id="fe4f-13b4-14e7-549f" type="selectionEntry" name="Grabbin’ klaw" hidden="false" collective="false">
+              <costs>
+                <cost name="Pts" typeId="points" value="1"/>
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Saw blades" hidden="false" id="cb87-9ae1-502d-c698" type="selectionEntry" targetId="0344-aa3f-21a3-b155">
               <costs>
                 <cost name="Pts" typeId="points" value="15"/>
@@ -3046,18 +3054,27 @@ Each MEGA ARMOUR or JUMP PACK model takes up the space of 2 models.</characteris
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Hatch weapon" id="47d2-1749-bcfd-3afd" hidden="false" defaultSelectionEntryId="2d13-6352-5393-dd31">
+          <entryLinks>
+            <entryLink import="true" name="Big Shoota" hidden="false" id="2d13-6352-5393-dd31" collective="false" targetId="f5c9-ea3b-0323-de74" type="selectionEntry"/>
+            <entryLink import="true" name="Rokkit launcha" hidden="false" id="7009-4d37-f68d-87be" collective="false" targetId="fa16-5d7c-2df3-fdce" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="points" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d1c-e08d-a641-9ab6" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3341-8136-ece5-bb12" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="2d13-6352-5393-dd31" name="Big Shoota" hidden="false" collective="false" import="true" targetId="917b-5dee-5743-03fb" type="selectionEntry">
-          <categoryLinks>
-            <categoryLink id="bc02-23a2-5863-5889" name="Turret-mounted" hidden="false" targetId="f28c-7e4e-75e1-2474" primary="false"/>
-          </categoryLinks>
-        </entryLink>
         <entryLink id="5d70-1bab-87ee-80a4" name="Model options" hidden="false" collective="false" import="true" targetId="cabb-c994-faef-667a" type="selectionEntryGroup"/>
         <entryLink id="070e-5b9e-08db-27c5" name="Crushing bulk" hidden="false" collective="false" import="true" targetId="502f-45c2-6fd1-443b" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="points" value="70"/>
+        <cost name="Pts" typeId="points" value="75"/>
         <cost name="PL" typeId="e356-c769-5920-6e14" value="4"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
