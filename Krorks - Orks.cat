@@ -2811,7 +2811,7 @@ D6--&gt;Result
         </modifierGroup>
       </modifierGroups>
       <profiles>
-        <profile id="390f-9eb7-4267-f4ee" name="Trukk [1] (6+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="390f-9eb7-4267-f4ee" name="Trukk [1] (6+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <modifiers>
             <modifier type="set" field="381b-eb28-74c3-df5f" value="4+">
               <conditions>
@@ -2841,7 +2841,7 @@ D6--&gt;Result
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
           </characteristics>
         </profile>
-        <profile id="fa6b-00ca-1e93-50ac" name="Trukk [2] (3-5 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="fa6b-00ca-1e93-50ac" name="Trukk [2] (3-5 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <modifiers>
             <modifier type="set" field="381b-eb28-74c3-df5f" value="4+">
               <conditions>
@@ -3019,36 +3019,11 @@ Each MEGA ARMOUR or JUMP PACK model takes up the space of 2 models.</characteris
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1abe-9d31-336e-994f" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="3061-5ad9-3220-6eb0" name="Grabbin’ klaw" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry type="upgrade" import="true" name="Spiked Ram" hidden="false" id="b59d-0f22-0f36-2438">
               <profiles>
-                <profile id="1349-90f0-037f-c86e" name="Grabbin’ klaw" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                <profile name="Spiked Ram" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="33d5-b437-5a49-d081">
                   <characteristics>
-                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
-                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-                    <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
-                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
-                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it makes 1 additional attack with this weapon and no more than 1 attack can be made with this weapon.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Pts" typeId="points" value="5"/>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="bd31-4b5f-2a39-727f" name="Wreckin’ ball" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="3bde-60e4-471d-61a3" name="Wreckin’ ball" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
-                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-                    <characteristic name="S" typeId="59b1-319e-ec13-d466">+2</characteristic>
-                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
-                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it makes 1 additional attack with this weapon and no more than 1 attack can be made with this weapon.</characteristic>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time this model fights, if it made a charge move this turn, then until that fight is resolved, add D6 to the Attacks characteristic of this model.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3060,6 +3035,16 @@ Each MEGA ARMOUR or JUMP PACK model takes up the space of 2 models.</characteris
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink targetId="bd31-4b5f-2a39-727f" id="b85b-a040-f875-4193" type="selectionEntry" name="Wreckin’ ball" hidden="false" collective="false"/>
+            <entryLink targetId="3061-5ad9-3220-6eb0" id="fe4f-13b4-14e7-549f" type="selectionEntry" name="Grabbin’ klaw" hidden="false" collective="false"/>
+            <entryLink import="true" name="Saw blades" hidden="false" id="cb87-9ae1-502d-c698" type="selectionEntry" targetId="0344-aa3f-21a3-b155">
+              <costs>
+                <cost name="Pts" typeId="points" value="15"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -17211,7 +17196,7 @@ Each MEGA ARMOUR or JUMP PACK model takes up the space of 2 models.</characteris
         </modifierGroup>
       </modifierGroups>
       <profiles>
-        <profile id="95e3-fa61-e7db-f615" name="Battlewagon [1] (9+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="95e3-fa61-e7db-f615" name="Battlewagon [1] (9+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <modifiers>
             <modifier type="set" field="381b-eb28-74c3-df5f" value="4+">
               <conditions>
@@ -17519,29 +17504,8 @@ Each MEGA ARMOUR or JUMP PACK model takes up the space of 2 models.</characteris
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bbb-4136-d7d9-f653" type="max"/>
                   </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="c3e2-83ff-6dff-650e" name="Deff rolla" hidden="false" collective="false" import="true" type="upgrade">
-                      <profiles>
-                        <profile id="1931-4afa-d7b9-eed0" name="Deff rolla" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-                          <characteristics>
-                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
-                            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-                            <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
-                            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-                            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, if the bearer&apos;s unit has made a charge move during the previous phase, the attacks are resolved as having a Weapon Skill characteristic of 3+.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name="Pts" typeId="points" value="15"/>
-                        <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
-                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
                   <entryLinks>
+                    <entryLink targetId="c3e2-83ff-6dff-650e" id="d926-47c3-a019-2c5f" type="selectionEntry" name="Deff rolla" hidden="false" collective="false"/>
                     <entryLink id="fb6a-7d58-5631-66f0" name="Grabbin’ klaw" hidden="false" collective="false" import="true" targetId="3061-5ad9-3220-6eb0" type="selectionEntry"/>
                     <entryLink id="b622-7f13-4e20-fb2e" name="Wreckin’ ball" hidden="false" collective="false" import="true" targetId="bd31-4b5f-2a39-727f" type="selectionEntry"/>
                   </entryLinks>
@@ -25335,9 +25299,9 @@ Each MEGA ARMOUR or JUMP PACK model takes up the space of 2 models.</characteris
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="43cb-d1b4-ad9d-486a" name="Beastchoppa" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="43cb-d1b4-ad9d-486a" name="Beast choppa" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
-            <profile id="b16c-f70e-f0e7-7de0" name="Beastchoppa" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+            <profile id="b16c-f70e-f0e7-7de0" name="Beast choppa" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
@@ -25566,6 +25530,66 @@ Each time an attack of strength 7 or less is allocated to this model, subtract 1
             <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
             <cost name="Pts" typeId="points" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Deff rolla" hidden="false" id="c3e2-83ff-6dff-650e" collective="false">
+          <profiles>
+            <profile name="Deff rolla" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="1931-4afa-d7b9-eed0">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, if the bearer&apos;s unit has made a charge move during the previous phase, the attacks are resolved as having a Weapon Skill characteristic of 3+.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="points" value="15"/>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Wreckin’ ball" hidden="false" id="bd31-4b5f-2a39-727f" collective="false">
+          <profiles>
+            <profile name="Wreckin’ ball" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="3bde-60e4-471d-61a3">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                <characteristic name="S" typeId="59b1-319e-ec13-d466">x2</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it makes 1 additional attack with this weapon and no more than 1 attack can be made with this weapon.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="points" value="10"/>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Grabbin’ klaw" hidden="false" id="3061-5ad9-3220-6eb0" collective="false">
+          <profiles>
+            <profile name="Grabbin’ klaw" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="1349-90f0-037f-c86e">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                <characteristic name="S" typeId="59b1-319e-ec13-d466">+3</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it makes 1 additional attack with this weapon and no more than 1 attack can be made with this weapon.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="points" value="10"/>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
         </selectionEntry>
