@@ -730,6 +730,11 @@ Additional reference data obtained from Wahapedia, https://wahapedia.ru/</readme
         <infoLink name="Phoenix Lord" id="0a9f-eb21-ce4f-dbaa" hidden="false" targetId="de43-d1a3-6d0b-95fd" type="profile"/>
       </infoLinks>
     </categoryEntry>
+    <categoryEntry name="Faction: Aeldari Exodites" id="4a67-024a-2ab2-8193" hidden="false">
+      <infoLinks>
+        <infoLink name="Aeldari Exodites" id="c4fe-36fe-153a-e7b6" hidden="false" type="profile" targetId="f1c7-8631-a283-5331"/>
+      </infoLinks>
+    </categoryEntry>
   </categoryEntries>
   <entryLinks>
     <entryLink id="79af-2293-71dd-aa90" name=" Aeldari" hidden="false" collective="false" import="true" targetId="19d6-8c37-59e1-12e6" type="selectionEntry">
@@ -4427,6 +4432,18 @@ Each Luck re-roll can be used to re-roll one hit roll, wound roll, damage roll, 
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="6 - Aeldari Exodites" hidden="true" id="61f4-aa1a-6422-27e1">
+              <profiles>
+                <profile name="Aeldari Exodites" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="f1c7-8631-a283-5331">
+                  <characteristics>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink name="Faction: Aeldari Exodites" hidden="false" id="701e-1659-e5d8-d1dd" targetId="4a67-024a-2ab2-8193" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -4888,7 +4905,7 @@ Each Luck re-roll can be used to re-roll one hit roll, wound roll, damage roll, 
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
               <infoLinks>
-                <infoLink name="Battlefield tactics" id="2f88-f481-823f-dc70" hidden="false" type="profile" targetId="4a49-7e1f-fe62-0367"/>
+                <infoLink name="Swift Engagement" id="2f88-f481-823f-dc70" hidden="false" type="profile" targetId="4a49-7e1f-fe62-0367"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry id="ff37-342e-3986-e207" name="Autarch w/Wings" hidden="false" collective="false" import="true" type="model">
@@ -9001,7 +9018,7 @@ When the bearer’s unit makes a Battle Focus move, you can roll 2D6 instead of 
       <infoLinks>
         <infoLink id="7f83-347a-ed38-41c6" name="Aspect Armour" hidden="false" targetId="d818-39a7-5521-efd3" type="profile"/>
         <infoLink id="1e6f-6018-a964-fff7" name="Concealed Positions" hidden="false" targetId="a6dc-059d-a47a-a49c" type="profile"/>
-        <infoLink name="Battlefield tactics" id="3f13-a267-4223-724f" hidden="false" type="profile" targetId="4a49-7e1f-fe62-0367"/>
+        <infoLink name="Swift Engagement" id="3f13-a267-4223-724f" hidden="false" type="profile" targetId="4a49-7e1f-fe62-0367"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="0020-7f0d-fdd6-6f4a" name="Faction: Asuryani" hidden="false" targetId="1114-7875-d463-df17" primary="false"/>
@@ -9557,7 +9574,7 @@ When the bearer’s unit makes a Battle Focus move, you can roll 2D6 instead of 
       <infoLinks>
         <infoLink id="eee6-58ba-43de-1aba" name="Aspect Armour" hidden="false" targetId="d818-39a7-5521-efd3" type="profile"/>
         <infoLink id="f98d-bf0d-e17b-835a" name="Howling Banshee mask" hidden="false" targetId="153a-6906-7262-1ef3" type="profile"/>
-        <infoLink name="Battlefield tactics" id="3bc6-3cbd-fee9-bfbc" hidden="false" type="profile" targetId="4a49-7e1f-fe62-0367"/>
+        <infoLink name="Swift Engagement" id="3bc6-3cbd-fee9-bfbc" hidden="false" type="profile" targetId="4a49-7e1f-fe62-0367"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="3122-009d-4f59-acb1" name="Faction: Asuryani" hidden="false" targetId="1114-7875-d463-df17" primary="false"/>
@@ -25636,6 +25653,379 @@ You can use this Stratagem up to 3 times.</characteristic>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" name="Exodite Seer" hidden="true" id="7acc-9afe-66b0-7937">
+      <costs>
+        <cost name="Pts" typeId="points" value="125"/>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="6"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="61f4-aa1a-6422-27e1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="6 - Aeldari Exodites"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Smite" hidden="false" id="d47f-7dc9-3a89-4766" type="selectionEntry" targetId="03fd-db47-5333-1e1f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cab9-a41d-3654-a789" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f0d7-e66f-8d72-0989" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name=" Character definition" hidden="false" id="7d2c-2127-f274-b30a" collective="false" targetId="e0a8-6e59-4681-1912" type="selectionEntryGroup"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Psychic powers" id="c221-ca3a-ae6c-ac28" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2aa8-6718-07cf-9077" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="72a8-192f-fd88-a2cd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Seer equipment" id="f5f3-8784-38ce-e026" hidden="false" collective="false" import="true" defaultSelectionEntryId="ea58-5a4d-6e68-db3a">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1086-68a4-5f5d-ce04" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0597-1c43-65fa-d9d7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Exodite Seer" hidden="false" id="ea58-5a4d-6e68-db3a" collective="false">
+              <profiles>
+                <profile name="Seer" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="7643-1973-321c-a4ef">
+                  <characteristics>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2+</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">5</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink name="Infantry" hidden="false" id="dd6d-22e5-884a-8ada" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+                <categoryLink name="Faction: Aeldari" hidden="false" id="8fba-a4c5-a3df-03ab" targetId="1924-ef18-000b-d2ba" primary="false"/>
+                <categoryLink name="Faction: Asuryani" hidden="false" id="8ce0-0865-215b-81cb" targetId="1114-7875-d463-df17" primary="false"/>
+                <categoryLink name="Ø25mm" hidden="false" id="7272-c038-bc82-0059" targetId="a9eb-ffb1-e9f2-2b60" primary="false"/>
+              </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Melee weapon" id="ab07-fc86-6a73-16c2" hidden="false" collective="false" import="true" defaultSelectionEntryId="2c8f-5407-2825-542b">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5beb-1561-4931-7b05" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="15c9-7cfa-9f42-6811" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Singing spear" hidden="false" id="7618-6442-a278-e20b" collective="false" targetId="6006-2628-238f-b379" type="selectionEntry"/>
+                    <entryLink import="true" name="Witchblade" hidden="false" id="0c40-1cee-3ba3-72a0" collective="false" targetId="5b24-0d30-12af-df18" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Shuriken pistol" hidden="false" id="0c37-b4ae-2bf0-8d3f" collective="false" targetId="3b3a-02da-8bf9-dac6" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Exodite Seer on Drakesteed" hidden="false" id="b33a-f90b-5921-dc55">
+              <entryLinks>
+                <entryLink import="true" name="Drakesteed bite" hidden="false" id="d59e-202b-0a60-d335" type="selectionEntry" targetId="4e18-d68e-36d9-5e2e"/>
+                <entryLink import="true" name="Shuriken pistol" hidden="false" id="1afc-290e-ba51-0d07" collective="false" targetId="3b3a-02da-8bf9-dac6" type="selectionEntry"/>
+              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon option" id="1168-703e-d065-a0af" hidden="false" collective="false" import="true" defaultSelectionEntryId="846e-a2d1-bd9c-61b0">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8991-e33b-e32d-9e2d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e603-ab3c-b398-eec1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Singing spear" hidden="false" id="3aaf-7d8a-bc40-4513" collective="false" targetId="6006-2628-238f-b379" type="selectionEntry"/>
+                    <entryLink import="true" name="Witchblade" hidden="false" id="f282-51c0-92c7-e867" collective="false" targetId="5b24-0d30-12af-df18" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <profiles>
+                <profile name="Seer on Drakesteed" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="b5c9-02cb-6a34-b0bd">
+                  <characteristics>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2+</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">6</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="points" value="30"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Ghosthelm" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="4cca-9162-51d2-25bf">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model never suffers Perils of the Warp.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Seer" typeId="bc97-dea9-9e88-bb7d" typeName="Psyker" hidden="false" id="a7f3-7f14-69fd-346e">
+          <characteristics>
+            <characteristic name="Cast" typeId="5afb-9914-904b-d3b3">2</characteristic>
+            <characteristic name="Deny" typeId="b5ac-9c20-5d5a-6f9b">2</characteristic>
+            <characteristic name="Powers Known" typeId="69d7-b45e-00a2-7e46">Smite, 2 Runes of Fate.</characteristic>
+            <characteristic name="Other" typeId="c2e2-f115-0003-5d7b">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rune armour" id="cf17-cca8-77ad-a7db" hidden="false" targetId="2c3c-bf97-572f-ed11" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Character" hidden="false" id="dd64-9bbb-eba5-7af0" targetId="ef18-746a-369f-43a4" primary="false"/>
+        <categoryLink name="Psyker" hidden="false" id="d492-3483-0ce4-f140" targetId="e691-aad7-d21c-1023" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Exodite Warlocks" hidden="true" id="a4ce-aa2a-7f56-c830">
+      <costs>
+        <cost name="Pts" typeId="points" value="125"/>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="6"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="61f4-aa1a-6422-27e1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="6 - Aeldari Exodites"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Smite" hidden="false" id="4a56-f37a-38ff-4452" type="selectionEntry" targetId="03fd-db47-5333-1e1f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4351-2213-8967-2321" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ec93-69cb-8d28-1021" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name=" Character definition" hidden="false" id="7dd6-bd6b-be1c-eaff" collective="false" targetId="e0a8-6e59-4681-1912" type="selectionEntryGroup"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Psychic powers" id="c212-2c77-412c-9b99" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4dc9-3da2-4466-b8f6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0ae5-2a84-f437-d857" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Warlocks equipment" id="ac99-3db9-bb9d-e4b4" hidden="false" collective="false" import="true" defaultSelectionEntryId="ea58-5a4d-6e68-db3a">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="58ca-89d2-b476-b97e" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="052a-b303-353f-c63c" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Exodite Warlock" hidden="false" id="46e2-0581-d058-c7f7" collective="false">
+              <profiles>
+                <profile name="Warlock" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="b05d-78e7-05cb-41c8">
+                  <characteristics>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">5</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink name="Infantry" hidden="false" id="7ff3-5ba4-dc9e-8f27" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+                <categoryLink name="Faction: Aeldari" hidden="false" id="ebb5-f482-9796-78d9" targetId="1924-ef18-000b-d2ba" primary="false"/>
+                <categoryLink name="Faction: Asuryani" hidden="false" id="15e7-18e0-a192-eb58" targetId="1114-7875-d463-df17" primary="false"/>
+                <categoryLink name="Ø25mm" hidden="false" id="48dd-a61a-70b3-f065" targetId="a9eb-ffb1-e9f2-2b60" primary="false"/>
+              </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Melee weapon" id="1e25-bc7d-8ff6-59fd" hidden="false" collective="false" import="true" defaultSelectionEntryId="1a5e-5e22-164a-1a64">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b3e-1cc0-23ac-9360" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d475-ab82-b5c7-747f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Singing spear" hidden="false" id="65c7-79a6-2e32-fe77" collective="false" targetId="6006-2628-238f-b379" type="selectionEntry"/>
+                    <entryLink import="true" name="Witchblade" hidden="false" id="1a5e-5e22-164a-1a64" collective="false" targetId="5b24-0d30-12af-df18" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Shuriken pistol" hidden="false" id="1dfe-dbec-9e21-35b9" collective="false" targetId="3b3a-02da-8bf9-dac6" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="a4ce-aa2a-7f56-c830" shared="true" childId="f00c-c94e-1d34-c089" childName="Drakesteed mount" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a6db-1674-f38e-10a9" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Exodite Warlock on Drakesteed" hidden="false" id="baf8-c8ec-aac2-90ea">
+              <entryLinks>
+                <entryLink import="true" name="Drakesteed bite" hidden="false" id="6fed-312d-f84e-c3e9" type="selectionEntry" targetId="4e18-d68e-36d9-5e2e"/>
+                <entryLink import="true" name="Shuriken pistol" hidden="false" id="6d74-01f3-6150-41f0" collective="false" targetId="3b3a-02da-8bf9-dac6" type="selectionEntry"/>
+              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon option" id="22bf-5efe-ca96-e4ed" hidden="false" collective="false" import="true" defaultSelectionEntryId="f16e-7fd8-47af-2317">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8353-2a3e-4834-f63b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8ceb-f331-f410-4aa5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Singing spear" hidden="false" id="f16e-7fd8-47af-2317" collective="false" targetId="6006-2628-238f-b379" type="selectionEntry"/>
+                    <entryLink import="true" name="Witchblade" hidden="false" id="9846-1674-f393-a290" collective="false" targetId="5b24-0d30-12af-df18" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <profiles>
+                <profile name="Warlock on Drakesteed" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="c9ed-8e07-de54-f16f">
+                  <characteristics>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">6</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="points" value="30"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="a4ce-aa2a-7f56-c830" childId="f00c-c94e-1d34-c089" shared="true" childName="Drakesteed mount" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="80e5-f8c3-0815-6ce1" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Ghosthelm" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="0848-2063-9afb-d93d">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model never suffers Perils of the Warp.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Seer" typeId="bc97-dea9-9e88-bb7d" typeName="Psyker" hidden="false" id="2eae-6fa3-0eaf-78b1">
+          <characteristics>
+            <characteristic name="Cast" typeId="5afb-9914-904b-d3b3">2</characteristic>
+            <characteristic name="Deny" typeId="b5ac-9c20-5d5a-6f9b">2</characteristic>
+            <characteristic name="Powers Known" typeId="69d7-b45e-00a2-7e46">Smite, 2 Runes of Fate.</characteristic>
+            <characteristic name="Other" typeId="c2e2-f115-0003-5d7b">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Warlock" typeId="bc97-dea9-9e88-bb7d" typeName="Psyker" hidden="false" id="a784-f943-4447-3c4a">
+          <characteristics>
+            <characteristic name="Cast" typeId="5afb-9914-904b-d3b3">1</characteristic>
+            <characteristic name="Deny" typeId="b5ac-9c20-5d5a-6f9b">1</characteristic>
+            <characteristic name="Powers Known" typeId="69d7-b45e-00a2-7e46">Smite or 1 Runes of Fortune, 1 Runes of Battle.</characteristic>
+            <characteristic name="Other" typeId="c2e2-f115-0003-5d7b">-</characteristic>
+          </characteristics>
+          <comment>1</comment>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notEqualTo" value="1" field="selections" scope="6270-cc4b-0b7a-6b4b" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Warlock" typeId="bc97-dea9-9e88-bb7d" typeName="Psyker" hidden="false" id="7b89-f172-876a-088f">
+          <characteristics>
+            <characteristic name="Cast" typeId="5afb-9914-904b-d3b3">2</characteristic>
+            <characteristic name="Deny" typeId="b5ac-9c20-5d5a-6f9b">2</characteristic>
+            <characteristic name="Powers Known" typeId="69d7-b45e-00a2-7e46">Smite or 1 Runes of Fortune, 2 Runes of Battle.</characteristic>
+            <characteristic name="Other" typeId="c2e2-f115-0003-5d7b">If this unit has 1 Warlock model remaining, it can cast 1 Psychic power and Deny the Witch once per Psychic phase.</characteristic>
+          </characteristics>
+          <comment>2</comment>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notEqualTo" value="2" field="selections" scope="6270-cc4b-0b7a-6b4b" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Warlock" typeId="bc97-dea9-9e88-bb7d" typeName="Psyker" hidden="false" id="707e-d15d-cef0-56f7">
+          <characteristics>
+            <characteristic name="Cast" typeId="5afb-9914-904b-d3b3">3</characteristic>
+            <characteristic name="Deny" typeId="b5ac-9c20-5d5a-6f9b">3</characteristic>
+            <characteristic name="Powers Known" typeId="69d7-b45e-00a2-7e46">Smite or 1 Runes of Fortune, 3 Runes of Battle.</characteristic>
+            <characteristic name="Other" typeId="c2e2-f115-0003-5d7b">If this unit has 2 Warlock models remaining, it can cast 2 Psychic power and Deny the Witch twice per Psychic phase. If this unit has 1 Warlock model remaining, it can cast 1 Psychic power and Deny the Witch once per Psychic phase.</characteristic>
+          </characteristics>
+          <comment>3</comment>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notEqualTo" value="3" field="selections" scope="6270-cc4b-0b7a-6b4b" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rune armour" id="1c36-eecd-c0b5-9c1c" hidden="false" targetId="2c3c-bf97-572f-ed11" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Character" hidden="false" id="b29a-242b-45ca-07a6" targetId="ef18-746a-369f-43a4" primary="false"/>
+        <categoryLink name="Psyker" hidden="false" id="6e1a-3caa-ac1b-149e" targetId="e691-aad7-d21c-1023" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Drakesteed mount" hidden="false" id="f00c-c94e-1d34-c089">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ea97-1c1b-1d65-883a"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="fe42-2c16-a719-f2fe" name="Equipment" hidden="false" collective="false" import="true">
@@ -27603,6 +27993,24 @@ While an enemy unit is within Engagement Range of the bearer, if the bearer’s 
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Drakesteed bite" hidden="false" id="4e18-d68e-36d9-5e2e" collective="true">
+          <profiles>
+            <profile name="Drakesteed bite" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="efc2-7d4d-1116-e730">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it does 4 additional attacks with this weapon profile and only 4 attacks can be done with this weapon profile.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3de9-2ce4-5593-97aa" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b02-71e9-251e-4b85" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="17b7-69e0-6437-41de" name="Psychic Disciplines" hidden="false" collective="false" import="true">
@@ -29230,7 +29638,7 @@ If the unit cannot be set-up, it&apos;s placed in the Strategic Reserves of your
           </profiles>
           <infoLinks>
             <infoLink id="e342-7152-487b-4717" name="Acrobatic" hidden="false" targetId="d253-1dac-2535-75fa" type="profile"/>
-            <infoLink name="Battlefield tactics" id="d535-5823-0060-d992" hidden="false" type="profile" targetId="4a49-7e1f-fe62-0367"/>
+            <infoLink name="Swift Engagement" id="d535-5823-0060-d992" hidden="false" type="profile" targetId="4a49-7e1f-fe62-0367"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="2215-26b7-c774-bb25" name="Faction: Aeldari" hidden="false" targetId="1924-ef18-000b-d2ba" primary="false"/>
@@ -29357,7 +29765,7 @@ If the unit cannot be set-up, it&apos;s placed in the Strategic Reserves of your
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Battlefield tactics" id="5ad5-ff09-e0e1-9914" hidden="false" type="profile" targetId="4a49-7e1f-fe62-0367"/>
+            <infoLink name="Swift Engagement" id="5ad5-ff09-e0e1-9914" hidden="false" type="profile" targetId="4a49-7e1f-fe62-0367"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="9488-183f-f0bf-c1c6" name="Faction: Aeldari" hidden="false" targetId="1924-ef18-000b-d2ba" primary="false"/>
