@@ -21886,34 +21886,6 @@ Until the end of the phase, add 1 to the Strength characteristic of models in th
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="f4c5-ea5f-2cbf-737f" name="Hellmaw flame cannon" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6843-6056-ba32-dc74" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9967-708d-2d05-6e92" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="c102-c72f-6b21-feae" name="Hellmaw flame cannon" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault D6</characteristic>
-                <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
-                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink id="643e-4254-4f22-a712" name="Flame Weapon" hidden="false" targetId="dbad-8265-94be-9c47" primary="false"/>
-            <categoryLink id="669b-8b81-3850-4fa5" name="Torrent" hidden="false" targetId="795f-a8d3-dc18-cb2e" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="90ff-7235-eea5-b638" name="Scorpion cannon" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="63c3-db70-1958-471d" type="max"/>
@@ -21938,9 +21910,44 @@ Until the end of the phase, add 1 to the Strength characteristic of models in th
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="2x Hellmaw flame cannon" hidden="false" id="f2f1-8615-8481-3ef5">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a51-dfd9-c1d4-9f9e" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="198e-88dc-36ff-d38f" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Hellmaw flame cannon" hidden="false" id="f4c5-ea5f-2cbf-737f" collective="false">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="6843-6056-ba32-dc74" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="false" id="9967-708d-2d05-6e92" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Hellmaw flame cannon" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="c102-c72f-6b21-feae">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault D6</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink name="Flame Weapon" hidden="false" id="643e-4254-4f22-a712" targetId="dbad-8265-94be-9c47" primary="false"/>
+                <categoryLink name="Torrent" hidden="false" id="669b-8b81-3850-4fa5" targetId="795f-a8d3-dc18-cb2e" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="cef4-4c8e-fa60-b4a2" name="Hellmaw flame cannon" hidden="false" collective="false" import="true" targetId="f4c5-ea5f-2cbf-737f" type="selectionEntry"/>
         <entryLink id="9f47-9569-0a72-bf3e" name="Demolisher cannon" hidden="false" collective="false" import="true" targetId="1f7e-32c4-61af-510f" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce38-3c03-e06d-44ec" type="max"/>
