@@ -5813,15 +5813,9 @@ Until the end of the phase, this unit cannot fire Overwatch, Set to Defend or ma
           </modifierGroups>
         </modifierGroup>
       </modifierGroups>
-      <profiles>
-        <profile id="25c9-40e9-5f77-1162" name="Ranger Cloak" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a ranged attack is allocated to a model in this unit while it is receiving the benefits of cover, add an additional 1 to any armour saving throw made against that attack.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="b970-1e06-e7e2-8dee" name="Concealed Positions" hidden="false" targetId="a6dc-059d-a47a-a49c" type="profile"/>
+        <infoLink name="Ranger Cloak" id="3bca-075c-a018-4fcb" hidden="false" targetId="12c5-98c0-6851-b930" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="3507-35c3-5bfb-50b6" name="Faction: Asuryani" hidden="false" targetId="1114-7875-d463-df17" primary="false"/>
@@ -26057,14 +26051,8 @@ You can use this Stratagem up to 3 times.</characteristic>
           </conditions>
         </modifier>
       </modifiers>
-      <profiles>
-        <profile name="Ranger Cloak" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="12c5-98c0-6851-b930">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a ranged attack is allocated to a model in this unit while it is receiving the benefits of cover, add an additional 1 to any armour saving throw made against that attack.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
+        <infoLink targetId="12c5-98c0-6851-b930" id="b858-69f5-268f-d21d" type="profile" name="Ranger Cloak" hidden="false"/>
         <infoLink name="Concealed Positions" id="43c2-4bd1-2ccd-d211" hidden="false" targetId="a6dc-059d-a47a-a49c" type="profile"/>
       </infoLinks>
       <categoryLinks>
@@ -26172,6 +26160,33 @@ You can use this Stratagem up to 3 times.</characteristic>
                     <entryLink import="true" name="Plasma grenades" hidden="false" id="e3b3-80ec-8f94-8996" collective="false" targetId="bda9-e3dd-9a43-fd07" type="selectionEntry"/>
                     <entryLink import="true" name="Combat knife" hidden="false" id="4bcf-58b5-02d3-f1c7" collective="false" targetId="92e8-af3a-fe14-06c1" type="selectionEntry"/>
                     <entryLink import="true" name="Ranger long rifle" hidden="false" id="f20b-4e36-d1d6-06ae" collective="false" targetId="c3ba-5323-a9a3-8cff" type="selectionEntry"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="points" value="15"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Ranger w/Gloom field" hidden="false" id="eb5e-b67a-d10b-82c8" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5f37-334d-aea0-5412" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Gloom field" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="b588-530f-dcec-09f8">
+                      <characteristics>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a ranged attack is made against the bearer’s unit, if the attacking model is more than 18&quot; away, then the bearer’s unit is treated as having the benefits of Light Cover against that attack.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Asuryani Oucast" id="9ed9-5acc-6ba2-a010" hidden="false" targetId="5fd7-16bd-38db-9b01" type="profile"/>
+                  </infoLinks>
+                  <entryLinks>
+                    <entryLink import="true" name="Shuriken pistol" hidden="false" id="d6a1-ef18-e7ee-fe15" collective="false" targetId="3b3a-02da-8bf9-dac6" type="selectionEntry"/>
+                    <entryLink import="true" name="Plasma grenades" hidden="false" id="fa25-78eb-a6cd-9d2c" collective="false" targetId="bda9-e3dd-9a43-fd07" type="selectionEntry"/>
+                    <entryLink import="true" name="Combat knife" hidden="false" id="cdb6-9a70-324c-ff87" collective="false" targetId="92e8-af3a-fe14-06c1" type="selectionEntry"/>
+                    <entryLink import="true" name="Ranger long rifle" hidden="false" id="fdf3-e64d-5c12-6058" collective="false" targetId="c3ba-5323-a9a3-8cff" type="selectionEntry"/>
                   </entryLinks>
                   <costs>
                     <cost name="Pts" typeId="points" value="15"/>
@@ -26428,6 +26443,200 @@ You can use this Stratagem up to 3 times.</characteristic>
           </costs>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Exodite Clanblades" hidden="false" id="03d8-20bc-7d50-79c6">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Dragon Knights" id="3ced-28e7-33d0-47cb" hidden="false" defaultSelectionEntryId="1341-fa59-e67f-d686">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Clanblade" hidden="false" id="1341-fa59-e67f-d686">
+              <infoLinks>
+                <infoLink name="Dragon Knight" id="b4e3-d7bd-bbc2-10c1" hidden="false" type="profile" targetId="f860-c997-af60-526a"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="35"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Drakesteed bite" hidden="false" id="a45b-8664-47ef-36e2" type="selectionEntry" targetId="4e18-d68e-36d9-5e2e"/>
+                <entryLink import="true" name="Laser lance" hidden="false" id="93eb-02e0-32ee-7f84" type="selectionEntry" targetId="882d-e5b8-c309-bf06"/>
+                <entryLink import="true" name="Storm Shield" hidden="false" id="0701-c843-bb2f-74d3" type="selectionEntry" targetId="5d5f-55bb-690a-8737"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Clanblade w/Sword" hidden="false" id="9a1f-839f-ab51-2f50">
+              <infoLinks>
+                <infoLink name="Dragon Knight" id="5586-1603-ea0f-71a3" hidden="false" type="profile" targetId="f860-c997-af60-526a"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="30"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Drakesteed bite" hidden="false" id="c72c-c6f5-a98d-2230" type="selectionEntry" targetId="4e18-d68e-36d9-5e2e"/>
+                <entryLink import="true" name="Power Sword" hidden="false" id="1a77-41c3-cb71-17c8" type="selectionEntry" targetId="6168-426f-d99c-ad99"/>
+                <entryLink import="true" name="Storm Shield" hidden="false" id="b806-8154-1a6a-3184" type="selectionEntry" targetId="5d5f-55bb-690a-8737"/>
+                <entryLink import="true" name="Shuriken pistol" hidden="false" id="1df9-9f9d-fa4c-f2b1" collective="false" targetId="3b3a-02da-8bf9-dac6" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Clanblade w/Axe" hidden="false" id="e3a1-f2e7-7c46-d2c9">
+              <infoLinks>
+                <infoLink name="Dragon Knight" id="3b71-e264-876e-d547" hidden="false" type="profile" targetId="f860-c997-af60-526a"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="30"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Drakesteed bite" hidden="false" id="7d24-31b0-38d7-3774" type="selectionEntry" targetId="4e18-d68e-36d9-5e2e"/>
+                <entryLink import="true" name="Power Axe" hidden="false" id="3072-9a47-a55b-4b9e" type="selectionEntry" targetId="c95a-21b1-4988-2a86"/>
+                <entryLink import="true" name="Storm Shield" hidden="false" id="48a8-7491-1a7a-11c6" type="selectionEntry" targetId="5d5f-55bb-690a-8737"/>
+                <entryLink import="true" name="Shuriken pistol" hidden="false" id="c425-4761-8af8-935b" collective="false" targetId="3b3a-02da-8bf9-dac6" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Clanblade w/Axe&amp;Sword" hidden="false" id="6b4a-393a-fcea-3211">
+              <infoLinks>
+                <infoLink name="Dragon Knight" id="51cd-6ac6-2b3e-0772" hidden="false" type="profile" targetId="f860-c997-af60-526a"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="35"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Drakesteed bite" hidden="false" id="fb75-2d6d-744d-3682" type="selectionEntry" targetId="4e18-d68e-36d9-5e2e"/>
+                <entryLink import="true" name="Power Sword" hidden="false" id="76cf-413b-d621-7316" type="selectionEntry" targetId="6168-426f-d99c-ad99"/>
+                <entryLink import="true" name="Power Axe" hidden="false" id="0769-1017-5cd4-fde9" type="selectionEntry" targetId="c95a-21b1-4988-2a86"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="b9f1-16c8-f2e3-aae8" includeChildSelections="false"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="f883-f9c6-efe3-1791" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Exodite Whirlwind" hidden="false" id="02aa-2de4-03ab-0cdb">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Dragon Knights" id="35d7-97ea-e172-1594" hidden="false" defaultSelectionEntryId="1341-fa59-e67f-d686">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Clanblade" hidden="false" id="9ab6-295b-321a-3e79">
+              <infoLinks>
+                <infoLink name="Dragon Knight" id="422d-76ca-a66c-5843" hidden="false" type="profile" targetId="f860-c997-af60-526a"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="35"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Drakesteed bite" hidden="false" id="ae26-ba4d-fcf9-4382" type="selectionEntry" targetId="4e18-d68e-36d9-5e2e"/>
+                <entryLink import="true" name="Laser lance" hidden="false" id="d723-e785-63fc-cbf8" type="selectionEntry" targetId="882d-e5b8-c309-bf06"/>
+                <entryLink import="true" name="Storm Shield" hidden="false" id="77fd-c0d1-e71b-f465" type="selectionEntry" targetId="5d5f-55bb-690a-8737"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Clanblade w/Sword" hidden="false" id="0c3c-6ab6-0548-23e4">
+              <infoLinks>
+                <infoLink name="Dragon Knight" id="f39e-3274-5f26-476f" hidden="false" type="profile" targetId="f860-c997-af60-526a"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="30"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Drakesteed bite" hidden="false" id="9782-c705-8f6d-b61b" type="selectionEntry" targetId="4e18-d68e-36d9-5e2e"/>
+                <entryLink import="true" name="Power Sword" hidden="false" id="3ea3-d252-d8e6-fe83" type="selectionEntry" targetId="6168-426f-d99c-ad99"/>
+                <entryLink import="true" name="Storm Shield" hidden="false" id="6dc7-d2aa-eaa7-e8d4" type="selectionEntry" targetId="5d5f-55bb-690a-8737"/>
+                <entryLink import="true" name="Shuriken pistol" hidden="false" id="e5d4-bd92-cede-6700" collective="false" targetId="3b3a-02da-8bf9-dac6" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Clanblade w/Axe" hidden="false" id="5e01-37f7-2c92-74c1">
+              <infoLinks>
+                <infoLink name="Dragon Knight" id="0d4d-9ef7-5619-784e" hidden="false" type="profile" targetId="f860-c997-af60-526a"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="30"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Drakesteed bite" hidden="false" id="306d-7176-ff7d-2b7d" type="selectionEntry" targetId="4e18-d68e-36d9-5e2e"/>
+                <entryLink import="true" name="Power Axe" hidden="false" id="5708-f356-c978-30d8" type="selectionEntry" targetId="c95a-21b1-4988-2a86"/>
+                <entryLink import="true" name="Storm Shield" hidden="false" id="4ed6-4061-e6e7-736b" type="selectionEntry" targetId="5d5f-55bb-690a-8737"/>
+                <entryLink import="true" name="Shuriken pistol" hidden="false" id="aace-7616-9971-acdf" collective="false" targetId="3b3a-02da-8bf9-dac6" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Clanblade w/Axe&amp;Sword" hidden="false" id="7276-e028-5aae-8341">
+              <infoLinks>
+                <infoLink name="Dragon Knight" id="0b6c-6e05-553b-c48d" hidden="false" type="profile" targetId="f860-c997-af60-526a"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="35"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Drakesteed bite" hidden="false" id="7ee8-5cea-e76c-c7f8" type="selectionEntry" targetId="4e18-d68e-36d9-5e2e"/>
+                <entryLink import="true" name="Power Sword" hidden="false" id="9c53-c604-7c9e-7907" type="selectionEntry" targetId="6168-426f-d99c-ad99"/>
+                <entryLink import="true" name="Power Axe" hidden="false" id="21f3-3d0e-5085-afdd" type="selectionEntry" targetId="c95a-21b1-4988-2a86"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="afa2-2424-b937-a5e1" includeChildSelections="false"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="d7db-bbc3-28ac-17dd" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Exodite Leystalkers" hidden="false" id="c7e4-9e33-4c83-c0cc">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Dragon Knights" id="9ba6-a712-3821-bab0" hidden="false" defaultSelectionEntryId="1341-fa59-e67f-d686">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Leystalker" hidden="false" id="0c09-96dd-92b9-e829">
+              <infoLinks>
+                <infoLink name="Asuryani Oucast" id="a336-668f-b7f5-16cb" hidden="false" targetId="5fd7-16bd-38db-9b01" type="profile">
+                  <modifiers>
+                    <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779"/>
+                    <modifier type="set" value="5" field="9c9f-9774-a358-3a39"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="35"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Drakesteed bite" hidden="false" id="4810-1d23-5344-c63d" type="selectionEntry" targetId="4e18-d68e-36d9-5e2e"/>
+                <entryLink import="true" name="Ranger long rifle" hidden="false" id="22b2-42c3-35c5-6e94" type="selectionEntry" targetId="c3ba-5323-a9a3-8cff"/>
+                <entryLink import="true" name="Shuriken pistol" hidden="false" id="2139-7d5f-6842-698a" type="selectionEntry" targetId="3b3a-02da-8bf9-dac6"/>
+                <entryLink import="true" name="Combat knife" hidden="false" id="272f-276a-abdd-b4e4" collective="false" targetId="92e8-af3a-fe14-06c1" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="274d-b9cd-7ea8-bc03" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="64fa-baff-6a3b-302b" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Concealed Positions" id="8462-b2da-92bd-e65a" hidden="false" targetId="a6dc-059d-a47a-a49c" type="profile"/>
+        <infoLink name="Ranger Cloak" id="8082-6097-124c-ace5" hidden="false" targetId="12c5-98c0-6851-b930" type="profile"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -37031,6 +37240,11 @@ Each time an enemy unit without FLY, VEHICLE or TITANIC Keywords moves within th
         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Ranger Cloak" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="12c5-98c0-6851-b930">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a ranged attack is allocated to a model in this unit while it is receiving the benefits of cover, add an additional 1 to any armour saving throw made against that attack.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
