@@ -26030,7 +26030,7 @@ You can use this Stratagem up to 3 times.</characteristic>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Drakesteed mount" hidden="false" id="f00c-c94e-1d34-c089">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ea97-1c1b-1d65-883a"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea97-1c1b-1d65-883a"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
@@ -26322,13 +26322,23 @@ You can use this Stratagem up to 3 times.</characteristic>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="6732-8eda-123a-a370" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="4435-0896-94ff-cebd" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="61f4-aa1a-6422-27e1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="6 - Aeldari Exodites"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="remove" value="3d52-fccf-10c0-3fae" field="category"/>
+            <modifier type="add" value="ad01-caec-17d9-cb8d" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="609a-fd47-9182-045d" childId="7129-c865-a5cb-d6d2" shared="true" childName="Drakesteed mount"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
       <profiles>
         <profile name="Path of the Shaper" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="93bb-8e93-5552-d44d">
           <characteristics>
@@ -26342,6 +26352,13 @@ You can use this Stratagem up to 3 times.</characteristic>
             <characteristic name="Powers Known" typeId="69d7-b45e-00a2-7e46">Smite or 1 Runes of Fortune.</characteristic>
             <characteristic name="Other" typeId="c2e2-f115-0003-5d7b">-</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="Stonesinger" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="609a-fd47-9182-045d" childId="7129-c865-a5cb-d6d2" shared="true" childName="Drakesteed mount"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Worldsinger" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="f35e-651f-0f44-9a66">
           <characteristics>
@@ -26351,22 +26368,22 @@ You can use this Stratagem up to 3 times.</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
             <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
             <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="set" value="8&quot;" field="0bdf-a96e-9e38-7779">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="5" field="9c9f-9774-a358-3a39"/>
+                <modifier type="set" value="12&quot;" field="0bdf-a96e-9e38-7779"/>
+                <modifier type="set" value="Stonesinger" field="name"/>
+              </modifiers>
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="bb21-30f8-d7e1-cdb9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="609a-fd47-9182-045d" childId="7129-c865-a5cb-d6d2" shared="true" childName="Drakesteed mount"/>
               </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="13fc-b29b-31f2-ab9f">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="d294-6bda-13ec-342f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Biel-tan"/>
-              </conditions>
-            </modifier>
-          </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile name="Shaper&apos;s song" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="f5ed-68e4-31a3-e5e7">
           <characteristics>
@@ -26380,9 +26397,9 @@ You can use this Stratagem up to 3 times.</characteristic>
       <categoryLinks>
         <categoryLink name="Character" hidden="false" id="045c-c99d-f08a-b509" targetId="ef18-746a-369f-43a4" primary="false"/>
         <categoryLink name="Psyker" hidden="false" id="4451-7305-87d2-3170" targetId="e691-aad7-d21c-1023" primary="false"/>
-        <categoryLink name="Faction: Asuryani" hidden="false" id="cb0f-ffa4-d883-33c2" targetId="1114-7875-d463-df17" primary="false"/>
-        <categoryLink name="Faction: Aeldari" hidden="false" id="e5ee-46d7-6ae4-4662" targetId="1924-ef18-000b-d2ba" primary="false"/>
         <categoryLink name="Infantry" hidden="false" id="9e33-4004-cf17-f182" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+        <categoryLink name="Faction: Aeldari Exodites" hidden="false" id="d216-482d-cabf-fe06" targetId="4a67-024a-2ab2-8193" primary="false"/>
+        <categoryLink name="Faction: Aeldari" hidden="false" id="9108-cc8d-586c-8a5e" targetId="1924-ef18-000b-d2ba" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name=" Character definition" hidden="false" id="6706-9099-0808-58ba" collective="false" targetId="e0a8-6e59-4681-1912" type="selectionEntryGroup"/>
@@ -26395,6 +26412,22 @@ You can use this Stratagem up to 3 times.</characteristic>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Drakesteed mount" hidden="false" id="7129-c865-a5cb-d6d2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fcb5-a329-7f10-8129"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Drakesteed bite" hidden="false" id="8289-7aba-76c8-854e" type="selectionEntry" targetId="4e18-d68e-36d9-5e2e"/>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="points" value="15"/>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -36985,6 +37018,19 @@ Each time an enemy unit without FLY, VEHICLE or TITANIC Keywords moves within th
     <profile name="Swift Engagement" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="4a49-7e1f-fe62-0367">
       <characteristics>
         <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">When this unit consolidates, it&apos;s models do not have to end this move closer to the nearest enemy model.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Dragon Knight" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="f860-c997-af60-526a">
+      <characteristics>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+        <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+        <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
+        <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
+        <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+        <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
