@@ -14497,10 +14497,17 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
               <modifiers>
                 <modifier type="decrement" value="1" field="7c41-da82-c36e-6680">
                   <conditionGroups>
-                    <conditionGroup type="and">
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="lessThan" value="6" field="selections" scope="d99f-cadf-14c3-6475" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="model"/>
+                            <condition type="atLeast" value="1" field="selections" scope="d99f-cadf-14c3-6475" childId="34d8-dfea-8654-c6fc" shared="true" childName="Fusion Blaster" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                       <conditions>
-                        <condition type="lessThan" value="6" field="selections" scope="d99f-cadf-14c3-6475" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="model"/>
-                        <condition type="atLeast" value="1" field="selections" scope="d99f-cadf-14c3-6475" childId="34d8-dfea-8654-c6fc" shared="true" childName="Fusion Blaster" includeChildSelections="true"/>
+                        <condition type="atLeast" value="3" field="selections" scope="d99f-cadf-14c3-6475" childId="6f12-ff3f-1329-cb05" shared="true" childName="Fusion Weapon"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -14510,7 +14517,7 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                     <conditionGroup type="and">
                       <conditions>
                         <condition type="atLeast" value="6" field="selections" scope="d99f-cadf-14c3-6475" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="model"/>
-                        <condition type="atMost" value="2" field="selections" scope="d99f-cadf-14c3-6475" childId="34d8-dfea-8654-c6fc" shared="true" childName="Fusion Blaster" includeChildSelections="true"/>
+                        <condition type="atMost" value="2" field="selections" scope="d99f-cadf-14c3-6475" childId="6f12-ff3f-1329-cb05" shared="true" childName="Fusion Weapon" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
