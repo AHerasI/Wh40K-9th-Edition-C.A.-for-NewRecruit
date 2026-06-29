@@ -14501,7 +14501,7 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition type="lessThan" value="6" field="selections" scope="d99f-cadf-14c3-6475" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="model"/>
+                            <condition type="lessThan" value="6" field="selections" scope="d99f-cadf-14c3-6475" childId="ecc8-3184-f2d0-b3c7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Stealth Team (2-5)"/>
                             <condition type="atLeast" value="1" field="selections" scope="d99f-cadf-14c3-6475" childId="34d8-dfea-8654-c6fc" shared="true" childName="Fusion Blaster" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
@@ -14516,7 +14516,7 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                   <conditionGroups>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition type="atLeast" value="6" field="selections" scope="d99f-cadf-14c3-6475" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="model"/>
+                        <condition type="atLeast" value="6" field="selections" scope="d99f-cadf-14c3-6475" childId="ecc8-3184-f2d0-b3c7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Stealth Team (2-5)"/>
                         <condition type="atMost" value="2" field="selections" scope="d99f-cadf-14c3-6475" childId="6f12-ff3f-1329-cb05" shared="true" childName="Fusion Weapon" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
@@ -16675,79 +16675,73 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="67e3-30d1-aa86-b1dc" name="Available if 5 selections in Team" hidden="false" collective="false" import="true">
-              <selectionEntries>
-                <selectionEntry id="e986-5506-7da1-2735" name="XV15 Stealth w/Fusion Blaster" hidden="false" collective="false" import="true" type="model">
-                  <modifiers>
-                    <modifier type="decrement" value="1" field="ee0b-a523-a6f4-8a86">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition type="lessThan" value="6" field="selections" scope="adca-d911-fde7-5b57" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="model"/>
-                                <condition type="atLeast" value="1" field="selections" scope="adca-d911-fde7-5b57" childId="34d8-dfea-8654-c6fc" shared="true" childName="Fusion Blaster" includeChildSelections="true"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                          <conditions>
-                            <condition type="atLeast" value="3" field="selections" scope="adca-d911-fde7-5b57" childId="6f12-ff3f-1329-cb05" shared="true" childName="Fusion Weapon"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                    <modifier type="increment" value="1" field="ee0b-a523-a6f4-8a86">
+            <selectionEntry type="model" import="true" name="XV15 Stealth w/Fusion Blaster" hidden="false" id="e986-5506-7da1-2735" collective="false">
+              <modifiers>
+                <modifier type="decrement" value="1" field="ee0b-a523-a6f4-8a86">
+                  <conditionGroups>
+                    <conditionGroup type="or">
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition type="atLeast" value="6" field="selections" scope="adca-d911-fde7-5b57" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="model"/>
-                            <condition type="atMost" value="2" field="selections" scope="adca-d911-fde7-5b57" childId="6f12-ff3f-1329-cb05" shared="true" childName="Fusion Weapon" includeChildSelections="true"/>
+                            <condition type="lessThan" value="6" field="selections" scope="adca-d911-fde7-5b57" childId="8bdf-f782-6420-47a6" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Stealth Team (2-5)"/>
+                            <condition type="atLeast" value="1" field="selections" scope="adca-d911-fde7-5b57" childId="34d8-dfea-8654-c6fc" shared="true" childName="Fusion Blaster" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee0b-a523-a6f4-8a86" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="9e48-dcc3-b7e5-8d1f" name="XV15 Stealth Shas&apos;ui" hidden="false" targetId="ff18-2aac-4f81-a1ce" type="profile"/>
-                  </infoLinks>
-                  <categoryLinks>
-                    <categoryLink id="b961-dc5b-e038-1801" name="Fly" hidden="false" targetId="3117-16d8-fcef-4f56" primary="false"/>
-                    <categoryLink id="07f1-984b-754c-458f" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
-                    <categoryLink id="1b06-baa8-87c1-204b" name="Core" hidden="false" targetId="08f1-d244-eb44-7e01" primary="false"/>
-                    <categoryLink id="39e9-f4b9-27db-a33c" name="Jet Pack" hidden="false" targetId="092c-6125-af28-ef5d" primary="false"/>
-                    <categoryLink id="ef08-96e5-f970-a88d" name="T&apos;au Fire Caste Warrior" hidden="false" targetId="dcd0-ba12-2a47-fbaa" primary="false"/>
-                    <categoryLink id="de80-41e8-336a-1fb7" name="Battlesuit" hidden="false" targetId="0caa-53ee-34da-cda1" primary="false"/>
-                    <categoryLink id="3f15-f4f9-cc7a-9240" name="XV15 Stealth Battlesuit" hidden="false" targetId="9aca-137a-f1db-e883" primary="false"/>
-                  </categoryLinks>
-                  <selectionEntryGroups>
-                    <selectionEntryGroup id="5e6c-5d61-de92-6ec1" name="Additional Equipment Options (0-2)" hidden="false" collective="false" import="true">
-                      <entryLinks>
-                        <entryLink id="3e50-5812-fa00-b67e" name="Support Systems" hidden="false" collective="false" import="true" targetId="e5e8-5d51-937d-8667" type="selectionEntryGroup">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="605c-781b-4257-b391" type="max"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
-                    </selectionEntryGroup>
-                  </selectionEntryGroups>
+                      <conditions>
+                        <condition type="atLeast" value="3" field="selections" scope="adca-d911-fde7-5b57" childId="6f12-ff3f-1329-cb05" shared="true" childName="Fusion Weapon"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="increment" value="1" field="ee0b-a523-a6f4-8a86">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="6" field="selections" scope="adca-d911-fde7-5b57" childId="8bdf-f782-6420-47a6" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Stealth Team (2-5)"/>
+                        <condition type="atMost" value="2" field="selections" scope="adca-d911-fde7-5b57" childId="6f12-ff3f-1329-cb05" shared="true" childName="Fusion Weapon" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee0b-a523-a6f4-8a86" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="XV15 Stealth Shas&apos;ui" id="9e48-dcc3-b7e5-8d1f" hidden="false" targetId="ff18-2aac-4f81-a1ce" type="profile"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink name="Fly" hidden="false" id="b961-dc5b-e038-1801" targetId="3117-16d8-fcef-4f56" primary="false"/>
+                <categoryLink name="Infantry" hidden="false" id="07f1-984b-754c-458f" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+                <categoryLink name="Core" hidden="false" id="1b06-baa8-87c1-204b" targetId="08f1-d244-eb44-7e01" primary="false"/>
+                <categoryLink name="Jet Pack" hidden="false" id="39e9-f4b9-27db-a33c" targetId="092c-6125-af28-ef5d" primary="false"/>
+                <categoryLink name="T&apos;au Fire Caste Warrior" hidden="false" id="ef08-96e5-f970-a88d" targetId="dcd0-ba12-2a47-fbaa" primary="false"/>
+                <categoryLink name="Battlesuit" hidden="false" id="de80-41e8-336a-1fb7" targetId="0caa-53ee-34da-cda1" primary="false"/>
+                <categoryLink name="XV15 Stealth Battlesuit" hidden="false" id="3f15-f4f9-cc7a-9240" targetId="9aca-137a-f1db-e883" primary="false"/>
+              </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Additional Equipment Options (0-2)" id="5e6c-5d61-de92-6ec1" hidden="false" collective="false" import="true">
                   <entryLinks>
-                    <entryLink id="c950-2fd2-442c-18be" name="Fusion Blaster" hidden="false" collective="false" import="true" targetId="942d-1eb1-63f9-c80a" type="selectionEntry"/>
+                    <entryLink import="true" name="Support Systems" hidden="false" id="3e50-5812-fa00-b67e" collective="false" targetId="e5e8-5d51-937d-8667" type="selectionEntryGroup">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="605c-781b-4257-b391" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
                   </entryLinks>
-                  <costs>
-                    <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
-                    <cost name="Pts" typeId="points" value="30"/>
-                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Fusion Blaster" hidden="false" id="c950-2fd2-442c-18be" collective="false" targetId="942d-1eb1-63f9-c80a" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+                <cost name="Pts" typeId="points" value="30"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
