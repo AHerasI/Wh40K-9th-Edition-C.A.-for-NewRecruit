@@ -26073,9 +26073,7 @@ You can use this Stratagem up to 3 times.</characteristic>
                 <infoLink name="Asuryani Oucast" id="8b68-c632-4f25-b781" hidden="false" targetId="5fd7-16bd-38db-9b01" type="profile"/>
               </infoLinks>
               <entryLinks>
-                <entryLink import="true" name="Shuriken pistol" hidden="false" id="5241-eb47-f797-3662" collective="false" targetId="3b3a-02da-8bf9-dac6" type="selectionEntry"/>
                 <entryLink import="true" name="Combat knife" hidden="false" id="dfc3-625b-efb1-8c4c" collective="false" targetId="92e8-af3a-fe14-06c1" type="selectionEntry"/>
-                <entryLink import="true" name="Ranger long rifle" hidden="false" id="ea50-5477-735a-566c" collective="false" targetId="c3ba-5323-a9a3-8cff" type="selectionEntry"/>
               </entryLinks>
               <costs>
                 <cost name="Pts" typeId="points" value="10"/>
@@ -26086,44 +26084,29 @@ You can use this Stratagem up to 3 times.</characteristic>
               <categoryLinks>
                 <categoryLink name="Ø28mm" hidden="false" id="c764-931c-77c9-9e1d" targetId="7faf-04a8-3770-87b5" primary="false"/>
               </categoryLinks>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Ranger w/Splinter rifle" hidden="false" id="367e-38e7-609d-e0b5" collective="false">
-              <infoLinks>
-                <infoLink name="Asuryani Oucast" id="439e-ab04-4944-225b" hidden="false" targetId="5fd7-16bd-38db-9b01" type="profile"/>
-              </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Splinter pistol" hidden="false" id="4672-acb9-a579-c204" collective="false" targetId="8baa-e14e-5a6a-972d" type="selectionEntry"/>
-                <entryLink import="true" name="Combat knife" hidden="false" id="30ff-8da9-76bb-add4" collective="false" targetId="92e8-af3a-fe14-06c1" type="selectionEntry"/>
-                <entryLink import="true" name="Splinter rifle" hidden="false" id="4b8c-54ed-c95a-837c" collective="false" targetId="8e23-000e-50d5-2fd2" type="selectionEntry"/>
-              </entryLinks>
-              <costs>
-                <cost name="Pts" typeId="points" value="10"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-              <categoryLinks>
-                <categoryLink name="Ø28mm" hidden="false" id="e209-35a5-fc4a-afd2" targetId="7faf-04a8-3770-87b5" primary="false"/>
-              </categoryLinks>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Ranger w/Recurve Bow" hidden="false" id="6a09-6c06-47ef-1e10" collective="false">
-              <infoLinks>
-                <infoLink name="Asuryani Oucast" id="55bc-58f7-972f-4951" hidden="false" targetId="5fd7-16bd-38db-9b01" type="profile"/>
-              </infoLinks>
-              <entryLinks>
-                <entryLink targetId="e8e2-56ed-f1d7-1651" id="1fe9-172a-0bed-df64" type="selectionEntry" name="Wraithbone Recurve Bow" hidden="false" collective="true"/>
-                <entryLink import="true" name="Shuriken pistol" hidden="false" id="2f96-bc11-dcdc-0ccf" collective="false" targetId="3b3a-02da-8bf9-dac6" type="selectionEntry"/>
-                <entryLink import="true" name="Combat knife" hidden="false" id="1ec0-f726-351a-6524" collective="false" targetId="92e8-af3a-fe14-06c1" type="selectionEntry"/>
-              </entryLinks>
-              <costs>
-                <cost name="Pts" typeId="points" value="10"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-              <categoryLinks>
-                <categoryLink name="Ø28mm" hidden="false" id="2959-71db-6cbe-0cb4" targetId="7faf-04a8-3770-87b5" primary="false"/>
-              </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Long weapon option" id="1299-288f-767d-ce08" hidden="false" defaultSelectionEntryId="ea50-5477-735a-566c">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0415-fd3b-81b4-85aa" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8a02-55cd-0d5e-ead8" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Wraithbone Recurve Bow" hidden="false" id="1fe9-172a-0bed-df64" targetId="e8e2-56ed-f1d7-1651" type="selectionEntry"/>
+                    <entryLink import="true" name="Ranger long rifle" hidden="false" id="ea50-5477-735a-566c" collective="false" targetId="94b8-dd34-8aea-b707" type="selectionEntry"/>
+                    <entryLink import="true" name="Splinter rifle" hidden="false" id="8d91-53b6-9fd3-1f30" type="selectionEntry" targetId="acad-483d-f671-5ec1"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Pistol option" id="fbf9-ee2b-88f6-7626" hidden="false" defaultSelectionEntryId="d9cb-51d2-76c7-69b2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b28b-e634-ef3a-e13e" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="72af-bc03-b9c3-25a2" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Shuriken pistol" hidden="false" id="d9cb-51d2-76c7-69b2" type="selectionEntry" targetId="26b1-2c22-35b9-7afe"/>
+                    <entryLink import="true" name="Splinter pistol" hidden="false" id="6f3e-b7b9-5d7b-107a" type="selectionEntry" targetId="800c-0af4-d5da-e262"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
@@ -26156,10 +26139,9 @@ You can use this Stratagem up to 3 times.</characteristic>
                     <infoLink name="Asuryani Oucast" id="059a-3b7d-3447-9256" hidden="false" targetId="5fd7-16bd-38db-9b01" type="profile"/>
                   </infoLinks>
                   <entryLinks>
-                    <entryLink import="true" name="Shuriken pistol" hidden="false" id="034a-d89c-c55a-f475" collective="false" targetId="3b3a-02da-8bf9-dac6" type="selectionEntry"/>
-                    <entryLink import="true" name="Plasma grenades" hidden="false" id="e3b3-80ec-8f94-8996" collective="false" targetId="bda9-e3dd-9a43-fd07" type="selectionEntry"/>
                     <entryLink import="true" name="Combat knife" hidden="false" id="4bcf-58b5-02d3-f1c7" collective="false" targetId="92e8-af3a-fe14-06c1" type="selectionEntry"/>
-                    <entryLink import="true" name="Ranger long rifle" hidden="false" id="f20b-4e36-d1d6-06ae" collective="false" targetId="c3ba-5323-a9a3-8cff" type="selectionEntry"/>
+                    <entryLink import="true" name="Long weapon option" hidden="false" id="168b-76dc-0fef-c101" type="selectionEntryGroup" targetId="1299-288f-767d-ce08"/>
+                    <entryLink import="true" name="Pistol option" hidden="false" id="7dc5-517d-9254-c274" type="selectionEntryGroup" targetId="fbf9-ee2b-88f6-7626"/>
                   </entryLinks>
                   <costs>
                     <cost name="Pts" typeId="points" value="15"/>
@@ -26183,10 +26165,9 @@ You can use this Stratagem up to 3 times.</characteristic>
                     <infoLink name="Asuryani Oucast" id="9ed9-5acc-6ba2-a010" hidden="false" targetId="5fd7-16bd-38db-9b01" type="profile"/>
                   </infoLinks>
                   <entryLinks>
-                    <entryLink import="true" name="Shuriken pistol" hidden="false" id="d6a1-ef18-e7ee-fe15" collective="false" targetId="3b3a-02da-8bf9-dac6" type="selectionEntry"/>
-                    <entryLink import="true" name="Plasma grenades" hidden="false" id="fa25-78eb-a6cd-9d2c" collective="false" targetId="bda9-e3dd-9a43-fd07" type="selectionEntry"/>
                     <entryLink import="true" name="Combat knife" hidden="false" id="cdb6-9a70-324c-ff87" collective="false" targetId="92e8-af3a-fe14-06c1" type="selectionEntry"/>
-                    <entryLink import="true" name="Ranger long rifle" hidden="false" id="fdf3-e64d-5c12-6058" collective="false" targetId="c3ba-5323-a9a3-8cff" type="selectionEntry"/>
+                    <entryLink import="true" name="Long weapon option" hidden="false" id="76aa-6847-63cf-20e7" type="selectionEntryGroup" targetId="1299-288f-767d-ce08"/>
+                    <entryLink import="true" name="Pistol option" hidden="false" id="89ac-819e-d1db-0b2f" type="selectionEntryGroup" targetId="fbf9-ee2b-88f6-7626"/>
                   </entryLinks>
                   <costs>
                     <cost name="Pts" typeId="points" value="15"/>
@@ -26557,51 +26538,75 @@ You can use this Stratagem up to 3 times.</characteristic>
                 <infoLink name="Dragon Knight on Comet" id="2d70-d1c5-525a-4ecb" hidden="false" type="profile" targetId="03d0-e6cb-1acc-e329"/>
               </infoLinks>
               <costs>
-                <cost name="Pts" typeId="points" value="40"/>
+                <cost name="Pts" typeId="points" value="35"/>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
               <entryLinks>
-                <entryLink import="true" name="Laser lance" hidden="false" id="d723-e785-63fc-cbf8" type="selectionEntry" targetId="882d-e5b8-c309-bf06"/>
-                <entryLink import="true" name="Storm Shield" hidden="false" id="77fd-c0d1-e71b-f465" type="selectionEntry" targetId="5d5f-55bb-690a-8737"/>
                 <entryLink import="true" name="Comet bite&amp;breath" hidden="false" id="0c5e-f955-1fc7-45ab" type="selectionEntry" targetId="a277-4c05-ee0c-9473"/>
-                <entryLink import="true" name="Wraithbone Recurve Bow" hidden="false" id="9dea-1b74-f76a-c39b" collective="false" targetId="e8e2-56ed-f1d7-1651" type="selectionEntry"/>
+                <entryLink import="true" name="Wraithbone Recurve Bow" hidden="false" id="9dea-1b74-f76a-c39b" collective="false" targetId="e8e2-56ed-f1d7-1651" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f17d-d874-09ee-d54b" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c12c-5aa7-3dda-5934" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Pterosaur Rider w/Sword" hidden="false" id="0c3c-6ab6-0548-23e4">
-              <infoLinks>
-                <infoLink name="Dragon Knight on Comet" id="f39e-3274-5f26-476f" hidden="false" type="profile" targetId="03d0-e6cb-1acc-e329"/>
-              </infoLinks>
-              <costs>
-                <cost name="Pts" typeId="points" value="35"/>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Power Sword" hidden="false" id="3ea3-d252-d8e6-fe83" type="selectionEntry" targetId="6168-426f-d99c-ad99"/>
-                <entryLink import="true" name="Storm Shield" hidden="false" id="6dc7-d2aa-eaa7-e8d4" type="selectionEntry" targetId="5d5f-55bb-690a-8737"/>
-                <entryLink import="true" name="Wraithbone Recurve Bow" hidden="false" id="e5d4-bd92-cede-6700" collective="false" targetId="e8e2-56ed-f1d7-1651" type="selectionEntry"/>
-                <entryLink import="true" name="Comet bite&amp;breath" hidden="false" id="5615-4cb1-dfe8-e807" type="selectionEntry" targetId="a277-4c05-ee0c-9473"/>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Pterosaur Rider w/Axe" hidden="false" id="5e01-37f7-2c92-74c1">
-              <infoLinks>
-                <infoLink name="Dragon Knight on Pterosaur" id="32c2-2152-d2ac-891e" hidden="false" type="profile" targetId="03d0-e6cb-1acc-e329"/>
-              </infoLinks>
-              <costs>
-                <cost name="Pts" typeId="points" value="35"/>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Comet bite&amp;breath" hidden="false" id="306d-7176-ff7d-2b7d" type="selectionEntry" targetId="a277-4c05-ee0c-9473"/>
-                <entryLink import="true" name="Power Axe" hidden="false" id="5708-f356-c978-30d8" type="selectionEntry" targetId="c95a-21b1-4988-2a86"/>
-                <entryLink import="true" name="Storm Shield" hidden="false" id="4ed6-4061-e6e7-736b" type="selectionEntry" targetId="5d5f-55bb-690a-8737"/>
-                <entryLink import="true" name="Wraithbone Recurve Bow" hidden="false" id="31ce-caed-b32c-5e6d" collective="false" targetId="e8e2-56ed-f1d7-1651" type="selectionEntry"/>
-              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Shield option" id="4b46-fa84-2d1c-acdd" hidden="false" defaultSelectionEntryId="0701-c843-bb2f-74d3">
+                  <entryLinks>
+                    <entryLink import="true" name="Shimmershield" hidden="false" id="0c42-1d5d-7ee5-79d7" collective="false" targetId="42fa-981f-54fd-7972" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="points" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="02aa-2de4-03ab-0cdb" shared="true" id="07bf-d2c4-cc9e-4cbd"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="07bf-d2c4-cc9e-4cbd">
+                          <conditions>
+                            <condition type="atLeast" value="6" field="selections" scope="02aa-2de4-03ab-0cdb" childId="model" shared="true" childName="model" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Storm Shield" hidden="false" id="f511-a511-1e8a-a90f" type="selectionEntry" targetId="38b5-ef30-f87f-5275"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e07a-8de8-3980-7885" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ac9-fb20-9d06-1dbf" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Weapon option" id="f39d-33bb-efa4-51e6" hidden="false" defaultSelectionEntryId="b7bd-d807-95ed-18d7">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Laser Lance" hidden="false" id="2058-ee4b-4e0d-79b4">
+                      <entryLinks>
+                        <entryLink import="true" name="Laser lance" hidden="false" id="e4ee-6aa3-2dab-c872" type="selectionEntry" targetId="882d-e5b8-c309-bf06"/>
+                      </entryLinks>
+                      <costs>
+                        <cost name="Pts" typeId="points" value="10"/>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Axe" hidden="false" id="2c8d-a379-c2a3-88db">
+                      <entryLinks>
+                        <entryLink import="true" name="Power Axe" hidden="false" id="ce52-bc56-2882-52c0" type="selectionEntry" targetId="c95a-21b1-4988-2a86"/>
+                      </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Sword" hidden="false" id="6a4a-9e70-1583-9a93">
+                      <entryLinks>
+                        <entryLink import="true" name="Power Sword" hidden="false" id="80f2-3e1e-e8b1-7841" type="selectionEntry" targetId="6168-426f-d99c-ad99"/>
+                      </entryLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42ec-64bf-1095-7d17" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3a38-8c2e-9bb4-bc0d" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -26661,8 +26666,8 @@ You can use this Stratagem up to 3 times.</characteristic>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Exodite Dragon Knight Lord" hidden="true" id="df74-c384-1a96-e711">
       <costs>
-        <cost name="Pts" typeId="points" value="125"/>
-        <cost name="PL" typeId="e356-c769-5920-6e14" value="6"/>
+        <cost name="Pts" typeId="points" value="150"/>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="7"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
@@ -26681,7 +26686,7 @@ You can use this Stratagem up to 3 times.</characteristic>
         <entryLink import="true" name=" Character definition" hidden="false" id="1194-e17c-8fae-4baa" collective="false" targetId="e0a8-6e59-4681-1912" type="selectionEntryGroup"/>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Seer equipment" id="2222-f3ad-326d-997b" hidden="false" collective="false" import="true" defaultSelectionEntryId="ea58-5a4d-6e68-db3a">
+        <selectionEntryGroup name="Dragon Knight Lord equipment" id="2222-f3ad-326d-997b" hidden="false" collective="false" import="true" defaultSelectionEntryId="b02b-7c7a-1795-c407">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a339-c14e-45e6-3b8b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c9a-4737-0d12-a58b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -26689,25 +26694,24 @@ You can use this Stratagem up to 3 times.</characteristic>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Dragon Knight Lord on Great Saur" hidden="false" id="b082-10a1-99bb-ae7d" collective="false">
               <profiles>
-                <profile name="Seer" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="c825-004d-bbc8-4c58">
+                <profile name="Dragon Knight Lord on Great Saur" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="c825-004d-bbc8-4c58">
                   <characteristics>
-                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
                     <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2+</characteristic>
-                    <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
-                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">5</characteristic>
-                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
-                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
+                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">9</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">5</characteristic>
+                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <categoryLinks>
-                <categoryLink name="Infantry" hidden="false" id="9901-b531-d994-a162" targetId="3d52-fccf-10c0-3fae" primary="false"/>
                 <categoryLink name="Faction: Aeldari" hidden="false" id="8ff6-9ad3-5107-47d3" targetId="1924-ef18-000b-d2ba" primary="false"/>
-                <categoryLink name="Ø25mm" hidden="false" id="b9df-d41a-b983-dde8" targetId="a9eb-ffb1-e9f2-2b60" primary="false"/>
                 <categoryLink name="Faction: Aeldari Exodites" hidden="false" id="6e2a-8af4-cadf-0dfd" targetId="4a67-024a-2ab2-8193" primary="false"/>
+                <categoryLink name="Monster" hidden="false" id="c15b-d994-d6ba-68b6" targetId="3b77-decb-d468-6bcc" primary="false"/>
               </categoryLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Melee weapon" id="578d-84f4-3468-d2db" hidden="false" collective="false" import="true" defaultSelectionEntryId="2c8f-5407-2825-542b">
@@ -26725,9 +26729,9 @@ You can use this Stratagem up to 3 times.</characteristic>
                 <entryLink import="true" name="Shuriken pistol" hidden="false" id="b518-bdac-1577-1605" collective="false" targetId="3b3a-02da-8bf9-dac6" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="Pts" typeId="points" value="50"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="3"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>
@@ -26756,15 +26760,15 @@ You can use this Stratagem up to 3 times.</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
                     <characteristic name="W" typeId="f330-5e6e-4110-0978">7</characteristic>
-                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">5</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <costs>
-                <cost name="Pts" typeId="points" value="30"/>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
@@ -26777,16 +26781,6 @@ You can use this Stratagem up to 3 times.</characteristic>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <profiles>
-        <profile name="Seer" typeId="bc97-dea9-9e88-bb7d" typeName="Psyker" hidden="false" id="c8ec-fe84-3300-c862">
-          <characteristics>
-            <characteristic name="Cast" typeId="5afb-9914-904b-d3b3">2</characteristic>
-            <characteristic name="Deny" typeId="b5ac-9c20-5d5a-6f9b">2</characteristic>
-            <characteristic name="Powers Known" typeId="69d7-b45e-00a2-7e46">Smite, 2 Runes of Fate.</characteristic>
-            <characteristic name="Other" typeId="c2e2-f115-0003-5d7b">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink name="Rune armour" id="db9d-6ad8-ff46-2978" hidden="false" targetId="2c3c-bf97-572f-ed11" type="profile"/>
       </infoLinks>
@@ -28779,7 +28773,7 @@ While an enemy unit is within Engagement Range of the bearer, if the bearer’s 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b02-71e9-251e-4b85" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Wraithbone Recurve Bow" hidden="false" id="e8e2-56ed-f1d7-1651" collective="true">
+        <selectionEntry type="upgrade" import="true" name="Wraithbone Recurve Bow" hidden="false" id="e8e2-56ed-f1d7-1651">
           <profiles>
             <profile name="Arrow, piercing" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="f105-5dfe-087f-f676">
               <characteristics>
