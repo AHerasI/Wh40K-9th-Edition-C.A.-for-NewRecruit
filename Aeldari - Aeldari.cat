@@ -26300,13 +26300,13 @@ You can use this Stratagem up to 3 times.</characteristic>
                         <cost name="pts" typeId="points" value="10"/>
                       </costs>
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="03d8-20bc-7d50-79c6" shared="true" id="d156-1062-e228-8e2e"/>
+                        <constraint type="max" value="0" field="selections" scope="ce9a-1267-cc6b-3928" shared="true" id="d156-1062-e228-8e2e" includeChildSelections="true"/>
                       </constraints>
                       <modifiers>
                         <modifier type="increment" value="1" field="d156-1062-e228-8e2e">
-                          <conditions>
-                            <condition type="atLeast" value="6" field="selections" scope="ce9a-1267-cc6b-3928" childId="model" shared="true" childName="model" includeChildSelections="true"/>
-                          </conditions>
+                          <repeats>
+                            <repeat value="5" repeats="1" field="selections" scope="ce9a-1267-cc6b-3928" childId="model" shared="true" roundUp="false" childName="model"/>
+                          </repeats>
                         </modifier>
                       </modifiers>
                     </entryLink>
@@ -26486,7 +26486,7 @@ You can use this Stratagem up to 3 times.</characteristic>
                         <cost name="pts" typeId="points" value="10"/>
                       </costs>
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="03d8-20bc-7d50-79c6" shared="true" id="c71e-7b29-cfc8-3658"/>
+                        <constraint type="max" value="1" field="selections" scope="03d8-20bc-7d50-79c6" shared="true" id="c71e-7b29-cfc8-3658" includeChildSelections="true"/>
                       </constraints>
                       <modifiers>
                         <modifier type="increment" value="1" field="c71e-7b29-cfc8-3658">
@@ -26610,7 +26610,7 @@ You can use this Stratagem up to 3 times.</characteristic>
                         <cost name="pts" typeId="points" value="10"/>
                       </costs>
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="02aa-2de4-03ab-0cdb" shared="true" id="07bf-d2c4-cc9e-4cbd"/>
+                        <constraint type="max" value="1" field="selections" scope="02aa-2de4-03ab-0cdb" shared="true" id="07bf-d2c4-cc9e-4cbd" includeChildSelections="true"/>
                       </constraints>
                       <modifiers>
                         <modifier type="increment" value="1" field="07bf-d2c4-cc9e-4cbd">
