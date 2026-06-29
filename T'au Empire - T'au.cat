@@ -24374,7 +24374,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
     </selectionEntryGroup>
     <selectionEntryGroup id="5278-fb90-d41f-37f6" name="Wargear" hidden="false" collective="false" import="true" flatten="true">
       <selectionEntryGroups>
-        <selectionEntryGroup id="7875-0390-ec61-c376" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="386a-81b4-f851-7230">
+        <selectionEntryGroup id="7875-0390-ec61-c376" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="386a-81b4-f851-7230" flatten="true">
           <modifiers>
             <modifier type="set" field="916e-b7d8-03e5-aa32" value="0">
               <conditionGroups>
@@ -24462,10 +24462,344 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Support Systems" id="6dc3-9437-5906-768f" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink import="true" name="Counterfire Defence System" hidden="true" id="fc6e-c60f-a678-5fb4" collective="false" targetId="5fed-cdf8-453e-8534" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6ce0-d7d5-b6f0-3b6d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="Reinforced Counterfire Defence System" field="name">
+                      <conditions>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b66f-e4bb-3335-6222" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Point cost modifier</comment>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Reinforced</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="45a6-4825-db8c-9cff" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier type="set" value="10" field="points"/>
+                      </modifiers>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <comment>Heavy</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b66f-e4bb-3335-6222" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier type="set" value="40" field="points"/>
+                        <modifier type="set" value="2" field="e356-c769-5920-6e14"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </modifierGroup>
+              </modifierGroups>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f4f1-9d5a-48d2-206e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Early Warning Override" hidden="false" id="dd9f-e067-cd53-f2aa" collective="false" targetId="c31f-37bd-2b6a-55c2" type="selectionEntry">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Point cost modifier</comment>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Reinforced</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="45a6-4825-db8c-9cff" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier type="set" value="20" field="points"/>
+                        <modifier type="set" value="1" field="e356-c769-5920-6e14"/>
+                      </modifiers>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <comment>Heavy</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b66f-e4bb-3335-6222" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier type="set" value="40" field="points"/>
+                        <modifier type="set" value="2" field="e356-c769-5920-6e14"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="Wide-Spectrum Scanners" field="name">
+                      <conditions>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="45a6-4825-db8c-9cff" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="Wide-Spectrum Scanners" field="name">
+                      <conditions>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b66f-e4bb-3335-6222" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b4f7-2ce8-6ece-64af" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Multi-tracker" hidden="false" id="0ca1-d1d9-3d3c-76e5" collective="false" targetId="7985-ad8b-3f83-430f" type="selectionEntry">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Point cost modifier</comment>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Reinforced</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="45a6-4825-db8c-9cff" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier type="set" value="10" field="points"/>
+                      </modifiers>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <comment>Heavy</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b66f-e4bb-3335-6222" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier type="set" value="20" field="points"/>
+                        <modifier type="set" value="1" field="e356-c769-5920-6e14"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </modifierGroup>
+              </modifierGroups>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f181-e70f-3361-dbe1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Shield Generator" hidden="true" id="61aa-b84a-7b2e-22f8" collective="false" targetId="7baa-10f2-1cc8-43be" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6ce0-d7d5-b6f0-3b6d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="0793-2675-e955-2b48" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="faae-149e-3759-0c23" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="0156-7a7c-16f3-8d8d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="9c9d-9a30-d4f5-27fa" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="c260-ec8b-a4f9-4e27" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="7225-e03b-ca23-d63b" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="941d-eaaf-b289-5590" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="bca9-3727-0767-e20d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Point cost modifier</comment>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Reinforced</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="45a6-4825-db8c-9cff" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier type="set" value="10" field="points"/>
+                      </modifiers>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <comment>Heavy</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b66f-e4bb-3335-6222" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier type="set" value="40" field="points"/>
+                        <modifier type="set" value="2" field="e356-c769-5920-6e14"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </modifierGroup>
+              </modifierGroups>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9829-4df7-5bac-712f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Target Lock" hidden="true" id="3ca0-4fca-f5f5-64d7" collective="false" targetId="8e1b-2cdd-1e0f-2233" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="8977-809f-b225-2f53" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="2d00-1ec2-b978-cb2d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="7732-8c03-1265-ca2d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="1662-736b-3d5b-df1a" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="421e-e63c-ae4e-1c0a" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Point cost modifier</comment>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Reinforced</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="45a6-4825-db8c-9cff" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier type="set" value="10" field="points"/>
+                      </modifiers>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <comment>Heavy</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b66f-e4bb-3335-6222" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier type="set" value="20" field="points"/>
+                        <modifier type="set" value="1" field="e356-c769-5920-6e14"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </modifierGroup>
+              </modifierGroups>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7708-c1b3-3e88-4ebf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Velocity Tracker" hidden="true" id="1a35-d240-b226-c080" collective="false" targetId="1fa6-7901-8840-20fd" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and"/>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Point cost modifier</comment>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Reinforced</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="45a6-4825-db8c-9cff" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier type="set" value="10" field="points"/>
+                      </modifiers>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <comment>Heavy</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b66f-e4bb-3335-6222" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier type="set" value="20" field="points"/>
+                        <modifier type="set" value="1" field="e356-c769-5920-6e14"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </modifierGroup>
+              </modifierGroups>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b293-5891-82c1-8715" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Advanced Targeting System" hidden="false" id="ad00-836e-1070-4c84" collective="false" targetId="ebce-2971-b73d-4205" type="selectionEntry">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Point cost modifier</comment>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Reinforced</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="45a6-4825-db8c-9cff" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier type="set" value="10" field="points"/>
+                      </modifiers>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <comment>Heavy</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b66f-e4bb-3335-6222" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier type="set" value="20" field="points"/>
+                        <modifier type="set" value="1" field="e356-c769-5920-6e14"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </modifierGroup>
+              </modifierGroups>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5622-e5ab-7251-9157" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Positional Relay" hidden="true" id="57b9-ca02-3df4-6f38" collective="false" targetId="8cc7-97da-dd02-3a71" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="1650-1dc8-d9e0-474d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38fd-bd33-173b-bea6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="d6ca-62b0-8f0f-e9ae" name="Support Systems" hidden="false" collective="false" import="true" targetId="e5e8-5d51-937d-8667" type="selectionEntryGroup"/>
-      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="727f-9459-651d-5b07" name="   Character definition:" hidden="false" collective="false" import="true">
       <entryLinks>
