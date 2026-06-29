@@ -11051,7 +11051,6 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
           <categoryLinks>
             <categoryLink id="b534-ffbd-0cc2-abbc" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
             <categoryLink id="94f9-3017-da10-4b56" name="T&apos;au Fire Caste Warrior" hidden="false" targetId="dcd0-ba12-2a47-fbaa" primary="false"/>
-            <categoryLink id="c9da-a461-6262-351e" name="Strike Team" hidden="false" targetId="50ba-aa9c-9064-7cb3" primary="false"/>
           </categoryLinks>
           <entryLinks>
             <entryLink id="08d7-7def-09b6-a886" name="Markerlight" hidden="false" collective="false" import="true" targetId="c907-2075-ec84-e2fb" type="selectionEntry"/>
@@ -11072,10 +11071,6 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
             <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c05-f92b-07cf-a801" type="min"/>
             <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75bf-b892-65c3-781a" type="max"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="fbf1-aab8-05fa-a5b4" name="Breacher Team" hidden="false" targetId="221d-e6c0-650d-fc3f" primary="false"/>
-            <categoryLink id="f193-6007-874d-8c50" name="Strike Team" hidden="false" targetId="50ba-aa9c-9064-7cb3" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="5b6f-eed3-585b-9159" name="Pathfinder w/Carbine&amp;GL" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -11296,6 +11291,7 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
             <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ded-55d3-de4a-bbaf" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0156-7a7c-16f3-8d8d" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9083-35f7-9050-c9e9" repeats="1" roundUp="false"/>
+            <repeat value="1" repeats="2" field="selections" scope="force" childId="7e78-0724-9d52-8481" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Pathfinder Team"/>
           </repeats>
         </modifier>
         <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
@@ -13610,7 +13606,7 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup id="320b-bb24-284f-88e7" name="Riptide Main Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="42d3-1326-50df-e84e">
+            <selectionEntryGroup id="320b-bb24-284f-88e7" name="Riptide Main Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="42d3-1326-50df-e84e" flatten="true">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e164-342d-03cf-3ce2" type="min"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8362-7f79-21b3-165e" type="max"/>
@@ -13625,7 +13621,7 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                 <entryLink id="42d3-1326-50df-e84e" name="Heavy Swiftstrike Burst Cannon" hidden="false" collective="false" import="true" targetId="5a7e-1b74-9810-0db6" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="87da-fee0-a284-8c39" name="Riptide Secondary System" hidden="false" collective="false" import="true" defaultSelectionEntryId="ffca-5940-b7b4-d2d3">
+            <selectionEntryGroup id="87da-fee0-a284-8c39" name="Riptide Secondary System" hidden="false" collective="false" import="true" defaultSelectionEntryId="ffca-5940-b7b4-d2d3" flatten="true">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87b0-1d25-29c5-b4dd" type="min"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c1e-5eb8-2f14-4e6d" type="max"/>
@@ -13681,9 +13677,9 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="76b0-427d-19cd-564f" name="Wargear (0-3)" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="76b0-427d-19cd-564f" name="Wargear (0-3)" hidden="false" collective="false" import="true" flatten="true">
               <entryLinks>
-                <entryLink id="cf36-f786-2654-e923" name="Support Systems" hidden="false" collective="false" import="true" targetId="e5e8-5d51-937d-8667" type="selectionEntryGroup">
+                <entryLink id="cf36-f786-2654-e923" name="Support Systems" hidden="false" collective="false" import="true" targetId="e5e8-5d51-937d-8667" type="selectionEntryGroup" flatten="true">
                   <constraints>
                     <constraint field="selections" scope="parent" value="3" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5674-4fed-0606-8bbf" type="max"/>
                   </constraints>
@@ -13946,9 +13942,9 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup id="9b56-f956-e2df-c4b4" name="Wargear (0-3)" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="9b56-f956-e2df-c4b4" name="Wargear (0-3)" hidden="false" collective="false" import="true" flatten="true">
               <entryLinks>
-                <entryLink id="e099-b1ad-073b-27e0" name="Support Systems" hidden="false" collective="false" import="true" targetId="e5e8-5d51-937d-8667" type="selectionEntryGroup">
+                <entryLink id="e099-b1ad-073b-27e0" name="Support Systems" hidden="false" collective="false" import="true" targetId="e5e8-5d51-937d-8667" type="selectionEntryGroup" flatten="true">
                   <constraints>
                     <constraint field="selections" scope="parent" value="3" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2b8a-ea88-d1c1-3142" type="max"/>
                   </constraints>
@@ -14229,9 +14225,9 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup id="718a-2311-3db7-a49d" name="Wargear (0-3)" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="718a-2311-3db7-a49d" name="Wargear (0-3)" hidden="false" collective="false" import="true" flatten="true">
               <entryLinks>
-                <entryLink id="e3cb-4254-6033-cbe6" name="Support Systems" hidden="false" collective="false" import="true" targetId="e5e8-5d51-937d-8667" type="selectionEntryGroup">
+                <entryLink id="e3cb-4254-6033-cbe6" name="Support Systems" hidden="false" collective="false" import="true" targetId="e5e8-5d51-937d-8667" type="selectionEntryGroup" flatten="true">
                   <constraints>
                     <constraint field="selections" scope="parent" value="3" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4070-3b08-543b-d0f1" type="max"/>
                   </constraints>
