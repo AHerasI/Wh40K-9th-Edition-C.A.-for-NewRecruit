@@ -16598,7 +16598,7 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed64-4487-8e2a-d1df" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="0cea-861a-e348-606d" name="XV15 Stealth w/Burst Cannon" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="0cea-861a-e348-606d" name="XV15 Stealth" hidden="false" collective="false" import="true" type="model">
               <infoLinks>
                 <infoLink id="0cc7-fe53-fcd6-6e7c" name="XV15 Stealth Shas&apos;ui" hidden="false" targetId="ff18-2aac-4f81-a1ce" type="profile"/>
               </infoLinks>
@@ -16681,14 +16681,36 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
               <selectionEntries>
                 <selectionEntry id="e986-5506-7da1-2735" name="XV15 Stealth w/Fusion Blaster" hidden="false" collective="false" import="true" type="model">
                   <modifiers>
-                    <modifier type="set" field="ee0b-a523-a6f4-8a86" value="1">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecc8-3184-f2d0-b3c7" type="atLeast"/>
-                      </conditions>
+                    <modifier type="decrement" value="1" field="ee0b-a523-a6f4-8a86">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="lessThan" value="6" field="selections" scope="adca-d911-fde7-5b57" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="model"/>
+                                <condition type="atLeast" value="1" field="selections" scope="adca-d911-fde7-5b57" childId="34d8-dfea-8654-c6fc" shared="true" childName="Fusion Blaster" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <conditions>
+                            <condition type="atLeast" value="3" field="selections" scope="adca-d911-fde7-5b57" childId="6f12-ff3f-1329-cb05" shared="true" childName="Fusion Weapon"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="increment" value="1" field="ee0b-a523-a6f4-8a86">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="6" field="selections" scope="adca-d911-fde7-5b57" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="model"/>
+                            <condition type="atMost" value="2" field="selections" scope="adca-d911-fde7-5b57" childId="6f12-ff3f-1329-cb05" shared="true" childName="Fusion Weapon" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee0b-a523-a6f4-8a86" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee0b-a523-a6f4-8a86" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="9e48-dcc3-b7e5-8d1f" name="XV15 Stealth Shas&apos;ui" hidden="false" targetId="ff18-2aac-4f81-a1ce" type="profile"/>
