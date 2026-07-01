@@ -732,7 +732,7 @@ Additional reference data obtained from Wahapedia, https://wahapedia.ru/</readme
     </categoryEntry>
     <categoryEntry name="Faction: Aeldari Exodites" id="4a67-024a-2ab2-8193" hidden="false">
       <infoLinks>
-        <infoLink name="Aeldari Exodites" id="c4fe-36fe-153a-e7b6" hidden="false" type="profile" targetId="f1c7-8631-a283-5331"/>
+        <infoLink name="Blessing of the World Spirit" id="c4fe-36fe-153a-e7b6" hidden="false" type="profile" targetId="f1c7-8631-a283-5331"/>
         <infoLink name="Quick Response" id="745d-d52a-54d7-df8a" hidden="false" targetId="9334-58b2-273b-198c" type="profile"/>
       </infoLinks>
     </categoryEntry>
@@ -3136,7 +3136,7 @@ A unit cannot make a Battle Focus move if it arrived as Reinforcements this turn
                 <categoryLink id="c72c-bf15-5aaf-5abb" name="Faction: Asuryani" hidden="false" targetId="1114-7875-d463-df17" primary="false"/>
               </categoryLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup id="b0d5-8497-ddc3-765b" name="1 - Craftworld" hidden="false" collective="false" import="true" defaultSelectionEntryId="2940-0543-965f-7783">
+                <selectionEntryGroup id="b0d5-8497-ddc3-765b" name="1 - Craftworld" hidden="false" collective="false" import="true" defaultSelectionEntryId="7d5c-0041-1b41-a04d">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55fd-37bd-3e1f-4809" type="max"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7e9-6928-9a5b-27c9" type="min"/>
@@ -4485,9 +4485,11 @@ Each Luck re-roll can be used to re-roll one hit roll, wound roll, damage roll, 
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="6 - Aeldari Exodites WIP" hidden="false" id="61f4-aa1a-6422-27e1">
               <profiles>
-                <profile name="Aeldari Exodites" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="f1c7-8631-a283-5331">
+                <profile name="Blessing of the World Spirit" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="f1c7-8631-a283-5331">
                   <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228"/>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Each time a model with this ability would lose a wound as a result of a mortal wound, roll one D6: on a 5+, that wound is not lost.
+- Each time a model with this ability makes a ranged attack, the target does not receive the benefits of cover against that attack
+- Each time a ranged attack is made against a unit with this ability, if the attacker is more than 12&quot; away, then the unit with this ability is treated as having the benefits of Light Cover against that attack.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -25883,6 +25885,9 @@ You can use this Stratagem up to 3 times.</characteristic>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4dc9-3da2-4466-b8f6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0ae5-2a84-f437-d857" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Spiritual tunes" hidden="false" id="0a6a-a231-198a-f531" type="selectionEntryGroup" targetId="0d1d-9199-acc3-dd3b"/>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Warlocks equipment" id="ac99-3db9-bb9d-e4b4" hidden="false" collective="false" import="true" defaultSelectionEntryId="ea58-5a4d-6e68-db3a">
           <constraints>
@@ -26019,7 +26024,7 @@ You can use this Stratagem up to 3 times.</characteristic>
           <characteristics>
             <characteristic name="Cast" typeId="5afb-9914-904b-d3b3">1</characteristic>
             <characteristic name="Deny" typeId="b5ac-9c20-5d5a-6f9b">1</characteristic>
-            <characteristic name="Powers Known" typeId="69d7-b45e-00a2-7e46">Smite or 1 Runes of Fortune, 1 Runes of Battle.</characteristic>
+            <characteristic name="Powers Known" typeId="69d7-b45e-00a2-7e46">Smite and 1 Spiritual tune.</characteristic>
             <characteristic name="Other" typeId="c2e2-f115-0003-5d7b">-</characteristic>
           </characteristics>
           <comment>1</comment>
@@ -26035,7 +26040,7 @@ You can use this Stratagem up to 3 times.</characteristic>
           <characteristics>
             <characteristic name="Cast" typeId="5afb-9914-904b-d3b3">2</characteristic>
             <characteristic name="Deny" typeId="b5ac-9c20-5d5a-6f9b">2</characteristic>
-            <characteristic name="Powers Known" typeId="69d7-b45e-00a2-7e46">Smite or 1 Runes of Fortune, 2 Runes of Battle.</characteristic>
+            <characteristic name="Powers Known" typeId="69d7-b45e-00a2-7e46">Smite and 2 Spiritual tunes.</characteristic>
             <characteristic name="Other" typeId="c2e2-f115-0003-5d7b">If this unit has 1 Warlock model remaining, it can cast 1 Psychic power and Deny the Witch once per Psychic phase.</characteristic>
           </characteristics>
           <comment>2</comment>
@@ -26051,7 +26056,7 @@ You can use this Stratagem up to 3 times.</characteristic>
           <characteristics>
             <characteristic name="Cast" typeId="5afb-9914-904b-d3b3">3</characteristic>
             <characteristic name="Deny" typeId="b5ac-9c20-5d5a-6f9b">3</characteristic>
-            <characteristic name="Powers Known" typeId="69d7-b45e-00a2-7e46">Smite or 1 Runes of Fortune, 3 Runes of Battle.</characteristic>
+            <characteristic name="Powers Known" typeId="69d7-b45e-00a2-7e46">Smite and 3 Spiritual tunes.</characteristic>
             <characteristic name="Other" typeId="c2e2-f115-0003-5d7b">If this unit has 2 Warlock models remaining, it can cast 2 Psychic power and Deny the Witch twice per Psychic phase. If this unit has 1 Warlock model remaining, it can cast 1 Psychic power and Deny the Witch once per Psychic phase.</characteristic>
           </characteristics>
           <comment>3</comment>
@@ -26372,16 +26377,16 @@ You can use this Stratagem up to 3 times.</characteristic>
         </modifierGroup>
       </modifierGroups>
       <profiles>
-        <profile name="Path of the Shaper" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="93bb-8e93-5552-d44d">
+        <profile name="World&apos;s Song" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="93bb-8e93-5552-d44d">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">In your Psychic phase, instead of attempting to manifest psychic powers, this model can reknit the wraithbone of one friendly WRAITHBONE model from unit within 3&quot;. If it does, either a model regains D3 lost wounds or bring back a destroyed model of that unit with all it&apos;s Wounds remaining. That model is set up within 3&quot; of the BONESINGER and in coherency with the unit. Each unit can have a model reknit once per turn.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">In your Psychic phase, instead of attempting to manifest psychic powers, this model can reknit the physic form of one friendly AELDARI model from a unit within 3&quot;. If it does, either a model regains D3 lost wounds or bring back a destroyed model of that unit with all it&apos;s Wounds remaining. That model is set up within 3&quot; of the WORLDSINGER and in coherency with the unit. Each unit can have a model reknit once per turn.</characteristic>
           </characteristics>
         </profile>
         <profile name="Worldsinger" typeId="bc97-dea9-9e88-bb7d" typeName="Psyker" hidden="false" id="6f15-0caa-b0e4-7d03">
           <characteristics>
             <characteristic name="Cast" typeId="5afb-9914-904b-d3b3">1</characteristic>
             <characteristic name="Deny" typeId="b5ac-9c20-5d5a-6f9b">1</characteristic>
-            <characteristic name="Powers Known" typeId="69d7-b45e-00a2-7e46">Smite or 1 Runes of Fortune.</characteristic>
+            <characteristic name="Powers Known" typeId="69d7-b45e-00a2-7e46">Smite and 1 Spiritual tune.</characteristic>
             <characteristic name="Other" typeId="c2e2-f115-0003-5d7b">-</characteristic>
           </characteristics>
           <modifiers>
@@ -26417,11 +26422,6 @@ You can use this Stratagem up to 3 times.</characteristic>
             </modifierGroup>
           </modifierGroups>
         </profile>
-        <profile name="Shaper&apos;s song" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="f5ed-68e4-31a3-e5e7">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly WRAITHBONE unit is within 6&quot; of this model, each time a model in that unit uses it&apos;s Wraithbone regeneration ability, it regains 1 additional Wound.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Rune armour" id="dba6-7ad3-7176-892d" hidden="false" targetId="2c3c-bf97-572f-ed11" type="profile"/>
@@ -26435,8 +26435,13 @@ You can use this Stratagem up to 3 times.</characteristic>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name=" Character definition" hidden="false" id="6706-9099-0808-58ba" collective="false" targetId="e0a8-6e59-4681-1912" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Runes of Fortune &amp; Smite" hidden="false" id="5b45-8ac1-93ac-4021" collective="false" targetId="fe10-bfed-ecb8-b54c" type="selectionEntryGroup"/>
         <entryLink import="true" name="Witch staff" hidden="false" id="15d9-2533-2f46-50d8" collective="false" targetId="6b04-7bba-bd9f-561a" type="selectionEntry"/>
+        <entryLink import="true" name="Smite" hidden="false" id="9ebc-4113-00f2-ef31" type="selectionEntry" targetId="03fd-db47-5333-1e1f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b4c-886a-458f-ccb5" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c804-558a-5dfe-ecdb" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="e356-c769-5920-6e14" value="3"/>
@@ -26460,6 +26465,17 @@ You can use this Stratagem up to 3 times.</characteristic>
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Psychic powers" id="5d84-fe48-f4ba-551c" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="74d4-dcb6-e88d-4a6e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="422f-6a84-f78f-848f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Spiritual tunes" hidden="false" id="7e19-a9af-0dd9-31f8" type="selectionEntryGroup" targetId="0d1d-9199-acc3-dd3b"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Exodite Clanblades" hidden="false" id="03d8-20bc-7d50-79c6">
       <selectionEntryGroups>
@@ -26467,7 +26483,7 @@ You can use this Stratagem up to 3 times.</characteristic>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Clanblade" hidden="false" id="1341-fa59-e67f-d686">
               <infoLinks>
-                <infoLink name="Dragon Knight" id="b4e3-d7bd-bbc2-10c1" hidden="false" type="profile" targetId="f860-c997-af60-526a"/>
+                <infoLink name="Dragon Knight on Drakesteed" id="b4e3-d7bd-bbc2-10c1" hidden="false" type="profile" targetId="f860-c997-af60-526a"/>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="points" value="40"/>
@@ -26594,7 +26610,7 @@ You can use this Stratagem up to 3 times.</characteristic>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
               <entryLinks>
-                <entryLink import="true" name="Comet bite&amp;breath" hidden="false" id="0c5e-f955-1fc7-45ab" type="selectionEntry" targetId="a277-4c05-ee0c-9473"/>
+                <entryLink import="true" name="Pterosaur bite&amp;breath" hidden="false" id="0c5e-f955-1fc7-45ab" type="selectionEntry" targetId="a277-4c05-ee0c-9473"/>
                 <entryLink import="true" name="Wraithbone Recurve Bow" hidden="false" id="9dea-1b74-f76a-c39b" collective="false" targetId="e8e2-56ed-f1d7-1651" type="selectionEntry">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f17d-d874-09ee-d54b" includeChildSelections="false"/>
@@ -29814,6 +29830,16 @@ If the unit cannot be set-up, it&apos;s placed in the Strategic Reserves of your
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Spiritual tunes" id="0d1d-9199-acc3-dd3b" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="1 - " hidden="false" id="6ccb-429f-f09c-57da"/>
+            <selectionEntry type="upgrade" import="true" name="2 - " hidden="false" id="2fb5-85f7-0ab2-6856"/>
+            <selectionEntry type="upgrade" import="true" name="3 - " hidden="false" id="d22a-14bd-f66a-cd29"/>
+            <selectionEntry type="upgrade" import="true" name="4 - " hidden="false" id="26f7-b843-039f-54f5"/>
+            <selectionEntry type="upgrade" import="true" name="5 - " hidden="false" id="1340-b849-8f1b-b1bd"/>
+            <selectionEntry type="upgrade" import="true" name="6 - " hidden="false" id="a3a8-2d43-c4e9-04ba"/>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
