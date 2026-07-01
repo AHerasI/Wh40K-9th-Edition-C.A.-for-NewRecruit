@@ -6810,7 +6810,7 @@ Any models embarked within another model when it embarks upon this model do not 
               <characteristics>
                 <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">In your Movement phase, this unit can do either twice one of the following protocols, or each one once:
 - Repair Protocol: This model can repair one friendly VEHICLE or BATTLESUIT model within 3&quot; of it. That VEHICLE or BATTLESUIT model regains up to 1D6 lost wounds. Each model can only be repaired once per turn.
-- Stabilization Protocol: This model can bring back one friendly destroyed VEHICLE or BATTLESUIT model from a unit 3&quot; of it. That VEHICLE or BATTLESUIT model is set up within 3&quot; of the EARTH CASTE ENGINEER and in coherency with the unit, with up to 3 wounds remaining. Each unit can be affected once by Stabilization Protocol per turn.</characteristic>
+- Stabilization Protocol: This model can bring back one friendly destroyed VEHICLE or BATTLESUIT model from a unit 3&quot; of it. That VEHICLE or BATTLESUIT model is set up in coherency with the unit, with up to 4 wounds remaining. Each unit can be affected once by Stabilization Protocol per turn.</characteristic>
               </characteristics>
             </profile>
             <profile id="bdd5-3b1a-764d-46f3" name="Earth Caste Combat Engineer" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
@@ -24439,16 +24439,6 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
               </costs>
             </entryLink>
             <entryLink id="44a9-dda3-fc98-2b99" name="Missile Pod" hidden="false" collective="false" import="true" targetId="5f4d-cb85-c724-e2e3" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="3ac6-b950-c6d5-2425" value="1">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e33-3569-6c63-63b7" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="-1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ac6-b950-c6d5-2425" type="min"/>
-              </constraints>
               <costs>
                 <cost name="pts" typeId="points" value="15"/>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
