@@ -26952,6 +26952,7 @@ You can use this Stratagem up to 3 times.</characteristic>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Fire Gale" hidden="false" id="7d83-cccf-da49-8b21" collective="false">
               <entryLinks>
+                <entryLink targetId="9199-9065-d361-cb7a" id="d587-8a8a-76bd-14d0" type="selectionEntry" name="Maelstrom Laser" hidden="false"/>
                 <entryLink import="true" name="Scatter laser" hidden="false" id="8d20-7c4e-0316-72d9" type="selectionEntry" targetId="d44e-3899-0049-b13d"/>
                 <entryLink import="true" name="Crushing bulk" hidden="false" id="40df-9463-a562-ed51" type="selectionEntry" targetId="502f-45c2-6fd1-443b">
                   <entryLinks>
@@ -26965,29 +26966,6 @@ You can use this Stratagem up to 3 times.</characteristic>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Maelstrom Laser" hidden="false" id="9199-9065-d361-cb7a">
-                  <profiles>
-                    <profile name="Maelstrom Laser" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="665b-1267-b7a8-a3ae">
-                      <characteristics>
-                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60&quot;</characteristic>
-                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 1</characteristic>
-                        <characteristic name="S" typeId="59b1-319e-ec13-d466">14</characteristic>
-                        <characteristic name="AP" typeId="75aa-a838-b675-6484">-5</characteristic>
-                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
-                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b710-b585-5f94-11db" includeChildSelections="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="760e-e768-dfd7-ea84" includeChildSelections="false"/>
-                  </constraints>
-                  <categoryLinks>
-                    <categoryLink name="Laser Weapon" hidden="false" id="481c-6d51-c906-216c" targetId="f74f-8bb9-7448-707c" primary="false"/>
-                  </categoryLinks>
-                </selectionEntry>
-              </selectionEntries>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Fire Reaper" hidden="false" id="74d7-85ef-4ad7-b8c4">
               <entryLinks>
@@ -27100,22 +27078,9 @@ You can use this Stratagem up to 3 times.</characteristic>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="790b-9f44-7f73-d1c9" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Crushing bulk" hidden="false" id="de1a-228b-16f7-4792" type="selectionEntry" targetId="502f-45c2-6fd1-443b"/>
+                <entryLink import="true" name="Maelstrom Laser" hidden="false" id="2688-17ac-b344-8992" targetId="9199-9065-d361-cb7a" type="selectionEntry"/>
               </entryLinks>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Knight&apos;s Power Fist" hidden="false" id="60d8-a247-5634-94f2">
-                  <infoLinks>
-                    <infoLink name="Dreadnought Power Fist" id="e30f-1a39-cbee-2066" hidden="false" targetId="03b9-d662-7977-3cbd" type="profile">
-                      <modifiers>
-                        <modifier type="set" value="Knight&apos;s Power Fist" field="name"/>
-                      </modifiers>
-                    </infoLink>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a2f7-1f95-58d0-9b2a" includeChildSelections="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ebad-b76e-b5ac-735d" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
               <costs>
                 <cost name="Pts" typeId="points" value="10"/>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -27126,13 +27091,8 @@ You can use this Stratagem up to 3 times.</characteristic>
             <selectionEntry type="upgrade" import="true" name="Bright Stalker" hidden="false" id="b430-b62d-d0d3-b148">
               <entryLinks>
                 <entryLink import="true" name="Crushing bulk" hidden="false" id="6396-faf4-4575-01c2" type="selectionEntry" targetId="502f-45c2-6fd1-443b"/>
-                <entryLink import="true" name="Twin Asuryani missile launcher" hidden="false" id="e5fd-b1b8-b225-67e4" type="selectionEntry" targetId="f776-083d-3269-496e">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85fb-2ccc-54bf-1152" includeChildSelections="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fda4-cc9b-623f-d1fa" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
                 <entryLink import="true" name="Twin Shuriken rifle" hidden="false" id="3026-df0c-afae-5871" type="selectionEntry" targetId="ff3d-42fe-2ba4-3026"/>
+                <entryLink import="true" name="Maelstrom Laser" hidden="false" id="4bc6-561f-b10b-09cd" targetId="9199-9065-d361-cb7a" type="selectionEntry"/>
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -29257,6 +29217,27 @@ While an enemy unit is within Engagement Range of the bearer, if the bearer’s 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c2d-e5df-065e-ba40" includeChildSelections="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9fd1-f1b4-674f-f3a0" includeChildSelections="false"/>
           </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Maelstrom Laser" hidden="false" id="9199-9065-d361-cb7a">
+          <profiles>
+            <profile name="Maelstrom Laser" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="665b-1267-b7a8-a3ae">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60&quot;</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 1</characteristic>
+                <characteristic name="S" typeId="59b1-319e-ec13-d466">14</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">-5</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b710-b585-5f94-11db" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="760e-e768-dfd7-ea84" includeChildSelections="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Laser Weapon" hidden="false" id="481c-6d51-c906-216c" targetId="f74f-8bb9-7448-707c" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
