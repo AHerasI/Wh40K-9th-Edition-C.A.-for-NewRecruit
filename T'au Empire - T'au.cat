@@ -7054,7 +7054,7 @@ Any models embarked within another model when it embarks upon this model do not 
               </costs>
             </entryLink>
             <entryLink id="217e-e9ce-5a1a-41ab" name="Pulse Pistol" hidden="false" collective="false" import="true" targetId="3cb2-6f3a-b481-c1fe" type="selectionEntry"/>
-            <entryLink id="6465-fe1f-9679-e75d" name="Photon Grenades" hidden="false" collective="false" import="true" targetId="ce97-a8d9-f755-476b" type="selectionEntry"/>
+            <entryLink import="true" name="Photon Grenades" hidden="false" id="2910-1e0e-c789-605a" collective="false" targetId="ce97-a8d9-f755-476b" type="selectionEntry"/>
           </entryLinks>
           <costs>
             <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -7102,7 +7102,7 @@ Any models embarked within another model when it embarks upon this model do not 
               <entryLinks>
                 <entryLink id="0d7c-7f90-6763-ffd8" name="Pulse Carbine" hidden="false" collective="false" import="true" targetId="2edc-657d-ea16-fe42" type="selectionEntry"/>
                 <entryLink id="2d01-6e16-c582-74b3" name="Pulse Pistol" hidden="false" collective="false" import="true" targetId="3cb2-6f3a-b481-c1fe" type="selectionEntry"/>
-                <entryLink id="a4c7-3b6f-7972-b9c7" name="Photon Grenades" hidden="false" collective="false" import="true" targetId="ce97-a8d9-f755-476b" type="selectionEntry"/>
+                <entryLink import="true" name="Photon Grenades" hidden="false" id="4cff-7f69-c86d-6ed2" collective="false" targetId="ce97-a8d9-f755-476b" type="selectionEntry"/>
               </entryLinks>
               <costs>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -21025,25 +21025,6 @@ Farsight - Selection</characteristic>
             <infoLink name="XV Pulse Blaster" id="ce6a-464a-e511-d1e9" hidden="false" type="profile" targetId="b1fa-5893-d6a5-7b9e"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Photon Grenades UGL" hidden="false" id="7187-b3c8-73c8-6e13" collective="true">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43ce-5a9e-2ab8-9c36" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="be1e-9fab-3815-ab5f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Photon Grenades" id="1c6b-6e10-b4a3-c060" hidden="false" targetId="8705-54fb-15f7-cc94" type="profile">
-              <modifiers>
-                <modifier type="set" value="24&quot;" field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="37c0-07d8-7554-e1c2" name="Drone List" hidden="false" collective="false" import="true">
@@ -26364,6 +26345,18 @@ Each time a successful hit is made for an attack made with this weapon, if the t
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">If a successful hit is made for an attack made with this weapon against a target without the INORGANIC, VEHICLE or TITANIC keywords, that unit must subtract 1 from any hit rolls made by that unit.
 In addition, if a wound is scored against a target without the INORGANIC, VEHICLE or TITANIC keywords, then until the start of your next Shooting phase, halve the Move characteristic of models in the target unit and subtract 2 from Advance rolls and charge rolls made for that unit.</characteristic>
       </characteristics>
+      <modifiers>
+        <modifier type="set" value="24&quot;" field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="0835-6281-dd67-ef14" shared="true" includeChildSelections="true" childName="Pulse Carbine"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2edc-657d-ea16-fe42" shared="true" includeChildSelections="true" childName="Pulse Carbine"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </profile>
     <profile id="2939-cf79-91a9-1533" name="Twin Ion Rifle (Overcharge)" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
