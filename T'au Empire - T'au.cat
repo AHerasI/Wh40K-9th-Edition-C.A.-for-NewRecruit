@@ -20868,6 +20868,13 @@ Farsight - Selection</characteristic>
             <infoLink id="5117-254f-7a76-a7f1" name="EMP Grenade" hidden="false" targetId="52b7-843a-dadb-0739" type="profile"/>
             <infoLink id="f317-280c-e25f-4ff7" name="Fusion Grenade" hidden="false" targetId="ea12-4073-b065-0a53" type="profile"/>
             <infoLink id="b8de-caed-76ed-f366" name="Grenade weapon profile" hidden="false" targetId="4d69-d626-eb30-fe92" type="rule"/>
+            <infoLink name="Photon Grenades" id="e4b3-4927-2ea6-6662" hidden="false" targetId="8705-54fb-15f7-cc94" type="profile">
+              <modifiers>
+                <modifier type="set" value="24&quot;" field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464"/>
+                <modifier type="set" value="Assault D6" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2"/>
+                <modifier type="set" value="Photon Grenade" field="name"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <costs>
             <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -26357,18 +26364,6 @@ Each time a successful hit is made for an attack made with this weapon, if the t
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">If a successful hit is made for an attack made with this weapon against a target without the INORGANIC, VEHICLE or TITANIC keywords, that unit must subtract 1 from any hit rolls made by that unit.
 In addition, if a wound is scored against a target without the INORGANIC, VEHICLE or TITANIC keywords, then until the start of your next Shooting phase, halve the Move characteristic of models in the target unit and subtract 2 from Advance rolls and charge rolls made for that unit.</characteristic>
       </characteristics>
-      <modifiers>
-        <modifier type="set" value="24&quot;" field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="0835-6281-dd67-ef14" shared="true" includeChildSelections="true" childName="Pulse Carbine"/>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2edc-657d-ea16-fe42" shared="true" includeChildSelections="true" childName="Pulse Carbine"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
     </profile>
     <profile id="2939-cf79-91a9-1533" name="Twin Ion Rifle (Overcharge)" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
