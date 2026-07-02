@@ -1786,9 +1786,6 @@ The table below describes the benefits T&apos;AU EMPIRE models have when shootin
                   </modifiers>
                 </infoLink>
               </infoLinks>
-              <categoryLinks>
-                <categoryLink id="6c5e-a8f1-1f9d-8c3d" name="Ke&apos;lshan Sept" hidden="false" targetId="5a50-8ff7-fba5-2d6e" primary="false"/>
-              </categoryLinks>
               <costs>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                 <cost name="Pts" typeId="points" value="0"/>
@@ -9693,6 +9690,10 @@ In addition, at the end of each Fight phase, if any number of enemy models were 
                         <cost name="Pts" typeId="points" value="0"/>
                         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                       </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2113-98d5-e495-5297" includeChildSelections="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="20a5-946d-8255-5576" includeChildSelections="false"/>
+                      </constraints>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
@@ -20867,7 +20868,7 @@ Farsight - Selection</characteristic>
           <infoLinks>
             <infoLink id="5117-254f-7a76-a7f1" name="EMP Grenade" hidden="false" targetId="52b7-843a-dadb-0739" type="profile"/>
             <infoLink id="f317-280c-e25f-4ff7" name="Fusion Grenade" hidden="false" targetId="ea12-4073-b065-0a53" type="profile"/>
-            <infoLink id="b8de-caed-76ed-f366" name="Grenade weapon profile" hidden="false" targetId="4d69-d626-eb30-fe92" type="rule"/>
+            <infoLink id="b8de-caed-76ed-f366" name="Variable weapon profile" hidden="false" targetId="2dd5-c9f0-aa5a-818a" type="rule"/>
             <infoLink name="Photon Grenades" id="e4b3-4927-2ea6-6662" hidden="false" targetId="8705-54fb-15f7-cc94" type="profile">
               <modifiers>
                 <modifier type="set" value="24&quot;" field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464"/>
