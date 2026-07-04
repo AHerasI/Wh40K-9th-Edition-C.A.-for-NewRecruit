@@ -55872,7 +55872,7 @@ When resolving an attack made with this weapon, a wound roll of 6+ inflicts 1 mo
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9089-8cd1-3608-745c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <profiles>
-            <profile name="Captain Lysander" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="fa45-bbf5-c093-484d">
+            <profile name="Gregor Dessian" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="fa45-bbf5-c093-484d">
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
@@ -55883,16 +55883,6 @@ When resolving an attack made with this weapon, a wound roll of 6+ inflicts 1 mo
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">6</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Walking Fortress" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="c983-b27b-c23b-45e5">
-              <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model has a 3+ invulnerable save.</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Icon of Obstinacy" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="f06c-a062-58e0-cdd6">
-              <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly IMPERIAL FISTS unit is within 6&quot; of this model, each time a Combat Attrition test is taken for that unit, it is automatically passed.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -55906,32 +55896,6 @@ When resolving an attack made with this weapon, a wound roll of 6+ inflicts 1 mo
             <categoryLink name="Angels of Death" hidden="false" id="0b83-e2e4-154a-9207" targetId="a012-6fdf-acc8-0035" primary="false"/>
             <categoryLink name="Chapter" hidden="false" id="128b-7cb5-7ff7-875a" targetId="9a01-bae4-a01d-7e02" primary="false"/>
           </categoryLinks>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Fist of Dorn" hidden="false" id="4990-5b25-11db-d552" collective="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2da6-da38-c0f9-c41d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1fea-6355-8f5a-27dd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Fist of Dorn" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="9456-48d4-e9f3-d588">
-                  <characteristics>
-                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
-                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-                    <characteristic name="S" typeId="59b1-319e-ec13-d466">+6</characteristic>
-                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
-                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
-                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup name="Character definition:" id="e888-2c9b-40bf-010e" hidden="false" collective="false" import="true">
               <entryLinks>
@@ -55955,12 +55919,18 @@ When resolving an attack made with this weapon, a wound roll of 6+ inflicts 1 mo
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Heavy Shield" hidden="false" id="b4a1-f8ce-e954-7ef6" collective="false" targetId="9c4d-08cd-74b3-c5ba" type="selectionEntry"/>
             <entryLink import="true" name="Teleport homer" hidden="false" id="a8f3-7f4e-bb55-0b77" collective="false" targetId="d647-9207-6032-c587" type="selectionEntry">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ac3-ba8f-32bb-244c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Master-crafted Boltstorm Gauntlet" hidden="false" id="d91b-35e0-ae78-34bc" collective="false" targetId="39e5-8d36-f2c6-6413" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f5c6-baeb-6437-6721" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a54f-6898-b43f-c0dd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Storm Shield" hidden="false" id="dc77-3aa2-9d5c-5df8" collective="false" targetId="5d5f-55bb-690a-8737" type="selectionEntry"/>
           </entryLinks>
           <costs>
             <cost name="PL" typeId="e356-c769-5920-6e14" value="8"/>
@@ -55968,6 +55938,9 @@ When resolving an attack made with this weapon, a wound roll of 6+ inflicts 1 mo
             <cost name="Pts" typeId="points" value="155"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Iron Halo" id="59c1-2045-46e6-feba" hidden="false" targetId="44a0-67f0-747f-a5db" type="profile"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
