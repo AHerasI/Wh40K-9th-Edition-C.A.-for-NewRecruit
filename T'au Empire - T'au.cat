@@ -23820,16 +23820,19 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
                   </conditions>
                 </modifier>
                 <modifier type="set" field="e9b9-1180-7949-7f85" value="2">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="09f9-b586-8d63-7635" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="e9b9-1180-7949-7f85" value="3">
                   <conditionGroups>
-                    <conditionGroup type="or">
+                    <conditionGroup type="and">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="roster" childId="cfc5-43e4-b02e-d1f9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="roster" childId="bf67-ed45-5950-955b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="equalTo" value="0" field="selections" scope="roster" childId="a283-177a-bb55-d926" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                       <conditions>
-                        <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fad2-035f-88a7-60c0" type="equalTo"/>
-                        <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e6c7-87a2-73a3-a475" type="equalTo"/>
+                        <condition type="equalTo" value="1" field="selections" scope="roster" childId="09f9-b586-8d63-7635" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -23851,6 +23854,42 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
                       <conditions>
                         <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bf67-ed45-5950-955b" type="equalTo"/>
                         <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a283-177a-bb55-d926" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="3" field="e9b9-1180-7949-7f85">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="roster" childId="cfc5-43e4-b02e-d1f9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="roster" childId="bf67-ed45-5950-955b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="equalTo" value="0" field="selections" scope="roster" childId="a283-177a-bb55-d926" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="roster" childId="fad2-035f-88a7-60c0" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true" childName="4. Onslaught (151-300 Total PL / 3001-6000 Points) "/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="4" field="e9b9-1180-7949-7f85">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="roster" childId="cfc5-43e4-b02e-d1f9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="roster" childId="bf67-ed45-5950-955b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="equalTo" value="0" field="selections" scope="roster" childId="a283-177a-bb55-d926" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="roster" childId="e6c7-87a2-73a3-a475" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true" childName="5. Onslaught++ (301+ Total PL / 6001+ Points) "/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
