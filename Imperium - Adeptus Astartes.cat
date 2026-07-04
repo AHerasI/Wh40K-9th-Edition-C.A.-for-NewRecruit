@@ -55859,6 +55859,116 @@ When resolving an attack made with this weapon, a wound roll of 6+ inflicts 1 mo
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Chapter Master Gregor Dessian" hidden="true" id="ac7b-1d4a-3da1-9728" collective="false">
+          <comment>WT iindomitable</comment>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="55b9-4b5d-3151-41d7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9089-8cd1-3608-745c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Captain Lysander" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="fa45-bbf5-c093-484d">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">6</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">6</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Walking Fortress" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="c983-b27b-c23b-45e5">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model has a 3+ invulnerable save.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Icon of Obstinacy" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="f06c-a062-58e0-cdd6">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly IMPERIAL FISTS unit is within 6&quot; of this model, each time a Combat Attrition test is taken for that unit, it is automatically passed.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="7009-49d0-9363-8bea" targetId="c7b7-edbc-bc14-6238" primary="false"/>
+            <categoryLink name="Faction: Imperium" hidden="false" id="536a-bfbc-2bfd-94ac" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
+            <categoryLink name="Infantry" hidden="false" id="ec0c-4b9d-ccae-d53e" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+            <categoryLink name="Captain" hidden="false" id="ec85-c765-0e42-f38e" targetId="37fe-e3a5-9a4d-0af1" primary="false"/>
+            <categoryLink name="Character" hidden="false" id="6a54-3943-7601-d582" targetId="ef18-746a-369f-43a4" primary="false"/>
+            <categoryLink name="Terminator Armour" hidden="false" id="ada8-1369-599e-7be0" targetId="a85f-24e5-cfc3-9345" primary="false"/>
+            <categoryLink name="Angels of Death" hidden="false" id="0b83-e2e4-154a-9207" targetId="a012-6fdf-acc8-0035" primary="false"/>
+            <categoryLink name="Chapter" hidden="false" id="128b-7cb5-7ff7-875a" targetId="9a01-bae4-a01d-7e02" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Fist of Dorn" hidden="false" id="4990-5b25-11db-d552" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2da6-da38-c0f9-c41d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1fea-6355-8f5a-27dd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Fist of Dorn" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="9456-48d4-e9f3-d588">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">+6</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Character definition:" id="e888-2c9b-40bf-010e" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink import="true" name=" Stratagem: Hero of the Chapter" hidden="false" id="4175-44e9-8d98-ade9" collective="false" targetId="892c-3973-5e7c-80c2" type="selectionEntry"/>
+                <entryLink import="true" name=" Warlord" hidden="false" id="3b80-fd49-3b08-b325" collective="false" targetId="15e7-ffe5-1f1b-384e" type="selectionEntry"/>
+                <entryLink import="true" name="IF: 4. Indomitable" hidden="true" id="b64b-5fd5-34e9-ef2e" collective="false" targetId="8f2c-79ff-f606-3fff" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="15e7-ffe5-1f1b-384e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="892c-3973-5e7c-80c2" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Shield" hidden="false" id="b4a1-f8ce-e954-7ef6" collective="false" targetId="9c4d-08cd-74b3-c5ba" type="selectionEntry"/>
+            <entryLink import="true" name="Teleport homer" hidden="false" id="a8f3-7f4e-bb55-0b77" collective="false" targetId="d647-9207-6032-c587" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ac3-ba8f-32bb-244c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="8"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="Pts" typeId="points" value="155"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Lieutenant Titus" hidden="false" id="dc22-e077-363f-7e7f" type="selectionEntry" targetId="2bf9-ed18-2231-c7d7">
