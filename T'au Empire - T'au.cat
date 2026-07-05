@@ -11000,6 +11000,16 @@ Each time a successful hit is made for an attack made with this weapon, if the t
                 <repeat value="2" repeats="1" field="selections" scope="da96-ab95-0420-eb3e" childId="92eb-cfc6-a173-b738" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Pathfinder w/Carbine"/>
               </repeats>
             </modifier>
+            <modifier type="increment" value="1" field="e356-c769-5920-6e14">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="da96-ab95-0420-eb3e" childId="5b6f-eed3-585b-9159" shared="true" childName="Pathfinder w/Carbine&amp;GL"/>
+                    <condition type="atLeast" value="1" field="selections" scope="da96-ab95-0420-eb3e" childId="919c-9db3-1a22-888d" shared="true" childName="Pathfinder w/Carbine&amp;NSJammer"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
@@ -11078,8 +11088,8 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                 <entryLink id="434c-afdc-6faf-13ea" name="Markerlight" hidden="false" collective="false" import="true" targetId="c907-2075-ec84-e2fb" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="points" value="15"/>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                <cost name="Pts" typeId="points" value="10"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
@@ -11142,8 +11152,8 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                 <entryLink id="fb77-51c4-b8bb-3eef" name="Markerlight" hidden="false" collective="false" import="true" targetId="c907-2075-ec84-e2fb" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="points" value="15"/>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                <cost name="Pts" typeId="points" value="10"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
