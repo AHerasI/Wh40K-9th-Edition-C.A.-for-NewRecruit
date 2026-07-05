@@ -10993,8 +10993,10 @@ Each time a successful hit is made for an attack made with this weapon, if the t
             <modifier type="increment" field="e356-c769-5920-6e14" value="1">
               <repeats>
                 <repeat field="selections" scope="da96-ab95-0420-eb3e" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="92eb-cfc6-a173-b738" repeats="1" roundUp="false" childName="Pathfinder w/Carbine"/>
-                <repeat value="2" repeats="1" field="selections" scope="da96-ab95-0420-eb3e" childId="4394-33d7-3b6d-537d" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Drone"/>
               </repeats>
+              <conditions>
+                <condition type="atLeast" value="4" field="selections" scope="da96-ab95-0420-eb3e" childId="4394-33d7-3b6d-537d" shared="true" childName="Drone"/>
+              </conditions>
             </modifier>
           </modifiers>
         </modifierGroup>
