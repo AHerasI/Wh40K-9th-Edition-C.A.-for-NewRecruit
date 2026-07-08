@@ -13027,7 +13027,7 @@ You cannot purchase this Requisition if doing so would cause your total Power Le
                     <cost name="RP" typeId="ed03-25cc-2681-bdce" value="-1"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="445c-caa6-c870-a061" name="5RP - Experimental Systems" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="445c-caa6-c870-a061" name="5RP - Experimental Systems" hidden="true" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
                       <conditions>
