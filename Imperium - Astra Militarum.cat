@@ -14267,7 +14267,7 @@ A unit can be affected by this hymn once per battle.</characteristic>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5432-0e53-5167-a447" name="Medical Specialist" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="5432-0e53-5167-a447" name="Medical Specialist" hidden="false" collective="false" import="true" type="model">
           <modifierGroups>
             <modifierGroup>
               <comment>IMPERIUM KEYWORDS</comment>
@@ -14382,7 +14382,11 @@ A unit can be affected by this hymn once per battle.</characteristic>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="46d6-1873-4e72-84f7" name="Guardsman" hidden="false" targetId="95f3-d922-1dc7-67d9" type="profile"/>
+            <infoLink id="46d6-1873-4e72-84f7" name="Guardsman" hidden="false" targetId="95f3-d922-1dc7-67d9" type="profile">
+              <modifiers>
+                <modifier type="set" value="Medical specialist Guardsman" field="name"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="d34f-fa97-02c1-88be" name="Regiment" hidden="false" targetId="3aa8-21df-b483-57dd" primary="false"/>
@@ -18815,7 +18819,7 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4eee-38ad-35cc-a011" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="b24e-8733-22c7-6687" name="Company Commander" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="b24e-8733-22c7-6687" name="Company Commander" hidden="false" collective="false" import="true" type="model">
               <modifiers>
                 <modifier type="add" field="category" value="b4b1-c3d9-0382-c906">
                   <conditions>
@@ -18847,7 +18851,7 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="d83e-d38f-073b-c40e" name="Lord Commissar" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="d83e-d38f-073b-c40e" name="Lord Commissar" hidden="false" collective="false" import="true" type="model">
               <modifiers>
                 <modifier type="add" field="category" value="b4b1-c3d9-0382-c906">
                   <conditions>
@@ -22137,7 +22141,7 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c51-c2f1-b9d7-318a" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="1748-2980-5245-3340" name="Regiment Commander" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="1748-2980-5245-3340" name="Regiment Commander" hidden="false" collective="false" import="true" type="model">
               <modifiers>
                 <modifier type="add" field="category" value="b4b1-c3d9-0382-c906">
                   <conditions>
@@ -22170,7 +22174,7 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="59ac-48ba-ed85-9b62" name="Colonel-Commissar" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="59ac-48ba-ed85-9b62" name="Colonel-Commissar" hidden="false" collective="false" import="true" type="model">
               <modifiers>
                 <modifier type="add" field="category" value="b4b1-c3d9-0382-c906">
                   <conditions>
@@ -27805,7 +27809,7 @@ Until the start of your next Psychic phase, each time a ranged attack is made ag
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
       </characteristics>
     </profile>
-    <profile id="95f3-d922-1dc7-67d9" name="Guardsman" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+    <profile id="95f3-d922-1dc7-67d9" name="Guardsman" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <modifierGroups>
         <modifierGroup>
           <modifiers>
