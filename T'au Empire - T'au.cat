@@ -15143,11 +15143,6 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
     </selectionEntry>
     <selectionEntry id="eac2-5dfa-d139-903b" name="XV88 Broadside Battlesuit Team" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="increment" field="e356-c769-5920-6e14" value="1">
-          <conditions>
-            <condition field="selections" scope="eac2-5dfa-d139-903b" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1fc-325a-4b92-bb25" type="equalTo"/>
-          </conditions>
-        </modifier>
         <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
           <conditions>
             <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
@@ -15201,6 +15196,21 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
               <conditions>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e82-c782-b939-36b4" type="equalTo"/>
               </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Drone number</comment>
+          <modifiers>
+            <modifier type="increment" value="1" field="e356-c769-5920-6e14">
+              <repeats>
+                <repeat value="1" repeats="2" field="selections" scope="eac2-5dfa-d139-903b" childId="d542-a842-f2d6-9fa5" shared="true" roundUp="false" includeChildSelections="true" childName="XV88 Broadside Battlesuit"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="e356-c769-5920-6e14">
+              <repeats>
+                <repeat value="1" repeats="2" field="selections" scope="eac2-5dfa-d139-903b" childId="5857-d711-b96e-eb9d" shared="true" roundUp="false" includeChildSelections="true" childName="XV88 Broadside Battlesuit Shas&apos;vre"/>
+              </repeats>
             </modifier>
           </modifiers>
         </modifierGroup>
