@@ -9422,6 +9422,25 @@ In addition, at the end of each Fight phase, if any number of enemy models were 
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="13&quot;" field="0bdf-a96e-9e38-7779">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="148f-59dc-129a-4bb3" shared="true" includeChildSelections="true" childName="Turbo-Jets"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="00ca-f8b8-876d-b705">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4395-6d64-41c4-24ef" shared="true" includeChildSelections="true" childName="Loyal to the End"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile id="1c23-db93-2546-6d5c" name="Vengeance" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
