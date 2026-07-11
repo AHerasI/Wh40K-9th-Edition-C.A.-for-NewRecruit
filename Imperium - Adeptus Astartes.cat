@@ -360,7 +360,6 @@ Whilst the Assault Doctrine is active, models with this tactic consider the Tact
                 <conditionGroup type="and">
                   <conditions>
                     <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f657-aa75-dcf2-df44" type="equalTo"/>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1dd9-df44-90d5-052f" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -485,15 +484,18 @@ Whilst the Assault Doctrine is active, models with this tactic consider the Tact
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
                 <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f657-aa75-dcf2-df44" type="equalTo"/>
-                  </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
                         <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3d52-fccf-10c0-3fae" type="notInstanceOf"/>
                         <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c3b4-a8ae-ce4e-82b6" type="instanceOf"/>
                         <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3d52-fccf-10c0-3fae" type="notInstanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="force" childId="f657-aa75-dcf2-df44" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="equalTo" value="0" field="selections" scope="force" childId="1dd9-df44-90d5-052f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Dark Angels Successor - Custom Succesor Chapter"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3172,9 +3174,9 @@ Each time a BLACK TEMPLARS model from your army makes a melee attack against a P
                 </modifier>
               </modifiers>
               <infoLinks>
-                <infoLink id="f857-93ee-a29e-1e96" name="Sons of the Lion" hidden="false" targetId="7021-4bbd-b252-3853" type="profile">
+                <infoLink name="Sons of the Lion" id="1435-b953-941e-6031" hidden="false" targetId="7021-4bbd-b252-3853" type="profile">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="false"/>
+                    <modifier type="set" value="false" field="hidden"/>
                   </modifiers>
                 </infoLink>
               </infoLinks>
