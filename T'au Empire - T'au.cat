@@ -2635,9 +2635,9 @@ Use this Stratagem at the end of your Movement phase. Select one STEALTH BATTLES
             <selectionEntry id="5ed3-cc98-a0f7-8374" name="2/1CP Drop threat acquisition" hidden="true" collective="false" import="true" type="upgrade">
               <comment>T&apos;au Empire</comment>
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" value="false" field="hidden">
                   <conditions>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e82-c782-b939-36b4" type="equalTo"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="9e82-c782-b939-36b4" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2648,7 +2648,7 @@ Use this Stratagem at the end of your Movement phase. Select one STEALTH BATTLES
                 <profile id="f879-e90c-3e6b-2f58" name="2/1CP Drop threat acquisition" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
                     <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">T’au Empire
-Use this Stratagem in your Movement phase, when a BATTLESUITS unit from your army is set up on the battlefield using the Manta Strike ability or the Homing Beacon action (see Stealth Battlesuits datasheet). Until the end of the turn, each time a BATTLESUIT model in that unit makes a ranged attack, you can re-roll the hit roll. If that unit contains 4 or more BATTLESUIT models, this Stratagem-costs 2CP; otherwise, it costs 1CP.</characteristic>
+Use this Stratagem in your Movement phase, when a BATTLESUITS unit from your army is set up on the battlefield as reinforcements. Until the end of the turn, each time a BATTLESUIT model in that unit makes a ranged attack, you can re-roll the hit roll. If that unit contains 4 or more BATTLESUIT models, this Stratagem-costs 2CP; otherwise, it costs 1CP.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2675,7 +2675,7 @@ Use this Stratagem in your Movement phase, when a BATTLESUITS unit from your arm
                 <profile id="100b-9843-93c8-ae91" name="2/1CP Drop zone clear" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
                     <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Farsight Enclaves
-Use this Stratagem in your Movement phase, when a FARSIGHT ENCLAVES BATTLESUITS unit from your army is set up on the battlefield using the Manta Strike ability or the Homing Beacon action (see Stealth Battlesuits datasheet). Until the end of the turn, each time a BATTLESUIT model in that unit makes a ranged attack, you can re-roll the hit roll and you can re-roll the wound roll. If that unit contains 4 or more BATTLESUIT models, this Stratagem costs 2CP; otherwise, it costs 1CP.</characteristic>
+Use this Stratagem in your Movement phase, when a FARSIGHT ENCLAVES BATTLESUITS unit from your army is set up on the battlefield as reinforcements. Until the end of the turn, each time a BATTLESUIT model in that unit makes a ranged attack, you can re-roll the hit roll and you can re-roll the wound roll. If that unit contains 4 or more BATTLESUIT models, this Stratagem costs 2CP; otherwise, it costs 1CP.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2804,19 +2804,7 @@ Each time you shoot a markerlight, that attack automatically hits the target.</c
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="622d-aa0d-0007-e1aa" name="1CP Uplinked markerlight" hidden="true" collective="false" import="true" type="upgrade">
-              <comment>T&apos;au Empire/Enclaves</comment>
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="70d7-6877-d9ab-20e1" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
+            <selectionEntry id="622d-aa0d-0007-e1aa" name="1CP Uplinked markerlight" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8ca-929d-4d40-73f4" type="max"/>
               </constraints>
