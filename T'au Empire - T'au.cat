@@ -14293,15 +14293,16 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
     </selectionEntry>
     <selectionEntry id="d99f-cadf-14c3-6475" name="XV25 Stealth Battlesuit Team" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="increment" field="e356-c769-5920-6e14" value="1">
-          <conditions>
-            <condition field="selections" scope="d99f-cadf-14c3-6475" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1fc-325a-4b92-bb25" type="equalTo"/>
-          </conditions>
-        </modifier>
         <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
           <conditions>
             <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
           </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="e356-c769-5920-6e14">
+          <comment>Drones</comment>
+          <repeats>
+            <repeat value="2" repeats="1" field="selections" scope="d99f-cadf-14c3-6475" childId="4394-33d7-3b6d-537d" shared="true" roundUp="false" includeChildSelections="true" childName="Drone"/>
+          </repeats>
         </modifier>
       </modifiers>
       <modifierGroups>
@@ -14585,6 +14586,11 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
         <entryLink id="a1d9-ad0e-7afe-c9cd" name="Drones" hidden="false" collective="false" import="true" targetId="d1fc-325a-4b92-bb25" type="selectionEntryGroup">
           <modifiers>
             <modifier type="append" field="name" value=" (0-2)"/>
+            <modifier type="increment" value="2" field="8226-a474-d88d-5112">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="d99f-cadf-14c3-6475" childId="ecc8-3184-f2d0-b3c7" shared="true" roundUp="false" childName="Stealth Team (2-5)" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8226-a474-d88d-5112" type="max"/>
@@ -14601,9 +14607,10 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
     <selectionEntry id="a354-0bcb-66fb-51f3" name="XV8 Crisis Battlesuit Team" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="increment" field="e356-c769-5920-6e14" value="1">
-          <conditions>
-            <condition field="selections" scope="a354-0bcb-66fb-51f3" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1fc-325a-4b92-bb25" type="equalTo"/>
-          </conditions>
+          <comment>Drones</comment>
+          <repeats>
+            <repeat value="2" repeats="1" field="selections" scope="a354-0bcb-66fb-51f3" childId="4394-33d7-3b6d-537d" shared="true" roundUp="false" includeChildSelections="true" childName="Drone"/>
+          </repeats>
         </modifier>
         <modifier type="increment" field="e356-c769-5920-6e14" value="1">
           <conditions>
@@ -14836,6 +14843,11 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
         <entryLink id="de64-efeb-5da2-1988" name="Drones" hidden="false" collective="false" import="true" targetId="d1fc-325a-4b92-bb25" type="selectionEntryGroup">
           <modifiers>
             <modifier type="append" field="name" value=" (0-2)"/>
+            <modifier type="increment" value="2" field="8524-ebe1-a4a4-8dab">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="641f-86b3-0f33-da4a" childId="63b9-f072-2235-da97" shared="true" roundUp="false" childName="XV8 Crisis Battlesuit" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8524-ebe1-a4a4-8dab" type="max"/>
@@ -14865,11 +14877,6 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
       <modifiers>
         <modifier type="increment" field="e356-c769-5920-6e14" value="1">
           <conditions>
-            <condition field="selections" scope="bc15-1ae1-591e-2565" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1fc-325a-4b92-bb25" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" field="e356-c769-5920-6e14" value="1">
-          <conditions>
             <condition field="selections" scope="bc15-1ae1-591e-2565" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f2fa-afa7-fb9c-55b4" type="atLeast"/>
           </conditions>
         </modifier>
@@ -14877,6 +14884,12 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
           <conditions>
             <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
           </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="e356-c769-5920-6e14">
+          <comment>Drones</comment>
+          <repeats>
+            <repeat value="2" repeats="1" field="selections" scope="bc15-1ae1-591e-2565" childId="4394-33d7-3b6d-537d" shared="true" roundUp="false" includeChildSelections="true" childName="Drone"/>
+          </repeats>
         </modifier>
       </modifiers>
       <modifierGroups>
@@ -15116,6 +15129,11 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
         <entryLink id="d713-da98-e932-175d" name="Drones" hidden="false" collective="false" import="true" targetId="d1fc-325a-4b92-bb25" type="selectionEntryGroup">
           <modifiers>
             <modifier type="append" field="name" value=" (0-2)"/>
+            <modifier type="increment" value="2" field="211e-87cf-74e8-871b">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="bc15-1ae1-591e-2565" childId="f8fb-0792-d05a-7919" shared="true" roundUp="false" childName="XV8 Crisis Bodyguard" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="211e-87cf-74e8-871b" type="max"/>
@@ -15147,6 +15165,12 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
           <conditions>
             <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
           </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="e356-c769-5920-6e14">
+          <comment>Drones</comment>
+          <repeats>
+            <repeat value="2" repeats="1" field="selections" scope="eac2-5dfa-d139-903b" childId="4394-33d7-3b6d-537d" shared="true" roundUp="false" includeChildSelections="true" childName="Drone"/>
+          </repeats>
         </modifier>
       </modifiers>
       <modifierGroups>
@@ -15196,21 +15220,6 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
               <conditions>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e82-c782-b939-36b4" type="equalTo"/>
               </conditions>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
-        <modifierGroup type="and">
-          <comment>Drone number</comment>
-          <modifiers>
-            <modifier type="increment" value="1" field="e356-c769-5920-6e14">
-              <repeats>
-                <repeat value="1" repeats="2" field="selections" scope="eac2-5dfa-d139-903b" childId="d542-a842-f2d6-9fa5" shared="true" roundUp="false" includeChildSelections="true" childName="XV88 Broadside Battlesuit"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" value="1" field="e356-c769-5920-6e14">
-              <repeats>
-                <repeat value="1" repeats="2" field="selections" scope="eac2-5dfa-d139-903b" childId="5857-d711-b96e-eb9d" shared="true" roundUp="false" includeChildSelections="true" childName="XV88 Broadside Battlesuit Shas&apos;vre"/>
-              </repeats>
             </modifier>
           </modifiers>
         </modifierGroup>
@@ -15345,6 +15354,11 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
         <entryLink id="c73c-68a6-38de-7c34" name="Drones" hidden="false" collective="false" import="true" targetId="d1fc-325a-4b92-bb25" type="selectionEntryGroup">
           <modifiers>
             <modifier type="append" field="name" value=" (0-2)"/>
+            <modifier type="increment" value="2" field="b9fa-9d85-6c07-fe62">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="eac2-5dfa-d139-903b" childId="d542-a842-f2d6-9fa5" shared="true" roundUp="false" childName="XV88 Broadside Battlesuit" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9fa-9d85-6c07-fe62" type="max"/>
@@ -15360,15 +15374,16 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
     </selectionEntry>
     <selectionEntry id="6960-3f01-2a36-f3cc" name="XV9 Hazard Battlesuit Team" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="increment" field="e356-c769-5920-6e14" value="1">
-          <conditions>
-            <condition field="selections" scope="6960-3f01-2a36-f3cc" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1fc-325a-4b92-bb25" type="equalTo"/>
-          </conditions>
-        </modifier>
         <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
           <conditions>
             <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
           </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="e356-c769-5920-6e14">
+          <comment>Drones</comment>
+          <repeats>
+            <repeat value="2" repeats="1" field="selections" scope="6960-3f01-2a36-f3cc" childId="4394-33d7-3b6d-537d" shared="true" roundUp="false" includeChildSelections="true" childName="Drone"/>
+          </repeats>
         </modifier>
       </modifiers>
       <modifierGroups>
@@ -15570,6 +15585,11 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
         <entryLink id="cb3e-f0dd-6ae4-ae56" name="Drones" hidden="false" collective="false" import="true" targetId="d1fc-325a-4b92-bb25" type="selectionEntryGroup">
           <modifiers>
             <modifier type="append" field="name" value=" (0-2)"/>
+            <modifier type="increment" value="2" field="5c2c-ab31-e5c6-c1c6">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="6960-3f01-2a36-f3cc" childId="c6ac-ffb5-1fbf-6f40" shared="true" roundUp="false" childName="XV9 Hazard Battlesuit" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c2c-ab31-e5c6-c1c6" type="max"/>
@@ -16492,15 +16512,16 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
     </selectionEntry>
     <selectionEntry id="adca-d911-fde7-5b57" name="XV15 Stealth Battlesuit Team" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="increment" field="e356-c769-5920-6e14" value="1">
-          <conditions>
-            <condition field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1fc-325a-4b92-bb25" type="equalTo"/>
-          </conditions>
-        </modifier>
         <modifier type="add" value="f55d-9d66-abc1-f34f" field="category">
           <conditions>
             <condition type="equalTo" value="1" field="selections" scope="force" childId="5ac3-b4a4-82cc-da42" shared="true" includeChildSelections="true" childName="Play Their Part"/>
           </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="e356-c769-5920-6e14">
+          <comment>Drones</comment>
+          <repeats>
+            <repeat value="2" repeats="1" field="selections" scope="adca-d911-fde7-5b57" childId="4394-33d7-3b6d-537d" shared="true" roundUp="false" includeChildSelections="true" childName="Drone"/>
+          </repeats>
         </modifier>
       </modifiers>
       <modifierGroups>
@@ -16783,6 +16804,11 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
         <entryLink id="b0c6-fbd8-05c6-a8fe" name="Drones" hidden="false" collective="false" import="true" targetId="d1fc-325a-4b92-bb25" type="selectionEntryGroup">
           <modifiers>
             <modifier type="append" field="name" value=" (0-2)"/>
+            <modifier type="increment" value="2" field="3a65-30bc-c7b3-8bd7">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="adca-d911-fde7-5b57" childId="8bdf-f782-6420-47a6" shared="true" roundUp="false" childName="Stealth Team (2-5)" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="adca-d911-fde7-5b57" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3a65-30bc-c7b3-8bd7" type="max"/>
