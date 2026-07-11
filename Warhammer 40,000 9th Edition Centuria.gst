@@ -624,17 +624,24 @@ When a INFANTRY or INORGANIC BEAST unit from Faction: Adeptus Mechanicus fires O
     <categoryEntry id="3c95-4bac-d4d4-d0b2" name="Assault Transport" hidden="false">
       <profiles>
         <profile id="c10e-d1d4-14da-d564" name="Assault Transport" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <modifiers>
-            <modifier type="set" field="21befb24-fc85-4f52-a745-64b2e48f8228" value="Units embarked within this TRANSPORT can disembark and make a Normal move, Advance move and Charge even if the TRANSPORT has Moved during this phase.">
-              <comment>Units embarked within this TRANSPORT can disembark and make a Normal move, Advance move and Charge even if the TRANSPORT has Moved during this phase.</comment>
-              <conditions>
-                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d7c1-93c2-0c88-7c3c" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <characteristics>
             <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Units embarked within this TRANSPORT can disembark and either make a Normal move or Charge even if the TRANSPORT has Moved during this phase.</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d7c1-93c2-0c88-7c3c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="Assault Transport (Ramp)" field="name">
+                  <comment>Units embarked within this TRANSPORT can disembark and make a Normal move, Advance move and Charge even if the TRANSPORT has Moved during this phase.</comment>
+                </modifier>
+                <modifier type="set" value="Units embarked within this TRANSPORT can disembark and make a Normal move, Advance move and Charge even if the TRANSPORT has Moved during this phase." field="21befb24-fc85-4f52-a745-64b2e48f8228">
+                  <comment>Units embarked within this TRANSPORT can disembark and make a Normal move, Advance move and Charge even if the TRANSPORT has Moved during this phase.</comment>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
     </categoryEntry>
