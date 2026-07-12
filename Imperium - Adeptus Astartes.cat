@@ -6082,6 +6082,13 @@ GREY KNIGHTS PSYKER units of your army gain a bonus depending on which Tide of t
         <cost name="Pts" typeId="points" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="add" value="1c6f-0311-3eba-3180" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="b69f-4d6a-732b-13be" childId="2fb0-dcdc-8d05-91d2" shared="true" childName="Ancient on Bike" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="6395-78eb-9c4e-0d4c" name="Apothecary" hidden="false" collective="false" import="true" type="unit">
       <modifierGroups>
@@ -6471,6 +6478,13 @@ GREY KNIGHTS PSYKER units of your army gain a bonus depending on which Tide of t
         <cost name="Pts" typeId="points" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="add" value="1c6f-0311-3eba-3180" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="6395-78eb-9c4e-0d4c" childId="3f0e-1a86-1a68-498d" shared="true" childName="Apothecary on Bike" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="0f39-d6d4-de14-8bbc" name="Captain" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
@@ -6484,6 +6498,11 @@ GREY KNIGHTS PSYKER units of your army gain a bonus depending on which Tide of t
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" value="1c6f-0311-3eba-3180" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="0f39-d6d4-de14-8bbc" childId="9e0d-8eb4-ebd7-8dd8" shared="true" childName="Captain on Bike" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
         </modifier>
       </modifiers>
       <modifierGroups>
@@ -7042,6 +7061,11 @@ GREY KNIGHTS PSYKER units of your army gain a bonus depending on which Tide of t
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" value="1c6f-0311-3eba-3180" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="fbda-d60d-7d34-152e" childId="d8c8-10d6-0420-a195" shared="true" childName="Chaplain on Bike" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <modifierGroups>
         <modifierGroup>
@@ -7565,6 +7589,11 @@ GREY KNIGHTS PSYKER units of your army gain a bonus depending on which Tide of t
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" value="1c6f-0311-3eba-3180" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="b858-181f-32a9-317b" childId="ccad-10c2-8c31-a3b9" shared="true" childName="Company Champion on Bike" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
         </modifier>
       </modifiers>
       <modifierGroups>
@@ -8810,6 +8839,11 @@ GREY KNIGHTS PSYKER units of your army gain a bonus depending on which Tide of t
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" value="1c6f-0311-3eba-3180" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="e201-2c28-81e1-2126" childId="d859-14cb-f0a9-5bf0" shared="true" childName="Librarian on Bike" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
         </modifier>
       </modifiers>
       <modifierGroups>
@@ -54856,7 +54890,7 @@ When resolving an attack made with this weapon, a wound roll of 6+ inflicts 1 mo
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="cf00-b6a2-45a4-37c9" name=" Special-Issue Wargear" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="cf00-b6a2-45a4-37c9" name=" Relics &amp; Special-Issue Wargear" hidden="false" collective="false" import="true">
       <modifiers>
         <modifier type="increment" field="3464-d9ea-963f-ce00" value="1">
           <repeats>
@@ -58828,7 +58862,7 @@ This does not increase the range of aura abilities that are psychic powers.</cha
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
-        <selectionEntryGroup id="21d1-8fa6-4190-3ccd" name="Chapter-specific Wargear" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="21d1-8fa6-4190-3ccd" name="Special-Issue Wargear" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a815-55bf-26ef-8411" type="max"/>
           </constraints>
