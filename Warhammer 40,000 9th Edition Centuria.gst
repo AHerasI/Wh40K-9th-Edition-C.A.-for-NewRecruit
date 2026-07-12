@@ -21729,7 +21729,7 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         </profile>
         <profile name="Sicaran [2] (5-7 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="3b71-5f30-2d19-416a">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
@@ -21742,7 +21742,7 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         </profile>
         <profile name="Sicaran [3] (1-4 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="5531-b678-b53a-5213">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">4&quot;</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
@@ -21772,7 +21772,7 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         </profile>
         <profile id="2119-ef6e-9298-d639" name="Rhino [2] (3-5 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">9&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
@@ -21785,7 +21785,7 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         </profile>
         <profile id="819c-0b60-e5ea-2a6c" name="Rhino [3] (1-3 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">3&quot;</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
@@ -21815,7 +21815,7 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         </profile>
         <profile name="Vindicator [2] (3-5 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="15d3-a4fb-3d19-bb38">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">9&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
@@ -21828,7 +21828,7 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         </profile>
         <profile name="Vindicator [3] (1-3 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="eb89-c79d-cc1f-4734">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">3&quot;</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
@@ -21901,7 +21901,7 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         </profile>
         <profile name="Predator [2] (4-6 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="96ff-fb2a-2d2b-fd07">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">9&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
@@ -21914,7 +21914,7 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         </profile>
         <profile name="Predator [3] (1-3 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="07ab-ab62-8ac2-6fbf">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">3&quot;</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
@@ -21987,7 +21987,7 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         </profile>
         <profile name="Land Raider [2] (5-8 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="792a-3bae-ebae-c0cd">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
@@ -22000,7 +22000,7 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         </profile>
         <profile name="Land Raider [3] (1-4 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="0f5d-e8e2-ad3b-ae7a">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">3&quot;</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">4&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
@@ -22030,7 +22030,7 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         </profile>
         <profile name="Kratos [2] (5-9 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="6ce8-2681-68c0-5f06">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
@@ -22043,7 +22043,7 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         </profile>
         <profile name="Kratos [3] (1-4 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="42a0-02a2-7e47-dcec">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">3&quot;</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">4&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
@@ -22116,7 +22116,7 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         </profile>
         <profile name="Fellblade [2] (7-13 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="9bf6-ae82-ce43-80f5">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
@@ -22129,7 +22129,7 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         </profile>
         <profile name="Fellblade [3] (1-6 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="470a-8488-b982-eda7">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">3&quot;</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">4&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
@@ -22159,7 +22159,7 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         </profile>
         <profile name="Arquitor [2] (3-6 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="dfc3-02ba-f323-87a2">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">9&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
@@ -22172,7 +22172,7 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         </profile>
         <profile name="Arquitor [3] (1-3 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="a51d-446e-4f25-a7d0">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">3&quot;</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
