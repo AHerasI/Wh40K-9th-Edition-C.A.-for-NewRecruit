@@ -21712,5 +21712,564 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         </profile>
       </profiles>
     </infoGroup>
+    <infoGroup name="Sicaran Chassis" id="fd29-eac6-3019-528e" hidden="false">
+      <profiles>
+        <profile name="Sicaran [1] (8+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="9823-baf7-0189-5f9a">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">14&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">15</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Sicaran [2] (5-7 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="3b71-5f30-2d19-416a">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">15</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Sicaran [3] (1-4 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="5531-b678-b53a-5213">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">4&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">15</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </infoGroup>
+    <infoGroup id="5315-4845-2fdb-2b07" name="Rhino APC Chassis" hidden="false">
+      <profiles>
+        <profile id="888d-ec49-6e66-9c24" name="Rhino [1] (6+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">10</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2119-ef6e-9298-d639" name="Rhino [2] (3-5 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">10</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="819c-0b60-e5ea-2a6c" name="Rhino [3] (1-3 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">3&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">10</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </infoGroup>
+    <infoGroup name="Vindicator Chassis" id="cebf-f302-f9ae-9172" hidden="false">
+      <profiles>
+        <profile name="Vindicator [1] (6+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="7fad-cc1b-6f9c-b2f6">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">10</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Vindicator [2] (3-5 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="15d3-a4fb-3d19-bb38">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">10</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Vindicator [3] (1-3 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="eb89-c79d-cc1f-4734">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">3&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">10</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </infoGroup>
+    <infoGroup name="Spartan Chassis" id="80ab-2003-b867-26fc" hidden="false">
+      <profiles>
+        <profile name="Spartan [1] (11+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="65f2-efc6-0461-77ac">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">20</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">6</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Spartan [2] (6-10 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="24cd-3814-b621-ebf7">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">20</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">6</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Spartan [3] (1-5 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="2f7c-4167-41af-325a">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">4&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">20</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">6</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </infoGroup>
+    <infoGroup name="Predator Chassis" id="5a9c-3ae2-0347-323d" hidden="false">
+      <profiles>
+        <profile name="Predator [1] (7+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="2d76-4030-8913-32bf">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Predator [2] (4-6 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="96ff-fb2a-2d2b-fd07">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Predator [3] (1-3 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="07ab-ab62-8ac2-6fbf">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">3&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </infoGroup>
+    <infoGroup name="Mastodon Chassis" id="8246-4e6e-2fd4-41d4" hidden="false">
+      <profiles>
+        <profile name="Mastodon [1] (16+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="0833-0ed8-9175-0ab7">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">9</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">30</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">6</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mastodon [2] (8-15 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="943a-38fb-326c-6e8b">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">9</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">30</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D6</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mastodon [3] (1-9 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="2d8c-333f-e20b-5cb2">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">3&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">9</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">30</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </infoGroup>
+    <infoGroup name="Land Raider Chassis" id="6988-55f7-e632-844e" hidden="false">
+      <profiles>
+        <profile name="Land Raider [1] (9+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="a5dd-1f70-ce16-3c22">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">16</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">6</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Land Raider [2] (5-8 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="792a-3bae-ebae-c0cd">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">16</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D6</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Land Raider [3] (1-4 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="0f5d-e8e2-ad3b-ae7a">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">3&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">16</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </infoGroup>
+    <infoGroup name="Kratos Chassis" id="d614-8777-3780-1898" hidden="false">
+      <profiles>
+        <profile name="Kratos [1] (10+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="9771-8a35-62a6-3710">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">18</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">6</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Kratos [2] (5-9 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="6ce8-2681-68c0-5f06">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">18</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D6</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Kratos [3] (1-4 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="42a0-02a2-7e47-dcec">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">3&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">18</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </infoGroup>
+    <infoGroup name="Kharybdis Chassis" id="2175-0b8f-cda3-525f" hidden="false">
+      <profiles>
+        <profile name="Kharybdis Assault Claw [1] (11+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="0747-b675-1483-3d6d">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">15&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">20</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Kharybdis Assault Claw [2] (6-10 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="8efa-6bc5-67de-be45">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">13&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">20</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Kharybdis Assault Claw [3] (1-5 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="d749-a3a4-519d-725e">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">9&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">6+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">20</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </infoGroup>
+    <infoGroup name="Fellblade Chassis" id="4fbf-0648-b108-7e07" hidden="false">
+      <profiles>
+        <profile name="Fellblade [1] (14+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="e3e3-9ebc-bd9a-265d">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">9</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">26</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">6</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Fellblade [2] (7-13 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="9bf6-ae82-ce43-80f5">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">9</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">26</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D6</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Fellblade [3] (1-6 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="470a-8488-b982-eda7">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">3&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">9</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">26</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </infoGroup>
+    <infoGroup name="Arquitor Chassis" id="bae3-e7a8-66c2-8543" hidden="false">
+      <profiles>
+        <profile name="Arquitor [1] (7+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="5fd9-e2ca-9797-2f54">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Arquitor [2] (3-6 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="dfc3-02ba-f323-87a2">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Arquitor [3] (1-3 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="a51d-446e-4f25-a7d0">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">3&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </infoGroup>
+    <infoGroup name="Fire Raptor Chassis" id="a715-bb7e-45c5-4cdf" hidden="false">
+      <profiles>
+        <profile name="Fire Raptor [1] (9+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="c269-c0e8-b818-f478">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20-45&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">18</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">6</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Fire Raptor [2] (4-8 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="cea6-6ea4-c0aa-b2db">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20-35&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">18</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D6</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Fire Raptor [3] (1-3 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="37b1-8364-a70e-7d5b">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20-25&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">18</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </infoGroup>
+    <infoGroup name="Stormeagle Chassis" id="977c-47cd-f970-1089" hidden="false">
+      <profiles>
+        <profile name="Stormeagle Gunship [1] (9+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="3a74-bd4c-d94c-c439">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20-45&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">18</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">6</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Stormeagle Gunship [2] (5-8 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="9b7e-c3f8-3f29-c63b">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20-35&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">18</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D6</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Stormeagle Gunship [3] (1-4 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="916e-7e77-2830-ccdf">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20-25&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">18</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </infoGroup>
   </sharedInfoGroups>
 </gameSystem>
