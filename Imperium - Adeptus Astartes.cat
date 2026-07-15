@@ -4988,7 +4988,6 @@ GREY KNIGHTS PSYKER units of your army gain a bonus depending on which Tide of t
                   </costs>
                 </entryLink>
                 <entryLink id="bae8-2376-6bbd-f8ab" name="Force Weapons" hidden="false" collective="false" import="true" targetId="5779-83cd-891b-d4b9" type="selectionEntryGroup"/>
-                <entryLink id="bd3c-9cc8-a9d8-6b53" name="Hand Weapons" hidden="false" collective="false" import="true" targetId="3001-d1d8-ee6b-0abe" type="selectionEntryGroup"/>
                 <entryLink id="6cc2-d889-5b4e-6683" name="     Character definition:" hidden="false" collective="false" import="true" targetId="f0c3-d131-9300-75ce" type="selectionEntryGroup"/>
                 <entryLink id="255a-1b87-8245-0001" name="Smite" hidden="false" collective="false" import="true" targetId="03fd-db47-5333-1e1f" type="selectionEntry">
                   <constraints>
@@ -5020,6 +5019,81 @@ GREY KNIGHTS PSYKER units of your army gain a bonus depending on which Tide of t
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Hand Weapons" id="dc01-339a-3c42-181f" hidden="false" collective="false" import="true" defaultSelectionEntryId="ef28-5e64-47d7-2463">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a8a-fc31-f5f1-43e3" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b81d-f2c0-326c-e8e4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Helfrost pistol" hidden="true" id="3ebe-ba2c-8536-ef0b" collective="false">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="force" childId="3fde-546f-54d3-9266" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                                <condition type="atLeast" value="1" field="selections" scope="force" childId="fd82-de03-6ee0-61e8" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                      <profiles>
+                        <profile name="Helfrost pistol (Dispersed)" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="ebf1-d4a7-0202-fa6a">
+                          <characteristics>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+                            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol D3</characteristic>
+                            <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
+                          </characteristics>
+                        </profile>
+                        <profile name="Helfrost pistol (Focused)" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="429d-0714-e1a5-5b0c">
+                          <characteristics>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+                            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol 1</characteristic>
+                            <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
+                            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
+                            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Helfrost weapon profile" id="2039-ff4f-6e96-f692" hidden="false" targetId="4ef9-7104-9097-df89" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="Pts" typeId="points" value="5"/>
+                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <entryLinks>
+                    <entryLink import="true" name="Bolt pistol" hidden="false" id="ef28-5e64-47d7-2463" collective="false" targetId="0334-f487-8229-0c1a" type="selectionEntry"/>
+                    <entryLink import="true" name="Grav-Pistol" hidden="false" id="b348-9cc8-2e41-a932" collective="false" targetId="7b66-cac7-e582-a518" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="points" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Hand Flamer" hidden="false" id="f9fe-224b-d021-2645" collective="false" targetId="7d34-2164-8036-b626" type="selectionEntry"/>
+                    <entryLink import="true" name="Heavy Bolt Pistol" hidden="false" id="0c86-8286-0d06-aaf3" collective="false" targetId="1165-a7ea-918c-d49b" type="selectionEntry"/>
+                    <entryLink import="true" name="Plasma pistol" hidden="false" id="95d0-d0c1-c378-54d3" collective="false" targetId="83be-1ba9-c326-4760" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="points" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Inferno pistol" hidden="false" id="884c-fa09-6900-fdb8" collective="false" targetId="83f0-56d1-b852-f21c" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="points" value="5"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -7143,11 +7217,6 @@ GREY KNIGHTS PSYKER units of your army gain a bonus depending on which Tide of t
                     <cost name="pts" typeId="points" value="10"/>
                   </costs>
                 </entryLink>
-                <entryLink id="f57e-0f58-ec95-b59a" name="Hand Weapons" hidden="false" collective="false" import="true" targetId="3001-d1d8-ee6b-0abe" type="selectionEntryGroup">
-                  <entryLinks>
-                    <entryLink id="9be4-5940-4a17-cf7c" name="Absolver Bolt Pistol" hidden="false" collective="false" import="true" targetId="049f-34bf-aec1-a722" type="selectionEntry"/>
-                  </entryLinks>
-                </entryLink>
                 <entryLink id="8a2c-e813-0339-74df" name="Crozius arcanum" hidden="false" collective="false" import="true" targetId="7543-5a4e-0f59-bacc" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f62-be9b-bc21-b2fa" type="max"/>
@@ -7161,6 +7230,34 @@ GREY KNIGHTS PSYKER units of your army gain a bonus depending on which Tide of t
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Hand Weapons" id="f552-cc0a-f159-8b8f" hidden="false" collective="false" import="true" defaultSelectionEntryId="afc2-9abb-3e27-2777">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fbab-a61e-3e1e-7b94" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4f22-e7d6-e9a4-74a8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Bolt pistol" hidden="false" id="afc2-9abb-3e27-2777" collective="false" targetId="0334-f487-8229-0c1a" type="selectionEntry"/>
+                    <entryLink import="true" name="Grav-Pistol" hidden="false" id="b72a-09da-4641-0573" collective="false" targetId="7b66-cac7-e582-a518" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="points" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Hand Flamer" hidden="false" id="eb0e-1d9c-97ed-3056" collective="false" targetId="7d34-2164-8036-b626" type="selectionEntry"/>
+                    <entryLink import="true" name="Heavy Bolt Pistol" hidden="false" id="1223-4f0a-68a1-e12b" collective="false" targetId="1165-a7ea-918c-d49b" type="selectionEntry"/>
+                    <entryLink import="true" name="Plasma pistol" hidden="false" id="5add-e0b2-017c-42a2" collective="false" targetId="83be-1ba9-c326-4760" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="points" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Inferno pistol" hidden="false" id="1e9b-9be7-051c-6443" collective="false" targetId="83f0-56d1-b852-f21c" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="points" value="5"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
             <selectionEntry id="1e04-0202-106c-8789" name="Chaplain Terminator Armour" hidden="false" collective="false" import="true" type="model">
               <modifierGroups>
@@ -7225,7 +7322,7 @@ GREY KNIGHTS PSYKER units of your army gain a bonus depending on which Tide of t
               <entryLinks>
                 <entryLink id="8b18-96f7-5b75-e0b9" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
                 <entryLink id="6a49-9cd0-09b0-6994" name="Twin Boltgun" hidden="false" collective="false" import="true" targetId="2937-5790-7ad5-df1e" type="selectionEntry"/>
-                <entryLink id="a426-12a5-b42b-e94a" name="Hand Weapons" hidden="false" collective="false" import="true" targetId="3001-d1d8-ee6b-0abe" type="selectionEntryGroup">
+                <entryLink id="a426-12a5-b42b-e94a" name="Hand Weapons" hidden="false" collective="false" import="true" targetId="f552-cc0a-f159-8b8f" type="selectionEntryGroup">
                   <entryLinks>
                     <entryLink id="34ab-a425-bfc2-8989" name="Absolver Bolt Pistol" hidden="false" collective="false" import="true" targetId="049f-34bf-aec1-a722" type="selectionEntry"/>
                   </entryLinks>
@@ -8987,7 +9084,7 @@ GREY KNIGHTS PSYKER units of your army gain a bonus depending on which Tide of t
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Hand Weapons" id="2664-eebf-fa7e-c2c0" hidden="false" collective="false" import="true" defaultSelectionEntryId="fbc8-84ad-99ed-76b1">
+                <selectionEntryGroup name="Hand Weapons" id="2664-eebf-fa7e-c2c0" hidden="false" collective="false" import="true" defaultSelectionEntryId="faef-04f8-d7fc-c502">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6180-7173-de46-97a1" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6686-e6e5-bff1-c5f0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
