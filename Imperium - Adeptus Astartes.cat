@@ -8979,7 +8979,6 @@ GREY KNIGHTS PSYKER units of your army gain a bonus depending on which Tide of t
                   </costs>
                 </entryLink>
                 <entryLink id="7daa-659d-4749-6102" name="Force Weapons" hidden="false" collective="false" import="true" targetId="5779-83cd-891b-d4b9" type="selectionEntryGroup"/>
-                <entryLink id="2ed7-2616-0ea0-4903" name="Hand Weapons" hidden="false" collective="false" import="true" targetId="3001-d1d8-ee6b-0abe" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
                 <cost name="Pts" typeId="points" value="100"/>
@@ -8987,6 +8986,34 @@ GREY KNIGHTS PSYKER units of your army gain a bonus depending on which Tide of t
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Hand Weapons" id="2664-eebf-fa7e-c2c0" hidden="false" collective="false" import="true" defaultSelectionEntryId="fbc8-84ad-99ed-76b1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6180-7173-de46-97a1" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6686-e6e5-bff1-c5f0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Bolt pistol" hidden="false" id="faef-04f8-d7fc-c502" collective="false" targetId="0334-f487-8229-0c1a" type="selectionEntry"/>
+                    <entryLink import="true" name="Grav-Pistol" hidden="false" id="7ea7-6a34-cdc6-d479" collective="false" targetId="7b66-cac7-e582-a518" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="points" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Hand Flamer" hidden="false" id="6afc-091a-44ab-8055" collective="false" targetId="7d34-2164-8036-b626" type="selectionEntry"/>
+                    <entryLink import="true" name="Heavy Bolt Pistol" hidden="false" id="9683-4770-ae12-df0d" collective="false" targetId="1165-a7ea-918c-d49b" type="selectionEntry"/>
+                    <entryLink import="true" name="Plasma pistol" hidden="false" id="40ee-aa2f-bb83-98ec" collective="false" targetId="83be-1ba9-c326-4760" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="points" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Inferno pistol" hidden="false" id="2fdc-351c-c8b1-6091" collective="false" targetId="83f0-56d1-b852-f21c" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="points" value="5"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
             <selectionEntry id="8cdd-80f3-87f3-d060" name="Librarian in Phobos Armour" hidden="false" collective="false" import="true" type="model">
               <modifierGroups>
@@ -9056,7 +9083,7 @@ GREY KNIGHTS PSYKER units of your army gain a bonus depending on which Tide of t
                   </constraints>
                 </entryLink>
                 <entryLink id="7a79-414f-cf09-4b38" name="Force Weapons" hidden="false" collective="false" import="true" targetId="5779-83cd-891b-d4b9" type="selectionEntryGroup"/>
-                <entryLink id="96bb-49d8-e2bb-cdd2" name="Hand Weapons" hidden="false" collective="false" import="true" targetId="3001-d1d8-ee6b-0abe" type="selectionEntryGroup"/>
+                <entryLink id="96bb-49d8-e2bb-cdd2" name="Hand Weapons" hidden="false" collective="false" import="true" targetId="2664-eebf-fa7e-c2c0" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
                 <cost name="Pts" typeId="points" value="100"/>
