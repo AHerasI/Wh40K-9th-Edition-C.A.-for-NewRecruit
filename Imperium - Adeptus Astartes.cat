@@ -16741,13 +16741,18 @@ While an enemy unit is within 3&quot; of this unit, it loses the Objective Secur
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Weapon" id="83af-f927-dbd1-6618" hidden="false" defaultSelectionEntryId="9137-8e84-84d3-e0ce">
+            <selectionEntryGroup name="Weapon" id="83af-f927-dbd1-6618" hidden="false" defaultSelectionEntryId="9137-8e84-84d3-e0ce" flatten="true">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="00d0-d696-748a-0fbd" includeChildSelections="false"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="941a-d62a-49e1-adf1" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Bolt carbine" hidden="false" id="9137-8e84-84d3-e0ce" type="selectionEntry" targetId="1cab-7778-6af4-e3e6"/>
+                <entryLink import="true" name="Bolt carbine" hidden="false" id="9137-8e84-84d3-e0ce" type="selectionEntry" targetId="1cab-7778-6af4-e3e6">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e096-03f1-5ece-3749" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f0e6-92f2-492e-ac48" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
