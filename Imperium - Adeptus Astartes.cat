@@ -16727,13 +16727,18 @@ While an enemy unit is within 3&quot; of this unit, it loses the Objective Secur
           </infoLinks>
           <entryLinks>
             <entryLink id="b398-d787-907d-033c" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
-            <entryLink id="8bb8-724c-cd29-130a" name="Bolt carbine" hidden="false" collective="false" import="true" targetId="6517-8724-e365-2975" type="selectionEntry"/>
             <entryLink id="d3ba-cb27-772c-4679" name="Combat knife" hidden="false" collective="false" import="true" targetId="92e8-af3a-fe14-06c1" type="selectionEntry">
               <infoLinks>
                 <infoLink id="6bd4-272f-801f-9293" name="Off-hand weapon" hidden="false" targetId="e14b-37da-f8e9-1752" type="profile"/>
               </infoLinks>
             </entryLink>
             <entryLink id="23a9-c6b3-c402-609e" name="Combat knife" hidden="false" collective="false" import="true" targetId="92e8-af3a-fe14-06c1" type="selectionEntry"/>
+            <entryLink import="true" name="Bolt carbine" hidden="false" id="9137-8e84-84d3-e0ce" type="selectionEntry" targetId="1cab-7778-6af4-e3e6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9edd-ad19-80ca-02be" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cf17-edfb-cfc0-e03f" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -64682,7 +64687,7 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
       </characteristics>
     </profile>
-    <profile id="9cac-a899-a7f2-144e" name="Marine Sergeant" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+    <profile id="9cac-a899-a7f2-144e" name="Marine Sergeant" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
         <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
         <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
