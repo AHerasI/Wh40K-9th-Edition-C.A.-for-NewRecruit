@@ -16733,12 +16733,6 @@ While an enemy unit is within 3&quot; of this unit, it loses the Objective Secur
               </infoLinks>
             </entryLink>
             <entryLink id="23a9-c6b3-c402-609e" name="Combat knife" hidden="false" collective="false" import="true" targetId="92e8-af3a-fe14-06c1" type="selectionEntry"/>
-            <entryLink import="true" name="Bolt carbine" hidden="false" id="9137-8e84-84d3-e0ce" type="selectionEntry" targetId="1cab-7778-6af4-e3e6">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9edd-ad19-80ca-02be" includeChildSelections="false"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cf17-edfb-cfc0-e03f" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
           </entryLinks>
           <costs>
             <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -16746,6 +16740,17 @@ While an enemy unit is within 3&quot; of this unit, it loses the Objective Secur
             <cost name="Pts" typeId="points" value="20"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapon" id="83af-f927-dbd1-6618" hidden="false" defaultSelectionEntryId="9137-8e84-84d3-e0ce" flatten="true">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="00d0-d696-748a-0fbd" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="941a-d62a-49e1-adf1" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Bolt carbine" hidden="false" id="9137-8e84-84d3-e0ce" type="selectionEntry" targetId="1cab-7778-6af4-e3e6"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
         <selectionEntry id="419a-6a9a-5d3a-a2e8" name="Reiver" hidden="false" collective="false" import="true" type="model">
           <constraints>
