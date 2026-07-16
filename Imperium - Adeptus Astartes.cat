@@ -17071,7 +17071,7 @@ While an enemy unit is within 3&quot; of this unit, it loses the Objective Secur
       <profiles>
         <profile id="1b98-8077-63a0-1ad4" name="Suppressing Fire" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a model in this unit makes an attack with an accelerator autocannon against an enemy INFANTRY, BEAST or SWARM unit, if a hit is scored, that enemy unit cannot fire overwatch this turn.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a model in this unit makes an attack with an Accelerator Autocannon or Heavy Bolter against an enemy INFANTRY, BEAST or SWARM unit, if a hit is scored, that enemy unit cannot fire overwatch this turn.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -17100,19 +17100,41 @@ While an enemy unit is within 3&quot; of this unit, it loses the Objective Secur
             <entryLink id="0507-6a24-1385-43cb" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
             <entryLink id="0919-998f-c7e3-f618" name="Combat knife" hidden="false" collective="false" import="true" targetId="92e8-af3a-fe14-06c1" type="selectionEntry"/>
             <entryLink id="8d58-c053-a7ed-59ed" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="1da2-aaf4-c4eb-f218" type="selectionEntry"/>
-            <entryLink id="dd30-79b9-9d3b-7d64" name="Accelerator Autocannon" hidden="false" collective="false" import="true" targetId="6021-d5c1-f76f-f63b" type="selectionEntry"/>
           </entryLinks>
           <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+            <cost name="Pts" typeId="points" value="30"/>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="35"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapon option" id="8ad9-d675-e0da-7c07" hidden="false" defaultSelectionEntryId="d112-df50-14a0-49b6">
+              <entryLinks>
+                <entryLink import="true" name="Accelerator Autocannon" hidden="false" id="d112-df50-14a0-49b6" collective="false" targetId="f6b3-5bea-1329-8a76" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="points" value="10"/>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Heavy Bolter" hidden="false" id="8654-c42c-c443-5e20" collective="false" targetId="05ab-e7cc-e856-c36f" type="selectionEntry"/>
+                <entryLink import="true" name="Hellstorm Bolter" hidden="false" id="2f9f-ed3e-8957-69e5" collective="false" targetId="de1b-9cbd-91e0-e99f" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="points" value="5"/>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70a2-8e0f-d765-bdaa" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f82a-bc9f-909a-793c" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
         <selectionEntry id="6e6d-7b80-6606-2f90" name="Suppressor" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="706b-6fd9-de21-7a67" type="min"/>
-            <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a1c-b322-c07f-0eee" type="max"/>
+            <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a1c-b322-c07f-0eee" type="max"/>
           </constraints>
           <infoLinks>
             <infoLink id="5fa3-e0fd-7b82-2dd8" name="Marine" hidden="false" targetId="fb3e-dcd4-5bf3-dc44" type="profile">
@@ -17122,15 +17144,15 @@ While an enemy unit is within 3&quot; of this unit, it loses the Objective Secur
             </infoLink>
           </infoLinks>
           <entryLinks>
-            <entryLink id="d112-df50-14a0-49b6" name="Accelerator Autocannon" hidden="false" collective="false" import="true" targetId="6021-d5c1-f76f-f63b" type="selectionEntry"/>
             <entryLink id="21b5-5f33-1a59-9b4a" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="1da2-aaf4-c4eb-f218" type="selectionEntry"/>
             <entryLink id="cad1-bcc7-d977-e89d" name="Combat knife" hidden="false" collective="false" import="true" targetId="92e8-af3a-fe14-06c1" type="selectionEntry"/>
             <entryLink id="4a87-3de3-a8b0-3bd4" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
+            <entryLink import="true" name="Weapon option" hidden="false" id="f5ac-827b-9072-146f" type="selectionEntryGroup" targetId="8ad9-d675-e0da-7c07"/>
           </entryLinks>
           <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+            <cost name="Pts" typeId="points" value="30"/>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="35"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
         </selectionEntry>
@@ -17162,6 +17184,18 @@ While an enemy unit is within 3&quot; of this unit, it loses the Objective Secur
           </constraints>
         </entryLink>
         <entryLink id="20b7-8f39-d7ac-e505" name=" Unit Stratagems" hidden="false" collective="false" import="true" targetId="d61c-e623-078d-6f74" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Requisition of Special-Issue Ammunition: Heavy Boltgun Ammo" hidden="true" id="9aa7-59fc-6b89-18ef" collective="false" targetId="6c6b-a1de-e695-c3f3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="b3c0-69fa-86d1-490c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f059-4bfe-ec7b-e466" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -61353,6 +61387,7 @@ By default, standard ammo will be shot (no changes to the weapon&apos;s profile)
         <entryLink id="f6a3-691b-2295-f44d" name="Lascannon" hidden="false" collective="false" import="true" targetId="a908-4664-11cd-f8b2" type="selectionEntry">
           <costs>
             <cost name="pts" typeId="points" value="15"/>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
           </costs>
         </entryLink>
         <entryLink id="baeb-4f16-be21-c916" name="Missile launcher" hidden="false" collective="false" import="true" targetId="1469-1964-7a91-94d4" type="selectionEntry"/>
@@ -61364,6 +61399,7 @@ By default, standard ammo will be shot (no changes to the weapon&apos;s profile)
         <entryLink id="bbff-0377-c812-36ce" name="Plasma cannon" hidden="false" collective="false" import="true" targetId="eb15-db61-5d4f-b65e" type="selectionEntry">
           <costs>
             <cost name="pts" typeId="points" value="15"/>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
           </costs>
         </entryLink>
         <entryLink id="80a4-ce10-c718-246b" name="Heavy Flamer" hidden="true" collective="false" import="true" targetId="18bc-b335-29c2-2ae2" type="selectionEntry">
