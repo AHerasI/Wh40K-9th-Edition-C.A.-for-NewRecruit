@@ -9729,51 +9729,6 @@ GREY KNIGHTS PSYKER units of your army gain a bonus depending on which Tide of t
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1534-31bb-5cf2-bd61" name="Tactical Marine w/Grenade Laucher" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80bf-bf35-92ea-e801" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="df32-6834-7cda-7e2d" name="Marine" hidden="false" targetId="fb3e-dcd4-5bf3-dc44" type="profile"/>
-                <infoLink id="ed0f-0488-8e89-9122" name="Grenade weapon profile" hidden="false" targetId="4d69-d626-eb30-fe92" type="rule"/>
-                <infoLink id="1119-6264-8ce1-014d" name="Combined weapon" hidden="false" targetId="18d3-6068-7f55-0d0a" type="rule"/>
-              </infoLinks>
-              <selectionEntries>
-                <selectionEntry id="badb-43a1-4edf-e96e" name="Combi-Boltgun (GL)" hidden="false" collective="true" import="true" type="upgrade">
-                  <infoLinks>
-                    <infoLink id="1a2b-cb98-56da-f568" name="Boltgun" hidden="false" targetId="3d4b-95ea-f860-dd22" type="profile">
-                      <modifiers>
-                        <modifier type="set" field="name" value="Combi-Boltgun"/>
-                      </modifiers>
-                    </infoLink>
-                    <infoLink id="4425-6e32-867c-6856" name="Grenade launcher, Frag grenade" hidden="false" targetId="3735-f76f-f06c-1d71" type="profile">
-                      <modifiers>
-                        <modifier type="set" field="name" value="Underbarrel GL, Frag grenade"/>
-                      </modifiers>
-                    </infoLink>
-                    <infoLink id="b577-123c-5005-a4b4" name="Grenade launcher, Krak grenade" hidden="false" targetId="ac6d-bf1b-73d0-e6af" type="profile">
-                      <modifiers>
-                        <modifier type="set" field="name" value="Underbarrel GL, Krak grenade"/>
-                      </modifiers>
-                    </infoLink>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b19-7fc3-92a5-d5c6" includeChildSelections="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c63-f855-75c5-82c6" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
-              <entryLinks>
-                <entryLink id="2218-3bc0-18f3-b3bc" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
-                <entryLink id="9bdf-bea3-799d-2ea2" name="Combat knife" hidden="false" collective="false" import="true" targetId="92e8-af3a-fe14-06c1" type="selectionEntry"/>
-              </entryLinks>
-              <costs>
-                <cost name="Pts" typeId="points" value="25"/>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="b78f-c0f6-aedb-6380" name="Tactical Marine w/Stalker" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a70e-a02a-acd6-9cf6" type="max"/>
@@ -9808,35 +9763,91 @@ GREY KNIGHTS PSYKER units of your army gain a bonus depending on which Tide of t
               </constraints>
               <selectionEntries>
                 <selectionEntry id="bf61-1e98-fc9f-6c2d" name="Tactical Space Marine w/Special weapon" hidden="false" collective="false" import="true" type="model">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7967-9fbb-67dd-7880" type="max"/>
-                  </constraints>
                   <infoLinks>
                     <infoLink id="8871-73a8-b096-748e" name="Marine" hidden="false" targetId="fb3e-dcd4-5bf3-dc44" type="profile"/>
                   </infoLinks>
                   <entryLinks>
                     <entryLink id="edae-870a-287d-e334" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
                     <entryLink id="6983-0efe-0d24-8c40" name="Combat knife" hidden="false" collective="false" import="true" targetId="92e8-af3a-fe14-06c1" type="selectionEntry"/>
-                    <entryLink id="9402-1cdc-aba0-93cb" name="Special Weapons" hidden="false" collective="false" import="true" targetId="e54d-6d58-bfac-50a4" type="selectionEntryGroup"/>
-                  </entryLinks>
-                  <costs>
-                    <cost name="Pts" typeId="points" value="20"/>
-                    <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
-                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="f941-b0b6-7958-ac2a" name="Tactical Space Marine w/Heavy weapon" hidden="false" collective="false" import="true" type="model">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4507-18a4-714f-2570" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="0eea-b084-631f-6cbc" name="Marine" hidden="false" targetId="fb3e-dcd4-5bf3-dc44" type="profile"/>
-                  </infoLinks>
-                  <entryLinks>
-                    <entryLink id="2b2e-b631-eb34-2ea2" name="Combat knife" hidden="false" collective="false" import="true" targetId="92e8-af3a-fe14-06c1" type="selectionEntry"/>
-                    <entryLink id="0d27-84a1-5df8-1a04" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
-                    <entryLink id="2692-e3c7-009f-9eed" name="Heavy Weapons" hidden="false" collective="false" import="true" targetId="de06-e4a5-4cd0-4d94" type="selectionEntryGroup"/>
+                    <entryLink id="9402-1cdc-aba0-93cb" name="Special Weapons" hidden="false" collective="false" import="true" targetId="e54d-6d58-bfac-50a4" type="selectionEntryGroup">
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Combi-Boltgun (GL)" hidden="false" id="badb-43a1-4edf-e96e">
+                          <infoLinks>
+                            <infoLink name="Boltgun" id="1a2b-cb98-56da-f568" hidden="false" targetId="3d4b-95ea-f860-dd22" type="profile">
+                              <modifiers>
+                                <modifier type="set" value="Combi-Boltgun" field="name"/>
+                              </modifiers>
+                            </infoLink>
+                            <infoLink name="Grenade launcher, Frag grenade" id="4425-6e32-867c-6856" hidden="false" targetId="3735-f76f-f06c-1d71" type="profile">
+                              <modifiers>
+                                <modifier type="set" value="Underbarrel GL, Frag grenade" field="name"/>
+                              </modifiers>
+                            </infoLink>
+                            <infoLink name="Grenade launcher, Krak grenade" id="b577-123c-5005-a4b4" hidden="false" targetId="ac6d-bf1b-73d0-e6af" type="profile">
+                              <modifiers>
+                                <modifier type="set" value="Underbarrel GL, Krak grenade" field="name"/>
+                              </modifiers>
+                            </infoLink>
+                            <infoLink name="Grenade weapon profile" id="ed0f-0488-8e89-9122" hidden="false" targetId="4d69-d626-eb30-fe92" type="rule"/>
+                            <infoLink name="Combined weapon" id="1119-6264-8ce1-014d" hidden="false" targetId="18d3-6068-7f55-0d0a" type="rule"/>
+                          </infoLinks>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b19-7fc3-92a5-d5c6" includeChildSelections="false"/>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c63-f855-75c5-82c6" includeChildSelections="false"/>
+                          </constraints>
+                          <costs>
+                            <cost name="Pts" typeId="points" value="5"/>
+                            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                      </selectionEntries>
+                      <entryLinks>
+                        <entryLink import="true" name="Grav-Cannon" hidden="false" id="0597-3c31-91e7-5b54" collective="false" targetId="2f3b-2b38-8060-efc7" type="selectionEntry">
+                          <costs>
+                            <cost name="pts" typeId="points" value="5"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Heavy Bolter" hidden="false" id="dd44-9e39-1d15-c469" collective="false" targetId="05ab-e7cc-e856-c36f" type="selectionEntry"/>
+                        <entryLink import="true" name="Heavy Flamer" hidden="true" id="67c4-19fd-9c99-594f" collective="false" targetId="18bc-b335-29c2-2ae2" type="selectionEntry">
+                          <modifiers>
+                            <modifier type="set" value="false" field="hidden">
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="8e40-91b4-9458-8d68" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d29c-a288-fa27-2ac5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="force" childId="897f-25a8-7032-e0f4" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="force" childId="a1be-ee90-b5b3-388d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </modifier>
+                          </modifiers>
+                          <costs>
+                            <cost name="Pts" typeId="points" value="5"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Hellstorm Bolter" hidden="false" id="7343-fd96-f051-529d" collective="false" targetId="de1b-9cbd-91e0-e99f" type="selectionEntry"/>
+                        <entryLink import="true" name="Lascannon" hidden="false" id="c375-7b01-b9dc-2f75" collective="false" targetId="a908-4664-11cd-f8b2" type="selectionEntry">
+                          <costs>
+                            <cost name="pts" typeId="points" value="15"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Missile launcher" hidden="false" id="9a34-6b3c-6fc3-5dfc" collective="false" targetId="1469-1964-7a91-94d4" type="selectionEntry"/>
+                        <entryLink import="true" name="Multi-melta" hidden="false" id="5738-5c1a-b064-9a6d" collective="false" targetId="2b37-65ee-9443-b4ef" type="selectionEntry">
+                          <costs>
+                            <cost name="pts" typeId="points" value="10"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Plasma cannon" hidden="false" id="9372-5a35-6eba-0a51" collective="false" targetId="eb15-db61-5d4f-b65e" type="selectionEntry">
+                          <costs>
+                            <cost name="pts" typeId="points" value="15"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                    </entryLink>
                   </entryLinks>
                   <costs>
                     <cost name="Pts" typeId="points" value="20"/>
