@@ -12695,8 +12695,34 @@ Additionaly, each unmodified hit roll of 6 made for this Infiltrator unit&apos;s
             </entryLink>
             <entryLink id="34bb-55b1-9fc1-817d" name="Terminator Ranged Weapons" hidden="false" collective="false" import="true" targetId="9cd7-6dde-f01f-7813" type="selectionEntryGroup">
               <entryLinks>
-                <entryLink id="5891-dd14-0e7e-4877" name="Cyclone Missile launcher and Storm Bolter" hidden="false" collective="false" import="true" targetId="5e03-9ac7-323a-ec6f" type="selectionEntry"/>
-                <entryLink id="1ca8-b3d3-88f7-a1d6" name="Assault cannon" hidden="false" collective="false" import="true" targetId="51b0-3d46-5af4-683e" type="selectionEntry"/>
+                <entryLink id="5891-dd14-0e7e-4877" name="Cyclone Missile launcher and Storm Bolter" hidden="false" collective="false" import="true" targetId="5e03-9ac7-323a-ec6f" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="parent" childId="5b68-23b9-23ef-150f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="717b-5a20-7089-0ed3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="1ca8-b3d3-88f7-a1d6" name="Assault cannon" hidden="false" collective="false" import="true" targetId="51b0-3d46-5af4-683e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="parent" childId="5b68-23b9-23ef-150f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="717b-5a20-7089-0ed3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
                 <entryLink id="1352-0640-b20b-85ba" name="Heavy Flamer" hidden="true" collective="false" import="true" targetId="18bc-b335-29c2-2ae2" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
@@ -12704,23 +12730,69 @@ Additionaly, each unmodified hit roll of 6 made for this Infiltrator unit&apos;s
                         <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4108-a6f8-f259-35d5" type="equalTo"/>
                       </conditions>
                     </modifier>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="parent" childId="5b68-23b9-23ef-150f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="717b-5a20-7089-0ed3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
                   </modifiers>
                 </entryLink>
                 <entryLink id="062e-d99e-804f-fd79" name="Multi-melta" hidden="false" collective="false" import="true" targetId="2b37-65ee-9443-b4ef" type="selectionEntry">
                   <costs>
                     <cost name="pts" typeId="points" value="10"/>
                   </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="parent" childId="5b68-23b9-23ef-150f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="717b-5a20-7089-0ed3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
                 <entryLink id="41bc-3e9a-f5be-6dec" name="Plasma cannon" hidden="false" collective="false" import="true" targetId="eb15-db61-5d4f-b65e" type="selectionEntry">
                   <costs>
                     <cost name="pts" typeId="points" value="15"/>
                     <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
                   </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="parent" childId="5b68-23b9-23ef-150f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="717b-5a20-7089-0ed3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
                 <entryLink id="65a1-a39a-8ff6-7468" name="Reaper Autocannon" hidden="false" collective="false" import="true" targetId="5ab4-1ee7-95ad-7e15" type="selectionEntry">
                   <costs>
                     <cost name="pts" typeId="points" value="5"/>
                   </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="parent" childId="5b68-23b9-23ef-150f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="717b-5a20-7089-0ed3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
             </entryLink>
