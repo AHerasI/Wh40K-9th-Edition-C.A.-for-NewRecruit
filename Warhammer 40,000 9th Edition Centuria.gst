@@ -13104,7 +13104,7 @@ That model can upgrade with the Chosen by the Gods stratagem.</characteristic>
                     <cost name="RP" typeId="ed03-25cc-2681-bdce" value="-1"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="4d97-d59a-d6b1-0e33" name="1RP - Dreserved promotion" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="4d97-d59a-d6b1-0e33" name="1RP - Deserved promotion" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
                       <conditionGroups>
@@ -13119,7 +13119,7 @@ That model can upgrade with the Chosen by the Gods stratagem.</characteristic>
                     </modifier>
                   </modifiers>
                   <profiles>
-                    <profile id="9a42-0096-cd02-2d6f" name="Dreserved promotion" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+                    <profile id="9a42-0096-cd02-2d6f" name="Deserved promotion" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                       <characteristics>
                         <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Purchase this Requisition when an IMPERIUM INFANTRY unit with the Battlefield role of TROOPS from your Army (excluding ASTRA MILITARUM AUXILLIA, REPENTIA or IMPERIUM SERVANTS units) gains the Veteran, Heroic or Legendary rank.
 Replace that unit with a INFANTRY or BIKER unit without the TROOPS Battlefield role drawn from the same REGIMENT, CHAPTER or ORDER MILITANT as the original unit (the new unit cannot contain more models than the unit it replaced).
