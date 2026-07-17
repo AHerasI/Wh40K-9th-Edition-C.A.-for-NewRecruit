@@ -8178,8 +8178,8 @@ Each Multi-Purpose Reactive Armour packcage can be used once per battle.</descri
       <profiles>
         <profile id="025c-e836-ffd5-3820" name="Servo-Skull Probe Auspex" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">In the Shooting phase, you can select a visible enemy unit within 18&quot; of this unit.
-Ranged attacks made by friendly IMPERIUM units against the selected unit can ignore the INDIRECT FIRE hit roll penalty.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- In the Shooting phase, you can select a visible enemy unit within 18&quot; of this unit.
+- Ranged attacks made by friendly IMPERIUM units against the selected unit can ignore the INDIRECT FIRE hit roll penalty.</characteristic>
           </characteristics>
         </profile>
       </profiles>
