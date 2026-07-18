@@ -4855,29 +4855,6 @@ Instead units being eligible to fight if they are in engagement range or if they
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="43c4-8968-c599-ad5f" name="Is a Custom Character (Chapter Approved 2018)" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58c5-1d35-3869-613f" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4258-5002-f348-931a" type="max"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a05c-d7c0-38b1-0f6a" type="max"/>
-      </constraints>
-      <costs>
-        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-        <cost name="Pts" typeId="points" value="0"/>
-        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="4763-757f-499f-d998" name=" Battle Honours" hidden="true" collective="false" import="true" type="upgrade">
       <selectionEntries>
         <selectionEntry id="420c-8d60-8aac-a6df" name="Experience Point" hidden="false" collective="false" import="true" type="upgrade">
@@ -10650,7 +10627,6 @@ Each Multi-Purpose Reactive Armour packcage can be used once per battle.</descri
       </costs>
     </selectionEntry>
     <selectionEntry id="97e1-e5c9-59a6-aa02" name="Heavy Chainaxe" hidden="false" collective="false" import="true" type="upgrade">
-      <comment>97e1-e5c9-59a6-aa02</comment>
       <infoLinks>
         <infoLink id="e806-8207-02ce-f4ca" name="Heavy Chainaxe" hidden="false" targetId="cf4b-5990-c725-d915" type="profile"/>
       </infoLinks>
@@ -10662,7 +10638,6 @@ Each Multi-Purpose Reactive Armour packcage can be used once per battle.</descri
       </costs>
     </selectionEntry>
     <selectionEntry id="f973-9f2d-25f7-bd59" name="Heavy Chainaxe" hidden="false" collective="true" import="true" type="upgrade">
-      <comment>f973-9f2d-25f7-bd59</comment>
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="01e6-c751-9803-2f57" type="max"/>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2aa9-9f41-e832-d64b" type="min"/>
