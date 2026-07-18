@@ -61452,8 +61452,15 @@ By default, standard ammo will be shot (no changes to the weapon&apos;s profile)
                 <conditionGroup type="and">
                   <conditions>
                     <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef18-746a-369f-43a4" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3344-cffc-8cd0-1238" type="atLeast"/>
                   </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="3344-cffc-8cd0-1238" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="f657-aa75-dcf2-df44" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName=" I - Dark Angels"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
