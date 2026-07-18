@@ -5321,7 +5321,7 @@ In addition, a unit gain a extra EXP point if it managed to do one of the follow
                   <profiles>
                     <profile id="2454-26f8-222d-6deb" name="Roadkill" hidden="false" typeId="9cbe-b8f7-8b06-3bdb" typeName="Crusade Battle Honour">
                       <characteristics>
-                        <characteristic name="Description" typeId="2cb3-f998-da99-e077">Re-roll failed attack rolls of VEHICLE models in this unit in the Fight phase if this unit made a charge move, was charged, or performed a Heroic Intervention this turn.</characteristic>
+                        <characteristic name="Description" typeId="2cb3-f998-da99-e077">Re-roll failed Hit rolls of VEHICLE models in this unit during the Fight phase, if this unit made a charge move, was charged, or performed a Heroic Intervention this turn.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
