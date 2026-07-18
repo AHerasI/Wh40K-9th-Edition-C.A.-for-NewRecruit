@@ -13782,6 +13782,21 @@ HAEMONCULUS</description>
         </infoLink>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lightning Claw (OH)" hidden="false" id="4d2f-252b-540d-fa4b" collective="false">
+      <infoLinks>
+        <infoLink name="Lightning claw" id="21b9-48ea-c0d3-f75d" hidden="false" targetId="7584-238f-3174-4529" type="profile"/>
+        <infoLink name="Off-hand weapon" id="40ea-d5d9-6d8e-10e8" hidden="false" type="profile" targetId="e14b-37da-f8e9-1752"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Power Weapon" hidden="false" id="6042-d8da-fc5e-3b9d" targetId="aee6-5482-e38a-381d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="Pts" typeId="points" value="0"/>
+        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="d442-1f03-d9da-e77f" name="Warlord Traits (BRB)" hidden="false" collective="false" import="true">
