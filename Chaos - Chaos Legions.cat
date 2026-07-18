@@ -5326,6 +5326,18 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
                   </costs>
                 </entryLink>
                 <entryLink id="f639-a3c3-10b4-b768" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="0334-f487-8229-0c1a" type="selectionEntry"/>
+                <entryLink import="true" name="Lightning Claw" hidden="true" id="7366-7712-b0bc-4434" collective="false" targetId="90de-7b01-e401-888b" type="selectionEntry">
+                  <infoLinks>
+                    <infoLink name="Off-hand weapon" id="acf5-c41d-8dec-d240" hidden="false" type="profile" targetId="e14b-37da-f8e9-1752"/>
+                  </infoLinks>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="8649-7b23-a686-fe35" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -7644,17 +7656,17 @@ At the start of your Command phase, you can select one of the following:
                     <infoLink id="dfdc-dfa5-fabc-57bb" name="Off-hand weapon" hidden="false" targetId="e14b-37da-f8e9-1752" type="profile"/>
                   </infoLinks>
                 </entryLink>
-                <entryLink id="6047-5588-195b-947e" name="Lightning Claw" hidden="true" collective="false" import="true" targetId="90de-7b01-e401-888b" type="selectionEntry">
+                <entryLink import="true" name="Lightning Claw" hidden="true" id="b09e-8463-cabc-22dc" collective="false" targetId="90de-7b01-e401-888b" type="selectionEntry">
+                  <infoLinks>
+                    <infoLink name="Off-hand weapon" id="c249-449f-0d95-ac28" hidden="false" type="profile" targetId="e14b-37da-f8e9-1752"/>
+                  </infoLinks>
                   <modifiers>
-                    <modifier type="set" field="hidden" value="false">
+                    <modifier type="set" value="false" field="hidden">
                       <conditions>
-                        <condition field="selections" scope="bcf2-c83d-668a-e8a0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01ff-e495-39b2-ae0b" type="equalTo"/>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="8649-7b23-a686-fe35" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                       </conditions>
                     </modifier>
                   </modifiers>
-                  <costs>
-                    <cost name="pts" typeId="points" value="5"/>
-                  </costs>
                 </entryLink>
               </entryLinks>
             </entryLink>
@@ -12238,6 +12250,18 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
                     <cost name="pts" typeId="points" value="10"/>
                   </costs>
                 </entryLink>
+                <entryLink import="true" name="Lightning Claw" hidden="true" id="0074-7804-0e7f-af67" collective="false" targetId="90de-7b01-e401-888b" type="selectionEntry">
+                  <infoLinks>
+                    <infoLink name="Off-hand weapon" id="282c-124a-b2d0-5aed" hidden="false" type="profile" targetId="e14b-37da-f8e9-1752"/>
+                  </infoLinks>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="8649-7b23-a686-fe35" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -15037,7 +15061,7 @@ Each JUMP PACK or TERMINATOR model takes the space of two other models and each 
                 <infoLink id="0bb1-c606-1c08-b959" name="Off-hand weapon" hidden="false" targetId="e14b-37da-f8e9-1752" type="profile"/>
               </infoLinks>
               <entryLinks>
-                <entryLink id="1a1e-49d8-9b18-d384" name="Legion Melee Weapons" hidden="false" collective="false" import="true" targetId="c61e-7ae7-bebc-abd7" type="selectionEntryGroup"/>
+                <entryLink id="1a1e-49d8-9b18-d384" name="Legion Melee Weapons" hidden="false" collective="false" import="true" targetId="c61e-7ae7-bebc-abd7" type="selectionEntryGroup" flatten="true"/>
               </entryLinks>
               <costs>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -16000,6 +16024,18 @@ Each model can only be corrupted once per turn.</characteristic>
                 <entryLink id="d865-f860-4933-30ab" name="Screamer pistol" hidden="false" collective="false" import="true" targetId="268a-eebd-17fb-068c" type="selectionEntry"/>
                 <entryLink id="bfb0-0836-6862-350c" name="Sonic Blaster" hidden="false" collective="false" import="true" targetId="7e77-9e3e-a996-59d5" type="selectionEntry"/>
                 <entryLink id="4c85-141c-3950-71ef" name="Boltgun" hidden="false" collective="false" import="true" targetId="b61f-a3c1-827d-c5b6" type="selectionEntry"/>
+                <entryLink import="true" name="Lightning Claw" hidden="true" id="5abf-b7bc-09db-e161" collective="false" targetId="90de-7b01-e401-888b" type="selectionEntry">
+                  <infoLinks>
+                    <infoLink name="Off-hand weapon" id="4bb3-7916-10b3-82df" hidden="false" type="profile" targetId="e14b-37da-f8e9-1752"/>
+                  </infoLinks>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="8649-7b23-a686-fe35" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </entryLink>
           </entryLinks>
@@ -20683,6 +20719,18 @@ Until the end of the phase, add 1 to the Strength characteristic of models in th
                     <cost name=" PL" typeId="e356-c769-5920-6e14" value="2"/>
                     <cost name="pts" typeId="points" value="15"/>
                   </costs>
+                </entryLink>
+                <entryLink import="true" name="Lightning Claw" hidden="true" id="69e4-53c9-8f92-853e" collective="false" targetId="90de-7b01-e401-888b" type="selectionEntry">
+                  <infoLinks>
+                    <infoLink name="Off-hand weapon" id="1c2a-655d-3224-8917" hidden="false" type="profile" targetId="e14b-37da-f8e9-1752"/>
+                  </infoLinks>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="8649-7b23-a686-fe35" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -28633,6 +28681,18 @@ Blast.</characteristic>
                           </costs>
                         </entryLink>
                         <entryLink id="d0c6-b86e-5110-5f19" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="0334-f487-8229-0c1a" type="selectionEntry"/>
+                        <entryLink import="true" name="Lightning Claw" hidden="true" id="dfa8-00a9-a008-36c3" collective="false" targetId="90de-7b01-e401-888b" type="selectionEntry">
+                          <infoLinks>
+                            <infoLink name="Off-hand weapon" id="d1f3-ba7e-071b-5f09" hidden="false" type="profile" targetId="e14b-37da-f8e9-1752"/>
+                          </infoLinks>
+                          <modifiers>
+                            <modifier type="set" value="false" field="hidden">
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="parent" childId="8649-7b23-a686-fe35" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </entryLink>
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
@@ -28965,6 +29025,18 @@ Blast.</characteristic>
                   </costs>
                 </entryLink>
                 <entryLink id="a1ad-7824-d149-ef2c" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="0334-f487-8229-0c1a" type="selectionEntry"/>
+                <entryLink import="true" name="Lightning Claw" hidden="true" id="a828-1e44-ffd2-e777" collective="false" targetId="90de-7b01-e401-888b" type="selectionEntry">
+                  <infoLinks>
+                    <infoLink name="Off-hand weapon" id="cf91-72da-291b-4908" hidden="false" type="profile" targetId="e14b-37da-f8e9-1752"/>
+                  </infoLinks>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="8649-7b23-a686-fe35" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -34885,7 +34957,22 @@ Until the start of your next command phase, each time that VEHICLE model makes a
               <entryLinks>
                 <entryLink import="true" name="Legion Melee Weapons" hidden="false" id="84ff-599c-9ae6-fa1d" collective="false" targetId="c61e-7ae7-bebc-abd7" type="selectionEntryGroup"/>
                 <entryLink import="true" name="Frag &amp; Krak grenades" hidden="false" id="bd3f-8982-86d6-3c68" collective="false" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
-                <entryLink import="true" name="Legion Ranged Weapons" hidden="false" id="f53b-47c5-89f6-0378" collective="false" targetId="8ee0-6cb8-d9e6-7371" type="selectionEntryGroup"/>
+                <entryLink import="true" name="Legion Ranged Weapons" hidden="false" id="f53b-47c5-89f6-0378" collective="false" targetId="8ee0-6cb8-d9e6-7371" type="selectionEntryGroup">
+                  <entryLinks>
+                    <entryLink import="true" name="Lightning Claw" hidden="true" id="94a8-a762-34a4-f73d" collective="false" targetId="90de-7b01-e401-888b" type="selectionEntry">
+                      <infoLinks>
+                        <infoLink name="Off-hand weapon" id="bfd5-4555-de8e-a06e" hidden="false" type="profile" targetId="e14b-37da-f8e9-1752"/>
+                      </infoLinks>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="8649-7b23-a686-fe35" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="5"/>
@@ -49680,6 +49767,21 @@ You can Disband any summoned unit in your morale phase. Disbanded units are cons
           </costs>
         </entryLink>
         <entryLink id="366b-7293-0297-b36d" name="Flamer" hidden="false" collective="false" import="true" targetId="fd22-6743-2d4c-dd62" type="selectionEntry"/>
+        <entryLink import="true" name="Combi-Boltgun (Flamer)" hidden="false" id="5794-1766-3924-5451" collective="false" targetId="6fd3-0b23-4197-dc47" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="points" value="5"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Combi-Boltgun (Melta)" hidden="false" id="b1fb-a56b-b818-3739" collective="false" targetId="95eb-a5a5-4147-9def" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="points" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Combi-Boltgun (Plasma)" hidden="false" id="6834-0a48-378c-7802" collective="false" targetId="08ee-883c-fc21-ffd0" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="points" value="15"/>
+          </costs>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="c61e-7ae7-bebc-abd7" name="Legion Melee Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="eb0d-3658-9647-bd57">
@@ -49755,15 +49857,6 @@ You can Disband any summoned unit in your morale phase. Disbanded units are cons
           <costs>
             <cost name="pts" typeId="points" value="5"/>
           </costs>
-        </entryLink>
-        <entryLink id="2c01-2c70-6568-8e49" name="Paired weapon" hidden="true" collective="false" import="true" targetId="7603-6241-ab8b-4603" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8649-7b23-a686-fe35" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </entryLink>
         <entryLink id="d4bb-05b4-3807-5c0a" name="Balesword" hidden="true" collective="false" import="true" targetId="3c53-5076-28d8-508d" type="selectionEntry">
           <modifiers>
@@ -50137,15 +50230,6 @@ You can Disband any summoned unit in your morale phase. Disbanded units are cons
             <cost name="pts" typeId="points" value="5"/>
           </costs>
         </entryLink>
-        <entryLink id="09df-fbc2-9538-7637" name="Paired weapon" hidden="true" collective="false" import="true" targetId="7603-6241-ab8b-4603" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8649-7b23-a686-fe35" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="f7e5-be02-4447-9b63" name="Legion Terminator Ranged Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="d03d-3779-e1f6-bd06">
@@ -50183,19 +50267,22 @@ You can Disband any summoned unit in your morale phase. Disbanded units are cons
           </costs>
         </entryLink>
         <entryLink id="d03d-3779-e1f6-bd06" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="2b03-8d64-3711-f300" type="selectionEntry"/>
-        <entryLink id="8dc0-59c0-39d3-03db" name="Paired weapon" hidden="true" collective="false" import="true" targetId="7603-6241-ab8b-4603" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8649-7b23-a686-fe35" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
         <entryLink id="dca4-b418-d579-1ffd" name="Combi-Boltgun (Volkite)" hidden="false" collective="false" import="true" targetId="8242-fc14-be41-a581" type="selectionEntry">
           <costs>
             <cost name="pts" typeId="points" value="5"/>
           </costs>
+        </entryLink>
+        <entryLink import="true" name="Lightning Claw" hidden="true" id="ed7e-06c2-0494-7f28" collective="false" targetId="90de-7b01-e401-888b" type="selectionEntry">
+          <infoLinks>
+            <infoLink name="Off-hand weapon" id="10ca-a23f-bb81-63de" hidden="false" type="profile" targetId="e14b-37da-f8e9-1752"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="8649-7b23-a686-fe35" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
@@ -50247,7 +50334,7 @@ You can Disband any summoned unit in your morale phase. Disbanded units are cons
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="89ec-9862-abf4-bbd9" name="Legion Sergeant Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="a039-1dee-3cfa-e475">
+    <selectionEntryGroup id="89ec-9862-abf4-bbd9" name="Legion Combined Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="a039-1dee-3cfa-e475">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b80f-0731-2c84-5466" type="max"/>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fff-65c6-0494-7814" type="min"/>
@@ -50265,6 +50352,23 @@ You can Disband any summoned unit in your morale phase. Disbanded units are cons
           </costs>
         </entryLink>
         <entryLink id="caba-12a7-7f9b-3176" name="Combi-Boltgun (Melta)" hidden="false" collective="false" import="true" targetId="95eb-a5a5-4147-9def" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="points" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Lightning Claw" hidden="true" id="cdf8-9721-5a4d-d9f9" collective="false" targetId="90de-7b01-e401-888b" type="selectionEntry">
+          <infoLinks>
+            <infoLink name="Off-hand weapon" id="07b1-2475-67ad-54ff" hidden="false" type="profile" targetId="e14b-37da-f8e9-1752"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="8649-7b23-a686-fe35" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Combi-Boltgun (Volkite)" hidden="false" id="8eb2-981b-78f1-63e1" collective="false" targetId="8242-fc14-be41-a581" type="selectionEntry">
           <costs>
             <cost name="pts" typeId="points" value="10"/>
           </costs>
