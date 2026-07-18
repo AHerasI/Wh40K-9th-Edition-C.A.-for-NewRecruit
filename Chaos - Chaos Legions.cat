@@ -4676,7 +4676,7 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
           <entryLinks>
             <entryLink id="7044-de9f-f2a9-05d4" name="Legion Melee Weapons" hidden="false" collective="false" import="true" targetId="c61e-7ae7-bebc-abd7" type="selectionEntryGroup"/>
             <entryLink id="d2dd-66ba-a729-3a34" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
-            <entryLink id="f270-bc5b-f459-555b" name="Legion Sergeant Weapons" hidden="false" collective="false" import="true" targetId="89ec-9862-abf4-bbd9" type="selectionEntryGroup">
+            <entryLink id="f270-bc5b-f459-555b" name="Legion Ranged Weapons" hidden="false" collective="false" import="true" targetId="89ec-9862-abf4-bbd9" type="selectionEntryGroup">
               <entryLinks>
                 <entryLink id="f8c2-35c2-56ec-d0d4" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="0334-f487-8229-0c1a" type="selectionEntry"/>
                 <entryLink id="1b89-271c-b59c-96dd" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="7d34-2164-8036-b626" type="selectionEntry"/>
@@ -4709,7 +4709,7 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
           <entryLinks>
             <entryLink id="326f-87c1-edcc-87df" name="Legion Melee Weapons" hidden="false" collective="false" import="true" targetId="c61e-7ae7-bebc-abd7" type="selectionEntryGroup"/>
             <entryLink id="71cf-bc93-9bf4-e4a4" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
-            <entryLink id="75a6-8a26-a16b-e720" name="Legion Sergeant Weapons" hidden="false" collective="false" import="true" targetId="89ec-9862-abf4-bbd9" type="selectionEntryGroup">
+            <entryLink id="75a6-8a26-a16b-e720" name="Legion Ranged Weapons" hidden="false" collective="false" import="true" targetId="89ec-9862-abf4-bbd9" type="selectionEntryGroup">
               <entryLinks>
                 <entryLink id="11a3-d4d1-b8cb-25ca" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="0334-f487-8229-0c1a" type="selectionEntry"/>
                 <entryLink id="19df-3c5f-0b60-a0b7" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="7d34-2164-8036-b626" type="selectionEntry"/>
@@ -5333,7 +5333,7 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
                       <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="90de-7b01-e401-888b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Lightning Claw"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="90de-7b01-e401-888b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Lightning Claw"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -7625,14 +7625,14 @@ At the start of your Command phase, you can select one of the following:
               </entryLinks>
             </entryLink>
             <entryLink id="043c-8df3-1b95-1198" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
-            <entryLink id="3ae1-b8eb-195a-e547" name="Legion Sergeant Weapons" hidden="false" collective="false" import="true" targetId="89ec-9862-abf4-bbd9" type="selectionEntryGroup">
+            <entryLink id="3ae1-b8eb-195a-e547" name="Legion Ranged Weapons" hidden="false" collective="false" import="true" targetId="89ec-9862-abf4-bbd9" type="selectionEntryGroup">
               <entryLinks>
                 <entryLink id="c3dd-bb7a-d70f-f834" name="None" hidden="false" collective="false" import="true" targetId="01ff-e495-39b2-ae0b" type="selectionEntry"/>
                 <entryLink id="9934-f8c0-e6fa-2348" name="Paired weapon" hidden="true" collective="false" import="true" targetId="7603-6241-ab8b-4603" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
-                        <condition field="selections" scope="bcf2-c83d-668a-e8a0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90de-7b01-e401-888b" type="equalTo" childName="Lightning Claw"/>
+                        <condition field="selections" scope="bcf2-c83d-668a-e8a0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90de-7b01-e401-888b" type="atLeast" childName="Lightning Claw"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -7663,7 +7663,7 @@ At the start of your Command phase, you can select one of the following:
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
                       <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="90de-7b01-e401-888b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Lightning Claw"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="90de-7b01-e401-888b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Lightning Claw"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -7723,7 +7723,7 @@ At the start of your Command phase, you can select one of the following:
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
-                        <condition field="selections" scope="6b1f-3dc6-7eb2-5b04" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90de-7b01-e401-888b" type="equalTo" childName="Lightning Claw"/>
+                        <condition field="selections" scope="6b1f-3dc6-7eb2-5b04" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90de-7b01-e401-888b" type="atLeast" childName="Lightning Claw"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -9048,7 +9048,7 @@ At the start of your Command phase, you can select one of the following:
           <entryLinks>
             <entryLink id="2fc4-d389-7af2-0475" name="Legion Melee Weapons" hidden="false" collective="false" import="true" targetId="c61e-7ae7-bebc-abd7" type="selectionEntryGroup"/>
             <entryLink id="4cb0-1957-17cd-002c" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
-            <entryLink id="1738-d0f3-94c1-452d" name="Legion Sergeant Weapons" hidden="false" collective="false" import="true" targetId="89ec-9862-abf4-bbd9" type="selectionEntryGroup">
+            <entryLink id="1738-d0f3-94c1-452d" name="Legion Ranged Weapons" hidden="false" collective="false" import="true" targetId="89ec-9862-abf4-bbd9" type="selectionEntryGroup">
               <entryLinks>
                 <entryLink id="95ec-5f3e-2354-0b99" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="0334-f487-8229-0c1a" type="selectionEntry"/>
                 <entryLink id="9a52-fc69-f376-33e7" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="7d34-2164-8036-b626" type="selectionEntry"/>
@@ -9147,7 +9147,7 @@ At the start of your Command phase, you can select one of the following:
           </selectionEntryGroups>
           <entryLinks>
             <entryLink id="6ffa-4cdd-a24e-82f6" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
-            <entryLink id="75ae-655f-cdab-3189" name="Legion Sergeant Weapons" hidden="false" collective="false" import="true" targetId="89ec-9862-abf4-bbd9" type="selectionEntryGroup">
+            <entryLink id="75ae-655f-cdab-3189" name="Legion Ranged Weapons" hidden="false" collective="false" import="true" targetId="89ec-9862-abf4-bbd9" type="selectionEntryGroup">
               <entryLinks>
                 <entryLink id="7aa8-c430-935f-0562" name="Bolt Sniper rifle" hidden="false" collective="false" import="true" targetId="afb2-c617-8fdf-fb43" type="selectionEntry">
                   <costs>
@@ -10812,7 +10812,7 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
           <entryLinks>
             <entryLink id="3ba6-422a-1b0d-e001" name="Legion Melee Weapons" hidden="false" collective="false" import="true" targetId="c61e-7ae7-bebc-abd7" type="selectionEntryGroup"/>
             <entryLink id="83a5-d535-275a-1496" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
-            <entryLink id="06b8-6ace-9913-64af" name="Legion Sergeant Weapons" hidden="false" collective="false" import="true" targetId="89ec-9862-abf4-bbd9" type="selectionEntryGroup">
+            <entryLink id="06b8-6ace-9913-64af" name="Legion Ranged Weapons" hidden="false" collective="false" import="true" targetId="89ec-9862-abf4-bbd9" type="selectionEntryGroup">
               <entryLinks>
                 <entryLink id="eb62-c608-43e5-3522" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="0334-f487-8229-0c1a" type="selectionEntry"/>
                 <entryLink id="b089-7cdd-fc0b-1caa" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="7d34-2164-8036-b626" type="selectionEntry"/>
@@ -10849,7 +10849,7 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
           <entryLinks>
             <entryLink id="04c7-0222-d254-e23e" name="Legion Melee Weapons" hidden="false" collective="false" import="true" targetId="c61e-7ae7-bebc-abd7" type="selectionEntryGroup"/>
             <entryLink id="e3a6-54cd-80d4-80ef" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
-            <entryLink id="5f7b-0cb9-f182-0109" name="Legion Sergeant Weapons" hidden="false" collective="false" import="true" targetId="89ec-9862-abf4-bbd9" type="selectionEntryGroup">
+            <entryLink id="5f7b-0cb9-f182-0109" name="Legion Ranged Weapons" hidden="false" collective="false" import="true" targetId="89ec-9862-abf4-bbd9" type="selectionEntryGroup">
               <entryLinks>
                 <entryLink id="4502-ccb8-190b-109f" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="0334-f487-8229-0c1a" type="selectionEntry"/>
                 <entryLink id="ce07-824c-d1ec-fac8" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="7d34-2164-8036-b626" type="selectionEntry"/>
@@ -11010,7 +11010,7 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
             <entryLink id="8722-7ba2-0df5-fe08" name="Legion Melee Weapons" hidden="false" collective="false" import="true" targetId="c61e-7ae7-bebc-abd7" type="selectionEntryGroup"/>
             <entryLink id="ca32-b229-9dd8-d1d2" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
             <entryLink id="7e2f-a959-ea8e-58bc" name="Twin Boltgun" hidden="false" collective="false" import="true" targetId="2937-5790-7ad5-df1e" type="selectionEntry"/>
-            <entryLink id="c552-2f2e-9017-0207" name="Legion Sergeant Weapons" hidden="false" collective="false" import="true" targetId="89ec-9862-abf4-bbd9" type="selectionEntryGroup">
+            <entryLink id="c552-2f2e-9017-0207" name="Legion Ranged Weapons" hidden="false" collective="false" import="true" targetId="89ec-9862-abf4-bbd9" type="selectionEntryGroup">
               <entryLinks>
                 <entryLink id="cc27-7e28-d6cc-dd5a" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="0334-f487-8229-0c1a" type="selectionEntry"/>
                 <entryLink id="f1be-f3c7-c318-8498" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="7d34-2164-8036-b626" type="selectionEntry"/>
@@ -11054,7 +11054,7 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
             <entryLink id="5863-1be0-d95e-c777" name="Legion Melee Weapons" hidden="false" collective="false" import="true" targetId="c61e-7ae7-bebc-abd7" type="selectionEntryGroup"/>
             <entryLink id="a902-bee2-f394-98b3" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
             <entryLink id="81e7-1804-01ae-4e3c" name="Twin Boltgun" hidden="false" collective="false" import="true" targetId="2937-5790-7ad5-df1e" type="selectionEntry"/>
-            <entryLink id="6d71-3f22-e3cb-966f" name="Legion Sergeant Weapons" hidden="false" collective="false" import="true" targetId="89ec-9862-abf4-bbd9" type="selectionEntryGroup">
+            <entryLink id="6d71-3f22-e3cb-966f" name="Legion Ranged Weapons" hidden="false" collective="false" import="true" targetId="89ec-9862-abf4-bbd9" type="selectionEntryGroup">
               <entryLinks>
                 <entryLink id="3eb2-a176-4ed2-7737" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="0334-f487-8229-0c1a" type="selectionEntry"/>
                 <entryLink id="d3f2-d84d-be33-a5d0" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="7d34-2164-8036-b626" type="selectionEntry"/>
@@ -12257,7 +12257,7 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
                       <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="90de-7b01-e401-888b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Lightning Claw"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="90de-7b01-e401-888b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Lightning Claw"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -16031,7 +16031,7 @@ Each model can only be corrupted once per turn.</characteristic>
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
                       <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="90de-7b01-e401-888b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Lightning Claw"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="90de-7b01-e401-888b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Lightning Claw"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -20727,7 +20727,7 @@ Until the end of the phase, add 1 to the Strength characteristic of models in th
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
                       <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="90de-7b01-e401-888b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Lightning Claw"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="90de-7b01-e401-888b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Lightning Claw"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -26384,7 +26384,7 @@ In addition, models in this unit do not suffer the penalty to hit rolls incurred
           <entryLinks>
             <entryLink id="2647-0391-d76a-6492" name="Legion Melee Weapons" hidden="false" collective="false" import="true" targetId="c61e-7ae7-bebc-abd7" type="selectionEntryGroup"/>
             <entryLink id="6750-233b-ef13-5f85" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
-            <entryLink id="61d9-dfa4-3451-7d52" name="Legion Sergeant Weapons" hidden="false" collective="false" import="true" targetId="89ec-9862-abf4-bbd9" type="selectionEntryGroup">
+            <entryLink id="61d9-dfa4-3451-7d52" name="Legion Ranged Weapons" hidden="false" collective="false" import="true" targetId="89ec-9862-abf4-bbd9" type="selectionEntryGroup">
               <entryLinks>
                 <entryLink id="2655-4e27-48b1-5406" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="0334-f487-8229-0c1a" type="selectionEntry"/>
                 <entryLink id="ee1d-599a-5045-2c59" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="7d34-2164-8036-b626" type="selectionEntry"/>
@@ -26421,7 +26421,7 @@ In addition, models in this unit do not suffer the penalty to hit rolls incurred
           <entryLinks>
             <entryLink id="7d01-1e94-e35f-13f0" name="Legion Melee Weapons" hidden="false" collective="false" import="true" targetId="c61e-7ae7-bebc-abd7" type="selectionEntryGroup"/>
             <entryLink id="f7de-4291-9442-a74f" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
-            <entryLink id="480a-67ca-1449-fc7a" name="Legion Sergeant Weapons" hidden="false" collective="false" import="true" targetId="89ec-9862-abf4-bbd9" type="selectionEntryGroup">
+            <entryLink id="480a-67ca-1449-fc7a" name="Legion Ranged Weapons" hidden="false" collective="false" import="true" targetId="89ec-9862-abf4-bbd9" type="selectionEntryGroup">
               <entryLinks>
                 <entryLink id="cb36-0a56-a397-0125" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="0334-f487-8229-0c1a" type="selectionEntry"/>
                 <entryLink id="20e3-1e8f-7e03-52fe" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="7d34-2164-8036-b626" type="selectionEntry"/>
@@ -28688,7 +28688,7 @@ Blast.</characteristic>
                           <modifiers>
                             <modifier type="set" value="false" field="hidden">
                               <conditions>
-                                <condition type="equalTo" value="1" field="selections" scope="parent" childId="90de-7b01-e401-888b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Lightning Claw"/>
+                                <condition type="atLeast" value="1" field="selections" scope="parent" childId="90de-7b01-e401-888b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Lightning Claw"/>
                               </conditions>
                             </modifier>
                           </modifiers>
@@ -29032,7 +29032,7 @@ Blast.</characteristic>
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
                       <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="90de-7b01-e401-888b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Lightning Claw"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="90de-7b01-e401-888b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Lightning Claw"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -50279,7 +50279,7 @@ You can Disband any summoned unit in your morale phase. Disbanded units are cons
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="90de-7b01-e401-888b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Lightning Claw"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="90de-7b01-e401-888b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Lightning Claw"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -50363,7 +50363,7 @@ You can Disband any summoned unit in your morale phase. Disbanded units are cons
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="90de-7b01-e401-888b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Lightning Claw"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="90de-7b01-e401-888b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Lightning Claw"/>
               </conditions>
             </modifier>
           </modifiers>
