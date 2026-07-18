@@ -1779,6 +1779,18 @@ For the purposes of this ability, a Rapid Fire Bolt weapon is any Bolt weapon wi
       <categoryLinks>
         <categoryLink id="4451-ae48-e2d5-8ffa" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="a1be-ee90-b5b3-388d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="c01c-6741-ac91-8bfa" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink id="53c0-41a4-9e3b-6324" name="Chaplain" hidden="false" collective="false" import="true" targetId="fbda-d60d-7d34-152e" type="selectionEntry">
       <categoryLinks>
@@ -2859,6 +2871,32 @@ For the purposes of this ability, a Rapid Fire Bolt weapon is any Bolt weapon wi
       <categoryLinks>
         <categoryLink name="HQ" hidden="false" id="0253-ba4b-2065-5cd8" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Champion" hidden="false" id="3eb5-ed4d-3dd7-f1ba" collective="false" targetId="b858-181f-32a9-317b" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="No Force Org Slot" hidden="false" id="f41f-81dd-34f9-0bcb" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" primary="true"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="37fe-e3a5-9a4d-0af1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="c01c-6741-ac91-8bfa" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="a1be-ee90-b5b3-388d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="bdb7-4496-eafe-adfd" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="695c-fbca-8006-da3f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -7645,16 +7683,6 @@ GREY KNIGHTS PSYKER units of your army gain a bonus depending on which Tide of t
     </selectionEntry>
     <selectionEntry id="b858-181f-32a9-317b" name="Champion" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a1be-ee90-b5b3-388d" type="equalTo"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c01c-6741-ac91-8bfa" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
         <modifier type="add" value="1c6f-0311-3eba-3180" field="category">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="b858-181f-32a9-317b" childId="ccad-10c2-8c31-a3b9" shared="true" childName="Company Champion on Bike" includeChildSelections="true" includeChildForces="false"/>
@@ -7938,6 +7966,9 @@ GREY KNIGHTS PSYKER units of your army gain a bonus depending on which Tide of t
         <cost name="Pts" typeId="points" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1727-8d9c-e227-fa75" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="5b25-4e46-35be-85e5" name="Lieutenant" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
@@ -18122,6 +18153,9 @@ While an enemy unit is within 3&quot; of this unit, it loses the Objective Secur
         <cost name="Pts" typeId="points" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="9627-410f-bb5e-8803" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="2602-0a6c-dfe4-d5a3" name="Caestus Assault Ram" hidden="true" collective="false" import="true" type="model">
       <modifiers>
