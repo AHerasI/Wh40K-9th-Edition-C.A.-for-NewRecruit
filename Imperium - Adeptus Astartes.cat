@@ -63551,7 +63551,7 @@ By default, standard ammo will be shot (no changes to the weapon&apos;s profile)
                       <modifiers>
                         <modifier type="set" field="1b00-fbf7-ae79-e278" value="2">
                           <conditionGroups>
-                            <conditionGroup type="or">
+                            <conditionGroup type="and">
                               <conditions>
                                 <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5686-7cd9-6664-635b" type="equalTo"/>
                               </conditions>
@@ -63560,7 +63560,7 @@ By default, standard ammo will be shot (no changes to the weapon&apos;s profile)
                         </modifier>
                         <modifier type="set" field="1b00-fbf7-ae79-e278" value="4">
                           <conditionGroups>
-                            <conditionGroup type="or">
+                            <conditionGroup type="and">
                               <conditions>
                                 <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fad2-035f-88a7-60c0" type="equalTo"/>
                               </conditions>
@@ -63569,7 +63569,7 @@ By default, standard ammo will be shot (no changes to the weapon&apos;s profile)
                         </modifier>
                         <modifier type="set" field="1b00-fbf7-ae79-e278" value="3">
                           <conditionGroups>
-                            <conditionGroup type="or">
+                            <conditionGroup type="and">
                               <conditions>
                                 <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="09f9-b586-8d63-7635" type="equalTo"/>
                               </conditions>
@@ -63578,9 +63578,20 @@ By default, standard ammo will be shot (no changes to the weapon&apos;s profile)
                         </modifier>
                         <modifier type="set" field="1b00-fbf7-ae79-e278" value="5">
                           <conditionGroups>
-                            <conditionGroup type="or">
+                            <conditionGroup type="and">
                               <conditions>
                                 <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6c7-87a2-73a3-a475" type="equalTo"/>
+                                <condition type="equalTo" value="0" field="selections" scope="force" childId="bf67-ed45-5950-955b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Narrative: Crusade"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                        <modifier type="set" value="-1" field="1b00-fbf7-ae79-e278">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="parent" childId="e6c7-87a2-73a3-a475" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                                <condition type="equalTo" value="1" field="selections" scope="force" childId="bf67-ed45-5950-955b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Narrative: Crusade"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -63590,7 +63601,7 @@ By default, standard ammo will be shot (no changes to the weapon&apos;s profile)
                   </modifierGroups>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6cb5-a8e3-c0b8-50ef" type="max"/>
-                    <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b00-fbf7-ae79-e278" type="max"/>
+                    <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1b00-fbf7-ae79-e278" type="max"/>
                   </constraints>
                   <profiles>
                     <profile id="16fb-766e-54b7-df43" name="Weapons of the Dark Age" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
