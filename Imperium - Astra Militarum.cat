@@ -1065,7 +1065,113 @@ In your Command phase, this unit’s PRIEST model can attempt to chant one praye
             <entryLink id="a74c-549e-2201-4a1f" name="Chimera APC" hidden="false" collective="false" import="true" targetId="4658-d952-cddf-b78a" type="selectionEntry"/>
             <entryLink id="23bc-7f9b-ce97-cb5b" name="Chimera IFV" hidden="false" collective="false" import="true" targetId="aa5e-d476-c0e1-e5e5" type="selectionEntry"/>
             <entryLink import="true" name="Centauro APC Command Variant" hidden="false" id="54c2-9486-8cbc-f571" type="selectionEntry" targetId="5049-c1f0-72de-b67e"/>
+            <entryLink import="true" name="Taurox AC" hidden="false" id="44c2-6f99-1e97-0cce" collective="false" targetId="322d-555b-8a2d-a627" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="Character" hidden="false" id="71a9-5682-ed95-2f1c" targetId="ef18-746a-369f-43a4" primary="false"/>
+                <categoryLink name="Officer" hidden="false" id="96eb-94be-094f-6030" targetId="6f24-1326-b08a-81bc" primary="false"/>
+                <categoryLink name="Tank Commander" hidden="false" id="b9b4-28b7-a2d1-243e" targetId="9946-33a8-b502-a531" primary="false"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink import="true" name=" Character Definition" hidden="false" id="6032-13ef-1309-408c" collective="false" targetId="b8e4-216c-16cc-4263" type="selectionEntryGroup"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Taurox APC" hidden="false" id="bce3-62c9-0570-3574" collective="false" targetId="fb2a-9e7b-3cd5-9eca" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="Character" hidden="false" id="e607-eec5-1d76-f9f4" targetId="ef18-746a-369f-43a4" primary="false"/>
+                <categoryLink name="Officer" hidden="false" id="fdff-1a96-56a0-cc28" targetId="6f24-1326-b08a-81bc" primary="false"/>
+                <categoryLink name="Tank Commander" hidden="false" id="39a0-511b-0215-34ef" targetId="9946-33a8-b502-a531" primary="false"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink import="true" name=" Character Definition" hidden="false" id="2659-7dc6-7ed9-f5c7" collective="false" targetId="b8e4-216c-16cc-4263" type="selectionEntryGroup"/>
+              </entryLinks>
+            </entryLink>
           </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Command Vehicle" id="ad95-4325-f561-9096" hidden="false" collective="false" import="true" defaultSelectionEntryId="9e30-f570-cd61-064d">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7024-d89f-a1d3-0676" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0a35-a1a6-8701-bdf3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Chimera IFV" hidden="false" id="fe73-0acf-d5d8-a26c" collective="false" targetId="aa5e-d476-c0e1-e5e5" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" value="Commander in Chimera IFV" field="name"/>
+                  </modifiers>
+                  <categoryLinks>
+                    <categoryLink name="Character" hidden="false" id="804a-edc3-fb67-17fb" targetId="ef18-746a-369f-43a4" primary="false"/>
+                    <categoryLink name="Officer" hidden="false" id="4909-76e2-2fca-3773" targetId="6f24-1326-b08a-81bc" primary="false"/>
+                    <categoryLink name="Tank Commander" hidden="false" id="7914-14b3-ab0f-8e55" targetId="9946-33a8-b502-a531" primary="false"/>
+                  </categoryLinks>
+                  <entryLinks>
+                    <entryLink import="true" name=" Character Definition" hidden="false" id="d0fe-e313-60d2-b307" collective="false" targetId="b8e4-216c-16cc-4263" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Chimera APC" hidden="false" id="9aa9-d74f-5ec2-bf85" collective="false" targetId="4658-d952-cddf-b78a" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" value="Commander in Chimera APC" field="name"/>
+                  </modifiers>
+                  <categoryLinks>
+                    <categoryLink name="Character" hidden="false" id="55af-289d-6dc4-fe93" targetId="ef18-746a-369f-43a4" primary="false"/>
+                    <categoryLink name="Officer" hidden="false" id="7ad3-093f-c07a-f4fd" targetId="6f24-1326-b08a-81bc" primary="false"/>
+                    <categoryLink name="Tank Commander" hidden="false" id="fbef-00c9-32ee-a2c3" targetId="9946-33a8-b502-a531" primary="false"/>
+                  </categoryLinks>
+                  <entryLinks>
+                    <entryLink import="true" name=" Character Definition" hidden="false" id="6330-a9ab-1ea9-a56d" collective="false" targetId="b8e4-216c-16cc-4263" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Taurox APC" hidden="false" id="d142-6c46-3a7b-745b" collective="false" targetId="fb2a-9e7b-3cd5-9eca" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" value="Commander in Taurox APC" field="name"/>
+                  </modifiers>
+                  <categoryLinks>
+                    <categoryLink name="Character" hidden="false" id="b7d4-aa94-60af-0c11" targetId="ef18-746a-369f-43a4" primary="false"/>
+                    <categoryLink name="Officer" hidden="false" id="55a6-dbc0-f14d-9dea" targetId="6f24-1326-b08a-81bc" primary="false"/>
+                    <categoryLink name="Tank Commander" hidden="false" id="44f3-7ab3-47dd-1084" targetId="9946-33a8-b502-a531" primary="false"/>
+                  </categoryLinks>
+                  <entryLinks>
+                    <entryLink import="true" name=" Character Definition" hidden="false" id="c64c-397a-da27-836f" collective="false" targetId="b8e4-216c-16cc-4263" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Taurox AC" hidden="false" id="15a9-8b54-0cdc-6a8e" collective="false" targetId="322d-555b-8a2d-a627" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" value="Commander in Taurox AC" field="name"/>
+                  </modifiers>
+                  <categoryLinks>
+                    <categoryLink name="Character" hidden="false" id="228b-2ac0-8f70-9a7b" targetId="ef18-746a-369f-43a4" primary="false"/>
+                    <categoryLink name="Officer" hidden="false" id="c737-a3a0-e6b3-41bd" targetId="6f24-1326-b08a-81bc" primary="false"/>
+                    <categoryLink name="Tank Commander" hidden="false" id="e5e3-6c01-eb56-c804" targetId="9946-33a8-b502-a531" primary="false"/>
+                  </categoryLinks>
+                  <entryLinks>
+                    <entryLink import="true" name=" Character Definition" hidden="false" id="b070-bc6c-60af-b97b" collective="false" targetId="b8e4-216c-16cc-4263" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Devil Dog Assault Vehicle" hidden="false" id="5aff-f131-fd20-93ec" type="selectionEntry" targetId="d94c-a63d-049a-f249">
+                  <modifiers>
+                    <modifier type="set" value="Commander in Banewolf Assault Vehicle" field="name">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="28a5-c77c-b5e4-eb5b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="Commander in Hellhound Assault Vehicle" field="name">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="f9b6-8060-2fc5-6c6d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="Commander in Devil Dog Assault Vehicle" field="name">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="self" childId="f9b6-8060-2fc5-6c6d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="equalTo" value="0" field="selections" scope="self" childId="28a5-c77c-b5e4-eb5b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -1111,6 +1217,26 @@ In your Command phase, this unit’s PRIEST model can attempt to chant one praye
           <entryLinks>
             <entryLink id="48a5-4ae3-9377-5de1" name="Chimera APC" hidden="false" collective="false" import="true" targetId="4658-d952-cddf-b78a" type="selectionEntry"/>
             <entryLink id="9669-284d-e423-eee6" name="Chimera IFV" hidden="false" collective="false" import="true" targetId="aa5e-d476-c0e1-e5e5" type="selectionEntry"/>
+            <entryLink import="true" name="Taurox AC" hidden="false" id="6507-912a-2f65-0339" collective="false" targetId="322d-555b-8a2d-a627" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="Character" hidden="false" id="1aa6-490f-b55b-be5e" targetId="ef18-746a-369f-43a4" primary="false"/>
+                <categoryLink name="Officer" hidden="false" id="d69f-17d8-4c50-01f1" targetId="6f24-1326-b08a-81bc" primary="false"/>
+                <categoryLink name="Tank Commander" hidden="false" id="6c3f-c163-4c18-a69d" targetId="9946-33a8-b502-a531" primary="false"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink import="true" name=" Character Definition" hidden="false" id="f97c-4c56-d2be-f0a5" collective="false" targetId="b8e4-216c-16cc-4263" type="selectionEntryGroup"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Taurox APC" hidden="false" id="5715-d04d-71e5-efa1" collective="false" targetId="fb2a-9e7b-3cd5-9eca" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="Character" hidden="false" id="89d4-2afd-7049-2bca" targetId="ef18-746a-369f-43a4" primary="false"/>
+                <categoryLink name="Officer" hidden="false" id="2f84-6999-714c-b2b3" targetId="6f24-1326-b08a-81bc" primary="false"/>
+                <categoryLink name="Tank Commander" hidden="false" id="2f81-833b-745c-4f31" targetId="9946-33a8-b502-a531" primary="false"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink import="true" name=" Character Definition" hidden="false" id="ba2f-24cd-7f01-ac6c" collective="false" targetId="b8e4-216c-16cc-4263" type="selectionEntryGroup"/>
+              </entryLinks>
+            </entryLink>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Centauro APC Command Variant" hidden="false" id="5049-c1f0-72de-b67e" collective="false">
@@ -1300,8 +1426,8 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
                         </modifier>
                       </modifiers>
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a30a-c342-45f4-9f0f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b704-8e37-3ff6-9e05" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a30a-c342-45f4-9f0f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="b704-8e37-3ff6-9e05" includeChildSelections="false"/>
                       </constraints>
                       <costs>
                         <cost name="pts" typeId="points" value="0"/>
@@ -1319,8 +1445,8 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
                         </modifier>
                       </modifiers>
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="747a-525b-86d2-e05f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="802b-0b72-f7d9-3930" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="747a-525b-86d2-e05f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="802b-0b72-f7d9-3930" includeChildSelections="false"/>
                       </constraints>
                       <costs>
                         <cost name="pts" typeId="points" value="0"/>
@@ -1353,6 +1479,92 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Command Vehicle" id="3a24-92bd-0114-dd27" hidden="false" collective="false" import="true" defaultSelectionEntryId="9e30-f570-cd61-064d">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4514-cf00-58a4-84cc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b179-368b-4a4d-bb0d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Chimera IFV" hidden="false" id="f0a9-2369-7672-009f" collective="false" targetId="aa5e-d476-c0e1-e5e5" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" value="Commander in Chimera IFV" field="name"/>
+                  </modifiers>
+                  <categoryLinks>
+                    <categoryLink name="Character" hidden="false" id="7bf9-a748-dbe1-3218" targetId="ef18-746a-369f-43a4" primary="false"/>
+                    <categoryLink name="Officer" hidden="false" id="98b7-aec3-f396-5322" targetId="6f24-1326-b08a-81bc" primary="false"/>
+                    <categoryLink name="Tank Commander" hidden="false" id="fcc2-788d-48e0-9a7f" targetId="9946-33a8-b502-a531" primary="false"/>
+                  </categoryLinks>
+                  <entryLinks>
+                    <entryLink import="true" name=" Character Definition" hidden="false" id="dc57-c076-0548-5458" collective="false" targetId="b8e4-216c-16cc-4263" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Chimera APC" hidden="false" id="3ee2-4ca2-bcc2-c2b1" collective="false" targetId="4658-d952-cddf-b78a" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" value="Commander in Chimera APC" field="name"/>
+                  </modifiers>
+                  <categoryLinks>
+                    <categoryLink name="Character" hidden="false" id="757e-c8c3-c7c2-faa2" targetId="ef18-746a-369f-43a4" primary="false"/>
+                    <categoryLink name="Officer" hidden="false" id="1aa3-ba0b-c1ef-0302" targetId="6f24-1326-b08a-81bc" primary="false"/>
+                    <categoryLink name="Tank Commander" hidden="false" id="5ff5-db98-2ba8-067d" targetId="9946-33a8-b502-a531" primary="false"/>
+                  </categoryLinks>
+                  <entryLinks>
+                    <entryLink import="true" name=" Character Definition" hidden="false" id="f158-60cd-4fe7-dc5f" collective="false" targetId="b8e4-216c-16cc-4263" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Taurox APC" hidden="false" id="9417-685f-47d3-c1a3" collective="false" targetId="fb2a-9e7b-3cd5-9eca" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" value="Commander in Taurox APC" field="name"/>
+                  </modifiers>
+                  <categoryLinks>
+                    <categoryLink name="Character" hidden="false" id="fe37-e3ee-8b97-8512" targetId="ef18-746a-369f-43a4" primary="false"/>
+                    <categoryLink name="Officer" hidden="false" id="d6de-b551-d937-5b69" targetId="6f24-1326-b08a-81bc" primary="false"/>
+                    <categoryLink name="Tank Commander" hidden="false" id="bb20-d8ff-651b-c6d1" targetId="9946-33a8-b502-a531" primary="false"/>
+                  </categoryLinks>
+                  <entryLinks>
+                    <entryLink import="true" name=" Character Definition" hidden="false" id="12d9-7803-840d-0da8" collective="false" targetId="b8e4-216c-16cc-4263" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Taurox AC" hidden="false" id="97a4-e1d4-f5d6-a2a5" collective="false" targetId="322d-555b-8a2d-a627" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" value="Commander in Taurox AC" field="name"/>
+                  </modifiers>
+                  <categoryLinks>
+                    <categoryLink name="Character" hidden="false" id="b7da-0729-b015-8e46" targetId="ef18-746a-369f-43a4" primary="false"/>
+                    <categoryLink name="Officer" hidden="false" id="7ec5-f707-224c-e4ba" targetId="6f24-1326-b08a-81bc" primary="false"/>
+                    <categoryLink name="Tank Commander" hidden="false" id="102b-9fb7-79f3-50a6" targetId="9946-33a8-b502-a531" primary="false"/>
+                  </categoryLinks>
+                  <entryLinks>
+                    <entryLink import="true" name=" Character Definition" hidden="false" id="3ef6-bc2d-3289-c6c9" collective="false" targetId="b8e4-216c-16cc-4263" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Devil Dog Assault Vehicle" hidden="false" id="9b99-3b1e-c0b9-37bb" type="selectionEntry" targetId="d94c-a63d-049a-f249">
+                  <modifiers>
+                    <modifier type="set" value="Commander in Banewolf Assault Vehicle" field="name">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="28a5-c77c-b5e4-eb5b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="Commander in Hellhound Assault Vehicle" field="name">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="f9b6-8060-2fc5-6c6d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="Commander in Devil Dog Assault Vehicle" field="name">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="self" childId="f9b6-8060-2fc5-6c6d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="equalTo" value="0" field="selections" scope="self" childId="28a5-c77c-b5e4-eb5b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -12129,7 +12341,7 @@ This weapon can only be fired once per battle. Each time an attack is made with 
           </modifierGroups>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e133-607f-33ca-5f55" type="max"/>
-            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbaf-6762-7dc2-877b" type="max"/>
+            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="fbaf-6762-7dc2-877b" type="max"/>
           </constraints>
           <profiles>
             <profile id="2505-fc9e-3713-6483" name="Master of Ordinance" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
