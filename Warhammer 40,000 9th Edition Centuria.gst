@@ -1268,8 +1268,8 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
             </modifier>
           </modifiers>
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">&lt;SAEDATH&gt; INFANTRY or BIKER units are eligible to declare a charge in a turn in which it Advanced.
-&lt;SAEDATH&gt; INFANTRY or BIKER units are eligible to shoot and declare a charge in a turn in which it Fell Back.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">SAEDATH INFANTRY or BIKER units are eligible to declare a charge in a turn in which it Advanced.
+SAEDATH INFANTRY or BIKER units are eligible to shoot and declare a charge in a turn in which it Fell Back.</characteristic>
           </characteristics>
         </profile>
       </profiles>
