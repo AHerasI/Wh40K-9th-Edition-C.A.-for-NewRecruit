@@ -736,6 +736,47 @@ Additional reference data obtained from Wahapedia, https://wahapedia.ru/</readme
         <infoLink name="Quick Response" id="745d-d52a-54d7-df8a" hidden="false" targetId="9334-58b2-273b-198c" type="profile"/>
       </infoLinks>
     </categoryEntry>
+    <categoryEntry name="Faction: Aeldari Knights" id="ac80-0dad-7bbb-fe7a" hidden="false">
+      <infoLinks>
+        <infoLink name="Sabre-claw Clan" id="241d-6aa7-9bd5-0717" hidden="false" targetId="11c4-fb8d-19e0-64d9" type="profile">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="2684-2c81-68de-eabd" shared="true" includeChildSelections="true" childName="Sabre-claw Clan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Nightfury Clan" id="e59f-ea93-8bcf-6e34" hidden="false" targetId="cddc-3053-7c0c-175f" type="profile">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="7fe0-e12e-cdd0-19bd" shared="true" includeChildSelections="true" childName="Nightfury Clan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Sea-talon Clan" id="6b2c-c8ce-e2ae-056b" hidden="false" targetId="e0df-6ed7-a85d-d507" type="profile">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="dc81-9158-5533-d57a" shared="true" includeChildSelections="true" childName="Sea-talon Clan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Quick Response" id="6193-c54d-447b-45de" hidden="false" targetId="9334-58b2-273b-198c" type="profile"/>
+        <infoLink name="Swifthorn Clan" id="7cd9-0547-91a1-86d2" hidden="false" targetId="f9cc-f011-57b7-55a4" type="profile">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="367c-c72c-8351-4f85" shared="true" includeChildSelections="true" childName="Swifthorn Clan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </categoryEntry>
   </categoryEntries>
   <entryLinks>
     <entryLink id="79af-2293-71dd-aa90" name=" Aeldari" hidden="false" collective="false" import="true" targetId="19d6-8c37-59e1-12e6" type="selectionEntry">
@@ -4501,6 +4542,56 @@ Each Luck re-roll can be used to re-roll one hit roll, wound roll, damage roll, 
               <categoryLinks>
                 <categoryLink name="Faction: Aeldari Exodites" hidden="false" id="701e-1659-e5d8-d1dd" targetId="4a67-024a-2ab2-8193" primary="false"/>
               </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Knight Host support" id="573e-2ae4-4f3e-6c4f" hidden="false" defaultSelectionEntryId="2684-2c81-68de-eabd">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="517b-f04a-fce7-3abe"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a16-ee45-2a24-eb29" includeChildSelections="false"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Nightfury Clan" hidden="false" id="7fe0-e12e-cdd0-19bd">
+                      <profiles>
+                        <profile name="Nightfury Clan" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="cddc-3053-7c0c-175f">
+                          <characteristics>
+                            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Each time an attack is made against this model, if the attacker is more than 12&quot; away, this model benefits of Light Cover and Dense Cover against that attack.
+- Each time this model would lose a wound as a result of a mortal wound, roll one D6: on a 5+, that wound is not lost.
+
+</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Sabre-claw Clan" hidden="false" id="2684-2c81-68de-eabd">
+                      <profiles>
+                        <profile name="Sabre-claw Clan" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="11c4-fb8d-19e0-64d9">
+                          <characteristics>
+                            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time this model makes an attack with a melee weapon, an unmodified hit roll of 6 scores 1 additional hit, and you can re-roll Advance rolls and Charge rolls.
+</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Swifthorn Clan" hidden="false" id="367c-c72c-8351-4f85">
+                      <profiles>
+                        <profile name="Swifthorn Clan" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="f9cc-f011-57b7-55a4">
+                          <characteristics>
+                            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Unless Fell Back during this turn, during the Shooting phase, this model is considered to have Remained Stationary, and, each time this model makes a ranged attack, the target does not receive the benefits of Cover against that attack.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Sea-talon Clan" hidden="false" id="dc81-9158-5533-d57a">
+                      <profiles>
+                        <profile name="Sea-talon Clan" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="e0df-6ed7-a85d-d507">
+                          <characteristics>
+                            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Each time a model with this attribute makes a melee attack, on an unmodified wound roll of 6, add 1 to the Damage characteristic of that attack, and, if is not at it&apos;s Starting Strength, add 1 to that attack’s hit roll.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -27013,7 +27104,7 @@ You can use this Stratagem up to 3 times.</characteristic>
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Exodite Fire Knight" hidden="true" id="9fa3-40ea-ed7f-5a72" collective="false">
+    <selectionEntry type="model" import="true" name="Clan Fire Knight" hidden="true" id="9fa3-40ea-ed7f-5a72" collective="false">
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
@@ -27030,9 +27121,9 @@ You can use this Stratagem up to 3 times.</characteristic>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Faction: Aeldari" hidden="false" id="27f5-c1cb-4b5e-3703" targetId="1924-ef18-000b-d2ba" primary="false"/>
-        <categoryLink name="Faction: Aeldari Exodites" hidden="false" id="1649-8794-6de2-0ae9" targetId="4a67-024a-2ab2-8193" primary="false"/>
         <categoryLink name="Vehicle" hidden="false" id="e3d9-ecc6-5d17-9551" targetId="c8fd-783f-3230-493e" primary="false"/>
         <categoryLink name="Wraithbone" hidden="false" id="78c4-871f-dcb3-628c" targetId="31ea-67f7-bd8b-9e54" primary="false"/>
+        <categoryLink name="Faction: Aeldari Knights" hidden="false" id="e502-f2b9-c832-badb" targetId="ac80-0dad-7bbb-fe7a" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Exodite Knight Variant" id="d001-e0af-d355-52d0" hidden="false" collective="false" import="true" defaultSelectionEntryId="dc91-7bfb-f4df-3172">
@@ -27128,12 +27219,17 @@ You can use this Stratagem up to 3 times.</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
         </profile>
+        <profile name="Combat refinement" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="9403-8221-c845-b392">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time this model makes a Advance, Fall- back, Pile-in or Consolidates, add 2&quot; to that Movement.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <entryLinks>
         <entryLink targetId="0bc2-00ee-8e18-dcf3" id="eba5-2872-673c-86a1" type="selectionEntry" name="Psychic Lance" hidden="false" collective="true"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Exodite Bright Warrior" hidden="true" id="40c2-1bd9-65ac-e1d7" collective="false">
+    <selectionEntry type="model" import="true" name="Clan Bright Warrior" hidden="true" id="40c2-1bd9-65ac-e1d7" collective="false">
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
@@ -27150,9 +27246,9 @@ You can use this Stratagem up to 3 times.</characteristic>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Faction: Aeldari" hidden="false" id="bc73-93e2-ab77-bf35" targetId="1924-ef18-000b-d2ba" primary="false"/>
-        <categoryLink name="Faction: Aeldari Exodites" hidden="false" id="bd2b-8f03-f890-a933" targetId="4a67-024a-2ab2-8193" primary="false"/>
         <categoryLink name="Vehicle" hidden="false" id="d5a2-8e55-9885-dfb3" targetId="c8fd-783f-3230-493e" primary="false"/>
         <categoryLink name="Wraithbone" hidden="false" id="f0cf-9357-949a-7976" targetId="31ea-67f7-bd8b-9e54" primary="false"/>
+        <categoryLink name="Faction: Aeldari Knights" hidden="false" id="9e43-69bf-e5c1-e212" targetId="ac80-0dad-7bbb-fe7a" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Exodite Knight Variant" id="858b-ba8f-e859-aa41" hidden="false" collective="false" import="true" defaultSelectionEntryId="dc91-7bfb-f4df-3172">
@@ -27190,8 +27286,8 @@ You can use this Stratagem up to 3 times.</characteristic>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="Pts" typeId="points" value="190"/>
-        <cost name="PL" typeId="e356-c769-5920-6e14" value="10"/>
+        <cost name="Pts" typeId="points" value="250"/>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="13"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
@@ -27246,7 +27342,7 @@ You can use this Stratagem up to 3 times.</characteristic>
       <profiles>
         <profile name="Crushing charge" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="8775-5fe8-cd8d-c630">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Duri</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time an attack is made with this model&apos;s Crushing Bulk weapon, if the bearer made a charge move this turn, that attack has a Strength characteristic of +5, AP characteristic of -2 and Damage characteristic of 2.</characteristic>
           </characteristics>
         </profile>
       </profiles>
