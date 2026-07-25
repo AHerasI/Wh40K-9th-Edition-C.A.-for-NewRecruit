@@ -18947,38 +18947,6 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
         </modifierGroup>
       </modifierGroups>
       <selectionEntryGroups>
-        <selectionEntryGroup id="a1d0-14e9-c813-7f10" name="Guardsman" hidden="false" collective="false" import="true" defaultSelectionEntryId="adf5-cabd-42e0-9b7e">
-          <constraints>
-            <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bab-aafc-6bcf-7ca4" type="max"/>
-            <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3279-019a-6e45-655a" type="min"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="26b0-28f9-13f4-1fc7" name="Regiment" hidden="false" targetId="3aa8-21df-b483-57dd" primary="false"/>
-          </categoryLinks>
-          <entryLinks>
-            <entryLink id="e4b9-e909-e68a-84e1" name="Guardsman w/Vox-caster" hidden="false" collective="false" import="true" targetId="b730-8346-a151-191d" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0c5-7342-7142-fb92" type="min"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="01b8-2f0f-35b6-7eae" name="Regiment" hidden="false" targetId="3aa8-21df-b483-57dd" primary="false"/>
-              </categoryLinks>
-            </entryLink>
-            <entryLink id="b6e2-7035-159a-63e5" name="Guardsman w/Special Weapon" hidden="false" collective="false" import="true" targetId="9dbf-5912-934f-1d21" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="a006-fc9c-7752-c6f5" value="3"/>
-              </modifiers>
-              <categoryLinks>
-                <categoryLink id="04ad-8f2d-8e89-6dd5" name="Regiment" hidden="false" targetId="3aa8-21df-b483-57dd" primary="false"/>
-              </categoryLinks>
-            </entryLink>
-            <entryLink id="adf5-cabd-42e0-9b7e" name="Guardsman" hidden="false" collective="false" import="true" targetId="373f-4ab4-7e87-ab0b" type="selectionEntry">
-              <categoryLinks>
-                <categoryLink id="b20c-6a8c-7610-d433" name="Regiment" hidden="false" targetId="3aa8-21df-b483-57dd" primary="false"/>
-              </categoryLinks>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup id="8501-fc9f-e875-90a1" name="Attachés and Bodyguards (0-5)" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bfb-2e34-469e-1602" type="max"/>
@@ -19119,6 +19087,28 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
               </costs>
             </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Veteran Guardsman" id="ff06-6679-883b-0851" hidden="false" collective="false" import="true" defaultSelectionEntryId="c793-3085-fbc0-6c3d">
+          <constraints>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="c1d0-6f00-bad7-71ae" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="466e-bb7c-e0dc-4d0b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Regiment" hidden="false" id="2901-b08b-0e9a-94a7" targetId="3aa8-21df-b483-57dd" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Veteran" hidden="false" id="7312-ed80-8759-f6ee" collective="false" targetId="78c2-4796-0764-4705" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="Regiment" hidden="false" id="860b-4c39-b285-f095" targetId="3aa8-21df-b483-57dd" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink import="true" name="Veteran w/Special Weapon" hidden="false" id="15fc-81cb-9e38-4449" collective="false" targetId="96d9-e3d7-f100-3be1" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="Regiment" hidden="false" id="83ae-0abd-bf75-1377" targetId="3aa8-21df-b483-57dd" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink import="true" name="Veteran w/Vox-caster" hidden="false" id="f884-7efe-f684-67fe" type="selectionEntry" targetId="f71e-88ff-22d1-776f"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -22278,7 +22268,7 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2e8-f416-1367-330d" type="max"/>
       </constraints>
       <selectionEntryGroups>
-        <selectionEntryGroup id="7d22-0984-4d8a-e5e1" name="Veteran Guardsman" hidden="false" collective="false" import="true" defaultSelectionEntryId="c793-3085-fbc0-6c3d">
+        <selectionEntryGroup id="7d22-0984-4d8a-e5e1" name="Storm Trooper Guardsman" hidden="false" collective="false" import="true" defaultSelectionEntryId="c793-3085-fbc0-6c3d">
           <constraints>
             <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77d2-1f06-0fa4-d8f6" type="max"/>
             <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22e9-de00-007a-52c4" type="min"/>
@@ -22287,19 +22277,17 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
             <categoryLink id="8eff-47a5-1ce4-f300" name="Regiment" hidden="false" targetId="3aa8-21df-b483-57dd" primary="false"/>
           </categoryLinks>
           <entryLinks>
-            <entryLink id="b3ad-8aea-6aa5-a2be" name="Veteran" hidden="false" collective="false" import="true" targetId="78c2-4796-0764-4705" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8ea-0a78-ac70-0cd6" type="min"/>
-              </constraints>
+            <entryLink id="b3ad-8aea-6aa5-a2be" name="Storm Trooper" hidden="false" collective="false" import="true" targetId="e093-e093-d22e-37df" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="8719-9a84-7377-553e" name="Regiment" hidden="false" targetId="3aa8-21df-b483-57dd" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="c793-3085-fbc0-6c3d" name="Veteran w/Special Weapon" hidden="false" collective="false" import="true" targetId="96d9-e3d7-f100-3be1" type="selectionEntry">
+            <entryLink id="c793-3085-fbc0-6c3d" name="Storm Trooper w/Special Weapon" hidden="false" collective="false" import="true" targetId="be2d-dff3-aa43-591d" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="bfe5-814c-26e5-04cd" name="Regiment" hidden="false" targetId="3aa8-21df-b483-57dd" primary="false"/>
               </categoryLinks>
             </entryLink>
+            <entryLink import="true" name="Storm Trooper w/Vox-caster" hidden="false" id="7c02-b7a0-f9c8-5171" type="selectionEntry" targetId="d82c-97ec-ce3f-970e"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="711f-7c21-ca46-8228" name="Attachés and Bodyguards (0-5)" hidden="false" collective="false" import="true">
@@ -26543,6 +26531,7 @@ Re-roll Invulnerable saving throws of 1 for this WARLORD.</characteristic>
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Hippogriff AFV" hidden="false" id="9030-8da4-97de-6e09" type="selectionEntry" targetId="0a0a-33bc-1bf7-91c1"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -28077,7 +28066,7 @@ Until the start of your next Psychic phase, each time a ranged attack is made ag
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
       </characteristics>
     </profile>
-    <profile id="66d1-60f7-4a82-31ea" name="Veteran" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+    <profile id="66d1-60f7-4a82-31ea" name="Veteran" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <modifierGroups>
         <modifierGroup>
           <modifiers>
