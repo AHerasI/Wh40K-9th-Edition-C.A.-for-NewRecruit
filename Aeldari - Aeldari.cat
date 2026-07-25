@@ -26017,7 +26017,7 @@ You can use this Stratagem up to 3 times.</characteristic>
             <entryLink import="true" name="Spiritual tunes" hidden="false" id="0a6a-a231-198a-f531" type="selectionEntryGroup" targetId="0d1d-9199-acc3-dd3b"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Warlocks equipment" id="ac99-3db9-bb9d-e4b4" hidden="false" collective="false" import="true" defaultSelectionEntryId="ea58-5a4d-6e68-db3a">
+        <selectionEntryGroup name="Warlocks equipment" id="ac99-3db9-bb9d-e4b4" hidden="false" collective="false" import="true" defaultSelectionEntryId="46e2-0581-d058-c7f7">
           <constraints>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="58ca-89d2-b476-b97e" includeChildSelections="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="052a-b303-353f-c63c" includeChildSelections="false"/>
@@ -26066,13 +26066,6 @@ You can use this Stratagem up to 3 times.</characteristic>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="a4ce-aa2a-7f56-c830" shared="true" childId="f00c-c94e-1d34-c089" childName="Drakesteed mount" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a6db-1674-f38e-10a9" includeChildSelections="false"/>
               </constraints>
@@ -26115,13 +26108,6 @@ You can use this Stratagem up to 3 times.</characteristic>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="a4ce-aa2a-7f56-c830" childId="f00c-c94e-1d34-c089" shared="true" childName="Drakesteed mount" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="80e5-f8c3-0815-6ce1" includeChildSelections="false"/>
               </constraints>
@@ -26199,13 +26185,6 @@ You can use this Stratagem up to 3 times.</characteristic>
         <categoryLink name="Faction: Aeldari" hidden="false" id="6b0a-17e9-e91c-b72d" targetId="1924-ef18-000b-d2ba" primary="false"/>
         <categoryLink name="Infantry" hidden="false" id="8e27-b47e-f95b-0768" targetId="3d52-fccf-10c0-3fae" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Drakesteed mount" hidden="false" id="f00c-c94e-1d34-c089">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea97-1c1b-1d65-883a"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
@@ -26213,7 +26192,7 @@ You can use this Stratagem up to 3 times.</characteristic>
             <modifier type="add" value="ad01-caec-17d9-cb8d" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="a4ce-aa2a-7f56-c830" childId="f00c-c94e-1d34-c089" shared="true" childName="Drakesteed mount"/>
+            <condition type="atLeast" value="1" field="selections" scope="a4ce-aa2a-7f56-c830" childId="baf8-c8ec-aac2-90ea" shared="true" childName="Exodite Warlock on Drakesteed"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -26324,8 +26303,13 @@ You can use this Stratagem up to 3 times.</characteristic>
                 </profile>
               </profiles>
               <entryLinks>
-                <entryLink import="true" name="Shield option" hidden="false" id="50d2-48ba-750c-83fa" type="selectionEntryGroup" targetId="05a4-7524-0804-e4da"/>
-                <entryLink import="true" name="Weapon option" hidden="false" id="4cda-7b52-a09f-02ec" type="selectionEntryGroup" targetId="7d7e-5a70-19d0-0832"/>
+                <entryLink import="true" name="Weapon option" hidden="false" id="4cda-7b52-a09f-02ec" type="selectionEntryGroup" targetId="7d7e-5a70-19d0-0832">
+                  <entryLinks>
+                    <entryLink import="true" name="Ranger long rifle" hidden="false" id="cbf8-48ea-83e2-5046" collective="false" targetId="94b8-dd34-8aea-b707" type="selectionEntry"/>
+                    <entryLink import="true" name="Splinter rifle" hidden="false" id="afe8-bc08-ad2b-7598" type="selectionEntry" targetId="acad-483d-f671-5ec1"/>
+                    <entryLink import="true" name="Wraithbone Recurve Bow" hidden="false" id="4718-1150-3963-f42d" targetId="e8e2-56ed-f1d7-1651" type="selectionEntry"/>
+                  </entryLinks>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="Pts" typeId="points" value="20"/>
@@ -26345,6 +26329,50 @@ You can use this Stratagem up to 3 times.</characteristic>
                     <entryLink import="true" name="Raptorhound" hidden="false" id="31e8-b642-6b12-6787" type="selectionEntry" targetId="14c9-3222-f39f-1bf7"/>
                     <entryLink import="true" name="Wyvach" hidden="false" id="c949-bbae-59b6-7243" type="selectionEntry" targetId="3837-6f3a-733f-e0ba"/>
                   </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Shield option" id="b21c-0e72-cdfc-aaf1" hidden="false" defaultSelectionEntryId="b8eb-810c-c5b0-05b3">
+                  <entryLinks>
+                    <entryLink import="true" name="Shimmershield" hidden="false" id="04ed-4f4a-0f6b-5cea" collective="false" targetId="42fa-981f-54fd-7972" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="points" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Storm Shield" hidden="false" id="0b01-efe4-d70a-5324" type="selectionEntry" targetId="38b5-ef30-f87f-5275">
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="7997-60e4-4cbc-3e21" childId="ce49-bc55-c09f-d9cc" shared="true" includeChildSelections="true" childName="Axe&amp;Sword"/>
+                                <condition type="equalTo" value="1" field="selections" scope="7997-60e4-4cbc-3e21" childId="94b8-dd34-8aea-b707" shared="true" includeChildSelections="true" childName="Ranger long rifle"/>
+                                <condition type="equalTo" value="1" field="selections" scope="7997-60e4-4cbc-3e21" childId="acad-483d-f671-5ec1" shared="true" includeChildSelections="true" childName="Splinter rifle"/>
+                                <condition type="equalTo" value="1" field="selections" scope="7997-60e4-4cbc-3e21" childId="e8e2-56ed-f1d7-1651" shared="true" includeChildSelections="true" childName="Wraithbone Recurve Bow"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d79-fef1-8f45-6f39" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="96fe-7c02-7fb0-db6e" includeChildSelections="false"/>
+                  </constraints>
+                  <comment>Exodites</comment>
+                  <modifiers>
+                    <modifier type="set" value="0" field="96fe-7c02-7fb0-db6e">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="7997-60e4-4cbc-3e21" childId="ce49-bc55-c09f-d9cc" shared="true" includeChildSelections="true" childName="Axe&amp;Sword"/>
+                            <condition type="equalTo" value="1" field="selections" scope="7997-60e4-4cbc-3e21" childId="94b8-dd34-8aea-b707" shared="true" includeChildSelections="true" childName="Ranger long rifle"/>
+                            <condition type="equalTo" value="1" field="selections" scope="7997-60e4-4cbc-3e21" childId="acad-483d-f671-5ec1" shared="true" includeChildSelections="true" childName="Splinter rifle"/>
+                            <condition type="equalTo" value="1" field="selections" scope="7997-60e4-4cbc-3e21" childId="e8e2-56ed-f1d7-1651" shared="true" includeChildSelections="true" childName="Wraithbone Recurve Bow"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
@@ -26490,24 +26518,24 @@ You can use this Stratagem up to 3 times.</characteristic>
                 <categoryLink name="Ø28mm" hidden="false" id="4210-c600-3421-f0e7" targetId="7faf-04a8-3770-87b5" primary="false"/>
               </categoryLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Shield option" id="05a4-7524-0804-e4da" hidden="false" defaultSelectionEntryId="b8eb-810c-c5b0-05b3">
+                <selectionEntryGroup name="Shield option" id="565a-2cde-9aa5-d716" hidden="false" defaultSelectionEntryId="b8eb-810c-c5b0-05b3">
                   <entryLinks>
-                    <entryLink import="true" name="Shimmershield" hidden="false" id="a437-c7d7-8b9a-e6f2" collective="false" targetId="42fa-981f-54fd-7972" type="selectionEntry">
+                    <entryLink import="true" name="Shimmershield" hidden="false" id="c3ec-48f4-a1bc-6235" collective="false" targetId="42fa-981f-54fd-7972" type="selectionEntry">
                       <costs>
                         <cost name="pts" typeId="points" value="10"/>
                       </costs>
                       <constraints>
-                        <constraint type="max" value="0" field="selections" scope="ce9a-1267-cc6b-3928" shared="true" id="d156-1062-e228-8e2e" includeChildSelections="true"/>
+                        <constraint type="max" value="0" field="selections" scope="ce9a-1267-cc6b-3928" shared="true" id="fd21-9b8d-640c-3f1f" includeChildSelections="true"/>
                       </constraints>
                       <modifiers>
-                        <modifier type="increment" value="1" field="d156-1062-e228-8e2e">
+                        <modifier type="increment" value="1" field="fd21-9b8d-640c-3f1f">
                           <repeats>
                             <repeat value="5" repeats="1" field="selections" scope="ce9a-1267-cc6b-3928" childId="model" shared="true" roundUp="false" childName="model"/>
                           </repeats>
                         </modifier>
                       </modifiers>
                     </entryLink>
-                    <entryLink import="true" name="Storm Shield" hidden="false" id="b8eb-810c-c5b0-05b3" type="selectionEntry" targetId="38b5-ef30-f87f-5275">
+                    <entryLink import="true" name="Storm Shield" hidden="false" id="c2cd-bbb8-0017-3beb" type="selectionEntry" targetId="38b5-ef30-f87f-5275">
                       <modifiers>
                         <modifier type="set" value="true" field="hidden">
                           <conditions>
@@ -26518,21 +26546,17 @@ You can use this Stratagem up to 3 times.</characteristic>
                     </entryLink>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e26-76d3-2cc8-8d24" includeChildSelections="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f2de-f8b5-07dd-2306" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9463-4125-8fb3-e45e" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c0d4-38f7-4807-a8af" includeChildSelections="false"/>
                   </constraints>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="None" hidden="false" id="7d3d-4405-dad1-e0fd">
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="equalTo" value="0" field="selections" scope="af22-8e3c-bb46-2b54" childId="ce49-bc55-c09f-d9cc" shared="true" includeChildSelections="true" childName="Axe&amp;Sword"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </selectionEntry>
-                  </selectionEntries>
                   <comment>Exodites</comment>
+                  <modifiers>
+                    <modifier type="set" value="0" field="c0d4-38f7-4807-a8af">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="af22-8e3c-bb46-2b54" childId="ce49-bc55-c09f-d9cc" shared="true" includeChildSelections="true" childName="Axe&amp;Sword"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
@@ -26563,7 +26587,6 @@ You can use this Stratagem up to 3 times.</characteristic>
                 </profile>
               </profiles>
               <entryLinks>
-                <entryLink import="true" name="Shield option" hidden="false" id="f283-33c3-4322-4d71" type="selectionEntryGroup" targetId="05a4-7524-0804-e4da"/>
                 <entryLink import="true" name="Weapon option" hidden="false" id="2793-a894-9885-444c" type="selectionEntryGroup" targetId="7d7e-5a70-19d0-0832"/>
                 <entryLink import="true" name="Familiar" hidden="false" id="9485-6f38-0316-557c" type="selectionEntryGroup" targetId="5fc5-d60c-3f31-4bf7"/>
               </entryLinks>
@@ -26573,6 +26596,48 @@ You can use this Stratagem up to 3 times.</characteristic>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Shield option" id="e57b-47a6-e7a6-a6a5" hidden="false" defaultSelectionEntryId="b8eb-810c-c5b0-05b3">
+                  <entryLinks>
+                    <entryLink import="true" name="Shimmershield" hidden="false" id="72ad-c9ad-0697-c6f0" collective="false" targetId="42fa-981f-54fd-7972" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="points" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="0" field="selections" scope="ce9a-1267-cc6b-3928" shared="true" id="0da3-5b46-49aa-1717" includeChildSelections="true"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="0da3-5b46-49aa-1717">
+                          <repeats>
+                            <repeat value="5" repeats="1" field="selections" scope="fd49-ff0c-be72-aed6" childId="model" shared="true" roundUp="false" childName="model"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Storm Shield" hidden="false" id="2f75-d82e-845b-cca9" type="selectionEntry" targetId="38b5-ef30-f87f-5275">
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="fd49-ff0c-be72-aed6" childId="ce49-bc55-c09f-d9cc" shared="true" includeChildSelections="true" childName="Axe&amp;Sword"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f00-6fab-65a2-8fe3" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bc53-e3a3-a088-a8ac" includeChildSelections="false"/>
+                  </constraints>
+                  <comment>Exodites</comment>
+                  <modifiers>
+                    <modifier type="set" value="0" field="bc53-e3a3-a088-a8ac">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="fd49-ff0c-be72-aed6" childId="ce49-bc55-c09f-d9cc" shared="true" includeChildSelections="true" childName="Axe&amp;Sword"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -27078,6 +27143,11 @@ You can use this Stratagem up to 3 times.</characteristic>
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="increment" value="1" field="e356-c769-5920-6e14">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="df74-c384-1a96-e711" childId="08c9-4fdc-5001-512b" shared="true" includeChildSelections="true" childName="Star Lance"/>
+          </conditions>
         </modifier>
       </modifiers>
       <entryLinks>
