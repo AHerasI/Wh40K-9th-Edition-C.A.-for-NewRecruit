@@ -27104,6 +27104,14 @@ You can use this Stratagem up to 3 times.</characteristic>
               <entryLinks>
                 <entryLink targetId="9d7b-d9ac-3673-11e9" id="4e17-0b17-8b94-53cd" type="selectionEntry" name="Megadon Bite" hidden="false" collective="true"/>
                 <entryLink import="true" name="Ranged weapon" hidden="false" id="2a9c-82d7-79cc-b308" type="selectionEntryGroup" targetId="bbb0-e2da-8cdd-6bb3"/>
+                <entryLink import="true" name="Storm Shield" hidden="false" id="3566-3dea-7415-b87c" type="selectionEntry" targetId="38b5-ef30-f87f-5275">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3f5-3e6f-0678-5818" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="points" value="5"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="Pts" typeId="points" value="50"/>
@@ -27111,12 +27119,23 @@ You can use this Stratagem up to 3 times.</characteristic>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Additional armour plating" id="ecb2-2208-317d-d233" hidden="false" type="profile" targetId="5b3f-8e7c-f7ae-0f7c"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Dragon Knight Lord on Drakesteed" hidden="false" id="b02b-7c7a-1795-c407">
               <entryLinks>
                 <entryLink import="true" name="Drakesteed bite" hidden="false" id="a5c4-7968-4d64-837f" type="selectionEntry" targetId="4e18-d68e-36d9-5e2e"/>
                 <entryLink import="true" name="Melee weapon" hidden="false" id="19ab-bfb8-51bb-7f13" type="selectionEntryGroup" targetId="1c4a-4af4-a508-3414"/>
                 <entryLink import="true" name="Ranged weapon" hidden="false" id="decc-0c6b-1f52-8680" type="selectionEntryGroup" targetId="bbb0-e2da-8cdd-6bb3"/>
+                <entryLink import="true" name="Storm Shield" hidden="false" id="15eb-699f-1a8e-634e" type="selectionEntry" targetId="38b5-ef30-f87f-5275">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d783-8c4a-f7e3-d3c1" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="points" value="5"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
               <profiles>
                 <profile name="Dragon Knight Lord on Drakesteed" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="3776-276a-3bf8-94df">
@@ -27464,28 +27483,51 @@ You can use this Stratagem up to 3 times.</characteristic>
             <selectionEntry type="upgrade" import="true" name="Megasaurs" hidden="false" id="22b2-4a8a-7764-808e">
               <selectionEntries>
                 <selectionEntry type="model" import="true" name="Megasaur" hidden="false" id="7797-7029-1b85-09ea">
+                  <infoLinks>
+                    <infoLink name="Additional armour plating" id="3007-ee90-b346-fdd4" hidden="false" type="profile" targetId="5b3f-8e7c-f7ae-0f7c"/>
+                    <infoLink name="Off-hand weapon" id="f538-e124-e512-e5b5" hidden="false" type="profile" targetId="e14b-37da-f8e9-1752"/>
+                  </infoLinks>
                   <costs>
-                    <cost name="Pts" typeId="points" value="20"/>
-                    <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                    <cost name="Pts" typeId="points" value="80"/>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="4"/>
                     <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                     <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                   </costs>
                   <entryLinks>
-                    <entryLink import="true" name="Drakesteed bite" hidden="false" id="9e70-323e-b233-d7bd" type="selectionEntry" targetId="4e18-d68e-36d9-5e2e"/>
                     <entryLink import="true" name="Crushing bulk" hidden="false" id="1af9-d033-d2a6-6ad8" type="selectionEntry" targetId="502f-45c2-6fd1-443b"/>
                   </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Megasaur bite" hidden="false" id="f384-7e81-e14c-f4cd" collective="true">
+                      <profiles>
+                        <profile name="Megasaur bite" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="57ea-fa4c-8013-b9c7">
+                          <characteristics>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                            <characteristic name="S" typeId="59b1-319e-ec13-d466">x2</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">4</characteristic>
+                            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c56a-f138-6c55-dfaa" includeChildSelections="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e5dc-fcb6-dae9-2b3c" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntry>
+                  </selectionEntries>
                   <profiles>
                     <profile name="Megasaur" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="8546-8e4f-198e-bab5">
                       <characteristics>
                         <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
                         <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
                         <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
-                        <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-                        <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
-                        <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
-                        <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+                        <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
+                        <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                        <characteristic name="W" typeId="f330-5e6e-4110-0978">9</characteristic>
+                        <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
                         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
-                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
+                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -27499,32 +27541,20 @@ You can use this Stratagem up to 3 times.</characteristic>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Stegosaurs" hidden="false" id="46ca-16ce-bf8b-8634">
               <selectionEntries>
-                <selectionEntry type="model" import="true" name="Megasaur" hidden="false" id="03c5-467d-0d5d-e674">
+                <selectionEntry type="model" import="true" name="Stegosaur" hidden="false" id="03c5-467d-0d5d-e674">
+                  <infoLinks>
+                    <infoLink name="Stegosaur" id="d650-1a90-3d95-29cd" hidden="false" targetId="65f4-5f3f-9e9e-11d7" type="infoGroup"/>
+                    <infoLink name="Additional armour plating" id="a631-1415-728c-1a9c" hidden="false" type="profile" targetId="5b3f-8e7c-f7ae-0f7c"/>
+                  </infoLinks>
                   <costs>
-                    <cost name="Pts" typeId="points" value="20"/>
-                    <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                    <cost name="Pts" typeId="points" value="80"/>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="4"/>
                     <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                     <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                   </costs>
                   <entryLinks>
-                    <entryLink import="true" name="Drakesteed bite" hidden="false" id="afe5-9b7c-c988-849e" type="selectionEntry" targetId="4e18-d68e-36d9-5e2e"/>
-                    <entryLink import="true" name="Crushing bulk" hidden="false" id="b3f4-f010-d32a-c3e4" type="selectionEntry" targetId="502f-45c2-6fd1-443b"/>
+                    <entryLink targetId="8ded-7b32-5624-720b" id="c591-ff98-fe9c-f2a5" type="selectionEntry" name="Great Saur bite" hidden="false" collective="true"/>
                   </entryLinks>
-                  <profiles>
-                    <profile name="Megasaur" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="ede6-2deb-8156-e3a9">
-                      <characteristics>
-                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
-                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
-                        <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-                        <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
-                        <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
-                        <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
-                        <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
-                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c22-5707-dd85-5f68" includeChildSelections="false"/>
                     <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="1ee8-8c0c-a6e5-9651" includeChildSelections="false"/>
@@ -27535,29 +27565,47 @@ You can use this Stratagem up to 3 times.</characteristic>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Lithodons" hidden="false" id="eeb6-a0d6-f5ee-424e">
               <selectionEntries>
-                <selectionEntry type="model" import="true" name="Megasaur" hidden="false" id="12a6-3b53-0a49-cbda">
+                <selectionEntry type="model" import="true" name="Lithodon" hidden="false" id="12a6-3b53-0a49-cbda">
+                  <infoLinks>
+                    <infoLink name="Lithodon" id="7b6e-12fd-a90c-3d6f" hidden="false" targetId="a2b3-6f0e-2d47-7b9f" type="infoGroup"/>
+                    <infoLink name="Additional armour plating" id="d508-a6de-2a43-e28d" hidden="false" type="profile" targetId="5b3f-8e7c-f7ae-0f7c"/>
+                  </infoLinks>
                   <costs>
-                    <cost name="Pts" typeId="points" value="20"/>
-                    <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                    <cost name="Pts" typeId="points" value="70"/>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="3"/>
                     <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                     <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                   </costs>
                   <entryLinks>
-                    <entryLink import="true" name="Drakesteed bite" hidden="false" id="4795-9dc2-35a9-ca62" type="selectionEntry" targetId="4e18-d68e-36d9-5e2e"/>
                     <entryLink import="true" name="Crushing bulk" hidden="false" id="e0d9-c035-a531-e2c6" type="selectionEntry" targetId="502f-45c2-6fd1-443b"/>
                   </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Poison sting" hidden="false" id="a31a-1e0f-6db7-0fa4" collective="true">
+                      <profiles>
+                        <profile name="Poison sting" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="9bb0-ca63-0598-a1ea">
+                          <characteristics>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">6&quot;</characteristic>
+                            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 1</characteristic>
+                            <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
+                            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Poisoned Weapon (2+)</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7b6-1afe-5b88-e378" includeChildSelections="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="388a-672c-f1ed-4d42" includeChildSelections="false"/>
+                      </constraints>
+                      <categoryLinks>
+                        <categoryLink name="Poisoned weapon" hidden="false" id="9438-6cc7-b3ee-5c99" targetId="7512-bcba-18b0-eadc" primary="false"/>
+                      </categoryLinks>
+                    </selectionEntry>
+                  </selectionEntries>
                   <profiles>
-                    <profile name="Megasaur" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="49b1-c828-833b-3bee">
+                    <profile name="Sticky slime" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="8ed5-0809-cad6-a1bc">
                       <characteristics>
-                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
-                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
-                        <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-                        <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
-                        <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
-                        <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
-                        <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
-                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Charge moves made against a model with this ability are considered to pass trought Difficult terrain. in addition, models in engagement range without this abiliry must substract 1 from their Attacks characteristic (to a minimun of 1).</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -27571,10 +27619,14 @@ You can use this Stratagem up to 3 times.</characteristic>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Miradons" hidden="false" id="f003-1a22-af23-5f7f">
               <selectionEntries>
-                <selectionEntry type="model" import="true" name="Megasaur" hidden="false" id="a5d0-c27e-299a-2870">
+                <selectionEntry type="model" import="true" name="Miradon" hidden="false" id="a5d0-c27e-299a-2870">
+                  <infoLinks>
+                    <infoLink name="Impervious to small weapons fire" id="2932-712b-e7b0-8f7e" hidden="false" type="profile" targetId="b48e-9a4a-2fdc-5d7c"/>
+                    <infoLink name="Crushing charge" id="eb12-376f-bcb9-b373" hidden="false" type="profile" targetId="8775-5fe8-cd8d-c630"/>
+                  </infoLinks>
                   <costs>
-                    <cost name="Pts" typeId="points" value="20"/>
-                    <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                    <cost name="Pts" typeId="points" value="60"/>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="3"/>
                     <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                     <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                   </costs>
@@ -27583,15 +27635,15 @@ You can use this Stratagem up to 3 times.</characteristic>
                     <entryLink import="true" name="Crushing bulk" hidden="false" id="ea96-2ede-595d-e2d8" type="selectionEntry" targetId="502f-45c2-6fd1-443b"/>
                   </entryLinks>
                   <profiles>
-                    <profile name="Megasaur" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="e46a-f86d-2b7e-c5b7">
+                    <profile name="Miradon" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="e46a-f86d-2b7e-c5b7">
                       <characteristics>
-                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
+                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
                         <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
                         <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
                         <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-                        <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
-                        <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
-                        <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+                        <characteristic name="T" typeId="9c9f-9774-a358-3a39">6</characteristic>
+                        <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
+                        <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
                         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
                         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
                       </characteristics>
@@ -27607,32 +27659,21 @@ You can use this Stratagem up to 3 times.</characteristic>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Megadons" hidden="false" id="6249-0eaa-f6c8-6ffa">
               <selectionEntries>
-                <selectionEntry type="model" import="true" name="Megasaur" hidden="false" id="5b40-cf27-9d55-d43b">
+                <selectionEntry type="model" import="true" name="Megadon" hidden="false" id="5b40-cf27-9d55-d43b">
+                  <infoLinks>
+                    <infoLink name="Megadon" id="7cb7-b27e-8567-f3d3" hidden="false" targetId="8275-a602-a9f0-99c3" type="profile"/>
+                    <infoLink name="Additional armour plating" id="1d00-babf-e071-93e8" hidden="false" type="profile" targetId="5b3f-8e7c-f7ae-0f7c"/>
+                  </infoLinks>
                   <costs>
-                    <cost name="Pts" typeId="points" value="20"/>
-                    <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                    <cost name="Pts" typeId="points" value="80"/>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="4"/>
                     <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                     <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                   </costs>
                   <entryLinks>
-                    <entryLink import="true" name="Drakesteed bite" hidden="false" id="3f38-c328-7ac1-ab74" type="selectionEntry" targetId="4e18-d68e-36d9-5e2e"/>
-                    <entryLink import="true" name="Crushing bulk" hidden="false" id="d717-48c3-f435-2a22" type="selectionEntry" targetId="502f-45c2-6fd1-443b"/>
+                    <entryLink targetId="d141-94be-7985-0ce4" id="116b-2a72-7765-a7e7" type="selectionEntry" name="Megadon Fangs" hidden="false" collective="true"/>
+                    <entryLink targetId="9922-8f24-cf22-6843" id="fe2c-6df6-681e-f2c3" type="selectionEntry" name="Megadon Talons" hidden="false" collective="true"/>
                   </entryLinks>
-                  <profiles>
-                    <profile name="Megasaur" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="d9fb-9163-723b-12e5">
-                      <characteristics>
-                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
-                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
-                        <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-                        <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
-                        <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
-                        <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
-                        <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
-                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c143-9fbf-955e-a95b" includeChildSelections="false"/>
                     <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="8dac-9697-a25b-6e54" includeChildSelections="false"/>
@@ -27670,29 +27711,15 @@ You can use this Stratagem up to 3 times.</characteristic>
         <modifierGroup type="and">
           <modifiers>
             <modifier type="remove" value="13e3-4915-f89b-b135" field="category"/>
-            <modifier type="remove" value="6cc4-1b62-8e8a-05cd" field="category"/>
-            <modifier type="add" value="45a6-4825-db8c-9cff" field="category"/>
           </modifiers>
           <conditions>
             <condition type="equalTo" value="1" field="selections" scope="d22a-52e0-da22-ab22" childId="fb7f-8de1-1f60-755a" shared="true" includeChildSelections="true" childName="Reinforced Armour plating"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
-      <infoLinks>
-        <infoLink name="Additional armour plating" id="5cf1-4af0-75df-aa4a" hidden="false" type="profile" targetId="5b3f-8e7c-f7ae-0f7c">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="d22a-52e0-da22-ab22" childId="fb7f-8de1-1f60-755a" shared="true" includeChildSelections="true" childName="Reinforced Armour plating"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
       <categoryLinks>
         <categoryLink name="Faction: Aeldari Exodites" hidden="false" id="1412-e984-2e75-7379" targetId="4a67-024a-2ab2-8193" primary="false"/>
         <categoryLink name="Faction: Aeldari" hidden="false" id="049a-836b-36f8-d168" targetId="1924-ef18-000b-d2ba" primary="false"/>
-        <categoryLink name="Transport" hidden="false" id="d6f8-8d1e-7232-4c20" targetId="6cc4-1b62-8e8a-05cd" primary="false"/>
         <categoryLink name="Monster" hidden="false" id="24d6-7fe8-8c7e-6aac" targetId="3b77-decb-d468-6bcc" primary="false"/>
         <categoryLink name="Monster pack" hidden="false" id="d0a0-371b-6440-02d1" targetId="d0c7-0b01-3021-cc38" primary="false"/>
         <categoryLink name="Combined transport" hidden="false" id="6672-5477-8bdf-5c54" targetId="13e3-4915-f89b-b135" primary="false"/>
@@ -27706,8 +27733,8 @@ You can use this Stratagem up to 3 times.</characteristic>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="cd74-64f2-ef4f-8339" hidden="false" defaultSelectionEntryId="3504-dc4c-a58b-6deb">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Howdah" hidden="false" id="3504-dc4c-a58b-6deb"/>
-            <selectionEntry type="upgrade" import="true" name="Howdah w/D.d." hidden="false" id="1eef-13e5-c6f4-63d3"/>
+            <selectionEntry type="upgrade" import="true" name="Armed Howdah" hidden="false" id="3504-dc4c-a58b-6deb"/>
+            <selectionEntry type="upgrade" import="true" name="Howdah w/Fast debark" hidden="false" id="1eef-13e5-c6f4-63d3"/>
             <selectionEntry type="upgrade" import="true" name="Reinforced Armour plating" hidden="false" id="fb7f-8de1-1f60-755a"/>
           </selectionEntries>
           <constraints>
@@ -27715,46 +27742,292 @@ You can use this Stratagem up to 3 times.</characteristic>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6f5d-9df0-e2e9-1e96" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Great Drake" id="edd2-8dc1-54aa-5601" hidden="false">
+        <selectionEntryGroup name="Tamed Great Drake" id="edd2-8dc1-54aa-5601" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Lithodon" hidden="false" id="f094-e400-f59c-8039">
+            <selectionEntry type="upgrade" import="true" name="Tamed Lithodon" hidden="false" id="f094-e400-f59c-8039">
               <comment>War snail</comment>
               <selectionEntries>
-                <selectionEntry type="model" import="true" name="Lithodon" hidden="false" id="73e9-b597-1a67-39c6">
+                <selectionEntry type="model" import="true" name="Tamed Lithodon" hidden="false" id="73e9-b597-1a67-39c6">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6cc0-3753-5856-9cf5" includeChildSelections="false"/>
                     <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="d2df-a412-5c09-08e4" includeChildSelections="false"/>
                   </constraints>
                   <infoLinks>
                     <infoLink targetId="a2b3-6f0e-2d47-7b9f" id="a86f-13ce-9484-d427" type="infoGroup" name="Lithodon" hidden="false"/>
+                    <infoLink name="Slime" id="48a4-25c2-ed44-a4b5" hidden="false" type="profile" targetId="8ed5-0809-cad6-a1bc"/>
+                    <infoLink name="Additional armour plating" id="f112-7a66-26db-eef9" hidden="false" type="profile" targetId="5b3f-8e7c-f7ae-0f7c">
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="d22a-52e0-da22-ab22" childId="fb7f-8de1-1f60-755a" shared="true" includeChildSelections="true" childName="Reinforced Armour plating"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </infoLink>
                   </infoLinks>
+                  <entryLinks>
+                    <entryLink targetId="69b9-31f9-6a59-3ca0" id="834e-e66f-82d2-4a28" type="selectionEntryGroup" name="Howdah weapon" hidden="false">
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="d22a-52e0-da22-ab22" childId="3504-dc4c-a58b-6deb" shared="true" includeChildSelections="true" childName="Howdah"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Crushing bulk" hidden="false" id="1815-2bdc-b7d2-6111" type="selectionEntry" targetId="502f-45c2-6fd1-443b"/>
+                    <entryLink import="true" name="Poison sting" hidden="false" id="b83b-e9da-3098-3e92" type="selectionEntry" targetId="a31a-1e0f-6db7-0fa4"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="points" value="70"/>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="3"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Transport" hidden="false" id="70b9-9a9a-2797-6378" targetId="6cc4-1b62-8e8a-05cd" primary="false"/>
+                    <categoryLink name="Open-topped" hidden="false" id="9304-beb3-2d8a-915c" targetId="cdc5-4a32-031d-f86e" primary="false"/>
+                    <categoryLink name="Monster" hidden="false" id="a74e-2fcd-ed0a-6127" targetId="3b77-decb-d468-6bcc" primary="false"/>
+                  </categoryLinks>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="remove" value="6cc4-1b62-8e8a-05cd" field="category"/>
+                        <modifier type="add" value="45a6-4825-db8c-9cff" field="category"/>
+                        <modifier type="remove" value="cdc5-4a32-031d-f86e" field="category"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="d22a-52e0-da22-ab22" childId="fb7f-8de1-1f60-755a" shared="true" includeChildSelections="true" childName="Reinforced Armour plating"/>
+                      </conditions>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="add" value="3c95-4bac-d4d4-d0b2" field="category"/>
+                        <modifier type="add" value="d7c1-93c2-0c88-7c3c" field="category"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="d22a-52e0-da22-ab22" childId="1eef-13e5-c6f4-63d3" shared="true" includeChildSelections="true" childName="Howdah w/D.d."/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
+                  <profiles>
+                    <profile name="Tamed Lithodon" typeId="b3a8-0452-7436-44d1" typeName="Transport" hidden="false" id="c08c-59c4-34cc-da99">
+                      <characteristics>
+                        <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 6 EXODITE INFANTRY.</characteristic>
+                      </characteristics>
+                      <comment>Armed</comment>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="d22a-52e0-da22-ab22" childId="3504-dc4c-a58b-6deb" shared="true" includeChildSelections="true" childName="Howdah"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                    <profile name="Tamed Lithodon" typeId="b3a8-0452-7436-44d1" typeName="Transport" hidden="false" id="1194-15fb-70d4-9b90">
+                      <characteristics>
+                        <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 12 EXODITE INFANTRY.</characteristic>
+                      </characteristics>
+                      <comment>Unarmed</comment>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="d22a-52e0-da22-ab22" childId="1eef-13e5-c6f4-63d3" shared="true" includeChildSelections="true" childName="Howdah w/D.d."/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                  </profiles>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Megadon" hidden="false" id="b463-56b4-1ca0-463b">
+            <selectionEntry type="upgrade" import="true" name="Tamed Megadon" hidden="false" id="b463-56b4-1ca0-463b">
               <selectionEntries>
-                <selectionEntry type="model" import="true" name="Megadon" hidden="false" id="d492-4de4-5aac-4b1a">
+                <selectionEntry type="model" import="true" name="Tamed Megadon" hidden="false" id="d492-4de4-5aac-4b1a">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b621-ee31-c7f6-f21f" includeChildSelections="false"/>
                     <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="c01d-d8ab-341a-32f6" includeChildSelections="false"/>
                   </constraints>
+                  <profiles>
+                    <profile name="Tamed Megadon" typeId="b3a8-0452-7436-44d1" typeName="Transport" hidden="false" id="48a6-f6fc-f499-072b">
+                      <characteristics>
+                        <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 6 EXODITE INFANTRY.</characteristic>
+                      </characteristics>
+                      <comment>Armed</comment>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="d22a-52e0-da22-ab22" childId="3504-dc4c-a58b-6deb" shared="true" includeChildSelections="true" childName="Howdah"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                    <profile name="Tamed Megadon" typeId="b3a8-0452-7436-44d1" typeName="Transport" hidden="false" id="e3fa-6d63-d65e-e0ae">
+                      <characteristics>
+                        <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 12 EXODITE INFANTRY.</characteristic>
+                      </characteristics>
+                      <comment>Unarmed</comment>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="d22a-52e0-da22-ab22" childId="1eef-13e5-c6f4-63d3" shared="true" includeChildSelections="true" childName="Howdah w/D.d."/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                  </profiles>
                   <infoLinks>
                     <infoLink targetId="8275-a602-a9f0-99c3" id="f513-c08f-474c-fb3e" type="profile" name="Megadon" hidden="false"/>
+                    <infoLink name="Additional armour plating" id="59fc-cb15-69ec-c1e0" hidden="false" type="profile" targetId="5b3f-8e7c-f7ae-0f7c">
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="d22a-52e0-da22-ab22" childId="fb7f-8de1-1f60-755a" shared="true" includeChildSelections="true" childName="Reinforced Armour plating"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </infoLink>
                   </infoLinks>
+                  <entryLinks>
+                    <entryLink import="true" name="Megadon Fangs" hidden="false" id="1131-0046-b561-64f1" targetId="d141-94be-7985-0ce4" type="selectionEntry" collective="true"/>
+                    <entryLink import="true" name="Megadon Talons" hidden="false" id="0e2a-b3ae-e8e8-d72d" targetId="9922-8f24-cf22-6843" type="selectionEntry" collective="true"/>
+                    <entryLink import="true" name="Howdah weapon" hidden="false" id="b549-c15e-013f-9841" targetId="69b9-31f9-6a59-3ca0" type="selectionEntryGroup">
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="d22a-52e0-da22-ab22" childId="3504-dc4c-a58b-6deb" shared="true" includeChildSelections="true" childName="Howdah"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="points" value="80"/>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="4"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="remove" value="6cc4-1b62-8e8a-05cd" field="category"/>
+                        <modifier type="add" value="45a6-4825-db8c-9cff" field="category"/>
+                        <modifier type="remove" value="cdc5-4a32-031d-f86e" field="category"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="d22a-52e0-da22-ab22" childId="fb7f-8de1-1f60-755a" shared="true" includeChildSelections="true" childName="Reinforced Armour plating"/>
+                      </conditions>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="add" value="3c95-4bac-d4d4-d0b2" field="category"/>
+                        <modifier type="add" value="d7c1-93c2-0c88-7c3c" field="category"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="d22a-52e0-da22-ab22" childId="1eef-13e5-c6f4-63d3" shared="true" includeChildSelections="true" childName="Howdah w/D.d."/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
+                  <categoryLinks>
+                    <categoryLink name="Transport" hidden="false" id="663a-fbc9-37e5-a777" targetId="6cc4-1b62-8e8a-05cd" primary="false"/>
+                    <categoryLink name="Monster" hidden="false" id="7b20-70f7-9f21-2d20" targetId="3b77-decb-d468-6bcc" primary="false"/>
+                    <categoryLink name="Open-topped" hidden="false" id="1e90-c603-0d44-4e9b" targetId="cdc5-4a32-031d-f86e" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Stegosaur" hidden="false" id="5dd5-7bfb-e4f6-93f4">
+            <selectionEntry type="upgrade" import="true" name="Tamed Stegosaur" hidden="false" id="5dd5-7bfb-e4f6-93f4">
               <comment>Stegosaur</comment>
               <selectionEntries>
-                <selectionEntry type="model" import="true" name="Stegosaur" hidden="false" id="b309-3197-962c-e5a3">
+                <selectionEntry type="model" import="true" name="Tamed Stegosaur" hidden="false" id="b309-3197-962c-e5a3">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2295-2504-155c-7cba" includeChildSelections="false"/>
                     <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e362-24dc-38d0-74a7" includeChildSelections="false"/>
                   </constraints>
                   <infoLinks>
                     <infoLink targetId="65f4-5f3f-9e9e-11d7" id="ec67-1bf7-8022-e502" type="infoGroup" name="Stegosaur" hidden="false"/>
+                    <infoLink name="Additional armour plating" id="5cf1-4af0-75df-aa4a" hidden="false" type="profile" targetId="5b3f-8e7c-f7ae-0f7c">
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="d22a-52e0-da22-ab22" childId="fb7f-8de1-1f60-755a" shared="true" includeChildSelections="true" childName="Reinforced Armour plating"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </infoLink>
                   </infoLinks>
+                  <entryLinks>
+                    <entryLink import="true" name="Great Saur bite" hidden="false" id="e846-6f4b-2ba5-9a32" targetId="8ded-7b32-5624-720b" type="selectionEntry" collective="true"/>
+                    <entryLink import="true" name="Howdah weapon" hidden="false" id="24da-71d6-d702-d7df" targetId="69b9-31f9-6a59-3ca0" type="selectionEntryGroup">
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="d22a-52e0-da22-ab22" childId="3504-dc4c-a58b-6deb" shared="true" includeChildSelections="true" childName="Howdah"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="points" value="80"/>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="4"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="remove" value="6cc4-1b62-8e8a-05cd" field="category"/>
+                        <modifier type="add" value="45a6-4825-db8c-9cff" field="category"/>
+                        <modifier type="remove" value="cdc5-4a32-031d-f86e" field="category"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="d22a-52e0-da22-ab22" childId="fb7f-8de1-1f60-755a" shared="true" includeChildSelections="true" childName="Reinforced Armour plating"/>
+                      </conditions>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="add" value="3c95-4bac-d4d4-d0b2" field="category"/>
+                        <modifier type="add" value="d7c1-93c2-0c88-7c3c" field="category"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="d22a-52e0-da22-ab22" childId="1eef-13e5-c6f4-63d3" shared="true" includeChildSelections="true" childName="Howdah w/D.d."/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
+                  <categoryLinks>
+                    <categoryLink name="Transport" hidden="false" id="353e-5260-726f-c7e2" targetId="6cc4-1b62-8e8a-05cd" primary="false"/>
+                    <categoryLink name="Monster" hidden="false" id="9faa-7eb3-9a53-9d4f" targetId="3b77-decb-d468-6bcc" primary="false"/>
+                    <categoryLink name="Open-topped" hidden="false" id="eb93-bbb3-5733-645c" targetId="cdc5-4a32-031d-f86e" primary="false"/>
+                  </categoryLinks>
+                  <profiles>
+                    <profile name="Tamed Stegosaur" typeId="b3a8-0452-7436-44d1" typeName="Transport" hidden="false" id="7915-9ef1-7df6-14fe">
+                      <characteristics>
+                        <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 8 EXODITE INFANTRY.</characteristic>
+                      </characteristics>
+                      <comment>Armed</comment>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="d22a-52e0-da22-ab22" childId="3504-dc4c-a58b-6deb" shared="true" includeChildSelections="true" childName="Howdah"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                    <profile name="Tamed Stegosaur" typeId="b3a8-0452-7436-44d1" typeName="Transport" hidden="false" id="1205-9d7e-6d29-ffd3">
+                      <characteristics>
+                        <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 14 EXODITE INFANTRY.</characteristic>
+                      </characteristics>
+                      <comment>Unarmed</comment>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="d22a-52e0-da22-ab22" childId="1eef-13e5-c6f4-63d3" shared="true" includeChildSelections="true" childName="Howdah w/D.d."/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                  </profiles>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
@@ -29949,6 +30222,60 @@ While an enemy unit is within Engagement Range of the bearer, if the bearer’s 
             <cost name="Pts" typeId="points" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Great Saur bite" hidden="false" id="8ded-7b32-5624-720b" collective="true">
+          <profiles>
+            <profile name="Great Saur bite" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="261a-31ac-e088-722e">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it does 3 additional attacks with this weapon profile and only 3 attacks can be done with this weapon profile.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4be4-2563-90a7-70d9" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c307-02d9-b9ea-1a24" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Megadon Talons" hidden="false" id="9922-8f24-cf22-6843" collective="true">
+          <profiles>
+            <profile name="Megadon Talons" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="478c-e2a5-4db4-2705">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                <characteristic name="S" typeId="59b1-319e-ec13-d466">+4</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it does 4 additional attacks with this weapon profile and only 4 attacks can be done with this weapon profile.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ccc1-f803-257d-9d15" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="32cc-04c1-facd-146d" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Megadon Fangs" hidden="false" id="d141-94be-7985-0ce4" collective="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a45-454f-2fa3-976f" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="110a-24e2-9e80-03f1" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Megadon Fangs" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="8a95-48cb-9604-b7f7">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                <characteristic name="S" typeId="59b1-319e-ec13-d466">x2</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -37498,6 +37825,25 @@ Until that happens, that model is still considered to be in play, but no further
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="93db-1525-f418-2201" includeChildSelections="false"/>
       </constraints>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Howdah weapon" id="69b9-31f9-6a59-3ca0" hidden="false" defaultSelectionEntryId="5755-c910-9767-0865">
+      <entryLinks>
+        <entryLink import="true" name="Bright Lance" hidden="false" id="7e0a-e50c-cce8-f41a" type="selectionEntry" targetId="5e65-eceb-686c-8a33">
+          <costs>
+            <cost name="Pts" typeId="points" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Starcannon" hidden="false" id="75de-fa31-29f3-4148" type="selectionEntry" targetId="b738-7084-a2eb-2c55">
+          <costs>
+            <cost name="Pts" typeId="points" value="5"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Scatter laser" hidden="false" id="5755-c910-9767-0865" type="selectionEntry" targetId="bc00-c737-73c7-0625"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2743-bdb4-0f7d-828a" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bc61-1467-accf-7c8d" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="2351-b0d0-b620-41be" name="Asuryani Missile launcher" hidden="false">
@@ -38755,7 +39101,7 @@ Until that happens, that model is still considered to be in play, but no further
             <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
             <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
             <characteristic name="W" typeId="f330-5e6e-4110-0978">15</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3+3</characteristic>
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
@@ -38768,7 +39114,7 @@ Until that happens, that model is still considered to be in play, but no further
             <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
             <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
             <characteristic name="W" typeId="f330-5e6e-4110-0978">15</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
@@ -38781,7 +39127,7 @@ Until that happens, that model is still considered to be in play, but no further
             <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
             <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
             <characteristic name="W" typeId="f330-5e6e-4110-0978">15</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
