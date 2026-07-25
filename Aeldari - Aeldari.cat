@@ -27733,9 +27733,33 @@ You can use this Stratagem up to 3 times.</characteristic>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="cd74-64f2-ef4f-8339" hidden="false" defaultSelectionEntryId="3504-dc4c-a58b-6deb">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Armed Howdah" hidden="false" id="3504-dc4c-a58b-6deb"/>
+            <selectionEntry type="upgrade" import="true" name="Armed Howdah" hidden="false" id="3504-dc4c-a58b-6deb">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="6899-442a-007b-5ac8" childId="model" shared="true" roundUp="false" includeChildSelections="true" childName="model"/>
+                  </repeats>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="e356-c769-5920-6e14"/>
+                    <modifier type="increment" value="10" field="points"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Howdah w/Fast debark" hidden="false" id="1eef-13e5-c6f4-63d3"/>
-            <selectionEntry type="upgrade" import="true" name="Reinforced Armour plating" hidden="false" id="fb7f-8de1-1f60-755a"/>
+            <selectionEntry type="upgrade" import="true" name="Reinforced Armour plating" hidden="false" id="fb7f-8de1-1f60-755a">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="6899-442a-007b-5ac8" childId="model" shared="true" roundUp="false" includeChildSelections="true" childName="model"/>
+                  </repeats>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="e356-c769-5920-6e14"/>
+                    <modifier type="increment" value="10" field="points"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </selectionEntry>
           </selectionEntries>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1fe7-d382-e240-d4d3" includeChildSelections="false"/>
@@ -27813,7 +27837,7 @@ You can use this Stratagem up to 3 times.</characteristic>
                   <profiles>
                     <profile name="Tamed Lithodon" typeId="b3a8-0452-7436-44d1" typeName="Transport" hidden="false" id="c08c-59c4-34cc-da99">
                       <characteristics>
-                        <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 6 EXODITE INFANTRY.</characteristic>
+                        <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 6 EXODITE INFANTRY models.</characteristic>
                       </characteristics>
                       <comment>Armed</comment>
                       <modifiers>
@@ -27826,7 +27850,7 @@ You can use this Stratagem up to 3 times.</characteristic>
                     </profile>
                     <profile name="Tamed Lithodon" typeId="b3a8-0452-7436-44d1" typeName="Transport" hidden="false" id="1194-15fb-70d4-9b90">
                       <characteristics>
-                        <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 12 EXODITE INFANTRY.</characteristic>
+                        <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 12 EXODITE INFANTRY models.</characteristic>
                       </characteristics>
                       <comment>Unarmed</comment>
                       <modifiers>
@@ -27851,7 +27875,7 @@ You can use this Stratagem up to 3 times.</characteristic>
                   <profiles>
                     <profile name="Tamed Megadon" typeId="b3a8-0452-7436-44d1" typeName="Transport" hidden="false" id="48a6-f6fc-f499-072b">
                       <characteristics>
-                        <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 6 EXODITE INFANTRY.</characteristic>
+                        <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 6 EXODITE INFANTRY models.</characteristic>
                       </characteristics>
                       <comment>Armed</comment>
                       <modifiers>
@@ -27864,7 +27888,7 @@ You can use this Stratagem up to 3 times.</characteristic>
                     </profile>
                     <profile name="Tamed Megadon" typeId="b3a8-0452-7436-44d1" typeName="Transport" hidden="false" id="e3fa-6d63-d65e-e0ae">
                       <characteristics>
-                        <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 12 EXODITE INFANTRY.</characteristic>
+                        <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 12 EXODITE INFANTRY models.</characteristic>
                       </characteristics>
                       <comment>Unarmed</comment>
                       <modifiers>
@@ -28003,7 +28027,7 @@ You can use this Stratagem up to 3 times.</characteristic>
                   <profiles>
                     <profile name="Tamed Stegosaur" typeId="b3a8-0452-7436-44d1" typeName="Transport" hidden="false" id="7915-9ef1-7df6-14fe">
                       <characteristics>
-                        <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 8 EXODITE INFANTRY.</characteristic>
+                        <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 8 EXODITE INFANTRY models.</characteristic>
                       </characteristics>
                       <comment>Armed</comment>
                       <modifiers>
@@ -28016,7 +28040,7 @@ You can use this Stratagem up to 3 times.</characteristic>
                     </profile>
                     <profile name="Tamed Stegosaur" typeId="b3a8-0452-7436-44d1" typeName="Transport" hidden="false" id="1205-9d7e-6d29-ffd3">
                       <characteristics>
-                        <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 14 EXODITE INFANTRY.</characteristic>
+                        <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 14 EXODITE INFANTRY models.</characteristic>
                       </characteristics>
                       <comment>Unarmed</comment>
                       <modifiers>
@@ -30232,7 +30256,7 @@ While an enemy unit is within Engagement Range of the bearer, if the bearer’s 
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
                 <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it does 3 additional attacks with this weapon profile and only 3 attacks can be done with this weapon profile.</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
               </characteristics>
             </profile>
           </profiles>
