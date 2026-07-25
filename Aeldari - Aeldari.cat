@@ -26978,7 +26978,7 @@ You can use this Stratagem up to 3 times.</characteristic>
             </profile>
           </profiles>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Raptorhound bite" hidden="false" id="9fe2-6b43-3ab4-82a3">
+            <selectionEntry type="upgrade" import="true" name="Raptorhound bite" hidden="false" id="9fe2-6b43-3ab4-82a3" collective="true">
               <profiles>
                 <profile name="Raptorhound bite" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="0cf2-12ef-aa4c-175d">
                   <characteristics>
@@ -27003,6 +27003,9 @@ You can use this Stratagem up to 3 times.</characteristic>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink name="Beast" hidden="false" id="5ed4-3277-fd99-9ec2" targetId="7892-58f7-e769-4d87" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -27448,7 +27451,7 @@ You can use this Stratagem up to 3 times.</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
                     <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
-                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
                   </characteristics>
@@ -27530,6 +27533,9 @@ You can use this Stratagem up to 3 times.</characteristic>
                 </selectionEntry>
               </selectionEntries>
               <comment>Carnotaur like</comment>
+              <categoryLinks>
+                <categoryLink name="Monster" hidden="false" id="1844-5909-76c5-92c3" targetId="3b77-decb-d468-6bcc" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Stegosaurs" hidden="false" id="46ca-16ce-bf8b-8634">
               <selectionEntries>
@@ -27554,6 +27560,9 @@ You can use this Stratagem up to 3 times.</characteristic>
                 </selectionEntry>
               </selectionEntries>
               <comment>Stegosaur</comment>
+              <categoryLinks>
+                <categoryLink name="Monster" hidden="false" id="079f-93cf-045c-9802" targetId="3b77-decb-d468-6bcc" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Lithodons" hidden="false" id="eeb6-a0d6-f5ee-424e">
               <selectionEntries>
@@ -27608,6 +27617,9 @@ You can use this Stratagem up to 3 times.</characteristic>
                 </selectionEntry>
               </selectionEntries>
               <comment>War snail</comment>
+              <categoryLinks>
+                <categoryLink name="Monster" hidden="false" id="41a5-bab6-75a8-d72e" targetId="3b77-decb-d468-6bcc" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Miradons" hidden="false" id="f003-1a22-af23-5f7f">
               <selectionEntries>
@@ -27648,6 +27660,9 @@ You can use this Stratagem up to 3 times.</characteristic>
                 </selectionEntry>
               </selectionEntries>
               <comment>Heavy Horselike</comment>
+              <categoryLinks>
+                <categoryLink name="Monster" hidden="false" id="4770-b936-fe3f-55d9" targetId="3b77-decb-d468-6bcc" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Megadons" hidden="false" id="6249-0eaa-f6c8-6ffa">
               <selectionEntries>
@@ -27673,6 +27688,9 @@ You can use this Stratagem up to 3 times.</characteristic>
                 </selectionEntry>
               </selectionEntries>
               <comment>Carnotaur w/claws like</comment>
+              <categoryLinks>
+                <categoryLink name="Monster" hidden="false" id="0429-5d9a-9e29-e168" targetId="3b77-decb-d468-6bcc" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -27682,9 +27700,10 @@ You can use this Stratagem up to 3 times.</characteristic>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
-        <categoryLink name="Beast" hidden="false" id="8a59-81eb-e6f2-1d57" targetId="7892-58f7-e769-4d87" primary="false"/>
         <categoryLink name="Herd" hidden="false" id="ae35-aaf7-87b3-5c26" targetId="d067-0371-51d6-4008" primary="false"/>
         <categoryLink name="Faction: Aeldari Exodites" hidden="false" id="58f9-889e-ead9-0534" targetId="4a67-024a-2ab2-8193" primary="false"/>
+        <categoryLink name="Monster pack" hidden="false" id="4b17-d969-6c8a-c3c4" targetId="d0c7-0b01-3021-cc38" primary="false"/>
+        <categoryLink name="Monster" hidden="false" id="b04b-1046-3cb5-0e7a" targetId="3b77-decb-d468-6bcc" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Exodite Tamed Great Drake Pack" hidden="true" id="d22a-52e0-da22-ab22" collective="false">
@@ -30093,7 +30112,7 @@ While an enemy unit is within Engagement Range of the bearer, if the bearer’s 
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
                 <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it does 4 additional attacks with this weapon profile and only 4 attacks can be done with this weapon profile.</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it does 3 additional attacks with this weapon profile and only 3 attacks can be done with this weapon profile.</characteristic>
               </characteristics>
             </profile>
           </profiles>
