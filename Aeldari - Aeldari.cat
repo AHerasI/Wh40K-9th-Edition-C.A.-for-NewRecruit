@@ -26419,7 +26419,14 @@ You can use this Stratagem up to 3 times.</characteristic>
         <modifier type="increment" value="1" field="e356-c769-5920-6e14">
           <repeats>
             <repeat value="2" repeats="1" field="selections" scope="ce9a-1267-cc6b-3928" childId="model" shared="true" roundUp="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <repeat value="3" repeats="1" field="selections" scope="ce9a-1267-cc6b-3928" childId="aee6-5482-e38a-381d" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Power Weapon"/>
+            <repeat value="2" repeats="1" field="selections" scope="ce9a-1267-cc6b-3928" childId="f74f-8bb9-7448-707c" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Laser Weapon"/>
           </repeats>
+        </modifier>
+        <modifier type="decrement" value="3" field="e356-c769-5920-6e14">
+          <conditions>
+            <condition type="atLeast" value="5" field="selections" scope="9e40-9d34-f41c-39a7" childId="af22-8e3c-bb46-2b54" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Clan Warrior"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -26446,8 +26453,8 @@ You can use this Stratagem up to 3 times.</characteristic>
                 <entryLink import="true" name="Weapon option" hidden="false" id="dc57-798b-38ca-0e8d" type="selectionEntryGroup" targetId="7d7e-5a70-19d0-0832"/>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="points" value="15"/>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                <cost name="Pts" typeId="points" value="10"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
@@ -26544,7 +26551,7 @@ You can use this Stratagem up to 3 times.</characteristic>
       </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="points" value="0"/>
-        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="3"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
