@@ -27750,12 +27750,17 @@ You can use this Stratagem up to 3 times.</characteristic>
             <selectionEntry type="upgrade" import="true" name="Reinforced Armour plating" hidden="false" id="fb7f-8de1-1f60-755a">
               <modifierGroups>
                 <modifierGroup type="and">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="6899-442a-007b-5ac8" childId="model" shared="true" roundUp="false" includeChildSelections="true" childName="model"/>
-                  </repeats>
                   <modifiers>
-                    <modifier type="increment" value="1" field="e356-c769-5920-6e14"/>
-                    <modifier type="increment" value="10" field="points"/>
+                    <modifier type="increment" value="1" field="e356-c769-5920-6e14">
+                      <repeats>
+                        <repeat value="2" repeats="1" field="selections" scope="6899-442a-007b-5ac8" childId="model" shared="true" roundUp="true" includeChildSelections="true" childName="model" percentValue="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="increment" value="10" field="points">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="6899-442a-007b-5ac8" childId="model" shared="true" roundUp="false" includeChildSelections="true" childName="model"/>
+                      </repeats>
+                    </modifier>
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
