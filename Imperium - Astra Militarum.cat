@@ -24280,13 +24280,16 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
                             </selectionEntry>
                           </selectionEntries>
                           <entryLinks>
-                            <entryLink id="e98e-d54d-a015-99dd" name="Hellstrike Missile Rack" hidden="false" collective="false" import="true" targetId="39fd-4f42-230f-b199" type="selectionEntry">
+                            <entryLink import="true" name="Lascannon" hidden="false" id="0cca-5c84-1011-4834" collective="false" targetId="a908-4664-11cd-f8b2" type="selectionEntry">
                               <constraints>
-                                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae36-81d9-0c07-cbf1" type="max"/>
-                                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00cc-a9d7-0bb3-95d3" type="min"/>
+                                <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="43d4-7f48-a754-5f9b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                                <constraint type="min" value="2" field="selections" scope="parent" shared="false" id="5432-af35-0d5b-6e79" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                               </constraints>
+                              <infoLinks>
+                                <infoLink name="Icarus mount and tracking system" id="b9da-ba4d-1af5-fbd5" hidden="false" targetId="9ba0-cb9c-82a8-a8be" type="rule"/>
+                              </infoLinks>
                               <categoryLinks>
-                                <categoryLink id="09ad-9dc8-44b5-ec9e" name="Hull mounted" hidden="false" targetId="6018-2ce0-fcc7-6ed7" primary="false"/>
+                                <categoryLink name="Icarus mount" hidden="false" id="4c34-b69e-fa38-4051" targetId="1f9d-db7b-1926-9dfa" primary="false"/>
                               </categoryLinks>
                             </entryLink>
                           </entryLinks>
@@ -24296,63 +24299,6 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
                             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                           </costs>
-                          <selectionEntryGroups>
-                            <selectionEntryGroup name="Wing Pylons" id="9b58-0d24-ef5a-15d8" hidden="false" collective="false" import="true" defaultSelectionEntryId="9c66-1638-bf71-e8f6">
-                              <constraints>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1f85-850e-9c4f-df6e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="6a92-ad33-a27a-35dc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                              </constraints>
-                              <categoryLinks>
-                                <categoryLink name="Hull mounted" hidden="false" id="e4ce-e27f-523a-4c2b" targetId="6018-2ce0-fcc7-6ed7" primary="false"/>
-                              </categoryLinks>
-                              <selectionEntries>
-                                <selectionEntry type="upgrade" import="true" name="2x Icarus Lascannon" hidden="false" id="9c66-1638-bf71-e8f6" collective="false">
-                                  <constraints>
-                                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2168-cb88-1634-df20" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                                  </constraints>
-                                  <entryLinks>
-                                    <entryLink import="true" name="Lascannon" hidden="false" id="68b1-a335-e659-0f77" collective="false" targetId="a908-4664-11cd-f8b2" type="selectionEntry">
-                                      <constraints>
-                                        <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="7f9e-4cd4-8628-83bd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                                        <constraint type="min" value="2" field="selections" scope="parent" shared="false" id="890e-2cb1-7038-069c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                                      </constraints>
-                                      <infoLinks>
-                                        <infoLink name="Icarus mount and tracking system" id="eb18-c6d6-2db4-02f7" hidden="false" targetId="9ba0-cb9c-82a8-a8be" type="rule"/>
-                                      </infoLinks>
-                                      <categoryLinks>
-                                        <categoryLink name="Icarus mount" hidden="false" id="2123-76b2-7884-2f13" targetId="1f9d-db7b-1926-9dfa" primary="false"/>
-                                      </categoryLinks>
-                                    </entryLink>
-                                  </entryLinks>
-                                  <costs>
-                                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                                    <cost name="Pts" typeId="points" value="0"/>
-                                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-                                  </costs>
-                                  <categoryLinks>
-                                    <categoryLink name="Icarus mount" hidden="false" id="3907-3afc-6afd-89b2" targetId="1f9d-db7b-1926-9dfa" primary="false"/>
-                                  </categoryLinks>
-                                </selectionEntry>
-                                <selectionEntry type="upgrade" import="true" name="2x Hellstrike Missile Rack" hidden="false" id="6230-acc2-0f13-06a1">
-                                  <entryLinks>
-                                    <entryLink import="true" name="Hellstrike Missile Rack" hidden="false" id="00bf-c5b9-6394-6fa4" collective="false" targetId="39fd-4f42-230f-b199" type="selectionEntry">
-                                      <constraints>
-                                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7bed-250f-4d65-6c9f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7fbc-1810-1e7b-fd8c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                                      </constraints>
-                                      <categoryLinks>
-                                        <categoryLink name="Hull mounted" hidden="false" id="b6ad-09c1-5a9a-427f" targetId="6018-2ce0-fcc7-6ed7" primary="false"/>
-                                      </categoryLinks>
-                                    </entryLink>
-                                  </entryLinks>
-                                  <constraints>
-                                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="8666-e533-43a4-0719" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                                  </constraints>
-                                </selectionEntry>
-                              </selectionEntries>
-                            </selectionEntryGroup>
-                          </selectionEntryGroups>
                         </selectionEntry>
                         <selectionEntry id="0864-f7ed-7957-8c1a" name="Voss Pattern" hidden="false" collective="false" import="true" type="upgrade">
                           <entryLinks>
@@ -24375,214 +24321,147 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
                             <cost name="Pts" typeId="points" value="0"/>
                             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                           </costs>
-                          <selectionEntryGroups>
-                            <selectionEntryGroup name="Wing Pylons" id="a680-393f-7fc5-d924" hidden="false" collective="false" import="true" defaultSelectionEntryId="9c66-1638-bf71-e8f6">
-                              <constraints>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="241d-de5e-34d4-32dc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="bda0-2f48-0636-6701" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                              </constraints>
-                              <categoryLinks>
-                                <categoryLink name="Hull mounted" hidden="false" id="5cce-842b-dff2-5c5b" targetId="6018-2ce0-fcc7-6ed7" primary="false"/>
-                              </categoryLinks>
-                              <selectionEntries>
-                                <selectionEntry type="upgrade" import="true" name="2x Missile Launcher" hidden="false" id="38f3-b9a7-e0c1-ec48" collective="false">
-                                  <constraints>
-                                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="0903-1d78-fe1a-6b0f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                                  </constraints>
-                                  <entryLinks>
-                                    <entryLink import="true" name="Missile launcher" hidden="false" id="fabc-9571-0557-ff8e" collective="false" targetId="1469-1964-7a91-94d4" type="selectionEntry">
-                                      <constraints>
-                                        <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="431f-44bd-a93d-0292" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                                        <constraint type="min" value="2" field="selections" scope="parent" shared="false" id="10ee-025e-bb5f-3622" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                                      </constraints>
-                                      <infoLinks>
-                                        <infoLink name="Icarus mount and tracking system" id="8e78-4b48-c0f5-50f0" hidden="false" targetId="9ba0-cb9c-82a8-a8be" type="rule"/>
-                                      </infoLinks>
-                                      <categoryLinks>
-                                        <categoryLink name="Icarus mount" hidden="false" id="0fc4-f97b-9b92-c195" targetId="1f9d-db7b-1926-9dfa" primary="false"/>
-                                      </categoryLinks>
-                                    </entryLink>
-                                  </entryLinks>
-                                  <costs>
-                                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                                    <cost name="Pts" typeId="points" value="0"/>
-                                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-                                  </costs>
-                                </selectionEntry>
-                                <selectionEntry type="upgrade" import="true" name="2x Hellstrike Missile Rack" hidden="false" id="6ade-06dd-6f90-5950">
-                                  <entryLinks>
-                                    <entryLink import="true" name="Hellstrike Missile Rack" hidden="false" id="eef7-6068-19d8-dfa5" collective="false" targetId="39fd-4f42-230f-b199" type="selectionEntry">
-                                      <constraints>
-                                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3ce6-7114-bc44-7661" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1bdf-97df-71a5-d434" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                                      </constraints>
-                                      <categoryLinks>
-                                        <categoryLink name="Hull mounted" hidden="false" id="1e24-a006-f09a-4fb8" targetId="6018-2ce0-fcc7-6ed7" primary="false"/>
-                                      </categoryLinks>
-                                    </entryLink>
-                                  </entryLinks>
-                                  <constraints>
-                                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b8b5-e765-96aa-0873" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                                  </constraints>
-                                </selectionEntry>
-                                <selectionEntry type="upgrade" import="true" name="2x Icarus Autocannon" hidden="false" id="9ac7-64df-1d6d-5488" collective="false">
-                                  <constraints>
-                                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="761d-c1a1-07dc-8e4c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                                  </constraints>
-                                  <entryLinks>
-                                    <entryLink import="true" name="Autocannon" hidden="false" id="1c2e-0304-9ec7-3e65" collective="false" targetId="5210-8cb2-b5a2-a04f" type="selectionEntry">
-                                      <constraints>
-                                        <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="ec43-f674-b864-741e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                                        <constraint type="min" value="2" field="selections" scope="parent" shared="false" id="1f81-cedc-01c0-2abc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                                      </constraints>
-                                      <infoLinks>
-                                        <infoLink name="Icarus mount and tracking system" id="f645-8c94-d0fa-926c" hidden="false" targetId="9ba0-cb9c-82a8-a8be" type="rule"/>
-                                      </infoLinks>
-                                      <categoryLinks>
-                                        <categoryLink name="Icarus mount" hidden="false" id="bb6a-67c9-a603-27f8" targetId="1f9d-db7b-1926-9dfa" primary="false"/>
-                                      </categoryLinks>
-                                    </entryLink>
-                                  </entryLinks>
-                                  <costs>
-                                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                                    <cost name="Pts" typeId="points" value="0"/>
-                                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-                                  </costs>
-                                  <categoryLinks>
-                                    <categoryLink name="Icarus mount" hidden="false" id="726e-1474-5791-d145" targetId="1f9d-db7b-1926-9dfa" primary="false"/>
-                                  </categoryLinks>
-                                </selectionEntry>
-                                <selectionEntry type="upgrade" import="true" name="2x Multi-Laser" hidden="false" id="568b-c6df-f352-b8ca" collective="false">
-                                  <constraints>
-                                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a45a-2559-08d6-a372" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                                  </constraints>
-                                  <entryLinks>
-                                    <entryLink import="true" name="Multi-Laser" hidden="false" id="bbcd-f74a-dcb5-7ff5" collective="false" targetId="da9f-a4e9-0f67-9b0e" type="selectionEntry">
-                                      <constraints>
-                                        <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="62e9-2cfa-7533-16d6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                                        <constraint type="min" value="2" field="selections" scope="parent" shared="false" id="3044-1b5c-100b-615f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                                      </constraints>
-                                      <infoLinks>
-                                        <infoLink name="Icarus mount and tracking system" id="4b57-1d8b-82e9-a8f2" hidden="false" targetId="9ba0-cb9c-82a8-a8be" type="rule"/>
-                                      </infoLinks>
-                                      <categoryLinks>
-                                        <categoryLink name="Icarus mount" hidden="false" id="6ca9-5def-d10a-f44f" targetId="1f9d-db7b-1926-9dfa" primary="false"/>
-                                      </categoryLinks>
-                                    </entryLink>
-                                  </entryLinks>
-                                  <costs>
-                                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                                    <cost name="Pts" typeId="points" value="0"/>
-                                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-                                  </costs>
-                                </selectionEntry>
-                              </selectionEntries>
-                            </selectionEntryGroup>
-                          </selectionEntryGroups>
                         </selectionEntry>
-                        <selectionEntry type="upgrade" import="true" name="Strike Pattern" hidden="false" id="9ace-cf62-a059-e931" collective="false">
-                          <selectionEntries>
-                            <selectionEntry type="upgrade" import="true" name="Icarus Autocannon" hidden="false" id="4403-0ec8-d7f3-7999" collective="false">
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup name="Wing Pylons" id="a680-393f-7fc5-d924" hidden="false" collective="false" import="true" defaultSelectionEntryId="9c66-1638-bf71-e8f6">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="241d-de5e-34d4-32dc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="bda0-2f48-0636-6701" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <categoryLinks>
+                        <categoryLink name="Hull mounted" hidden="false" id="5cce-842b-dff2-5c5b" targetId="6018-2ce0-fcc7-6ed7" primary="false"/>
+                      </categoryLinks>
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="2x Missile Launcher" hidden="false" id="38f3-b9a7-e0c1-ec48" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="0903-1d78-fe1a-6b0f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink import="true" name="Missile launcher" hidden="false" id="fabc-9571-0557-ff8e" collective="false" targetId="1469-1964-7a91-94d4" type="selectionEntry">
                               <constraints>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9fb-4ba4-a1fe-bcc4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff1e-f6a6-5921-9b81" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                                <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="431f-44bd-a93d-0292" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                                <constraint type="min" value="2" field="selections" scope="parent" shared="false" id="10ee-025e-bb5f-3622" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                               </constraints>
                               <infoLinks>
-                                <infoLink name="Icarus mount and tracking system" id="d6a9-5155-a0f5-630a" hidden="false" targetId="9ba0-cb9c-82a8-a8be" type="rule"/>
+                                <infoLink name="Icarus mount and tracking system" id="8e78-4b48-c0f5-50f0" hidden="false" targetId="9ba0-cb9c-82a8-a8be" type="rule"/>
                               </infoLinks>
                               <categoryLinks>
-                                <categoryLink name="Hull mounted" hidden="false" id="02b6-9b69-bacb-dd13" targetId="6018-2ce0-fcc7-6ed7" primary="false"/>
-                              </categoryLinks>
-                              <entryLinks>
-                                <entryLink import="true" name="Autocannon" hidden="false" id="cc6f-8ae6-0d08-94a8" collective="false" targetId="5943-3935-bd51-9af1" type="selectionEntry"/>
-                              </entryLinks>
-                              <costs>
-                                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                                <cost name="Pts" typeId="points" value="0"/>
-                                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-                              </costs>
-                            </selectionEntry>
-                          </selectionEntries>
-                          <entryLinks>
-                            <entryLink import="true" name="Hellstrike Missile Rack" hidden="false" id="c596-9204-bc86-6bdb" collective="false" targetId="39fd-4f42-230f-b199" type="selectionEntry">
-                              <constraints>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4958-af12-3301-850f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="547f-4388-4c6e-71e9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                              </constraints>
-                              <categoryLinks>
-                                <categoryLink name="Hull mounted" hidden="false" id="0d6e-fdff-8634-e8c6" targetId="6018-2ce0-fcc7-6ed7" primary="false"/>
+                                <categoryLink name="Icarus mount" hidden="false" id="0fc4-f97b-9b92-c195" targetId="1f9d-db7b-1926-9dfa" primary="false"/>
                               </categoryLinks>
                             </entryLink>
                           </entryLinks>
                           <costs>
-                            <cost name="Pts" typeId="points" value="10"/>
-                            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                           </costs>
-                          <selectionEntryGroups>
-                            <selectionEntryGroup name="Wing Pylons" id="aae7-f92d-56c7-816c" hidden="false" collective="false" import="true" defaultSelectionEntryId="9c66-1638-bf71-e8f6">
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="2x Hellstrike Missile Rack" hidden="false" id="6ade-06dd-6f90-5950">
+                          <entryLinks>
+                            <entryLink import="true" name="Hellstrike Missile Rack" hidden="false" id="eef7-6068-19d8-dfa5" collective="false" targetId="39fd-4f42-230f-b199" type="selectionEntry">
                               <constraints>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7992-93ba-fb32-d88f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="25eb-6a41-cd0f-b79b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3ce6-7114-bc44-7661" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1bdf-97df-71a5-d434" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                               </constraints>
                               <categoryLinks>
-                                <categoryLink name="Hull mounted" hidden="false" id="c22e-8972-1945-dc6b" targetId="6018-2ce0-fcc7-6ed7" primary="false"/>
+                                <categoryLink name="Hull mounted" hidden="false" id="1e24-a006-f09a-4fb8" targetId="6018-2ce0-fcc7-6ed7" primary="false"/>
                               </categoryLinks>
-                              <selectionEntries>
-                                <selectionEntry type="upgrade" import="true" name="2x Icarus Lascannon" hidden="false" id="57d9-9ff1-afba-e084" collective="false">
-                                  <constraints>
-                                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4f6e-577c-1ee5-a129" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                                  </constraints>
-                                  <entryLinks>
-                                    <entryLink import="true" name="Lascannon" hidden="false" id="bfec-56af-6e76-3d1f" collective="false" targetId="a908-4664-11cd-f8b2" type="selectionEntry">
-                                      <constraints>
-                                        <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="f4cb-b60b-902c-ead7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                                        <constraint type="min" value="2" field="selections" scope="parent" shared="false" id="7318-040a-0d21-6806" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                                      </constraints>
-                                      <infoLinks>
-                                        <infoLink name="Icarus mount and tracking system" id="b287-3a82-ce31-c601" hidden="false" targetId="9ba0-cb9c-82a8-a8be" type="rule"/>
-                                      </infoLinks>
-                                      <categoryLinks>
-                                        <categoryLink name="Icarus mount" hidden="false" id="cc58-6c6c-3c4d-2c82" targetId="1f9d-db7b-1926-9dfa" primary="false"/>
-                                      </categoryLinks>
-                                    </entryLink>
-                                  </entryLinks>
-                                  <costs>
-                                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                                    <cost name="Pts" typeId="points" value="0"/>
-                                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-                                  </costs>
-                                  <categoryLinks>
-                                    <categoryLink name="Icarus mount" hidden="false" id="0b3f-3569-67ff-e830" targetId="1f9d-db7b-1926-9dfa" primary="false"/>
-                                  </categoryLinks>
-                                </selectionEntry>
-                                <selectionEntry type="upgrade" import="true" name="2x Hellstrike Missile Rack" hidden="false" id="a916-2c66-9dbc-32a5">
-                                  <entryLinks>
-                                    <entryLink import="true" name="Hellstrike Missile Rack" hidden="false" id="9e4f-bc7a-236a-7b5a" collective="false" targetId="39fd-4f42-230f-b199" type="selectionEntry">
-                                      <constraints>
-                                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0e64-6c6d-4c4e-b090" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="adfd-b533-0150-888e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                                      </constraints>
-                                      <categoryLinks>
-                                        <categoryLink name="Hull mounted" hidden="false" id="ceaa-fb57-886b-ff54" targetId="6018-2ce0-fcc7-6ed7" primary="false"/>
-                                      </categoryLinks>
-                                    </entryLink>
-                                  </entryLinks>
-                                  <constraints>
-                                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1ffa-6b2e-54e5-2260" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                                  </constraints>
-                                </selectionEntry>
-                              </selectionEntries>
-                            </selectionEntryGroup>
-                          </selectionEntryGroups>
+                            </entryLink>
+                          </entryLinks>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b8b5-e765-96aa-0873" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="4x Icarus Autocannon" hidden="false" id="9ac7-64df-1d6d-5488" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="761d-c1a1-07dc-8e4c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink import="true" name="Autocannon" hidden="false" id="1c2e-0304-9ec7-3e65" collective="false" targetId="5210-8cb2-b5a2-a04f" type="selectionEntry">
+                              <constraints>
+                                <constraint type="max" value="4" field="selections" scope="parent" shared="false" id="ec43-f674-b864-741e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                                <constraint type="min" value="4" field="selections" scope="parent" shared="false" id="1f81-cedc-01c0-2abc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink name="Icarus mount and tracking system" id="f645-8c94-d0fa-926c" hidden="false" targetId="9ba0-cb9c-82a8-a8be" type="rule"/>
+                              </infoLinks>
+                              <categoryLinks>
+                                <categoryLink name="Icarus mount" hidden="false" id="bb6a-67c9-a603-27f8" targetId="1f9d-db7b-1926-9dfa" primary="false"/>
+                              </categoryLinks>
+                            </entryLink>
+                          </entryLinks>
+                          <costs>
+                            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                            <cost name="Pts" typeId="points" value="0"/>
+                            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                          </costs>
+                          <categoryLinks>
+                            <categoryLink name="Icarus mount" hidden="false" id="726e-1474-5791-d145" targetId="1f9d-db7b-1926-9dfa" primary="false"/>
+                          </categoryLinks>
+                          <modifiers>
+                            <modifier type="set" value="true" field="hidden">
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="equalTo" value="0" field="selections" scope="744b-ba5e-a85c-2705" childId="0864-f7ed-7957-8c1a" shared="true" includeChildSelections="true" childName="Voss Pattern"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </modifier>
+                          </modifiers>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="6x Multi-Laser" hidden="false" id="568b-c6df-f352-b8ca" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a45a-2559-08d6-a372" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink import="true" name="Multi-Laser" hidden="false" id="bbcd-f74a-dcb5-7ff5" collective="false" targetId="da9f-a4e9-0f67-9b0e" type="selectionEntry">
+                              <constraints>
+                                <constraint type="max" value="6" field="selections" scope="parent" shared="false" id="62e9-2cfa-7533-16d6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                                <constraint type="min" value="6" field="selections" scope="parent" shared="false" id="3044-1b5c-100b-615f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink name="Icarus mount and tracking system" id="4b57-1d8b-82e9-a8f2" hidden="false" targetId="9ba0-cb9c-82a8-a8be" type="rule"/>
+                              </infoLinks>
+                              <categoryLinks>
+                                <categoryLink name="Icarus mount" hidden="false" id="6ca9-5def-d10a-f44f" targetId="1f9d-db7b-1926-9dfa" primary="false"/>
+                              </categoryLinks>
+                            </entryLink>
+                          </entryLinks>
+                          <costs>
+                            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                            <cost name="Pts" typeId="points" value="0"/>
+                            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                          </costs>
+                          <modifiers>
+                            <modifier type="set" value="true" field="hidden">
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="equalTo" value="0" field="selections" scope="744b-ba5e-a85c-2705" childId="0864-f7ed-7957-8c1a" shared="true" includeChildSelections="true" childName="Voss Pattern"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </modifier>
+                          </modifiers>
                         </selectionEntry>
                       </selectionEntries>
+                      <entryLinks>
+                        <entryLink import="true" name="Light bombs" hidden="false" id="28c7-9916-4800-770f" collective="false" targetId="e536-9e21-cda9-dfff" type="selectionEntry">
+                          <modifiers>
+                            <modifier type="set" value="true" field="hidden">
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="equalTo" value="0" field="selections" scope="744b-ba5e-a85c-2705" childId="4eca-4af1-ca44-c42f" shared="true" includeChildSelections="true" childName="Standard Pattern"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </modifier>
+                          </modifiers>
+                        </entryLink>
+                      </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                   <costs>
