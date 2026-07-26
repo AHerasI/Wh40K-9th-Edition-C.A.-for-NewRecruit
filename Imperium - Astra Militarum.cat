@@ -4202,6 +4202,18 @@ Until the end of the subsecuent Fighting phase, if the eligible unit has Charged
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="06c4-f6da-bb1b-3cbd" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Insurgent Military Group"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="6820-9d46-bfbf-146d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName=" Planetary Defence Forces Regiment"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="5785-1869-d25b-dd4b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="  Artillery Regiment"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4487-cf58-b38d-eb48" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Inquisitorial retinue"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f71-1552-81ab-57a1" type="max"/>
@@ -4400,7 +4412,7 @@ Until the end of the subsecuent Fighting phase, if the eligible unit has Charged
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="4487-cf58-b38d-eb48" name="Inquisitorial retinue" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="4487-cf58-b38d-eb48" name="Inquisitorial Retinue" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="5a1d-3a35-e0ad-765c" name="Inquisitorial retinue" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
