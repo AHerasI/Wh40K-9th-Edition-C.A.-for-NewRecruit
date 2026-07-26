@@ -2703,6 +2703,12 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7795-e688-5cdf-5aac" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="b25e-3198-5e14-63ba" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="7795-e688-5cdf-5aac" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
               </conditionGroups>
             </conditionGroup>
           </conditionGroups>
@@ -5658,9 +5664,9 @@ Each time an attack is made against a &lt;REGIMENT&gt; unit, wound rolls cannot 
                           <conditions>
                             <condition type="equalTo" value="1" field="selections" scope="force" childId="7795-e688-5cdf-5aac" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                             <condition type="equalTo" value="1" field="selections" scope="force" childId="521a-24b7-f8db-4c46" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                            <condition type="equalTo" value="1" field="selections" scope="force" childId="4b65-65ca-65a8-938c" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                            <condition type="equalTo" value="1" field="selections" scope="force" childId="dc39-529a-6aa3-33eb" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="  Light Infantry Regiment"/>
-                            <condition type="equalTo" value="1" field="selections" scope="force" childId="b3fc-2bcc-a8ab-78e6" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName=" Irregular Infantry Regiment"/>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="4b65-65ca-65a8-938c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="dc39-529a-6aa3-33eb" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="  Light Infantry Regiment"/>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="b3fc-2bcc-a8ab-78e6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName=" Irregular Infantry Regiment"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
