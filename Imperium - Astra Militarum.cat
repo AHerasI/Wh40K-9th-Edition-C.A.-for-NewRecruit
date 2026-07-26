@@ -5761,6 +5761,7 @@ Each time an attack is made against a &lt;REGIMENT&gt; unit, wound rolls cannot 
                             <condition type="equalTo" value="1" field="selections" scope="force" childId="4b65-65ca-65a8-938c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                             <condition type="equalTo" value="1" field="selections" scope="force" childId="dc39-529a-6aa3-33eb" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="  Light Infantry Regiment"/>
                             <condition type="equalTo" value="1" field="selections" scope="force" childId="b3fc-2bcc-a8ab-78e6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName=" Irregular Infantry Regiment"/>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="7795-e688-5cdf-5aac" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="  Mechanised Infantry Regiment"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -29807,7 +29808,27 @@ When doing so, measure distances to and from this TRANSPORT model.</characterist
     </infoGroup>
     <infoGroup id="05f7-4e61-087f-3d62" name="Carnodon Chassis" hidden="false">
       <profiles>
-        <profile id="8986-4247-b1b2-3030" name="Carnodon Chassis [1] (7+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="8986-4247-b1b2-3030" name="Carnodon Chassis [1] (7+ Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+          <modifiers>
+            <modifier type="set" field="0bdf-a96e-9e38-7779" value="16&quot;">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b57-b312-e2e6-ffc6" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">14&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fd7b-bc54-708b-f275" name="Carnodon Chassis [2] (3-5 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <modifiers>
             <modifier type="set" field="0bdf-a96e-9e38-7779" value="14&quot;">
               <conditions>
@@ -29822,12 +29843,12 @@ When doing so, measure distances to and from this TRANSPORT model.</characterist
             <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
             <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
             <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
         </profile>
-        <profile id="fd7b-bc54-708b-f275" name="Carnodon Chassis [2] (3-5 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="18af-5701-3a1d-64f6" name="Carnodon Chassis [3] (1-2 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <modifiers>
             <modifier type="set" field="0bdf-a96e-9e38-7779" value="12&quot;">
               <conditions>
@@ -29837,26 +29858,6 @@ When doing so, measure distances to and from this TRANSPORT model.</characterist
           </modifiers>
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="18af-5701-3a1d-64f6" name="Carnodon Chassis [3] (1-2 Wounds remaining)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
-          <modifiers>
-            <modifier type="set" field="0bdf-a96e-9e38-7779" value="10&quot;">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b57-b312-e2e6-ffc6" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
@@ -30044,7 +30045,7 @@ When doing so, measure distances to and from this TRANSPORT model.</characterist
       <profiles>
         <profile name="Carnodon Chassis [1] (7+ Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="2207-e477-f6b8-7266">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">14&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
@@ -30055,7 +30056,7 @@ When doing so, measure distances to and from this TRANSPORT model.</characterist
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
           <modifiers>
-            <modifier type="set" value="14&quot;" field="0bdf-a96e-9e38-7779">
+            <modifier type="set" value="16&quot;" field="0bdf-a96e-9e38-7779">
               <conditions>
                 <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
@@ -30075,7 +30076,7 @@ When doing so, measure distances to and from this TRANSPORT model.</characterist
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
           <modifiers>
-            <modifier type="set" value="14&quot;" field="0bdf-a96e-9e38-7779">
+            <modifier type="set" value="16&quot;" field="0bdf-a96e-9e38-7779">
               <conditions>
                 <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
@@ -30084,7 +30085,7 @@ When doing so, measure distances to and from this TRANSPORT model.</characterist
         </profile>
         <profile name="Carnodon Chassis [3] (1-2 Wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="3cb6-55b8-fca7-19f6">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
@@ -30095,7 +30096,7 @@ When doing so, measure distances to and from this TRANSPORT model.</characterist
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
           <modifiers>
-            <modifier type="set" value="14&quot;" field="0bdf-a96e-9e38-7779">
+            <modifier type="set" value="16&quot;" field="0bdf-a96e-9e38-7779">
               <conditions>
                 <condition type="equalTo" value="1" field="selections" scope="force" childId="8b57-b312-e2e6-ffc6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
