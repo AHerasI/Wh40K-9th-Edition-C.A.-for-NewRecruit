@@ -4825,7 +4825,7 @@ Multiple instances of the same ability do not stack.</characteristic>
               <profiles>
                 <profile id="dc05-caa1-3436-ba96" name="Scouting force" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">&lt;REGIMENT&gt; INFANTRY Gains CONCEALED POSITIONS ability</characteristic>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">REGIMENT INFANTRY gains Concealed positions and Outflank abilities, and REGIMENT TAUROX gains RECON Keyword.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6540,6 +6540,17 @@ Each time an attack is made against a &lt;REGIMENT&gt; unit, wound rolls cannot 
         <cost name="Pts" typeId="points" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Outflank" id="0e34-1cdf-2dea-0f09" hidden="false" targetId="1940-602f-f125-e350" type="profile">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="8d87-37c4-e3a7-171d" shared="true" includeChildSelections="true" childName="Scouting force"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="0119-2963-b954-1611" name="Field Ordinance Battalion" hidden="false" collective="false" import="true" type="unit" subType="unit-group">
       <categoryLinks>
@@ -8715,6 +8726,17 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
         <cost name="Pts" typeId="points" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Outflank" id="d3d5-9d14-cce9-c37b" hidden="false" targetId="1940-602f-f125-e350" type="profile">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="8d87-37c4-e3a7-171d" shared="true" includeChildSelections="true" childName="Scouting force"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="ae56-6d69-c523-9b44" name="Commando Sentinel Patrol" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -22588,6 +22610,13 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
         <cost name="Pts" typeId="points" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="add" value="e1eb-8fe4-62d2-dd17" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d87-37c4-e3a7-171d" shared="true" includeChildSelections="true" childName="Scouting force"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="907c-fe8f-462c-353d" name="Taurox APC Section" hidden="false" collective="false" import="true" type="unit" subType="unit-group">
       <categoryLinks>
@@ -22608,6 +22637,13 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
         <cost name="Pts" typeId="points" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="add" value="e1eb-8fe4-62d2-dd17" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d87-37c4-e3a7-171d" shared="true" includeChildSelections="true" childName="Scouting force"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="1853-6386-b9eb-2a57" name="Field Ordinance Battery" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
