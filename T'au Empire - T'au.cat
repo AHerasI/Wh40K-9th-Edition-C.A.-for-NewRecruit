@@ -861,7 +861,13 @@ If the unit has the INFANTRY Keyword and is in a terrain with the DEFENSIBLE tra
         </rule>
       </rules>
     </categoryEntry>
-    <categoryEntry id="a3e7-72d0-64ad-d17f" name="Pulse Weapon" hidden="false"/>
+    <categoryEntry id="a3e7-72d0-64ad-d17f" name="Pulse Weapon" hidden="false">
+      <rules>
+        <rule name="Pulse weapon." id="338b-cf38-f66f-3c79" hidden="false">
+          <description>If the target is within half range of this weapon, increment the AP characteristic by -1.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
     <categoryEntry id="6f12-ff3f-1329-cb05" name="Fusion Weapon" hidden="false"/>
     <categoryEntry id="74cf-683a-3d0b-376f" name="Railgun Weapon" hidden="false"/>
     <categoryEntry id="dd89-06e9-3ef5-7fe8" name="Commander" hidden="false">
@@ -9854,7 +9860,7 @@ Each time a successful hit is made for an attack made with this weapon, if the t
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">9</characteristic>
                             <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
                             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
-                            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Pulse Weapon.</characteristic>
                           </characteristics>
                         </profile>
                         <profile id="485d-d8f1-2443-035c" name="Ionic cluster-beam shell" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -16002,7 +16008,7 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
                 <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">If the target is within half range of this weapon, the AP characteristic changes to -3.</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Pulse Weapon.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -19666,6 +19672,7 @@ Farsight - Selection</characteristic>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="2021-cc87-3381-81fa" name="Pulse Weapon" hidden="false" targetId="a3e7-72d0-64ad-d17f" primary="false"/>
+            <categoryLink name="Precision Weapon" hidden="false" id="1b2c-82f3-e0d7-954b" targetId="31e3-fdae-c8f9-d634" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -19769,6 +19776,7 @@ Farsight - Selection</characteristic>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="59b7-9efe-eba4-9ee0" name="Pulse Weapon" hidden="false" targetId="a3e7-72d0-64ad-d17f" primary="false"/>
+            <categoryLink name="Precision Weapon" hidden="false" id="aa6b-4981-d873-4a74" targetId="31e3-fdae-c8f9-d634" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -20117,7 +20125,6 @@ Farsight - Selection</characteristic>
         </selectionEntry>
         <selectionEntry id="bcf7-535d-1640-e857" name="2x High-yield Missile Pod" hidden="false" collective="false" import="true" type="upgrade">
           <categoryLinks>
-            <categoryLink id="f5cd-fb5b-6256-1637" name="Pulse Weapon" hidden="false" targetId="a3e7-72d0-64ad-d17f" primary="false"/>
             <categoryLink name="Missile weapon" hidden="false" id="de16-fa9a-dd55-278d" targetId="3ecc-9cea-226c-1cc0" primary="false"/>
           </categoryLinks>
           <entryLinks>
@@ -25246,7 +25253,7 @@ INFANTRY BATTLESUIT models can move and shoot Heavy Weapons without penalty to t
         <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">If the target is within half range of this weapon, the AP characteristic changes to -2.</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Pulse Weapon.</characteristic>
       </characteristics>
     </profile>
     <profile id="9e2b-d8f4-886a-b648" name="Twin Airbursting Fragmentation Projector" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -25268,7 +25275,7 @@ INFANTRY BATTLESUIT models can move and shoot Heavy Weapons without penalty to t
         <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">If the target is within half range of this weapon, the AP characteristic changes to -2.</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Pulse Weapon.</characteristic>
       </characteristics>
     </profile>
     <profile id="43ae-5ccc-9432-2f26" name="Tri-axis Ion Cannon (Standard)" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -25334,7 +25341,7 @@ INFANTRY BATTLESUIT models can move and shoot Heavy Weapons without penalty to t
         <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">If the target is within half range of this weapon, the AP characteristic changes to -2.</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Pulse Weapon.</characteristic>
       </characteristics>
     </profile>
     <profile id="f3d9-ff59-96d7-7c51" name="Stingwing Claws" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -25509,7 +25516,7 @@ Each seeker missile can only be used once per battle.</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">7</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Splash. If the target is within half range of this weapon, the AP characteristic changes to -3.</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Splash. Pulse Weapon.</characteristic>
       </characteristics>
     </profile>
     <profile id="854d-8866-6dec-4be6" name="Pulse Submunitions Cannon (Nova)" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -25520,7 +25527,7 @@ Each seeker missile can only be used once per battle.</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Splash. If the target is within half range of this weapon, the AP characteristic changes to -3.</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Splash. Pulse Weapon.</characteristic>
       </characteristics>
     </profile>
     <profile id="9b19-f1d8-3531-4035" name="Pulse Rifle" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -25531,7 +25538,7 @@ Each seeker missile can only be used once per battle.</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">If the target is within half range of this weapon, the AP characteristic changes to -2.</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Pulse Weapon.</characteristic>
       </characteristics>
     </profile>
     <profile id="5a5c-05c8-ed37-a125" name="Pulse Pistol" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -25542,7 +25549,7 @@ Each seeker missile can only be used once per battle.</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">If the target is within half range of this weapon, the AP characteristic changes to -2.</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Pulse Weapon.</characteristic>
       </characteristics>
     </profile>
     <profile id="2fbc-5716-8947-add4" name="Pulse ordnance multi-driver (Dispersed)" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -25553,7 +25560,7 @@ Each seeker missile can only be used once per battle.</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">10</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Splash. If the target is within half range of this weapon, the AP characteristic changes to -3.</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Splash. Pulse Weapon.</characteristic>
       </characteristics>
     </profile>
     <profile id="6913-18db-04a3-74ad" name="Pulse ordnance multi-driver (Concentrated)" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -25564,7 +25571,7 @@ Each seeker missile can only be used once per battle.</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">12</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">5</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">If the target is within half range of this weapon, the AP characteristic changes to -5.</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Pulse Weapon.</characteristic>
       </characteristics>
     </profile>
     <profile id="96e0-8db2-e978-e9e7" name="Pulse Driver Cannon" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -25575,7 +25582,7 @@ Each seeker missile can only be used once per battle.</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">10</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Splash. If the target is within half range of this weapon, the AP characteristic changes to -5.</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Splash. Pulse Weapon.</characteristic>
       </characteristics>
     </profile>
     <profile id="dd74-2375-6d99-062c" name="Pulse Carbine" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -25586,7 +25593,7 @@ Each seeker missile can only be used once per battle.</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">If the target is within half range of this weapon, the AP characteristic changes to -2. If the unit of the weapon&apos;s bearer is in engagement range of enemy units, this weapon changes it&apos;s profile to Pistol 2.</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Pulse Weapon. If the unit of the weapon&apos;s bearer is in engagement range of enemy units, this weapon changes it&apos;s profile to Pistol 2.</characteristic>
       </characteristics>
     </profile>
     <profile id="64c7-3e9d-b80d-f9f9" name="Pulse Blaster" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -25597,8 +25604,7 @@ Each seeker missile can only be used once per battle.</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">If the target is within half range of this weapon, add 1 to the Strength characteristic of the attack and the AP characteristic changes to -2.
-If the unit of the weapon&apos;s bearer is in engagement range of enemy units, this weapon changes it&apos;s profile to Pistol 2.</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Pulse Weapon. If the unit of the weapon&apos;s bearer is in engagement range of enemy units, this weapon changes it&apos;s profile to Pistol 2.</characteristic>
       </characteristics>
     </profile>
     <profile id="b221-a793-2d62-a8be" name="Pulse Blastcannon (Focused Shot)" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -25609,7 +25615,7 @@ If the unit of the weapon&apos;s bearer is in engagement range of enemy units, t
         <characteristic name="S" typeId="59b1-319e-ec13-d466">16</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">12</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">If the target is within half range of this weapon, the AP characteristic changes to -5.</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Pulse Weapon.</characteristic>
       </characteristics>
     </profile>
     <profile id="fd68-b47d-3bfa-8059" name="Pulse Blastcannon (Dispersed Shot)" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -25620,7 +25626,7 @@ If the unit of the weapon&apos;s bearer is in engagement range of enemy units, t
         <characteristic name="S" typeId="59b1-319e-ec13-d466">12</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">4</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">If the target is within half range of this weapon, the AP characteristic changes to -3.</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Pulse Weapon.</characteristic>
       </characteristics>
     </profile>
     <profile id="566e-3376-75c1-4beb" name="Plasma Mining Drill" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -25745,7 +25751,7 @@ If the unit of the weapon&apos;s bearer is in engagement range of enemy units, t
         <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time you select a target for this weapon, you can ignore the Look Out, Sir rule. Each time an attack is made with this weapon, an unmodified wound roll of 6 inflicts 1 mortal wound on the target in addition to any normal damage. If the target is within half range of this weapon, the AP characteristic changes to -3.</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Precision Weapon. Pulse Weapon. Each time an attack is made with this weapon, an unmodified wound roll of 6 inflicts 1 mortal wound on the target in addition to any normal damage.</characteristic>
       </characteristics>
     </profile>
     <profile id="264d-5cb5-544b-a9ca" name="Light Missile Pod" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -25975,7 +25981,7 @@ If the unit of the weapon&apos;s bearer is in engagement range of enemy units, t
         <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">If the target is within half range of this weapon, the AP characteristic changes to -3.</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Pulse Weapon.</characteristic>
       </characteristics>
     </profile>
     <profile id="980c-69cb-3b7b-d7dc" name="Grenade Belt" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -26170,7 +26176,7 @@ If the unit of the weapon&apos;s bearer is in engagement range of enemy units, t
         <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">If the target is within half range of this weapon, the AP characteristic changes to -2. If the unit of the weapon&apos;s bearer is in engagement range of enemy units, this weapon changes it&apos;s profile to Pistol 4.</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Pulse Weapon. If the unit of the weapon&apos;s bearer is in engagement range of enemy units, this weapon changes it&apos;s profile to Pistol 4.</characteristic>
       </characteristics>
     </profile>
     <profile id="e886-c67d-9e70-1b70" name="Stealth Field Technology" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -26188,7 +26194,7 @@ If the unit of the weapon&apos;s bearer is in engagement range of enemy units, t
         <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">If the target is within half range of this weapon, the AP characteristic changes to -2.</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Pulse Weapon.</characteristic>
       </characteristics>
     </profile>
     <profile id="1f25-2f70-147a-da53" name="Shield Generator" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -26294,7 +26300,7 @@ If the unit of the weapon&apos;s bearer is in engagement range of enemy units, t
         <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">If the target is within half range of this weapon, the AP characteristic changes to -2.</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Pulse Weapon.</characteristic>
       </characteristics>
     </profile>
     <profile id="6a8c-9a0d-f0d8-28b0" name="Alternating Fusion Blaster" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -26957,7 +26963,7 @@ In addition, if a wound is scored against a target without the INORGANIC, VEHICL
         <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">If the target is within half range of this weapon, add 1 to the Strength characteristic of the attack and the AP characteristic changes to -2.</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Pulse Weapon. If the target is within half range of this weapon, add 1 to the Strength characteristic of the attack.</characteristic>
       </characteristics>
     </profile>
     <profile name="Commander in XV8-02 Crisis Battlesuit" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="ffa9-a9f3-aa38-d016">
