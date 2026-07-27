@@ -22747,7 +22747,6 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52cf-bab6-9dcc-1aa3" type="min"/>
           </constraints>
           <categoryLinks>
-            <categoryLink id="707c-ac62-cacf-76bf" name="Regiment" hidden="false" targetId="3aa8-21df-b483-57dd" primary="false"/>
             <categoryLink id="f818-9cbf-6087-607c" name="Faction: Astra Militarum" hidden="false" targetId="3263-4233-4344-6228" primary="false"/>
             <categoryLink id="7b47-29ca-4ff7-790d" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
             <categoryLink id="85fa-47cd-024d-07a9" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
@@ -22801,6 +22800,54 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry type="model" import="true" name="Navis Armsman" hidden="false" id="a9d0-94fb-bdd0-b5d7" collective="false">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="24af-10d0-4190-1be4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="4646-291e-690e-1ffa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Navis Man-at-Arms" id="8d88-e72d-7659-3f20" hidden="false" targetId="3192-46e0-55f4-9526" type="profile"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink name="Infantry" hidden="false" id="2ff3-d6d6-c2a7-5921" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink import="true" name="Frag grenades" hidden="false" id="163f-aa9d-58a9-9e43" collective="false" targetId="f68e-9984-71fe-6bca" type="selectionEntry"/>
+                <entryLink import="true" name="Lasgun" hidden="false" id="8804-ff01-4771-b781" collective="false" targetId="619e-7129-86af-ff25" type="selectionEntry"/>
+                <entryLink import="true" name="Combat knife" hidden="false" id="175d-188b-635e-e120" collective="false" targetId="92e8-af3a-fe14-06c1" type="selectionEntry"/>
+                <entryLink import="true" name="Laspistol" hidden="false" id="e349-ccd3-434a-ecdd" collective="false" targetId="e6ad-0f82-68e4-ab9f" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Navis Armsman w/Vox-caster" hidden="false" id="621a-51b7-4a35-f7e1" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="808b-c2c1-bff6-2bfe" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0f91-668f-11fb-e3b7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Navis Man-at-Arms" id="069c-5df0-ffe1-91de" hidden="false" targetId="3192-46e0-55f4-9526" type="profile"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink name="Infantry" hidden="false" id="2177-7319-29cd-81ce" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink import="true" name="Frag grenades" hidden="false" id="fab2-dc6f-6d7d-be29" collective="false" targetId="f68e-9984-71fe-6bca" type="selectionEntry"/>
+                <entryLink import="true" name="Lasgun" hidden="false" id="789d-ac16-601f-60ee" collective="false" targetId="619e-7129-86af-ff25" type="selectionEntry"/>
+                <entryLink import="true" name="Combat knife" hidden="false" id="8f1d-7a80-8b1d-9ec9" collective="false" targetId="92e8-af3a-fe14-06c1" type="selectionEntry"/>
+                <entryLink import="true" name="Laspistol" hidden="false" id="d618-956a-0d95-269e" collective="false" targetId="e6ad-0f82-68e4-ab9f" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="a619-3139-81a4-4438" name="Attachés and Bodyguards" hidden="false" collective="false" import="true">
@@ -22813,25 +22860,6 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <entryLinks>
-            <entryLink id="15cf-7ad2-d82b-7828" name="Guardsman w/Vox-caster" hidden="false" collective="false" import="true" targetId="b730-8346-a151-191d" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ee6-7625-86d4-cc77" type="min"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="75cd-d593-c4d2-8368" name="Carapace Armour" hidden="false" targetId="b4b1-c3d9-0382-c906" primary="false"/>
-              </categoryLinks>
-            </entryLink>
-            <entryLink id="ca05-dd63-a40b-1e72" name="Guardsman" hidden="false" collective="false" import="true" targetId="373f-4ab4-7e87-ab0b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d44a-163c-21ae-c53a" type="max"/>
-                <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1c6-94b6-03af-bd0d" type="min"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="8a2b-cb2d-8000-370c" name="Carapace Armour" hidden="false" targetId="b4b1-c3d9-0382-c906" primary="false"/>
-              </categoryLinks>
-            </entryLink>
-          </entryLinks>
           <costs>
             <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
