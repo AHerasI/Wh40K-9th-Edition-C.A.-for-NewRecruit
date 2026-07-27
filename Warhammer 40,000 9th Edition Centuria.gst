@@ -1790,7 +1790,7 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
     <categoryEntry name="Precision Weapon" id="31e3-fdae-c8f9-d634" hidden="false">
       <rules>
         <rule name="Precision Weapon" id="c0f6-fea7-a91f-38d8" hidden="false">
-          <description>Attacks made by a Weapon profile with this trait ignores the Look out, Sir! rule. In addition, if an attack made by a Weapon profile with this trait successfully wounds a unit, if all the unit&apos;s remaining models have all it&apos;s wounds, instead the owner of that unit selecting the model to assign the wounds to, you can select a model from that unit, visible to the attacking model, to assign the wounds to.</description>
+          <description>Attacks made by a Weapon profile with this trait ignores the Look out, Sir! rule. In addition, if an attack made by a Weapon profile with this trait successfully wounds a unit, if all the unit&apos;s remaining models have all it&apos;s wounds, the attacking model’s player can select a model from that unit, visible to the attacking model, to assign the wounds to.</description>
         </rule>
       </rules>
     </categoryEntry>
