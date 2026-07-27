@@ -17133,7 +17133,7 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
-                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="62ae-1348-9d94-55de" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6abe-fce3-b1d2-b555" type="equalTo" childName="Ordo Xenos"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -17190,7 +17190,7 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                       <categoryLinks>
                         <categoryLink id="a5bd-eb64-b42e-3f11" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
                         <categoryLink id="11ae-ef47-472c-fab7" name="Psyker" hidden="false" targetId="e691-aad7-d21c-1023" primary="false"/>
-                        <categoryLink id="678d-407c-fe50-d70d" name="Ordo Malleus" hidden="false" targetId="1481-ffc3-f85a-eb36" primary="false"/>
+                        <categoryLink name="Ordo Xenos" hidden="false" id="6e26-eb7d-af28-3e13" targetId="0eb0-346d-12e6-5924" primary="false"/>
                       </categoryLinks>
                       <selectionEntries>
                         <selectionEntry id="26b4-7165-6f90-00bf" name="Barbarisater" hidden="false" collective="false" import="true" type="upgrade">
