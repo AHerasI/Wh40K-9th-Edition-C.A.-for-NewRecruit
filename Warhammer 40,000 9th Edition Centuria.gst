@@ -15875,7 +15875,7 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
         <selectionEntry id="b1b2-69ab-b647-0c88" name="Sister Astrid" hidden="false" collective="false" import="true" type="upgrade">
           <comment>Character from a role-playing game we had. Nuts nun.</comment>
           <constraints>
-            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="399c-7b51-904e-126a" type="max"/>
+            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="399c-7b51-904e-126a" type="max"/>
           </constraints>
           <profiles>
             <profile id="0c40-e05f-9e0b-d51c" name="Sister Astrid" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
@@ -17005,7 +17005,7 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                 </selectionEntry>
                 <selectionEntry id="7c5e-319b-8df6-e6eb" name="Inquisitor Coteaz" hidden="true" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8035-9c50-3cda-752e" type="max"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2b5f-303e-4171-a32c" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
                   </constraints>
                   <profiles>
                     <profile id="bf85-fca1-3401-56d5" name="Inquisitor Coteaz" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
@@ -17138,7 +17138,7 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb62-5772-9b79-18d7" type="max"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="f85b-5817-1dea-dbd3" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
                   </constraints>
                   <selectionEntries>
                     <selectionEntry id="8d50-4fd3-0072-53d5" name="Inquisitor Eisenhorn" hidden="false" collective="false" import="true" type="model">
@@ -17380,7 +17380,7 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdfa-440d-c6a8-cecb" type="max"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1ec4-bddc-ee01-a107" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
                   </constraints>
                   <profiles>
                     <profile id="f1ae-8ecb-d8bd-e4ee" name="Inquisitor Greyfax" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
@@ -17505,7 +17505,7 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="379c-24e7-c58b-bdd7" type="max"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="d246-3011-302f-ac7f" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
                   </constraints>
                   <profiles>
                     <profile id="6ee2-1c34-9ce9-5dd5" name="Inquisitor Kyria Draxus" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
@@ -17615,7 +17615,7 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b58-6eda-111d-5a05" type="max"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="764a-b822-559d-72a1" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
                   </constraints>
                   <profiles>
                     <profile id="de81-201d-fff2-14a5" name="Inquisitor Solomon Lok" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
@@ -17699,7 +17699,7 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0cc-27e7-78a8-3569" type="max"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1230-0d73-d491-becb" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
                   </constraints>
                   <profiles>
                     <profile id="264b-4624-6247-28d7" name="Inquisitor Hector Rex" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
@@ -17815,7 +17815,7 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce4f-c5ca-0f61-2859" type="max"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="0907-65b0-5600-28f5" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
                   </constraints>
                   <profiles>
                     <profile id="ecb2-b730-6075-d8fe" name="Lord Inquisitor Karamazov" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
@@ -18325,7 +18325,7 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3a41-e477-66a5-06a2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="08d4-8708-3767-d277" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
                   </constraints>
                   <profiles>
                     <profile name="Inquisitor Kroyle" typeId="800f-21d0-4387-c943" typeName="Model" hidden="false" id="d0a2-7f3b-afac-f251">
