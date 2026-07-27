@@ -1787,6 +1787,13 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
         </rule>
       </rules>
     </categoryEntry>
+    <categoryEntry name="Precision Weapon" id="31e3-fdae-c8f9-d634" hidden="false">
+      <rules>
+        <rule name="Precision Weapon" id="c0f6-fea7-a91f-38d8" hidden="false">
+          <description>Attacks made by a Weapon profile with this trait ignores the Look out, Sir! rule. In addition, if an attack made by a Weapon profile with this trait successfully wounds a unit, if all the unit&apos;s remaining models have all it&apos;s wounds, instead the owner of that unit selecting the model to assign the wounds to, you can select a model from that unit, visible to the attacking model, to assign the wounds to.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="a0c7-2a71-bae0-215d" name="Patrol Detachment -2CP" hidden="false">
@@ -7573,6 +7580,9 @@ If this unit has no aura abilities on its datasheet, then it is unaffected by th
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <categoryLinks>
+        <categoryLink name="Precision Weapon" hidden="false" id="4aaf-7c2d-e17f-ec98" targetId="31e3-fdae-c8f9-d634" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="ab12-f2db-b285-4b9b" name="Nemesis Daemon Hammer" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -9199,6 +9209,9 @@ Each Multi-Purpose Reactive Armour packcage can be used once per battle.</descri
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <categoryLinks>
+        <categoryLink name="Precision Weapon" hidden="false" id="209a-63c4-f456-0042" targetId="31e3-fdae-c8f9-d634" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="e60c-14d4-00f9-b8d4" name="Boltgun" hidden="false" collective="true" import="true" type="upgrade">
       <constraints>
@@ -9633,6 +9646,9 @@ Each Multi-Purpose Reactive Armour packcage can be used once per battle.</descri
         <cost name="Pts" typeId="points" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <categoryLinks>
+        <categoryLink name="Precision Weapon" hidden="false" id="e9bb-87f3-05a4-63b1" targetId="31e3-fdae-c8f9-d634" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="2a9c-d212-55ab-bc3d" name="Meltagun" hidden="false" collective="true" import="true" type="upgrade">
       <constraints>
@@ -19327,7 +19343,7 @@ Before using it, select one of the available ammo.
         <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time you select a target for this weapon, you can ignore the Look Out, Sir rule. Compatible with Sniper rifle ammunition.</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Precision Weapon. Compatible with Sniper rifle ammunition.</characteristic>
       </characteristics>
     </profile>
     <profile id="c019-5c9a-c1f4-4b4f" name="Force Axe" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -20129,7 +20145,7 @@ Enemy models cannot target a model in this unit with ranged attacks unless they 
         <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time you select a target for this weapon, you can ignore the Look Out, Sir rule. If you roll a wound roll of 6+ for this weapon, it inflicts a mortal wound in addition to its normal damage.</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Precision Weapon. If you roll a wound roll of 6+ for this weapon, it inflicts a mortal wound in addition to its normal damage.</characteristic>
       </characteristics>
     </profile>
     <profile id="2bfd-8154-9a6c-d4ad" name="Heavy Bolt Pistol" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
