@@ -7368,7 +7368,6 @@ If this unit has no aura abilities on its datasheet, then it is unaffected by th
     </selectionEntry>
     <selectionEntry id="15e7-ffe5-1f1b-384e" name=" Warlord" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b6c5-bada-b108-b773" type="max"/>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f2be-b5a2-b39c-3fa2" type="max"/>
       </constraints>
       <categoryLinks>
