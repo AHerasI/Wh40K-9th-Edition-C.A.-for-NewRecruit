@@ -191,7 +191,7 @@ If the unit has the INFANTRY Keyword and is in a DEFENSIBLE terrain feature, it 
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6ee0-38ca-e173-ff3d" type="min"/>
         <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e862-071e-a10f-7fd2" type="min"/>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9eaa-f895-2532-17bb" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9eaa-f895-2532-17bb" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="e10e-b44e-7eda-41d8" name="Relic" hidden="false"/>
@@ -7368,7 +7368,7 @@ If this unit has no aura abilities on its datasheet, then it is unaffected by th
     </selectionEntry>
     <selectionEntry id="15e7-ffe5-1f1b-384e" name=" Warlord" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f2be-b5a2-b39c-3fa2" type="max"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d647-c5a1-f507-1d0d"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="3ebd-4be5-f177-4be3" name="Warlord" hidden="false" targetId="ae09-117e-a6fa-316b" primary="false"/>
