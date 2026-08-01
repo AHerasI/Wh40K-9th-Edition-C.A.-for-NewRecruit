@@ -536,7 +536,7 @@ If the unit has the INFANTRY Keyword and is in a terrain with the DEFENSIBLE tra
               <profiles>
                 <profile id="1a5c-02f2-1d69-4b25" name="Magna Imperator" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a unit with this trait is selected to shoot or fight, you can re-roll one hit roll or one wound roll when resolving that unit’s attacks.</characteristic>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a unit with this trait is selected to shoot or fight, you can re-roll one hit roll and one wound roll when resolving that unit’s attacks.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3298,7 +3298,7 @@ When doing so, each Custodian in Allarus Armour model from this unit counts as a
                       <profiles>
                         <profile id="16e1-a261-0be9-b2cc" name="Vexilla Defensor [Aura]" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                           <characteristics>
-                            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly &lt;SHIELD HOST&gt; CORE or &lt;SHIELD HOST&gt; CHARACTER unit is within 6&quot; of this model, it has the benefits of Light Cover.</characteristic>
+                            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly IMPERIUM INFANTRY unit is within 6&quot; of this model, it is considered to be affected by the DEFENSIBLE terrain trait.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -3313,7 +3313,7 @@ When doing so, each Custodian in Allarus Armour model from this unit counts as a
                       <profiles>
                         <profile id="715d-ad4f-ea94-4808" name="Vexilla Imperius [Aura]" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                           <characteristics>
-                            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly &lt;SHIELD HOST&gt; CORE or &lt;SHIELD HOST&gt; CHARACTER unit is within 6&quot; of this model, add 1 to the Attacks characteristic of each model in its unit.</characteristic>
+                            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly IMPERIUM INFANTRY or SHIELD HOST CORE unit is within 6&quot; of this model, add 1 to the Attacks characteristic of each model in its unit.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -3328,7 +3328,7 @@ When doing so, each Custodian in Allarus Armour model from this unit counts as a
                       <profiles>
                         <profile id="9cfa-5cb5-405f-5948" name="Vexilla Magnifica [Aura]" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                           <characteristics>
-                            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly &lt;SHIELD HOST&gt; CORE or &lt;SHIELD HOST&gt; CHARACTER unit is within 6&quot; of this model, it has the benefits of Dense Cover.</characteristic>
+                            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly IMPERIUM INFANTRY unit is within 6&quot; of this model, it has the benefits of Cover.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -5089,7 +5089,7 @@ When doing so, each Custodian in Allarus Armour model from this unit counts as a
       <selectionEntryGroups>
         <selectionEntryGroup id="7ae3-2278-3812-bcf9" name="1 - Before battle" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="11a3-ec36-0e2c-ad8e" name="3/2CP Into the Darkness" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="11a3-ec36-0e2c-ad8e" name="2/1CP Into the Darkness" hidden="true" collective="false" import="true" type="upgrade">
               <comment>Imperatus</comment>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
@@ -5102,10 +5102,11 @@ When doing so, each Custodian in Allarus Armour model from this unit counts as a
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="380f-da9f-5e4f-1cce" type="max"/>
               </constraints>
               <profiles>
-                <profile id="4952-074b-7f1b-1905" name="3/2CP Into the Darkness" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+                <profile id="4952-074b-7f1b-1905" name="2/1CP Into the Darkness" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Use this Stratagem at the start of the first battle round, before the first turn begins. Select one EMISSARIES IMPERATUS CORE unit from your army. That unit can make a Normal Move as if it were your Movement phase, but must end that move more than 9&quot; away from any enemy models. If both players have units that can move before the first turn begins, the player who is taking the first turn moves their units first. If that unit contains 4 or more models, this Stratagem costs 3CP; otherwise, it costs 2CP. You can only use this Stratagem once.</characteristic>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Use this Stratagem at the start of the first battle round, before the first turn begins. Select one EMISSARIES IMPERATUS INFANTRY unit from your army. That unit gains Concealed positions ability, remove the unit from the battlefield and set it up again as described in the Deployment section of the mission (if both players have abilities that redeploy units, roll off; the winner chooses who redeploys their units first). If that unit contains 4 or more models, this Stratagem costs 2CP; otherwise, it costs 1CP. You can only use this Stratagem once.</characteristic>
                   </characteristics>
+                  <comment>Use this Stratagem at the start of the first battle round, before the first turn begins. Select one EMISSARIES IMPERATUS CORE unit from your army. That unit can make a Normal Move as if it were your Movement phase, but must end that move more than 9&quot; away from any enemy models. If both players have units that can move before the first turn begins, the player who is taking the first turn moves their units first. If that unit contains 4 or more models, this Stratagem costs 3CP; otherwise, it costs 2CP. You can only use this Stratagem once.</comment>
                 </profile>
               </profiles>
               <costs>
@@ -5119,7 +5120,7 @@ When doing so, each Custodian in Allarus Armour model from this unit counts as a
         </selectionEntryGroup>
         <selectionEntryGroup id="2b05-b44e-62a9-6da6" name="2 - Command Phase" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="fa39-c623-cffc-696c" name="2CP Steemed Amalgam" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="fa39-c623-cffc-696c" name="1CP Steemed Amalgam" hidden="true" collective="false" import="true" type="upgrade">
               <comment>Chosen</comment>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
@@ -5132,7 +5133,7 @@ When doing so, each Custodian in Allarus Armour model from this unit counts as a
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b90-cb4a-5dee-0cb2" type="max"/>
               </constraints>
               <profiles>
-                <profile id="42f6-a0b1-86f7-72de" name="2CP Steemed Amalgam" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+                <profile id="42f6-a0b1-86f7-72de" name="1CP Steemed Amalgam" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
                     <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Use this Stratagem in your Command phase. Select one EMPEROR’S CHOSEN unit from your army, then select one other shield host’s fighting style. Until the start of your next Command phase, the models in that unit have the traits of that shield host fighting style instead of the traits of the Magna Imperator fighting style.</characteristic>
                   </characteristics>
@@ -5149,7 +5150,7 @@ When doing so, each Custodian in Allarus Armour model from this unit counts as a
         </selectionEntryGroup>
         <selectionEntryGroup id="8de4-61b0-d658-3b7d" name="3 - Movement Phase" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="a929-b9f6-1dab-5aec" name="2CP Golden Light of the Moiraides" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="a929-b9f6-1dab-5aec" name="1CP Golden Light of the Moiraides" hidden="true" collective="false" import="true" type="upgrade">
               <comment>Dread</comment>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
@@ -5162,11 +5163,11 @@ When doing so, each Custodian in Allarus Armour model from this unit counts as a
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fde8-e15e-ea0f-b8cb" type="max"/>
               </constraints>
               <profiles>
-                <profile id="3f60-d4b3-58a0-679e" name="2CP Golden Light of the Moiraides" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+                <profile id="3f60-d4b3-58a0-679e" name="1CP Golden Light of the Moiraides" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Use this Stratagem in your Movement phase, when a DREAD HOST unit from your army is set up on the battlefield using the From Golden Light ability. Until the start of your next turn:
-Each time an attack is made against that unit, subtract 1 from that attack’s hit roll.
-Each time that unit declares a charge, enemy units that were targeted by that charge cannot fire Overwatch or Set to Defend against that charge.</characteristic>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Use this Stratagem in your Movement phase, when a DREAD HOST INFANTRY unit from your army is set up on the battlefield using the From Golden Light ability. Until the start of your next turn:
+- Each time an attack is made against that unit, subtract 1 from that attack’s hit roll.
+- Each time that unit declares a charge, enemy units that were targeted by that charge cannot fire Overwatch or Set to Defend against that charge.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5240,8 +5241,9 @@ Each time that unit declares a charge, enemy units that were targeted by that ch
               <profiles>
                 <profile id="02c1-de98-378c-bfcf" name="1CP Shield of Honour" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Use this Stratagem in your opponent’s Shooting phase, when an enemy unit is selected to shoot with. Select one IMPERIUM INFANTRY CHARACTER unit from your army. Until the end of the phase, while that unit from your army is within 6&quot; of a friendly AQUILAN SHIELD CORE unit, that IMPERIUM INFANTRY CHARACTER unit can use the Look Out, Sir rule and Bodyguard rule.</characteristic>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Use this Stratagem in your opponent’s Shooting phase, when an enemy unit is selected to shoot with. Select one IMPERIUM INFANTRY CHARACTER unit from your army. Until the end of the phase, while that unit from your army is within 6&quot; of a friendly AQUILAN SHIELD CORE unit, that IMPERIUM INFANTRY CHARACTER unit cannot be selected as a target for a ranged attack.</characteristic>
                   </characteristics>
+                  <comment>Use this Stratagem in your opponent’s Shooting phase, when an enemy unit is selected to shoot with. Select one IMPERIUM INFANTRY CHARACTER unit from your army. Until the end of the phase, while that unit from your army is within 6&quot; of a friendly AQUILAN SHIELD CORE unit, that IMPERIUM INFANTRY CHARACTER unit can use the Look Out, Sir rule and Bodyguard rule.</comment>
                 </profile>
               </profiles>
               <costs>
@@ -5352,7 +5354,7 @@ You can only use this Stratagem on each ADEPTUS CUSTODES CHARACTER unit from you
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="326c-0d4b-8263-6965" name="1CP The Eagles&apos;s strike" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="326c-0d4b-8263-6965" name="2CP The Eagles&apos;s strike" hidden="true" collective="false" import="true" type="upgrade">
               <comment>Solar</comment>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
@@ -5365,7 +5367,7 @@ You can only use this Stratagem on each ADEPTUS CUSTODES CHARACTER unit from you
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81a0-fbdb-3d71-23ad" type="max"/>
               </constraints>
               <profiles>
-                <profile id="f5cf-28b5-77fd-bcb1" name="1CP The Eagles&apos;s strike" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+                <profile id="f5cf-28b5-77fd-bcb1" name="2CP The Eagles&apos;s strike" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
                     <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Use this Stratagem in any phase, when an enemy WARLORD is destroyed by a SOLAR WATCH unit from your army. Until the end of the battle, each time a Combat Attrition test is taken for an enemy unit, subtract 1 from that Combat Attrition test.</characteristic>
                   </characteristics>
