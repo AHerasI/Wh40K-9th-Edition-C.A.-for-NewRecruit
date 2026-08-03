@@ -870,9 +870,6 @@ Each unmodified Hit roll of 6+ from a Melee attack made by a &lt;REGIMENT&gt; IN
       </constraints>
     </categoryEntry>
     <categoryEntry id="9946-33a8-b502-a531" name="Tank Commander" hidden="false">
-      <constraints>
-        <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c6fe-e05e-791d-b11a" type="max"/>
-      </constraints>
       <profiles>
         <profile id="630c-7b20-2eda-224b" name="Tank Commander" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
@@ -27627,12 +27624,12 @@ Roll one D6 to set a random Warlord trait from the Astra Militarum Warlord Trait
         <selectionEntry id="9e17-5528-d975-8eac" name="Meticulous Calibrator" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8475-f647-5978-a6e9" type="max"/>
-            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9d13-526e-1468-1c63" type="max"/>
+            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9d13-526e-1468-1c63" type="max"/>
           </constraints>
           <profiles>
             <profile id="97e8-cad3-0d1f-8b61" name="Meticulous Calibrator" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time this model makes a ranged attack, the target does not receive the benefits of cover against that attack.</characteristic>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time this model makes a ranged attack, the target does not receive the benefits of Light or Dense cover against that attack.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -27642,16 +27639,37 @@ Roll one D6 to set a random Warlord trait from the Astra Militarum Warlord Trait
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="increment" value="1" field="9d13-526e-1468-1c63">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="09f9-b586-8d63-7635" shared="true" includeChildSelections="true" includeChildForces="true" childName="3. Strike Force (76-150 Total PL / 1501-3000 Points) "/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="9d13-526e-1468-1c63">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="fad2-035f-88a7-60c0" shared="true" includeChildSelections="true" includeChildForces="true" childName="4. Onslaught (151-300 Total PL / 3001-6000 Points) "/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="9d13-526e-1468-1c63">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="09f9-b586-8d63-7635" shared="true" includeChildSelections="true" includeChildForces="true" childName="3. Strike Force (76-150 Total PL / 1501-3000 Points) "/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
         <selectionEntry id="a066-ea08-61db-26da" name="Veteran Commandeer" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ecd0-00c9-f3c9-bb27" type="max"/>
-            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="73b2-9db3-304e-4a53" type="max"/>
+            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="73b2-9db3-304e-4a53" type="max"/>
           </constraints>
           <profiles>
             <profile id="dc21-fed5-1836-6b29" name="Veteran Commandeer" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time this model makes an attack, you can ignore any or all hit roll modifiers.</characteristic>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time this model makes an attack, you can ignore any or all Hit roll modifiers.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -27661,11 +27679,32 @@ Roll one D6 to set a random Warlord trait from the Astra Militarum Warlord Trait
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="increment" value="1" field="73b2-9db3-304e-4a53">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="09f9-b586-8d63-7635" shared="true" includeChildSelections="true" includeChildForces="true" childName="3. Strike Force (76-150 Total PL / 1501-3000 Points) "/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="73b2-9db3-304e-4a53">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="fad2-035f-88a7-60c0" shared="true" includeChildSelections="true" includeChildForces="true" childName="4. Onslaught (151-300 Total PL / 3001-6000 Points) "/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="73b2-9db3-304e-4a53">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="09f9-b586-8d63-7635" shared="true" includeChildSelections="true" includeChildForces="true" childName="3. Strike Force (76-150 Total PL / 1501-3000 Points) "/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
         <selectionEntry id="09d5-0095-8dc9-db1b" name="Knight of Piety" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98a3-d518-6216-51f1" type="max"/>
-            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b917-041f-d6d0-67f4" type="max"/>
+            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b917-041f-d6d0-67f4" type="max"/>
           </constraints>
           <profiles>
             <profile id="0c64-7fab-f38b-15d1" name="Knight of Piety" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -27681,11 +27720,32 @@ If this model would lose a wound as the result of a mortal wound during other ph
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="increment" value="1" field="b917-041f-d6d0-67f4">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="09f9-b586-8d63-7635" shared="true" includeChildSelections="true" includeChildForces="true" childName="3. Strike Force (76-150 Total PL / 1501-3000 Points) "/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="b917-041f-d6d0-67f4">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="fad2-035f-88a7-60c0" shared="true" includeChildSelections="true" includeChildForces="true" childName="4. Onslaught (151-300 Total PL / 3001-6000 Points) "/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="b917-041f-d6d0-67f4">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="09f9-b586-8d63-7635" shared="true" includeChildSelections="true" includeChildForces="true" childName="3. Strike Force (76-150 Total PL / 1501-3000 Points) "/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
         <selectionEntry id="31d9-aa7a-cf65-cc07" name="Master of Camouflage" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a46b-c033-c114-7b99" type="max"/>
-            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6134-71b7-7382-5cda" type="max"/>
+            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6134-71b7-7382-5cda" type="max"/>
           </constraints>
           <profiles>
             <profile id="24b9-4584-fa66-4531" name="Master of Camouflage" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -27700,6 +27760,27 @@ If this model would lose a wound as the result of a mortal wound during other ph
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="increment" value="1" field="6134-71b7-7382-5cda">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="09f9-b586-8d63-7635" shared="true" includeChildSelections="true" includeChildForces="true" childName="3. Strike Force (76-150 Total PL / 1501-3000 Points) "/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="6134-71b7-7382-5cda">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="fad2-035f-88a7-60c0" shared="true" includeChildSelections="true" includeChildForces="true" childName="4. Onslaught (151-300 Total PL / 3001-6000 Points) "/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="6134-71b7-7382-5cda">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="09f9-b586-8d63-7635" shared="true" includeChildSelections="true" includeChildForces="true" childName="3. Strike Force (76-150 Total PL / 1501-3000 Points) "/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
         <selectionEntry id="94ce-1a75-e679-5d02" name="Steel Commissar" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -27716,7 +27797,7 @@ If this model would lose a wound as the result of a mortal wound during other ph
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbe9-ace3-9a21-624d" type="max"/>
-            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0d1e-a736-23d3-0d65" type="max"/>
+            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0d1e-a736-23d3-0d65" type="max"/>
           </constraints>
           <profiles>
             <profile id="06cb-ce96-e7c9-c84e" name="Steel Commissar" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -27736,16 +27817,40 @@ If this model would lose a wound as the result of a mortal wound during other ph
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink name="Officer" hidden="false" id="7597-eb5c-e8f3-c5bc" targetId="6f24-1326-b08a-81bc" primary="false"/>
+          </categoryLinks>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="increment" value="1" field="0d1e-a736-23d3-0d65">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="09f9-b586-8d63-7635" shared="true" includeChildSelections="true" includeChildForces="true" childName="3. Strike Force (76-150 Total PL / 1501-3000 Points) "/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="0d1e-a736-23d3-0d65">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="fad2-035f-88a7-60c0" shared="true" includeChildSelections="true" includeChildForces="true" childName="4. Onslaught (151-300 Total PL / 3001-6000 Points) "/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="0d1e-a736-23d3-0d65">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="09f9-b586-8d63-7635" shared="true" includeChildSelections="true" includeChildForces="true" childName="3. Strike Force (76-150 Total PL / 1501-3000 Points) "/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
         <selectionEntry id="8b29-5ba7-0593-d06d" name="Vaunted Praetorian" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a47a-c093-e2d6-3e45" type="max"/>
-            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9927-74ab-658b-89ba" type="max"/>
+            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9927-74ab-658b-89ba" type="max"/>
           </constraints>
           <profiles>
             <profile id="8811-cf9b-f871-7313" name="Vaunted Praetorian" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model gains the OFFICER keyword and knows ARMOUR Orders.</characteristic>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model gains the OFFICER and TANK COMMANDER keywords, and it can issue 2 ARMOUR orders as other TANK COMMANDER.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -27759,16 +27864,37 @@ If this model would lose a wound as the result of a mortal wound during other ph
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="increment" value="1" field="9927-74ab-658b-89ba">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="09f9-b586-8d63-7635" shared="true" includeChildSelections="true" includeChildForces="true" childName="3. Strike Force (76-150 Total PL / 1501-3000 Points) "/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="9927-74ab-658b-89ba">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="fad2-035f-88a7-60c0" shared="true" includeChildSelections="true" includeChildForces="true" childName="4. Onslaught (151-300 Total PL / 3001-6000 Points) "/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="9927-74ab-658b-89ba">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="09f9-b586-8d63-7635" shared="true" includeChildSelections="true" includeChildForces="true" childName="3. Strike Force (76-150 Total PL / 1501-3000 Points) "/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
         <selectionEntry id="d296-e940-b527-dfd2" name="Mechanical Pack Rat" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e35-f10e-5c8b-fd59" type="max"/>
-            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f905-f461-8a99-e42a" type="max"/>
+            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f905-f461-8a99-e42a" type="max"/>
           </constraints>
           <profiles>
             <profile id="c23b-9503-0c40-9409" name="Mechanical Pack Rat" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time this model would lose a wound, roll one D6: on a 6+, that wound is not lost.</characteristic>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time this model would lose a wound, roll one D6: on a 5+, that wound is not lost.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -27778,6 +27904,27 @@ If this model would lose a wound as the result of a mortal wound during other ph
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="increment" value="1" field="f905-f461-8a99-e42a">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="09f9-b586-8d63-7635" shared="true" includeChildSelections="true" includeChildForces="true" childName="3. Strike Force (76-150 Total PL / 1501-3000 Points) "/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="f905-f461-8a99-e42a">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="fad2-035f-88a7-60c0" shared="true" includeChildSelections="true" includeChildForces="true" childName="4. Onslaught (151-300 Total PL / 3001-6000 Points) "/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="f905-f461-8a99-e42a">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="09f9-b586-8d63-7635" shared="true" includeChildSelections="true" includeChildForces="true" childName="3. Strike Force (76-150 Total PL / 1501-3000 Points) "/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
