@@ -1496,7 +1496,7 @@ While a unit is within 6&quot; of this unit, it loses the following abilities:
             </modifier>
           </modifiers>
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">When resolving an attack made by a model in this unit that targets a CHAOS or PSYKER unit, you can re-roll the hit roll and you can re-roll the wound roll.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">When resolving an attack made by a model in this unit that targets a CHAOS, GENESTEALER CULTS or PSYKER unit, you can re-roll the hit roll and you can re-roll the wound roll.</characteristic>
           </characteristics>
         </profile>
         <profile id="fdd2-9a98-2659-547e" name="Heretics bane" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -1513,8 +1513,8 @@ While a unit is within 6&quot; of this unit, it loses the following abilities:
             </modifier>
           </modifiers>
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">When resolving an attack made by a model in this unit that targets a unit with CHAOS or PSYKER Keywords, re-roll a hit roll of 1.
-Add 1 to the Charge rolls of this unit if the target of that charge has CHAOS or PSYKER Keywords.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">When resolving an attack made by a model in this unit that targets a unit with CHAOS, GENESTEALER CULTS or PSYKER Keywords, re-roll a hit roll of 1.
+Add 1 to the Charge rolls of this unit if the target of that charge has CHAOS, GENESTEALER CULTS or PSYKER Keywords.</characteristic>
           </characteristics>
         </profile>
       </profiles>
