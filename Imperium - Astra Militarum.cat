@@ -329,7 +329,8 @@ Multiple instances of the same ability do not stack.</characteristic>
             </modifier>
           </modifiers>
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Instead of following the normal rules for Rapid Fire weapons, REGIMENT models shooting Rapid Fire weapons always make it&apos;s number of attacks as if the objective is within half-range.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Instead of following the normal rules for Rapid Fire weapons, REGIMENT models shooting Rapid Fire weapons always make it&apos;s number of attacks as if the objective is within half-range.
+- Each time a REGIMENT model would lose a wound, roll a D6, on a 6+, the wound is not lost.</characteristic>
           </characteristics>
         </profile>
         <profile id="c70b-9b7a-e9e7-ed23" name="Raiders" hidden="true" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -378,6 +379,7 @@ Multiple instances of the same ability do not stack.</characteristic>
           </modifiers>
           <characteristics>
             <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Instead of following the normal rules for Rapid Fire weapons, REGIMENT models shooting Rapid Fire weapons always make it&apos;s number of attacks as if the objective is within half-range.
+- Each time a REGIMENT model would lose a wound, roll a D6, on a 6+, the wound is not lost.
 - Each time an attack is allocated to a REGIMENT VEHICLE model, subtract 1 from the Damage characteristic of that attack (to a minimum of 1).</characteristic>
           </characteristics>
         </profile>
@@ -593,7 +595,7 @@ Multiple instances of the same ability do not stack.</characteristic>
             </modifier>
           </modifiers>
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Each time a REGIMENT INFANTRY or REGIMENT CAVALRY model would lose a wound as the result of a mortal wound, the wound is not lost on a 5+.
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Each time a REGIMENT INFANTRY or REGIMENT CAVALRY model would lose a wound as the result of a mortal wound, roll a D6, on a 5+, the wound is not lost.
 - REGIMENT INFANTRY, REGIMENT CAVALRY and REGIMENT RECON units can make Heroic Interventions as if they were CHARACTERS.</characteristic>
           </characteristics>
         </profile>
@@ -906,7 +908,7 @@ Instead of using ASTRA MILITARUM Defence tactics rule, REGIMENT units, when fire
         </profile>
         <profile name="Blessed defenders" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="bfcc-f72f-6db0-e7fb" selectable="true">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Each time a REGIMENT INFANTRY or REGIMENT CAVALRY model would lose a wound as the result of a mortal wound, the wound is not lost on a 5+.
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Each time a REGIMENT INFANTRY or REGIMENT CAVALRY model would lose a wound as the result of a mortal wound, roll a D6, on a 5+, the wound is not lost.
 - REGIMENT INFANTRY and REGIMENT CAVALRY units can re-roll Morale tests.</characteristic>
           </characteristics>
           <modifiers>
@@ -923,6 +925,57 @@ Instead of using ASTRA MILITARUM Defence tactics rule, REGIMENT units, when fire
                         <condition type="instanceOf" value="0" field="selections" scope="parent" childId="3d52-fccf-10c0-3fae" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                         <condition type="instanceOf" value="0" field="selections" scope="parent" childId="ad01-caec-17d9-cb8d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Cavalry"/>
                         <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="3d52-fccf-10c0-3fae" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Familiarity with the Machine" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="true" id="80f2-5add-bc82-0b8e">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a REGIMENT model would lose a wound, roll a D6, on a 6+, the wound is not lost.</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1115-ef9e-fc44-757e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Industrial World Planetary Defence"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="3d52-fccf-10c0-3fae" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="parent" childId="3d52-fccf-10c0-3fae" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="parent" childId="ad01-caec-17d9-cb8d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="ad01-caec-17d9-cb8d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Familiarity with the Machine" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="true" id="31d6-9ce7-a0a6-2658">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Each time an attack is allocated to a REGIMENT VEHICLE model, subtract 1 from the Damage characteristic of that attack (to a minimum of 1).
+- Each time a REGIMENT model would lose a wound, roll a D6, on a 6+, the wound is not lost.</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1115-ef9e-fc44-757e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Industrial World Planetary Defence"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="c8fd-783f-3230-493e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Vehicle"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="parent" childId="c8fd-783f-3230-493e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Vehicle"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -5126,6 +5179,12 @@ Multiple instances of the same ability do not stack.</characteristic>
                     <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">REGIMENT units gain ADEPTUS MECHANICUS Keyword.</characteristic>
                   </characteristics>
                 </profile>
+                <profile name="Familiarity with the Machine" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="8069-2c43-a8d6-97ca">
+                  <characteristics>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Each time an attack is allocated to a REGIMENT VEHICLE model, subtract 1 from the Damage characteristic of that attack (to a minimum of 1).
+- Each time a REGIMENT model would lose a wound, roll a D6, on a 6+, the wound is not lost.</characteristic>
+                  </characteristics>
+                </profile>
               </profiles>
               <costs>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -5166,7 +5225,7 @@ Multiple instances of the same ability do not stack.</characteristic>
                 </profile>
                 <profile name="Blessed defenders" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="787a-0eb0-a214-f44d">
                   <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Each time a REGIMENT INFANTRY or REGIMENT CAVALRY model would lose a wound as the result of a mortal wound, the wound is not lost on a 5+.
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Each time a REGIMENT INFANTRY or REGIMENT CAVALRY model would lose a wound as the result of a mortal wound, roll a D6, on a 5+, the wound is not lost.
 - REGIMENT INFANTRY and REGIMENT CAVALRY units can re-roll Morale tests.</characteristic>
                   </characteristics>
                 </profile>
@@ -5327,6 +5386,7 @@ Multiple instances of the same ability do not stack.</characteristic>
                     <profile id="35ae-5b66-a7d3-0244" name="Regiment of renown: Armageddon - Industrial eficiency" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                       <characteristics>
                         <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Instead of following the normal rules for Rapid Fire weapons, REGIMENT models shooting Rapid Fire weapons always make it&apos;s number of attacks as if the objective is within half-range.
+- Each time a REGIMENT model would lose a wound, roll a D6, on a 6+, the wound is not lost.
 - Each time an attack is allocated to a REGIMENT VEHICLE model, subtract 1 from the Damage characteristic of that attack (to a minimum of 1).</characteristic>
                       </characteristics>
                     </profile>
