@@ -28413,8 +28413,18 @@ Each time this WARLORD makes a melee attack, improve the Armour Penetration char
           </costs>
           <entryLinks>
             <entryLink name=" Character definition" id="3b54-de53-4f5c-26eb" collective="false" hidden="false" import="true" targetId="d435-d60f-280b-9932" type="selectionEntryGroup">
-              <entryLinks>
-                <entryLink name="GF - Proper killy" id="3901-e636-a77c-51c6" collective="false" hidden="true" import="true" targetId="526d-6b33-798c-d6e2" type="selectionEntry">
+              <selectionEntries>
+                <selectionEntry name="GF - Proper killy" id="ee62-361c-e8eb-1135" hidden="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="1a6c-17e2-7428-60ad" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink name="GF - Proper killy" id="3901-e636-a77c-51c6" collective="false" hidden="true" import="true" targetId="526d-6b33-798c-d6e2" type="selectionEntry">
+                      <constraints>
+                        <constraint id="3e51-dd70-82a5-1bc5" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
                   <modifiers>
                     <modifier field="hidden" type="set" value="false">
                       <conditionGroups>
@@ -28427,8 +28437,8 @@ Each time this WARLORD makes a melee attack, improve the Armour Penetration char
                       </conditionGroups>
                     </modifier>
                   </modifiers>
-                </entryLink>
-              </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
             </entryLink>
             <entryLink name="Stikkbombz" id="690f-ed18-baa4-c812" collective="false" hidden="false" import="true" targetId="23ab-5028-1c8e-ca70" type="selectionEntry"/>
           </entryLinks>
@@ -28440,7 +28450,7 @@ Each time this WARLORD makes a melee attack, improve the Armour Penetration char
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="Ghazghkull Thraka [1] (7+ Wounds remaining)" id="436c-2647-70fe-1dcd" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile name="Ghazghkull Thraka [1] (7+ Wounds remaining)" id="436c-2647-70fe-1dcd" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
@@ -28760,8 +28770,18 @@ Each time this WARLORD makes a melee attack, improve the Armour Penetration char
               </costs>
             </entryLink>
             <entryLink name=" Character definition" id="1996-4dc5-e87f-3515" collective="false" hidden="false" import="true" targetId="d435-d60f-280b-9932" type="selectionEntryGroup">
-              <entryLinks>
-                <entryLink name="SB - Surly as a Squiggoth" id="55ac-2e5b-2500-0139" collective="false" hidden="true" import="true" targetId="a9e5-93f6-3eee-9193" type="selectionEntry">
+              <selectionEntries>
+                <selectionEntry name="SB - Surly as a Squiggoth" id="12a6-884c-a70e-b4d1" hidden="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="7882-0e86-5204-28b8" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink name="SB - Surly as a Squiggoth" id="55ac-2e5b-2500-0139" collective="false" hidden="true" import="true" targetId="a9e5-93f6-3eee-9193" type="selectionEntry">
+                      <constraints>
+                        <constraint id="5556-80b2-e86d-0569" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
                   <modifiers>
                     <modifier field="hidden" type="set" value="false">
                       <conditionGroups>
@@ -28774,8 +28794,8 @@ Each time this WARLORD makes a melee attack, improve the Armour Penetration char
                       </conditionGroups>
                     </modifier>
                   </modifiers>
-                </entryLink>
-              </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
             </entryLink>
           </entryLinks>
           <modifiers>
@@ -28889,8 +28909,18 @@ Each time this WARLORD makes a melee attack, improve the Armour Penetration char
               </costs>
             </entryLink>
             <entryLink name=" Character definition" id="b5ec-6526-e2a4-5303" collective="false" hidden="false" import="true" targetId="d435-d60f-280b-9932" type="selectionEntryGroup">
-              <entryLinks>
-                <entryLink name="BS - 2 - Beastgob" id="e579-a163-bd57-f4ce" collective="false" hidden="true" import="true" targetId="879b-e124-10fa-d0f5" type="selectionEntry">
+              <selectionEntries>
+                <selectionEntry name="BS - 2 - Beastgob" id="b2fa-6bf6-dd80-3f65" hidden="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="b5b9-47a8-f968-5fb8" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink name="BS - 2 - Beastgob" id="e579-a163-bd57-f4ce" collective="false" hidden="true" import="true" targetId="879b-e124-10fa-d0f5" type="selectionEntry">
+                      <constraints>
+                        <constraint id="5b62-cc00-4405-7ab2" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
                   <modifiers>
                     <modifier field="hidden" type="set" value="false">
                       <conditionGroups>
@@ -28903,8 +28933,8 @@ Each time this WARLORD makes a melee attack, improve the Armour Penetration char
                       </conditionGroups>
                     </modifier>
                   </modifiers>
-                </entryLink>
-              </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
             </entryLink>
           </entryLinks>
           <modifiers>
@@ -29101,8 +29131,18 @@ Each time this WARLORD makes a melee attack, improve the Armour Penetration char
               </costs>
             </entryLink>
             <entryLink name=" Character definition" id="9a99-0c8b-3ab4-a8ac" collective="false" hidden="false" import="true" targetId="d435-d60f-280b-9932" type="selectionEntryGroup">
-              <entryLinks>
-                <entryLink name="FB - Killa reputation" id="6943-eb3a-71a9-fa1c" collective="false" hidden="true" import="true" targetId="f5d9-3056-0d3b-40ce" type="selectionEntry">
+              <selectionEntries>
+                <selectionEntry name="FB - Killa reputation" id="f158-c80b-0258-c546" hidden="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="c170-5bb6-9c73-c77e" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink name="FB - Killa reputation" id="6943-eb3a-71a9-fa1c" collective="false" hidden="true" import="true" targetId="f5d9-3056-0d3b-40ce" type="selectionEntry">
+                      <constraints>
+                        <constraint id="89af-930a-992b-a6e7" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
                   <modifiers>
                     <modifier field="hidden" type="set" value="false">
                       <conditionGroups>
@@ -29115,8 +29155,8 @@ Each time this WARLORD makes a melee attack, improve the Armour Penetration char
                       </conditionGroups>
                     </modifier>
                   </modifiers>
-                </entryLink>
-              </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
             </entryLink>
           </entryLinks>
           <infoLinks>
@@ -29307,8 +29347,18 @@ Each time this WARLORD makes a melee attack, improve the Armour Penetration char
           </costs>
           <entryLinks>
             <entryLink name=" Character definition" id="0d67-6ac8-81fc-fe7d" collective="false" hidden="false" import="true" targetId="d435-d60f-280b-9932" type="selectionEntryGroup">
-              <entryLinks>
-                <entryLink name="SF - 1 - Roadkilla" id="9386-13bb-6d46-9f2d" collective="false" hidden="true" import="true" targetId="6e20-9464-3316-06c4" type="selectionEntry">
+              <selectionEntries>
+                <selectionEntry name="SF - 1 - Roadkilla" id="8ec6-2b74-1b1e-6f57" hidden="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="13ef-273c-9f18-212a" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink name="SF - 1 - Roadkilla" id="9386-13bb-6d46-9f2d" collective="false" hidden="true" import="true" targetId="6e20-9464-3316-06c4" type="selectionEntry">
+                      <constraints>
+                        <constraint id="7e3e-8f2f-37c1-eb18" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
                   <modifiers>
                     <modifier field="hidden" type="set" value="false">
                       <conditionGroups>
@@ -29321,8 +29371,8 @@ Each time this WARLORD makes a melee attack, improve the Armour Penetration char
                       </conditionGroups>
                     </modifier>
                   </modifiers>
-                </entryLink>
-              </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
             </entryLink>
             <entryLink name="Big Shoota" id="4b2b-f8ba-2029-d9b6" collective="false" hidden="false" import="true" targetId="917b-5dee-5743-03fb" type="selectionEntry"/>
             <entryLink name="Crushing bulk" id="17d4-caa9-43de-425f" collective="false" hidden="false" import="true" targetId="502f-45c2-6fd1-443b" type="selectionEntry"/>
@@ -29409,8 +29459,18 @@ Each time this WARLORD makes a melee attack, improve the Armour Penetration char
           </costs>
           <entryLinks>
             <entryLink name=" Character definition" id="e346-99ea-1328-5e28" collective="false" hidden="false" import="true" targetId="d435-d60f-280b-9932" type="selectionEntryGroup">
-              <entryLinks>
-                <entryLink name="BM - Da best armour teef can buy" id="ae44-f78a-bcc6-48d8" collective="false" hidden="true" import="true" targetId="4bf1-31b9-07ea-6e2b" type="selectionEntry">
+              <selectionEntries>
+                <selectionEntry name="BM - Da best armour teef can buy" id="22dc-5098-c265-12b4" hidden="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="52df-7587-b447-d73c" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink name="BM - Da best armour teef can buy" id="ae44-f78a-bcc6-48d8" collective="false" hidden="true" import="true" targetId="4bf1-31b9-07ea-6e2b" type="selectionEntry">
+                      <constraints>
+                        <constraint id="b5f3-f914-14f9-cc23" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
                   <modifiers>
                     <modifier field="hidden" type="set" value="false">
                       <conditionGroups>
@@ -29423,8 +29483,8 @@ Each time this WARLORD makes a melee attack, improve the Armour Penetration char
                       </conditionGroups>
                     </modifier>
                   </modifiers>
-                </entryLink>
-              </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
             </entryLink>
           </entryLinks>
           <infoLinks>
