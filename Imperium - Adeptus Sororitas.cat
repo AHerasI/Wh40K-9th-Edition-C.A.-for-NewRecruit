@@ -287,11 +287,6 @@ If you do so, 1 Miracle dice you use in that Act of Faith is considered to be a 
         <categoryLink name="Elites" id="a0ca-12a7-f41b-0caa" hidden="false" primary="true" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2"/>
       </categoryLinks>
     </entryLink>
-    <entryLink name="Dogmata" id="65bc-6649-384d-672e" collective="false" hidden="false" import="true" targetId="d3fc-15b4-4ddd-fbfa" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink name="Elites" id="8d9d-9c82-725c-11ae" hidden="false" primary="true" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink name="Hospitaller" id="1e55-01c0-2853-6fa7" collective="false" hidden="true" import="true" targetId="b018-1a79-a5fa-1171" type="selectionEntry">
       <categoryLinks>
         <categoryLink name="No Force Org Slot" id="70a4-446a-67f6-f31e" hidden="false" primary="true" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74"/>
@@ -311,15 +306,6 @@ If you do so, 1 Miracle dice you use in that Act of Faith is considered to be a 
           </conditions>
         </modifier>
       </modifiers>
-    </entryLink>
-    <entryLink name="Imagifier" id="d613-c3da-7639-11d0" collective="false" hidden="false" import="true" targetId="6dde-ab5e-e22b-a0a2" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink name="Elites" id="c5c6-eee6-e26b-df46" hidden="false" primary="true" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="35"/>
-        <cost name=" PL" typeId="e356-c769-5920-6e14" value="2"/>
-      </costs>
     </entryLink>
     <entryLink name="Sisters Repentia" id="463f-6b0e-c1db-8b92" collective="false" hidden="false" import="true" targetId="fc15-29a1-b5cd-1e95" type="selectionEntry">
       <categoryLinks>
@@ -489,6 +475,33 @@ If you do so, 1 Miracle dice you use in that Act of Faith is considered to be a 
           <entryLinks>
             <entryLink name="Crusaders" id="be7e-5a61-cc32-2a8f" hidden="false" import="true" targetId="ff11-de9a-0045-ac9a" type="selectionEntry"/>
             <entryLink name="Death Cult Assassins" id="1f6e-c0f9-4103-33d9" hidden="false" import="true" targetId="f8c5-bf8d-dda2-0f4d" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry name="Mission Convent relevant" id="766c-3412-7ffe-17a0" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Elites" id="278a-7d5f-1927-3a9d" hidden="false" primary="true" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2"/>
+        <categoryLink name="Platoon" id="d6d4-b71c-0436-4d69" hidden="false" primary="false" targetId="1724-9147-143d-875e"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Convent relevant" id="6086-110d-e78b-f5df" defaultSelectionEntryId="65bc-6649-384d-672e" hidden="false">
+          <constraints>
+            <constraint id="c1f9-2e09-7aa6-3848" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="5"/>
+            <constraint id="355a-52e5-1304-d446" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Imagifier" id="d613-c3da-7639-11d0" collective="false" hidden="false" import="true" targetId="6dde-ab5e-e22b-a0a2" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="points" value="35"/>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="2"/>
+              </costs>
+            </entryLink>
+            <entryLink name="Dogmata" id="65bc-6649-384d-672e" collective="false" hidden="false" import="true" targetId="d3fc-15b4-4ddd-fbfa" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="Elites" id="8d9d-9c82-725c-11ae" hidden="false" primary="true" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -3675,7 +3688,7 @@ When this model suffers damage that reduces its number of relics, select which o
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry name="Aestred Thurga and Agathae Dolan" id="c711-4da2-11c1-995b" collective="false" hidden="false" import="true" type="unit">
+    <selectionEntry name="Aestred Thurga and Agathae Dolan" id="c711-4da2-11c1-995b" collective="false" hidden="true" import="true" type="unit">
       <categoryLinks>
         <categoryLink name="Faction: Imperium" id="4098-2a1a-98fb-096a" hidden="false" primary="false" targetId="84e2-9fa9-ebe6-1d18"/>
       </categoryLinks>
@@ -3692,6 +3705,13 @@ When this model suffers damage that reduces its number of relics, select which o
         <infoLink name="Explodes 6+ (3&quot;)" id="a3e8-d139-b4d5-c0bc" hidden="false" targetId="a90c-078f-b826-e2d4" type="rule"/>
         <infoLink name="Impervious to small weapons fire" id="61c5-eee0-5518-b817" hidden="false" targetId="b48e-9a4a-2fdc-5d7c" type="profile"/>
       </infoLinks>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="0746-4e82-2436-0801" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Junith Eruita" id="8f49-dd41-c3eb-0d7b" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
           <characteristics>
