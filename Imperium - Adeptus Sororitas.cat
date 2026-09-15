@@ -493,6 +493,42 @@ If you do so, 1 Miracle dice you use in that Act of Faith is considered to be a 
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
+    <selectionEntry name="Priestly Delegation" id="e38a-32a7-d55b-ca66" hidden="false" import="true" type="upgrade">
+      <constraints>
+        <constraint id="70a9-c291-e464-c0dc" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="true" type="max" value="0"/>
+      </constraints>
+      <entryLinks>
+        <entryLink name="Preacher" id="2d09-9632-4770-6bc8" hidden="false" import="true" targetId="bd25-a7cb-c79a-feb3" type="selectionEntry">
+          <constraints>
+            <constraint id="3d18-da50-2f12-f0f9" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+            <constraint id="9324-3873-81d6-1dad" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="4751-a257-7859-1684" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="atLeast" value="1"/>
+          </conditions>
+        </modifier>
+        <modifier field="70a9-c291-e464-c0dc" type="set" value="3">
+          <repeats>
+            <repeat childId="c3df-d6d3-c4c1-05e1" childName="Missionary" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Delegation" id="cd39-6922-1a90-110a" hidden="false">
+          <constraints>
+            <constraint id="7534-6ad0-1e58-acfa" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="46db-3436-954b-bf5e" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="5"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Crusaders" id="be7e-5a61-cc32-2a8f" hidden="false" import="true" targetId="ff11-de9a-0045-ac9a" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </selectionEntries>
   <sharedProfiles>
     <profile name="Sister Superior" id="5985-3146-b5e3-4e76" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
@@ -4903,6 +4939,7 @@ You cannot select a tale that another model from your army is already recounting
       </entryLinks>
       <infoLinks>
         <infoLink name="Rosarius" id="8215-f26e-ceb4-6f8e" hidden="false" targetId="ace1-892d-7d99-bc9e" type="profile"/>
+        <infoLink name="Lone Operative" id="9ab5-f48f-0b4e-bf89" hidden="false" targetId="d330-126a-2734-65ca" type="profile"/>
       </infoLinks>
       <profiles>
         <profile name="Preacher" id="a26b-52f8-717f-0ea6" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
