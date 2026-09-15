@@ -321,26 +321,6 @@ If you do so, 1 Miracle dice you use in that Act of Faith is considered to be a 
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="2"/>
       </costs>
     </entryLink>
-    <entryLink name="Preacher" id="962e-9c06-1d7c-8c51" collective="false" hidden="true" import="true" targetId="bd25-a7cb-c79a-feb3" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink name="No Force Org Slot" id="4d23-fcc6-c123-ca09" hidden="false" primary="true" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74"/>
-      </categoryLinks>
-      <constraints>
-        <constraint id="e170-0ec4-bd20-953c" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="true" type="max" value="0"/>
-      </constraints>
-      <modifiers>
-        <modifier field="e170-0ec4-bd20-953c" type="increment" value="1">
-          <repeats>
-            <repeat childId="4751-a257-7859-1684" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
-          </repeats>
-        </modifier>
-        <modifier field="hidden" type="set" value="false">
-          <conditions>
-            <condition childId="4751-a257-7859-1684" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="atLeast" value="1"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
     <entryLink name="Sisters Repentia" id="463f-6b0e-c1db-8b92" collective="false" hidden="false" import="true" targetId="fc15-29a1-b5cd-1e95" type="selectionEntry">
       <categoryLinks>
         <categoryLink name="Troops" id="3aa4-b7cf-c295-1632" hidden="false" primary="true" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a"/>
@@ -474,6 +454,9 @@ If you do so, 1 Miracle dice you use in that Act of Faith is considered to be a 
       </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry name="Priestly Delegation" id="e38a-32a7-d55b-ca66" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="No Force Org Slot" id="716d-b0ef-880c-8f8f" hidden="false" primary="true" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74"/>
+      </categoryLinks>
       <constraints>
         <constraint id="70a9-c291-e464-c0dc" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="true" type="max" value="0"/>
       </constraints>
