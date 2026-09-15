@@ -287,26 +287,6 @@ If you do so, 1 Miracle dice you use in that Act of Faith is considered to be a 
         <categoryLink name="Elites" id="a0ca-12a7-f41b-0caa" hidden="false" primary="true" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2"/>
       </categoryLinks>
     </entryLink>
-    <entryLink name="Crusaders" id="6d81-cc25-4032-da27" collective="false" hidden="true" import="true" targetId="ff11-de9a-0045-ac9a" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink name="No Force Org Slot" id="ccdc-bf58-2721-4837" hidden="false" primary="true" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74"/>
-      </categoryLinks>
-      <constraints>
-        <constraint id="62d0-9e23-aee5-6424" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="true" type="max" value="0"/>
-      </constraints>
-      <modifiers>
-        <modifier field="62d0-9e23-aee5-6424" type="increment" value="1">
-          <repeats>
-            <repeat childId="4751-a257-7859-1684" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
-          </repeats>
-        </modifier>
-        <modifier field="hidden" type="set" value="false">
-          <conditions>
-            <condition childId="4751-a257-7859-1684" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="atLeast" value="1"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
     <entryLink name="Dogmata" id="65bc-6649-384d-672e" collective="false" hidden="false" import="true" targetId="d3fc-15b4-4ddd-fbfa" type="selectionEntry">
       <categoryLinks>
         <categoryLink name="Elites" id="8d9d-9c82-725c-11ae" hidden="false" primary="true" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2"/>
@@ -518,13 +498,14 @@ If you do so, 1 Miracle dice you use in that Act of Faith is considered to be a 
         </modifier>
       </modifiers>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Delegation" id="cd39-6922-1a90-110a" hidden="false">
+        <selectionEntryGroup name="Delegation" id="cd39-6922-1a90-110a" defaultSelectionEntryId="be7e-5a61-cc32-2a8f" hidden="false">
           <constraints>
             <constraint id="7534-6ad0-1e58-acfa" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="46db-3436-954b-bf5e" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="5"/>
           </constraints>
           <entryLinks>
             <entryLink name="Crusaders" id="be7e-5a61-cc32-2a8f" hidden="false" import="true" targetId="ff11-de9a-0045-ac9a" type="selectionEntry"/>
+            <entryLink name="Death Cult Assassins" id="1f6e-c0f9-4103-33d9" hidden="false" import="true" targetId="f8c5-bf8d-dda2-0f4d" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -7496,6 +7477,81 @@ Each model can only be awakened once per turn.</characteristic>
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry name="Death Cult Assassins" id="f8c5-bf8d-dda2-0f4d" collective="false" hidden="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Faction: Imperium&apos;s Servants" id="3b77-c81d-930f-22aa" hidden="false" primary="false" targetId="3c6d-c9b3-cd33-e5e5"/>
+        <categoryLink name="Faction: Imperium" id="d3da-43c8-253a-a70e" hidden="false" primary="false" targetId="84e2-9fa9-ebe6-1d18"/>
+        <categoryLink name="Infantry" id="f1cd-ed71-7ffe-8408" hidden="false" primary="false" targetId="3d52-fccf-10c0-3fae"/>
+        <categoryLink name="Core" id="e6d3-6767-d318-80ee" hidden="false" primary="false" targetId="08f1-d244-eb44-7e01"/>
+        <categoryLink name="Ordo Hereticus" id="e2dd-1dbb-6e0c-4dba" hidden="false" primary="false" targetId="2981-f499-19fc-bc80"/>
+      </categoryLinks>
+      <costs>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="Pts" typeId="points" value="0"/>
+        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier field="e356-c769-5920-6e14" type="decrement" value="1">
+          <repeats>
+            <repeat childId="model" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" repeats="1" roundUp="true" scope="f8c5-bf8d-dda2-0f4d" shared="true" value="2"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry name="Death Cult Assassin" id="fd17-02f2-637f-846a" collective="false" hidden="false" import="true" type="model">
+          <constraints>
+            <constraint id="6b11-9b11-30a5-f5a7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
+            <constraint id="23bf-2e20-f915-3d60" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="6"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="points" value="15"/>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Quick Response" id="cbb5-798e-2c77-fe2e" hidden="false" targetId="9334-58b2-273b-198c" type="profile"/>
+            <infoLink name="Lightning Reflexes" id="81ca-3350-5d31-e0f2" hidden="false" targetId="4bed-9edb-ac60-e62a" type="profile"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Death Cult Assassin" id="0fbe-4e00-c8fb-97d1" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">1</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">5</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry name="Power Blades" id="c678-5751-10cd-ec18" collective="true" hidden="false" import="true" type="upgrade">
+              <constraints>
+                <constraint id="1a7e-e50f-b5cc-7b74" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="f4d5-26bc-4bdc-9daa" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <profiles>
+                <profile name="Power Blades" id="9072-2da7-903d-9b3b" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
