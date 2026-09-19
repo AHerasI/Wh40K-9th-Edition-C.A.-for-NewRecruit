@@ -993,7 +993,7 @@ By default, standard ammo will be shot (no changes to the weapon&apos;s profile)
           <modifiers>
             <modifier field="hidden" type="set" value="true">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
                     <condition childId="891d-6d1f-8a3a-c6e6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="ancestor" shared="true" type="notInstanceOf" value="0"/>
                     <condition childId="3d52-fccf-10c0-3fae" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="notInstanceOf" value="0"/>
@@ -1011,7 +1011,7 @@ By default, standard ammo will be shot (no changes to the weapon&apos;s profile)
           <modifiers>
             <modifier field="hidden" type="set" value="true">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
                     <condition childId="891d-6d1f-8a3a-c6e6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="ancestor" shared="true" type="notInstanceOf" value="0"/>
                     <condition childId="3d52-fccf-10c0-3fae" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="notInstanceOf" value="0"/>
@@ -32024,9 +32024,6 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
                 </entryLink>
                 <entryLink name="Crushing bulk" id="965d-ffc1-fc40-6b72" collective="false" hidden="false" import="true" targetId="502f-45c2-6fd1-443b" type="selectionEntry"/>
               </entryLinks>
-              <infoLinks>
-                <infoLink name="Unyielding Ancient" id="c633-853b-a51b-7eb7" hidden="false" targetId="a240-d88a-7450-3edb" type="profile"/>
-              </infoLinks>
               <profiles>
                 <profile name="Dreadnought" id="f37b-fed6-b740-6e45" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
@@ -32145,7 +32142,6 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
                 </entryLink>
               </entryLinks>
               <infoLinks>
-                <infoLink name="Unyielding Ancient" id="36ec-f26c-d144-4809" hidden="false" targetId="a240-d88a-7450-3edb" type="profile"/>
                 <infoLink name="Atomantic Shielding" id="7004-ced6-57b2-35b2" hidden="false" targetId="f107-d50b-98ca-27c1" type="profile"/>
               </infoLinks>
               <modifierGroups>
@@ -32330,7 +32326,6 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
               </entryLinks>
               <infoLinks>
                 <infoLink name="Atomantic Shielding" id="9c18-d908-be06-3444" hidden="false" targetId="f107-d50b-98ca-27c1" type="profile"/>
-                <infoLink name="Unyielding Ancient" id="b3c6-3f10-ae20-d20b" hidden="false" targetId="a240-d88a-7450-3edb" type="profile"/>
               </infoLinks>
               <profiles>
                 <profile name="Leviathan Dreadnought [1] (9+ Wounds remaining)" id="fe78-e5ab-2cf6-3d76" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
@@ -32587,7 +32582,6 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
               </entryLinks>
               <infoLinks>
                 <infoLink name="Atomantic Shielding" id="aae9-e491-0c47-eb6a" hidden="false" targetId="f107-d50b-98ca-27c1" type="profile"/>
-                <infoLink name="Unyielding Ancient" id="dddd-3697-a08f-b19a" hidden="false" targetId="a240-d88a-7450-3edb" type="profile"/>
               </infoLinks>
               <profiles>
                 <profile name="Legion Deredeo Dreadnought [1] (8+ Wounds remaining)" id="d9ad-6672-6c6d-2ddf" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
