@@ -13809,24 +13809,6 @@ Each Multi-Purpose Reactive Armour packcage can be used once per battle.</descri
         <infoLink name="Twin Boltgun" id="5110-14bd-d1a4-bbb8" hidden="false" targetId="6471-9a1a-0f1d-acb1" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Volkite Charger" id="6b7e-2cf2-ea55-9dd3" collective="true" hidden="false" import="true" type="upgrade">
-      <categoryLinks>
-        <categoryLink name="Volkite Weapon" id="8a02-1f71-626f-2399" hidden="false" primary="false" targetId="3ef9-3ebd-bd6c-9f9d"/>
-      </categoryLinks>
-      <constraints>
-        <constraint id="d87b-5fcd-de92-afef" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-        <constraint id="9c6a-425f-9794-307a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-        <cost name="Pts" typeId="points" value="0"/>
-        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Volkite Charger" id="fbe5-56bf-3386-e5ca" hidden="false" targetId="0d55-1835-3b59-02cc" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry name="Wrist-mounted Boltgun" id="5857-b6f1-35b6-a4fb" collective="true" hidden="false" import="true" type="upgrade">
       <constraints>
         <constraint id="c71b-b720-ce4e-1b8c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
