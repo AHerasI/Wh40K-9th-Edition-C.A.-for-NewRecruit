@@ -324,7 +324,7 @@ If manifested, select one friendly CULT OF SCHEMING CORE unit within 24&quot; of
         </profile>
         <profile name="Master infiltrators" id="b7a3-f16a-3a68-652a" hidden="true" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time this unit is set up in the battlefield during a Battle, it can be set-up within 6&quot; of a enemy unit.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a unit with this ability is set up in the battlefield during a Battle, instead of using the reinforcement&apos;s ability range, the unit can be set-up 6&quot; from a enemy units.</characteristic>
           </characteristics>
           <modifiers>
             <modifier field="hidden" type="set" value="false">
@@ -995,11 +995,11 @@ By default, standard ammo will be shot (no changes to the weapon&apos;s profile)
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition childId="891d-6d1f-8a3a-c6e6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="self" shared="true" type="notInstanceOf" value="0"/>
+                    <condition childId="891d-6d1f-8a3a-c6e6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="ancestor" shared="true" type="notInstanceOf" value="0"/>
                     <condition childId="3d52-fccf-10c0-3fae" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="notInstanceOf" value="0"/>
-                    <condition childId="3d52-fccf-10c0-3fae" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="self" shared="true" type="notInstanceOf" value="0"/>
+                    <condition childId="3d52-fccf-10c0-3fae" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="ancestor" shared="true" type="notInstanceOf" value="0"/>
                     <condition childId="891d-6d1f-8a3a-c6e6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="notInstanceOf" value="0"/>
-                    <condition childId="1c6f-0311-3eba-3180" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="self" shared="true" type="notInstanceOf" value="0"/>
+                    <condition childId="1c6f-0311-3eba-3180" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="ancestor" shared="true" type="notInstanceOf" value="0"/>
                     <condition childId="1c6f-0311-3eba-3180" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="notInstanceOf" value="0"/>
                   </conditions>
                 </conditionGroup>
@@ -1013,11 +1013,11 @@ By default, standard ammo will be shot (no changes to the weapon&apos;s profile)
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition childId="891d-6d1f-8a3a-c6e6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="self" shared="true" type="notInstanceOf" value="0"/>
+                    <condition childId="891d-6d1f-8a3a-c6e6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="ancestor" shared="true" type="notInstanceOf" value="0"/>
                     <condition childId="3d52-fccf-10c0-3fae" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="notInstanceOf" value="0"/>
-                    <condition childId="3d52-fccf-10c0-3fae" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="self" shared="true" type="notInstanceOf" value="0"/>
+                    <condition childId="3d52-fccf-10c0-3fae" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="ancestor" shared="true" type="notInstanceOf" value="0"/>
                     <condition childId="891d-6d1f-8a3a-c6e6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="notInstanceOf" value="0"/>
-                    <condition childId="1c6f-0311-3eba-3180" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="self" shared="true" type="notInstanceOf" value="0"/>
+                    <condition childId="1c6f-0311-3eba-3180" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="ancestor" shared="true" type="notInstanceOf" value="0"/>
                     <condition childId="1c6f-0311-3eba-3180" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="notInstanceOf" value="0"/>
                   </conditions>
                 </conditionGroup>
@@ -3105,7 +3105,7 @@ Echoes From the Warp (Psychic Action - Warp Charge 3): If successful, gain 1 Com
                 </profile>
                 <profile name="Master infiltrators" id="7b82-0a10-fe6e-56bd" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a INFANTRY or BIKER unit is set up in the battlefield during a Battle, it can be set-up within 6&quot; of a enemy unit.</characteristic>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a INFANTRY or BIKER unit is set up in the battlefield during a Battle, instead of using the reniforcement&apos;s ability range, the unit can be set-up 6&quot; from a enemy units.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -13669,7 +13669,7 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
             <categoryLink name="Ø40mm" id="3e51-bd9a-1074-0b39" hidden="false" primary="false" targetId="2ec1-217a-555a-b171"/>
           </categoryLinks>
           <constraints>
-            <constraint id="4a3f-a5af-cff8-d59a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="4"/>
+            <constraint id="4a3f-a5af-cff8-d59a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="9"/>
             <constraint id="9c0c-6b59-2ba5-9880" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="4"/>
           </constraints>
           <costs>
