@@ -2026,6 +2026,30 @@ By default, standard ammo will be shot (no changes to the weapon&apos;s profile)
         <categoryLink name="Fast Attack" id="209b-f114-2459-dc2c" hidden="false" primary="true" targetId="c274d0b0-5866-44bc-9810-91c136ae7438"/>
       </categoryLinks>
     </entryLink>
+    <entryLink name="Legion Apothecary" id="40d5-63a5-ad2a-ff95" collective="false" hidden="false" import="true" targetId="e79b-9673-4fb0-16cf" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="No Force Org Slot" id="b1aa-581b-a583-d19d" hidden="false" primary="true" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition childId="29bf-7f89-9955-87fc" childName="Loyalist Alpha Legion" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                    <condition childId="2c5f-769b-663f-092b" childName="Loyalist Fallen" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <conditions>
+                <condition childId="b58d-3652-a08d-d7de" childName="Company Commander" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <profileTypes>
     <profileType name="Cabalistic Rituals" id="973a-4a19-3d6f-d775">
