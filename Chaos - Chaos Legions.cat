@@ -5112,6 +5112,29 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
             </profile>
           </profiles>
         </selectionEntry>
+        <selectionEntry name="Hellfyre missile rack" id="23a0-43b0-de91-26d6" collective="false" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="f522-8598-5459-64a2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="points" value="15"/>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Hellfyre missile rack" id="4cda-1537-8f58-978f" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2</characteristic>
+                <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Dark Angels Legionaries Squad" id="4d8b-8aa3-33d3-ca42" collective="false" hidden="true" import="true" type="unit">
@@ -23527,6 +23550,7 @@ In addition, models in this unit do not suffer the penalty to hit rolls incurred
       </costs>
       <entryLinks>
         <entryLink name="Legion Command" id="60eb-1a79-c93a-1632" collective="false" hidden="false" import="true" targetId="0d53-5aab-4abe-8a43" type="selectionEntryGroup"/>
+        <entryLink name="Hellfyre missile rack" id="bc11-dc27-2903-7723" collective="false" hidden="false" targetId="23a0-43b0-de91-26d6" type="selectionEntry"/>
         <entryLink name="Hellfyre missile rack" id="60af-eb3c-0665-55d3" collective="false" hidden="true" import="true" targetId="23a0-43b0-de91-26d6" type="selectionEntry">
           <modifiers>
             <modifier field="hidden" type="set" value="false">
@@ -23659,30 +23683,6 @@ In addition, models in this unit do not suffer the penalty to hit rolls incurred
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
-        <selectionEntry name="Hellfyre missile rack" id="23a0-43b0-de91-26d6" collective="false" hidden="false" import="true" type="upgrade">
-          <comment>23a0-43b0-de91-26d6</comment>
-          <constraints>
-            <constraint id="f522-8598-5459-64a2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="points" value="15"/>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="Hellfyre missile rack" id="4cda-1537-8f58-978f" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2</characteristic>
-                <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
-                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Scarab Occult Terminators" id="7b7d-af9e-23d3-9d8d" collective="false" defaultSelectionEntryId="b667-5f1e-11bd-77a3" hidden="false" import="true">
@@ -23720,32 +23720,6 @@ In addition, models in this unit do not suffer the penalty to hit rolls incurred
               <constraints>
                 <constraint id="6875-3100-bc26-8bba" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
-              <entryLinks>
-                <entryLink name="Scarab Occult Terminator w/Soulreaper cannon" id="a3a7-43fb-74cd-380b" collective="false" hidden="true" import="true" targetId="10ae-d46c-399f-1f85" type="selectionEntry">
-                  <categoryLinks>
-                    <categoryLink name="Terminator Armour" id="a4b5-60cd-3007-1303" hidden="false" primary="false" targetId="a85f-24e5-cfc3-9345"/>
-                  </categoryLinks>
-                  <modifiers>
-                    <modifier field="hidden" type="set" value="false">
-                      <conditions>
-                        <condition childId="7b7d-af9e-23d3-9d8d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="fe31-9188-1313-eab7" shared="true" type="atLeast" value="9"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink name="Scarab Occult Terminator w/Heavy Warpflamer" id="d2d3-7b9e-9233-913f" collective="false" hidden="true" import="true" targetId="5dd0-db4f-e713-9958" type="selectionEntry">
-                  <categoryLinks>
-                    <categoryLink name="Terminator Armour" id="4048-c8d3-72ab-56bf" hidden="false" primary="false" targetId="a85f-24e5-cfc3-9345"/>
-                  </categoryLinks>
-                  <modifiers>
-                    <modifier field="hidden" type="set" value="false">
-                      <conditions>
-                        <condition childId="7b7d-af9e-23d3-9d8d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="fe31-9188-1313-eab7" shared="true" type="atLeast" value="9"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
               <modifiers>
                 <modifier field="6875-3100-bc26-8bba" type="set" value="2">
                   <conditions>
@@ -23776,6 +23750,13 @@ In addition, models in this unit do not suffer the penalty to hit rolls incurred
                     <infoLink name="Scarab Occult Terminator" id="4270-4168-aa3a-6652" hidden="false" targetId="4e1c-12e6-77ce-7076" type="profile"/>
                     <infoLink name="Impervious to small weapons fire" id="4d28-9602-ea9b-e242" hidden="false" targetId="b48e-9a4a-2fdc-5d7c" type="profile"/>
                   </infoLinks>
+                  <modifiers>
+                    <modifier field="147b-0850-7935-e561" type="set" value="2">
+                      <conditions>
+                        <condition childId="7b7d-af9e-23d3-9d8d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="fe31-9188-1313-eab7" shared="true" type="atLeast" value="9"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </selectionEntry>
                 <selectionEntry name="Scarab Occult Terminator w/Heavy Warpflamer" id="5dd0-db4f-e713-9958" collective="false" hidden="false" import="true" type="model">
                   <categoryLinks>
@@ -23799,6 +23780,13 @@ In addition, models in this unit do not suffer the penalty to hit rolls incurred
                     <infoLink name="Scarab Occult Terminator" id="6111-41c8-25f9-0895" hidden="false" targetId="4e1c-12e6-77ce-7076" type="profile"/>
                     <infoLink name="Impervious to small weapons fire" id="1a5b-a0a3-9b7e-10ba" hidden="false" targetId="b48e-9a4a-2fdc-5d7c" type="profile"/>
                   </infoLinks>
+                  <modifiers>
+                    <modifier field="4bdc-5e6e-e8cf-958a" type="set" value="2">
+                      <conditions>
+                        <condition childId="7b7d-af9e-23d3-9d8d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="fe31-9188-1313-eab7" shared="true" type="atLeast" value="9"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
