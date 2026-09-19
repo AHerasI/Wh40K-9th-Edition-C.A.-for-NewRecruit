@@ -6467,6 +6467,17 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Beam.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Obstacle" id="0410-ca22-5532-bfb0" hidden="false" page="66" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">After it is set up, this unit&apos;s Defende Emplacements, Trench and End Sections are treated as a single Obstacles terrain feature with the following terrain traits, as described in the Warhammer 40,000 Core Book:
+- Defence Line
+- Defensible
+- Light Cover
+- Heavy Cover
+- Unstable Position
+- Difficult Ground</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedRules>
     <rule name="Explodes 6+ (6&quot;)" id="3541-94a7-a138-358b" hidden="false">
@@ -19067,19 +19078,9 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                         <cost name="Pts" typeId="points" value="0"/>
                         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                       </costs>
-                      <profiles>
-                        <profile name="Obstacle" id="a8b5-e749-3e29-eed9" hidden="false" page="66" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-                          <characteristics>
-                            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">After it is set up, this unit&apos;s Defende Emplacements, Trench and End Sections are treated as a single Obstacles terrain feature with the following terrain traits, as described in the Warhammer 40,000 Core Book:
-- Defence Line
-- Defensible
-- Light Cover
-- Heavy Cover
-- Unstable Position
-- Difficult Ground</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Obstacle" id="0818-e3fd-5ee7-ace5" hidden="false" targetId="0410-ca22-5532-bfb0" type="profile"/>
+                      </infoLinks>
                     </selectionEntry>
                     <selectionEntry name="End Section" id="e9c3-a08d-a576-9ee8" collective="false" hidden="false" import="true" type="model">
                       <constraints>
@@ -19091,19 +19092,9 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                       </costs>
-                      <profiles>
-                        <profile name="Obstacle" id="0410-ca22-5532-bfb0" hidden="false" page="66" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-                          <characteristics>
-                            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">After it is set up, this unit&apos;s Defende Emplacements, Trench and End Sections are treated as a single Obstacles terrain feature with the following terrain traits, as described in the Warhammer 40,000 Core Book:
-- Defence Line
-- Defensible
-- Light Cover
-- Heavy Cover
-- Unstable Position
-- Difficult Ground</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Obstacle" id="6b42-2ac9-47bd-4e06" hidden="false" targetId="0410-ca22-5532-bfb0" type="profile"/>
+                      </infoLinks>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntry>
@@ -19126,19 +19117,9 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                         <cost name="Pts" typeId="points" value="0"/>
                         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                       </costs>
-                      <profiles>
-                        <profile name="Obstacle" id="16ab-4eac-d40e-f46c" hidden="false" page="66" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-                          <characteristics>
-                            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">After it is set up, this unit&apos;s Defende Emplacements, Trench and End Sections are treated as a single Obstacles terrain feature with the following terrain traits, as described in the Warhammer 40,000 Core Book:
-- Defence Line
-- Defensible
-- Light Cover
-- Heavy Cover
-- Unstable Position
-- Difficult Ground</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Obstacle" id="527b-b0c9-faae-a1ea" hidden="false" targetId="0410-ca22-5532-bfb0" type="profile"/>
+                      </infoLinks>
                     </selectionEntry>
                     <selectionEntry name="End Section" id="1926-0d8a-5bbb-800e" collective="false" hidden="false" import="true" type="model">
                       <constraints>
@@ -19150,19 +19131,9 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                       </costs>
-                      <profiles>
-                        <profile name="Obstacle" id="37f0-2efd-89dd-d083" hidden="false" page="66" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-                          <characteristics>
-                            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">After it is set up, this unit&apos;s Defende Emplacements, Trench and End Sections are treated as a single Obstacles terrain feature with the following terrain traits, as described in the Warhammer 40,000 Core Book:
-- Defence Line
-- Defensible
-- Light Cover
-- Heavy Cover
-- Unstable Position
-- Difficult Ground</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Obstacle" id="e59c-0b07-3687-e8ab" hidden="false" targetId="0410-ca22-5532-bfb0" type="profile"/>
+                      </infoLinks>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntry>
