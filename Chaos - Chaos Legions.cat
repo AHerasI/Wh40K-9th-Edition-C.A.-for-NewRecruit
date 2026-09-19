@@ -47454,7 +47454,18 @@ If you selected a CORE, DAEMONIC or DAEMON unit and that unit is not at its Star
         <selectionEntryGroup name="Sorcerous Arcana" id="69c0-b0dd-0e04-d88e" collective="false" hidden="true" import="true">
           <constraints>
             <constraint id="fb38-0c3f-ddb9-454c" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+            <constraint id="3ec5-b768-be30-55d9" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="max" value="1"/>
           </constraints>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier field="3ec5-b768-be30-55d9" type="increment" value="1"/>
+              </modifiers>
+              <repeats>
+                <repeat childId="5444-3ba1-69c3-de22" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
+              </repeats>
+            </modifierGroup>
+          </modifierGroups>
           <modifiers>
             <modifier field="hidden" type="set" value="false">
               <conditionGroups>
