@@ -789,7 +789,7 @@ Then, in your next Shooting phase, you can either:
         </rule>
       </rules>
     </categoryEntry>
-    <categoryEntry name="Daemonic" id="27fc-c23f-28a9-0a7c" hidden="true">
+    <categoryEntry name="Daemonic" id="27fc-c23f-28a9-0a7c" hidden="false">
       <profiles>
         <profile name="Otherworldly being" id="e034-fbb2-3611-be8b" hidden="true" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <comment>9b11-1c04-9151-afdb</comment>
