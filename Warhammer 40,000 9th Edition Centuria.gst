@@ -17635,13 +17635,13 @@ HAEMONCULUS</description>
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
                     <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">4</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Building" id="e2bd-7e12-1499-47a6" hidden="false" page="66" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -18575,39 +18575,39 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">10</characteristic>
                     <characteristic name="W" typeId="f330-5e6e-4110-0978">30</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">-</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Aquila Strongpoint [2] (9-15 Wounds Remaining)" id="002b-e952-08d4-ccd5" hidden="false" page="135" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">10</characteristic>
                     <characteristic name="W" typeId="f330-5e6e-4110-0978">30</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">-</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Aquila Strongpoint [3] (1-8 Wounds Remaining)" id="9819-53a9-ed97-e829" hidden="false" page="135" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">6+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">6</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">10</characteristic>
                     <characteristic name="W" typeId="f330-5e6e-4110-0978">30</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">-</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -19500,15 +19500,15 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
           <profiles>
             <profile name="Sister Astrid" id="0c40-e05f-9e0b-d51c" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
-                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
                 <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
                 <characteristic name="W" typeId="f330-5e6e-4110-0978">5</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
-                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
               </characteristics>
             </profile>
             <profile name="Former sister of the Order of the Valorous Heart" id="63ca-b86f-441d-b097" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -19577,15 +19577,15 @@ This unit can use a Grenade weapon both in engagement range of enemy units and i
                   <profiles>
                     <profile name="Callidus Assassin" id="c8e5-6bc1-2ab9-a1ee" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                       <characteristics>
-                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
-                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
-                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2+</characteristic>
+                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7</characteristic>
+                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2</characteristic>
+                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2</characteristic>
                         <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
                         <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
                         <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
                         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">5</characteristic>
                         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
+                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6</characteristic>
                       </characteristics>
                     </profile>
                     <profile name="Hit and Run" id="9e15-9905-adc2-31e7" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -19619,7 +19619,7 @@ This unit can use a Grenade weapon both in engagement range of enemy units and i
                       <profiles>
                         <profile name="Neural shredder" id="581a-959d-5607-60b2" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                           <characteristics>
-                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">9&quot;</characteristic>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">9</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 1</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">-</characteristic>
                             <characteristic name="AP" typeId="75aa-a838-b675-6484">-</characteristic>
@@ -19646,7 +19646,7 @@ This unit can use a Grenade weapon both in engagement range of enemy units and i
                             <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">When resolving an attack made with this weapon, an invulnerable saving throw cannot be made.</characteristic>
                           </characteristics>
@@ -19670,7 +19670,7 @@ This unit can use a Grenade weapon both in engagement range of enemy units and i
                             <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">3</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
                             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">When the bearer fights, it makes 1 additional attack with this weapon. Attacks made with this weapon wound on a 3+ unless the target unit has INORGANIC, VEHICLE or TITANIC Keywords.</characteristic>
                           </characteristics>
@@ -19695,15 +19695,15 @@ This unit can use a Grenade weapon both in engagement range of enemy units and i
                   <profiles>
                     <profile name="Vindicare Assassin" id="777f-6a5c-e504-26be" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                       <characteristics>
-                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
-                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
-                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2+</characteristic>
+                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7</characteristic>
+                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2</characteristic>
+                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2</characteristic>
                         <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
                         <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
                         <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
                         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
                         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
+                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6</characteristic>
                       </characteristics>
                     </profile>
                     <profile name="Head Shot" id="8cab-3683-1112-5960" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -19742,10 +19742,10 @@ This unit can use a Grenade weapon both in engagement range of enemy units and i
                       <profiles>
                         <profile name="Exitus pistol" id="db07-f343-b9f0-531d" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                           <characteristics>
-                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol 1</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">When resolving an attack made with this weapon, an invulnerable saving throw cannot be made. Attacks made with this weapon wound INFANTRY units on a 2+.</characteristic>
                           </characteristics>
@@ -19766,7 +19766,7 @@ This unit can use a Grenade weapon both in engagement range of enemy units and i
                       <profiles>
                         <profile name="Blind grenades" id="9f01-a9e4-bb57-674e" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                           <characteristics>
-                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Grenade D6</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">-</characteristic>
                             <characteristic name="AP" typeId="75aa-a838-b675-6484">-</characteristic>
@@ -19790,10 +19790,10 @@ This unit can use a Grenade weapon both in engagement range of enemy units and i
                       <profiles>
                         <profile name="Exitus rifle" id="cd7f-3e02-2f2a-e0ba" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                           <characteristics>
-                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">72&quot;</characteristic>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">72</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 1</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">When resolving an attack made with this weapon, an invulnerable saving throw cannot be made. Attacks made with this weapon wound INFANTRY units on a 2+.</characteristic>
                           </characteristics>
@@ -19834,15 +19834,15 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
                     </profile>
                     <profile name="Culexus Assassin" id="c875-02d8-9b50-a0d2" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                       <characteristics>
-                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
-                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
-                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2+</characteristic>
+                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7</characteristic>
+                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2</characteristic>
+                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2</characteristic>
                         <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
                         <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
                         <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
                         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
                         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
+                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -19861,10 +19861,10 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
                       <profiles>
                         <profile name="Animus speculum" id="ea87-90bb-373b-2e10" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                           <characteristics>
-                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18&quot;</characteristic>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault D3</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">4</characteristic>
                             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Whilst there are any enemy PSYKER units within 18&quot; of the bearer, change this weapon’s Type characteristic to Assault D6.</characteristic>
                           </characteristics>
@@ -19897,15 +19897,15 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
                   <profiles>
                     <profile name="Eversor Assassin" id="cad5-2d65-37e8-4a2e" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                       <characteristics>
-                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
-                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
-                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2+</characteristic>
+                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7</characteristic>
+                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2</characteristic>
+                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2</characteristic>
                         <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
                         <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
                         <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
                         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
                         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
+                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6</characteristic>
                       </characteristics>
                     </profile>
                     <profile name="Frenzon" id="c43a-6dcb-e519-566e" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -19939,10 +19939,10 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
                       <profiles>
                         <profile name="Executioner pistol" id="2a50-70ee-2060-b01b" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                           <characteristics>
-                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol 4</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
                             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">You can re-roll wound rolls for attacks made with this weapon that target INFANTRY units.</characteristic>
                           </characteristics>
@@ -19966,7 +19966,7 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
                             <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
                             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">You can re-roll wound rolls for attacks made with this weapon.</characteristic>
                           </characteristics>
@@ -20122,15 +20122,15 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
                   <profiles>
                     <profile name="Inquisitor" id="c39c-f288-9e8c-a67e" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                       <characteristics>
-                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
                         <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
                         <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
                         <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
                         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
                         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
+                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4</characteristic>
                       </characteristics>
                       <modifierGroups>
                         <modifierGroup>
@@ -20144,7 +20144,7 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
                           </conditionGroups>
                           <modifiers>
                             <modifier field="f330-5e6e-4110-0978" type="increment" value="2"/>
-                            <modifier field="c0df-df94-abd7-e8d3" type="set" value="3+"/>
+                            <modifier field="c0df-df94-abd7-e8d3" type="set" value="3"/>
                             <modifier field="9c9f-9774-a358-3a39" type="increment" value="1"/>
                             <modifier field="2218-aa3c-265f-2939" type="increment" value="1"/>
                           </modifiers>
@@ -20217,10 +20217,10 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
                           <profiles>
                             <profile name="Improved Flamer" id="4b8b-2c66-c5b6-dbe6" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                               <characteristics>
-                                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+                                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
                                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault D6</characteristic>
                                 <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
-                                <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                                <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
                                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent.</characteristic>
                               </characteristics>
@@ -20650,15 +20650,15 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                   <profiles>
                     <profile name="Inquisitor Coteaz" id="bf85-fca1-3401-56d5" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                       <characteristics>
-                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
                         <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
                         <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
                         <characteristic name="W" typeId="f330-5e6e-4110-0978">6</characteristic>
                         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">5</characteristic>
                         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                       </characteristics>
                     </profile>
                     <profile name="Inquisitor Coteaz" id="f94c-177e-3c98-60b3" hidden="false" typeId="bc97-dea9-9e88-bb7d" typeName="Psyker">
@@ -20690,7 +20690,7 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                       <infoLinks>
                         <infoLink name="Nemesis Daemon Hammer" id="9325-9c52-6917-28b2" hidden="false" targetId="e353-0508-4f8f-d305" type="profile">
                           <modifiers>
-                            <modifier field="837d-5e63-aeb7-1410" type="set" value="-"/>
+                            <modifier field="837d-5e63-aeb7-1410" type="set" value="Re-roll wound rolls against DAEMON or DAEMONIC units."/>
                           </modifiers>
                         </infoLink>
                       </infoLinks>
@@ -20709,7 +20709,7 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                       <profiles>
                         <profile name="Psyber-eagle" id="cc37-bee7-48a1-d7f6" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                           <characteristics>
-                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 2D6</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
                             <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
@@ -20797,15 +20797,15 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                       <profiles>
                         <profile name="Inquisitor Eisenhorn" id="f926-2c66-83d8-9908" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                           <characteristics>
-                            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-                            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-                            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+                            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+                            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
                             <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
                             <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
                             <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
                             <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
                             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
+                            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4</characteristic>
                           </characteristics>
                         </profile>
                         <profile name="Inquisitor Eisenhorn" id="fea8-7d0b-ea45-d650" hidden="false" typeId="bc97-dea9-9e88-bb7d" typeName="Psyker">
@@ -20850,7 +20850,7 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                                 <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
-                                <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                                <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">When making an attack with this weapon, add 1 to the hit roll.</characteristic>
                               </characteristics>
@@ -20874,7 +20874,7 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">6&quot;</characteristic>
                                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Grenade 1</characteristic>
                                 <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
-                                <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                                <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
                                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">When resolving an attack made with this weapon against a VEHICLE unit, an unmodified wound roll of 4-5 inflicts 1 mortal wound on the target in addition to any other damage, and an unmodified wound roll of 6 inflicts D3 mortal wounds on the target in addition to any other damage.</characteristic>
                               </characteristics>
@@ -20902,15 +20902,15 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                       <profiles>
                         <profile name="Malus Codicium Daemonhost" id="0125-dac3-dc2d-0c0f" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                           <characteristics>
-                            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-                            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
-                            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+                            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4</characteristic>
+                            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
                             <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
                             <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
                             <characteristic name="W" typeId="f330-5e6e-4110-0978">6</characteristic>
                             <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
                             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
-                            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
+                            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6</characteristic>
                           </characteristics>
                         </profile>
                         <profile name="Daemonic Power" id="9828-8936-d23f-f6f5" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -20934,7 +20934,7 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                                 <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
-                                <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                                <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
                               </characteristics>
@@ -20949,10 +20949,10 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                           <profiles>
                             <profile name="Warp grasp" id="25df-d585-bcc7-3805" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                               <characteristics>
-                                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+                                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
                                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 1</characteristic>
                                 <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
-                                <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                                <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
                                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">When resolving an attack made with this weapon, on an unmodified wound roll of 6 this weapon has a Damage characteristic of 3 for that attack.</characteristic>
                               </characteristics>
@@ -21023,15 +21023,15 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                   <profiles>
                     <profile name="Inquisitor Greyfax" id="f1ae-8ecb-d8bd-e4ee" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                       <characteristics>
-                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
                         <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
                         <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
                         <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
                         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
                         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
                       </characteristics>
                     </profile>
                     <profile name="Inquisitor Greyfax" id="76f2-7f6c-f9f7-8314" hidden="false" typeId="bc97-dea9-9e88-bb7d" typeName="Psyker">
@@ -21076,10 +21076,10 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                       <profiles>
                         <profile name="Underbarrel Condemnor stake" id="3ab0-21f0-519c-f772" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                           <characteristics>
-                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 1</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
                             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack made with this weapon profile is allocated to a PSYKER model, that model’s unit suffers D3 mortal wounds in addition to the normal damage.</characteristic>
                           </characteristics>
@@ -21141,15 +21141,15 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                   <profiles>
                     <profile name="Inquisitor Kyria Draxus" id="6ee2-1c34-9ce9-5dd5" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                       <characteristics>
-                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
                         <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
                         <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
                         <characteristic name="W" typeId="f330-5e6e-4110-0978">5</characteristic>
                         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
                         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
                       </characteristics>
                     </profile>
                     <profile name="Inquisitor Kyria Draxus" id="8bef-3612-440b-f0af" hidden="false" typeId="bc97-dea9-9e88-bb7d" typeName="Psyker">
@@ -21186,10 +21186,10 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                       <profiles>
                         <profile name="Shuriken rifle" id="d2e5-c0d1-7d52-2f67" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                           <characteristics>
-                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 3</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">3</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
                             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with a shuriken weapon, on an unmodified wound roll of 6, better that attack’s Armour Penetration characteristic by -2.</characteristic>
                           </characteristics>
@@ -21243,15 +21243,15 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                   <profiles>
                     <profile name="Inquisitor Solomon Lok" id="de81-201d-fff2-14a5" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                       <characteristics>
-                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
                         <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
                         <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
                         <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
                         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
                         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -21270,10 +21270,10 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                       <profiles>
                         <profile name="Psibolt pistol" id="0d35-26ed-0aa3-fbad" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                           <characteristics>
-                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol 1</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
                             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
                           </characteristics>
@@ -21341,15 +21341,15 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                   <profiles>
                     <profile name="Inquisitor Hector Rex" id="264b-4624-6247-28d7" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                       <characteristics>
-                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
-                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2</characteristic>
+                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
                         <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
                         <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
                         <characteristic name="W" typeId="f330-5e6e-4110-0978">6</characteristic>
                         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">5</characteristic>
                         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                       </characteristics>
                     </profile>
                     <profile name="Inquisitor Hector Rex" id="8b29-e877-1fb8-48be" hidden="false" typeId="bc97-dea9-9e88-bb7d" typeName="Psyker">
@@ -21389,7 +21389,7 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                             <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">-1</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon against a DAEMON or DAEMONIC unit, if the attack successfully wounds the target, it suffers 1 mortal wound in addition to any normal damage.</characteristic>
                           </characteristics>
@@ -21441,15 +21441,15 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                   <profiles>
                     <profile name="Lord Inquisitor Karamazov" id="ecb2-b730-6075-d8fe" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                       <characteristics>
-                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
                         <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
                         <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
                         <characteristic name="W" typeId="f330-5e6e-4110-0978">8</characteristic>
                         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
                         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
+                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4</characteristic>
                       </characteristics>
                     </profile>
                     <profile name="Throne of Judgement" id="f32f-3fc5-a207-379d" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -21486,7 +21486,7 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                             <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
                             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">When the bearer fights, it makes 2D3 additional attacks with this weapon.</characteristic>
                           </characteristics>
@@ -21575,15 +21575,15 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                   <profiles>
                     <profile name="Inquisitor" id="f337-2966-e400-c1f2" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                       <characteristics>
-                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
                         <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
                         <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
                         <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
                         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
                         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
+                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4</characteristic>
                       </characteristics>
                       <modifierGroups>
                         <modifierGroup>
@@ -21597,7 +21597,7 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                           </conditionGroups>
                           <modifiers>
                             <modifier field="f330-5e6e-4110-0978" type="increment" value="2"/>
-                            <modifier field="c0df-df94-abd7-e8d3" type="set" value="3+"/>
+                            <modifier field="c0df-df94-abd7-e8d3" type="set" value="3"/>
                             <modifier field="9c9f-9774-a358-3a39" type="increment" value="1"/>
                             <modifier field="2218-aa3c-265f-2939" type="increment" value="1"/>
                           </modifiers>
@@ -21949,15 +21949,15 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                   <profiles>
                     <profile name="Inquisitor Kroyle" id="d0a2-7f3b-afac-f251" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                       <characteristics>
-                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
                         <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
                         <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
                         <characteristic name="W" typeId="f330-5e6e-4110-0978">6</characteristic>
                         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
                         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -21976,10 +21976,10 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                       <profiles>
                         <profile name="Tox-cycler" id="fbd1-f652-57e3-f410" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                           <characteristics>
-                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 1</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
                             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Poisoned Weapon (2+). Each time you select a target for this weapon, you can ignore the Look Out, Sir rule.</characteristic>
                           </characteristics>
@@ -22003,7 +22003,7 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                             <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
                             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">When the bearer fights, it makes 4 additional attacks with this weapon and no more than 4 attacks can be made with this weapon.</characteristic>
                           </characteristics>
@@ -22049,15 +22049,15 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
           <profiles>
             <profile name="Knight Abyssal" id="a0a5-8e3f-bb65-0268" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
-                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
-                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
-                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2+</characteristic>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2</characteristic>
                 <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
                 <characteristic name="W" typeId="f330-5e6e-4110-0978">5</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -22084,7 +22084,7 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                         <characteristic name="S" typeId="59b1-319e-ec13-d466">+2</characteristic>
-                        <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                        <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">When the bearer fights, it makes 2 additional attacks with this weapon.</characteristic>
                       </characteristics>
@@ -22107,7 +22107,7 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                         <characteristic name="S" typeId="59b1-319e-ec13-d466">+3</characteristic>
-                        <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                        <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
                         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
                       </characteristics>
@@ -22149,15 +22149,15 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
           <profiles>
             <profile name="Eye of the Emperor" id="9a8b-7725-925a-4e99" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
-                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
-                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2+</characteristic>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2</characteristic>
                 <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
                 <characteristic name="W" typeId="f330-5e6e-4110-0978">5</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">6</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
               </characteristics>
             </profile>
             <profile name="Peerless training" id="09f7-5eee-c40e-53dd" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
