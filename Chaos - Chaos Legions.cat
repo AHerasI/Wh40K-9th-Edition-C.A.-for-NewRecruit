@@ -6757,6 +6757,18 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
       <entryLinks>
         <entryLink name="Unit upgrades" id="7cd1-c5b7-a2cd-2246" collective="false" hidden="false" import="true" targetId="867f-e3d9-541a-3498" type="selectionEntryGroup"/>
       </entryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition childId="model" childName="model" field="selections" scope="06ea-21c1-b1cb-329f" shared="true" type="atLeast" value="11"/>
+          </conditions>
+          <modifiers>
+            <modifier field="name" type="set" value="Cultist Greater mob"/>
+            <modifier field="e356-c769-5920-6e14" type="set" value="2"/>
+            <modifier field="points" type="set" value="30"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <modifiers>
         <modifier field="hidden" type="set" value="false">
           <conditionGroups>
@@ -6798,7 +6810,11 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
           <entryLinks>
-            <entryLink name="Servant Melee weapon" id="86b2-33ab-47c7-5114" collective="false" hidden="false" import="true" targetId="554f-49c9-6a28-dbd7" type="selectionEntryGroup"/>
+            <entryLink name="Servant Melee weapon" id="86b2-33ab-47c7-5114" collective="false" hidden="false" import="true" targetId="554f-49c9-6a28-dbd7" type="selectionEntryGroup">
+              <entryLinks>
+                <entryLink name="Chainsword" id="745d-99d0-b9a9-a18a" collective="false" hidden="false" import="true" targetId="fe5f-0cd5-5f0d-abc4" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
             <entryLink name="Servant Ranged weapon" id="b028-789c-5961-dbdf" collective="false" hidden="false" import="true" targetId="fe47-4509-cc64-3b4c" type="selectionEntryGroup">
               <entryLinks>
                 <entryLink name="Bolt pistol" id="ba69-8bf5-c382-e0ba" collective="false" hidden="false" import="true" targetId="0334-f487-8229-0c1a" type="selectionEntry">
@@ -6806,7 +6822,6 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
                     <cost name="pts" typeId="points" value="5"/>
                   </costs>
                 </entryLink>
-                <entryLink name="Autogun" id="3052-b029-b40f-445e" collective="false" hidden="false" import="true" targetId="5752-d165-5e03-d38c" type="selectionEntry"/>
               </entryLinks>
             </entryLink>
           </entryLinks>
@@ -6826,60 +6841,15 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry name="Greater mob" id="6bc1-d61a-957d-9adc" collective="false" hidden="false" import="true" type="upgrade">
-          <constraints>
-            <constraint id="2adc-1c0d-d2c5-59ef" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="points" value="15"/>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Cultist w/Special weapon" id="2f5e-111b-ddcb-dcdd" collective="false" hidden="false" import="true" targetId="a019-0c3d-96e9-3349" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Cultist Mob" id="6e54-b4f1-5546-2761" collective="false" defaultSelectionEntryId="bcfa-f565-5d10-d4e8" hidden="false" import="true">
           <constraints>
-            <constraint id="5ed7-569c-9271-16cb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="9"/>
+            <constraint id="5ed7-569c-9271-16cb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="19"/>
             <constraint id="95bf-0b9a-684b-d489" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="9"/>
           </constraints>
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition childId="6bc1-d61a-957d-9adc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="06ea-21c1-b1cb-329f" shared="true" type="equalTo" value="1"/>
-              </conditions>
-              <modifiers>
-                <modifier field="5ed7-569c-9271-16cb" type="set" value="18"/>
-                <modifier field="95bf-0b9a-684b-d489" type="set" value="18"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
           <selectionEntries>
-            <selectionEntry name="Cultist w/Autogun" id="bcfa-f565-5d10-d4e8" collective="false" hidden="false" import="true" type="model">
-              <categoryLinks>
-                <categoryLink name="Ø25mm" id="675c-4cde-0456-14df" hidden="false" primary="false" targetId="a9eb-ffb1-e9f2-2b60"/>
-              </categoryLinks>
-              <constraints>
-                <constraint id="c30c-2bf0-bca6-3348" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="19"/>
-              </constraints>
-              <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink name="Autogun" id="4889-5c43-1e25-8a15" collective="false" hidden="false" import="true" targetId="cd5b-8203-fa2d-6d29" type="selectionEntry"/>
-              </entryLinks>
-              <infoLinks>
-                <infoLink name="Cultist" id="cc6b-64b2-608f-968d" hidden="false" targetId="6bdc-5d45-fcf2-2e48" type="profile"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry name="Cultist w/Assault weapon" id="c599-f138-1513-ee84" collective="false" hidden="false" import="true" type="model">
+            <selectionEntry name="Cultist" id="c599-f138-1513-ee84" collective="false" hidden="false" import="true" type="model">
               <categoryLinks>
                 <categoryLink name="Ø25mm" id="186a-5b58-3070-e19a" hidden="false" primary="false" targetId="a9eb-ffb1-e9f2-2b60"/>
               </categoryLinks>
@@ -6893,49 +6863,33 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
               <entryLinks>
-                <entryLink name="Autopistol" id="af81-560f-0d8c-2450" collective="false" hidden="false" import="true" targetId="2940-1984-b9fa-0b34" type="selectionEntry"/>
-                <entryLink name="Brutal Assault Weapon" id="99e6-d2a9-8f10-d47c" collective="false" hidden="false" import="true" targetId="36ed-a36f-bd49-dfe8" type="selectionEntry"/>
+                <entryLink name="Servant Melee weapon" id="700a-32a4-0d70-e525" collective="false" hidden="false" import="true" targetId="554f-49c9-6a28-dbd7" type="selectionEntryGroup"/>
+                <entryLink name="Servant Ranged weapon" id="9239-df61-adc9-ad12" collective="false" hidden="false" import="true" targetId="fe47-4509-cc64-3b4c" type="selectionEntryGroup"/>
               </entryLinks>
               <infoLinks>
                 <infoLink name="Cultist" id="3e73-5448-13f3-8c79" hidden="false" targetId="6bdc-5d45-fcf2-2e48" type="profile"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry name="Cultist w/Blunt weapon" id="0f43-d5b9-56ad-e4d9" collective="false" hidden="false" import="true" type="model">
-              <categoryLinks>
-                <categoryLink name="Ø25mm" id="65df-615a-52ee-8810" hidden="false" primary="false" targetId="a9eb-ffb1-e9f2-2b60"/>
-              </categoryLinks>
-              <constraints>
-                <constraint id="44a2-d18f-4563-4765" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="10"/>
-              </constraints>
-              <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink name="Autopistol" id="3727-1ef5-6665-6164" collective="false" hidden="false" import="true" targetId="2940-1984-b9fa-0b34" type="selectionEntry"/>
-                <entryLink name="Brutal Blunt Weapon" id="acf3-709a-4104-ebfd" collective="false" hidden="false" import="true" targetId="081c-569c-a2f8-b7df" type="selectionEntry"/>
-              </entryLinks>
-              <infoLinks>
-                <infoLink name="Cultist" id="154a-10c8-fa3e-e49e" hidden="false" targetId="6bdc-5d45-fcf2-2e48" type="profile"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup name="Cultist w/Special weapon" id="a019-0c3d-96e9-3349" collective="false" defaultSelectionEntryId="481a-3348-abf8-e533" hidden="false" import="true">
               <constraints>
-                <constraint id="0313-ac92-28e4-c983" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                <constraint id="d4f9-6566-7302-e801" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
                 <constraint id="a4d8-fead-6c59-db33" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
               </constraints>
+              <modifiers>
+                <modifier field="a4d8-fead-6c59-db33" type="set" value="0"/>
+                <modifier field="d4f9-6566-7302-e801" type="set" value="2">
+                  <conditions>
+                    <condition childId="model" childName="model" field="selections" scope="06ea-21c1-b1cb-329f" shared="true" type="atLeast" value="11"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <selectionEntries>
                 <selectionEntry name="Cultist w/Flamer" id="5a5e-0f37-1a7e-b462" collective="false" hidden="false" import="true" type="model">
                   <categoryLinks>
                     <categoryLink name="Ø25mm" id="b697-5cbb-6b4c-5e36" hidden="false" primary="false" targetId="a9eb-ffb1-e9f2-2b60"/>
                   </categoryLinks>
-                  <constraints>
-                    <constraint id="ed7e-8c82-5e3e-32ff" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-                  </constraints>
                   <costs>
                     <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                     <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
@@ -6953,9 +6907,6 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
                   <categoryLinks>
                     <categoryLink name="Ø25mm" id="7b8d-8fdf-d377-df8d" hidden="false" primary="false" targetId="a9eb-ffb1-e9f2-2b60"/>
                   </categoryLinks>
-                  <constraints>
-                    <constraint id="3ef7-5ce9-4d00-6961" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-                  </constraints>
                   <costs>
                     <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                     <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -6973,9 +6924,6 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
                   <categoryLinks>
                     <categoryLink name="Ø25mm" id="b16c-89f2-3800-d934" hidden="false" primary="false" targetId="a9eb-ffb1-e9f2-2b60"/>
                   </categoryLinks>
-                  <constraints>
-                    <constraint id="6d54-dcd6-b758-9a28" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-                  </constraints>
                   <costs>
                     <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                     <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
@@ -50411,18 +50359,17 @@ You can Disband any summoned unit in your morale phase. Disbanded units are cons
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Servant Melee weapon" id="554f-49c9-6a28-dbd7" collective="false" defaultSelectionEntryId="745d-99d0-b9a9-a18a" hidden="false" import="true">
+    <selectionEntryGroup name="Servant Melee weapon" id="554f-49c9-6a28-dbd7" collective="false" defaultSelectionEntryId="2de9-aa2f-d9a1-7206" hidden="false" import="true">
       <constraints>
         <constraint id="b965-4e0c-e85c-51f0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
         <constraint id="c1ae-78dd-2b3c-c65f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
       </constraints>
       <entryLinks>
         <entryLink name="Brutal Blunt Weapon" id="2de9-aa2f-d9a1-7206" collective="false" hidden="false" import="true" targetId="bfbe-de91-6f03-e116" type="selectionEntry"/>
-        <entryLink name="Chainsword" id="745d-99d0-b9a9-a18a" collective="false" hidden="false" import="true" targetId="fe5f-0cd5-5f0d-abc4" type="selectionEntry"/>
         <entryLink name="Brutal Assault Weapon" id="2769-fbb2-adcd-7fbb" collective="false" hidden="false" import="true" targetId="fca3-e82b-cb92-6c2c" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Servant Ranged weapon" id="fe47-4509-cc64-3b4c" collective="false" defaultSelectionEntryId="0987-a154-7ff6-d4c1" hidden="false" import="true">
+    <selectionEntryGroup name="Servant Ranged weapon" id="fe47-4509-cc64-3b4c" collective="false" defaultSelectionEntryId="3052-b029-b40f-445e" hidden="false" import="true">
       <constraints>
         <constraint id="7d86-f52d-4f25-7e4b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
         <constraint id="16dc-5c2c-d136-729b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
@@ -50430,6 +50377,7 @@ You can Disband any summoned unit in your morale phase. Disbanded units are cons
       <entryLinks>
         <entryLink name="Laspistol" id="8c72-f3e6-4b36-378a" collective="false" hidden="false" import="true" targetId="c10b-e1a4-c913-ae15" type="selectionEntry"/>
         <entryLink name="Autopistol" id="0987-a154-7ff6-d4c1" collective="false" hidden="false" import="true" targetId="0507-a97d-4f7f-83b4" type="selectionEntry"/>
+        <entryLink name="Autogun" id="3052-b029-b40f-445e" collective="false" hidden="false" import="true" targetId="5752-d165-5e03-d38c" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Prayers to the Dark Gods" id="3fdf-a753-0774-d5d8" collective="false" hidden="false" import="true">
