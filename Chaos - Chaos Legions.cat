@@ -23893,7 +23893,7 @@ In addition, models in this unit do not suffer the penalty to hit rolls incurred
         </profile>
         <profile name="Infernal Pacts" id="3d17-825e-0613-b645" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">In your Command phase, this model can attempt to make one Infernal Pact it knows that has not already been attempted by a friendly model this turn. Roll one D6: on a 3+, the pact is sealed and takes effect until the start of your next Command phase.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">In your Command phase, this model can attempt to make one of the Infernal pacts it knows that has not already been attempted by a friendly model this turn. Roll one D6: on a 3+, the pact is sealed and takes effect until the start of your next Command phase.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -24006,7 +24006,7 @@ In addition, models in this unit do not suffer the penalty to hit rolls incurred
                 <profile name="Diabolic savant" id="6778-fe0b-ead9-48e7" hidden="false" typeId="2411-9c72-f5d9-7342" typeName="Infernal Pacts">
                   <characteristics>
                     <characteristic name="Effect" typeId="a0e1-289d-a4e8-38b2">If this pact is successful:
-- At the start of your next Psychic phase, if your army is a Cabal of Sorcerers, you generate 1 additional Cabal point.
+- At the start of your next Psychic phase, you generate 1 additional Cabal point.
 - In your next Psychic phase, you can re-roll Psychic tests taken for this INFERNAL MASTER.</characteristic>
                   </characteristics>
                 </profile>
@@ -50074,13 +50074,17 @@ Until the start of your next Command phase, models in that unit have a 4+ invuln
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
-              <modifiers>
-                <modifier field="points" type="decrement" value="40">
+              <modifierGroups>
+                <modifierGroup type="and">
                   <conditions>
                     <condition childId="b815-129f-5c91-cc87" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="instanceOf" value="0"/>
                   </conditions>
-                </modifier>
-              </modifiers>
+                  <modifiers>
+                    <modifier field="points" type="decrement" value="40"/>
+                    <modifier field="e356-c769-5920-6e14" type="decrement" value="2"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
               <rules>
                 <rule name="Greater Daemonic summoning Ritual [14PL]" id="d6a5-87ee-8860-abd2" hidden="false">
                   <description>This unit can summon up to 14PL of Daemon units, divided in up to two units. If the Summoner has any CHAOS MARK, the summoned Daemon units must belong to the same CHAOS MARK, with the exception of Undivided, which can select from any other CHAOS MARK, but if it does, it increases the cost of the Summoned unit by 1PL.
@@ -50098,13 +50102,17 @@ You can Disband any summoned unit in your morale phase. Disbanded units are cons
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
-              <modifiers>
-                <modifier field="points" type="decrement" value="20">
+              <modifierGroups>
+                <modifierGroup type="and">
                   <conditions>
                     <condition childId="b815-129f-5c91-cc87" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="instanceOf" value="0"/>
                   </conditions>
-                </modifier>
-              </modifiers>
+                  <modifiers>
+                    <modifier field="points" type="decrement" value="20"/>
+                    <modifier field="e356-c769-5920-6e14" type="decrement" value="1"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
               <rules>
                 <rule name="Daemonic summoning Ritual [7PL]" id="c6c0-e6cc-e06a-6acd" hidden="false">
                   <description>This unit can summon up to 7PL of Daemon units, divided in up to two units. If the Summoner has any CHAOS MARK, the summoned Daemon units must belong to the same CHAOS MARK, with the exception of Undivided, which can select from any other CHAOS MARK, but if it does, it increases the cost of the Summoned unit by 1PL.
