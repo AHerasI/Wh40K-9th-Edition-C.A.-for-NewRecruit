@@ -2868,8 +2868,8 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
         <characteristicType name="S" id="59b1-319e-ec13-d466"/>
         <characteristicType name="AP" id="75aa-a838-b675-6484">
           <formatRules>
-            <formatRule name="New Format Rule" id="9c6a-789a-9e30-04f1" hidden="false" match="([+-]?\d+)" replace="$1-" type="regex">
-              <comment>Prefix sign (+/-)</comment>
+            <formatRule name="New Format Rule" id="a828-22e9-d53d-2411" hidden="false" match="([\s\S]*)" replace="-$1" type="regex">
+              <comment>Prepend PREFIX</comment>
             </formatRule>
           </formatRules>
         </characteristicType>
