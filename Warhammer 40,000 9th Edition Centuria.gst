@@ -2857,7 +2857,13 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
   <profileTypes>
     <profileType name="Weapon" id="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <characteristicTypes>
-        <characteristicType name="Range" id="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464"/>
+        <characteristicType name="Range" id="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">
+          <formatRules>
+            <formatRule name="New Format Rule" id="823c-3b5d-0091-7a80" hidden="false" match="([\d]*)" replace="$1&quot;" type="regex">
+              <comment>Append SUFFIX</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
         <characteristicType name="Type" id="077c342f-d7b9-45c6-b8af-88e97cafd3a2"/>
         <characteristicType name="S" id="59b1-319e-ec13-d466"/>
         <characteristicType name="AP" id="75aa-a838-b675-6484"/>
@@ -2899,14 +2905,32 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
             </formatRule>
           </formatRules>
         </characteristicType>
-        <characteristicType name="WS" id="e7f0-1278-0250-df0c"/>
-        <characteristicType name="BS" id="381b-eb28-74c3-df5f"/>
+        <characteristicType name="WS" id="e7f0-1278-0250-df0c">
+          <formatRules>
+            <formatRule name="New Format Rule" id="5281-9527-03a5-e8b3" hidden="false" match="([\s\S]*)" replace="$1+" type="regex">
+              <comment>Append SUFFIX</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
+        <characteristicType name="BS" id="381b-eb28-74c3-df5f">
+          <formatRules>
+            <formatRule name="New Format Rule" id="3e71-f532-5307-0c41" hidden="false" match="([\s\S]*)" replace="$1+" type="regex">
+              <comment>Append SUFFIX</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
         <characteristicType name="S" id="2218-aa3c-265f-2939"/>
         <characteristicType name="T" id="9c9f-9774-a358-3a39"/>
         <characteristicType name="W" id="f330-5e6e-4110-0978"/>
         <characteristicType name="A" id="13fc-b29b-31f2-ab9f"/>
         <characteristicType name="Ld" id="00ca-f8b8-876d-b705"/>
-        <characteristicType name="Save" id="c0df-df94-abd7-e8d3"/>
+        <characteristicType name="Save" id="c0df-df94-abd7-e8d3">
+          <formatRules>
+            <formatRule name="New Format Rule" id="7a36-2271-5550-7a66" hidden="false" match="([\s\S]*)" replace="$1+" type="regex">
+              <comment>Append SUFFIX</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
       </characteristicTypes>
     </profileType>
     <profileType name="Crusade Battle Honour" id="9cbe-b8f7-8b06-3bdb">
