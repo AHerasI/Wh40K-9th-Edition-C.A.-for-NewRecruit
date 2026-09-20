@@ -2859,7 +2859,7 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
       <characteristicTypes>
         <characteristicType name="Range" id="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">
           <formatRules>
-            <formatRule name="New Format Rule" id="823c-3b5d-0091-7a80" hidden="false" match="([\W\d]*)" replace="$1&quot;" type="regex">
+            <formatRule name="New Format Rule" id="823c-3b5d-0091-7a80" hidden="false" match="([\B]*)" replace="$1&quot;" type="regex">
               <comment>Append SUFFIX</comment>
             </formatRule>
           </formatRules>
