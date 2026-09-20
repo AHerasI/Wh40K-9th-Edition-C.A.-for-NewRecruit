@@ -2932,7 +2932,7 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
         <characteristicType name="Ld" id="00ca-f8b8-876d-b705"/>
         <characteristicType name="Save" id="c0df-df94-abd7-e8d3">
           <formatRules>
-            <formatRule name="New Format Rule" id="7a36-2271-5550-7a66" hidden="false" match="([\s\S]*)" replace="$1+" type="regex">
+            <formatRule name="New Format Rule" id="7a36-2271-5550-7a66" hidden="false" match="([0-9]+)" replace="$1+" type="regex">
               <comment>Append SUFFIX</comment>
             </formatRule>
           </formatRules>
@@ -4960,10 +4960,10 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
     </profile>
     <profile name="Terrax Melta Cutter" id="79c3-79bf-926c-3163" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 5</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">4</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack made with this weapon targets a unit within half range, that attack has a Damage characteristic of D6+2.</characteristic>
       </characteristics>
@@ -5941,15 +5941,15 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
     </profile>
     <profile name="Servitor" id="13f5-df94-118f-00ac" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
-        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
-        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
-        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5</characteristic>
         <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
         <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
         <characteristic name="W" typeId="f330-5e6e-4110-0978">1</characteristic>
         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
-        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4</characteristic>
       </characteristics>
     </profile>
     <profile name="Outflank" id="1940-602f-f125-e350" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -8300,7 +8300,7 @@ Non AIRCRAFT MONSTER, VEHICLE and TITANIC units in the way of the pushed WRECKED
         </profile>
         <profile name="Transport [Adeptus Astartes]" id="c848-0146-6c8a-c89e" hidden="true" typeId="b3a8-0452-7436-44d1" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model can transport 12 &lt;CHAPTER&gt; INFANTRY models. Each TERMINATOR ARMOUR, GRAVIS model counts as 2 other INFANTRY models and each CENTURION ARMOUR model counts as 3 other INFANTRY models. It cannot transport JUMP PACK or WULFEN models.</characteristic>
+            <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model can transport 12 CHAPTER INFANTRY models. Each TERMINATOR ARMOUR, GRAVIS model counts as 2 other INFANTRY models and each CENTURION ARMOUR model counts as 3 other INFANTRY models. It cannot transport JUMP PACK or WULFEN models.</characteristic>
           </characteristics>
           <modifiers>
             <modifier field="hidden" type="set" value="false">
@@ -8312,7 +8312,7 @@ Non AIRCRAFT MONSTER, VEHICLE and TITANIC units in the way of the pushed WRECKED
         </profile>
         <profile name="Transport [Chaos Legions]" id="87c7-081b-2b30-e169" hidden="true" typeId="b3a8-0452-7436-44d1" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model can transport 12 &lt;LEGION&gt; INFANTRY models. Each TERMINATOR ARMOUR model counts as 2 other INFANTRY models and each POSSESSED model counts as 3 other INFANTRY models. It cannot transport JUMP PACK models.</characteristic>
+            <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model can transport 12 LEGION INFANTRY models. Each TERMINATOR ARMOUR model counts as 2 other INFANTRY models and each POSSESSED model counts as 3 other INFANTRY models. It cannot transport JUMP PACK models.</characteristic>
           </characteristics>
           <modifiers>
             <modifier field="hidden" type="set" value="false">
@@ -8336,20 +8336,20 @@ Non AIRCRAFT MONSTER, VEHICLE and TITANIC units in the way of the pushed WRECKED
         </profile>
         <profile name="Assault Drill [1] (8+ Wounds remaining)" id="87e4-f78d-a9d1-4033" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
             <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
             <characteristic name="W" typeId="f330-5e6e-4110-0978">14</characteristic>
             <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
           </characteristics>
         </profile>
         <profile name="Transport [DM]" id="2540-8684-f419-a84b" hidden="true" typeId="b3a8-0452-7436-44d1" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model can transport 24 &lt;HERETEK CULT&gt; INFANTRY models. Each POSSESSED model counts as 3 other INFANTRY models. It cannot transport JUMP PACK models.</characteristic>
+            <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model can transport 24 HERETEK CULT INFANTRY models. Each POSSESSED model counts as 3 other INFANTRY models. It cannot transport JUMP PACK models.</characteristic>
           </characteristics>
           <modifiers>
             <modifier field="hidden" type="set" value="false">
@@ -8361,28 +8361,28 @@ Non AIRCRAFT MONSTER, VEHICLE and TITANIC units in the way of the pushed WRECKED
         </profile>
         <profile name="Assault Drill [2] (4-7 Wounds remaining)" id="5aaf-6ca5-3106-1c5e" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
             <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
             <characteristic name="W" typeId="f330-5e6e-4110-0978">14</characteristic>
             <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
           </characteristics>
         </profile>
         <profile name="Assault Drill [3] (1-3 Wounds remaining)" id="870d-fda4-48a2-f9eb" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">4&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">4</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
             <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
             <characteristic name="W" typeId="f330-5e6e-4110-0978">14</characteristic>
             <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -12627,6 +12627,7 @@ Each Multi-Purpose Reactive Armour packcage can be used once per battle.</descri
                     <constraint id="e320-2589-007b-29b9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                 </entryLink>
+                <entryLink name="Crushing bulk" id="bec8-132e-2e67-c8f2" hidden="false" import="true" targetId="502f-45c2-6fd1-443b" type="selectionEntry"/>
               </entryLinks>
               <infoLinks>
                 <infoLink name="Servitor" id="cf5f-b3f5-9367-a34e" hidden="false" targetId="13f5-df94-118f-00ac" type="profile"/>
@@ -12646,6 +12647,7 @@ Each Multi-Purpose Reactive Armour packcage can be used once per battle.</descri
                     <constraint id="5dd7-d792-15cb-dc36" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                 </entryLink>
+                <entryLink name="Crushing bulk" id="5ed3-eb5d-f411-5e22" hidden="false" import="true" targetId="502f-45c2-6fd1-443b" type="selectionEntry"/>
               </entryLinks>
               <infoLinks>
                 <infoLink name="Servitor" id="04da-4ccb-a89b-15d2" hidden="false" targetId="13f5-df94-118f-00ac" type="profile"/>
@@ -12665,6 +12667,7 @@ Each Multi-Purpose Reactive Armour packcage can be used once per battle.</descri
                     <constraint id="f807-a564-329e-421f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                 </entryLink>
+                <entryLink name="Crushing bulk" id="3f7e-7419-a551-bfaa" hidden="false" import="true" targetId="502f-45c2-6fd1-443b" type="selectionEntry"/>
               </entryLinks>
               <infoLinks>
                 <infoLink name="Servitor" id="57c0-c48e-0ee8-cdf3" hidden="false" targetId="13f5-df94-118f-00ac" type="profile"/>
@@ -12684,6 +12687,7 @@ Each Multi-Purpose Reactive Armour packcage can be used once per battle.</descri
                     <constraint id="504e-ea5a-846d-2256" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                 </entryLink>
+                <entryLink name="Crushing bulk" id="0fd2-2cf5-7948-2a05" hidden="false" import="true" targetId="502f-45c2-6fd1-443b" type="selectionEntry"/>
               </entryLinks>
               <infoLinks>
                 <infoLink name="Servitor" id="3847-22ab-d2ce-f6fc" hidden="false" targetId="13f5-df94-118f-00ac" type="profile"/>
