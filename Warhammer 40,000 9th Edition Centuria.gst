@@ -4259,10 +4259,10 @@ Before using it, select one of the available ammo.
     </profile>
     <profile name="Disintegration Gun" id="c86e-fd57-5a10-6b61" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18&quot;</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 2</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
@@ -4453,7 +4453,7 @@ Blast.</characteristic>
     </profile>
     <profile name="Thunderfire Shells" id="e768-5449-ec9e-e9a5" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60&quot;</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D3+6</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
@@ -4463,7 +4463,7 @@ Blast.</characteristic>
     </profile>
     <profile name="Twin Assault Cannon" id="acb8-7501-1f1b-b483" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30&quot;</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 16</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
@@ -4473,7 +4473,7 @@ Blast.</characteristic>
     </profile>
     <profile name="Twin Autocannon" id="3a89-dec9-f41d-7719" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 4</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">7</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
@@ -4499,7 +4499,7 @@ Blast.</characteristic>
     </profile>
     <profile name="Twin Boltgun" id="6471-9a1a-0f1d-acb1" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Rapid Fire 2</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
@@ -4970,20 +4970,20 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
     </profile>
     <profile name="Melta Destroyer" id="9348-0198-ece2-632d" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 3</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">4</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack made with this weapon targets a unit within half range, that attack has a Damage characteristic of D6+2.</characteristic>
       </characteristics>
     </profile>
     <profile name="Siege Melta Array" id="7ca3-c8c0-5bfa-c727" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 6</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">4</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack made with this weapon targets a unit within half range, that attack has a Damage characteristic of D6+2.</characteristic>
       </characteristics>
@@ -5060,10 +5060,10 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
     </profile>
     <profile name="Chem-Cannon" id="95ae-4009-82e5-8199" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18&quot;</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D3+3</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">2</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent.  Each time an attack is made with this weapon against units without INORGANIC, VEHICLE or TITANIC Keywords, a wound roll of 2+ is always successful.</characteristic>
       </characteristics>
@@ -5114,16 +5114,6 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
     </profile>
-    <profile name="Anvillus Autocannon Battery" id="e84c-9683-6fc8-0cae" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
-        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 12</characteristic>
-        <characteristic name="S" typeId="59b1-319e-ec13-d466">7</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
-        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
-      </characteristics>
-    </profile>
     <profile name="Plasma cannon, Standard" id="5bf9-11ef-56fe-a1c7" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36</characteristic>
@@ -5158,7 +5148,7 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
     </profile>
     <profile name="Rad-Cleanser" id="f2b0-9477-6932-7369" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D6</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">2</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
@@ -5168,7 +5158,7 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
     </profile>
     <profile name="Twin Rad-Cleanser" id="be5b-216d-c3a8-0fc8" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D6</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">2</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
@@ -5392,7 +5382,7 @@ Each time this model is declared to Hover, it loses this ability until the begin
         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">x2</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">4</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
@@ -5402,7 +5392,7 @@ Each time this model is declared to Hover, it loses this ability until the begin
         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">+2</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Make 2 hit rolls for each attack made with this weapon, instead of 1.</characteristic>
       </characteristics>
@@ -5572,16 +5562,6 @@ Its Move characteristic becomes 20&quot;, and it loses the Hard to Hit and Super
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
     </profile>
-    <profile name="Redemptor Dreadnought Fist" id="44f6-0759-fd28-0856" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
-        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-        <characteristic name="S" typeId="59b1-319e-ec13-d466">x2</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
-        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
-      </characteristics>
-    </profile>
     <profile name="Dreadnought Siege Drill" id="a2ea-8bea-2044-c8d0" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
@@ -5590,16 +5570,6 @@ Its Move characteristic becomes 20&quot;, and it loses the Hard to Hit and Super
         <characteristic name="AP" typeId="75aa-a838-b675-6484">4</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Add 1 to hit rolls against TITANIC, VEHICLE or BUILDING units.</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Dreadnought Nemesis Doomglaive" id="22f9-1753-6b74-4413" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
-        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-        <characteristic name="S" typeId="59b1-319e-ec13-d466">x2</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
-        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
     </profile>
     <profile name="Dreadnought Power Claw" id="ba88-a31d-6477-7fa4" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -5630,10 +5600,10 @@ If the result is less than the Strength characteristic of that enemy unit, it ca
     </profile>
     <profile name="Heavy Frag cannon" id="1e7d-4263-1bee-54cb" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18&quot;</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D3+3</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">7</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. If the target is within half range, add 1 to this weapon&apos;s Strength.</characteristic>
       </characteristics>
@@ -5780,7 +5750,7 @@ If the result is less than the Strength characteristic of that enemy unit, it ca
     </profile>
     <profile name="Twin Accelerator Autocannon" id="8307-43eb-68f9-e413" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 6</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">7</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
@@ -5876,7 +5846,7 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
     </profile>
     <profile name="Twin Auto-Boltgun" id="bb40-1f05-a51e-fd03" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18&quot;</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 6</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
@@ -6036,10 +6006,10 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
     </profile>
     <profile name="Shatter Shells" id="5b61-bd90-ea80-1ee2" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30&quot;</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 4</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
@@ -6082,7 +6052,7 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
     </profile>
     <profile name="Twin Accelerator Heavy Autocannon" id="5937-3a3a-833b-923e" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 18</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">7</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
@@ -6314,30 +6284,30 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
     </profile>
     <profile name="Mega-Bolter" id="f2b3-ee9b-dbf4-e8c1" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 3</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, an unmodified hit roll of 5+ scores an additional hit. Compatible with Heavy Special Amunition.</characteristic>
       </characteristics>
     </profile>
     <profile name="Twin Mega-Bolter" id="4212-542d-7957-8899" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 6</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, an unmodified hit roll of 5+ scores an additional hit. Compatible with Heavy Special Amunition.</characteristic>
       </characteristics>
     </profile>
     <profile name="Vulcan Mega-Bolter" id="3095-f82c-14bb-a798" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 20</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, an unmodified hit roll of 5+ scores an additional hit. Compatible with Heavy Special Amunition.</characteristic>
       </characteristics>
@@ -6350,20 +6320,20 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
     </profile>
     <profile name="Twin Battle cannon" id="d783-d017-3bef-bae7" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">72&quot;</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">72</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D6+6</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
       </characteristics>
     </profile>
     <profile name="Twin Multi-Laser" id="23f7-92aa-6748-e6ed" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
-        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 6</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Rapid-fire 8</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
@@ -6380,10 +6350,10 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
     </profile>
     <profile name="Medusa Siege cannon" id="2aab-7d1a-1437-1775" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">72&quot;</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">72</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D3</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">10</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Indirect fire.</characteristic>
       </characteristics>
@@ -6440,10 +6410,10 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
     </profile>
     <profile name="Heavy Volcano Lance" id="7459-4f27-0d0f-d1e6" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">120&quot;</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">120</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D3</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">18</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-6484">-5</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">5</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">12</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon against a TITANIC unit, you can re-roll the wound roll.</characteristic>
       </characteristics>
@@ -6480,7 +6450,7 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
     </profile>
     <profile name="Twin Heavy Gatling cannon" id="55c0-8057-0831-0bd7" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 32</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
@@ -17642,7 +17612,7 @@ HAEMONCULUS</description>
                     <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">5</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">4</characteristic>
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
@@ -17690,8 +17660,8 @@ Operate Gun Emplacement (Action): At the end of your Command phase, one INFANTRY
             <categoryLink name="Wrecked" id="a71f-3517-15cb-af26" hidden="false" primary="false" targetId="972c-53fd-93b7-624b"/>
           </categoryLinks>
           <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="26"/>
-            <cost name="Pts" typeId="points" value="520"/>
+            <cost name="Pts" typeId="points" value="620"/>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="31"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
@@ -17718,43 +17688,43 @@ Operate Gun Emplacement (Action): At the end of your Command phase, one INFANTRY
           <infoGroups>
             <infoGroup name="Primaris Redoubt" id="a377-a52b-66b4-775b" hidden="false">
               <profiles>
-                <profile name="Primaris Redoubt [1] (21+ Wounds Remaining)" id="1396-203a-69c8-4340" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+                <profile name="Primaris Redoubt [1] (41+ Wounds Remaining)" id="1396-203a-69c8-4340" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">9</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">40</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">80</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Primaris Redoubt [2] (11-20+ Wounds Remaining)" id="8fb0-9caf-e28e-6906" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+                <profile name="Primaris Redoubt [2] (21-40 Wounds Remaining)" id="8fb0-9caf-e28e-6906" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">9</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">40</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">80</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Primaris Redoubt [3] (1-10+ Wounds Remaining)" id="b962-0482-58a1-fa7b" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+                <profile name="Primaris Redoubt [3] (1-20 Wounds Remaining)" id="b962-0482-58a1-fa7b" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">6+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">6</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">9</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">40</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">80</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -17946,9 +17916,9 @@ During the Set-up of this model, you can remove as many scenographic elements as
                             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
                             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">-</characteristic>
-                            <characteristic name="S" typeId="2218-aa3c-265f-2939">10</characteristic>
+                            <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
                             <characteristic name="T" typeId="9c9f-9774-a358-3a39">10</characteristic>
-                            <characteristic name="W" typeId="f330-5e6e-4110-0978">9</characteristic>
+                            <characteristic name="W" typeId="f330-5e6e-4110-0978">24</characteristic>
                             <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
                             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
@@ -17973,42 +17943,42 @@ During the Set-up of this model, you can remove as many scenographic elements as
                         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                       </costs>
                       <infoGroups>
-                        <infoGroup name="Gate Tower Section" id="1bb4-0db6-f601-4224" hidden="false">
+                        <infoGroup name="Tower Section" id="1bb4-0db6-f601-4224" hidden="false">
                           <profiles>
-                            <profile name="Gate Tower Section [1] (9+ Wounds Remaining)" id="47bd-1059-38d0-dafa" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+                            <profile name="Gate Tower Section [1] (13+ Wounds Remaining)" id="47bd-1059-38d0-dafa" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                               <characteristics>
                                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
                                 <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
-                                <characteristic name="S" typeId="2218-aa3c-265f-2939">10</characteristic>
+                                <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
                                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">10</characteristic>
-                                <characteristic name="W" typeId="f330-5e6e-4110-0978">16</characteristic>
+                                <characteristic name="W" typeId="f330-5e6e-4110-0978">24</characteristic>
                                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
                                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
                               </characteristics>
                             </profile>
-                            <profile name="Gate Tower Section [2] (5-8 Wounds Remaining)" id="0acd-e56f-653d-e721" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+                            <profile name="Gate Tower Section [2] (7-12 Wounds Remaining)" id="0acd-e56f-653d-e721" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                               <characteristics>
                                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
                                 <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
-                                <characteristic name="S" typeId="2218-aa3c-265f-2939">10</characteristic>
+                                <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
                                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">10</characteristic>
-                                <characteristic name="W" typeId="f330-5e6e-4110-0978">16</characteristic>
+                                <characteristic name="W" typeId="f330-5e6e-4110-0978">24</characteristic>
                                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
                                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
                               </characteristics>
                             </profile>
-                            <profile name="Gate Tower Section [3] (1-4 Wounds Remaining)" id="f4a8-8d49-2984-9f23" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+                            <profile name="Gate Tower Section [3] (1-6 Wounds Remaining)" id="f4a8-8d49-2984-9f23" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                               <characteristics>
                                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
                                 <characteristic name="BS" typeId="381b-eb28-74c3-df5f">6+</characteristic>
-                                <characteristic name="S" typeId="2218-aa3c-265f-2939">10</characteristic>
+                                <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
                                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">10</characteristic>
-                                <characteristic name="W" typeId="f330-5e6e-4110-0978">16</characteristic>
+                                <characteristic name="W" typeId="f330-5e6e-4110-0978">24</characteristic>
                                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
                                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
@@ -18082,51 +18052,21 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                         <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
                         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                       </costs>
-                      <infoGroups>
-                        <infoGroup name="Wall Section" id="fbab-b48c-7c4a-fdef" hidden="false">
-                          <profiles>
-                            <profile name="Wall Section [1] (7+ Wounds Remaining)" id="050b-ccd4-be2a-49d7" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-                              <characteristics>
-                                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
-                                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
-                                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">-</characteristic>
-                                <characteristic name="S" typeId="2218-aa3c-265f-2939">10</characteristic>
-                                <characteristic name="T" typeId="9c9f-9774-a358-3a39">10</characteristic>
-                                <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
-                                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
-                                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
-                              </characteristics>
-                            </profile>
-                            <profile name="Wall Section [2] (4-6 Wounds Remaining)" id="2b31-6078-6df0-ce6d" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-                              <characteristics>
-                                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
-                                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
-                                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">-</characteristic>
-                                <characteristic name="S" typeId="2218-aa3c-265f-2939">10</characteristic>
-                                <characteristic name="T" typeId="9c9f-9774-a358-3a39">10</characteristic>
-                                <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
-                                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
-                                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
-                              </characteristics>
-                            </profile>
-                            <profile name="Wall Section [3] (1-3 Wounds Remaining)" id="9c19-7021-1163-63c4" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-                              <characteristics>
-                                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
-                                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
-                                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">-</characteristic>
-                                <characteristic name="S" typeId="2218-aa3c-265f-2939">10</characteristic>
-                                <characteristic name="T" typeId="9c9f-9774-a358-3a39">10</characteristic>
-                                <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
-                                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
-                                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
-                              </characteristics>
-                            </profile>
-                          </profiles>
-                        </infoGroup>
-                      </infoGroups>
+                      <profiles>
+                        <profile name="Wall Section" id="0b19-ebfc-515b-b955" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+                          <characteristics>
+                            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
+                            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
+                            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">-</characteristic>
+                            <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
+                            <characteristic name="T" typeId="9c9f-9774-a358-3a39">10</characteristic>
+                            <characteristic name="W" typeId="f330-5e6e-4110-0978">24</characteristic>
+                            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
+                            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
+                            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
                     </selectionEntry>
                     <selectionEntry name="Tower Section" id="bff2-b60e-d6eb-3b03" collective="false" hidden="false" import="true" type="model">
                       <categoryLinks>
@@ -18143,53 +18083,9 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                         <cost name="PL" typeId="e356-c769-5920-6e14" value="3"/>
                         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                       </costs>
-                      <infoGroups>
-                        <infoGroup name="Tower Section" id="e244-f95d-5594-1ed7" hidden="false">
-                          <profiles>
-                            <profile name="Tower Section [1] (7+ Wounds Remaining)" id="03cb-13d9-cb2e-55fe" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-                              <characteristics>
-                                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
-                                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
-                                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
-                                <characteristic name="S" typeId="2218-aa3c-265f-2939">10</characteristic>
-                                <characteristic name="T" typeId="9c9f-9774-a358-3a39">10</characteristic>
-                                <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
-                                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
-                                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
-                              </characteristics>
-                            </profile>
-                            <profile name="Tower Section [2] (4-6 Wounds Remaining)" id="07ec-93ed-0563-0492" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-                              <characteristics>
-                                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
-                                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
-                                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
-                                <characteristic name="S" typeId="2218-aa3c-265f-2939">10</characteristic>
-                                <characteristic name="T" typeId="9c9f-9774-a358-3a39">10</characteristic>
-                                <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
-                                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
-                                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
-                              </characteristics>
-                            </profile>
-                            <profile name="Tower Section [3] (1-3 Wounds Remaining)" id="0ef7-8909-93b2-8f72" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-                              <characteristics>
-                                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
-                                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
-                                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">6+</characteristic>
-                                <characteristic name="S" typeId="2218-aa3c-265f-2939">10</characteristic>
-                                <characteristic name="T" typeId="9c9f-9774-a358-3a39">10</characteristic>
-                                <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
-                                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
-                                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
-                              </characteristics>
-                            </profile>
-                          </profiles>
-                        </infoGroup>
-                      </infoGroups>
                       <infoLinks>
                         <infoLink name="Fire Points (10)" id="da11-8151-704e-a057" hidden="false" targetId="220a-170b-5fd7-36f2" type="profile"/>
+                        <infoLink name="Tower Section" id="8c0d-99af-f47f-af26" hidden="false" targetId="1bb4-0db6-f601-4224" type="infoGroup"/>
                       </infoLinks>
                       <profiles>
                         <profile name="Tower Section" id="de4b-8f7d-5b45-3d3f" hidden="false" typeId="b3a8-0452-7436-44d1" typeName="Transport">
@@ -18290,9 +18186,9 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
                 <characteristic name="BS" typeId="381b-eb28-74c3-df5f">-</characteristic>
-                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
-                <characteristic name="W" typeId="f330-5e6e-4110-0978">16</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">20</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
@@ -18358,10 +18254,10 @@ Repair and Rearm (Action): At the end of your Shooting phase, one AIRCRAFT unit 
                 <characteristic name="BS" typeId="381b-eb28-74c3-df5f">-</characteristic>
                 <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
-                <characteristic name="W" typeId="f330-5e6e-4110-0978">14</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">17</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">-</characteristic>
-                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -18405,43 +18301,43 @@ Repair and Rearm (Action): At the end of your Shooting phase, one AIRCRAFT unit 
           <infoGroups>
             <infoGroup name="Fortress of Redemption" id="3093-8493-06b6-55fb" hidden="false">
               <profiles>
-                <profile name="Fortress of Redemption [1] (16-30+ Wounds Remaining)" id="fb0f-3662-9d20-0f2f" hidden="false" page="67" typeId="800f-21d0-4387-c943" typeName="Model">
+                <profile name="Fortress of Redemption [1] (22+ Wounds Remaining)" id="fb0f-3662-9d20-0f2f" hidden="false" page="67" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
-                    <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">30</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">45</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Fortress of Redemption [2] (9-15 Wounds Remaining)" id="cae2-6f62-494e-98b5" hidden="false" page="67" typeId="800f-21d0-4387-c943" typeName="Model">
+                <profile name="Fortress of Redemption [2] (11-21 Wounds Remaining)" id="cae2-6f62-494e-98b5" hidden="false" page="67" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
-                    <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">30</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">45</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Fortress of Redemption [3] (1-8 Wounds Remaining)" id="af51-f381-0a56-69c5" hidden="false" page="67" typeId="800f-21d0-4387-c943" typeName="Model">
+                <profile name="Fortress of Redemption [3] (1-10 Wounds Remaining)" id="af51-f381-0a56-69c5" hidden="false" page="67" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">6+</characteristic>
-                    <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">6</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">30</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">45</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -18486,22 +18382,22 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                 <infoLink name="Missile weapon profile" id="97f3-d584-f532-04d7" hidden="false" targetId="5ffa-b450-85d1-c3c7" type="rule"/>
               </infoLinks>
               <profiles>
-                <profile name="Krakstorm Missiles" id="5144-54cd-651b-332e" hidden="false" page="67" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                <profile name="Silo, Krakstorm Missiles" id="5144-54cd-651b-332e" hidden="false" page="67" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                   <characteristics>
-                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">96&quot;</characteristic>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">96</characteristic>
                     <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D6</characteristic>
                     <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
-                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
                     <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Fragstorm Missiles" id="8f33-f5d3-bd3a-915e" hidden="false" page="67" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                <profile name="Silo, Fragstorm Missiles" id="8f33-f5d3-bd3a-915e" hidden="false" page="67" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                   <characteristics>
-                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">96&quot;</characteristic>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">96</characteristic>
                     <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D6</characteristic>
                     <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
-                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                     <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast</characteristic>
                   </characteristics>
@@ -18529,10 +18425,10 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
               <profiles>
                 <profile name="Redemption Icarus Lascannons" id="0c7c-448e-a469-054a" hidden="false" page="67" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                   <characteristics>
-                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">96&quot;</characteristic>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">96</characteristic>
                     <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2</characteristic>
                     <characteristic name="S" typeId="59b1-319e-ec13-d466">9</characteristic>
-                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
                     <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
                   </characteristics>
@@ -18575,40 +18471,40 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
           <infoGroups>
             <infoGroup name="Aquila Strongpoint" id="e71b-1b3e-fede-6c18" hidden="false">
               <profiles>
-                <profile name="Aquila Strongpoint [1] (16-30+ Wounds Remaining)" id="1e51-cbb1-77b7-b136" hidden="false" page="135" typeId="800f-21d0-4387-c943" typeName="Model">
+                <profile name="Aquila Strongpoint [1] (22+ Wounds Remaining)" id="1e51-cbb1-77b7-b136" hidden="false" page="135" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
                     <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">10</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">30</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">45</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">-</characteristic>
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Aquila Strongpoint [2] (9-15 Wounds Remaining)" id="002b-e952-08d4-ccd5" hidden="false" page="135" typeId="800f-21d0-4387-c943" typeName="Model">
+                <profile name="Aquila Strongpoint [2] (11-21 Wounds Remaining)" id="002b-e952-08d4-ccd5" hidden="false" page="135" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
                     <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">10</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">30</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">45</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">-</characteristic>
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Aquila Strongpoint [3] (1-8 Wounds Remaining)" id="9819-53a9-ed97-e829" hidden="false" page="135" typeId="800f-21d0-4387-c943" typeName="Model">
+                <profile name="Aquila Strongpoint [3] (1-10 Wounds Remaining)" id="9819-53a9-ed97-e829" hidden="false" page="135" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
                     <characteristic name="BS" typeId="381b-eb28-74c3-df5f">6</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">10</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">30</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">45</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">-</characteristic>
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
@@ -18666,21 +18562,21 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                   <profiles>
                     <profile name="Aquila Macro-cannon (Macro Shell)" id="10d9-e408-d8a4-1ac1" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                       <characteristics>
-                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">72&quot;</characteristic>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">72</characteristic>
                         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D6+6</characteristic>
                         <characteristic name="S" typeId="59b1-319e-ec13-d466">14</characteristic>
-                        <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                        <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
                         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Indirect fire.</characteristic>
                       </characteristics>
                     </profile>
                     <profile name="Aquila Macro-cannon (Quake Shell)" id="b37c-66b4-2e57-d95e" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                       <characteristics>
-                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">180&quot;</characteristic>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">180</characteristic>
                         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 4D6</characteristic>
                         <characteristic name="S" typeId="59b1-319e-ec13-d466">9</characteristic>
                         <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
-                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
                         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Splash. Indirect fire.</characteristic>
                       </characteristics>
                     </profile>
@@ -18707,43 +18603,43 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
           <infoGroups>
             <infoGroup name="Imperial Bunker" id="9f89-0593-148f-0e63" hidden="false">
               <profiles>
-                <profile name="Imperial Bunker [1] (7+ Wounds Remaining)" id="7566-8061-2001-3dcc" hidden="false" page="131" typeId="800f-21d0-4387-c943" typeName="Model">
+                <profile name="Imperial Bunker [1] (13+ Wounds Remaining)" id="7566-8061-2001-3dcc" hidden="false" page="131" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">24</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">-</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Imperial Bunker [2] (4-6 Wounds Remaining)" id="01f9-f670-7b15-79e3" hidden="false" page="131" typeId="800f-21d0-4387-c943" typeName="Model">
+                <profile name="Imperial Bunker [2] (7-12 Wounds Remaining)" id="01f9-f670-7b15-79e3" hidden="false" page="131" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">24</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">-</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Imperial Bunker [3] (1-3 Wounds Remaining)" id="679e-61b8-025c-e711" hidden="false" page="131" typeId="800f-21d0-4387-c943" typeName="Model">
+                <profile name="Imperial Bunker [3] (1-6 Wounds Remaining)" id="679e-61b8-025c-e711" hidden="false" page="131" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">6+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">6</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">24</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">-</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -18806,43 +18702,43 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
           <infoGroups>
             <infoGroup name="Bastion" id="85a8-594e-1358-44e6" hidden="false">
               <profiles>
-                <profile name="Bastion [1] (11-20+ Wounds Remaining)" id="782e-1239-78ec-c74b" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+                <profile name="Bastion [1] (16+ Wounds Remaining)" id="782e-1239-78ec-c74b" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">9</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">20</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">30</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">-</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Bastion [2] (6-10 Wounds Remaining)" id="f223-c8d3-adc2-7f31" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+                <profile name="Bastion [2] (7-16 Wounds Remaining)" id="f223-c8d3-adc2-7f31" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">9</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">20</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">30</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">-</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Bastion [3] (1-5 Wounds Remaining)" id="e43d-c4f3-11f4-bc09" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">6+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">6</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">9</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">20</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">30</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">-</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -18912,7 +18808,7 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                 <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
                 <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
-                <characteristic name="W" typeId="f330-5e6e-4110-0978">14</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">15</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">-</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
@@ -19180,43 +19076,43 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
           <infoGroups>
             <infoGroup name="Firestorm Redoubt" id="2a63-b2ab-ad6b-4a48" hidden="false">
               <profiles>
-                <profile name="Firestorm Redoubt [1] (16-30+ Wounds Remaining)" id="1b35-9189-0792-c284" hidden="false" page="133" typeId="800f-21d0-4387-c943" typeName="Model">
+                <profile name="Firestorm Redoubt [1] (22+ Wounds Remaining)" id="1b35-9189-0792-c284" hidden="false" page="133" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">30</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">45</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">-</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Firestorm Redoubt [3] (1-8 Wounds Remaining)" id="78ad-8f10-276f-847c" hidden="false" page="133" typeId="800f-21d0-4387-c943" typeName="Model">
+                <profile name="Firestorm Redoubt [3] (1-10 Wounds Remaining)" id="78ad-8f10-276f-847c" hidden="false" page="133" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">6+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">6</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">30</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">45</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">-</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Firestorm Redoubt [2] (9-15 Wounds Remaining)" id="b96e-c948-97af-7fe2" hidden="false" page="133" typeId="800f-21d0-4387-c943" typeName="Model">
+                <profile name="Firestorm Redoubt [2] (11-21 Wounds Remaining)" id="b96e-c948-97af-7fe2" hidden="false" page="133" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">30</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">45</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">-</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -19302,39 +19198,39 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">9</characteristic>
                     <characteristic name="W" typeId="f330-5e6e-4110-0978">20</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">-</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Plasma Obliterator Fortification [2] (6-10 Wounds Remaining)" id="3444-3212-8d7a-da99" hidden="false" page="134" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">9</characteristic>
                     <characteristic name="W" typeId="f330-5e6e-4110-0978">20</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">-</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Plasma Obliterator Fortification [3] (1-5 Wounds Remaining)" id="1470-e1cc-7553-78cd" hidden="false" page="134" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">6+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">6</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">9</characteristic>
                     <characteristic name="W" typeId="f330-5e6e-4110-0978">20</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">-</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -19395,13 +19291,13 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                   <characteristics>
                     <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                     <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">5</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">6</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Automated Emplacement" id="a7ab-d430-4ed6-5c5c" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
