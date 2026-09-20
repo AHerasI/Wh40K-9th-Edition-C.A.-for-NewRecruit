@@ -2906,21 +2906,21 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
       <characteristicTypes>
         <characteristicType name="M" id="0bdf-a96e-9e38-7779">
           <formatRules>
-            <formatRule name="New Format Rule" id="01b1-8363-ed8a-77d8" hidden="false" match="([\s\S]*)" replace="$1&quot;" type="regex">
+            <formatRule name="New Format Rule" id="01b1-8363-ed8a-77d8" hidden="false" match="([0-9]+)" replace="$1&quot;" type="regex">
               <comment>Append SUFFIX</comment>
             </formatRule>
           </formatRules>
         </characteristicType>
         <characteristicType name="WS" id="e7f0-1278-0250-df0c">
           <formatRules>
-            <formatRule name="New Format Rule" id="5281-9527-03a5-e8b3" hidden="false" match="([\s\S]*)" replace="$1+" type="regex">
+            <formatRule name="New Format Rule" id="5281-9527-03a5-e8b3" hidden="false" match="([0-9]+)" replace="$1+" type="regex">
               <comment>Append SUFFIX</comment>
             </formatRule>
           </formatRules>
         </characteristicType>
         <characteristicType name="BS" id="381b-eb28-74c3-df5f">
           <formatRules>
-            <formatRule name="New Format Rule" id="3e71-f532-5307-0c41" hidden="false" match="([\s\S]*)" replace="$1+" type="regex">
+            <formatRule name="New Format Rule" id="3e71-f532-5307-0c41" hidden="false" match="([0-9]+)" replace="$1+" type="regex">
               <comment>Append SUFFIX</comment>
             </formatRule>
           </formatRules>
