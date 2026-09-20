@@ -2088,48 +2088,48 @@ By default, standard ammo will be shot (no changes to the weapon&apos;s profile)
   <sharedProfiles>
     <profile name="Astartes Legionary" id="5cca-bb07-41a2-d8d3" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
-        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
         <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
         <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
         <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
-        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
       </characteristics>
       <modifierGroups>
-        <modifierGroup>
+        <modifierGroup type="and">
           <conditions>
             <condition childId="d64e-76c2-6608-1e7e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
           </conditions>
           <modifiers>
-            <modifier field="2218-aa3c-265f-2939" type="set" value="5"/>
-            <modifier field="0bdf-a96e-9e38-7779" type="set" value="7&quot;"/>
+            <modifier field="2218-aa3c-265f-2939" type="increment" value="1"/>
+            <modifier field="0bdf-a96e-9e38-7779" type="increment" value="1"/>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
     </profile>
     <profile name="Astartes Chosen" id="5a42-906b-149a-e6ce" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
-        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
         <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
         <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
         <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
       </characteristics>
       <modifierGroups>
-        <modifierGroup>
+        <modifierGroup type="and">
           <conditions>
             <condition childId="d64e-76c2-6608-1e7e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
           </conditions>
           <modifiers>
-            <modifier field="2218-aa3c-265f-2939" type="set" value="5"/>
-            <modifier field="0bdf-a96e-9e38-7779" type="set" value="7&quot;"/>
+            <modifier field="2218-aa3c-265f-2939" type="increment" value="1"/>
+            <modifier field="0bdf-a96e-9e38-7779" type="increment" value="1"/>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
@@ -2137,83 +2137,83 @@ By default, standard ammo will be shot (no changes to the weapon&apos;s profile)
     <profile name="Astartes Veteran Legionary" id="dc03-c3a6-199e-8043" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
         <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
-        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
         <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
         <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
         <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
       </characteristics>
     </profile>
     <profile name="Astartes Biker" id="9de6-ceaa-75bb-1187" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
-        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">14&quot;</characteristic>
-        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">14</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
         <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
         <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
         <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
-        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
       </characteristics>
       <modifierGroups>
-        <modifierGroup>
+        <modifierGroup type="and">
           <conditions>
             <condition childId="d64e-76c2-6608-1e7e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
           </conditions>
           <modifiers>
-            <modifier field="2218-aa3c-265f-2939" type="set" value="5"/>
+            <modifier field="2218-aa3c-265f-2939" type="increment" value="1"/>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
     </profile>
     <profile name="Astartes Terminator" id="f656-20ea-b7e9-8745" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
-        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
-        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
         <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
         <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
         <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
       </characteristics>
       <modifierGroups>
-        <modifierGroup>
+        <modifierGroup type="and">
           <conditions>
             <condition childId="d64e-76c2-6608-1e7e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
           </conditions>
           <modifiers>
-            <modifier field="2218-aa3c-265f-2939" type="set" value="5"/>
-            <modifier field="0bdf-a96e-9e38-7779" type="set" value="6&quot;"/>
+            <modifier field="2218-aa3c-265f-2939" type="increment" value="1"/>
+            <modifier field="0bdf-a96e-9e38-7779" type="increment" value="1"/>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
     </profile>
     <profile name="Astartes Saturnine" id="55ce-bbdc-dae6-629a" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
-        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">4&quot;</characteristic>
-        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">4</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
         <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
         <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
         <characteristic name="W" typeId="f330-5e6e-4110-0978">5</characteristic>
         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
       </characteristics>
       <modifierGroups>
-        <modifierGroup>
+        <modifierGroup type="and">
           <conditions>
             <condition childId="d64e-76c2-6608-1e7e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
           </conditions>
           <modifiers>
-            <modifier field="2218-aa3c-265f-2939" type="set" value="6"/>
-            <modifier field="0bdf-a96e-9e38-7779" type="set" value="5&quot;"/>
+            <modifier field="2218-aa3c-265f-2939" type="increment" value="1"/>
+            <modifier field="0bdf-a96e-9e38-7779" type="increment" value="1"/>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
@@ -2232,67 +2232,78 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
     </profile>
     <profile name="Astartes Catafractii" id="bf5f-c86f-14aa-2ba0" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
-        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
         <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
         <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
         <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition childId="d64e-76c2-6608-1e7e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+          </conditions>
+          <modifiers>
+            <modifier field="2218-aa3c-265f-2939" type="increment" value="1"/>
+            <modifier field="0bdf-a96e-9e38-7779" type="increment" value="1"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Plague Legionary" id="2caf-8503-b59e-d399" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
-        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
-        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
         <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
         <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
         <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
       </characteristics>
     </profile>
     <profile name="Plague Chosen" id="e47a-4768-aafa-0bac" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
-        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
-        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
         <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
         <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
         <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
-        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
       </characteristics>
     </profile>
     <profile name="Blightlord Terminator" id="55e3-e7a4-9f91-0766" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
-        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">4&quot;</characteristic>
-        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">4</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
         <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
         <characteristic name="T" typeId="9c9f-9774-a358-3a39">6</characteristic>
         <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
-        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
       </characteristics>
     </profile>
     <profile name="Posessed Legionary" id="0ab5-270c-8a05-aa1d" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
-        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
-        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
         <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
         <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
         <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
-        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
       </characteristics>
       <modifierGroups>
         <modifierGroup>
@@ -2300,35 +2311,35 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
             <condition childId="33b3-f2a3-9749-2f10" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
           </conditions>
           <modifiers>
-            <modifier field="9c9f-9774-a358-3a39" type="set" value="5"/>
+            <modifier field="9c9f-9774-a358-3a39" type="increment" value="1"/>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
     </profile>
     <profile name="Rubric Legionary" id="3cd5-6c54-c435-edb5" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
-        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
         <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
         <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
         <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
       </characteristics>
     </profile>
     <profile name="Scarab Occult Terminator" id="4e1c-12e6-77ce-7076" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
-        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
-        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
         <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
         <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
         <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
       </characteristics>
     </profile>
     <profile name="Cultist" id="6bdc-5d45-fcf2-2e48" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
@@ -2345,13 +2356,13 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6</characteristic>
       </characteristics>
       <modifierGroups>
-        <modifierGroup>
+        <modifierGroup type="and">
           <conditions>
             <condition childId="d64e-76c2-6608-1e7e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
           </conditions>
           <modifiers>
-            <modifier field="2218-aa3c-265f-2939" type="set" value="4"/>
-            <modifier field="0bdf-a96e-9e38-7779" type="set" value="7&quot;"/>
+            <modifier field="2218-aa3c-265f-2939" type="increment" value="1"/>
+            <modifier field="0bdf-a96e-9e38-7779" type="increment" value="1"/>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
@@ -2369,15 +2380,15 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
     </profile>
     <profile name="Raptor" id="797a-b989-a8cf-7c1b" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
-        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
-        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
         <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
         <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
         <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
-        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
       </characteristics>
       <modifierGroups>
         <modifierGroup>
@@ -2385,7 +2396,7 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
             <condition childId="33b3-f2a3-9749-2f10" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
           </conditions>
           <modifiers>
-            <modifier field="9c9f-9774-a358-3a39" type="set" value="5"/>
+            <modifier field="9c9f-9774-a358-3a39" type="increment" value="1"/>
           </modifiers>
         </modifierGroup>
         <modifierGroup>
@@ -2393,61 +2404,61 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
             <condition childId="d64e-76c2-6608-1e7e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
           </conditions>
           <modifiers>
-            <modifier field="2218-aa3c-265f-2939" type="set" value="5"/>
+            <modifier field="2218-aa3c-265f-2939" type="increment" value="1"/>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
     </profile>
     <profile name="Noise Legionary" id="dd9a-3dee-93a3-52e9" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
-        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
-        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
         <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
         <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
         <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
-        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
       </characteristics>
     </profile>
     <profile name="Berzerker Legionary" id="81fb-f7ad-4967-ebc1" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
-        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
         <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
         <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
         <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
       </characteristics>
     </profile>
     <profile name="Berzerker Legionary on Juggernaut" id="9a7a-eaed-20a1-e33d" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
-        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
-        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
         <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
         <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
         <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
       </characteristics>
     </profile>
     <profile name="Excess Cult Legionary on Steed of Slaanesh" id="bf93-269c-fc15-7258" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
-        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">14&quot;</characteristic>
-        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">14</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
         <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
         <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
         <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">5</characteristic>
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
-        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
       </characteristics>
     </profile>
     <profile name="Putrid Explosion" id="8dae-f25a-7a9e-0f09" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -2458,15 +2469,15 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
     </profile>
     <profile name="Excess Legionary" id="6afc-c35b-9c44-c05e" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
-        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
-        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
         <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
         <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
         <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
-        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
       </characteristics>
     </profile>
     <profile name="Unyielding Ancient" id="a240-d88a-7450-3edb" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -2507,29 +2518,51 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
     </profile>
     <profile name="Apothecary in Terminator Armour" id="b204-1ed7-12d6-6413" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
-        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
-        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
         <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
         <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
         <characteristic name="W" typeId="f330-5e6e-4110-0978">5</characteristic>
         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition childId="d64e-76c2-6608-1e7e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+          </conditions>
+          <modifiers>
+            <modifier field="2218-aa3c-265f-2939" type="increment" value="1"/>
+            <modifier field="0bdf-a96e-9e38-7779" type="increment" value="1"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Apothecary" id="7de8-04d5-2629-9f0a" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
-        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
         <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
         <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
         <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition childId="d64e-76c2-6608-1e7e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+          </conditions>
+          <modifiers>
+            <modifier field="2218-aa3c-265f-2939" type="increment" value="1"/>
+            <modifier field="0bdf-a96e-9e38-7779" type="increment" value="1"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
   </sharedProfiles>
   <sharedRules>
@@ -3755,7 +3788,7 @@ In addition, that unit automatically passes Morale tests until the end of the tu
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Daemonic weapon.</characteristic>
               </characteristics>
@@ -3809,10 +3842,10 @@ In addition, that unit automatically passes Morale tests until the end of the tu
           <profiles>
             <profile name="Reaper chaingun" id="432d-f48e-3754-7a89" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 8</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
               </characteristics>
@@ -3874,7 +3907,7 @@ In addition, that unit automatically passes Morale tests until the end of the tu
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">x2</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, if it is equipped with 2 Helbrute fists, it makes 1 additional attack with 1 of those weapons.</characteristic>
               </characteristics>
@@ -3944,10 +3977,10 @@ In addition, that unit automatically passes Morale tests until the end of the tu
           <profiles>
             <profile name="Doom Siren" id="7d51-a807-06e5-6ab0" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault D6</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Sonic weapon. Torrent. If the unit of the weapon&apos;s bearer is in engagement range of enemy units, this weapon changes it&apos;s profile to Pistol D6.</characteristic>
               </characteristics>
@@ -3970,20 +4003,20 @@ In addition, that unit automatically passes Morale tests until the end of the tu
           <profiles>
             <profile name="Blastmaster, Single frequency" id="658f-ff63-af15-63db" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 3</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Sonic weapon.</characteristic>
               </characteristics>
             </profile>
             <profile name="Blastmaster, Varied frequency" id="dfe7-6190-f369-8711" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 6</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Sonic weapon.</characteristic>
               </characteristics>
@@ -4006,7 +4039,7 @@ In addition, that unit automatically passes Morale tests until the end of the tu
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">x2</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, subtract 1 from that attack’s hit roll.</characteristic>
               </characteristics>
@@ -4029,7 +4062,7 @@ In addition, that unit automatically passes Morale tests until the end of the tu
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it makes 3 additional attacks with this weapon.</characteristic>
               </characteristics>
@@ -4216,7 +4249,7 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">When the bearer fights, it makes 2 additional attacks with this weapon and no more than 2 attack can be made with this weapon.</characteristic>
               </characteristics>
@@ -4247,7 +4280,7 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">When the bearer fights, it makes 3 additional attacks with this weapon and no more than 3 attacks can be made with this weapon.</characteristic>
               </characteristics>
@@ -4302,7 +4335,7 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Plague weapon.</characteristic>
               </characteristics>
@@ -4329,7 +4362,7 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
           <profiles>
             <profile name="Blight Grenades" id="99dd-0015-2870-dce0" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Grenade D6</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
                 <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
@@ -4355,7 +4388,7 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">+3</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Plague weapon. Each time an attack is made with this weapon profile, subtract 1 from that attack’s hit roll.</characteristic>
               </characteristics>
@@ -4365,7 +4398,7 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Plague weapon. Each time an attack is made with this weapon profile, make 2 hit rolls instead of 1.</characteristic>
               </characteristics>
@@ -4388,7 +4421,7 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">x2</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Plague weapon. Each time an attack is made with this weapon, subtract 1 from that attack’s hit roll.</characteristic>
               </characteristics>
@@ -4398,7 +4431,7 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Plague weapon. Each time an attack is made with this weapon profile, make 2 hit rolls instead of 1.</characteristic>
               </characteristics>
@@ -4422,10 +4455,10 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
           <profiles>
             <profile name="Orb of desiccation" id="978c-a677-7c84-a808" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">6&quot;</characteristic>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">6</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Grenade 3D3</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Plage weapon.</characteristic>
               </characteristics>
@@ -4448,7 +4481,7 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">x2</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Plague weapon. Each time an attack is made with this weapon, subtract 1 from that attack’s hit roll.</characteristic>
               </characteristics>
@@ -4471,7 +4504,7 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">+3</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Plague weapon.</characteristic>
               </characteristics>
@@ -4491,10 +4524,10 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
           <profiles>
             <profile name="Blight launcher" id="8ed8-61e9-1cbc-7009" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 2</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Plague weapon.</characteristic>
               </characteristics>
@@ -4515,7 +4548,7 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
           <profiles>
             <profile name="Plague belcher" id="49ff-9f8f-178e-1f54" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault D6</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
                 <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
@@ -4539,10 +4572,10 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
           <profiles>
             <profile name="Plague spewer" id="1a72-8b7d-1971-e63c" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault D6</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Plague weapon. Torrent.</characteristic>
               </characteristics>
@@ -4584,7 +4617,7 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Plage weapon. Daemonic weapon.</characteristic>
               </characteristics>
@@ -4629,7 +4662,7 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">x2</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Plague Weapon. Each time an attack is made with this weapon, subtract 1 from that attack’s hit roll.</characteristic>
               </characteristics>
@@ -4652,7 +4685,7 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">+2</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Plague Weapon. Each time an attack is made with this weapon, subtract 1 from that attack’s hit roll.</characteristic>
               </characteristics>
@@ -4675,7 +4708,7 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Plague weapon.</characteristic>
               </characteristics>
@@ -4806,7 +4839,7 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">+2</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
               </characteristics>
@@ -4844,7 +4877,7 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Plague Weapon. Each time an attack is made with this weapon, make 2 hit rolls instead of 1.</characteristic>
               </characteristics>
@@ -4867,7 +4900,7 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">+2</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Plague weapon.</characteristic>
               </characteristics>
@@ -4906,10 +4939,10 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
           <profiles>
             <profile name="Heavy Warpflamer" id="e7b3-b03b-5b5b-4f61" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault D6</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent.</characteristic>
               </characteristics>
@@ -4947,7 +4980,7 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">+2</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
               </characteristics>
@@ -4964,10 +4997,10 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
           <profiles>
             <profile name="Lash (Ranged)" id="fc4b-1789-78b3-b4c5" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">6&quot;</characteristic>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">6</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 6</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
               </characteristics>
@@ -4977,7 +5010,7 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it makes 2 additional attacks with this weapon.</characteristic>
               </characteristics>
@@ -5006,10 +5039,10 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
           <profiles>
             <profile name="Screamer pistol" id="8ddd-4cd5-21c0-1a7f" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol 2</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Sonic weapon.</characteristic>
               </characteristics>
@@ -5033,7 +5066,7 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
               </characteristics>
@@ -5054,7 +5087,7 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
           <profiles>
             <profile name="Plaguespurt gauntlet" id="781e-8e1e-df76-6839" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol D6</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
                 <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
@@ -5081,7 +5114,7 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
               </characteristics>
@@ -5125,10 +5158,10 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
           <profiles>
             <profile name="Hellfyre missile rack" id="4cda-1537-8f58-978f" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
               </characteristics>
@@ -10837,16 +10870,27 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
           <profiles>
             <profile name="Chaos Spawn" id="09a9-2ea7-3ada-5eb9" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
-                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
-                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4</characteristic>
                 <characteristic name="BS" typeId="381b-eb28-74c3-df5f">-</characteristic>
                 <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
                 <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2D3</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition childId="d64e-76c2-6608-1e7e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier field="2218-aa3c-265f-2939" type="increment" value="1"/>
+                    <modifier field="0bdf-a96e-9e38-7779" type="increment" value="1"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
         </selectionEntry>
@@ -16514,10 +16558,10 @@ Each model can only be corrupted once per turn.</characteristic>
                   <profiles>
                     <profile name="Sonic blaster" id="276f-b448-8e4a-0eaf" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                       <characteristics>
-                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24</characteristic>
                         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 3</characteristic>
                         <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
-                        <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                        <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
                         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Sonic weapon.</characteristic>
                       </characteristics>
@@ -26704,7 +26748,7 @@ In addition, models in this unit do not suffer the penalty to hit rolls incurred
                     <modifier field="name" type="set" value="Astartes Veteran Legionary Sergeant"/>
                     <modifier field="13fc-b29b-31f2-ab9f" type="set" value="4"/>
                     <modifier field="00ca-f8b8-876d-b705" type="set" value="9"/>
-                    <modifier field="0bdf-a96e-9e38-7779" type="set" value="12&quot;"/>
+                    <modifier field="0bdf-a96e-9e38-7779" type="set" value="12"/>
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
@@ -26743,7 +26787,7 @@ In addition, models in this unit do not suffer the penalty to hit rolls incurred
           <infoLinks>
             <infoLink name="Astartes Veteran Legionary" id="20f0-115f-0a88-9c19" hidden="false" targetId="dc03-c3a6-199e-8043" type="profile">
               <modifiers>
-                <modifier field="0bdf-a96e-9e38-7779" type="set" value="12&quot;"/>
+                <modifier field="0bdf-a96e-9e38-7779" type="set" value="12"/>
               </modifiers>
             </infoLink>
           </infoLinks>
