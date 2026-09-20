@@ -2859,14 +2859,20 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
       <characteristicTypes>
         <characteristicType name="Range" id="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">
           <formatRules>
-            <formatRule name="New Format Rule" id="823c-3b5d-0091-7a80" hidden="false" match="([\d\S]*)" replace="$1&quot;" type="regex">
+            <formatRule name="New Format Rule" id="823c-3b5d-0091-7a80" hidden="false" match="([\W\d]*)" replace="$1&quot;" type="regex">
               <comment>Append SUFFIX</comment>
             </formatRule>
           </formatRules>
         </characteristicType>
         <characteristicType name="Type" id="077c342f-d7b9-45c6-b8af-88e97cafd3a2"/>
         <characteristicType name="S" id="59b1-319e-ec13-d466"/>
-        <characteristicType name="AP" id="75aa-a838-b675-6484"/>
+        <characteristicType name="AP" id="75aa-a838-b675-6484">
+          <formatRules>
+            <formatRule name="New Format Rule" id="9c6a-789a-9e30-04f1" hidden="false" match="([+-]?\d+)" replace="$1-" type="regex">
+              <comment>Prefix sign (+/-)</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
         <characteristicType name="D" id="ae8a-3137-d65b-4ca7"/>
         <characteristicType name="Abilities" id="837d-5e63-aeb7-1410"/>
       </characteristicTypes>
