@@ -15472,9 +15472,15 @@ Each JUMP PACK or TERMINATOR model takes the space of two other models and each 
                       </conditions>
                     </modifier>
                     <modifier field="0bdf-a96e-9e38-7779" type="decrement" value="1">
-                      <conditions>
-                        <condition childId="38bd-cc4b-5706-9b08" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="41e0-60fb-17d9-c427" shared="true" type="equalTo" value="1"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition childId="33b3-f2a3-9749-2f10" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                            <condition childId="38bd-cc4b-5706-9b08" childName="Palanquin of Nurgle" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="41e0-60fb-17d9-c427" shared="true" type="equalTo" value="0"/>
+                            <condition childId="a7f1-9585-c3f8-04bc" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="41e0-60fb-17d9-c427" shared="true" type="equalTo" value="1"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </modifierGroup>
@@ -15530,6 +15536,11 @@ Each JUMP PACK or TERMINATOR model takes the space of two other models and each 
                     <modifier field="0bdf-a96e-9e38-7779" type="set" value="12">
                       <conditions>
                         <condition childId="a7f1-9585-c3f8-04bc" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="41e0-60fb-17d9-c427" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="0bdf-a96e-9e38-7779" type="decrement" value="1">
+                      <conditions>
+                        <condition childId="38bd-cc4b-5706-9b08" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="41e0-60fb-17d9-c427" shared="true" type="equalTo" value="1"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -15592,17 +15603,22 @@ Each JUMP PACK or TERMINATOR model takes the space of two other models and each 
           <modifierGroups>
             <modifierGroup>
               <modifierGroups>
-                <modifierGroup>
+                <modifierGroup type="and">
                   <comment>Movement</comment>
                   <modifiers>
-                    <modifier field="0bdf-a96e-9e38-7779" type="set" value="6&quot;">
+                    <modifier field="0bdf-a96e-9e38-7779" type="increment" value="1">
                       <conditions>
                         <condition childId="d64e-76c2-6608-1e7e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
                       </conditions>
                     </modifier>
-                    <modifier field="0bdf-a96e-9e38-7779" type="set" value="8&quot;">
+                    <modifier field="0bdf-a96e-9e38-7779" type="increment" value="2">
                       <conditions>
                         <condition childId="f964-4af3-79f7-c050" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="41e0-60fb-17d9-c427" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="0bdf-a96e-9e38-7779" type="decrement" value="1">
+                      <conditions>
+                        <condition childId="33b3-f2a3-9749-2f10" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
                       </conditions>
                     </modifier>
                   </modifiers>
