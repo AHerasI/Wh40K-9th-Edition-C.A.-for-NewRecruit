@@ -2909,6 +2909,9 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
             <formatRule name="New Format Rule" id="01b1-8363-ed8a-77d8" hidden="false" match="([0-9]+)" replace="$1&quot;" type="regex">
               <comment>Append SUFFIX</comment>
             </formatRule>
+            <formatRule name="New Format Rule" id="eb8e-1b59-2794-4cb2" hidden="false" match="([0-9]+)" replace="$1&quot;" type="regex">
+              <comment>Append SUFFIX 2</comment>
+            </formatRule>
           </formatRules>
         </characteristicType>
         <characteristicType name="WS" id="e7f0-1278-0250-df0c">
