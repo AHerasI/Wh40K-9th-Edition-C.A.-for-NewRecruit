@@ -9972,6 +9972,7 @@ At the start of your Command phase, you can select one of the following:
             <constraint id="4673-a797-93a1-58e7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
         </entryLink>
+        <entryLink name="Thermal jets" id="00d8-0d79-60f3-e5a2" collective="false" hidden="false" targetId="b2a4-d5a8-d217-27ca" type="selectionEntry"/>
         <entryLink name="Unit upgrades" id="f724-6a1d-6719-ea54" collective="false" hidden="false" import="true" targetId="867f-e3d9-541a-3498" type="selectionEntryGroup"/>
         <entryLink name="Reactive Armour System" id="b0a2-f395-224d-83ba" collective="false" hidden="true" import="true" targetId="bfaa-9426-8370-d92f" type="selectionEntry">
           <constraints>
@@ -10156,33 +10157,6 @@ At the start of your Command phase, you can select one of the following:
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">x2</characteristic>
                 <characteristic name="AP" typeId="75aa-a838-b675-6484">4</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="Thermal jets" id="b2a4-d5a8-d217-27ca" collective="false" hidden="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink name="Bomb Weapon" id="2039-a836-45a4-b7e4" hidden="false" primary="false" targetId="1528-91b6-dd4d-e036"/>
-          </categoryLinks>
-          <constraints>
-            <constraint id="1baa-a8da-fc94-d955" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-            <constraint id="931a-ca71-87da-3d13" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="Thermal jets" id="fc46-2949-be44-9fb2" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Bomb (1)</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D3</characteristic>
-                <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">4</characteristic>
-                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6+2</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
               </characteristics>
             </profile>
@@ -22256,6 +22230,7 @@ Until the end of the phase, add 1 to the Strength characteristic of models in th
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink name="Thermal jets" id="4219-715d-0a45-39dc" collective="false" hidden="false" import="true" targetId="b2a4-d5a8-d217-27ca" type="selectionEntry"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Kharybdis Chassis" id="0df2-03fb-486c-1b7f" hidden="false" targetId="2175-0b8f-cda3-525f" type="infoGroup"/>
@@ -22426,33 +22401,6 @@ Each POSSESSED model takes up the space of 2 models.</characteristic>
               </modifiers>
             </infoLink>
           </infoLinks>
-        </selectionEntry>
-        <selectionEntry name="Thermal jets" id="3865-79c6-f82a-b5a7" collective="false" hidden="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink name="Bomb Weapon" id="9e79-72ef-7b23-8d53" hidden="false" primary="false" targetId="1528-91b6-dd4d-e036"/>
-          </categoryLinks>
-          <constraints>
-            <constraint id="bc2e-1d8a-365d-f92b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-            <constraint id="e8de-4037-8f2f-1d41" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="Thermal jets" id="674f-a232-6f19-6bc4" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">1</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D3</characteristic>
-                <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">4</characteristic>
-                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6+2</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
         </selectionEntry>
         <selectionEntry name="Melta array" id="8cf1-bac9-3db9-fc08" collective="false" hidden="false" import="true" type="upgrade">
           <categoryLinks>
