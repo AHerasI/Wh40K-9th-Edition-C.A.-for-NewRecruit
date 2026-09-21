@@ -17476,6 +17476,46 @@ HAEMONCULUS</description>
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry name="Fellblade Battlecannon" id="4de3-15dc-4cc2-ba8d" collective="false" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Turret-mounted" id="4eb6-be0e-5971-6e74" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="ab50-91e7-69e5-3799" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+        <constraint id="d6cb-6aaf-bf47-f9fc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+      </constraints>
+      <costs>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="Pts" typeId="points" value="0"/>
+        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Variable weapon profile" id="d6be-405f-7ea7-622d" hidden="false" targetId="2dd5-c9f0-aa5a-818a" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="High explosive rounds" id="9e0f-115d-c0d2-1c70" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">72</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D6+6</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">7</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Vanquisher rounds" id="9ed6-b38a-2c65-06cc" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">72</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">14</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">5</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+6</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time a successful wound roll is made for an attack with this weapon, it inflicts 2 mortal wounds on the target in addition to any normal damage.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Warlord Traits (BRB)" id="d442-1f03-d9da-e77f" collective="false" hidden="false" import="true">
