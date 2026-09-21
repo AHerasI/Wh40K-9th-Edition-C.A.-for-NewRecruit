@@ -17494,7 +17494,7 @@ HAEMONCULUS</description>
         <infoLink name="Variable weapon profile" id="d6be-405f-7ea7-622d" hidden="false" targetId="2dd5-c9f0-aa5a-818a" type="rule"/>
       </infoLinks>
       <profiles>
-        <profile name="High explosive rounds" id="9e0f-115d-c0d2-1c70" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+        <profile name="Battlecannon, HE rounds" id="9e0f-115d-c0d2-1c70" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">72</characteristic>
             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D6+6</characteristic>
@@ -17504,7 +17504,7 @@ HAEMONCULUS</description>
             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Vanquisher rounds" id="9ed6-b38a-2c65-06cc" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+        <profile name="Battlecannon, Vanquisher rounds" id="9ed6-b38a-2c65-06cc" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">72</characteristic>
             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2</characteristic>
