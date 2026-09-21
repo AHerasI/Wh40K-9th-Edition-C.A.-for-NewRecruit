@@ -3533,7 +3533,7 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
       <profiles>
         <profile name="Fire Raptor [1] (9+ Wounds remaining)" id="c269-c0e8-b818-f478" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20-45</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20-45&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
@@ -3546,7 +3546,7 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         </profile>
         <profile name="Fire Raptor [2] (4-8 Wounds remaining)" id="cea6-6ea4-c0aa-b2db" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20-35</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20-35&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
@@ -3559,7 +3559,7 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         </profile>
         <profile name="Fire Raptor [3] (1-3 Wounds remaining)" id="37b1-8364-a70e-7d5b" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20-25</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20-25&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
