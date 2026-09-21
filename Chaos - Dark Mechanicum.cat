@@ -15632,6 +15632,15 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
       </costs>
       <entryLinks>
         <entryLink name="Unit upgrades" id="d8d7-9640-63d3-bfe6" collective="false" hidden="false" import="true" targetId="6800-6cfb-e5ef-59da" type="selectionEntryGroup"/>
+        <entryLink name="Twin Missile launcher" id="ce07-ce94-5280-92c3" collective="false" hidden="false" import="true" targetId="0627-01f6-427d-0f11" type="selectionEntry">
+          <constraints>
+            <constraint id="da3b-d76f-ba73-a36d" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="points" value="20"/>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="High-altitude Flyer" id="b618-24fd-c729-5efd" hidden="false" targetId="d06a-b840-4ef0-aa2f" type="profile"/>
