@@ -3576,7 +3576,7 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
       <profiles>
         <profile name="Stormeagle Gunship [1] (9+ Wounds remaining)" id="3a74-bd4c-d94c-c439" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20-45</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20-45&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
@@ -3589,7 +3589,7 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         </profile>
         <profile name="Stormeagle Gunship [2] (5-8 Wounds remaining)" id="9b7e-c3f8-3f29-c63b" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20-35</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20-35&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
@@ -3602,7 +3602,7 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         </profile>
         <profile name="Stormeagle Gunship [3] (1-4 Wounds remaining)" id="916e-7e77-2830-ccdf" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20-25</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20-25&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
