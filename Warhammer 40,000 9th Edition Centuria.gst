@@ -5524,7 +5524,7 @@ Its Move characteristic becomes 20&quot;, and it loses the Hard to Hit and Super
     </profile>
     <profile name="C. Beam cannon, Long range" id="c7e3-3ec3-e212-dc62" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48-72</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48-72&quot;</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D3</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">12</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">4</characteristic>
@@ -5534,7 +5534,7 @@ Its Move characteristic becomes 20&quot;, and it loses the Hard to Hit and Super
     </profile>
     <profile name="C. Beam cannon, Medium range" id="d3c2-5035-36cc-46bd" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24-48</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24-48&quot;</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D3</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">10</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
