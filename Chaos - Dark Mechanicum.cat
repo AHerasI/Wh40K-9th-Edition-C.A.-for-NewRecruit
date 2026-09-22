@@ -3187,15 +3187,15 @@ If the result is equal or lesser than the current Battle round, HERETEK CULT uni
           <profiles>
             <profile name="Vorax Battle Automata" id="33e5-0557-47c5-c78b" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
-                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
-                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
-                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
                 <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
                 <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6265,6 +6265,58 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
             </profile>
           </profiles>
         </selectionEntry>
+        <selectionEntry name="Skyhammer missile launcher" id="aaf6-698b-42c2-7e65" collective="false" hidden="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink name="Bolt Weapon" id="e678-b4dd-7897-84f5" hidden="false" primary="false" targetId="fe8c-9fa3-c71e-d8de"/>
+          </categoryLinks>
+          <constraints>
+            <constraint id="d94d-9a94-2a00-f696" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+            <constraint id="ca24-155c-7528-63c3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="Pts" typeId="points" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Launcher, Skyhammer missile" id="64bc-baea-df46-0e2e" hidden="false" targetId="b808-ff6d-2ba3-cd8a" type="profile">
+              <modifiers>
+                <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="increment" value="6">
+                  <conditions>
+                    <condition childId="2fb6-68a0-ab00-ab32" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry name="Twin Lascannon" id="94b1-fa6b-0de5-604f" collective="false" hidden="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink name="Laser Weapon" id="382d-83ec-6a1a-c816" hidden="false" primary="false" targetId="f74f-8bb9-7448-707c"/>
+          </categoryLinks>
+          <constraints>
+            <constraint id="0776-de8f-9cb0-2190" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
+            <constraint id="a677-712b-84ea-a815" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
+          </constraints>
+          <costs>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="Pts" typeId="points" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Twin Lascannon" id="8d76-54b7-8881-c92b" hidden="false" targetId="1662-54b9-46da-fefc" type="profile">
+              <modifiers>
+                <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="increment" value="6">
+                  <conditions>
+                    <condition childId="2fb6-68a0-ab00-ab32" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Thanatar Siege Automata" id="2f5e-baaa-724d-7f0b" collective="false" hidden="false" import="true" type="unit">
@@ -6329,41 +6381,41 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
                   <profiles>
                     <profile name="Thanatar Siege Automata [3] (1-4 Wounds remaining)" id="89f9-c21a-be13-ff99" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                       <characteristics>
-                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">4&quot;</characteristic>
-                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">4</characteristic>
+                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
                         <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
                         <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
                         <characteristic name="W" typeId="f330-5e6e-4110-0978">15</characteristic>
                         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
                         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                       </characteristics>
                     </profile>
                     <profile name="Thanatar Siege Automata [2] (5-7 Wounds remaining)" id="71eb-2afc-0275-5435" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                       <characteristics>
-                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
-                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2</characteristic>
+                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
                         <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
                         <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
                         <characteristic name="W" typeId="f330-5e6e-4110-0978">15</characteristic>
                         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3+1</characteristic>
                         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                       </characteristics>
                     </profile>
                     <profile name="Thanatar Siege Automata [1] (8+ Wounds remaining)" id="e343-e4a0-5323-a65b" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                       <characteristics>
-                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
-                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
-                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8</characteristic>
+                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2</characteristic>
+                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
                         <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
                         <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
                         <characteristic name="W" typeId="f330-5e6e-4110-0978">15</characteristic>
                         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
                         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -7305,15 +7357,15 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
       <profiles>
         <profile name="Tech-Priest Heretek" id="892f-1e18-e4c9-b4e2" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2+</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
             <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
             <characteristic name="W" typeId="f330-5e6e-4110-0978">5</characteristic>
             <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -7394,15 +7446,15 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
       <profiles>
         <profile name="Tech-Adept Heretek" id="2656-22e1-db90-a278" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
             <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
             <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
             <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -7462,15 +7514,15 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
       <profiles>
         <profile name="Tech-Priest Heretek on Abeyant" id="d755-a211-60ee-9707" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2+</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
             <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
             <characteristic name="W" typeId="f330-5e6e-4110-0978">5</characteristic>
             <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -13820,18 +13872,8 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink name="Twin Lascannon" id="9da5-387c-948a-d240" collective="false" hidden="false" import="true" targetId="ee18-b1cd-6b60-464d" type="selectionEntry">
-          <constraints>
-            <constraint id="3784-a2ee-c292-6d02" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
-            <constraint id="4af2-5fdb-fe3f-a84b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
-          </constraints>
-        </entryLink>
-        <entryLink name="Skyhammer missile launcher" id="503a-51ae-0640-c5d9" collective="false" hidden="false" import="true" targetId="dc9d-4795-4788-d6e6" type="selectionEntry">
-          <constraints>
-            <constraint id="e739-d5d3-9e7d-da59" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-            <constraint id="5820-e640-dda9-92dc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-          </constraints>
-        </entryLink>
+        <entryLink name="Twin Lascannon" id="1a5b-afab-0942-9fc5" collective="false" hidden="false" targetId="94b1-fa6b-0de5-604f" type="selectionEntry"/>
+        <entryLink name="Skyhammer missile launcher" id="b4f8-07cd-1f06-47f5" collective="false" hidden="false" targetId="aaf6-698b-42c2-7e65" type="selectionEntry"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="High-altitude Flyer" id="d83a-5986-2591-c96d" hidden="false" targetId="d06a-b840-4ef0-aa2f" type="profile"/>
@@ -18971,15 +19013,15 @@ At the start of your Command phase, you can select one of the following:
       <profiles>
         <profile name="Venomcrawler" id="3104-fa75-ce30-61b8" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
             <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
             <characteristic name="W" typeId="f330-5e6e-4110-0978">9</characteristic>
             <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">6</characteristic>
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
           </characteristics>
         </profile>
         <profile name="Reservoir of Daemonic Energy [Aura]" id="4aa1-bf54-b4c9-9f2b" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -19006,7 +19048,7 @@ At the start of your Command phase, you can select one of the following:
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
               </characteristics>
@@ -19030,10 +19072,10 @@ At the start of your Command phase, you can select one of the following:
           <profiles>
             <profile name="Excruciator cannon" id="def4-9d24-ced8-d96b" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 3</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
               </characteristics>
