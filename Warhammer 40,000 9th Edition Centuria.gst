@@ -6453,7 +6453,7 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 32</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
@@ -17099,24 +17099,6 @@ HAEMONCULUS</description>
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry name="Warpflamer" id="26d5-27de-a7dd-5057" collective="true" hidden="false" import="true" type="upgrade">
-      <categoryLinks>
-        <categoryLink name="Torrent" id="f4ad-f215-6669-ca6f" hidden="false" primary="false" targetId="795f-a8d3-dc18-cb2e"/>
-      </categoryLinks>
-      <constraints>
-        <constraint id="c519-e141-0229-625d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-        <constraint id="a004-d2a2-5158-3add" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-        <cost name="Pts" typeId="points" value="0"/>
-        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Warpflamer" id="f0c3-b2a2-8edb-2b84" hidden="false" targetId="45b0-e608-a5df-9eb2" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry name="Twin Heavy Warpflamer" id="a45d-f448-9064-5ebf" collective="false" hidden="false" import="true" type="upgrade">
       <comment>a45d-f448-9064-5ebf</comment>
       <costs>
@@ -17538,6 +17520,30 @@ HAEMONCULUS</description>
             <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
             <characteristic name="AP" typeId="75aa-a838-b675-6484">4</characteristic>
             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6+2</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Titanic feet" id="83bf-e7dd-505c-1ded" collective="true" hidden="false" import="true" type="upgrade">
+      <constraints>
+        <constraint id="61b6-d787-8618-6ae3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+        <constraint id="a04c-00b9-a0b1-ed6e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+      </constraints>
+      <costs>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="Pts" typeId="points" value="0"/>
+        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Titanic feet" id="588b-7990-9a0e-c8cf" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
           </characteristics>
         </profile>
