@@ -2090,6 +2090,20 @@ Each model can only be awakened once per turn.</characteristic>
 If the selected unit is not at Starting Strength, but all it&apos;s remaining models have all it&apos;s wounds remaining, one of the selected unit&apos;s destroyed models is returned to its unit with its full wounds remaining.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Cultist" id="6bdc-5d45-fcf2-2e48" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+      <comment>6bdc-5d45-fcf2-2e48</comment>
+      <characteristics>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
+        <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+        <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
+        <characteristic name="W" typeId="f330-5e6e-4110-0978">1</characteristic>
+        <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+        <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">5</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
     <selectionEntry name=" Stratagem List" id="4ba3-6529-8369-201f" collective="false" hidden="false" import="true" type="upgrade">
@@ -6317,6 +6331,29 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
             </infoLink>
           </infoLinks>
         </selectionEntry>
+        <selectionEntry name="Heavy Warpflamer" id="1552-8356-5db6-582c" collective="false" hidden="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink name="Torrent" id="06bd-adcc-034a-fa49" hidden="false" primary="false" targetId="795f-a8d3-dc18-cb2e"/>
+          </categoryLinks>
+          <costs>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="Pts" typeId="points" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Heavy Warpflamer" id="660c-9bd2-29a8-19d5" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault D6</characteristic>
+                <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Thanatar Siege Automata" id="2f5e-baaa-724d-7f0b" collective="false" hidden="false" import="true" type="unit">
@@ -6567,15 +6604,15 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
           <profiles>
             <profile name="Domitar Automata" id="03e7-5107-7e37-25cf" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
-                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
-                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
-                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
                 <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
                 <characteristic name="W" typeId="f330-5e6e-4110-0978">7</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6657,6 +6694,9 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
                     <cost name="Pts" typeId="points" value="0"/>
                     <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                   </costs>
+                  <infoLinks>
+                    <infoLink name="Off-hand weapon" id="756d-b4f1-6bbb-f19f" hidden="false" targetId="e14b-37da-f8e9-1752" type="profile"/>
+                  </infoLinks>
                   <selectionEntries>
                     <selectionEntry name="Graviton hammer" id="45bd-9a44-8cff-0678" hidden="false" import="true" type="upgrade">
                       <categoryLinks>
@@ -6672,16 +6712,13 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
                         <cost name="Pts" typeId="points" value="0"/>
                         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                       </costs>
-                      <infoLinks>
-                        <infoLink name="Graviton hammer" id="756d-b4f1-6bbb-f19f" hidden="false" targetId="913c-0a40-02bf-33fc" type="profile"/>
-                      </infoLinks>
                       <profiles>
                         <profile name="Graviton hammer" id="dc01-45ef-ee5b-388a" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                           <characteristics>
                             <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">+4</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
                             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack made with this weapon is allocated to a model with a Save characteristic of 3+ or better, that attack has a Damage characteristic of 3.</characteristic>
                           </characteristics>
@@ -6730,41 +6767,41 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
           <profiles>
             <profile name="Castellax Battle Automata [3] (1-3 Wounds remaining)" id="fe32-6469-1b4e-1407" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
-                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">4&quot;</characteristic>
-                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">4</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
                 <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
                 <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
               </characteristics>
             </profile>
             <profile name="Castellax Battle Automata [2] (4-7 Wounds remaining)" id="222c-6abe-4fbf-35fe" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
-                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
-                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
                 <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
                 <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
               </characteristics>
             </profile>
             <profile name="Castellax Battle Automata [1] (8+ Wounds remaining)" id="fa34-31aa-a34c-7b62" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
-                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
-                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
-                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
                 <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
                 <characteristic name="W" typeId="f330-5e6e-4110-0978">13</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6828,7 +6865,7 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
                     <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                     <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                     <characteristic name="S" typeId="59b1-319e-ec13-d466">x2</characteristic>
-                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
                     <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it makes 2 additional attacks with this weapon.</characteristic>
                   </characteristics>
@@ -6856,7 +6893,7 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
                     <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                     <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                     <characteristic name="S" typeId="59b1-319e-ec13-d466">x2</characteristic>
-                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
                     <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it makes 1 additional attack with this weapon.</characteristic>
                   </characteristics>
@@ -7133,15 +7170,15 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
               <profiles>
                 <profile name="Bellator Automata" id="70d3-6b7f-3cb3-f307" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
-                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
                     <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7588,15 +7625,15 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
           <profiles>
             <profile name="Ironstrider" id="ebf5-c043-602f-ebe1" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
-                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
-                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
                 <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">6</characteristic>
                 <characteristic name="W" typeId="f330-5e6e-4110-0978">6</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10333,40 +10370,40 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
             <profile name="Valkyrie Gunship [1] (8+ Wounds remaining)" id="0a88-54a2-fd6b-38d0" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20-50&quot;</characteristic>
-                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
-                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
                 <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
                 <characteristic name="W" typeId="f330-5e6e-4110-0978">14</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
-                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
               </characteristics>
             </profile>
             <profile name="Valkyrie Gunship [2] (4-7 Wounds remaining)" id="aebe-cff9-98f8-0930" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20-40&quot;</characteristic>
-                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
-                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
                 <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
                 <characteristic name="W" typeId="f330-5e6e-4110-0978">14</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
-                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
               </characteristics>
             </profile>
             <profile name="Valkyrie Gunship [3] (1-3 Wounds remaining)" id="2921-00d4-a4d3-bddb" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20-30&quot;</characteristic>
-                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
-                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5</characteristic>
                 <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
                 <characteristic name="W" typeId="f330-5e6e-4110-0978">14</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
-                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10738,15 +10775,15 @@ Each SERVITOR takes up the space of 2 models</characteristic>
       <profiles>
         <profile name="Biologist-Adept Heretek" id="15f6-c865-68b1-efe7" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
             <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
             <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
             <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
           </characteristics>
           <modifierGroups>
             <modifierGroup>
@@ -11214,15 +11251,15 @@ Each SERVITOR takes up the space of 2 models</characteristic>
               <profiles>
                 <profile name="Initiate" id="2b4c-6c8e-a708-a1d4" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
-                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
                     <characteristic name="W" typeId="f330-5e6e-4110-0978">1</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5</characteristic>
                   </characteristics>
                   <modifierGroups>
                     <modifierGroup>
@@ -11238,7 +11275,7 @@ Each SERVITOR takes up the space of 2 models</characteristic>
                             </conditionGroup>
                           </conditionGroups>
                         </modifier>
-                        <modifier field="0bdf-a96e-9e38-7779" type="set" value="12&quot;">
+                        <modifier field="0bdf-a96e-9e38-7779" type="set" value="12">
                           <conditions>
                             <condition childId="c8df-b450-80d2-de24" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="cb35-45a7-24eb-92ce" shared="true" type="equalTo" value="1"/>
                           </conditions>
@@ -11358,7 +11395,7 @@ Each SERVITOR takes up the space of 2 models</characteristic>
                             <condition childId="ef3e-4335-83b7-be20" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="cb35-45a7-24eb-92ce" shared="true" type="equalTo" value="1"/>
                           </conditions>
                         </modifier>
-                        <modifier field="0bdf-a96e-9e38-7779" type="set" value="7&quot;">
+                        <modifier field="0bdf-a96e-9e38-7779" type="set" value="7">
                           <conditionGroups>
                             <conditionGroup type="and">
                               <conditions>
@@ -11646,15 +11683,15 @@ Each SERVITOR takes up the space of 2 models</characteristic>
           <profiles>
             <profile name="Neophite" id="199a-efcb-2d77-012a" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
-                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
-                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
                 <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
                 <characteristic name="W" typeId="f330-5e6e-4110-0978">1</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
-                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5</characteristic>
               </characteristics>
               <modifierGroups>
                 <modifierGroup>
@@ -11670,7 +11707,7 @@ Each SERVITOR takes up the space of 2 models</characteristic>
                         </conditionGroup>
                       </conditionGroups>
                     </modifier>
-                    <modifier field="0bdf-a96e-9e38-7779" type="set" value="7&quot;">
+                    <modifier field="0bdf-a96e-9e38-7779" type="set" value="7">
                       <conditions>
                         <condition childId="218a-73f3-1eb8-a07b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="7555-4628-963f-b965" shared="true" type="equalTo" value="1"/>
                       </conditions>
@@ -12086,7 +12123,7 @@ Each SERVITOR takes up the space of 2 models</characteristic>
           <profiles>
             <profile name="Soulburner pistol" id="1988-0a98-eace-873d" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol 2</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">1</characteristic>
                 <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
@@ -13679,7 +13716,7 @@ Each SERVITOR takes up the space of 2 models</characteristic>
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">+2</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
               </characteristics>
@@ -13704,10 +13741,10 @@ Each SERVITOR takes up the space of 2 models</characteristic>
               <profiles>
                 <profile name="Impaler harpoon" id="cde1-e24f-1d27-d9a8" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                   <characteristics>
-                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18&quot;</characteristic>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18</characteristic>
                     <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 1</characteristic>
                     <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
-                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
                     <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time a model (excluding TITANIC or models that can Fly) loses any wounds as a result of an attack made with this weapon but is not destroyed, it is impaled until the start of your next Shooting phase. While a model is impaled, its Move characteristic is halved and each time a charge roll is made for the bearer, if that model’s unit is a target of that charge, add 2 to that charge roll.</characteristic>
                   </characteristics>
@@ -13815,15 +13852,15 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
           <profiles>
             <profile name="Chaos Spawn" id="0400-8c29-35b5-3e8f" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
-                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
-                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4</characteristic>
                 <characteristic name="BS" typeId="381b-eb28-74c3-df5f">-</characteristic>
                 <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
                 <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2D3</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13845,7 +13882,7 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
                     <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                     <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                     <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
-                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                     <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
                   </characteristics>
@@ -14052,15 +14089,15 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
       <profiles>
         <profile name="Decimator [1] (12+ Wounds remaining)" id="3205-095d-c97d-8c0e" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">9&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">9</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
             <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
             <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
             <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">5</characteristic>
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
           </characteristics>
         </profile>
         <profile name="Monstrous Resilience" id="ab67-5873-db48-8b72" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -14075,28 +14112,28 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
         </profile>
         <profile name="Decimator [2] (4-6 Wounds remaining)" id="0a06-f366-cec9-f981" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
             <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
             <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
             <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">5</characteristic>
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
           </characteristics>
         </profile>
         <profile name="Decimator [3] (1-3 Wounds remaining)" id="64c3-0f1a-7a0c-0463" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
             <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
             <characteristic name="W" typeId="f330-5e6e-4110-0978">12</characteristic>
             <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">5</characteristic>
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -14171,6 +14208,8 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
             <selectionEntry name="Decimator claw" id="fdea-cd94-402a-1934" collective="false" hidden="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink name="Power Weapon" id="a76e-5b64-66ce-4c3b" hidden="false" primary="false" targetId="aee6-5482-e38a-381d"/>
+                <categoryLink name="Plague weapon" id="0fe8-3952-1185-9427" hidden="false" primary="false" targetId="56a9-eae2-7298-9256"/>
+                <categoryLink name="Flame Weapon" id="9fb9-8a2a-becf-f8b3" hidden="false" primary="false" targetId="dbad-8265-94be-9c47"/>
               </categoryLinks>
               <costs>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -14178,13 +14217,57 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
                 <cost name="Pts" typeId="points" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Heavy Flamer" id="9cad-2968-5531-0004" hidden="false" targetId="2608-8425-4f4f-7f41" type="profile">
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition childId="eb2b-ba4e-a494-b321" childName="Tzeentch" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="3e1f-d185-8b7f-10d5" shared="true" type="equalTo" value="1"/>
+                            <condition childId="46b1-c36b-4ce7-9bef" childName="Slaanesh" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="3e1f-d185-8b7f-10d5" shared="true" type="equalTo" value="1"/>
+                            <condition childId="b84a-3241-ae79-e144" childName="Nurgle" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="3e1f-d185-8b7f-10d5" shared="true" type="equalTo" value="1"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Doom Siren" id="b879-2f59-ccde-7aae" hidden="false" targetId="3d56-eb60-a55a-d154" type="profile">
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true">
+                      <conditions>
+                        <condition childId="46b1-c36b-4ce7-9bef" childName="Slaanesh" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="3e1f-d185-8b7f-10d5" shared="true" type="equalTo" value="0"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Heavy Warpflamer" id="d501-28fa-ca85-d682" hidden="false" targetId="660c-9bd2-29a8-19d5" type="profile">
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true">
+                      <conditions>
+                        <condition childId="eb2b-ba4e-a494-b321" childName="Tzeentch" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="3e1f-d185-8b7f-10d5" shared="true" type="equalTo" value="0"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Plague spewer" id="f7c5-1e61-82c5-e787" hidden="false" targetId="d734-b7e7-ccae-1bce" type="profile">
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true">
+                      <conditions>
+                        <condition childId="b84a-3241-ae79-e144" childName="Nurgle" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="3e1f-d185-8b7f-10d5" shared="true" type="equalTo" value="0"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
               <profiles>
                 <profile name="Decimator claw" id="8921-44bd-bac7-a129" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                     <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                     <characteristic name="S" typeId="59b1-319e-ec13-d466">x2</characteristic>
-                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
                     <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
                   </characteristics>
@@ -14280,41 +14363,41 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
       <profiles>
         <profile name="Defiler [1] (8-14 Wounds remaining)" id="4025-1872-9e4c-db09" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
             <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
             <characteristic name="W" typeId="f330-5e6e-4110-0978">14</characteristic>
             <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">5</characteristic>
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
           </characteristics>
         </profile>
         <profile name="Defiler [2] (4-7 Wounds remaining)" id="c57a-8c92-edd8-edb0" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
             <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
             <characteristic name="W" typeId="f330-5e6e-4110-0978">14</characteristic>
             <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">5</characteristic>
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
           </characteristics>
         </profile>
         <profile name="Defiler [3] (1-3 Wounds remaining)" id="fe6b-5e6c-e32c-1dc6" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">4&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">4</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
             <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
             <characteristic name="W" typeId="f330-5e6e-4110-0978">14</characteristic>
             <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">5</characteristic>
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -14336,7 +14419,7 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">x2</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
               </characteristics>
@@ -14463,7 +14546,7 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
                     <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                     <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                     <characteristic name="S" typeId="59b1-319e-ec13-d466">+4</characteristic>
-                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                     <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it makes 3 additional attacks with this weapon.</characteristic>
                   </characteristics>
@@ -14765,20 +14848,20 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
                   <profiles>
                     <profile name="Twin Heavy Linear Accelerator - Standard" id="604d-a1b5-b25e-fc42" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                       <characteristics>
-                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">120&quot;</characteristic>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">120</characteristic>
                         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2</characteristic>
                         <characteristic name="S" typeId="59b1-319e-ec13-d466">14</characteristic>
-                        <characteristic name="AP" typeId="75aa-a838-b675-6484">-6</characteristic>
+                        <characteristic name="AP" typeId="75aa-a838-b675-6484">6</characteristic>
                         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6+3</characteristic>
                         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, invulnerable saving throws cannot be made against that attack. Each time a successful wound roll is made for an attack with this weapon, the target suffers 3 mortal wounds in addition to any other damage.</characteristic>
                       </characteristics>
                     </profile>
                     <profile name="Twin Heavy Linear Accelerator - Submunitions" id="b073-fae9-28a9-2486" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                       <characteristics>
-                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">120&quot;</characteristic>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">120</characteristic>
                         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D3+6</characteristic>
                         <characteristic name="S" typeId="59b1-319e-ec13-d466">7</characteristic>
-                        <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                        <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
                       </characteristics>
@@ -16937,7 +17020,7 @@ Each model can only be corrupted once per turn.</characteristic>
                     <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                     <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                     <characteristic name="S" typeId="59b1-319e-ec13-d466">+2</characteristic>
-                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                     <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, if the bearer made a charge move this turn, add 1 to that attack’s wound roll.</characteristic>
                   </characteristics>
@@ -17401,15 +17484,15 @@ At the start of your Command phase, you can select one of the following:
               <profiles>
                 <profile name="Mutant" id="8b8e-0e7d-7005-a41e" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
-                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
                     <characteristic name="W" typeId="f330-5e6e-4110-0978">1</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -17468,15 +17551,15 @@ At the start of your Command phase, you can select one of the following:
                   <profiles>
                     <profile name="Torment" id="38a1-f5e4-e406-62ee" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                       <characteristics>
-                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
-                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4</characteristic>
+                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
                         <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
                         <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
                         <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
                         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2D3</characteristic>
                         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
-                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
+                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -18860,15 +18943,15 @@ At the start of your Command phase, you can select one of the following:
               <profiles>
                 <profile name="Chaos Beastmen" id="714a-3302-2e17-48b5" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
-                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
-                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
                     <characteristic name="W" typeId="f330-5e6e-4110-0978">1</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -18902,7 +18985,7 @@ At the start of your Command phase, you can select one of the following:
                   <profiles>
                     <profile name="Javelin" id="4156-dd4f-eeee-292d" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                       <characteristics>
-                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
                         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 1</characteristic>
                         <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
                         <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
@@ -19439,15 +19522,15 @@ At the start of your Command phase, you can select one of the following:
           <profiles>
             <profile name="Chaos Ambull" id="ff12-1aa5-5b90-6bb6" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
-                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">6+</characteristic>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">6</characteristic>
                 <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">6</characteristic>
                 <characteristic name="W" typeId="f330-5e6e-4110-0978">7</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
-                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
               </characteristics>
             </profile>
             <profile name="Rad-Maggot Symbiosis" id="cc80-55df-58a1-bc0a" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -19474,7 +19557,7 @@ At the start of your Command phase, you can select one of the following:
                     <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                     <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                     <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
-                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                     <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
                   </characteristics>
@@ -19579,15 +19662,15 @@ At the start of your Command phase, you can select one of the following:
               <profiles>
                 <profile name="Chaos Mutated Ogryn" id="3761-2c41-4eb3-eb4f" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
-                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
                     <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5</characteristic>
                   </characteristics>
                   <modifiers>
                     <modifier field="c0df-df94-abd7-e8d3" type="set" value="3+">
@@ -19661,15 +19744,15 @@ At the start of your Command phase, you can select one of the following:
               <profiles>
                 <profile name="Chaos Ogryn" id="7468-d920-e311-e8f5" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
-                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
                     <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5</characteristic>
                   </characteristics>
                   <modifiers>
                     <modifier field="c0df-df94-abd7-e8d3" type="set" value="3+">
@@ -19700,7 +19783,7 @@ At the start of your Command phase, you can select one of the following:
                             <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
                             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">When the bearer fights, it makes 2 additional attacks with this weapon.</characteristic>
                           </characteristics>
@@ -19762,7 +19845,7 @@ At the start of your Command phase, you can select one of the following:
                             <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
                             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Increment the Damage characteristic of the attack to 2 against enemy units whose Toughness characteristic is 3 or less.</characteristic>
                           </characteristics>
@@ -20048,15 +20131,15 @@ At the start of your Command phase, you can select one of the following:
               <profiles>
                 <profile name="Chaos Helamite raider" id="c460-f724-5d72-b7c9" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
-                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
-                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
                     <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -20187,15 +20270,15 @@ At the start of your Command phase, you can select one of the following:
           <profiles>
             <profile name="Chaos Arthromite" id="0969-b780-4174-6ade" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
-                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
-                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
                 <characteristic name="BS" typeId="381b-eb28-74c3-df5f">-</characteristic>
                 <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
                 <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
-                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20217,7 +20300,7 @@ At the start of your Command phase, you can select one of the following:
                     <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                     <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                     <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
-                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                     <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">On an unmodified Wound roll of 6, that attack has a Damage characteristic of 4.</characteristic>
                   </characteristics>
@@ -20284,41 +20367,41 @@ At the start of your Command phase, you can select one of the following:
       <profiles>
         <profile name="Chaos Great Ambull [3] (1-3 Wounds remaining)" id="6d5e-a6e2-3310-1a71" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
             <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
             <characteristic name="W" typeId="f330-5e6e-4110-0978">15</characteristic>
             <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">6</characteristic>
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4</characteristic>
           </characteristics>
         </profile>
         <profile name="Chaos Great Ambull [1] (7+ Wounds remaining)" id="45bc-3a4c-2f84-bb31" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
             <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
             <characteristic name="W" typeId="f330-5e6e-4110-0978">15</characteristic>
             <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4</characteristic>
           </characteristics>
         </profile>
         <profile name="Chaos Great Ambull [2] (3-6 Wounds remaining)" id="19b3-c55c-9a93-b5ec" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
             <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
             <characteristic name="W" typeId="f330-5e6e-4110-0978">15</characteristic>
             <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">5</characteristic>
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -20340,7 +20423,7 @@ At the start of your Command phase, you can select one of the following:
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">+5</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">4</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
               </characteristics>
@@ -20350,7 +20433,7 @@ At the start of your Command phase, you can select one of the following:
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon profile, make 2 hit rolls instead of 1.</characteristic>
               </characteristics>
@@ -20374,10 +20457,10 @@ At the start of your Command phase, you can select one of the following:
           <profiles>
             <profile name="Acidic spit" id="56f4-f0c3-2388-cec3" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">6&quot;</characteristic>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">6</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 2D3</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
               </characteristics>
@@ -20481,15 +20564,15 @@ At the start of your Command phase, you can select one of the following:
           <profiles>
             <profile name="Chaos Bonewyrm" id="70d4-4e28-6021-6e24" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
-                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">4&quot;</characteristic>
-                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">4</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4</characteristic>
                 <characteristic name="BS" typeId="381b-eb28-74c3-df5f">-</characteristic>
                 <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
                 <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
-                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20608,15 +20691,15 @@ At the start of your Command phase, you can select one of the following:
               <profiles>
                 <profile name="Cultist brute w/Gunner" id="c944-135c-e1bc-2041" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
-                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
-                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
                     <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -20634,15 +20717,15 @@ At the start of your Command phase, you can select one of the following:
               <profiles>
                 <profile name="Cultist brute" id="e910-c457-283f-9e8d" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
-                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
-                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
                     <characteristic name="BS" typeId="381b-eb28-74c3-df5f">-</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
                     <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -20752,15 +20835,15 @@ At the start of your Command phase, you can select one of the following:
               <profiles>
                 <profile name="Cultist Ridge walker" id="0666-1891-4925-c325" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
-                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
-                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
                     <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -20857,15 +20940,15 @@ At the start of your Command phase, you can select one of the following:
               <profiles>
                 <profile name="Cultist Cutter Jetbike" id="cfd3-7eb0-f1ad-7823" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
-                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
-                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
                     <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -21075,15 +21158,15 @@ At the start of your Command phase, you can select one of the following:
           <profiles>
             <profile name="Chaos Millisaur" id="3521-7c95-67df-3655" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
-                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
-                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4</characteristic>
                 <characteristic name="BS" typeId="381b-eb28-74c3-df5f">-</characteristic>
                 <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
                 <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
-                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -21115,278 +21198,6 @@ At the start of your Command phase, you can select one of the following:
           </selectionEntries>
         </selectionEntry>
       </selectionEntries>
-    </selectionEntry>
-    <selectionEntry name="Chaos Cultist Mob" id="ba61-28af-fb5a-c56e" collective="false" hidden="false" import="true" type="unit">
-      <categoryLinks>
-        <categoryLink name="Infantry" id="8ef3-86c1-973c-adfa" hidden="false" primary="false" targetId="3d52-fccf-10c0-3fae"/>
-        <categoryLink name="Faction: Chaos" id="af94-a523-6413-50b9" hidden="false" primary="false" targetId="5cf1-acf2-ca3b-c2e5"/>
-        <categoryLink name="Faction: Chaos Servants" id="c0b6-a89a-f330-ae78" hidden="false" primary="false" targetId="39bd-1989-42e4-056c"/>
-        <categoryLink name="Core" id="d41a-a133-04ef-f9f0" hidden="false" primary="false" targetId="08f1-d244-eb44-7e01"/>
-      </categoryLinks>
-      <costs>
-        <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
-        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-        <cost name="Pts" typeId="points" value="15"/>
-        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-      </costs>
-      <entryLinks>
-        <entryLink name="Unit upgrades" id="12bb-e6b2-ce2c-2879" collective="false" hidden="false" import="true" targetId="6800-6cfb-e5ef-59da" type="selectionEntryGroup"/>
-      </entryLinks>
-      <modifierGroups>
-        <modifierGroup>
-          <comment>Chaos Mark Keyword</comment>
-          <modifiers>
-            <modifier field="category" type="add" value="51da-3457-1b10-cb14">
-              <conditions>
-                <condition childId="5a27-7576-1fb6-d1e1" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="self" shared="true" type="equalTo" value="1"/>
-              </conditions>
-            </modifier>
-            <modifier field="category" type="add" value="4097-5f68-1097-1f16">
-              <conditions>
-                <condition childId="eb2b-ba4e-a494-b321" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="self" shared="true" type="equalTo" value="1"/>
-              </conditions>
-            </modifier>
-            <modifier field="category" type="add" value="2226-f82a-fe58-178d">
-              <conditions>
-                <condition childId="b84a-3241-ae79-e144" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="self" shared="true" type="equalTo" value="1"/>
-              </conditions>
-            </modifier>
-            <modifier field="category" type="add" value="11a0-1562-512f-d63b">
-              <conditions>
-                <condition childId="1c95-d662-6047-4a41" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="self" shared="true" type="equalTo" value="1"/>
-              </conditions>
-            </modifier>
-            <modifier field="category" type="add" value="5b82-0ba7-db61-82db">
-              <conditions>
-                <condition childId="46b1-c36b-4ce7-9bef" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="self" shared="true" type="equalTo" value="1"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
-      <selectionEntries>
-        <selectionEntry name="Cultist leader" id="8b89-9380-39b9-a020" collective="false" hidden="false" import="true" type="model">
-          <constraints>
-            <constraint id="2047-08a3-b494-6560" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-            <constraint id="d44f-1b27-8120-8c7c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="Cultist leader" id="f710-2353-5559-3a0a" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-              <characteristics>
-                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
-                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
-                <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
-                <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
-                <characteristic name="W" typeId="f330-5e6e-4110-0978">1</characteristic>
-                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
-                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
-                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Servant Melee weapon" id="7f47-3505-f8c4-b411" collective="false" defaultSelectionEntryId="1cea-f81e-192a-27ba" hidden="false" import="true">
-              <constraints>
-                <constraint id="ea6d-5a6f-44a8-8441" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-                <constraint id="78eb-eed2-dccf-29ff" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-              </constraints>
-              <entryLinks>
-                <entryLink name="Brutal Blunt Weapon" id="0fcc-ea49-f343-35b2" collective="false" hidden="false" import="true" targetId="bfbe-de91-6f03-e116" type="selectionEntry"/>
-                <entryLink name="Chainsword" id="1cea-f81e-192a-27ba" collective="false" hidden="false" import="true" targetId="fe5f-0cd5-5f0d-abc4" type="selectionEntry"/>
-                <entryLink name="Brutal Assault Weapon" id="5107-ecb0-c865-b67e" collective="false" hidden="false" import="true" targetId="fca3-e82b-cb92-6c2c" type="selectionEntry"/>
-              </entryLinks>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Servant Ranged weapon" id="38ad-bb4e-7d32-895f" collective="false" defaultSelectionEntryId="bbab-8fba-5352-f44c" hidden="false" import="true">
-              <constraints>
-                <constraint id="d500-5545-7d81-f19e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-                <constraint id="b42f-3881-0b69-cedc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-              </constraints>
-              <entryLinks>
-                <entryLink name="Laspistol" id="b3d5-2da2-5c00-8b7d" collective="false" hidden="false" import="true" targetId="c10b-e1a4-c913-ae15" type="selectionEntry"/>
-                <entryLink name="Autopistol" id="bbab-8fba-5352-f44c" collective="false" hidden="false" import="true" targetId="0507-a97d-4f7f-83b4" type="selectionEntry"/>
-                <entryLink name="Autogun" id="1d68-3b52-7c3e-4061" collective="false" hidden="false" import="true" targetId="5752-d165-5e03-d38c" type="selectionEntry"/>
-                <entryLink name="Bolt pistol" id="7524-fad6-aeef-70f6" collective="false" hidden="false" import="true" targetId="0334-f487-8229-0c1a" type="selectionEntry">
-                  <costs>
-                    <cost name="pts" typeId="points" value="5"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </selectionEntry>
-        <selectionEntry name="Greater mob" id="8da4-27a9-9455-0534" hidden="false" import="true" type="upgrade">
-          <constraints>
-            <constraint id="76cf-d229-6be6-5c5a" field="selections" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="points" value="15"/>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Cultist w/Special weapon" id="b78a-fc9b-753c-8069" hidden="false" import="true" targetId="f644-4dbd-acd0-27e2" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Cultist Mob" id="0998-6ba0-429a-d767" collective="false" defaultSelectionEntryId="d508-1aca-174c-368d" hidden="false" import="true">
-          <constraints>
-            <constraint id="be46-af70-3552-6698" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="9"/>
-            <constraint id="933a-e6fa-eab9-de1a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="9"/>
-          </constraints>
-          <modifierGroups>
-            <modifierGroup type="and">
-              <conditions>
-                <condition childId="8da4-27a9-9455-0534" childName="Greater mob" field="selections" scope="ba61-28af-fb5a-c56e" shared="true" type="equalTo" value="1"/>
-              </conditions>
-              <modifiers>
-                <modifier field="be46-af70-3552-6698" type="set" value="18"/>
-                <modifier field="933a-e6fa-eab9-de1a" type="set" value="18"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
-          <selectionEntries>
-            <selectionEntry name="Cultist w/Autogun" id="d508-1aca-174c-368d" collective="false" hidden="false" import="true" type="model">
-              <constraints>
-                <constraint id="b853-09a8-ae3e-4736" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="19"/>
-              </constraints>
-              <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink name="Autogun" id="5738-6cc5-f8c6-14f9" collective="false" hidden="false" import="true" targetId="cd5b-8203-fa2d-6d29" type="selectionEntry"/>
-              </entryLinks>
-              <profiles>
-                <profile name="Cultist" id="7253-36d0-eae4-e06e" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-                  <comment>6bdc-5d45-fcf2-2e48</comment>
-                  <characteristics>
-                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
-                    <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
-                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">1</characteristic>
-                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
-                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">5</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry name="Cultist w/Assault weapon" id="1e10-14b6-b455-9cd7" collective="false" hidden="false" import="true" type="model">
-              <constraints>
-                <constraint id="19fe-d309-0b90-803d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="19"/>
-              </constraints>
-              <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink name="Autopistol" id="5b5a-0644-c9fa-123d" collective="false" hidden="false" import="true" targetId="2940-1984-b9fa-0b34" type="selectionEntry"/>
-                <entryLink name="Brutal Assault Weapon" id="6857-f6bd-bf33-35aa" collective="false" hidden="false" import="true" targetId="36ed-a36f-bd49-dfe8" type="selectionEntry"/>
-              </entryLinks>
-              <infoLinks>
-                <infoLink name="Cultist" id="cca7-fe9c-e731-0f55" hidden="false" targetId="7253-36d0-eae4-e06e" type="profile"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry name="Cultist w/Blunt weapon" id="b1b1-9f82-fb01-0ad7" collective="false" hidden="false" import="true" type="model">
-              <constraints>
-                <constraint id="c81f-5e8a-21f6-a69c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="10"/>
-              </constraints>
-              <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink name="Autopistol" id="58d7-5740-30c1-8943" collective="false" hidden="false" import="true" targetId="2940-1984-b9fa-0b34" type="selectionEntry"/>
-                <entryLink name="Brutal Blunt Weapon" id="8c78-d022-0af3-89a2" collective="false" hidden="false" import="true" targetId="081c-569c-a2f8-b7df" type="selectionEntry"/>
-              </entryLinks>
-              <infoLinks>
-                <infoLink name="Cultist" id="af62-365c-685c-9207" hidden="false" targetId="7253-36d0-eae4-e06e" type="profile"/>
-              </infoLinks>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Cultist w/Special weapon" id="f644-4dbd-acd0-27e2" collective="false" defaultSelectionEntryId="5a90-af94-2782-4066" hidden="false" import="true">
-              <constraints>
-                <constraint id="fb50-0bc8-e3bd-b296" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                <constraint id="934c-cbb5-73bb-83c5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-              </constraints>
-              <modifiers>
-                <modifier field="934c-cbb5-73bb-83c5" type="set" value="-1"/>
-              </modifiers>
-              <selectionEntries>
-                <selectionEntry name="Cultist w/Flamer" id="5ed6-73d9-3757-3f27" collective="false" hidden="false" import="true" type="model">
-                  <constraints>
-                    <constraint id="59a5-189c-a4f8-d9b4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-                  </constraints>
-                  <costs>
-                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                    <cost name="Pts" typeId="points" value="0"/>
-                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-                  </costs>
-                  <entryLinks>
-                    <entryLink name="Flamer" id="da8f-6cbb-748e-98e8" collective="false" hidden="false" import="true" targetId="3a80-8721-b691-52c8" type="selectionEntry"/>
-                  </entryLinks>
-                  <infoLinks>
-                    <infoLink name="Cultist" id="f660-93cd-a1d5-d9f3" hidden="false" targetId="7253-36d0-eae4-e06e" type="profile"/>
-                  </infoLinks>
-                </selectionEntry>
-                <selectionEntry name="Cultist w/GL" id="5866-ea88-df92-9fba" collective="false" hidden="false" import="true" type="model">
-                  <constraints>
-                    <constraint id="c381-796f-4a71-e898" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-                  </constraints>
-                  <costs>
-                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                    <cost name="Pts" typeId="points" value="0"/>
-                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-                  </costs>
-                  <entryLinks>
-                    <entryLink name="Grenade launcher" id="4ad2-d176-9129-7a91" collective="false" hidden="false" import="true" targetId="442e-e001-76de-d1d4" type="selectionEntry"/>
-                  </entryLinks>
-                  <infoLinks>
-                    <infoLink name="Cultist" id="c287-97e7-371f-8832" hidden="false" targetId="7253-36d0-eae4-e06e" type="profile"/>
-                  </infoLinks>
-                </selectionEntry>
-                <selectionEntry name="Cultist w/Heavy stubber" id="5a90-af94-2782-4066" collective="false" hidden="false" import="true" type="model">
-                  <constraints>
-                    <constraint id="31c9-4cbe-81af-136d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-                  </constraints>
-                  <costs>
-                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                    <cost name="Pts" typeId="points" value="0"/>
-                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-                  </costs>
-                  <entryLinks>
-                    <entryLink name="Heavy stubber" id="caa3-db33-4db3-e34e" collective="false" hidden="false" import="true" targetId="2800-dfcf-4a01-cfdf" type="selectionEntry"/>
-                  </entryLinks>
-                  <infoLinks>
-                    <infoLink name="Cultist" id="7997-6f8a-5d5c-875c" hidden="false" targetId="7253-36d0-eae4-e06e" type="profile"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry name="Chaos Daemonhost pack" id="ff26-3eb9-995d-a9a5" collective="false" hidden="false" import="true" type="unit">
       <categoryLinks>
@@ -21477,15 +21288,15 @@ At the start of your Command phase, you can select one of the following:
               <profiles>
                 <profile name="Daemonhost" id="8d12-5ecb-8565-0d27" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
-                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
                     <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -21541,15 +21352,15 @@ At the start of your Command phase, you can select one of the following:
               <profiles>
                 <profile name="Greater Daemonhost" id="bb32-4e7e-df0b-ec34" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
-                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
                     <characteristic name="W" typeId="f330-5e6e-4110-0978">9</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -21585,17 +21396,17 @@ At the start of your Command phase, you can select one of the following:
                             <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
                             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
                           </characteristics>
                         </profile>
                         <profile name="Corrosive spit" id="e438-1917-b8d0-fde5" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                           <characteristics>
-                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">6&quot;</characteristic>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">6</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 2D6</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
                             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
                           </characteristics>
@@ -21616,17 +21427,17 @@ At the start of your Command phase, you can select one of the following:
                             <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
                             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it makes 3 additional attacks with this weapon.</characteristic>
                           </characteristics>
                         </profile>
                         <profile name="Warpbolts" id="a721-d7ac-0a69-4563" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                           <characteristics>
-                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 8</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
                           </characteristics>
@@ -21647,17 +21458,17 @@ At the start of your Command phase, you can select one of the following:
                             <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">+3</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
                             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
                             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
                           </characteristics>
                         </profile>
                         <profile name="Bloodboil" id="6136-de53-cec0-3b4c" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                           <characteristics>
-                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault D6+2</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
                             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent.</characteristic>
                           </characteristics>
@@ -21678,17 +21489,17 @@ At the start of your Command phase, you can select one of the following:
                             <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
                             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon against units without INORGANIC, VEHICLE or TITANIC Keywords, a wound roll of 3+ is always successful.</characteristic>
                           </characteristics>
                         </profile>
                         <profile name="Diseased breath" id="a571-3673-3dd3-0d82" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                           <characteristics>
-                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">7&quot;</characteristic>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">7</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault D3</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Splash. Torrent.</characteristic>
                           </characteristics>
@@ -21710,17 +21521,17 @@ At the start of your Command phase, you can select one of the following:
                             <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">If a CHARACTER is destroyed by this weapon, you can add a Chaos Spawn to your army. Set up the Chaos Spawn within 6&quot; of Magnus and more than 1&quot; from any enemy models.</characteristic>
                           </characteristics>
                         </profile>
                         <profile name="Warpflame" id="c624-fad8-b69b-5317" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                           <characteristics>
-                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 9</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent.</characteristic>
                           </characteristics>
@@ -21741,17 +21552,17 @@ At the start of your Command phase, you can select one of the following:
                             <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
                             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it makes 6 additional attacks with this weapon.</characteristic>
                           </characteristics>
                         </profile>
                         <profile name="Psychic whip" id="bf87-c59e-6bee-4346" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                           <characteristics>
-                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 6</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
                             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent.</characteristic>
                           </characteristics>
@@ -21844,15 +21655,15 @@ At the start of your Command phase, you can select one of the following:
       <profiles>
         <profile name="Flesh Sculptor" id="5cb0-43c2-3fb1-9151" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2+</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
             <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
             <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
             <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
           </characteristics>
         </profile>
         <profile name="Psy-leash device" id="e8d1-e201-8b88-6b01" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -21904,10 +21715,10 @@ At the start of your Command phase, you can select one of the following:
           <profiles>
             <profile name="Psy-sonic devastator" id="eb67-8abd-8f13-c4e0" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">9&quot;</characteristic>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">9</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 2</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Sonic weapon. Torrent.</characteristic>
               </characteristics>
@@ -22121,43 +21932,43 @@ At the start of your Command phase, you can select one of the following:
         <infoLink name="Additional armour plating" id="78cd-5a04-dbae-8bad" hidden="false" targetId="5b3f-8e7c-f7ae-0f7c" type="profile"/>
       </infoLinks>
       <profiles>
-        <profile name="Cargo [1] (6+ Wounds remaining)" id="99f1-4548-be76-717c" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+        <profile name="Ridgehauler [1] (6+ Wounds remaining)" id="99f1-4548-be76-717c" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
             <characteristic name="T" typeId="9c9f-9774-a358-3a39">6</characteristic>
             <characteristic name="W" typeId="f330-5e6e-4110-0978">10</characteristic>
             <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
           </characteristics>
         </profile>
-        <profile name="Cargo [2] (3-5 Wounds remaining)" id="cb36-55df-7b3a-9297" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+        <profile name="Ridgehauler [2] (3-5 Wounds remaining)" id="cb36-55df-7b3a-9297" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
             <characteristic name="T" typeId="9c9f-9774-a358-3a39">6</characteristic>
             <characteristic name="W" typeId="f330-5e6e-4110-0978">10</characteristic>
             <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
           </characteristics>
         </profile>
-        <profile name="Cargo [3] (1-3 Wounds remaining)" id="98ef-39f1-45b0-d0d9" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+        <profile name="Ridgehauler [3] (1-3 Wounds remaining)" id="98ef-39f1-45b0-d0d9" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
             <characteristic name="T" typeId="9c9f-9774-a358-3a39">6</characteristic>
             <characteristic name="W" typeId="f330-5e6e-4110-0978">10</characteristic>
             <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
           </characteristics>
         </profile>
         <profile name="Cargo Ridgehauler" id="f8c6-e3c5-e448-d13b" hidden="false" typeId="b3a8-0452-7436-44d1" typeName="Transport">
@@ -22255,15 +22066,15 @@ At the start of your Command phase, you can select one of the following:
         </profile>
         <profile name="Flesh Sculptor on Helamite" id="4960-cbec-5c61-938b" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2+</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
             <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
             <characteristic name="W" typeId="f330-5e6e-4110-0978">6</characteristic>
             <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">5</characteristic>
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -22663,6 +22474,233 @@ At the start of your Command phase, you can select one of the following:
               </profiles>
             </selectionEntry>
           </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry name="Chaos Cultist Mob" id="ba61-28af-fb5a-c56e" collective="false" hidden="true" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Infantry" id="8ab7-a49a-b688-c8ab" hidden="false" primary="false" targetId="3d52-fccf-10c0-3fae"/>
+        <categoryLink name="Faction: Chaos" id="d59f-805c-e7b2-d92e" hidden="false" primary="false" targetId="5cf1-acf2-ca3b-c2e5"/>
+        <categoryLink name="Faction: Chaos Servants" id="10c1-d2d4-c459-a842" hidden="false" primary="false" targetId="39bd-1989-42e4-056c"/>
+        <categoryLink name="Cultists" id="61ef-69a5-7662-d95f" hidden="false" primary="false" targetId="40ff-8241-e4a3-8dc7"/>
+        <categoryLink name="Core" id="0aee-65c8-45ab-89c6" hidden="false" primary="false" targetId="08f1-d244-eb44-7e01"/>
+      </categoryLinks>
+      <costs>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="Pts" typeId="points" value="15"/>
+        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink name="Unit upgrades" id="999f-34bb-7982-d01e" collective="false" hidden="false" import="true" targetId="6800-6cfb-e5ef-59da" type="selectionEntryGroup"/>
+      </entryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition childId="model" childName="model" field="selections" scope="ba61-28af-fb5a-c56e" shared="true" type="atLeast" value="11"/>
+          </conditions>
+          <modifiers>
+            <modifier field="name" type="set" value="Cultist Greater mob"/>
+            <modifier field="e356-c769-5920-6e14" type="set" value="2"/>
+            <modifier field="points" type="set" value="30"/>
+          </modifiers>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Chaos Mark Keyword</comment>
+          <modifiers>
+            <modifier field="category" type="add" value="51da-3457-1b10-cb14">
+              <conditions>
+                <condition childId="5a27-7576-1fb6-d1e1" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="self" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="category" type="add" value="4097-5f68-1097-1f16">
+              <conditions>
+                <condition childId="eb2b-ba4e-a494-b321" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="self" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="category" type="add" value="2226-f82a-fe58-178d">
+              <conditions>
+                <condition childId="b84a-3241-ae79-e144" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="self" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="category" type="add" value="11a0-1562-512f-d63b">
+              <conditions>
+                <condition childId="1c95-d662-6047-4a41" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="self" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="category" type="add" value="5b82-0ba7-db61-82db">
+              <conditions>
+                <condition childId="46b1-c36b-4ce7-9bef" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="self" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <selectionEntries>
+        <selectionEntry name="Cultist leader" id="4142-cd1b-4e87-61fb" collective="false" hidden="false" import="true" type="model">
+          <categoryLinks>
+            <categoryLink name="Ø25mm" id="9f03-7487-9d57-30ab" hidden="false" primary="false" targetId="a9eb-ffb1-e9f2-2b60"/>
+          </categoryLinks>
+          <constraints>
+            <constraint id="b921-f5f3-0c0f-2599" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+            <constraint id="9788-3c66-3d52-921a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="Pts" typeId="points" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink name="Servant Melee weapon" id="d0e4-c7a7-c805-6090" collective="false" hidden="false" import="true" targetId="20c3-b8be-430b-debf" type="selectionEntryGroup">
+              <entryLinks>
+                <entryLink name="Chainsword" id="75b3-ffb8-8852-3a26" collective="false" hidden="false" import="true" targetId="fe5f-0cd5-5f0d-abc4" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink name="Servant Ranged weapon" id="15d1-9dab-0a31-7033" collective="false" hidden="false" import="true" targetId="38d4-a58d-e650-114f" type="selectionEntryGroup">
+              <entryLinks>
+                <entryLink name="Bolt pistol" id="cfee-73f2-c5fc-0fd9" collective="false" hidden="false" import="true" targetId="0334-f487-8229-0c1a" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="points" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </entryLink>
+          </entryLinks>
+          <profiles>
+            <profile name="Cultist leader" id="0ef7-fb97-d493-c444" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">1</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Cultist Mob" id="73a4-c9bc-6c83-0eef" collective="false" defaultSelectionEntryId="c599-f138-1513-ee84" hidden="false" import="true">
+          <constraints>
+            <constraint id="cb51-32c1-30f1-1ac8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="19"/>
+            <constraint id="d1f6-379a-ac6c-2098" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="9"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry name="Cultist" id="9f90-6f43-69e3-f7a3" collective="false" hidden="false" import="true" type="model">
+              <categoryLinks>
+                <categoryLink name="Ø25mm" id="a0c2-6533-a68f-614c" hidden="false" primary="false" targetId="a9eb-ffb1-e9f2-2b60"/>
+              </categoryLinks>
+              <constraints>
+                <constraint id="0eea-8ad7-e0f1-da9f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="19"/>
+              </constraints>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Cultist" id="cc3a-ae2b-e5cf-3c56" hidden="false" targetId="6bdc-5d45-fcf2-2e48" type="profile"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Servant Melee weapon" id="20c3-b8be-430b-debf" collective="false" defaultSelectionEntryId="8de3-dc4e-5095-263e" hidden="false" import="true">
+                  <constraints>
+                    <constraint id="a2cb-3bed-4743-db47" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+                    <constraint id="1c7a-66d6-6573-8013" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink name="Brutal Blunt Weapon" id="8de3-dc4e-5095-263e" collective="false" hidden="false" import="true" targetId="bfbe-de91-6f03-e116" type="selectionEntry"/>
+                    <entryLink name="Brutal Assault Weapon" id="fd2b-29d6-f265-a837" collective="false" hidden="false" import="true" targetId="fca3-e82b-cb92-6c2c" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Servant Ranged weapon" id="38d4-a58d-e650-114f" collective="false" defaultSelectionEntryId="6a57-e113-f865-054b" hidden="false" import="true">
+                  <constraints>
+                    <constraint id="3cb7-8feb-0bdd-393e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+                    <constraint id="6cef-914d-3469-c202" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink name="Laspistol" id="1ee8-1973-b073-76f7" collective="false" hidden="false" import="true" targetId="c10b-e1a4-c913-ae15" type="selectionEntry"/>
+                    <entryLink name="Autopistol" id="6a57-e113-f865-054b" collective="false" hidden="false" import="true" targetId="0507-a97d-4f7f-83b4" type="selectionEntry"/>
+                    <entryLink name="Autogun" id="9b8d-1400-a73c-49f0" collective="false" hidden="false" import="true" targetId="5752-d165-5e03-d38c" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Cultist w/Special weapon" id="dd3c-d0dd-6bbb-58e6" collective="false" defaultSelectionEntryId="481a-3348-abf8-e533" hidden="false" import="true">
+              <constraints>
+                <constraint id="42e7-f36a-d039-0d1b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+                <constraint id="2a7f-7c7a-f28c-01f3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+              </constraints>
+              <modifiers>
+                <modifier field="2a7f-7c7a-f28c-01f3" type="set" value="0"/>
+                <modifier field="42e7-f36a-d039-0d1b" type="set" value="2">
+                  <conditions>
+                    <condition childId="model" childName="model" field="selections" scope="ba61-28af-fb5a-c56e" shared="true" type="atLeast" value="11"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <selectionEntries>
+                <selectionEntry name="Cultist w/Flamer" id="3a84-5f14-a372-be9d" collective="false" hidden="false" import="true" type="model">
+                  <categoryLinks>
+                    <categoryLink name="Ø25mm" id="9105-55d1-6e47-5d2f" hidden="false" primary="false" targetId="a9eb-ffb1-e9f2-2b60"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="Pts" typeId="points" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink name="Flamer" id="cfe8-7458-a4af-bb2e" collective="false" hidden="false" import="true" targetId="3a80-8721-b691-52c8" type="selectionEntry"/>
+                  </entryLinks>
+                  <infoLinks>
+                    <infoLink name="Cultist" id="ae88-64b8-f40d-6905" hidden="false" targetId="6bdc-5d45-fcf2-2e48" type="profile"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry name="Cultist w/GL" id="0a08-fd1c-b05e-19e4" collective="false" hidden="false" import="true" type="model">
+                  <categoryLinks>
+                    <categoryLink name="Ø25mm" id="7903-ea88-251b-2121" hidden="false" primary="false" targetId="a9eb-ffb1-e9f2-2b60"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="Pts" typeId="points" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink name="Grenade launcher" id="656c-48b4-2998-ae1d" collective="false" hidden="false" import="true" targetId="442e-e001-76de-d1d4" type="selectionEntry"/>
+                  </entryLinks>
+                  <infoLinks>
+                    <infoLink name="Cultist" id="6dd0-bb89-f912-8cb6" hidden="false" targetId="6bdc-5d45-fcf2-2e48" type="profile"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry name="Cultist w/Heavy stubber" id="961c-d505-5704-a40e" collective="false" hidden="false" import="true" type="model">
+                  <categoryLinks>
+                    <categoryLink name="Ø25mm" id="5418-facd-09a0-ca22" hidden="false" primary="false" targetId="a9eb-ffb1-e9f2-2b60"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="Pts" typeId="points" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink name="Heavy stubber" id="2093-ce75-71de-9819" collective="false" hidden="false" import="true" targetId="2800-dfcf-4a01-cfdf" type="selectionEntry"/>
+                  </entryLinks>
+                  <infoLinks>
+                    <infoLink name="Cultist" id="ef3b-a4c5-6dd3-dcce" hidden="false" targetId="6bdc-5d45-fcf2-2e48" type="profile"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
