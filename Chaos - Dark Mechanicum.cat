@@ -8751,15 +8751,15 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
           <profiles>
             <profile name="Scyllax Servitor" id="c0da-c99d-0900-b930" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
-                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
-                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
                 <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
                 <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
-                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8796,7 +8796,7 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
                     <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                     <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                     <characteristic name="S" typeId="59b1-319e-ec13-d466">+2</characteristic>
-                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                     <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it does one additional attack with this weapon and only one attack can be done with this weapon. Each time an attack is made with this weapon, an unmodified hit roll of 6 scores 2 additional hits.</characteristic>
                   </characteristics>
@@ -18114,6 +18114,13 @@ At the start of your Command phase, you can select one of the following:
                       </modifiers>
                     </modifierGroup>
                   </modifierGroups>
+                  <modifiers>
+                    <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="increment" value="6">
+                      <conditions>
+                        <condition childId="2fb6-68a0-ab00-ab32" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </infoLink>
               </infoLinks>
             </selectionEntry>
@@ -18134,6 +18141,13 @@ At the start of your Command phase, you can select one of the following:
                       </modifiers>
                     </modifierGroup>
                   </modifierGroups>
+                  <modifiers>
+                    <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="increment" value="6">
+                      <conditions>
+                        <condition childId="2fb6-68a0-ab00-ab32" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </infoLink>
               </infoLinks>
             </selectionEntry>
