@@ -6484,6 +6484,11 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
 - Difficult Ground</characteristic>
       </characteristics>
     </profile>
+    <profile name="Unwieldy" id="486d-c3e0-2080-7ecd" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model cannot select targets without TITANIC or AIRCRAFT keywords within 36&quot; for it&apos;s Twin Vulcan Mega-Bolter weapon.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedRules>
     <rule name="Explodes 6+ (6&quot;)" id="3541-94a7-a138-358b" hidden="false">
