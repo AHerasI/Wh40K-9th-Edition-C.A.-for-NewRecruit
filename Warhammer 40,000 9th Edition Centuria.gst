@@ -2901,7 +2901,13 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
     <profileType name="Psychic Power" id="ae70-4738-0161-bec0">
       <characteristicTypes>
         <characteristicType name="Warp Charge" id="5ffd-b800-c317-532a"/>
-        <characteristicType name="Range" id="fd64-cbc4-94de-24cc"/>
+        <characteristicType name="Range" id="fd64-cbc4-94de-24cc">
+          <formatRules>
+            <formatRule name="New Format Rule" id="08c3-8f09-831f-c0c0" hidden="false" match="([0-9]+)" replace="$1&quot;" type="regex">
+              <comment>Append SUFFIX</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
         <characteristicType name="Details" id="ad96-dfa4-b4ed-656d"/>
       </characteristicTypes>
     </profileType>
