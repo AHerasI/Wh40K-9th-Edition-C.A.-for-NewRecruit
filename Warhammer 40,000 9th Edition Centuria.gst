@@ -3539,7 +3539,7 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
       <profiles>
         <profile name="Fire Raptor [1] (9+ Wounds remaining)" id="c269-c0e8-b818-f478" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20-45&quot;</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20-45</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
@@ -3552,7 +3552,7 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         </profile>
         <profile name="Fire Raptor [2] (4-8 Wounds remaining)" id="cea6-6ea4-c0aa-b2db" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20-35&quot;</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20-35</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
@@ -3565,7 +3565,7 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         </profile>
         <profile name="Fire Raptor [3] (1-3 Wounds remaining)" id="37b1-8364-a70e-7d5b" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20-25&quot;</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20-25</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
@@ -3582,7 +3582,7 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
       <profiles>
         <profile name="Stormeagle Gunship [1] (9+ Wounds remaining)" id="3a74-bd4c-d94c-c439" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20-45&quot;</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20-45</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
@@ -3595,7 +3595,7 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         </profile>
         <profile name="Stormeagle Gunship [2] (5-8 Wounds remaining)" id="9b7e-c3f8-3f29-c63b" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20-35&quot;</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20-35</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
@@ -3608,7 +3608,7 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         </profile>
         <profile name="Stormeagle Gunship [3] (1-4 Wounds remaining)" id="916e-7e77-2830-ccdf" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20-25&quot;</characteristic>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">20-25</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
@@ -5530,7 +5530,7 @@ Its Move characteristic becomes 20&quot;, and it loses the Hard to Hit and Super
     </profile>
     <profile name="C. Beam cannon, Long range" id="c7e3-3ec3-e212-dc62" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48-72&quot;</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48-72</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D3</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">12</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">4</characteristic>
@@ -5540,7 +5540,7 @@ Its Move characteristic becomes 20&quot;, and it loses the Hard to Hit and Super
     </profile>
     <profile name="C. Beam cannon, Medium range" id="d3c2-5035-36cc-46bd" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24-48&quot;</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24-48</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D3</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">10</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
@@ -6471,7 +6471,7 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
     </profile>
     <profile name="C. Beam, Long range" id="ed24-63db-0ddf-dac2" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24-48&quot;</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24-48</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D3</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
@@ -11812,7 +11812,7 @@ Each Multi-Purpose Reactive Armour packcage can be used once per battle.</descri
           <profiles>
             <profile name="Servo-Skull Probe" id="b338-6e56-be5b-ca27" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
-                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
                 <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
                 <characteristic name="S" typeId="2218-aa3c-265f-2939">1</characteristic>
@@ -18220,10 +18220,10 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                               <profiles>
                                 <profile name="Twin Long-barrelled Autocannon" id="c3cc-0112-c43d-b0fe" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                                   <characteristics>
-                                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">72&quot;</characteristic>
+                                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">72</characteristic>
                                     <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 4</characteristic>
                                     <characteristic name="S" typeId="59b1-319e-ec13-d466">7</characteristic>
-                                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                                    <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
                                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                                     <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
                                   </characteristics>
@@ -20855,7 +20855,7 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                           <profiles>
                             <profile name="Electrobane grenades" id="556a-b0eb-0022-54aa" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                               <characteristics>
-                                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">6&quot;</characteristic>
+                                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">6</characteristic>
                                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Grenade 1</characteristic>
                                 <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
                                 <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
