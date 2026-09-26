@@ -4787,7 +4787,7 @@ Enemy models cannot target a model in this unit with ranged attacks unless they 
     <profile name="Smite" id="5821-6c45-8572-7e0e" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
       <characteristics>
         <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">5</characteristic>
-        <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
+        <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18</characteristic>
         <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Witchfire: Smite has a warp charge value of 5. If manifested, the closest visible enemy unit within 18&quot; of the psyker suffers D3 mortal wounds. If the result of the Psychic test was more than 10 the target suffers D6 mortal wounds instead.</characteristic>
       </characteristics>
     </profile>
@@ -11819,14 +11819,14 @@ Each Multi-Purpose Reactive Armour packcage can be used once per battle.</descri
             <profile name="Servo-Skull Probe" id="b338-6e56-be5b-ca27" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12</characteristic>
-                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
-                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5</characteristic>
                 <characteristic name="S" typeId="2218-aa3c-265f-2939">1</characteristic>
                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">2</characteristic>
                 <characteristic name="W" typeId="f330-5e6e-4110-0978">1</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
-                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -18011,7 +18011,7 @@ During the Set-up of this model, you can remove as many scenographic elements as
                             <characteristic name="W" typeId="f330-5e6e-4110-0978">24</characteristic>
                             <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -18039,39 +18039,39 @@ During the Set-up of this model, you can remove as many scenographic elements as
                               <characteristics>
                                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
-                                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
                                 <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
                                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">10</characteristic>
                                 <characteristic name="W" typeId="f330-5e6e-4110-0978">24</characteristic>
                                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                               </characteristics>
                             </profile>
                             <profile name="Gate Tower Section [2] (7-12 Wounds Remaining)" id="0acd-e56f-653d-e721" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                               <characteristics>
                                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
-                                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5</characteristic>
                                 <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
                                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">10</characteristic>
                                 <characteristic name="W" typeId="f330-5e6e-4110-0978">24</characteristic>
                                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                               </characteristics>
                             </profile>
                             <profile name="Gate Tower Section [3] (1-6 Wounds Remaining)" id="f4a8-8d49-2984-9f23" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                               <characteristics>
                                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
-                                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">6+</characteristic>
+                                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">6</characteristic>
                                 <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
                                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">10</characteristic>
                                 <characteristic name="W" typeId="f330-5e6e-4110-0978">24</characteristic>
                                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                               </characteristics>
                             </profile>
                           </profiles>
@@ -18153,7 +18153,7 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                             <characteristic name="W" typeId="f330-5e6e-4110-0978">24</characteristic>
                             <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
-                            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -18281,7 +18281,7 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                 <characteristic name="W" typeId="f330-5e6e-4110-0978">20</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
-                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
               </characteristics>
             </profile>
             <profile name="Projected Void Shields [Aura]" id="1154-b160-18ec-136f" hidden="false" page="69" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -18895,13 +18895,13 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
               <characteristics>
                 <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
-                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
                 <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
                 <characteristic name="W" typeId="f330-5e6e-4110-0978">15</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">-</characteristic>
-                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -22164,7 +22164,7 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
       <profiles>
         <profile name="Scouring" id="5ae6-d920-cfd1-a9a0" hidden="true" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
-            <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">12&quot;</characteristic>
+            <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">12</characteristic>
             <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">6</characteristic>
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Malediction: Scourging has a warp charge value of 6. If manifested, select one enemy unit within 12&quot; of this PSYKER.
 - Until the start of your next Psychic phase, subtract 1 from the Attacks characteristic of models in that enemy unit (to a minimum of 1).
@@ -22195,7 +22195,7 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
         <profile name="Warding incantation" id="76cd-04b2-6899-6175" hidden="true" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
-            <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">12&quot;</characteristic>
+            <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">12</characteristic>
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Blessing: Warding Incantation has a warp charge value of 6. If manifested, select one friendly IMPERIUM INFANTRY or IMPERIUM BIKER unit within 12&quot; of this PSYKER. Until the start of your next Psychic phase, models in that unit have a 5+ invulnerable save.</characteristic>
           </characteristics>
           <modifiers>
@@ -22222,7 +22222,7 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
             <profile name="Psychic fortitude" id="d044-891d-b744-8d9d" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
               <characteristics>
                 <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">4</characteristic>
-                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">12&quot;</characteristic>
+                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">12</characteristic>
                 <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Blessing: Psychic Fortitude has a warp charge value of 4. If manifested, select one friendly IMPERIUM unit within 12&quot; of this PSYKER. Until the start of your next Psychic phase, when a Morale test is taken for that unit, do not roll the dice; it is automatically passed.</characteristic>
               </characteristics>
             </profile>
@@ -22242,7 +22242,7 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
             <profile name="Terrify" id="ddfb-bda3-e0d7-ae9f" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
               <characteristics>
                 <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
-                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
+                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18</characteristic>
                 <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Malediction: Terrify has a warp charge value of 6. If manifested, select one enemy unit within 18&quot; of and visible to this PSYKER. Until the start of your next Psychic phase:
 - Subtract 1 from the Leadership characteristic of models in that unit.
 - That unit cannot fire Overwatch.</characteristic>
@@ -22264,7 +22264,7 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
             <profile name="Dominate" id="63ee-8db2-2511-17fd" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
               <characteristics>
                 <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
-                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">12&quot;</characteristic>
+                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">12</characteristic>
                 <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Malediction: Dominate has a warp charge value of 6. If manifested, select one enemy model without INORGANIC, VEHICLE or TITANIC Keywords within 12&quot; of this PSYKER and roll 2D6. If the total is equal to or greater than that enemy model’s Leadership characteristic, that enemy model can immediately shoot with one weapon it is equipped with as if it were your Shooting phase, or make one attack as if it were the Fight phase. In either case, treat that enemy model as if it is a separate unit that is part of your army while shooting or making that melee attack.</characteristic>
               </characteristics>
             </profile>
@@ -22284,7 +22284,7 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
             <profile name="Mental interrogation" id="ca10-3bb9-5818-4ce3" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
               <characteristics>
                 <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
-                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">12&quot;</characteristic>
+                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">12</characteristic>
                 <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Malediction: Mental Interrogation has a warp charge value of 6. If manifested, select one enemy CHARACTER model without INORGANIC Keyword, and within 12&quot; of and visible to this PSYKER.
 - Until the start of your next Psychic phase, when resolving an attack made by that enemy model, subtract 1 from the hit roll.
 - If your army is Battle-forged roll, 2D6: if the result is equal to or greater than that enemy model’s Leadership characteristic, you gain 1 Command point.</characteristic>
@@ -22306,7 +22306,7 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
             <profile name="Psychic pursuit" id="4bd4-980a-7a37-e690" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
               <characteristics>
                 <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">7</characteristic>
-                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
+                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18</characteristic>
                 <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Blessing: Psychic Pursuit has a warp charge value of 7. If manifested, select one enemy CHARACTER unit that only contains models with a Wounds characteristic of 9 or less and is within 18&quot; of and visible to this PSYKER. Then, select one friendly IMPERIUM INFANTRY unit within 6&quot; of this PSYKER. Until the end of your next Shooting phase, each time you select a target for a ranged weapon a model in that friendly IMPERIUM INFANTRY unit is making an attack with, you can ignore the Look Out, Sir rule if you select that enemy CHARACTER unit as the target.</characteristic>
               </characteristics>
             </profile>
@@ -22326,7 +22326,7 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
             <profile name="Castigation" id="5c72-58be-f1de-2c64" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
               <characteristics>
                 <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
-                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
+                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18</characteristic>
                 <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Details: Witchfire: Castigation has a warp charge value of 6. If manifested, select one enemy unit within 18&quot; of and visible to this PSYKER and roll 3D6: if the total exceeds the lowest Leadership characteristic in that enemy unit, that enemy unit suffers D3 mortal wounds.</characteristic>
               </characteristics>
             </profile>
