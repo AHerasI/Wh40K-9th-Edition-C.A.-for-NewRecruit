@@ -2855,7 +2855,7 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
     </forceEntry>
   </forceEntries>
   <profileTypes>
-    <profileType name="Weapon" id="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profileType name="Weapon" id="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" kind="weapon">
       <characteristicTypes>
         <characteristicType name="Range" id="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">
           <formatRules>
@@ -2880,17 +2880,17 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
         <characteristicType name="Abilities" id="837d-5e63-aeb7-1410"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Abilities" id="72c5eafc-75bf-4ed9-b425-78009f1efe82">
+    <profileType name="Abilities" id="72c5eafc-75bf-4ed9-b425-78009f1efe82" kind="ability">
       <characteristicTypes>
         <characteristicType name="Description" id="21befb24-fc85-4f52-a745-64b2e48f8228"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Transport" id="b3a8-0452-7436-44d1">
+    <profileType name="Transport" id="b3a8-0452-7436-44d1" kind="ability">
       <characteristicTypes>
-        <characteristicType name="Capacity" id="15aa-1916-a38b-d223"/>
+        <characteristicType name="Capacity" id="15aa-1916-a38b-d223" kind="longText"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Psyker" id="bc97-dea9-9e88-bb7d">
+    <profileType name="Psyker" id="bc97-dea9-9e88-bb7d" kind="model">
       <characteristicTypes>
         <characteristicType name="Cast" id="5afb-9914-904b-d3b3"/>
         <characteristicType name="Deny" id="b5ac-9c20-5d5a-6f9b"/>
@@ -2898,7 +2898,7 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
         <characteristicType name="Other" id="c2e2-f115-0003-5d7b"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Psychic Power" id="ae70-4738-0161-bec0">
+    <profileType name="Psychic Power" id="ae70-4738-0161-bec0" kind="spell">
       <characteristicTypes>
         <characteristicType name="Warp Charge" id="5ffd-b800-c317-532a"/>
         <characteristicType name="Range" id="fd64-cbc4-94de-24cc">
@@ -2911,7 +2911,7 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
         <characteristicType name="Details" id="ad96-dfa4-b4ed-656d"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Model" id="800f-21d0-4387-c943">
+    <profileType name="Model" id="800f-21d0-4387-c943" kind="model">
       <characteristicTypes>
         <characteristicType name="M" id="0bdf-a96e-9e38-7779">
           <formatRules>
