@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue name="Aeldari - Aeldari " id="660d-ebea-6c82-200b" authorContact="Centuria Astartes Discord" authorName="A. Heras" authorUrl="Centuria Astartes Discord" battleScribeVersion="2.03" gameSystemId="5b78-3a13-0882-b019" gameSystemRevision="4" library="false" revision="2" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <comment>characteristics:-</comment>
   <readme>Inspired from the original Warhammer 40,000 9th Edition database, created by BSData Developers, @WH40k Data Dev, from https://www.bsdata.net/contact.
 
 Additional reference data obtained from Wahapedia, https://wahapedia.ru/</readme>
@@ -589,6 +590,7 @@ Additional reference data obtained from Wahapedia, https://wahapedia.ru/</readme
                     <conditionGroup type="or">
                       <conditions>
                         <condition childId="d481-3eff-79e5-857a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="instanceOf" value="0"/>
+                        <condition childId="d481-3eff-79e5-857a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="ancestor" shared="true" type="instanceOf" value="0"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -2811,6 +2813,11 @@ Additional reference data obtained from Wahapedia, https://wahapedia.ru/</readme
     <profile name="Ghosthelm" id="0848-2063-9afb-d93d" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
       <characteristics>
         <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model never suffers Perils of the Warp.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Insensible to pain" id="1393-4660-fa4d-3b28" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a model in this unit would lose a wound, roll one D6: on a 5+, that wound is not lost. In case of having a similar ability, add 1 to said roll.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -20168,6 +20175,9 @@ Remove this model from the battlefield. In the Reinforcements step of one of you
         <cost name="Pts" typeId="points" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Insensible to pain" id="31e2-ee32-4c57-ccb4" hidden="false" targetId="1393-4660-fa4d-3b28" type="profile"/>
+      </infoLinks>
       <modifierGroups>
         <modifierGroup>
           <comment>Faction Keyword</comment>
@@ -22273,6 +22283,9 @@ From that point onwards, each operates independently and is treated as a separat
         <cost name="Pts" typeId="points" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Insensible to pain" id="fc3b-f7d1-c0b5-58f6" hidden="false" targetId="1393-4660-fa4d-3b28" type="profile"/>
+      </infoLinks>
       <modifierGroups>
         <modifierGroup>
           <comment>Faction Keyword</comment>
@@ -22325,13 +22338,6 @@ From that point onwards, each operates independently and is treated as a separat
           </conditionGroups>
         </modifier>
       </modifiers>
-      <profiles>
-        <profile name="Insensible to pain" id="1393-4660-fa4d-3b28" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a model in this unit would lose a wound, roll one D6: on a 5+, that wound is not lost. In case of having a similar ability, add 1 to said roll.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <selectionEntryGroups>
         <selectionEntryGroup name="Grotesques" id="dcf2-97f7-0e8d-2095" collective="false" defaultSelectionEntryId="4944-409b-5681-e0f9" hidden="false" import="true">
           <constraints>
@@ -23026,6 +23032,7 @@ From that point onwards, each operates independently and is treated as a separat
       </costs>
       <infoLinks>
         <infoLink name="Impervious to small weapons fire" id="e3b9-4b9c-245b-38e9" hidden="false" targetId="b48e-9a4a-2fdc-5d7c" type="profile"/>
+        <infoLink name="Insensible to pain" id="baeb-5831-5ccf-33f4" hidden="false" targetId="1393-4660-fa4d-3b28" type="profile"/>
       </infoLinks>
       <modifierGroups>
         <modifierGroup>
@@ -23494,6 +23501,7 @@ After this unit has fought, one model in the selected unit regains 1 lost wound 
       </costs>
       <infoLinks>
         <infoLink name="Impervious to small weapons fire" id="773b-c39f-f8e3-6491" hidden="false" targetId="b48e-9a4a-2fdc-5d7c" type="profile"/>
+        <infoLink name="Insensible to pain" id="8cab-6d43-4148-ea36" hidden="false" targetId="1393-4660-fa4d-3b28" type="profile"/>
       </infoLinks>
       <modifierGroups>
         <modifierGroup>
