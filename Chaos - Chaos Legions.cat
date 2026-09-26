@@ -23760,6 +23760,10 @@ In addition, models in this unit do not suffer the penalty to hit rolls incurred
                   </modifiers>
                   <selectionEntryGroups>
                     <selectionEntryGroup name="Heavy Weapon" id="ba4a-dd00-4745-7b5a" defaultSelectionEntryId="cf18-9fea-4dab-6ace" hidden="false">
+                      <constraints>
+                        <constraint id="4e34-fdee-6a7a-7b22" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                        <constraint id="8a06-f233-a40a-2e27" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                      </constraints>
                       <entryLinks>
                         <entryLink name="Heavy Warpflamer" id="dc4d-4544-00db-c598" collective="false" hidden="false" import="true" targetId="7b42-f638-2b2d-b7a9" type="selectionEntry"/>
                       </entryLinks>
