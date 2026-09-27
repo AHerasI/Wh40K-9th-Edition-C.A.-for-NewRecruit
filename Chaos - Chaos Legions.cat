@@ -5452,6 +5452,36 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
             </profile>
           </profiles>
         </selectionEntry>
+        <selectionEntry name="Warpflame Pistol" id="a44a-a967-b794-c56b" collective="false" hidden="true" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink name="Torrent" id="9fc5-e035-5bb2-5c78" hidden="false" primary="false" targetId="795f-a8d3-dc18-cb2e"/>
+          </categoryLinks>
+          <costs>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="Pts" typeId="points" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier field="hidden" type="set" value="false">
+              <conditions>
+                <condition childId="aa78-8665-986f-cd89" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Warpflame Pistol" id="c086-51eb-168c-b196" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault D6</characteristic>
+                <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent. If the unit of the weapon&apos;s bearer is in engagement range of enemy units, this weapon changes it&apos;s profile to Pistol D6.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Dark Angels Legionaries Squad" id="4d8b-8aa3-33d3-ca42" collective="false" hidden="true" import="true" type="unit">
@@ -23359,32 +23389,8 @@ In addition, models in this unit do not suffer the penalty to hit rolls incurred
                   </costs>
                 </entryLink>
                 <entryLink name="Bolt pistol" id="248e-fa5a-0a61-067d" collective="false" hidden="false" import="true" targetId="0334-f487-8229-0c1a" type="selectionEntry"/>
+                <entryLink name="Warpflame Pistol" id="5513-5a53-52ba-59fc" collective="false" hidden="true" import="true" targetId="a44a-a967-b794-c56b" type="selectionEntry"/>
               </entryLinks>
-              <selectionEntries>
-                <selectionEntry name="Warpflame pistol" id="d3af-bc06-a145-26e6" collective="false" hidden="false" import="true" type="upgrade">
-                  <categoryLinks>
-                    <categoryLink name="Torrent" id="f827-2e5a-b70b-ebf5" hidden="false" primary="false" targetId="795f-a8d3-dc18-cb2e"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-                    <cost name="Pts" typeId="points" value="0"/>
-                  </costs>
-                  <profiles>
-                    <profile name="Warpflame pistol" id="9a55-221c-2c61-5e00" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
-                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol D6</characteristic>
-                        <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
-                        <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
-                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-              </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="Psychic disciplines" id="eb00-ee8d-a473-ca1a" collective="false" hidden="false" import="true">
               <constraints>
@@ -47254,6 +47260,10 @@ If you selected a CORE, DAEMONIC or DAEMON unit and that unit is not at its Star
               </profiles>
             </selectionEntry>
             <selectionEntry name="Incaladion&apos;s cry" id="8f25-22e5-d036-1dbf" collective="false" hidden="true" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink name="Torrent" id="9f23-cd96-214c-d569" hidden="false" primary="false" targetId="795f-a8d3-dc18-cb2e"/>
+                <categoryLink name="Flame Weapon" id="fdf3-b99c-37ca-6559" hidden="false" primary="false" targetId="dbad-8265-94be-9c47"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="9ce1-7954-6145-cf3c" field="selections" includeChildForces="true" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="max" value="1"/>
               </constraints>
@@ -47279,11 +47289,11 @@ If you selected a CORE, DAEMONIC or DAEMON unit and that unit is not at its Star
                 <profile name="Incaladion&apos;s cry" id="addd-cb74-9668-f59d" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
-                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol D6</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault D6</characteristic>
                     <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
                     <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, that attack automatically hits the target.</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent. If the unit of the weapon&apos;s bearer is in engagement range of enemy units, this weapon changes it&apos;s profile to Pistol D6.</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Incaladion&apos;s cry" id="a271-8aad-c00d-10bd" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -49892,6 +49902,7 @@ You can Disband any summoned unit in your morale phase. Disbanded units are cons
         <constraint id="23fa-bcea-d367-6d60" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
       </constraints>
       <entryLinks>
+        <entryLink name="Warpflame Pistol" id="428a-b168-02e6-924b" collective="false" hidden="true" targetId="a44a-a967-b794-c56b" type="selectionEntry"/>
         <entryLink name="Bolt pistol" id="f194-bbf1-cf5e-980b" collective="false" hidden="false" import="true" targetId="0334-f487-8229-0c1a" type="selectionEntry"/>
         <entryLink name="Plasma pistol" id="ec8d-e6c9-c596-1005" collective="false" hidden="false" import="true" targetId="83be-1ba9-c326-4760" type="selectionEntry">
           <costs>
@@ -49908,38 +49919,6 @@ You can Disband any summoned unit in your morale phase. Disbanded units are cons
           </modifiers>
         </entryLink>
       </entryLinks>
-      <selectionEntries>
-        <selectionEntry name="Warpflame Pistol" id="a44a-a967-b794-c56b" collective="false" hidden="true" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink name="Torrent" id="9fc5-e035-5bb2-5c78" hidden="false" primary="false" targetId="795f-a8d3-dc18-cb2e"/>
-          </categoryLinks>
-          <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-          <modifiers>
-            <modifier field="hidden" type="set" value="false">
-              <conditions>
-                <condition childId="aa78-8665-986f-cd89" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Warpflame Pistol" id="c086-51eb-168c-b196" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault D6</characteristic>
-                <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
-                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent. If the unit of the weapon&apos;s bearer is in engagement range of enemy units, this weapon changes it&apos;s profile to Pistol D6.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Legion Special Weapons" id="c5d4-4a66-9f11-8c34" collective="false" defaultSelectionEntryId="1603-7025-1da2-95e5" hidden="false" import="true">
       <constraints>
