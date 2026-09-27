@@ -3680,7 +3680,7 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 20</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
@@ -5605,7 +5605,7 @@ If the result is less than the Strength characteristic of that enemy unit, it ca
         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">x2</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
@@ -6031,7 +6031,7 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 12</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, an unmodified hit roll of 5+ scores an additional hit. Compatible with Heavy Special Amunition.</characteristic>
       </characteristics>
@@ -21378,7 +21378,7 @@ In your Command phase, you can select a ORDO XENOS CORE unit within 9&quot; of t
                           <characteristics>
                             <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-                            <characteristic name="S" typeId="59b1-319e-ec13-d466">-1</characteristic>
+                            <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
                             <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon against a DAEMON or DAEMONIC unit, if the attack successfully wounds the target, it suffers 1 mortal wound in addition to any normal damage.</characteristic>
