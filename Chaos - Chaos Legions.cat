@@ -47370,7 +47370,7 @@ If you selected a CORE, DAEMONIC or DAEMON unit and that unit is not at its Star
               <profiles>
                 <profile name="Sorthis&apos; mirror" id="ac56-388b-d638-14bb" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time the bearer is selected to fight, instead of fighting, you can select one enemy INFANTRY model with a Leadership characteristic of 9 or less that is within Engagement Range of it. If you do, the selected enemy model immediately makes close combat attacks against its own unit: until it has resolved these attacks it is treated as being a model from your army for all rules purposes. If, as a result of these attacks, the enemy model destroys its own unit, the bearer counts as having destroyed that unit for all rules purposes.</characteristic>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time the bearer is selected to fight, instead of fighting, you can select one enemy INFANTRY, SWARM or BEAST model with a Leadership characteristic of 9 or less that is within Engagement Range of it. If you do, the selected enemy model immediately makes close combat attacks against its own unit: until it has resolved these attacks it is treated as being a model from your army for all rules purposes. If, as a result of these attacks, the enemy model destroys its own unit, the bearer counts as having destroyed that unit for all rules purposes.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -47419,8 +47419,8 @@ If you selected a CORE, DAEMONIC or DAEMON unit and that unit is not at its Star
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition childId="7f15-f65c-1e07-6d3b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="ancestor" shared="true" type="instanceOf" value="1"/>
-                        <condition childId="7f15-f65c-1e07-6d3b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="true" type="instanceOf" value="1"/>
+                        <condition childId="6186-4243-aca1-7d5a" childName="Lord" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                        <condition childId="6186-4243-aca1-7d5a" childName="Lord" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="true" type="instanceOf" value="1"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
