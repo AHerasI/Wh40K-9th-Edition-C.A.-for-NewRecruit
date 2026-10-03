@@ -5505,7 +5505,7 @@ When this model Advances, instead of rolling a dice, increase its Move character
 Its Move characteristic becomes 20&quot;, and it loses the Hard to Hit and Supersonic abilities until the beginning of your next Movement phase.</characteristic>
       </characteristics>
       <modifiers>
-        <modifier field="21befb24-fc85-4f52-a745-64b2e48f8228" type="set" value="When deploying the unit and before this model moves in your Movement phase, you can declare it will Hover. Its Move characteristic becomes 20&quot;, and it loses the Hard to Hit and Supersonic abilities until the beginning of your next Movement phase, and allows the unit to make Charge moves against units without AIRCRAFT Keyword.">
+        <modifier field="21befb24-fc85-4f52-a745-64b2e48f8228" type="set" value="When deploying the unit and before this model moves in your Movement phase, you can declare it will Hover. Its Move characteristic becomes 20&quot;, and it loses the Hard to Hit, Airborne and Supersonic abilities until the beginning of your next Movement phase, and allows the unit to make Charge moves against units without AIRCRAFT of FLY Keyword.">
           <comment>When deploying the unit and before this model moves in your Movement phase, you can declare it will Hover. 
 Its Move characteristic becomes 20&quot;, and it loses the Hard to Hit and Supersonic abilities until the beginning of your next Movement phase, and allows the unit to make Charge moves against units without AIRCRAFT Keyword.</comment>
           <conditionGroups>
