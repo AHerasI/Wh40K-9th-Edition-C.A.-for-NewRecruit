@@ -3045,7 +3045,7 @@ During your oponent&apos;s Movement phase, a unit that is Searching for targets 
       </modifiers>
     </rule>
     <rule name="Core rule modification: Area Terrain" id="2059-9bcb-0f0f-5e6d" hidden="false" noindex="true">
-      <description>In addition of INFANTRY, BEAST and SWARM models receive the benefits of Heavy and Light cover from Area Terrain features while they are within it, BIKER and CAVALRY models also benefit from cover when within the terrain feature, MONSTER and VEHICLE models without AIRCRAFT or TITANIC Keywords that are wholly within the Area Terrain footprint also benefits of it&apos;s features.</description>
+      <description>In addition of INFANTRY, BEAST and SWARM models receive the benefits of Heavy and Light cover from Area Terrain features while they are within it, BIKER and CAVALRY models also benefit from cover when within the terrain feature, CHARIOT, MONSTER and VEHICLE models without AIRCRAFT or TITANIC Keywords that are wholly within the Area Terrain footprint also benefits of it&apos;s features.</description>
     </rule>
   </rules>
   <sharedInfoGroups>
