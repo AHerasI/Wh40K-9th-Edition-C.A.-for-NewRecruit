@@ -18867,13 +18867,17 @@ Each MEGA ARMOUR or JUMP PACK model takes the space of 2 models.</characteristic
               </costs>
               <entryLinks>
                 <entryLink name="Model options" id="e6a9-5470-6e1d-a8ab" collective="false" hidden="false" import="true" targetId="cabb-c994-faef-667a" type="selectionEntryGroup"/>
-                <entryLink name="Deff Dread weapon" id="a895-c36e-aeea-6c87" collective="false" hidden="false" import="true" targetId="9a30-272f-f05e-8471" type="selectionEntryGroup"/>
-                <entryLink name="Deff Dread weapon" id="d488-c731-37a5-7bf2" collective="false" hidden="false" import="true" targetId="9a30-272f-f05e-8471" type="selectionEntryGroup"/>
                 <entryLink name="Deff Dread weapon" id="de80-15fa-b957-31cd" collective="false" hidden="false" import="true" targetId="9a30-272f-f05e-8471" type="selectionEntryGroup"/>
                 <entryLink name="Deff Dread weapon" id="1b57-9d5a-ffe5-5eda" collective="false" hidden="false" import="true" targetId="9a30-272f-f05e-8471" type="selectionEntryGroup"/>
+                <entryLink name="Dread Klaw" id="15f7-9aaf-62f7-fc33" hidden="false" import="true" targetId="0878-2bdd-7958-92e6" type="selectionEntry">
+                  <constraints>
+                    <constraint id="bbb0-790e-2ac8-a296" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                    <constraint id="13c6-a6ce-437c-d158" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <infoLinks>
-                <infoLink name="Impervious to small weapons fire" id="57d4-5ff2-373b-d739" hidden="false" targetId="b48e-9a4a-2fdc-5d7c" type="profile"/>
+                <infoLink name="Additional armour plating" id="57d4-5ff2-373b-d739" hidden="false" targetId="5b3f-8e7c-f7ae-0f7c" type="profile"/>
               </infoLinks>
               <profiles>
                 <profile name="Deff Dread" id="e854-e78b-a79b-35b5" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
@@ -18937,6 +18941,54 @@ Each MEGA ARMOUR or JUMP PACK model takes the space of 2 models.</characteristic
                   </modifiers>
                 </profile>
               </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Deff Dread weapon" id="9a30-272f-f05e-8471" collective="false" defaultSelectionEntryId="7776-01b5-e6f5-a4a3" hidden="false" import="true">
+                  <constraints>
+                    <constraint id="bdb2-0d0a-99d1-18f7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+                    <constraint id="9b5c-8a54-2c7b-41d9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink name="Skorcha" id="c6ef-253c-7f5c-bb5c" collective="false" hidden="false" import="true" targetId="f873-7ff9-9650-47f0" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="points" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink name="Rokkit launcha" id="f806-8648-4655-b425" collective="false" hidden="false" import="true" targetId="fa16-5d7c-2df3-fdce" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="points" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink name="Big Shoota" id="7776-01b5-e6f5-a4a3" collective="false" hidden="false" import="true" targetId="f5c9-ea3b-0323-de74" type="selectionEntry"/>
+                    <entryLink name="Kustom mega-blasta" id="c6d3-92cc-2b0e-1ba6" collective="false" hidden="false" import="true" targetId="a9d4-ff8b-e5c7-ea26" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="points" value="5"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry name="Dread Klaw" id="0878-2bdd-7958-92e6" collective="false" hidden="false" import="true" type="upgrade">
+                      <costs>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                        <cost name="Pts" typeId="points" value="0"/>
+                        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                      </costs>
+                      <profiles>
+                        <profile name="Dread Klaw" id="513f-5c80-757e-5c84" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                            <characteristic name="S" typeId="59b1-319e-ec13-d466">x2</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
+                            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
+                            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it makes 1 additional attack with this weapon.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -28427,52 +28479,6 @@ Each time this WARLORD makes a melee attack, improve the Armour Penetration char
               <characteristics>
                 <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- This model has a 4+ invulnerable save.
 - Each time an attack is allocated to this model, halve the Damage characteristic of that attack.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup name="Deff Dread weapon" id="9a30-272f-f05e-8471" collective="false" defaultSelectionEntryId="7776-01b5-e6f5-a4a3" hidden="false" import="true">
-      <constraints>
-        <constraint id="bdb2-0d0a-99d1-18f7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-        <constraint id="9b5c-8a54-2c7b-41d9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-      </constraints>
-      <entryLinks>
-        <entryLink name="Skorcha" id="c6ef-253c-7f5c-bb5c" collective="false" hidden="false" import="true" targetId="f873-7ff9-9650-47f0" type="selectionEntry">
-          <costs>
-            <cost name="pts" typeId="points" value="5"/>
-          </costs>
-        </entryLink>
-        <entryLink name="Rokkit launcha" id="f806-8648-4655-b425" collective="false" hidden="false" import="true" targetId="fa16-5d7c-2df3-fdce" type="selectionEntry">
-          <costs>
-            <cost name="pts" typeId="points" value="5"/>
-          </costs>
-        </entryLink>
-        <entryLink name="Big Shoota" id="7776-01b5-e6f5-a4a3" collective="false" hidden="false" import="true" targetId="f5c9-ea3b-0323-de74" type="selectionEntry"/>
-        <entryLink name="Kustom mega-blasta" id="c6d3-92cc-2b0e-1ba6" collective="false" hidden="false" import="true" targetId="a9d4-ff8b-e5c7-ea26" type="selectionEntry">
-          <costs>
-            <cost name="pts" typeId="points" value="5"/>
-          </costs>
-        </entryLink>
-      </entryLinks>
-      <selectionEntries>
-        <selectionEntry name="Dread Klaw" id="0878-2bdd-7958-92e6" collective="false" hidden="false" import="true" type="upgrade">
-          <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="Dread Klaw" id="513f-5c80-757e-5c84" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-                <characteristic name="S" typeId="59b1-319e-ec13-d466">x2</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
-                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it makes 1 additional attack with this weapon.</characteristic>
               </characteristics>
             </profile>
           </profiles>
