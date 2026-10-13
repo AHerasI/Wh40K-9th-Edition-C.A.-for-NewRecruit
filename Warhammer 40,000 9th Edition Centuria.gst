@@ -1357,7 +1357,8 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
         <rule name="Combined transport" id="1abd-3094-515d-f657" hidden="false">
           <description>This unit models are considered to share their combined transport capacity.
 This means that a unit can embark within this unit even if it would normally exceed it&apos;s models individual transport capacity.
-The embarked models are considered to be split between the multiple transports. Take note of which models are embarked on each model.</description>
+The embarked models are considered to be split between the multiple transports. Take note of which models are embarked on each model.
+While a unit is embarked, if it&apos;s models are split between multiple TRANSPORT models, those models must remain within vehicle coherency (6&quot;) of other models of this unit.</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -2962,7 +2963,7 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
     <publication name="Warhammer 40,000 Core Book" id="865f-8e58-bc21-bb2d" publicationDate="2020-07-25" publisher="Games Workshop" publisherUrl="https://www.games-workshop.com/Warhammer-40000-9th-Rulebook-EN-2020" shortName="BRB"/>
   </publications>
   <rules>
-    <rule name="Matched play Army creation" id="22fd-4658-8a5c-83b8" hidden="true">
+    <rule name="Matched play Army creation" id="22fd-4658-8a5c-83b8" hidden="true" noindex="true">
       <description>For Matched play:
 - All units in each detachment must belong, or be aviable to the same sub-faction.
 - All detachments in each army should share at least one Faction key, or be from Faction: Unaligned.</description>
@@ -2974,20 +2975,19 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
         </modifier>
       </modifiers>
     </rule>
-    <rule name="Core rule modification: Dice Roll success and modifier limits." id="0a52-dfc3-c546-9f66" hidden="false">
+    <rule name="Core rule modification: Dice Roll success and modifier limits." id="0a52-dfc3-c546-9f66" hidden="false" noindex="true">
       <description>Some of the Roll modifiers are capped to some limits:
 - An unmodified Hit roll of 6 always is considered a success, and an unmodified Hit roll of 1 always fails. A Hit roll can never be modified by more than -1 or +1.
 - An unmodified Wound roll of 1 always fails. A Wound roll can never be modified by more than -1 or +1.
 - An unmodified Save roll of 1 always fails.</description>
     </rule>
-    <rule name="Core rule modification: Look-out Sir" id="b37c-c782-2fbe-ae94" hidden="false">
+    <rule name="Core rule modification: Look-out Sir" id="b37c-c782-2fbe-ae94" hidden="false" noindex="true">
       <description>Models cannot target a unit that contains any CHARACTER models that either have a Wounds characteristic of 9 or less, or have the MONSTER Keyword and have a Wounds characteristic of 14 or less, with a ranged weapon, while that CHARACTER unit is within 3&quot; of any of the following and is not the closest eligible unit:
-
 - A non CHARACTER INFANTRY, BEAST, CAVALRY, or SWARM unit of 3 or more models.
 - A non CHARACTER CHARIOT, VEHICLE, MONSTER or TITANIC unit of any number of models.
 - A CHARACTER unit which cannot be affected by Look-out Sir rule.</description>
     </rule>
-    <rule name="Core rule modification: Objective Marker Control" id="41ef-0d13-f1a9-0bb4" hidden="false">
+    <rule name="Core rule modification: Objective Marker Control" id="41ef-0d13-f1a9-0bb4" hidden="false" noindex="true">
       <description>Unless otherwise noted, a player controls an objective marker while they have more remaining Wound count from models within range of it than their opponent does. 
 A model&apos;s remaining wounds can only be counted towards controlling one objective marker per turn – if one of your models&apos;s remaining  wounds could be counted towards controlling more than one objective marker, you must select which one they are all counted towards that turn. 
 AIRCRAFT units and units with the Fortifications Battlefield Role can never control objective markers – exclude these units when determining which player controls an objective marker.</description>
@@ -2995,42 +2995,41 @@ AIRCRAFT units and units with the Fortifications Battlefield Role can never cont
     <rule name="9th Edition Core Book" id="7de9-787c-9b0d-c3bb" hidden="false" publicationId="865f-8e58-bc21-bb2d">
       <description>Unless stated otherwise, all the reference rules for playing are coded in the Core Book Warhammer 40k 9th Edition of Games Workshop.</description>
     </rule>
-    <rule name="Core rule modification: Command Points" id="8f83-77d7-589a-8cca" hidden="false">
-      <description>There is no limit of how many CP a player can gain during a turn.
-Battle-Forged amies do not receive the Battle-forged CP bonus every turn.</description>
+    <rule name="Core rule modification: Command Points" id="8f83-77d7-589a-8cca" hidden="false" noindex="true">
+      <description>- There is no limit of how many CP a player can gain during a turn.
+- Battle-Forged amies do not receive the Battle-forged CP bonus every turn.</description>
     </rule>
-    <rule name="Core rule modification: Overwatch" id="d6a9-8b27-7182-6148" hidden="false">
+    <rule name="Core rule modification: Overwatch" id="d6a9-8b27-7182-6148" hidden="false" noindex="true">
       <description>Unless otherwise noted, any unit can fire Overwatch against either incoming charging units or units making Heroic interventions, scoring a hit on an unmodified roll of 6.
-If any attacks are generated as a result of an overwatch attack they will also be scored following regular Overwatch rules.</description>
+If any attacks are generated as a result of an Overwatch attack they will also be scored following regular Overwatch rules.</description>
     </rule>
-    <rule name="Core rule modification: Weapons, Range" id="f884-471f-e882-331d" hidden="false">
+    <rule name="Core rule modification: Weapons, Range" id="f884-471f-e882-331d" hidden="false" noindex="true">
       <description>Range: How far the weapon can shoot.
-Weapons with a range of ‘Melee’ are melee weapons and can only be used in hand-to-hand combat.
-Tactical weapons are weapons that can attack anywhere in the map, within their own set of rules (see Tactical weapons rule).
-Bomb weapons are weapons that can attack units that have been in the movement path of the bearer, within their own set of rules (see Bomb weapons rule).
+- Weapons with a range of ‘Melee’ are melee weapons and can only be used in hand-to-hand combat.
+Additional weapon types:
+- Tactical weapons are weapons that can attack anywhere in the map, within their own set of rules (see Tactical weapons rule).
+- Bomb weapons are weapons that can attack units that have been in the movement path of the bearer, within their own set of rules (see Bomb weapons rule).
 Both Tactical and Bomb weapons have a range marked between brackets, you must make attacks with the marked Type of weapon against all units, both friendly and foe, within the specified range.
-All other weapons are ranged weapons. Some weapons have a minimum and maximum range, for example 6&quot;-48&quot;; such weapons cannot target units that are wholly within the shorter range.</description>
+
+- All other weapons are classified as Ranged weapons. Some weapons have a minimum and maximum range, for example 6&quot;-48&quot;; such weapons cannot target units that are wholly within the shorter range.</description>
     </rule>
     <rule name=" [Action] Search for targets" id="594c-c9ca-6caf-57da" hidden="false">
       <description>During the Shooting phase, before selecting objectives for shooting, a unit can start this action, that action is completed at the end of the phase.
 Until the unit moves, shoots makes a Charge move, fights or does any other action, that unit is considered to be Searching for targets.
 During your oponent&apos;s Movement phase, a unit that is Searching for targets can shoot against an eligible enemy unit that your oponent has just finished moving as if it were in your Shooting phase, scoring a hit on an unmodified roll of 6.</description>
     </rule>
-    <rule name="Core rule modification: Transport, debarkation" id="0def-6157-afe5-c5a2" hidden="false">
+    <rule name="Core rule modification: Transport, debarkation" id="0def-6157-afe5-c5a2" hidden="false" noindex="true">
       <description>If a unit starts its Movement phase embarked within a TRANSPORT model, that unit can disembark in that phase.
-
-When a unit disembarks, set it up on the battlefield so that it is wholly within 3&quot; of the TRANSPORT model and not within Engagement Range of any enemy models.
-
-Units that disembark can, so long as the TRANSPORT model itself has not yet made a Normal Move, an Advance or has Fallen Back that phase, act normally (move, shoot, charge, fight, etc.) in the remainder of the turn, but its models count as having moved that turn, even if they are not moved further (i.e. they never count as having Remained Stationary).
-
-Units that disembark can, so long as the TRANSPORT model itself has made a Normal Move or has Fallen Back that phase, use Psychic powers and Shoot normally in the remainder of the turn, and its models count as having moved that turn.</description>
+- When a unit disembarks, set it up on the battlefield so that it is wholly within 3&quot; of the TRANSPORT model and not within Engagement Range of any enemy models.
+- Units that disembark can, so long as the TRANSPORT model itself has not yet made a Normal Move, an Advance or has Fallen Back that phase, act normally (move, shoot, charge, fight, etc.) in the remainder of the turn, but its models count as having moved that turn, even if they are not moved further (i.e. they never count as having Remained Stationary).
+- Units that disembark can, so long as the TRANSPORT model itself has made a Normal Move or has Fallen Back that phase, use Psychic powers and Shoot normally in the remainder of the turn, and its models count as having moved that turn.</description>
     </rule>
-    <rule name="Core rule modification: Fight phase" id="64a0-0075-f8a9-7ff1" hidden="false">
+    <rule name="Core rule modification: Fight phase" id="64a0-0075-f8a9-7ff1" hidden="false" noindex="true">
       <description>Instead units that made a charge move during a turn fight before all other units, that units gain the ability to Fight first during that turn.
-Starting with the player whose turn is not taking place, the players must alternate selecting an eligible unit from their army and fighting with it, being first units with the ability to Fight first, then the units that both don&apos;t fight first and don&apos;t fight last, and then the units wich have to Fight last.
-Instead units being eligible to fight if they are in engagement range or if they charged in the previous Charge phase, if a unit begins the Fight phase in engagement range of an enemy unit, that unit can pile-in, fight, and if it fights, consolidate.</description>
+- Starting with the player whose turn is not taking place, the players must alternate selecting an eligible unit from their army and fighting with it, being first units with the ability to Fight first, then the units that both don&apos;t fight first and don&apos;t fight last, and then the units wich have to Fight last.
+- Instead units being eligible to fight if they are in engagement range or if they charged in the previous Charge phase, if a unit begins the Fight phase in engagement range of an enemy unit, that unit can pile-in, fight, and if it fights, consolidate.</description>
     </rule>
-    <rule name="Narrative Play rule modification: Split units" id="07df-38d7-a812-a182" hidden="false">
+    <rule name="Narrative Play rule modification: Split units" id="07df-38d7-a812-a182" hidden="false" noindex="true">
       <description>Some units have an ability that instructs you to deploy the unit at the same time, but then treat different models (or groups of models) in that unit as separate units for the duration of the battle. These are referred to as split units. If you have any such units in your Order of Battle, every model (or groups of models) that is part of the unit regarding Army making, the parted new units are considered as the same unit in regard experiencie, mission acomplishment, Kill count, being destroyed, Battle-honours, Battle scars and Out of Action tests.</description>
       <modifiers>
         <modifier field="hidden" type="set" value="true">
@@ -3044,6 +3043,9 @@ Instead units being eligible to fight if they are in engagement range or if they
           </conditionGroups>
         </modifier>
       </modifiers>
+    </rule>
+    <rule name="Core rule modification: Area Terrain" id="2059-9bcb-0f0f-5e6d" hidden="false" noindex="true">
+      <description>In addition of INFANTRY, BEAST and SWARM models receive the benefits of Heavy and Light cover from Area Terrain features while they are within it, BIKER and CAVALRY models also benefit from cover when within the terrain feature, MONSTER and VEHICLE models without AIRCRAFT or TITANIC Keywords that are wholly within the Area Terrain footprint also benefits of it&apos;s features.</description>
     </rule>
   </rules>
   <sharedInfoGroups>
