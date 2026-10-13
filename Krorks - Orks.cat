@@ -3481,16 +3481,8 @@ Each MEGA ARMOUR or JUMP PACK model takes up the space of 2 models.</characteris
             <constraint id="1abe-9d31-336e-994f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Wreckin’ ball" id="b85b-a040-f875-4193" collective="false" hidden="false" targetId="bd31-4b5f-2a39-727f" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="points" value="10"/>
-              </costs>
-            </entryLink>
-            <entryLink name="Grabbin’ klaw" id="fe4f-13b4-14e7-549f" collective="false" hidden="false" targetId="3061-5ad9-3220-6eb0" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="points" value="10"/>
-              </costs>
-            </entryLink>
+            <entryLink name="Wreckin’ ball" id="b85b-a040-f875-4193" collective="false" hidden="false" targetId="bd31-4b5f-2a39-727f" type="selectionEntry"/>
+            <entryLink name="Grabbin’ klaw" id="fe4f-13b4-14e7-549f" collective="false" hidden="false" targetId="3061-5ad9-3220-6eb0" type="selectionEntry"/>
           </entryLinks>
           <selectionEntries>
             <selectionEntry name="Spiked Ram" id="b59d-0f22-0f36-2438" hidden="false" import="true" type="upgrade">
@@ -17999,8 +17991,16 @@ Each MEGA ARMOUR or JUMP PACK model takes up the space of 2 models.</characteris
                   </constraints>
                   <entryLinks>
                     <entryLink name="Deff rolla" id="d926-47c3-a019-2c5f" collective="false" hidden="false" targetId="c3e2-83ff-6dff-650e" type="selectionEntry"/>
-                    <entryLink name="Grabbin’ klaw" id="fb6a-7d58-5631-66f0" collective="false" hidden="false" import="true" targetId="3061-5ad9-3220-6eb0" type="selectionEntry"/>
-                    <entryLink name="Wreckin’ ball" id="b622-7f13-4e20-fb2e" collective="false" hidden="false" import="true" targetId="bd31-4b5f-2a39-727f" type="selectionEntry"/>
+                    <entryLink name="Grabbin’ klaw" id="fb6a-7d58-5631-66f0" collective="false" hidden="false" import="true" targetId="3061-5ad9-3220-6eb0" type="selectionEntry">
+                      <costs>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink name="Wreckin’ ball" id="b622-7f13-4e20-fb2e" collective="false" hidden="false" import="true" targetId="bd31-4b5f-2a39-727f" type="selectionEntry">
+                      <costs>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Lobbas" id="dc4d-ebee-49d3-ca13" collective="false" hidden="false" import="true">
@@ -26033,7 +26033,7 @@ Each time an attack of strength 7 or less is allocated to this model, subtract 1
         <selectionEntry name="Wreckin’ ball" id="bd31-4b5f-2a39-727f" collective="false" hidden="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="points" value="10"/>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
@@ -26053,7 +26053,7 @@ Each time an attack of strength 7 or less is allocated to this model, subtract 1
         <selectionEntry name="Grabbin’ klaw" id="3061-5ad9-3220-6eb0" collective="false" hidden="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="points" value="10"/>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
