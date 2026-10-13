@@ -18243,32 +18243,13 @@ Each MEGA ARMOUR or JUMP PACK model takes up the space of 2 models.</characteris
                         <constraint id="79ea-c806-a601-0810" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
                     </entryLink>
-                  </entryLinks>
-                  <selectionEntries>
-                    <selectionEntry name="Deff rolla" id="71d3-54ed-1e6d-4168" collective="false" hidden="false" import="true" type="upgrade">
+                    <entryLink name="Deff rolla" id="2dd8-99ea-ad74-c098" collective="false" hidden="false" import="true" targetId="c3e2-83ff-6dff-650e" type="selectionEntry">
                       <constraints>
-                        <constraint id="d007-9097-d313-aadd" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                        <constraint id="c777-cd45-5820-a141" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                        <constraint id="3f9c-59bf-b9a4-fddb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                       </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="points" value="15"/>
-                        <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
-                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-                      </costs>
-                      <profiles>
-                        <profile name="Deff rolla" id="180e-28d0-8707-bdf7" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-                          <characteristics>
-                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
-                            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-                            <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
-                            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-                            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, treat the bearer as having a Weapon Skill characteristic of 2+.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
-                  </selectionEntries>
+                    </entryLink>
+                  </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
@@ -21888,7 +21869,7 @@ Each MEGA ARMOUR or JUMP PACK model takes up the space of 2 models.</characteris
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry name="Deff rolla" id="cc1a-4b8a-c660-69a0" collective="false" hidden="false" import="true" type="upgrade">
+        <selectionEntry name="&apos;eavy Deff rolla" id="cc1a-4b8a-c660-69a0" collective="false" hidden="false" import="true" type="upgrade">
           <constraints>
             <constraint id="0b04-4da7-4fef-0204" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -21899,14 +21880,14 @@ Each MEGA ARMOUR or JUMP PACK model takes up the space of 2 models.</characteris
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
           <profiles>
-            <profile name="Deff rolla" id="1314-df58-830b-a245" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+            <profile name="&apos;eavy Deff rolla" id="1314-df58-830b-a245" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">+2</characteristic>
                 <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it makes D6 additional attacks with this weapon, and no more that that D6 attacks can be made by this weapon. Each time an attack is made with this weapon, treat the bearer as having a Weapon Skill characteristic of 2+.</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, if the bearer&apos;s unit has made a charge move during the previous phase, the attacks are resolved as having a Weapon Skill characteristic of 3+. Each time the bearer fights, it makes D6 additional attacks with this weapon, and no more than that D6 attacks can be made by this weapon.</characteristic>
               </characteristics>
             </profile>
           </profiles>
