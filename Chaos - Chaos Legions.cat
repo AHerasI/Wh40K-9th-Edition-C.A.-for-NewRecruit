@@ -9760,15 +9760,7 @@ At the start of your Command phase, you can select one of the following:
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
               <entryLinks>
-                <entryLink name="Legion Terminator Melee Weapons" id="59a4-b49e-48b6-25a3" collective="false" hidden="false" import="true" targetId="f2bb-1eb9-40c3-c061" type="selectionEntryGroup">
-                  <entryLinks>
-                    <entryLink name="Great Power Sword" id="51fa-63bf-714a-2498" hidden="false" import="true" targetId="29cb-3ccf-5a2e-2677" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="points" value="5"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </entryLink>
+                <entryLink name="Legion Terminator Melee Weapons" id="59a4-b49e-48b6-25a3" collective="false" hidden="false" import="true" targetId="f2bb-1eb9-40c3-c061" type="selectionEntryGroup"/>
                 <entryLink name="Legion Terminator Ranged Weapons" id="4f5c-b18d-eb01-1c1d" collective="false" hidden="false" import="true" targetId="f7e5-be02-4447-9b63" type="selectionEntryGroup"/>
               </entryLinks>
               <infoLinks>
@@ -9794,6 +9786,9 @@ At the start of your Command phase, you can select one of the following:
         <cost name="Pts" typeId="points" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <entryLinks>
+        <entryLink name="Smokescreen Launcher" id="2aa2-5d89-ca18-19c1" hidden="false" import="true" targetId="bded-2b06-5ea3-d7d5" type="selectionEntry"/>
+      </entryLinks>
       <infoLinks>
         <infoLink name="Special-Issue Ammunition: Boltgun Ammo" id="5e81-fd23-00ab-7595" hidden="false" targetId="b4aa-63ec-fd2e-978e" type="rule"/>
         <infoLink name="Concealed Positions" id="c0fe-a601-160b-4522" hidden="false" targetId="a6dc-059d-a47a-a49c" type="profile"/>
@@ -10044,7 +10039,7 @@ At the start of your Command phase, you can select one of the following:
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
-            <selectionEntry name="Twentieth Legion Veteran" id="cd31-febc-d24c-446f" collective="false" hidden="false" import="true" type="model">
+            <selectionEntry name="Twentieth Legion Veteran w/Hvy. weapon" id="cd31-febc-d24c-446f" collective="false" hidden="false" import="true" type="model">
               <categoryLinks>
                 <categoryLink name="Ø32mm" id="db88-dc64-c573-b175" hidden="false" primary="false" targetId="1441-1590-8a0e-24f3"/>
               </categoryLinks>
@@ -10059,7 +10054,7 @@ At the start of your Command phase, you can select one of the following:
               </costs>
               <entryLinks>
                 <entryLink name="Frag &amp; Krak grenades" id="edc1-0bbb-e387-15ca" collective="false" hidden="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
-                <entryLink name="Legion Ranged Weapons" id="8458-d496-a8ec-e0dc" collective="false" hidden="false" import="true" targetId="89ec-9862-abf4-bbd9" type="selectionEntryGroup">
+                <entryLink name="Legion Heavy Weapons" id="8458-d496-a8ec-e0dc" collective="false" hidden="false" import="true" targetId="8657-d853-964f-798a" type="selectionEntryGroup">
                   <entryLinks>
                     <entryLink name="Bolt Sniper rifle" id="ef91-5620-aa6d-64a3" collective="false" hidden="false" import="true" targetId="afb2-c617-8fdf-fb43" type="selectionEntry">
                       <costs>
@@ -10074,6 +10069,13 @@ At the start of your Command phase, you can select one of the following:
               <infoLinks>
                 <infoLink name="Astartes Veteran Legionary" id="8ff6-832e-a2bd-358f" hidden="false" targetId="dc03-c3a6-199e-8043" type="profile"/>
               </infoLinks>
+              <modifiers>
+                <modifier field="d04e-63a0-15ec-c20d" type="increment" value="1">
+                  <conditions>
+                    <condition childId="model" childName="model" field="selections" includeChildSelections="true" scope="d69a-e836-b03f-6fad" shared="true" type="atLeast" value="10"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Legion Melee Weapons" id="2043-b735-6952-37cf" collective="false" defaultSelectionEntryId="5397-d9ee-3fb1-1b86" hidden="false" import="true">
                   <constraints>
@@ -50360,6 +50362,18 @@ You can Disband any summoned unit in your morale phase. Disbanded units are cons
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink name="Great Power Sword" id="bf78-4616-f9c6-acaa" hidden="false" import="true" targetId="29cb-3ccf-5a2e-2677" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="points" value="5"/>
+          </costs>
+          <modifiers>
+            <modifier field="hidden" type="set" value="true">
+              <conditions>
+                <condition childId="da52-2f5e-e9c2-cd62" childName="I - Dark Angels Secessionist - Fallen" field="selections" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="0"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Legion Hand Weapons" id="6df1-28d2-e627-7f67" collective="false" defaultSelectionEntryId="f194-bbf1-cf5e-980b" hidden="false" import="true">
@@ -50625,6 +50639,18 @@ You can Disband any summoned unit in your morale phase. Disbanded units are cons
           <costs>
             <cost name="pts" typeId="points" value="5"/>
           </costs>
+        </entryLink>
+        <entryLink name="Great Power Sword" id="51fa-63bf-714a-2498" hidden="false" import="true" targetId="29cb-3ccf-5a2e-2677" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="points" value="5"/>
+          </costs>
+          <modifiers>
+            <modifier field="hidden" type="set" value="true">
+              <conditions>
+                <condition childId="da52-2f5e-e9c2-cd62" childName="I - Dark Angels Secessionist - Fallen" field="selections" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="0"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <modifiers>
