@@ -2025,6 +2025,79 @@ By default, standard ammo will be shot (no changes to the weapon&apos;s profile)
         <categoryLink name="Troops" id="2ff4-17ae-76dc-82f1" hidden="false" primary="true" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a"/>
       </categoryLinks>
     </entryLink>
+    <entryLink name="Servitors" id="3620-eefe-3c17-85bc" collective="false" hidden="true" import="true" targetId="3d03-d456-374f-5367" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="No Force Org Slot" id="7ea0-50c9-a069-783c" hidden="false" primary="true" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="21d3-ad31-7178-f485" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="0"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Traitor</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition childId="29bf-7f89-9955-87fc" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="0"/>
+                <condition childId="2c5f-769b-663f-092b" childName="Loyalist Fallen" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="0"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+          <modifiers>
+            <modifier field="category" type="remove" value="84e2-9fa9-ebe6-1d18"/>
+            <modifier field="category" type="add" value="5cf1-acf2-ca3b-c2e5"/>
+            <modifier field="category" type="remove" value="3c6d-c9b3-cd33-e5e5"/>
+            <modifier field="category" type="add" value="39bd-1989-42e4-056c"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="8f9d-ecd1-ee5b-ce9b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="atLeast" value="1"/>
+          </conditions>
+        </modifier>
+        <modifier field="21d3-ad31-7178-f485" type="increment" value="2">
+          <repeats>
+            <repeat childId="8f9d-ecd1-ee5b-ce9b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink name="Servo-Skull Probe Wing" id="cf39-9b3f-51a5-da97" collective="false" hidden="false" import="true" targetId="1def-774a-0df1-c570" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="No Force Org Slot" id="a006-714b-d759-86d1" hidden="false" primary="true" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="b5f9-2d11-2d44-c410" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Traitor</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition childId="29bf-7f89-9955-87fc" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="0"/>
+                <condition childId="2c5f-769b-663f-092b" childName="Loyalist Fallen" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="0"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+          <modifiers>
+            <modifier field="category" type="remove" value="84e2-9fa9-ebe6-1d18"/>
+            <modifier field="category" type="add" value="5cf1-acf2-ca3b-c2e5"/>
+            <modifier field="category" type="remove" value="3c6d-c9b3-cd33-e5e5"/>
+            <modifier field="category" type="add" value="39bd-1989-42e4-056c"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <modifiers>
+        <modifier field="b5f9-2d11-2d44-c410" type="increment" value="2">
+          <repeats>
+            <repeat childId="8f9d-ecd1-ee5b-ce9b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="force" shared="false" value="1"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <profileTypes>
     <profileType name="Cabalistic Rituals" id="973a-4a19-3d6f-d775">
