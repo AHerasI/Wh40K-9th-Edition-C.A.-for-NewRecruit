@@ -11587,43 +11587,6 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
             </infoLink>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry name="First Legion Assault Veteran" id="e30a-5f1b-f529-58c4" collective="false" hidden="false" import="true" type="model">
-          <categoryLinks>
-            <categoryLink name="Ø32mm" id="f62f-e927-aa78-0cd5" hidden="false" primary="false" targetId="1441-1590-8a0e-24f3"/>
-          </categoryLinks>
-          <constraints>
-            <constraint id="3dbc-6b41-8e7c-5fe9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="9"/>
-            <constraint id="9466-da7e-0136-41f2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="4"/>
-          </constraints>
-          <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="40"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Legion Melee Weapons" id="04c7-0222-d254-e23e" collective="false" hidden="false" import="true" targetId="c61e-7ae7-bebc-abd7" type="selectionEntryGroup"/>
-            <entryLink name="Frag &amp; Krak grenades" id="e3a6-54cd-80d4-80ef" collective="false" hidden="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
-            <entryLink name="Legion Ranged Weapons" id="5f7b-0cb9-f182-0109" collective="false" hidden="false" import="true" targetId="89ec-9862-abf4-bbd9" type="selectionEntryGroup">
-              <entryLinks>
-                <entryLink name="Bolt pistol" id="4502-ccb8-190b-109f" collective="false" hidden="false" import="true" targetId="0334-f487-8229-0c1a" type="selectionEntry"/>
-                <entryLink name="Hand Flamer" id="ce07-824c-d1ec-fac8" collective="false" hidden="false" import="true" targetId="7d34-2164-8036-b626" type="selectionEntry"/>
-                <entryLink name="Plasma pistol" id="b324-9f31-d052-7fe4" collective="false" hidden="false" import="true" targetId="83be-1ba9-c326-4760" type="selectionEntry">
-                  <costs>
-                    <cost name="pts" typeId="points" value="5"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </entryLink>
-          </entryLinks>
-          <infoLinks>
-            <infoLink name="Astartes Veteran Legionary" id="d597-5796-9756-cd6a" hidden="false" targetId="dc03-c3a6-199e-8043" type="profile">
-              <modifiers>
-                <modifier field="0bdf-a96e-9e38-7779" type="set" value="12"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-        </selectionEntry>
         <selectionEntry name="Marks of Chaos" id="519d-7901-6c1a-83fc" collective="false" hidden="true" import="true" type="upgrade">
           <constraints>
             <constraint id="e6da-e1a3-8437-56ed" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -11656,6 +11619,78 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
           </modifiers>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="First Legion Assault Veterans" id="44c5-322d-1f54-65bf" hidden="false">
+          <constraints>
+            <constraint id="5bcf-e270-e194-6f32" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="4"/>
+            <constraint id="3dbc-6b41-8e7c-5fe9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="9"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry name="First Legion Assault Veteran" id="e30a-5f1b-f529-58c4" collective="false" hidden="false" import="true" type="model">
+              <categoryLinks>
+                <categoryLink name="Ø32mm" id="f62f-e927-aa78-0cd5" hidden="false" primary="false" targetId="1441-1590-8a0e-24f3"/>
+              </categoryLinks>
+              <constraints>
+                <constraint id="9466-da7e-0136-41f2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="4"/>
+              </constraints>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="40"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink name="Legion Melee Weapons" id="04c7-0222-d254-e23e" collective="false" hidden="false" import="true" targetId="c61e-7ae7-bebc-abd7" type="selectionEntryGroup"/>
+                <entryLink name="Frag &amp; Krak grenades" id="e3a6-54cd-80d4-80ef" collective="false" hidden="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
+                <entryLink name="Legion Ranged Weapons" id="5f7b-0cb9-f182-0109" collective="false" hidden="false" import="true" targetId="89ec-9862-abf4-bbd9" type="selectionEntryGroup">
+                  <entryLinks>
+                    <entryLink name="Bolt pistol" id="4502-ccb8-190b-109f" collective="false" hidden="false" import="true" targetId="0334-f487-8229-0c1a" type="selectionEntry"/>
+                    <entryLink name="Hand Flamer" id="ce07-824c-d1ec-fac8" collective="false" hidden="false" import="true" targetId="7d34-2164-8036-b626" type="selectionEntry"/>
+                    <entryLink name="Plasma pistol" id="b324-9f31-d052-7fe4" collective="false" hidden="false" import="true" targetId="83be-1ba9-c326-4760" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="points" value="5"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </entryLink>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Astartes Veteran Legionary" id="d597-5796-9756-cd6a" hidden="false" targetId="dc03-c3a6-199e-8043" type="profile">
+                  <modifiers>
+                    <modifier field="0bdf-a96e-9e38-7779" type="set" value="12"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry name="First Legion Assault Veteran w/Hvy weapon" id="20fe-d896-3f73-bcfc" collective="false" hidden="false" import="true" type="model">
+              <categoryLinks>
+                <categoryLink name="Ø32mm" id="9866-be95-ab6f-149e" hidden="false" primary="false" targetId="1441-1590-8a0e-24f3"/>
+              </categoryLinks>
+              <constraints>
+                <constraint id="253c-705f-302b-e296" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="40"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink name="Legion Melee Weapons" id="22b4-f0b3-fee4-959a" collective="false" hidden="false" import="true" targetId="c61e-7ae7-bebc-abd7" type="selectionEntryGroup"/>
+                <entryLink name="Frag &amp; Krak grenades" id="32cf-abca-5ec9-c1ef" collective="false" hidden="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
+                <entryLink name="Missile launcher" id="264d-0347-5c36-5b85" collective="false" hidden="false" import="true" targetId="1469-1964-7a91-94d4" type="selectionEntry"/>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Astartes Veteran Legionary" id="ec3c-c660-3854-0488" hidden="false" targetId="dc03-c3a6-199e-8043" type="profile">
+                  <modifiers>
+                    <modifier field="0bdf-a96e-9e38-7779" type="set" value="12"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry name="Dark Angels Biker Legionaries Squad" id="186d-61b4-c1e7-ace3" collective="false" hidden="true" import="true" type="unit">
       <categoryLinks>
