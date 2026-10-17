@@ -3844,7 +3844,7 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         <characteristic name="S" typeId="59b1-319e-ec13-d466">3</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Each time an attack is made with this weapon, an unmodified hit roll of 5+ scores an additional hit.</characteristic>
       </characteristics>
     </profile>
     <profile name="Chainfist" id="8194-4688-65b3-f996" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
