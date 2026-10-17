@@ -9897,6 +9897,7 @@ At the start of your Command phase, you can select one of the following:
                 </entryLink>
               </entryLinks>
             </entryLink>
+            <entryLink name="Bolt pistol" id="3fee-2891-11b1-2669" hidden="false" import="true" targetId="1da2-aaf4-c4eb-f218" type="selectionEntry"/>
           </entryLinks>
           <infoLinks>
             <infoLink name="Astartes Veteran Legionary" id="0f78-2749-d2e2-98ff" hidden="false" targetId="dc03-c3a6-199e-8043" type="profile">
@@ -9911,98 +9912,6 @@ At the start of your Command phase, you can select one of the following:
               </modifierGroups>
             </infoLink>
           </infoLinks>
-        </selectionEntry>
-        <selectionEntry name="Twentieth Legion Veteran" id="20ee-7dd2-b0c8-e180" collective="false" hidden="false" import="true" type="model">
-          <categoryLinks>
-            <categoryLink name="Ø32mm" id="8406-615e-0887-edeb" hidden="false" primary="false" targetId="1441-1590-8a0e-24f3"/>
-          </categoryLinks>
-          <constraints>
-            <constraint id="7081-9f1b-cd9b-7f03" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="9"/>
-            <constraint id="5987-025b-dd96-4ec6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="4"/>
-          </constraints>
-          <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="25"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Frag &amp; Krak grenades" id="6ffa-4cdd-a24e-82f6" collective="false" hidden="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
-            <entryLink name="Legion Ranged Weapons" id="75ae-655f-cdab-3189" collective="false" hidden="false" import="true" targetId="89ec-9862-abf4-bbd9" type="selectionEntryGroup">
-              <entryLinks>
-                <entryLink name="Bolt Sniper rifle" id="7aa8-c430-935f-0562" collective="false" hidden="false" import="true" targetId="afb2-c617-8fdf-fb43" type="selectionEntry">
-                  <costs>
-                    <cost name="pts" typeId="points" value="15"/>
-                    <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </entryLink>
-          </entryLinks>
-          <infoLinks>
-            <infoLink name="Astartes Veteran Legionary" id="f962-2be3-fec6-6715" hidden="false" targetId="dc03-c3a6-199e-8043" type="profile"/>
-          </infoLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Legion Melee Weapons" id="7e25-a272-7dfe-6fa2" collective="false" defaultSelectionEntryId="5397-d9ee-3fb1-1b86" hidden="false" import="true">
-              <constraints>
-                <constraint id="3e12-e5e8-01b1-6ffd" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-                <constraint id="a5ac-550c-b897-1956" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-              </constraints>
-              <entryLinks>
-                <entryLink name="Combat knife" id="5397-d9ee-3fb1-1b86" collective="false" hidden="false" import="true" targetId="bc0b-c19f-0b71-081e" type="selectionEntry"/>
-                <entryLink name="Power Sword" id="50f4-6d5a-f5f7-9225" collective="false" hidden="false" import="true" targetId="bc9e-551d-9afb-78d5" type="selectionEntry">
-                  <costs>
-                    <cost name="pts" typeId="points" value="10"/>
-                  </costs>
-                </entryLink>
-                <entryLink name="Chainsword" id="744f-1c73-85ec-1bb5" collective="false" hidden="false" import="true" targetId="fe5f-0cd5-5f0d-abc4" type="selectionEntry"/>
-                <entryLink name="Chainaxe" id="5b14-52de-7cfb-e010" collective="false" hidden="false" import="true" targetId="5757-4579-2d5a-ec6d" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="points" value="5"/>
-                  </costs>
-                </entryLink>
-                <entryLink name="Daemon blade" id="006c-f55c-c470-6c54" collective="false" hidden="true" import="true" targetId="3f00-698a-913d-d1c6" type="selectionEntry">
-                  <costs>
-                    <cost name="pts" typeId="points" value="10"/>
-                  </costs>
-                  <modifiers>
-                    <modifier field="hidden" type="set" value="false">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition childId="2c5f-769b-663f-092b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="0"/>
-                            <condition childId="29bf-7f89-9955-87fc" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="0"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink name="Lightning Claw" id="f78c-3d27-164a-9f11" collective="false" hidden="false" import="true" targetId="90de-7b01-e401-888b" type="selectionEntry">
-                  <costs>
-                    <cost name="pts" typeId="points" value="10"/>
-                  </costs>
-                </entryLink>
-                <entryLink name="Balesword" id="c83f-2efa-f673-500b" collective="false" hidden="true" import="true" targetId="3c53-5076-28d8-508d" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="points" value="5"/>
-                  </costs>
-                  <modifiers>
-                    <modifier field="hidden" type="set" value="false">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition childId="33b3-f2a3-9749-2f10" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                            <condition childId="ef34-64c8-1666-c312" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="true" type="equalTo" value="1"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
         </selectionEntry>
         <selectionEntry name="Marks of Chaos" id="4e03-d904-15dc-4326" collective="false" hidden="true" import="true" type="upgrade">
           <constraints>
@@ -10036,6 +9945,108 @@ At the start of your Command phase, you can select one of the following:
           </modifiers>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Twentieth Legion Veterans" id="9700-933e-b8aa-50d2" defaultSelectionEntryId="20ee-7dd2-b0c8-e180" hidden="false">
+          <constraints>
+            <constraint id="7081-9f1b-cd9b-7f03" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="9"/>
+            <constraint id="6eb5-9076-9e0b-6f40" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="4"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry name="Twentieth Legion Veteran" id="20ee-7dd2-b0c8-e180" collective="false" hidden="false" import="true" type="model">
+              <categoryLinks>
+                <categoryLink name="Ø32mm" id="8406-615e-0887-edeb" hidden="false" primary="false" targetId="1441-1590-8a0e-24f3"/>
+              </categoryLinks>
+              <constraints>
+                <constraint id="5987-025b-dd96-4ec6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="3"/>
+              </constraints>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="25"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink name="Frag &amp; Krak grenades" id="6ffa-4cdd-a24e-82f6" collective="false" hidden="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
+                <entryLink name="Legion Ranged Weapons" id="75ae-655f-cdab-3189" collective="false" hidden="false" import="true" targetId="89ec-9862-abf4-bbd9" type="selectionEntryGroup">
+                  <entryLinks>
+                    <entryLink name="Bolt Sniper rifle" id="7aa8-c430-935f-0562" collective="false" hidden="false" import="true" targetId="afb2-c617-8fdf-fb43" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="points" value="15"/>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </entryLink>
+                <entryLink name="Bolt pistol" id="a73d-5e18-164e-9170" hidden="false" import="true" targetId="1da2-aaf4-c4eb-f218" type="selectionEntry"/>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Astartes Veteran Legionary" id="f962-2be3-fec6-6715" hidden="false" targetId="dc03-c3a6-199e-8043" type="profile"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Legion Melee Weapons" id="7e25-a272-7dfe-6fa2" collective="false" defaultSelectionEntryId="5397-d9ee-3fb1-1b86" hidden="false" import="true">
+                  <constraints>
+                    <constraint id="3e12-e5e8-01b1-6ffd" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+                    <constraint id="a5ac-550c-b897-1956" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink name="Combat knife" id="5397-d9ee-3fb1-1b86" collective="false" hidden="false" import="true" targetId="bc0b-c19f-0b71-081e" type="selectionEntry"/>
+                    <entryLink name="Power Sword" id="50f4-6d5a-f5f7-9225" collective="false" hidden="false" import="true" targetId="bc9e-551d-9afb-78d5" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="points" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink name="Chainsword" id="744f-1c73-85ec-1bb5" collective="false" hidden="false" import="true" targetId="fe5f-0cd5-5f0d-abc4" type="selectionEntry"/>
+                    <entryLink name="Chainaxe" id="5b14-52de-7cfb-e010" collective="false" hidden="false" import="true" targetId="5757-4579-2d5a-ec6d" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="points" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink name="Daemon blade" id="006c-f55c-c470-6c54" collective="false" hidden="true" import="true" targetId="3f00-698a-913d-d1c6" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="points" value="10"/>
+                      </costs>
+                      <modifiers>
+                        <modifier field="hidden" type="set" value="false">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition childId="2c5f-769b-663f-092b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="0"/>
+                                <condition childId="29bf-7f89-9955-87fc" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="0"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink name="Lightning Claw" id="f78c-3d27-164a-9f11" collective="false" hidden="false" import="true" targetId="90de-7b01-e401-888b" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="points" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink name="Balesword" id="c83f-2efa-f673-500b" collective="false" hidden="true" import="true" targetId="3c53-5076-28d8-508d" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="points" value="5"/>
+                      </costs>
+                      <modifiers>
+                        <modifier field="hidden" type="set" value="false">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition childId="33b3-f2a3-9749-2f10" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                                <condition childId="ef34-64c8-1666-c312" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="true" type="equalTo" value="1"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry name="Dreadclaw Drop Pod" id="8dad-9e38-6ff6-a22b" collective="false" hidden="false" import="true" type="model">
       <categoryLinks>
@@ -26833,6 +26844,7 @@ In addition, models in this unit do not suffer the penalty to hit rolls incurred
                 </entryLink>
               </entryLinks>
             </entryLink>
+            <entryLink name="Bolt pistol" id="4cde-3a10-dfdc-8f46" hidden="false" import="true" targetId="1da2-aaf4-c4eb-f218" type="selectionEntry"/>
           </entryLinks>
           <infoLinks>
             <infoLink name="Astartes Veteran Legionary" id="5f25-61f3-60ef-da60" hidden="false" targetId="dc03-c3a6-199e-8043" type="profile">
@@ -26877,6 +26889,7 @@ In addition, models in this unit do not suffer the penalty to hit rolls incurred
                 </entryLink>
               </entryLinks>
             </entryLink>
+            <entryLink name="Bolt pistol" id="dee5-81eb-b265-f762" hidden="false" import="true" targetId="1da2-aaf4-c4eb-f218" type="selectionEntry"/>
           </entryLinks>
           <infoLinks>
             <infoLink name="Astartes Veteran Legionary" id="20f0-115f-0a88-9c19" hidden="false" targetId="dc03-c3a6-199e-8043" type="profile">
@@ -40830,7 +40843,11 @@ If completed, until the end of the battle, add 1 to the Strength characteristic 
                 <infoLink name="Astartes Legionary" id="3035-f621-3208-8ac8" hidden="false" targetId="5cca-bb07-41a2-d8d3" type="profile"/>
               </infoLinks>
               <modifiers>
-                <modifier field="58a1-53f4-267a-5c09" type="set" value="0"/>
+                <modifier field="58a1-53f4-267a-5c09" type="increment" value="1">
+                  <conditions>
+                    <condition childId="model" childName="model" field="selections" includeChildSelections="true" scope="0082-1409-e5ed-2d59" shared="true" type="atLeast" value="10"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Special weapon" id="ff18-dd6e-9c20-503b" defaultSelectionEntryId="9d82-39e9-6ee8-07cd" hidden="false">
