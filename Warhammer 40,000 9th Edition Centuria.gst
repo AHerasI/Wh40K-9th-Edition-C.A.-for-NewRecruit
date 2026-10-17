@@ -2888,7 +2888,7 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
     </profileType>
     <profileType name="Transport" id="b3a8-0452-7436-44d1" kind="ability">
       <characteristicTypes>
-        <characteristicType name="Capacity" id="15aa-1916-a38b-d223" kind="longText"/>
+        <characteristicType name="Capacity" id="15aa-1916-a38b-d223"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Psyker" id="bc97-dea9-9e88-bb7d" kind="model">
