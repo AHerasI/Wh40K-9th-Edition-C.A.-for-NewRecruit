@@ -6542,7 +6542,7 @@ If an enemy model within range of an objective marker also has this ability (or 
       <description>Before selecting targets, select one of the aviable profiles to make attacks with.</description>
     </rule>
     <rule name="Missile weapon profile" id="5ffa-b450-85d1-c3c7" hidden="false">
-      <description>Before selecting targets, select between Flak, Frag or Krak missile weapon profiles to make attacks with.</description>
+      <description>Before selecting targets, select between one of the missile weapon profiles to make attacks with.</description>
     </rule>
     <rule name="Plasma weapon profile" id="6a90-8d3d-30d0-71b4" hidden="false">
       <description>Before selecting targets, select between Standard or Overcharge weapon profiles to make attacks with.</description>

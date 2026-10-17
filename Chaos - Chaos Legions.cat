@@ -11586,6 +11586,43 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
               </modifierGroups>
             </infoLink>
           </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Legion Hand weapons" id="fba4-bd5d-b8cf-944e" defaultSelectionEntryId="ac81-feed-c2e8-66b7" hidden="false">
+              <constraints>
+                <constraint id="5870-aa99-2ba9-75f7" field="selections" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="1d37-0050-4fe7-c23b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <entryLinks>
+                <entryLink name="Bolt pistol" id="ac81-feed-c2e8-66b7" hidden="false" import="true" targetId="0334-f487-8229-0c1a" type="selectionEntry"/>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry name="Needle pistol" id="d926-f1c1-9214-d1e2" collective="false" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="5154-ae49-8194-e6c4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                    <constraint id="110d-1286-fc97-cea8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="points" value="5"/>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Needle pistol" id="42f3-5085-8e40-c8bd" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
+                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol 2</characteristic>
+                        <characteristic name="S" typeId="59b1-319e-ec13-d466">2</characteristic>
+                        <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
+                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon against a unit (excluding VEHICLE or TITANIC units), an unmodified wound roll of 3+ is always successful.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
         <selectionEntry name="Marks of Chaos" id="519d-7901-6c1a-83fc" collective="false" hidden="true" import="true" type="upgrade">
           <constraints>
@@ -11653,6 +11690,7 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
                     </entryLink>
                   </entryLinks>
                 </entryLink>
+                <entryLink name="Legion Hand weapons" id="8724-17fe-280e-3fac" hidden="false" import="true" targetId="fba4-bd5d-b8cf-944e" type="selectionEntryGroup"/>
               </entryLinks>
               <infoLinks>
                 <infoLink name="Astartes Veteran Legionary" id="d597-5796-9756-cd6a" hidden="false" targetId="dc03-c3a6-199e-8043" type="profile">
@@ -11678,7 +11716,24 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
               <entryLinks>
                 <entryLink name="Legion Melee Weapons" id="22b4-f0b3-fee4-959a" collective="false" hidden="false" import="true" targetId="c61e-7ae7-bebc-abd7" type="selectionEntryGroup"/>
                 <entryLink name="Frag &amp; Krak grenades" id="32cf-abca-5ec9-c1ef" collective="false" hidden="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
-                <entryLink name="Missile launcher" id="264d-0347-5c36-5b85" collective="false" hidden="false" import="true" targetId="1469-1964-7a91-94d4" type="selectionEntry"/>
+                <entryLink name="Missile launcher" id="264d-0347-5c36-5b85" collective="false" hidden="false" import="true" targetId="1469-1964-7a91-94d4" type="selectionEntry">
+                  <modifiers>
+                    <modifier field="name" type="set" value="Enigmatus Missile launcher"/>
+                  </modifiers>
+                  <profiles>
+                    <profile name="Launcher, Stasis misile" id="8b69-bef0-6019-ce33" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
+                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D3</characteristic>
+                        <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
+                        <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
+                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">If a wound is scored against a target without the VEHICLE or TITANIC keywords, then until the start of your next Movement phase, halve the Move characteristic of models in the target unit and subtract 2 from Advance rolls and charge rolls made for that unit.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </entryLink>
+                <entryLink name="Legion Hand weapons" id="9b3e-7ba4-4cfe-96d5" hidden="false" import="true" targetId="fba4-bd5d-b8cf-944e" type="selectionEntryGroup"/>
               </entryLinks>
               <infoLinks>
                 <infoLink name="Astartes Veteran Legionary" id="ec3c-c660-3854-0488" hidden="false" targetId="dc03-c3a6-199e-8043" type="profile">
