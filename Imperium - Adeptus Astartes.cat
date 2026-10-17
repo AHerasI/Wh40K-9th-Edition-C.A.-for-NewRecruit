@@ -3066,7 +3066,7 @@ For the purposes of this ability, a Rapid Fire Bolt weapon is any Bolt weapon wi
     </selectionEntry>
   </selectionEntries>
   <sharedProfiles>
-    <profile name="Catafractii Terminator Armour" id="a9c0-03a3-c122-82a7" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+    <profile name="Cataphractii Terminator Armour" id="a9c0-03a3-c122-82a7" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
       <characteristics>
         <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model has a 4+ invulnerable save.
 In addition, this model does not suffer the penalty for moving and firing Heavy weapons.</characteristic>
@@ -12454,7 +12454,7 @@ Additionaly, each unmodified hit roll of 6 made for this Infiltrator unit&apos;s
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry name="Catafractii Terminator Squad" id="1b9d-22c0-2994-bf52" collective="false" hidden="true" import="true" type="unit">
+    <selectionEntry name="Cataphractii Terminator Squad" id="1b9d-22c0-2994-bf52" collective="false" hidden="true" import="true" type="unit">
       <categoryLinks>
         <categoryLink name="Faction: Adeptus Astartes" id="1726-29ec-c4e2-c8ab" hidden="false" primary="false" targetId="c7b7-edbc-bc14-6238"/>
         <categoryLink name="Faction: Imperium" id="dd6f-03f9-d722-135c" hidden="false" primary="false" targetId="84e2-9fa9-ebe6-1d18"/>
@@ -12527,7 +12527,7 @@ Additionaly, each unmodified hit roll of 6 made for this Infiltrator unit&apos;s
         </modifier>
       </modifiers>
       <selectionEntries>
-        <selectionEntry name="Catafractii Terminator Sergeant" id="21b0-98a8-0dd8-bb82" collective="false" hidden="false" import="true" type="model">
+        <selectionEntry name="Cataphractii Terminator Sergeant" id="21b0-98a8-0dd8-bb82" collective="false" hidden="false" import="true" type="model">
           <constraints>
             <constraint id="5543-deaf-2928-f16f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="ea4f-e3ef-ba96-e211" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -12551,19 +12551,28 @@ Additionaly, each unmodified hit roll of 6 made for this Infiltrator unit&apos;s
             <entryLink name="Relic Terminator Ranged Weapons" id="8351-c937-b979-1156" collective="false" hidden="false" import="true" targetId="ea90-50c6-a64d-ab62" type="selectionEntryGroup"/>
           </entryLinks>
           <infoLinks>
-            <infoLink name="Terminator Sergeant" id="dd62-9390-7b6f-56ec" hidden="false" targetId="6752-8fb7-fc6e-2d73" type="profile"/>
+            <infoLink name="Terminator Sergeant" id="dd62-9390-7b6f-56ec" hidden="false" targetId="6752-8fb7-fc6e-2d73" type="profile">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier field="name" type="set" value="Cataphractii Sergeant"/>
+                    <modifier field="0bdf-a96e-9e38-7779" type="increment" value="1"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </infoLink>
             <infoLink name="Catafractii Terminator Armour" id="702e-59ab-d7e2-ab09" hidden="false" targetId="a9c0-03a3-c122-82a7" type="profile"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Catafractii Terminators" id="4ada-5bd9-7d6b-f043" collective="false" defaultSelectionEntryId="3aa5-f81e-fa40-2c1c" hidden="false" import="true">
+        <selectionEntryGroup name="Cataphractii Terminators" id="4ada-5bd9-7d6b-f043" collective="false" defaultSelectionEntryId="3aa5-f81e-fa40-2c1c" hidden="false" import="true">
           <constraints>
             <constraint id="4681-6054-9eaf-6566" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
             <constraint id="bffb-7335-7aa2-8630" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="5"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry name="Catafractii Terminator" id="3aa5-f81e-fa40-2c1c" collective="false" hidden="false" import="true" type="model">
+            <selectionEntry name="Cataphractii Terminator" id="3aa5-f81e-fa40-2c1c" collective="false" hidden="false" import="true" type="model">
               <constraints>
                 <constraint id="174d-4de5-4d36-520d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="5"/>
               </constraints>
@@ -12587,14 +12596,23 @@ Additionaly, each unmodified hit roll of 6 made for this Infiltrator unit&apos;s
               </entryLinks>
               <infoLinks>
                 <infoLink name="Catafractii Terminator Armour" id="ed25-016c-b101-d8ff" hidden="false" targetId="a9c0-03a3-c122-82a7" type="profile"/>
-                <infoLink name="Terminator" id="e261-892c-67d9-336e" hidden="false" targetId="3d95-3de0-3d42-d0a2" type="profile"/>
+                <infoLink name="Terminator" id="e261-892c-67d9-336e" hidden="false" targetId="3d95-3de0-3d42-d0a2" type="profile">
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier field="name" type="set" value="Cataphractii Terminator"/>
+                        <modifier field="0bdf-a96e-9e38-7779" type="increment" value="1"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </infoLink>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup name="One aviable each 3 selections in the Squad" id="42a1-573d-cad8-d3bd" collective="false" hidden="false" import="true">
               <selectionEntries>
-                <selectionEntry name="Astartes Catafractii Terminator w/Heavy weapon" id="3c8d-c9a7-2ef7-6ab4" collective="false" hidden="false" import="true" type="model">
+                <selectionEntry name="Astartes Cataphractii Terminator w/Heavy weapon" id="3c8d-c9a7-2ef7-6ab4" collective="false" hidden="false" import="true" type="model">
                   <constraints>
                     <constraint id="8c60-eea0-fe01-42a9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="0"/>
                   </constraints>
@@ -12609,7 +12627,16 @@ Additionaly, each unmodified hit roll of 6 made for this Infiltrator unit&apos;s
                     <entryLink name="Relic Terminator Ranged Weapons" id="e9ff-ab1e-868e-6a12" collective="false" hidden="false" import="true" targetId="ea90-50c6-a64d-ab62" type="selectionEntryGroup"/>
                   </entryLinks>
                   <infoLinks>
-                    <infoLink name="Terminator" id="3e3e-0362-3659-cb5d" hidden="false" targetId="3d95-3de0-3d42-d0a2" type="profile"/>
+                    <infoLink name="Terminator" id="3e3e-0362-3659-cb5d" hidden="false" targetId="3d95-3de0-3d42-d0a2" type="profile">
+                      <modifierGroups>
+                        <modifierGroup type="and">
+                          <modifiers>
+                            <modifier field="name" type="set" value="Cataphractii Terminator"/>
+                            <modifier field="0bdf-a96e-9e38-7779" type="increment" value="1"/>
+                          </modifiers>
+                        </modifierGroup>
+                      </modifierGroups>
+                    </infoLink>
                     <infoLink name="Catafractii Terminator Armour" id="85b6-ba28-b2a5-e7e7" hidden="false" targetId="a9c0-03a3-c122-82a7" type="profile"/>
                   </infoLinks>
                   <modifiers>
