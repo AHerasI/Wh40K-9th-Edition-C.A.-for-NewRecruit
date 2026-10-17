@@ -2020,6 +2020,11 @@ By default, standard ammo will be shot (no changes to the weapon&apos;s profile)
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink name="Legion Inductii Squad" id="3e6f-d865-73d7-032e" hidden="false" import="true" targetId="0082-1409-e5ed-2d59" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Troops" id="2ff4-17ae-76dc-82f1" hidden="false" primary="true" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <profileTypes>
     <profileType name="Cabalistic Rituals" id="973a-4a19-3d6f-d775">
@@ -11678,7 +11683,7 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
                 <categoryLink name="Ø32mm" id="f62f-e927-aa78-0cd5" hidden="false" primary="false" targetId="1441-1590-8a0e-24f3"/>
               </categoryLinks>
               <constraints>
-                <constraint id="9466-da7e-0136-41f2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="4"/>
+                <constraint id="9466-da7e-0136-41f2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="3"/>
               </constraints>
               <costs>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
@@ -40609,6 +40614,248 @@ If completed, until the end of the battle, add 1 to the Strength characteristic 
                   </characteristics>
                 </profile>
               </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry name="Legion Inductii Squad" id="0082-1409-e5ed-2d59" collective="false" hidden="true" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Core" id="28e1-dc5c-34f6-66df" hidden="false" primary="false" targetId="08f1-d244-eb44-7e01"/>
+        <categoryLink name="Infantry" id="9934-2d34-f0c3-7433" hidden="false" primary="false" targetId="3d52-fccf-10c0-3fae"/>
+      </categoryLinks>
+      <costs>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="Pts" typeId="points" value="0"/>
+        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Special-Issue Ammunition: Boltgun Ammo" id="4a7d-41e6-adb4-ec40" hidden="false" targetId="b4aa-63ec-fd2e-978e" type="rule"/>
+      </infoLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Loyalist</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition childId="2c5f-769b-663f-092b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+          <modifiers>
+            <modifier field="category" type="add" value="84e2-9fa9-ebe6-1d18"/>
+            <modifier field="category" type="add" value="c7b7-edbc-bc14-6238"/>
+            <modifier field="category" type="add" value="1a3d-f0cd-11b5-b0a7"/>
+          </modifiers>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Traitor</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition childId="2c5f-769b-663f-092b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="0"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+          <modifiers>
+            <modifier field="category" type="add" value="62d9-3cd6-aed7-34fe"/>
+            <modifier field="category" type="add" value="5cf1-acf2-ca3b-c2e5"/>
+            <modifier field="category" type="add" value="b096-59fd-a5eb-5739"/>
+          </modifiers>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Legion Keywords</comment>
+          <modifiers>
+            <modifier field="category" type="add" value="35b5-3ddb-dfe3-35e7">
+              <conditions>
+                <condition childId="29bf-7f89-9955-87fc" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="category" type="add" value="e12c-dd25-cbab-a30d">
+              <conditions>
+                <condition childId="2c5f-769b-663f-092b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="category" type="add" value="bb3e-0c21-6baa-5013">
+              <conditions>
+                <condition childId="2c5f-769b-663f-092b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition childId="2c5f-769b-663f-092b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                <condition childId="29bf-7f89-9955-87fc" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                <condition childId="bce0-6a25-7f16-e539" childName="Traitorous Alpha Legion" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                <condition childId="3cf2-fb6b-1404-568d" childName="Traitorous Fallen" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry name="Legionary Sergeant" id="958b-5a0e-7ff3-1ae9" collective="false" hidden="false" import="true" type="model">
+          <categoryLinks>
+            <categoryLink name="Ø32mm" id="9b05-55bd-b340-96ee" hidden="false" primary="false" targetId="1441-1590-8a0e-24f3"/>
+          </categoryLinks>
+          <constraints>
+            <constraint id="7821-96a0-95df-fade" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+            <constraint id="d71f-6a2f-abe8-92c1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="Pts" typeId="points" value="35"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink name="Legion Melee Weapons" id="0236-d780-17ef-cec5" collective="false" hidden="false" import="true" targetId="c61e-7ae7-bebc-abd7" type="selectionEntryGroup"/>
+            <entryLink name="Frag &amp; Krak grenades" id="8276-aeb7-3579-50a0" collective="false" hidden="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
+            <entryLink name="Legion Ranged Weapons" id="d987-4404-1c27-6560" collective="false" hidden="false" import="true" targetId="89ec-9862-abf4-bbd9" type="selectionEntryGroup">
+              <entryLinks>
+                <entryLink name="Bolt pistol" id="7a23-706c-68a7-d9cb" collective="false" hidden="false" import="true" targetId="0334-f487-8229-0c1a" type="selectionEntry"/>
+                <entryLink name="Hand Flamer" id="c1ce-829f-11c4-92a3" collective="false" hidden="false" import="true" targetId="7d34-2164-8036-b626" type="selectionEntry"/>
+                <entryLink name="Plasma pistol" id="9614-7706-56c5-206d" collective="false" hidden="false" import="true" targetId="83be-1ba9-c326-4760" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="points" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </entryLink>
+            <entryLink name="Bolt pistol" id="8219-aeda-b423-8adc" hidden="false" import="true" targetId="1da2-aaf4-c4eb-f218" type="selectionEntry"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Astartes Veteran Legionary" id="06ee-4f6c-cff4-6646" hidden="false" targetId="dc03-c3a6-199e-8043" type="profile">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier field="name" type="set" value="Astartes Veteran Legionary Sergeant"/>
+                    <modifier field="13fc-b29b-31f2-ab9f" type="increment" value="1"/>
+                    <modifier field="00ca-f8b8-876d-b705" type="increment" value="1"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry name="Marks of Chaos" id="8e36-9612-71a5-a5ae" collective="false" hidden="true" import="true" type="upgrade">
+          <constraints>
+            <constraint id="f60b-5842-10f8-8316" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+            <constraint id="d6cc-dcc8-1bf5-0645" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="-1"/>
+          </constraints>
+          <costs>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="Pts" typeId="points" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink name="Unit upgrades" id="6a1c-c77e-1d34-a7e0" collective="false" hidden="false" import="true" targetId="867f-e3d9-541a-3498" type="selectionEntryGroup"/>
+          </entryLinks>
+          <modifiers>
+            <modifier field="d6cc-dcc8-1bf5-0645" type="set" value="1">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition childId="2c5f-769b-663f-092b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="0"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier field="hidden" type="set" value="false">
+              <conditions>
+                <condition childId="3cf2-fb6b-1404-568d" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Inductii" id="cf38-e50d-cdc5-78d5" defaultSelectionEntryId="8315-d946-fd1a-eb84" hidden="false">
+          <constraints>
+            <constraint id="0d77-9952-11ac-8b9c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="9"/>
+            <constraint id="99b5-a3d1-02af-3e23" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="4"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry name="Legion Inductii" id="8315-d946-fd1a-eb84" collective="false" hidden="false" import="true" type="model">
+              <categoryLinks>
+                <categoryLink name="Ø32mm" id="7f60-9827-4645-4f21" hidden="false" primary="false" targetId="1441-1590-8a0e-24f3"/>
+              </categoryLinks>
+              <constraints>
+                <constraint id="cfe0-96da-c3eb-baff" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="4"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="points" value="20"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink name="Frag &amp; Krak grenades" id="a2d4-6914-5587-b6d0" collective="false" hidden="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
+                <entryLink name="Bolt pistol" id="93fe-d30f-d16c-ac53" hidden="false" import="true" targetId="1da2-aaf4-c4eb-f218" type="selectionEntry"/>
+                <entryLink name="Combat knife" id="2083-5760-5c41-aa6b" hidden="false" import="true" targetId="92e8-af3a-fe14-06c1" type="selectionEntry"/>
+                <entryLink name="Boltgun" id="484c-299f-0210-666f" hidden="false" import="true" targetId="e60c-14d4-00f9-b8d4" type="selectionEntry"/>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Astartes Legionary" id="cd73-40fc-4fe0-b899" hidden="false" targetId="5cca-bb07-41a2-d8d3" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry name="Legion Inductii w/Special weapon" id="57ac-116f-8472-2fde" collective="false" hidden="false" import="true" type="model">
+              <categoryLinks>
+                <categoryLink name="Ø32mm" id="24d6-3cd2-820b-ec9d" hidden="false" primary="false" targetId="1441-1590-8a0e-24f3"/>
+              </categoryLinks>
+              <constraints>
+                <constraint id="58a1-53f4-267a-5c09" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="points" value="20"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink name="Frag &amp; Krak grenades" id="60f5-77e5-baf6-c6a7" collective="false" hidden="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
+                <entryLink name="Bolt pistol" id="dd17-a96c-b222-e155" hidden="false" import="true" targetId="1da2-aaf4-c4eb-f218" type="selectionEntry"/>
+                <entryLink name="Combat knife" id="d2c6-1d8d-0af1-9a15" hidden="false" import="true" targetId="92e8-af3a-fe14-06c1" type="selectionEntry"/>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Astartes Legionary" id="3035-f621-3208-8ac8" hidden="false" targetId="5cca-bb07-41a2-d8d3" type="profile"/>
+              </infoLinks>
+              <modifiers>
+                <modifier field="58a1-53f4-267a-5c09" type="set" value="0"/>
+              </modifiers>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Special weapon" id="ff18-dd6e-9c20-503b" defaultSelectionEntryId="9d82-39e9-6ee8-07cd" hidden="false">
+                  <constraints>
+                    <constraint id="15b6-f90e-c7fc-f55f" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                    <constraint id="de99-c407-e93c-8225" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink name="Volkite Charger" id="be35-77ff-883b-46bf" hidden="false" import="true" targetId="1614-3644-cecf-0f87" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="points" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink name="Flamer" id="9d82-39e9-6ee8-07cd" collective="false" hidden="false" import="true" targetId="fd22-6743-2d4c-dd62" type="selectionEntry"/>
+                    <entryLink name="Meltagun" id="7efa-6cbf-6db4-67bf" collective="false" hidden="false" import="true" targetId="efc8-c51d-5b02-a3a2" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="points" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink name="Plasma gun" id="1a0a-4a9d-9db5-4099" collective="false" hidden="false" import="true" targetId="8c14-22cc-93ce-b85a" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="points" value="10"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
