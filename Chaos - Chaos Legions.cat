@@ -40860,6 +40860,17 @@ If completed, until the end of the battle, add 1 to the Strength characteristic 
               </modifierGroups>
             </infoLink>
           </infoLinks>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <conditions>
+                <condition childId="5b3b-ac1b-b99d-3994" childName="XX - Alpha Legion" field="selections" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="1"/>
+              </conditions>
+              <modifiers>
+                <modifier field="points" type="decrement" value="10"/>
+                <modifier field="e356-c769-5920-6e14" type="decrement" value="1"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
         <selectionEntry name="Marks of Chaos" id="8e36-9612-71a5-a5ae" collective="false" hidden="true" import="true" type="upgrade">
           <constraints>
