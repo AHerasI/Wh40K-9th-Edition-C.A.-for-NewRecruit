@@ -11834,6 +11834,10 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
                 <entryLink name="Legion Melee Weapons" id="22b4-f0b3-fee4-959a" collective="false" hidden="false" import="true" targetId="c61e-7ae7-bebc-abd7" type="selectionEntryGroup"/>
                 <entryLink name="Frag &amp; Krak grenades" id="32cf-abca-5ec9-c1ef" collective="false" hidden="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
                 <entryLink name="Missile launcher" id="264d-0347-5c36-5b85" collective="false" hidden="false" import="true" targetId="1469-1964-7a91-94d4" type="selectionEntry">
+                  <constraints>
+                    <constraint id="deb9-7816-ee5f-860b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                    <constraint id="c30e-c98d-c022-dedc" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                  </constraints>
                   <modifiers>
                     <modifier field="name" type="set" value="Enigmatus Missile launcher"/>
                   </modifiers>
