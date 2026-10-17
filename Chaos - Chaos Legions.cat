@@ -2098,6 +2098,11 @@ By default, standard ammo will be shot (no changes to the weapon&apos;s profile)
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink name="Legion Retinue" id="2f92-a517-795d-4cf3" hidden="true" import="true" targetId="4149-f458-de74-058f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="No Force Org Slot" id="74c8-6fce-c425-ebbb" hidden="false" primary="true" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <profileTypes>
     <profileType name="Cabalistic Rituals" id="973a-4a19-3d6f-d775">
@@ -41016,11 +41021,14 @@ If completed, until the end of the battle, add 1 to the Strength characteristic 
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry name="Legion Retinue" id="4149-f458-de74-058f" hidden="false" import="true" type="upgrade">
+    <selectionEntry name="Legion Retinue" id="4149-f458-de74-058f" hidden="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink name="Bodyguard" id="efbf-ae0e-f732-6ac0" hidden="false" primary="false" targetId="b9f1-de64-cd51-3db4"/>
         <categoryLink name="Infantry" id="e4b6-f77c-2d7b-60bf" hidden="false" primary="false" targetId="3d52-fccf-10c0-3fae"/>
       </categoryLinks>
+      <constraints>
+        <constraint id="edfd-2198-3700-b73e" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
       <modifierGroups>
         <modifierGroup type="and">
           <comment>Loyalist</comment>
@@ -41082,23 +41090,414 @@ If completed, until the end of the battle, add 1 to the Strength characteristic 
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition childId="70c3-f46d-d8da-5034" childName="Lord" field="selections" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="1"/>
+                <condition childId="b58d-3652-a08d-d7de" childName="Company Commander" field="selections" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <selectionEntryGroups>
         <selectionEntryGroup name="Specialists" id="5a9b-b797-7f35-b294" hidden="false">
           <constraints>
             <constraint id="9d36-15bc-b621-0ce8" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
+          <modifiers>
+            <modifier field="hidden" type="set" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition childId="37ea-2044-93c3-a835" childName="Saturnine Terminator retinue" field="selections" scope="4149-f458-de74-058f" shared="true" type="equalTo" value="1"/>
+                    <condition childId="c8b0-3aac-9bdd-8608" childName="Outrider retinue" field="selections" scope="4149-f458-de74-058f" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <selectionEntries>
-            <selectionEntry name="Siegebreaker in Terminator armour" id="e93a-42a3-69ad-fe46" hidden="false" import="true" type="upgrade">
+            <selectionEntry name="Siegebreaker in Terminator armour" id="e93a-42a3-69ad-fe46" hidden="false" import="true" type="model">
               <categoryLinks>
                 <categoryLink name="Terminator Armour" id="725d-ad07-7d1d-818f" hidden="false" primary="false" targetId="a85f-24e5-cfc3-9345"/>
+                <categoryLink name="Ø40mm" id="a36b-27d8-158a-4e0b" hidden="false" primary="false" targetId="2ec1-217a-555a-b171"/>
               </categoryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="120"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="7"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink name="Legion Terminator Melee Weapons" id="c6a9-4863-d30a-78dd" collective="false" hidden="false" import="true" targetId="f2bb-1eb9-40c3-c061" type="selectionEntryGroup"/>
+                <entryLink name="Legion Terminator Ranged Weapons" id="d38e-b06b-c27e-ceb0" collective="false" hidden="false" import="true" targetId="f7e5-be02-4447-9b63" type="selectionEntryGroup">
+                  <entryLinks>
+                    <entryLink name="Heavy Shield" id="98d4-3108-abf3-f804" hidden="false" import="true" targetId="dbe4-6199-4dd5-3d27" type="selectionEntry"/>
+                  </entryLinks>
+                </entryLink>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Terminator Armour" id="82d1-618b-45cb-1204" hidden="false" targetId="f150-98d9-31b2-31cf" type="profile">
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true">
+                      <conditions>
+                        <condition childId="cdb1-18a4-2d96-1407" childName="Cataphractii Terminator retinue" field="selections" scope="4149-f458-de74-058f" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Cataphractii Terminator Armour" id="38f8-121f-38e9-fdea" hidden="false" targetId="a78a-a745-d44c-3364" type="profile">
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true">
+                      <conditions>
+                        <condition childId="cdb1-18a4-2d96-1407" childName="Cataphractii Terminator retinue" field="selections" scope="4149-f458-de74-058f" shared="true" type="equalTo" value="0"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Auspex Array" id="84a0-dc8d-b0bb-fa9c" hidden="false" targetId="2840-f5e7-fc6e-2879" type="profile">
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition childId="29bf-7f89-9955-87fc" childName="Loyalist Alpha Legion" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="0"/>
+                            <condition childId="2c5f-769b-663f-092b" childName="Loyalist Fallen" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="0"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Cognis-signum" id="5550-cf6b-b0c3-4ead" hidden="false" targetId="76cd-bb1c-bf21-e499" type="profile"/>
+                <infoLink name="Cognis-signum" id="76aa-b48d-a908-c92b" hidden="false" targetId="348e-c09b-cce7-af80" type="profile"/>
+              </infoLinks>
+              <modifiers>
+                <modifier field="hidden" type="set" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition childId="5e80-5d61-fdcb-ff82" childName="Terminator retinue" field="selections" scope="4149-f458-de74-058f" shared="true" type="equalTo" value="0"/>
+                        <condition childId="cdb1-18a4-2d96-1407" childName="Cataphractii Terminator retinue" field="selections" scope="4149-f458-de74-058f" shared="true" type="equalTo" value="0"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Siegebreaker in Terminator armour" id="0dfd-2e58-88dc-2e2b" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+                  <characteristics>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
+                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">6</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
+                  </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <conditions>
+                        <condition childId="d64e-76c2-6608-1e7e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier field="2218-aa3c-265f-2939" type="increment" value="1"/>
+                        <modifier field="0bdf-a96e-9e38-7779" type="increment" value="1"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </profile>
+              </profiles>
             </selectionEntry>
-            <selectionEntry name="Siegebreaker" id="54cb-43f5-7ffe-216d" hidden="false" import="true" type="upgrade"/>
-            <selectionEntry name="Master of Signals" id="41c3-8eee-9635-5c34" hidden="false" import="true" type="upgrade"/>
-            <selectionEntry name="Master of Signals in Terminator armour" id="853e-ce18-8445-bb63" hidden="false" import="true" type="upgrade">
+            <selectionEntry name="Siegebreaker" id="54cb-43f5-7ffe-216d" hidden="false" import="true" type="model">
+              <categoryLinks>
+                <categoryLink name="Ø32mm" id="f01c-5682-167a-7b56" hidden="false" primary="false" targetId="1441-1590-8a0e-24f3"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="100"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="6"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink name="Legion Hand Weapons" id="a62b-e9b0-6417-5444" hidden="false" import="true" targetId="6df1-28d2-e627-7f67" type="selectionEntryGroup">
+                  <entryLinks>
+                    <entryLink name="Heavy Shield" id="f4ea-8846-e6b4-2652" hidden="false" import="true" targetId="dbe4-6199-4dd5-3d27" type="selectionEntry"/>
+                    <entryLink name="Inferno pistol" id="043f-92f8-d4ce-3495" hidden="false" import="true" targetId="83f0-56d1-b852-f21c" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="points" value="5"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </entryLink>
+                <entryLink name="Legion Melee Weapons" id="46ac-4a1b-0461-7916" hidden="false" import="true" targetId="c61e-7ae7-bebc-abd7" type="selectionEntryGroup"/>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Refractor Field" id="a384-3177-812e-4eaa" hidden="false" targetId="76f9-878f-4057-ce75" type="profile"/>
+                <infoLink name="Auspex Array" id="869f-7c3a-78f5-6d8c" hidden="false" targetId="2840-f5e7-fc6e-2879" type="profile">
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition childId="29bf-7f89-9955-87fc" childName="Loyalist Alpha Legion" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="0"/>
+                            <condition childId="2c5f-769b-663f-092b" childName="Loyalist Fallen" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="0"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier field="hidden" type="set" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition childId="5e80-5d61-fdcb-ff82" childName="Terminator retinue" field="selections" scope="4149-f458-de74-058f" shared="true" type="equalTo" value="1"/>
+                        <condition childId="cdb1-18a4-2d96-1407" childName="Cataphractii Terminator retinue" field="selections" scope="4149-f458-de74-058f" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Siegebreaker" id="16aa-928c-e131-738c" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+                  <characteristics>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
+                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">5</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
+                  </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <conditions>
+                        <condition childId="d64e-76c2-6608-1e7e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier field="2218-aa3c-265f-2939" type="increment" value="1"/>
+                        <modifier field="0bdf-a96e-9e38-7779" type="increment" value="1"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                  <modifiers>
+                    <modifier field="0bdf-a96e-9e38-7779" type="set" value="12">
+                      <conditions>
+                        <condition childId="22f2-68a9-b3ce-719b" childName="Assault Legion retinue" field="selections" scope="4149-f458-de74-058f" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+                <profile name="Cognis-signum" id="348e-c09b-cce7-af80" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- In the Shooting phase, you can select a visible enemy unit within 24&quot; of this unit.
+- Ranged attacks made by friendly LEGION units against the selected unit can ignore the INDIRECT FIRE hit roll penalty.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Augury scanner" id="76cd-bb1c-bf21-e499" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Each time the bearer makes a ranged attack, the target does not receive the benefits of cover against that attack.
+- Once per turn, during the Reinforcements step of the oponent&apos;s Movement phase, if a enemy unit that was set up as Reinforcements this turn and that is within 18&quot; of the bearer, you can select one CHAOS INFANTRY unit from your army that is not within Engagement Range of any enemy units, and within 12&quot; of that enemy unit. Your unit can shoot as if it were your Shooting phase, but its models can only target the selected enemy unit.</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition childId="29bf-7f89-9955-87fc" childName="Loyalist Alpha Legion" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="1"/>
+                            <condition childId="2c5f-769b-663f-092b" childName="Loyalist Fallen" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="1"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry name="Master of Signals" id="41c3-8eee-9635-5c34" hidden="false" import="true" type="model">
+              <categoryLinks>
+                <categoryLink name="Ø32mm" id="35b3-1d76-73fe-0ccf" hidden="false" primary="false" targetId="1441-1590-8a0e-24f3"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="80"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="5"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink name="Legion Hand Weapons" id="fc79-619f-bec3-b89d" hidden="false" import="true" targetId="6df1-28d2-e627-7f67" type="selectionEntryGroup"/>
+                <entryLink name="Legion Melee Weapons" id="ee2c-d43a-98fa-ff27" hidden="false" import="true" targetId="c61e-7ae7-bebc-abd7" type="selectionEntryGroup"/>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Refractor Field" id="2c6d-cd50-fa0f-128e" hidden="false" targetId="76f9-878f-4057-ce75" type="profile"/>
+                <infoLink name="Command vox relay" id="811c-a82e-f08e-6d01" hidden="false" targetId="eb8c-eda9-0668-4857" type="profile"/>
+                <infoLink name="Command vox relay" id="6cc1-a007-1df6-dc25" hidden="false" targetId="bd96-428c-097a-b99e" type="profile"/>
+              </infoLinks>
+              <modifiers>
+                <modifier field="hidden" type="set" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition childId="5e80-5d61-fdcb-ff82" childName="Terminator retinue" field="selections" scope="4149-f458-de74-058f" shared="true" type="equalTo" value="1"/>
+                        <condition childId="cdb1-18a4-2d96-1407" childName="Cataphractii Terminator retinue" field="selections" scope="4149-f458-de74-058f" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Master of Signals" id="7ce6-bea4-8a07-32db" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+                  <characteristics>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
+                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">5</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
+                  </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <conditions>
+                        <condition childId="d64e-76c2-6608-1e7e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier field="2218-aa3c-265f-2939" type="increment" value="1"/>
+                        <modifier field="0bdf-a96e-9e38-7779" type="increment" value="1"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                  <modifiers>
+                    <modifier field="0bdf-a96e-9e38-7779" type="set" value="12">
+                      <conditions>
+                        <condition childId="22f2-68a9-b3ce-719b" childName="Assault Legion retinue" field="selections" scope="4149-f458-de74-058f" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry name="Master of Signals in Terminator armour" id="853e-ce18-8445-bb63" hidden="false" import="true" type="model">
               <categoryLinks>
                 <categoryLink name="Terminator Armour" id="f379-cc53-54c8-1215" hidden="false" primary="false" targetId="a85f-24e5-cfc3-9345"/>
+                <categoryLink name="Ø40mm" id="c305-f8af-170f-9749" hidden="false" primary="false" targetId="2ec1-217a-555a-b171"/>
               </categoryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="105"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="6"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink name="Legion Terminator Melee Weapons" id="0758-379e-1a87-6ebf" collective="false" hidden="false" import="true" targetId="f2bb-1eb9-40c3-c061" type="selectionEntryGroup"/>
+                <entryLink name="Legion Terminator Ranged Weapons" id="27f4-ebba-e5e2-2a2d" collective="false" hidden="false" import="true" targetId="f7e5-be02-4447-9b63" type="selectionEntryGroup"/>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Terminator Armour" id="299e-55ce-3e5c-5eda" hidden="false" targetId="f150-98d9-31b2-31cf" type="profile">
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true">
+                      <conditions>
+                        <condition childId="cdb1-18a4-2d96-1407" childName="Cataphractii Terminator retinue" field="selections" scope="4149-f458-de74-058f" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Cataphractii Terminator Armour" id="c735-59aa-2c6f-8eda" hidden="false" targetId="a78a-a745-d44c-3364" type="profile">
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true">
+                      <conditions>
+                        <condition childId="cdb1-18a4-2d96-1407" childName="Cataphractii Terminator retinue" field="selections" scope="4149-f458-de74-058f" shared="true" type="equalTo" value="0"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier field="hidden" type="set" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition childId="5e80-5d61-fdcb-ff82" childName="Terminator retinue" field="selections" scope="4149-f458-de74-058f" shared="true" type="equalTo" value="0"/>
+                        <condition childId="cdb1-18a4-2d96-1407" childName="Cataphractii Terminator retinue" field="selections" scope="4149-f458-de74-058f" shared="true" type="equalTo" value="0"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Master of Signals in Terminator armour" id="f7ad-940a-c937-bd7f" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+                  <characteristics>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
+                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">6</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
+                  </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <conditions>
+                        <condition childId="d64e-76c2-6608-1e7e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier field="2218-aa3c-265f-2939" type="increment" value="1"/>
+                        <modifier field="0bdf-a96e-9e38-7779" type="increment" value="1"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </profile>
+                <profile name="Command vox relay" id="eb8c-eda9-0668-4857" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+                  <comment>Loyalist</comment>
+                  <characteristics>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly LEGION unit and a friendly COMPANY COMMANDER model are within 24&quot; of this model, that unit is considered to be in range of Rites of Battle ability.</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition childId="29bf-7f89-9955-87fc" childName="Loyalist Alpha Legion" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="0"/>
+                            <condition childId="2c5f-769b-663f-092b" childName="Loyalist Fallen" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="0"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </profile>
+                <profile name="Command vox relay" id="bd96-428c-097a-b99e" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+                  <comment>Traitor</comment>
+                  <characteristics>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly LEGION unit and a friendly LORD model are within 24&quot; of this model, that unit is considered to be in range of Lord of Chaos ability.</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition childId="29bf-7f89-9955-87fc" childName="Loyalist Alpha Legion" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="1"/>
+                            <condition childId="2c5f-769b-663f-092b" childName="Loyalist Fallen" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="1"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -41695,6 +42094,10 @@ If completed, until the end of the battle, add 1 to the Strength characteristic 
               </selectionEntryGroups>
             </selectionEntry>
             <selectionEntry name="Assault Legion retinue" id="22f2-68a9-b3ce-719b" hidden="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink name="Jump Pack" id="fcac-077e-c12c-823f" hidden="false" primary="false" targetId="f627-f23e-a3b4-dc2c"/>
+                <categoryLink name="Fly" id="1693-e65e-c34d-ee9f" hidden="false" primary="false" targetId="3117-16d8-fcef-4f56"/>
+              </categoryLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Retinue" id="8cba-4878-8069-f973" hidden="false">
                   <constraints>
