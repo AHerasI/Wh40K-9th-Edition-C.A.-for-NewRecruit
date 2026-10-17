@@ -3824,7 +3824,7 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Each time an attack is made with this weapon, an unmodified hit roll of 5+ scores an additional hit.</characteristic>
       </characteristics>
     </profile>
     <profile name="Multi-Melta" id="1768-d7b9-37ba-f3bf" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -4188,7 +4188,7 @@ Before using it, select one of the available ammo.
         <characteristic name="S" typeId="59b1-319e-ec13-d466">3</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Each time an attack is made with this weapon, an unmodified hit roll of 5+ scores an additional hit.</characteristic>
       </characteristics>
     </profile>
     <profile name="Grenade launcher, Krak grenade" id="ac6d-bf1b-73d0-e6af" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -4248,7 +4248,7 @@ Before using it, select one of the available ammo.
         <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Each time an attack is made with this weapon, an unmodified hit roll of 5+ scores an additional hit.</characteristic>
       </characteristics>
     </profile>
     <profile name="Cyclone missile launcher, Krak missile" id="d9ac-d70c-de0b-1897" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -5308,7 +5308,7 @@ Each time this model is declared to Hover, it loses this ability until the begin
         <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Each time an attack is made with this weapon, an unmodified hit roll of 5+ scores an additional hit.</characteristic>
       </characteristics>
     </profile>
     <profile name="Flamestorm Gauntlets (Melee)" id="399c-e9cd-c9fb-0e34" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -5880,7 +5880,7 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Each time an attack is made with this weapon, an unmodified hit roll of 5+ scores an additional hit.</characteristic>
       </characteristics>
     </profile>
     <profile name="Twin Krak missile" id="5b11-a535-3db4-2a92" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
