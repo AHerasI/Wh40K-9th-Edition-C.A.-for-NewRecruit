@@ -982,6 +982,11 @@ Bike--&gt;10p</comment>
         <categoryLink name="HQ" id="476e-b060-74d5-0b29" hidden="false" primary="true" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7"/>
       </categoryLinks>
     </entryLink>
+    <entryLink name="Gargant" id="c2e2-f701-fd17-69e5" hidden="false" import="true" targetId="b731-6f1a-9ce0-ded5" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Lord of War" id="4577-5a27-2764-96d7" hidden="false" primary="true" targetId="c888f08a-6cea-4a01-8126-d374a9231554"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <profileTypes>
     <profileType name="Waaagh!!!" id="aa4f-e7db-d02d-9251">
@@ -1358,6 +1363,17 @@ Bike--&gt;10p</comment>
           </conditions>
         </modifier>
       </modifiers>
+    </profile>
+    <profile name="Waaagh! Effigy [Aura]" id="d12f-f202-c607-762c" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly ORKS unit is within 6&quot; of this model, each time a Morale test is taken for that unit, you can re-roll the result.
+In addition, each ORKS model counts twice in regard the rule Mob rule.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Rigger Crew" id="f851-bbb6-45d5-4ee6" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the end of your Movement phase, this model’s grot riggers can attempt to repair it. If they do so, roll one D6; one a 2+, this model regains D3 lost wounds.</characteristic>
+      </characteristics>
     </profile>
   </sharedProfiles>
   <sharedRules>
@@ -19776,6 +19792,8 @@ Each MEGA ARMOUR or JUMP PACK model takes the space of 2 models.</characteristic
       </entryLinks>
       <infoLinks>
         <infoLink name="Explodes 6+ (D6+3&quot;)" id="4e75-e1b8-0f6c-acd9" hidden="false" targetId="296c-b773-7bdb-fcf1" type="rule"/>
+        <infoLink name="Rigger Crew" id="2143-dede-cb00-a5ae" hidden="false" targetId="f851-bbb6-45d5-4ee6" type="profile"/>
+        <infoLink name="Waaagh! Effigy [Aura]" id="caf8-9c89-42ea-2c49" hidden="false" targetId="d12f-f202-c607-762c" type="profile"/>
       </infoLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -19893,11 +19911,6 @@ Each MEGA ARMOUR or JUMP PACK model takes the space of 2 models.</characteristic
             </modifier>
           </modifiers>
         </profile>
-        <profile name="Rigger Crew" id="f851-bbb6-45d5-4ee6" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the end of your Movement phase, this model’s grot riggers can attempt to repair it. If they do so, roll one D6; one a 2+, this model regains D3 lost wounds.</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Stompa [2] (21-30 Wounds remaining)" id="0c2a-52b7-00ee-80ae" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">9</characteristic>
@@ -20008,12 +20021,6 @@ Each MEGA ARMOUR or JUMP PACK model takes the space of 2 models.</characteristic
               </conditions>
             </modifier>
           </modifiers>
-        </profile>
-        <profile name="Waaagh! Effigy [Aura]" id="16f2-f1fc-a9fa-a264" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly ORKS unit is within 6&quot; of this model, each time a Morale test is taken for that unit, you can re-roll the result.
-In addition, each ORKS model counts twice in regard the rule Mob rule.</characteristic>
-          </characteristics>
         </profile>
         <profile name="Stompa" id="a91a-57c2-f68d-e56d" hidden="false" typeId="b3a8-0452-7436-44d1" typeName="Transport">
           <characteristics>
@@ -24311,6 +24318,371 @@ Each MEGA ARMOUR or JUMP PACK model takes up the space of 2 models.</characteris
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
+    <selectionEntry name="Gargant" id="b731-6f1a-9ce0-ded5" collective="false" hidden="true" import="true" type="model">
+      <categoryLinks>
+        <categoryLink name="Ramshackle" id="7f6b-f06b-04f2-01b8" hidden="false" primary="false" targetId="bc61-0bad-5371-b83f"/>
+        <categoryLink name="Vehicle" id="06dd-2cb1-b2f3-fb47" hidden="false" primary="false" targetId="c8fd-783f-3230-493e"/>
+        <categoryLink name="Walker" id="7988-8514-e588-5b22" hidden="false" primary="false" targetId="27d8-f0bb-f3cc-580f"/>
+        <categoryLink name="Faction: Orks" id="b365-8cd3-3c05-2559" hidden="false" primary="false" targetId="946d-1c4c-20d6-9eda"/>
+        <categoryLink name="Ork" id="3ef0-ef8f-25f8-17a2" hidden="false" primary="false" targetId="9e66-151e-9a63-7fa4"/>
+        <categoryLink name="Titanic" id="373c-407a-2ebb-0973" hidden="false" primary="false" targetId="bdda-36f0-4f32-1639"/>
+        <categoryLink name="Transport" id="5543-eff7-8852-596a" hidden="false" primary="false" targetId="6cc4-1b62-8e8a-05cd"/>
+        <categoryLink name="Assault Transport" id="23db-dd44-43c7-8cff" hidden="false" primary="false" targetId="3c95-4bac-d4d4-d0b2"/>
+        <categoryLink name="Heavy Armour Plating" id="247b-90fa-00ec-74db" hidden="false" primary="false" targetId="b66f-e4bb-3335-6222"/>
+        <categoryLink name="Wrecked" id="be03-b751-f1d6-ced6" hidden="false" primary="false" targetId="972c-53fd-93b7-624b"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="points" value="1400"/>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="700"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink name="Model options" id="9a6b-b73d-8db5-631e" collective="false" hidden="false" import="true" targetId="cabb-c994-faef-667a" type="selectionEntryGroup"/>
+        <entryLink name="Titanic feet" id="c75e-3e23-3d92-9051" hidden="false" import="true" targetId="83bf-e7dd-505c-1ded" type="selectionEntry"/>
+        <entryLink name="Light Void Shield system" id="9ec1-0336-4e7b-086a" collective="false" hidden="false" import="true" targetId="490a-af9b-636b-9541" type="selectionEntry"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Explodes 6+ (D6+3&quot;)" id="493d-b96b-3d09-995f" hidden="false" targetId="296c-b773-7bdb-fcf1" type="rule"/>
+        <infoLink name="Waaagh! Effigy [Aura]" id="9421-e856-90ed-bdfb" hidden="false" targetId="d12f-f202-c607-762c" type="profile"/>
+        <infoLink name="Rigger Crew" id="e55d-dddc-c316-83cf" hidden="false" targetId="f851-bbb6-45d5-4ee6" type="profile"/>
+        <infoLink name="Explodes 6+ (D6+6&quot; / D6)" id="b85e-b3d9-53ed-f29d" hidden="false" targetId="bd0f-186b-3ccc-e655" type="rule"/>
+      </infoLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Clan</comment>
+          <modifiers>
+            <modifier field="category" type="add" value="03ee-2a15-d7ab-2cdc">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition childId="99ef-00df-5cfe-4131" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier field="category" type="add" value="cb0f-c0a8-d22d-7968">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition childId="fa11-3740-fe17-de0f" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier field="category" type="add" value="6368-1d48-f654-48a7">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition childId="8be2-c624-b93f-0d46" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier field="category" type="add" value="c4a3-3598-259d-aaa0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition childId="c93f-077d-e535-89e2" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier field="category" type="add" value="96fe-0640-387e-f912">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition childId="a2de-0a50-e4ce-91d8" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier field="category" type="add" value="9e2d-9350-03a5-df5d">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition childId="a11a-0d79-f017-1b6b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Keyword change</comment>
+          <conditions>
+            <condition childId="c73d-2bef-3e1a-ebeb" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="b731-6f1a-9ce0-ded5" shared="true" type="equalTo" value="1"/>
+          </conditions>
+          <modifiers>
+            <modifier field="category" type="remove" value="9e66-151e-9a63-7fa4"/>
+            <modifier field="category" type="add" value="968d-3186-05be-bd7f"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="e81a-31ba-e294-766d" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="0"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Gargant [1] (91+ Wounds remaining)" id="4db5-9922-22be-fde6" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">10</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">9</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">120</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">6</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
+          </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Grot Crew (all)</comment>
+              <conditions>
+                <condition childId="c73d-2bef-3e1a-ebeb" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="b731-6f1a-9ce0-ded5" shared="true" type="equalTo" value="1"/>
+              </conditions>
+              <modifiers>
+                <modifier field="381b-eb28-74c3-df5f" type="decrement" value="1"/>
+                <modifier field="e7f0-1278-0250-df0c" type="increment" value="1"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <modifiers>
+            <modifier field="0bdf-a96e-9e38-7779" type="increment" value="3">
+              <conditions>
+                <condition childId="c3d9-52b4-1809-4e6f" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="b731-6f1a-9ce0-ded5" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="0bdf-a96e-9e38-7779" type="increment" value="1">
+              <conditions>
+                <condition childId="fa11-3740-fe17-de0f" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Gargant [2] (61-90 Wounds remaining)" id="df07-427b-f6a0-985d" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">10</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">9</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">120</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">5</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
+          </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Grot Crew (all)</comment>
+              <conditions>
+                <condition childId="c73d-2bef-3e1a-ebeb" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="b731-6f1a-9ce0-ded5" shared="true" type="equalTo" value="1"/>
+              </conditions>
+              <modifiers>
+                <modifier field="381b-eb28-74c3-df5f" type="decrement" value="1"/>
+                <modifier field="e7f0-1278-0250-df0c" type="increment" value="1"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <modifiers>
+            <modifier field="0bdf-a96e-9e38-7779" type="increment" value="3">
+              <conditions>
+                <condition childId="c3d9-52b4-1809-4e6f" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="b731-6f1a-9ce0-ded5" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="0bdf-a96e-9e38-7779" type="increment" value="1">
+              <conditions>
+                <condition childId="fa11-3740-fe17-de0f" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Gargant [3] (31-60 Wounds remaining)" id="1ef0-f440-6b3b-5705" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">10</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">9</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">120</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
+          </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Grot Crew (all)</comment>
+              <conditions>
+                <condition childId="c73d-2bef-3e1a-ebeb" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="b731-6f1a-9ce0-ded5" shared="true" type="equalTo" value="1"/>
+              </conditions>
+              <modifiers>
+                <modifier field="381b-eb28-74c3-df5f" type="decrement" value="1"/>
+                <modifier field="e7f0-1278-0250-df0c" type="increment" value="1"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <modifiers>
+            <modifier field="0bdf-a96e-9e38-7779" type="increment" value="3">
+              <conditions>
+                <condition childId="c3d9-52b4-1809-4e6f" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="b731-6f1a-9ce0-ded5" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="0bdf-a96e-9e38-7779" type="increment" value="1">
+              <conditions>
+                <condition childId="fa11-3740-fe17-de0f" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Gargant [4] (1-30 Wounds remaining)" id="a26c-7453-15d4-acd2" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">4</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">10</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">9</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">120</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
+          </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Grot Crew (all)</comment>
+              <conditions>
+                <condition childId="c73d-2bef-3e1a-ebeb" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="b731-6f1a-9ce0-ded5" shared="true" type="equalTo" value="1"/>
+              </conditions>
+              <modifiers>
+                <modifier field="381b-eb28-74c3-df5f" type="decrement" value="1"/>
+                <modifier field="e7f0-1278-0250-df0c" type="increment" value="1"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <modifiers>
+            <modifier field="0bdf-a96e-9e38-7779" type="increment" value="3">
+              <conditions>
+                <condition childId="c3d9-52b4-1809-4e6f" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="b731-6f1a-9ce0-ded5" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="0bdf-a96e-9e38-7779" type="increment" value="1">
+              <conditions>
+                <condition childId="fa11-3740-fe17-de0f" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Gargant" id="3a12-25e7-6a01-90c3" hidden="false" typeId="b3a8-0452-7436-44d1" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 60 CLAN INFANTRY models.
+Each MEGA ARMOUR or JUMP PACK model takes up the space of 2 models.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Battle Titan" id="066b-384e-ec9e-21b5" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model is eligible to declare a charge in a turn in which it Fell Back. Each time this model makes a Normal Move, Advances or Falls Back, it can be moved across other models excluding MONSTER and VEHICLE models) as if they were not there, and when it does it can be moved within Engagement Range of such models, but cannot finish its move within Engagement Range of any of them.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry name="3x Twinn big shoota" id="c5c0-a27f-7655-8d67" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="2fdb-d18c-d235-3275" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+            <constraint id="a9d6-0c85-5f62-5162" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Twinn big shoota" id="1fa5-8e90-2cf5-7e50" collective="false" hidden="false" import="true" targetId="08de-ee53-9299-3213" type="selectionEntry">
+              <constraints>
+                <constraint id="ce62-7d8b-81ab-903d" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="3"/>
+                <constraint id="0871-dd67-d8f1-5526" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="3"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Belly weapon" id="c2e4-3881-14c4-0913" defaultSelectionEntryId="ab3e-7379-a490-c9c2" hidden="false">
+          <constraints>
+            <constraint id="5534-bdcd-9df3-e8a1" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+            <constraint id="f4f3-2b21-fa7a-1c58" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Supa-gatler" id="4285-d8bc-dbd6-275a" collective="false" hidden="false" import="true" targetId="b625-1dee-0248-9f49" type="selectionEntry"/>
+            <entryLink name="Deffkannon" id="ab3e-7379-a490-c9c2" hidden="false" import="true" targetId="08ec-27b8-3bd4-e28f" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Arm weapon" id="27d9-5de2-0bd4-05a4" defaultSelectionEntryId="f294-f30f-af3a-59bd" hidden="false">
+          <constraints>
+            <constraint id="75f1-0ead-9841-6622" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+            <constraint id="8943-e23f-3a42-d1a0" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Mega-choppa" id="f294-f30f-af3a-59bd" collective="false" hidden="false" import="true" targetId="bbaf-41d6-0680-97c0" type="selectionEntry"/>
+            <entryLink name="Krusha kannon" id="5aae-7d02-57ff-4c33" hidden="false" import="true" targetId="f176-ae38-2b52-60b8" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="points" value="60"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="3"/>
+              </costs>
+            </entryLink>
+            <entryLink name="&apos;evy Mega-zzap" id="aa97-82a9-7784-c3a7" hidden="false" import="true" targetId="46f9-dba7-bcfd-bf59" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Arm weapon" id="ca0d-fd17-1be1-cf33" defaultSelectionEntryId="7524-ca8f-aa15-da72" hidden="false">
+          <constraints>
+            <constraint id="49c3-ac84-6e53-903e" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+            <constraint id="86e4-6ee4-8bd7-8187" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Supa-gatler" id="7524-ca8f-aa15-da72" collective="false" hidden="false" import="true" targetId="b625-1dee-0248-9f49" type="selectionEntry"/>
+            <entryLink name="Deffkannon" id="5f5b-fb50-3c61-27cc" hidden="false" import="true" targetId="08ec-27b8-3bd4-e28f" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="points" value="20"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Additional weapons" id="e45f-0f43-bc47-117e" hidden="false">
+          <constraints>
+            <constraint id="0531-c863-477e-477e" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Supa-rokkits" id="53bb-dad0-5ba4-9366" collective="false" hidden="false" import="true" targetId="c04d-4df5-2f87-0f36" type="selectionEntry">
+              <constraints>
+                <constraint id="8304-b057-addb-dbb8" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
+                <constraint id="1fdd-b966-6fbf-be20" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="points" value="60"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="3"/>
+              </costs>
+            </entryLink>
+            <entryLink name="Traktor kannon" id="dcbd-83e3-5c12-c304" hidden="false" import="true" targetId="59bc-ce16-4e4a-b93d" type="selectionEntry">
+              <constraints>
+                <constraint id="4b7c-6f65-2d1b-2063" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="points" value="60"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="3"/>
+              </costs>
+            </entryLink>
+            <entryLink name="Supa-shoota" id="75b8-7243-fe0c-c268" hidden="false" import="true" targetId="cfc3-48e9-56d2-9229" type="selectionEntry">
+              <constraints>
+                <constraint id="cc7a-9973-9183-bc9c" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Deffgun" id="7e1f-1142-366a-e294" hidden="false" import="true" targetId="fff7-eb3c-5a1f-76a5" type="selectionEntry">
+              <constraints>
+                <constraint id="ecbb-ebb3-0b83-59e5" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name=" Equipment" id="a117-a8db-d690-8260" collective="false" hidden="false" import="true">
@@ -25723,6 +26095,26 @@ Each time an attack of strength 7 or less is allocated to this model, subtract 1
                 <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it makes 1 additional attack with this weapon and no more than 3 attacks can be made with this weapon.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="&apos;evy Mega-zzap" id="46f9-dba7-bcfd-bf59" collective="false" hidden="false" import="true" type="upgrade">
+          <costs>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="Pts" typeId="points" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="&apos;evy Mega-zzap" id="b3aa-09ff-c2c9-1adc" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 3D3</characteristic>
+                <characteristic name="S" typeId="59b1-319e-ec13-d466">D6+6</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">On a Strength roll of 11+, each successful hit inflicts D3 mortal wounds on the target in addition to any normal damage, and the bearer suffers D3 mortal wounds.</characteristic>
               </characteristics>
             </profile>
           </profiles>
