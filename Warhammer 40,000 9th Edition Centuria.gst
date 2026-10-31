@@ -2914,16 +2914,7 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
     </profileType>
     <profileType name="Model" id="800f-21d0-4387-c943" kind="model">
       <characteristicTypes>
-        <characteristicType name="M" id="0bdf-a96e-9e38-7779">
-          <formatRules>
-            <formatRule name="New Format Rule" id="01b1-8363-ed8a-77d8" hidden="false" match="([0-9]+)" replace="$1&quot;" type="regex">
-              <comment>Append SUFFIX</comment>
-            </formatRule>
-            <formatRule name="New Format Rule" id="4426-01a1-43f1-2f2d" hidden="false" match="(-[0-9]+)" replace="$1&quot;" type="regex">
-              <comment>Append SUFFIX</comment>
-            </formatRule>
-          </formatRules>
-        </characteristicType>
+        <characteristicType name="M" id="0bdf-a96e-9e38-7779"/>
         <characteristicType name="WS" id="e7f0-1278-0250-df0c">
           <formatRules>
             <formatRule name="New Format Rule" id="5281-9527-03a5-e8b3" hidden="false" match="([0-9]+)" replace="$1+" type="regex">
