@@ -7074,6 +7074,7 @@ Non AIRCRAFT MONSTER, VEHICLE and TITANIC units in the way of the pushed WRECKED
       <infoLinks>
         <infoLink name="Shotgun" id="b667-d70c-0d70-a0d9" hidden="false" targetId="961a-afdd-b0a9-f43d" type="profile"/>
         <infoLink name="Shotgun - Slug" id="22b6-c240-0050-f14a" hidden="false" targetId="849b-e698-d6f4-9af5" type="profile"/>
+        <infoLink name="Variable weapon profile" id="7f5d-ffb5-2f3c-7c8c" hidden="false" targetId="2dd5-c9f0-aa5a-818a" type="rule"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Boltstorm gauntlet" id="689a-17db-7527-5cf8" collective="false" hidden="false" import="true" type="upgrade">
@@ -13704,6 +13705,7 @@ Each Multi-Purpose Reactive Armour packcage can be used once per battle.</descri
       <infoLinks>
         <infoLink name="Shotgun" id="cbf9-53c6-d723-ddef" hidden="false" targetId="961a-afdd-b0a9-f43d" type="profile"/>
         <infoLink name="Shotgun - Slug" id="4600-d74e-b987-fa25" hidden="false" targetId="849b-e698-d6f4-9af5" type="profile"/>
+        <infoLink name="Variable weapon profile" id="b580-6081-4324-b540" hidden="false" targetId="2dd5-c9f0-aa5a-818a" type="rule"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Siege Drill w/Flamer" id="b4e8-6e6f-15b1-4980" collective="true" hidden="false" import="true" type="upgrade">
