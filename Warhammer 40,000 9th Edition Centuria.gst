@@ -4201,14 +4201,14 @@ Before using it, select one of the available ammo.
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
     </profile>
-    <profile name="Shotgun" id="961a-afdd-b0a9-f43d" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+    <profile name="Shotgun - Groxshot" id="961a-afdd-b0a9-f43d" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">15</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault D3+2</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">If the target is within half range, add 1 to this weapon&apos;s Strength. If the unit of the weapon&apos;s bearer is in engagement range of enemy units, this weapon changes it&apos;s profile to Pistol D3+2.</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">If the target is within 9&quot;, add 1 to this weapon&apos;s Strength. If the unit of the weapon&apos;s bearer is in engagement range of enemy units, this weapon changes it&apos;s profile to Pistol D3+2.</characteristic>
       </characteristics>
     </profile>
     <profile name="Boltstorm gauntlet (shooting)" id="eb60-1a3c-5699-dadb" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -6503,6 +6503,16 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
         <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model cannot select targets without TITANIC or AIRCRAFT keywords within 36&quot; for it&apos;s Twin Vulcan Mega-Bolter weapon.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Shotgun - Slug" id="849b-e698-d6f4-9af5" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 1</characteristic>
+        <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">If the unit of the weapon&apos;s bearer is in engagement range of enemy units, this weapon changes it&apos;s profile to Pistol 1.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedRules>
     <rule name="Explodes 6+ (6&quot;)" id="3541-94a7-a138-358b" hidden="false">
@@ -7063,6 +7073,7 @@ Non AIRCRAFT MONSTER, VEHICLE and TITANIC units in the way of the pushed WRECKED
       </costs>
       <infoLinks>
         <infoLink name="Shotgun" id="b667-d70c-0d70-a0d9" hidden="false" targetId="961a-afdd-b0a9-f43d" type="profile"/>
+        <infoLink name="Shotgun - Slug" id="22b6-c240-0050-f14a" hidden="false" targetId="849b-e698-d6f4-9af5" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Boltstorm gauntlet" id="689a-17db-7527-5cf8" collective="false" hidden="false" import="true" type="upgrade">
@@ -13692,6 +13703,7 @@ Each Multi-Purpose Reactive Armour packcage can be used once per battle.</descri
       </costs>
       <infoLinks>
         <infoLink name="Shotgun" id="cbf9-53c6-d723-ddef" hidden="false" targetId="961a-afdd-b0a9-f43d" type="profile"/>
+        <infoLink name="Shotgun - Slug" id="4600-d74e-b987-fa25" hidden="false" targetId="849b-e698-d6f4-9af5" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Siege Drill w/Flamer" id="b4e8-6e6f-15b1-4980" collective="true" hidden="false" import="true" type="upgrade">
