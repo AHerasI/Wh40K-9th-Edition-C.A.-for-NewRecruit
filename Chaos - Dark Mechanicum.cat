@@ -12458,6 +12458,7 @@ Each SERVITOR takes up the space of 2 models</characteristic>
         </entryLink>
         <entryLink name="Hand Flamer" id="87cc-1051-11fb-6b5f" collective="false" hidden="false" import="true" targetId="7a55-16ab-c42b-6d7c" type="selectionEntry"/>
         <entryLink name="Melee Weapon" id="1bc4-4025-fbdb-3e94" collective="false" hidden="false" import="true" targetId="4b7b-6af4-4690-c397" type="selectionEntryGroup"/>
+        <entryLink name="Mechadendrite" id="29b1-437c-2189-33d2" collective="false" hidden="false" import="true" targetId="d0b1-a90e-c6e6-ab68" type="selectionEntry"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Enhanced Bionics" id="7204-ec0b-9b93-941d" hidden="false" targetId="0062-f25f-8e63-5840" type="profile"/>
@@ -12540,30 +12541,6 @@ Each SERVITOR takes up the space of 2 models</characteristic>
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry name="Mechatendrils" id="afce-a5ff-83ca-9d72" collective="true" hidden="false" import="true" type="upgrade">
-          <constraints>
-            <constraint id="431d-806c-48b4-2f27" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-            <constraint id="dbf2-8bda-0bfb-b2c3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="Mechatendrils" id="f656-ec76-ce29-b4d6" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-                <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
-                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it makes 4 additional attacks with this weapon.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
         <selectionEntry name="Soulburner pistol" id="9729-5231-4234-9ec0" collective="true" hidden="false" import="true" type="upgrade">
           <constraints>
             <constraint id="955d-c9ea-7197-428d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -13998,7 +13975,7 @@ Each SERVITOR takes up the space of 2 models</characteristic>
       <entryLinks>
         <entryLink name="Hand Flamer" id="4908-bf90-18c1-71af" collective="false" hidden="false" import="true" targetId="7a55-16ab-c42b-6d7c" type="selectionEntry"/>
         <entryLink name="Power Axe" id="9bb4-fc1e-2f47-be74" collective="false" hidden="false" import="true" targetId="c95a-21b1-4988-2a86" type="selectionEntry"/>
-        <entryLink name="Mechatendrils" id="d862-06bc-a96a-173a" collective="false" hidden="false" import="true" targetId="afce-a5ff-83ca-9d72" type="selectionEntry"/>
+        <entryLink name="Mechadendrite" id="d862-06bc-a96a-173a" collective="false" hidden="false" import="true" targetId="d0b1-a90e-c6e6-ab68" type="selectionEntry"/>
         <entryLink name="Voidcutter" id="7353-3554-f69e-4e81" collective="false" hidden="false" import="true" targetId="4d7c-dac3-7380-6da4" type="selectionEntry"/>
         <entryLink name=" Character definition" id="53e8-e743-523c-23ea" collective="false" hidden="false" import="true" targetId="5a9d-4326-909c-580d" type="selectionEntryGroup">
           <entryLinks>
@@ -17283,7 +17260,7 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
       </costs>
       <entryLinks>
         <entryLink name="Soulburner pistol" id="c888-2486-02b8-0c32" collective="false" hidden="false" import="true" targetId="9729-5231-4234-9ec0" type="selectionEntry"/>
-        <entryLink name="Mechatendrils" id="3ef3-871e-9ca8-6790" collective="false" hidden="false" import="true" targetId="afce-a5ff-83ca-9d72" type="selectionEntry"/>
+        <entryLink name="Mechadendrite" id="3ef3-871e-9ca8-6790" collective="false" hidden="false" import="true" targetId="d0b1-a90e-c6e6-ab68" type="selectionEntry"/>
         <entryLink name=" Character definition" id="a202-a5b8-cadb-238f" collective="false" hidden="false" import="true" targetId="5a9d-4326-909c-580d" type="selectionEntryGroup">
           <entryLinks>
             <entryLink name="Unit upgrades" id="b63a-ca34-1304-a131" collective="false" hidden="false" import="true" targetId="6800-6cfb-e5ef-59da" type="selectionEntryGroup"/>
@@ -21447,7 +21424,7 @@ At the start of your Command phase, you can select one of the following:
                     <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Shotgun" id="8e10-1a27-c587-f1c2" hidden="false" targetId="961a-afdd-b0a9-f43d" type="profile">
+                    <infoLink name="Shotgun - Groxshot" id="8e10-1a27-c587-f1c2" hidden="false" targetId="961a-afdd-b0a9-f43d" type="profile">
                       <modifiers>
                         <modifier field="837d-5e63-aeb7-1410" type="set" value="If the target is within half range, add 1 to this weapon&apos;s Strength. If the unit of the weapon&apos;s bearer is in engagement range of enemy units, this weapon changes it&apos;s profile to Pistol 4D3.">
                           <comment>If the target is within half range, add 1 to this weapon&apos;s Strength. If the unit of the weapon&apos;s bearer is in engagement range of enemy units, this weapon changes it&apos;s profile to Pistol 4D3.</comment>
@@ -22672,7 +22649,7 @@ At the start of your Command phase, you can select one of the following:
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
                 <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it makes 1 additional attack with this weapon. Each time an attack is made with this weapon profile, make 2 hit rolls instead of 1.</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it makes 2 additional attacks with this weapon. Each time an attack is made with this weapon profile, make 2 hit rolls instead of 1.</characteristic>
               </characteristics>
             </profile>
           </profiles>
