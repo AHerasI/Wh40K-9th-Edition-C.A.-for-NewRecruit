@@ -5488,30 +5488,6 @@ If the battle ends and this unit is not on the battlefield it is destroyed. If t
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry name="Mechatendrils" id="78bc-cc07-2dfc-7e04" collective="false" hidden="false" import="true" type="upgrade">
-          <constraints>
-            <constraint id="6520-bed1-3202-48b3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-            <constraint id="8b74-6c31-c22c-a56b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="Mechatendrils" id="bc44-5708-7af8-45bf" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-                <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
-                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it makes 4 additional attacks with this weapon.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
         <selectionEntry name="Hellfyre missile rack" id="23a0-43b0-de91-26d6" collective="false" hidden="false" import="true" type="upgrade">
           <constraints>
             <constraint id="f522-8598-5459-64a2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
@@ -16122,7 +16098,7 @@ Each JUMP PACK or TERMINATOR model takes the space of two other models and each 
         </entryLink>
         <entryLink name="Bolt pistol" id="4e2d-e50b-50e9-954f" collective="false" hidden="false" import="true" targetId="1da2-aaf4-c4eb-f218" type="selectionEntry"/>
         <entryLink name="Melee Weapon" id="8a0e-25a7-142b-4a85" collective="false" hidden="false" import="true" targetId="0180-7449-698f-ddd3" type="selectionEntryGroup"/>
-        <entryLink name="Mechatendrils" id="49f1-ce0d-e743-38cb" hidden="false" import="true" targetId="78bc-cc07-2dfc-7e04" type="selectionEntry"/>
+        <entryLink name="Mechadendrite" id="49f1-ce0d-e743-38cb" hidden="false" import="true" targetId="d0b1-a90e-c6e6-ab68" type="selectionEntry"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Impervious to small weapons fire" id="e338-8638-0073-7f64" hidden="false" targetId="b48e-9a4a-2fdc-5d7c" type="profile"/>
@@ -39153,7 +39129,7 @@ If completed, until the end of the battle, add 1 to the Strength characteristic 
               </costs>
               <entryLinks>
                 <entryLink name="Frag &amp; Krak grenades" id="8024-4e53-8ecc-6fee" collective="false" hidden="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
-                <entryLink name="Mechatendrils" id="f0ca-c872-c26f-53f4" collective="false" hidden="false" targetId="78bc-cc07-2dfc-7e04" type="selectionEntry"/>
+                <entryLink name="Mechadendrite" id="f0ca-c872-c26f-53f4" collective="false" hidden="false" targetId="d0b1-a90e-c6e6-ab68" type="selectionEntry"/>
                 <entryLink name="Hand Flamer" id="0680-cb4a-fcbd-8334" collective="false" hidden="false" import="true" targetId="7a55-16ab-c42b-6d7c" type="selectionEntry"/>
               </entryLinks>
               <modifierGroups>
@@ -39493,7 +39469,7 @@ If completed, until the end of the battle, add 1 to the Strength characteristic 
                     </selectionEntry>
                   </selectionEntries>
                 </entryLink>
-                <entryLink name="Mechatendrils" id="899c-1334-b623-0489" collective="false" hidden="false" import="true" targetId="78bc-cc07-2dfc-7e04" type="selectionEntry"/>
+                <entryLink name="Mechadendrite" id="899c-1334-b623-0489" collective="false" hidden="false" import="true" targetId="d0b1-a90e-c6e6-ab68" type="selectionEntry"/>
                 <entryLink name="Melta tendril" id="703a-8dbb-d4aa-6bab" collective="false" hidden="false" import="true" targetId="18af-c04b-db6e-239e" type="selectionEntry"/>
               </entryLinks>
               <infoLinks>
@@ -39752,7 +39728,7 @@ If completed, until the end of the battle, add 1 to the Strength characteristic 
               <entryLinks>
                 <entryLink name="Hand Flamer" id="432e-e893-0851-3dd1" collective="false" hidden="false" import="true" targetId="7a55-16ab-c42b-6d7c" type="selectionEntry"/>
                 <entryLink name="Power Axe" id="d6f1-905e-88ec-0f8a" collective="false" hidden="false" import="true" targetId="c95a-21b1-4988-2a86" type="selectionEntry"/>
-                <entryLink name="Mechatendrils" id="a79d-1643-1c55-81db" hidden="false" import="true" targetId="78bc-cc07-2dfc-7e04" type="selectionEntry"/>
+                <entryLink name="Mechadendrite" id="a79d-1643-1c55-81db" hidden="false" import="true" targetId="d0b1-a90e-c6e6-ab68" type="selectionEntry"/>
               </entryLinks>
               <modifierGroups>
                 <modifierGroup>
@@ -39853,10 +39829,10 @@ If completed, until the end of the battle, add 1 to the Strength characteristic 
                 <entryLink name="Hand Flamer" id="a510-7798-7b9b-d316" collective="false" hidden="false" import="true" targetId="7a55-16ab-c42b-6d7c" type="selectionEntry"/>
                 <entryLink name="Soulburner pistol" id="4602-8e1f-27c0-b275" collective="false" hidden="false" import="true" targetId="0402-b2ee-871a-8dba" type="selectionEntry"/>
                 <entryLink name="Voidcutter" id="d0d7-abe4-cdcd-5f21" collective="false" hidden="false" import="true" targetId="146f-26f8-3ac8-2d0c" type="selectionEntry"/>
+                <entryLink name="Mechadendrite" id="6ff8-40b7-a17b-e48d" hidden="false" import="true" targetId="d0b1-a90e-c6e6-ab68" type="selectionEntry"/>
               </entryLinks>
               <infoLinks>
                 <infoLink name="Impervious to small weapons fire" id="511a-5688-a00c-22ae" hidden="false" targetId="b48e-9a4a-2fdc-5d7c" type="profile"/>
-                <infoLink name="Mechatendrils" id="4282-9236-756d-c075" hidden="false" targetId="78bc-cc07-2dfc-7e04" type="selectionEntry"/>
               </infoLinks>
               <modifierGroups>
                 <modifierGroup>
