@@ -1612,6 +1612,20 @@ If you do so, 1 Miracle dice you use in that Act of Faith is considered to be a 
             </modifier>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Multi Plasma-Melta</comment>
+          <modifiers>
+            <modifier field="e356-c769-5920-6e14" type="increment" value="1">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <repeats>
+                    <repeat childId="65dd-a3e7-b044-4659" childName="Melta Weapon" field="selections" includeChildSelections="true" percentValue="false" repeats="1" roundUp="false" scope="c2db-b2d3-5460-98d1" shared="true" value="2"/>
+                  </repeats>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
       </modifierGroups>
       <modifiers>
         <modifier field="e356-c769-5920-6e14" type="increment" value="1">
@@ -6156,6 +6170,20 @@ In addition, after the first turn begins, when this unit is deployed on the Batt
               <conditions>
                 <condition childId="525b-2c42-e588-c351" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
               </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Multi Plasma-Melta</comment>
+          <modifiers>
+            <modifier field="e356-c769-5920-6e14" type="increment" value="1">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <repeats>
+                    <repeat childId="65dd-a3e7-b044-4659" childName="Melta Weapon" field="selections" includeChildSelections="true" repeats="1" roundUp="true" scope="8ab3-2957-af42-0b9a" shared="true" value="2"/>
+                  </repeats>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </modifierGroup>
