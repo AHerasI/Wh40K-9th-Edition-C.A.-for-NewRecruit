@@ -6508,7 +6508,7 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 1</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">If the unit of the weapon&apos;s bearer is in engagement range of enemy units, this weapon changes it&apos;s profile to Pistol 1.</characteristic>
       </characteristics>
@@ -7072,7 +7072,7 @@ Non AIRCRAFT MONSTER, VEHICLE and TITANIC units in the way of the pushed WRECKED
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
       <infoLinks>
-        <infoLink name="Shotgun" id="b667-d70c-0d70-a0d9" hidden="false" targetId="961a-afdd-b0a9-f43d" type="profile"/>
+        <infoLink name="Shotgun - Groxshot" id="b667-d70c-0d70-a0d9" hidden="false" targetId="961a-afdd-b0a9-f43d" type="profile"/>
         <infoLink name="Shotgun - Slug" id="22b6-c240-0050-f14a" hidden="false" targetId="849b-e698-d6f4-9af5" type="profile"/>
         <infoLink name="Variable weapon profile" id="7f5d-ffb5-2f3c-7c8c" hidden="false" targetId="2dd5-c9f0-aa5a-818a" type="rule"/>
       </infoLinks>
@@ -13703,7 +13703,7 @@ Each Multi-Purpose Reactive Armour packcage can be used once per battle.</descri
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
       <infoLinks>
-        <infoLink name="Shotgun" id="cbf9-53c6-d723-ddef" hidden="false" targetId="961a-afdd-b0a9-f43d" type="profile"/>
+        <infoLink name="Shotgun - Groxshot" id="cbf9-53c6-d723-ddef" hidden="false" targetId="961a-afdd-b0a9-f43d" type="profile"/>
         <infoLink name="Shotgun - Slug" id="4600-d74e-b987-fa25" hidden="false" targetId="849b-e698-d6f4-9af5" type="profile"/>
         <infoLink name="Variable weapon profile" id="b580-6081-4324-b540" hidden="false" targetId="2dd5-c9f0-aa5a-818a" type="rule"/>
       </infoLinks>
