@@ -7017,6 +7017,23 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
         <cost name="Pts" typeId="points" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Multi Plasma-Melta</comment>
+          <modifiers>
+            <modifier field="e356-c769-5920-6e14" type="increment" value="1">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <repeats>
+                    <repeat childId="65dd-a3e7-b044-4659" childName="Melta Weapon" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="7a9a-ae48-894f-71dd" shared="true" value="2"/>
+                    <repeat childId="d691-91d9-76e1-b276" childName="Plasma Weapon" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="7a9a-ae48-894f-71dd" shared="true" value="2"/>
+                  </repeats>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <selectionEntries>
         <selectionEntry name="Domitar Automata" id="00d5-ec5f-bf1e-a3db" collective="false" hidden="false" import="true" type="model">
           <constraints>
@@ -7576,7 +7593,7 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
           <modifiers>
             <modifier field="e356-c769-5920-6e14" type="increment" value="1">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <repeats>
                     <repeat childId="65dd-a3e7-b044-4659" childName="Melta Weapon" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="3bac-0044-805e-87bd" shared="true" value="2"/>
                     <repeat childId="d691-91d9-76e1-b276" childName="Plasma Weapon" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="3bac-0044-805e-87bd" shared="true" value="2"/>
@@ -12416,7 +12433,7 @@ Each SERVITOR takes up the space of 2 models</characteristic>
           <modifiers>
             <modifier field="e356-c769-5920-6e14" type="increment" value="1">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <repeats>
                     <repeat childId="65dd-a3e7-b044-4659" childName="Melta Weapon" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="318e-965c-cbba-3330" shared="true" value="2"/>
                     <repeat childId="d691-91d9-76e1-b276" childName="Plasma Weapon" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="318e-965c-cbba-3330" shared="true" value="2"/>
