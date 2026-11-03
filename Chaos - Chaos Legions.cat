@@ -13122,6 +13122,19 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
             </modifier>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier field="e356-c769-5920-6e14" type="increment" value="1">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <repeats>
+                    <repeat childId="model" childName="model" field="selections" includeChildSelections="true" repeats="1" roundUp="true" scope="bd28-a506-cdc5-cd44" shared="true" value="4"/>
+                  </repeats>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
       </modifierGroups>
       <modifiers>
         <modifier field="hidden" type="set" value="false">
