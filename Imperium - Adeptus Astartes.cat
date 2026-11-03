@@ -61557,13 +61557,6 @@ You can re-roll charge rolls made for the bearer.</characteristic>
           </conditionGroups>
         </modifier>
       </modifiers>
-      <profiles>
-        <profile name="Litanies of Battle" id="2d6f-8e60-32bd-7770" hidden="true" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model knows the Litany of Hate (see below) and one litany from the Litanies of Battle (pg 188). At the start of your Command Phase, this model can recite one litany it knows that has not already been recited by a friendly model that battle round. Roll one D6; on a 3+ the recited litany is inspiring and takes effect until your next Command Phase.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <selectionEntries>
         <selectionEntry name="1. Litany of Faith" id="7d7c-c681-08c3-d764" collective="false" hidden="true" import="true" type="upgrade">
           <constraints>
@@ -61583,9 +61576,10 @@ You can re-roll charge rolls made for the bearer.</characteristic>
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="Litany of Faith [Aura]" id="354e-c956-a97f-2ca8" hidden="false" typeId="2489-961a-f4fc-d026" typeName="Litany">
+            <profile name="Litany of Faith" id="354e-c956-a97f-2ca8" hidden="false" typeId="2489-961a-f4fc-d026" typeName="Litany">
               <characteristics>
-                <characteristic name="Effect" typeId="3279-0878-4777-b0cb">If this Litany is inspiring, then while a friendly CHAPTER CORE or CHARACTER unit is within 6&quot; of this PRIEST, each time a model that unit would lose a wound as the result of a mortal wound, roll one D6: on a 5+, that wound is not lost.</characteristic>
+                <characteristic name="Effect" typeId="3279-0878-4777-b0cb">If this Litany is inspiring, friendly CHAPTER CORE or CHAPTER CHARACTER unit within 6&quot; of this PRIEST are Inspired.
+Until the end of the battle, each time a model in the Inspired unit would lose a wound as the result of a mortal wound, roll one D6: on a 5+, that wound is not lost.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -61610,7 +61604,8 @@ You can re-roll charge rolls made for the bearer.</characteristic>
           <profiles>
             <profile name="Catechism of Fire" id="00a8-15ac-2df9-a464" hidden="false" typeId="2489-961a-f4fc-d026" typeName="Litany">
               <characteristics>
-                <characteristic name="Effect" typeId="3279-0878-4777-b0cb">If this Litany is inspiring, select one friendly CHAPTER CORE or CHARACTER unit is within 6&quot; of this PRIEST. Each time a model in that unit makes a ranged attack against the closest eligible target, add 1 to that attack&apos;s Wound roll.</characteristic>
+                <characteristic name="Effect" typeId="3279-0878-4777-b0cb">If this Litany is inspiring, select one friendly CHAPTER CORE or CHARACTER unit is within 6&quot; of this PRIEST to Inspire it. 
+Until the PRIEST inspires another unit, each time a model in the Inspired unit makes a ranged attack against the closest eligible target, add 1 to that attack&apos;s Wound roll.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -61635,7 +61630,8 @@ You can re-roll charge rolls made for the bearer.</characteristic>
           <profiles>
             <profile name="Exhortation of Rage" id="56e2-adc5-b119-2956" hidden="false" typeId="2489-961a-f4fc-d026" typeName="Litany">
               <characteristics>
-                <characteristic name="Effect" typeId="3279-0878-4777-b0cb">If this Litany is inspiring, select one friendly CHAPTER CORE or CHARACTER unit within 6&quot; of this PRIEST. Each time a model in that unit makes a melee attack, add 1 to that attack&apos;s Wound roll.</characteristic>
+                <characteristic name="Effect" typeId="3279-0878-4777-b0cb">If this Litany is inspiring, select one friendly CHAPTER CORE or CHARACTER unit within 6&quot; of this PRIEST to Inspire it. 
+Until the PRIEST inspires another unit, each time a model in the Inspired unit makes a melee attack, add 1 to that attack&apos;s Wound roll.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -61660,9 +61656,9 @@ You can re-roll charge rolls made for the bearer.</characteristic>
           <profiles>
             <profile name="Mantra of Strength" id="9a7c-5d88-4928-4a87" hidden="false" typeId="2489-961a-f4fc-d026" typeName="Litany">
               <characteristics>
-                <characteristic name="Effect" typeId="3279-0878-4777-b0cb">If this Litany is inspiring:
-- Add 1 to this PRIEST&apos;S Attacks and Strength characteristics.
-- Add 1 to the Damage characteristic of melee weapons this PRIEST is equipped with.</characteristic>
+                <characteristic name="Effect" typeId="3279-0878-4777-b0cb">If this Litany is inspiring, the PRIEST unit is Inspired.
+- Add 1 to the Inspired unit&apos;s models Attacks and Strength characteristics.
+- Add 1 to the Damage characteristic of melee weapons the Inspired unit&apos;s models are equipped with.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -61687,7 +61683,8 @@ You can re-roll charge rolls made for the bearer.</characteristic>
           <profiles>
             <profile name="Recitation of Focus" id="174f-ec70-1ae6-8d0d" hidden="false" typeId="2489-961a-f4fc-d026" typeName="Litany">
               <characteristics>
-                <characteristic name="Effect" typeId="3279-0878-4777-b0cb">If this Litany is inspiring, select one friendly CHAPTER CORE or CHARACTER unit within 6&quot; of this PRIEST. Each time a model in that unit makes a ranged attack, add 1 to that attack&apos;s Hit roll.</characteristic>
+                <characteristic name="Effect" typeId="3279-0878-4777-b0cb">If this Litany is inspiring, select one friendly CHAPTER CORE or CHARACTER unit within 6&quot; of this PRIEST to Inspire it. 
+Until the PRIEST inspires another unit, each time a model in the Inspired unit makes a ranged attack, add 1 to that attack&apos;s Hit roll.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -61710,11 +61707,12 @@ You can re-roll charge rolls made for the bearer.</characteristic>
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="Canticle of Hate [Aura]" id="13f1-dcf5-b46a-c75d" hidden="false" typeId="2489-961a-f4fc-d026" typeName="Litany">
+            <profile name="Canticle of Hate" id="13f1-dcf5-b46a-c75d" hidden="false" typeId="2489-961a-f4fc-d026" typeName="Litany">
               <characteristics>
-                <characteristic name="Effect" typeId="3279-0878-4777-b0cb">If this Litany is inspiring, then while a friendly CHAPTER CORE or CHARACTER unit within 6&quot; of this PRIEST:
-- Add 2 to charge rolls made for that unit. This is not cumulative with any other rule that adds to a unit&apos;s charge roll.
-- Each time a model in that unit makes a pile-in or consolidation move, it can move up to an additional 3&quot;. This is not cumulative with any other rule that increases the distance models can pile in or consolidate.</characteristic>
+                <characteristic name="Effect" typeId="3279-0878-4777-b0cb">If this Litany is inspiring, then while a friendly CHAPTER CORE or CHARACTER unit within 6&quot; of this PRIEST to Inspire it. 
+Until the PRIEST inspires another unit:
+- Add 2 to charge rolls made for the Inspired unit. This is not cumulative with any other rule that adds to a unit&apos;s charge roll.
+- Each time a model in the Inspired unit makes a pile-in or consolidation move, it can move up to an additional 3&quot;. This is not cumulative with any other rule that increases the distance models can pile in or consolidate.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -61731,10 +61729,11 @@ You can re-roll charge rolls made for the bearer.</characteristic>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
           <profiles>
-            <profile name="Litany of Hate [Aura]" id="3b43-b756-dde3-07ed" hidden="false" typeId="2489-961a-f4fc-d026" typeName="Litany">
+            <profile name="Litany of Hate" id="3b43-b756-dde3-07ed" hidden="false" typeId="2489-961a-f4fc-d026" typeName="Litany">
               <comment>Litany of Leisure (As stated in SM Codex 9th (Spanish))</comment>
               <characteristics>
-                <characteristic name="Effect" typeId="3279-0878-4777-b0cb">If this Litany is inspiring, then while a friendly CHAPTER CORE or CHAPTER CHARACTER unit is within 6&quot; of this PRIEST, each time a model in that unit makes a melee attack, you can re-roll the Hit roll.</characteristic>
+                <characteristic name="Effect" typeId="3279-0878-4777-b0cb">If this Litany is inspiring, friendly CHAPTER CORE units within 6&quot; of this PRIEST are Inspired.
+Until the end of the battle, each time a model in the Inspired unit makes a melee attack, you can re-roll Hit rolls of 1.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -61757,10 +61756,10 @@ You can re-roll charge rolls made for the bearer.</characteristic>
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="Litany of Divine Protection [Aura]" id="249e-0533-8c08-cff1" hidden="false" typeId="2489-961a-f4fc-d026" typeName="Litany">
+            <profile name="Litany of Divine Protection" id="249e-0533-8c08-cff1" hidden="false" typeId="2489-961a-f4fc-d026" typeName="Litany">
               <characteristics>
-                <characteristic name="Effect" typeId="3279-0878-4777-b0cb">If this Litany is inspiring, select one friendly BLACK TEMPLARS CORE or BLACK TEMPLARS CHARACTER unit within 6&quot; of this PRIEST. 
-Each time a model in that unit would lose a wound, roll one D6: on a 5+, that wound is not lost.</characteristic>
+                <characteristic name="Effect" typeId="3279-0878-4777-b0cb">If this Litany is inspiring, select one friendly BLACK TEMPLARS CORE or BLACK TEMPLARS CHARACTER unit within 6&quot; of this PRIEST to Inspire it. 
+Until the PRIEST inspires another unit, each time a model in the Inspired unit would lose a wound, roll one D6: on a 5+, that wound is not lost.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -61785,7 +61784,8 @@ Each time a model in that unit would lose a wound, roll one D6: on a 5+, that wo
           <profiles>
             <profile name="Psalm of remorseless persecution" id="ab86-426c-71e1-d68e" hidden="false" typeId="2489-961a-f4fc-d026" typeName="Litany">
               <characteristics>
-                <characteristic name="Effect" typeId="3279-0878-4777-b0cb">If this Litany is inspiring, select one friendly BLACK TEMPLARS CORE unit within 6&quot; of this PRIEST. Each time a model in that unit makes a melee attack, an unmodified Wound roll of 6 inflicts 1 mortal wound on the target in addition to any normal damage.</characteristic>
+                <characteristic name="Effect" typeId="3279-0878-4777-b0cb">If this Litany is inspiring, select one friendly BLACK TEMPLARS CORE unit within 6&quot; of this PRIEST to Inspire it. 
+Until the PRIEST inspires another unit, each time a model in the Inspired unit makes a melee attack, an unmodified Wound roll of 6 inflicts 1 mortal wound on the target in addition to any normal damage.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -61810,9 +61810,8 @@ Each time a model in that unit would lose a wound, roll one D6: on a 5+, that wo
           <profiles>
             <profile name="Plea of deliverance" id="4654-aa82-0e6f-9450" hidden="false" typeId="2489-961a-f4fc-d026" typeName="Litany">
               <characteristics>
-                <characteristic name="Effect" typeId="3279-0878-4777-b0cb">If this Litany is inspiring, select one friendly BLACK TEMPLARS CORE or BLACK TEMPLARS CHARACTER unit within 6&quot; of this PRIEST.
-- If that unit or its models are being affected by any psychic powers manifested by enemy models, the effects of those Psychic powers on that unit and its models end.
-- Until the start of your next Command phase, that unit, and the models it contains, are not affected by any Psychic power manifested by enemy units.</characteristic>
+                <characteristic name="Effect" typeId="3279-0878-4777-b0cb">If this Litany is inspiring, select one friendly BLACK TEMPLARS CORE or BLACK TEMPLARS CHARACTER unit within 6&quot; of this PRIEST to Inspire it.
+If the Inspired unit or its models are being affected by any psychic powers manifested by enemy models, the effects of those Psychic powers on the Inspired unit and its models end, and, until the start of your next Command phase, the Inspired unit, and the models it contains, are not affected by any Psychic power manifested by enemy units.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -61837,8 +61836,8 @@ Each time a model in that unit would lose a wound, roll one D6: on a 5+, that wo
           <profiles>
             <profile name="Fires of devotion" id="6783-7c9b-7999-4616" hidden="false" typeId="2489-961a-f4fc-d026" typeName="Litany">
               <characteristics>
-                <characteristic name="Effect" typeId="3279-0878-4777-b0cb">If this Litany is inspiring, select one friendly BLACK TEMPLARS CORE or BLACK TEMPLARS CHARACTER unit within 6&quot; of this PRIEST. 
-Each time that unit fights, if it made a Charge move, was charged, or performed a Heroic Intervention this turn, then until that fight is resolved, add 1 to the Attacks characteristic of models in that unit.</characteristic>
+                <characteristic name="Effect" typeId="3279-0878-4777-b0cb">If this Litany is inspiring, select one friendly BLACK TEMPLARS CORE or BLACK TEMPLARS CHARACTER unit within 6&quot; of this PRIEST to Inspire it. 
+Until the PRIEST inspires another unit, each time the Inspired unit fights, if it made a Charge move, was charged, or performed a Heroic Intervention this turn, then until that fight is resolved, add 1 to the Attacks characteristic of models in that unit.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -61863,8 +61862,8 @@ Each time that unit fights, if it made a Charge move, was charged, or performed 
           <profiles>
             <profile name="Fervent acclamation" id="a6a2-b038-9fbc-2088" hidden="false" typeId="2489-961a-f4fc-d026" typeName="Litany">
               <characteristics>
-                <characteristic name="Effect" typeId="3279-0878-4777-b0cb">If this Litany is inspiring, select one Templar Vow that is not in effect and select one friendly BLACK TEMPLARS CORE or BLACK TEMPLARS CHARACTER unit within 6&quot; of this PRIEST. 
-While the Litany effects lasts, that unit gains the effects of that vow.</characteristic>
+                <characteristic name="Effect" typeId="3279-0878-4777-b0cb">If this Litany is inspiring, select one Templar Vow that is not in effect and select one friendly BLACK TEMPLARS CORE or BLACK TEMPLARS CHARACTER unit within 6&quot; of this PRIEST to Inspire it. 
+Until the PRIEST inspires another unit, the Inspired unit gains the effects of that vow.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -61889,8 +61888,8 @@ While the Litany effects lasts, that unit gains the effects of that vow.</charac
           <profiles>
             <profile name="Oath of Glory" id="3f08-9354-cf38-3a98" hidden="false" typeId="2489-961a-f4fc-d026" typeName="Litany">
               <characteristics>
-                <characteristic name="Effect" typeId="3279-0878-4777-b0cb">If this Litany is inspiring:
-- At the start of the Fight phase, if this PRIEST model is within Engagement Range of any enemy units, it can fight first that phase.
+                <characteristic name="Effect" typeId="3279-0878-4777-b0cb">If this Litany is inspiring, the PRIEST unit is Inspired.
+- At the start of the Fight phase, if this PRIEST unit is within Engagement Range of any enemy units, it can fight first that phase.
 - Each time this PRIEST model makes an attack, an unmodified hit roll of 6 scores 2 additional hits.
 - Add 1 to the Strength characteristic of this PRIEST model.</characteristic>
               </characteristics>
