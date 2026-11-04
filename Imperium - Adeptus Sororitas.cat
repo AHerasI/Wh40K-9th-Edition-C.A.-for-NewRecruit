@@ -219,7 +219,8 @@ If you do so, 1 Miracle dice you use in that Act of Faith is considered to be a 
         </profile>
         <profile name="Priest" id="1a4a-5c5f-b08e-8b53" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model knows War Hymn and one other hymn from the Hymns of Battle. In your Command phase, if this model is on the battlefield, it can intone one hymn it knows that has not already been intoned by a friendly model this turn. Roll one D6: on a 3+, the intoned hymn is inspiring and takes effect until the start of your next Command phase.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model knows War Hymn and one other hymn from the Hymns of Battle. In your Command phase, if this model is on the battlefield, it can intone one hymn it knows that has not already been intoned by a friendly model this turn. Roll one D6: on a 3+, the intoned hymn is inspiring.
+Units successfully affected by this ability are considered to be Inspired. Unless otherwise stated, a unit can only be Inspired by one ability at any given time (any other inspiring ability subsequently issued to that unit replaces the current one).</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -8943,9 +8944,9 @@ Value of discarded Dice--&gt;Range of Blessing ability:
           <profiles>
             <profile name="War Hymn" id="e389-0111-96eb-b032" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">If this hymn is inspiring, select one friendly ADEPTUS SORORITAS CORE, ADEPTUS SORORITAS CHARACTER or IMPERIUM SERVANT CORE unit within 6&quot; of this PRIEST model. 
-Until the end of the battle, add 1 to the attacks characteristic of models in that unit.
-A unit can be affected by this hymn once per battle.</characteristic>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">If this hymn is inspiring, select one friendly ADEPTUS SORORITAS CORE, ADEPTUS SORORITAS CHARACTER or IMPERIUM SERVANTS CORE unit within 6&quot; of this PRIEST model to Inspire it. 
+Until the end of the battle, add 1 to the attacks characteristic of models in the Inspired unit.
+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8963,7 +8964,8 @@ A unit can be affected by this hymn once per battle.</characteristic>
           <profiles>
             <profile name="Refrain of blazing Piety" id="b70e-b938-0bca-bfd7" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">If this hymn is inspiring, select one enemy unit that is within 12&quot; of and visible to this PRIEST model. Until the start of your next Command phase, that unit reduces their Leadership characteristic by 2.</characteristic>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">If this hymn is inspiring, select one enemy unit that is within 12&quot; of and visible to this PRIEST model to Inspire it. 
+Until the start of your next Command phase, that unit is Inspired and reduces the Leadership characteristic of it&apos;s models by 2.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8981,9 +8983,9 @@ A unit can be affected by this hymn once per battle.</characteristic>
           <profiles>
             <profile name="Chorus of Spiritual fortitude" id="6f80-f6c0-210e-db25" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">If this hymn is inspiring, select one friendly ADEPTUS SORORITAS CORE, ADEPTUS SORORITAS CHARACTER or IMPERIUM SERVANT CORE unit within 6&quot; of this PRIEST model.
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">If this hymn is inspiring, select one friendly ADEPTUS SORORITAS CORE, ADEPTUS SORORITAS CHARACTER or IMPERIUM SERVANT CORE unit within 6&quot; of this PRIEST model to Inspire it.
 - If that unit or its models are being affected by any psychic powers manifested by enemy models, the effects of those psychic powers on that unit and its models end.
-- Until the start of your next Command phase, that unit and the models it contains are not affected by any psychic power manifested by enemy units.</characteristic>
+- Until the start of your next Command phase, the Inspired unit is not affected by any psychic power manifested by enemy units.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9001,8 +9003,8 @@ A unit can be affected by this hymn once per battle.</characteristic>
           <profiles>
             <profile name="Psalm of righterous Smiting" id="1873-6061-ee08-0250" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">If this hymn is inspiring:
-- Until the start of your next Command phase, add 1 to this PRIEST model’s Strength and Attacks characteristics.
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">If this hymn is inspiring, the PRIEST unit is Inspired. Until the end of the battle:
+- Until the start of your next Command phase, add 2 to this PRIEST&apos;s unit&apos;s model’s Strength and Attacks characteristics.
 - At the end of the Fight phase, if this PRIEST model is in Engagement Range of any enemy units, it can fight one additional time.</characteristic>
               </characteristics>
             </profile>
@@ -9021,8 +9023,8 @@ A unit can be affected by this hymn once per battle.</characteristic>
           <profiles>
             <profile name="Litany of enduring Faith" id="86cd-d49d-f11d-33b1" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">If this hymn is inspiring, select one friendly ADEPTUS SORORITAS CORE, ADEPTUS SORORITAS CHARACTER unit within 6&quot; of this PRIEST model.
-Until the start of your next Command phase, each time you roll to save a wound due to Enduring will ability for that unit, add 1 to the result of said roll.</characteristic>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">If this hymn is inspiring, select one friendly ADEPTUS SORORITAS CORE, ADEPTUS SORORITAS CHARACTER unit within 6&quot; of this PRIEST model to Inspire it..
+Until the end of the battle, each time you roll to save a wound due to Enduring will ability for that unit, add 1 to the result of said roll.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9040,7 +9042,7 @@ Until the start of your next Command phase, each time you roll to save a wound d
           <profiles>
             <profile name="Verse of Holy Piety" id="b0b6-42a2-c2c7-a17f" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">If this hymn is inspiring, select one friendly ADEPTA SORORITAS CORE or ADEPTA SORORITAS CHARACTER unit within 6&quot; of this PRIEST model. Select one sacred rite that is not active for your army. That sacred rite is active for that unit until your next Command phase, in addition to any others that are active for your army.</characteristic>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">If this hymn is inspiring, select one friendly ADEPTA SORORITAS CORE or ADEPTA SORORITAS CHARACTER unit within 6&quot; of this PRIEST model to Inspire it. Select one sacred rite that is not active for your army. That sacred rite is active for the Inspired unit until the end of the battle, in addition to any others that are active for your army.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9058,11 +9060,11 @@ Until the start of your next Command phase, each time you roll to save a wound d
           <profiles>
             <profile name="Catechism of Repugnance" id="e809-4b0c-82fa-0463" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">If this hymn is inspiring, select one friendly ADEPTA SORORITAS CORE or ADEPTA SORORITAS CHARACTER unit within 6&quot; of this PRIEST model.
-Until the end of the battle, each time a model in that unit makes a ranged attack with a bolt weapon:
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">If this hymn is inspiring, select one friendly ADEPTA SORORITAS CORE or ADEPTA SORORITAS CHARACTER unit within 6&quot; of this PRIEST model to Inspire it.
+Until the end of the battle, each time a model in the Inspired unit makes a ranged attack with a bolt weapon:
 - An unmodified hit roll of 6 scores an additional hit.
-- If the selected unit is within half range of the bolt weapon,  make an additional attack with it.
-A unit can be affected by this hymn once per battle.</characteristic>
+- If the selected unit is within half range of the bolt weapon, make an additional attack with it.
+</characteristic>
               </characteristics>
             </profile>
           </profiles>
