@@ -4558,6 +4558,15 @@ Each time an attack made with this weapon is allocated to a model, that model’
                   <infoLinks>
                     <infoLink name="Ion Shields" id="a904-a7e8-388d-d8d9" hidden="false" targetId="5013-9ee3-dca4-3c15" type="profile"/>
                     <infoLink name="Objective Secured" id="c3fd-226f-924e-e8ac" hidden="false" targetId="e07e-8dbf-0b15-7485" type="rule"/>
+                    <infoLink name="Off-hand weapon" id="171a-cdc8-5971-4aed" hidden="false" targetId="e14b-37da-f8e9-1752" type="profile">
+                      <modifiers>
+                        <modifier field="hidden" type="set" value="true">
+                          <conditions>
+                            <condition childId="09a4-11e1-86f6-53cd" childName="Claw&amp;Rad cleanser" field="selections" scope="6451-2d17-399a-2d42" shared="true" type="lessThan" value="2"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </infoLink>
                   </infoLinks>
                   <modifierGroups>
                     <modifierGroup>
