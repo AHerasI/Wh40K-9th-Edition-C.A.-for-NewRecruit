@@ -5539,7 +5539,7 @@ Its Move characteristic becomes 20&quot;, and it loses the Hard to Hit and Super
     <profile name="C. Beam cannon, Long range" id="c7e3-3ec3-e212-dc62" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48-72</characteristic>
-        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D3</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D3+3</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">12</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">4</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">6</characteristic>
@@ -5549,7 +5549,7 @@ Its Move characteristic becomes 20&quot;, and it loses the Hard to Hit and Super
     <profile name="C. Beam cannon, Medium range" id="d3c2-5035-36cc-46bd" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24-48</characteristic>
-        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D3</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D3+3</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">10</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">4</characteristic>
@@ -5559,7 +5559,7 @@ Its Move characteristic becomes 20&quot;, and it loses the Hard to Hit and Super
     <profile name="C. Beam cannon, Short range" id="ed55-bf50-e69e-298f" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24</characteristic>
-        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D3</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D3+3</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
@@ -6511,6 +6511,26 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">If the unit of the weapon&apos;s bearer is in engagement range of enemy units, this weapon changes it&apos;s profile to Pistol 1.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Light C. Beam cannon, Long range" id="820b-a543-195a-8a4c" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24-48</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D3+2</characteristic>
+        <characteristic name="S" typeId="59b1-319e-ec13-d466">10</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
+        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">4</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Beam. Blast.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Light C. Beam cannon, Short range" id="e9bf-6105-1a27-93e3" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D3+2</characteristic>
+        <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
+        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Beam. Blast.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -17256,22 +17276,22 @@ HAEMONCULUS</description>
       <profiles>
         <profile name="Graviton, contained" id="b3ec-1171-e092-fb41" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48</characteristic>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60</characteristic>
             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 6</characteristic>
             <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
             <characteristic name="AP" typeId="75aa-a838-b675-6484">4</characteristic>
             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
-            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack made with this weapon is allocated to a model with a Save characteristic of 3+ or better, that attack has a Damage characteristic of 4.</characteristic>
           </characteristics>
         </profile>
         <profile name="Graviton, singularity" id="164e-109e-81e4-d02b" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48</characteristic>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60</characteristic>
             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D6+6</characteristic>
             <characteristic name="S" typeId="59b1-319e-ec13-d466">14</characteristic>
             <characteristic name="AP" typeId="75aa-a838-b675-6484">4</characteristic>
             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
-            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time you select this profile to shoot with, roll one D6; on a 1-3, the bearer suffers D3 mortal wounds.</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time you select this profile to shoot with, roll one D6; on a 1-3, the bearer suffers D3 mortal wounds. Each time an attack made with this weapon is allocated to a model with a Save characteristic of 3+ or better, that attack has a Damage characteristic of 5.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -17581,6 +17601,21 @@ HAEMONCULUS</description>
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry name="Light Conversion beam Cannon" id="df2d-cb10-c5cd-e2a0" collective="false" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Blast" id="ea5f-b657-87d2-2731" hidden="false" primary="false" targetId="a30d-0055-6710-6284"/>
+        <categoryLink name="Beam" id="530b-e302-ede1-7975" hidden="false" primary="false" targetId="e0a1-e75a-bb09-b142"/>
+      </categoryLinks>
+      <costs>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Light C. Beam cannon, Long range" id="da4b-9526-1992-8739" hidden="false" targetId="820b-a543-195a-8a4c" type="profile"/>
+        <infoLink name="Light C. Beam cannon, Short range" id="dc3d-b85f-e495-fef6" hidden="false" targetId="e9bf-6105-1a27-93e3" type="profile"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
