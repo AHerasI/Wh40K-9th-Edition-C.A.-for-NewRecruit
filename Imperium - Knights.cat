@@ -1041,28 +1041,32 @@ Each time this model makes a Normal Move, Advances or Falls Back, it can be move
             <cost name="Pts" typeId="points" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
-          <profiles>
-            <profile name="Light Conversion beam Cannon" id="df04-9151-40ef-0ec4" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">72</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D3</characteristic>
-                <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
-                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Beam. Attacks from a conversion beamer that target enemies at over half its range are resolved at Strength 10, AP -2 and Damage 4.</characteristic>
-              </characteristics>
+          <infoLinks>
+            <infoLink name="Light C. Beam cannon, Long range" id="cc0e-7f3d-7785-1b59" hidden="false" targetId="820b-a543-195a-8a4c" type="profile">
               <modifierGroups>
-                <modifierGroup>
+                <modifierGroup type="and">
                   <conditions>
                     <condition childId="ba31-e803-840c-a86c" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
                   </conditions>
                   <modifiers>
-                    <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="set" value="78"/>
+                    <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="set" value="30-54"/>
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
-            </profile>
-          </profiles>
+            </infoLink>
+            <infoLink name="Light C. Beam cannon, Short range" id="9b12-4003-86fc-44e9" hidden="false" targetId="e9bf-6105-1a27-93e3" type="profile">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition childId="ba31-e803-840c-a86c" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="set" value="30"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </infoLink>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry name="Phased plasma-fusil" id="c9ca-c53d-275c-4928" collective="false" hidden="false" import="true" type="upgrade">
           <categoryLinks>
