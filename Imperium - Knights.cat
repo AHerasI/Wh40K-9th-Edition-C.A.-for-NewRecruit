@@ -704,8 +704,8 @@ Each time this model makes a Normal Move, Advances or Falls Back, it can be move
           <profiles>
             <profile name="Graviton pulsar" id="c15e-e3ef-78a2-f403" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault D6</characteristic>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 6</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
                 <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
@@ -5806,6 +5806,15 @@ Until the startof your next Command phase, that ARMIGER-CLASS model&apos;s wound
             <infoLink name="Ion Shield" id="b39d-cc68-a89f-b4a8" hidden="false" targetId="03dd-2bbb-cad0-0953" type="profile"/>
             <infoLink name="Explodes 6+ (6&quot;)" id="2585-3e2d-f0ba-48a4" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
             <infoLink name="Objective Secured" id="6182-bf22-9597-cf3c" hidden="false" targetId="e07e-8dbf-0b15-7485" type="rule"/>
+            <infoLink name="Off-hand weapon" id="475c-1ab4-c41d-75f0" hidden="false" targetId="e14b-37da-f8e9-1752" type="profile">
+              <modifiers>
+                <modifier field="hidden" type="set" value="true">
+                  <conditions>
+                    <condition childId="b964-1e49-d50d-6a03" childName="Claw&amp;Rad cleanser" field="selections" scope="b7b7-1a69-f67b-73b4" shared="true" type="lessThan" value="2"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <modifiers>
             <modifier field="category" type="add" value="ef18-746a-369f-43a4">
@@ -5899,7 +5908,7 @@ Until the startof your next Command phase, that ARMIGER-CLASS model&apos;s wound
                     <cost name="pts" typeId="points" value="10"/>
                   </costs>
                 </entryLink>
-                <entryLink name="Volkite Culebrin" id="7358-1248-6342-9b86" collective="false" hidden="false" import="true" targetId="500e-eb7e-b5cf-5ea0" type="selectionEntry">
+                <entryLink name="Twin Volkite Culebrin" id="7358-1248-6342-9b86" collective="false" hidden="false" import="true" targetId="3123-289e-b924-31de" type="selectionEntry">
                   <costs>
                     <cost name="pts" typeId="points" value="5"/>
                   </costs>
