@@ -429,15 +429,43 @@ If the unit has the INFANTRY Keyword and is in a terrain with the DEFENSIBLE tra
     </categoryEntry>
     <categoryEntry name="Ethereal" id="05f0-8653-4515-8349" hidden="false">
       <constraints>
-        <constraint id="6ec7-b978-877a-7279" field="selections" includeChildForces="true" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="max" value="-1"/>
+        <constraint id="6ec7-b978-877a-7279" field="selections" includeChildForces="true" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="max" value="-1"/>
       </constraints>
-      <modifiers>
-        <modifier field="6ec7-b978-877a-7279" type="set" value="0">
-          <conditions>
-            <condition childId="fa10-5b69-9887-b4c1" field="selections" includeChildForces="true" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="atLeast" value="1"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier field="6ec7-b978-877a-7279" type="set" value="1">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition childId="58c5-1d35-3869-613f" field="selections" includeChildForces="true" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="equalTo" value="1"/>
+                        <condition childId="fa10-5b69-9887-b4c1" field="selections" includeChildForces="true" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="0"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <repeats>
+                    <repeat childId="daea-75d3-1073-2ba0" childName="Brigade Detachment" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <modifiers>
+            <modifier field="6ec7-b978-877a-7279" type="set" value="-1">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition childId="fa10-5b69-9887-b4c1" field="selections" includeChildForces="true" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="atLeast" value="1"/>
+                    <condition childId="58c5-1d35-3869-613f" field="selections" includeChildForces="true" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="equalTo" value="0"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </categoryEntry>
     <categoryEntry name="Ethereal Guard" id="ea0a-80bd-ada9-ca11" hidden="false"/>
     <categoryEntry name="Firesight Marksman" id="e024-d272-0cb5-87bb" hidden="false"/>
@@ -867,11 +895,8 @@ If the unit has the INFANTRY Keyword and is in a terrain with the DEFENSIBLE tra
               <modifiers>
                 <modifier field="0e62-9a2e-2927-1ade" type="increment" value="1">
                   <repeats>
-                    <repeat childId="e6c7-87a2-73a3-a475" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" repeats="4" roundUp="false" scope="roster" shared="true" value="1"/>
                     <repeat childId="9e82-c782-b939-36b4" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
-                    <repeat childId="5686-7cd9-6664-635b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
-                    <repeat childId="09f9-b586-8d63-7635" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" repeats="2" roundUp="false" scope="roster" shared="true" value="1"/>
-                    <repeat childId="fad2-035f-88a7-60c0" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" repeats="3" roundUp="false" scope="roster" shared="true" value="1"/>
+                    <repeat childId="daea-75d3-1073-2ba0" childName="Brigade Detachment" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
                   </repeats>
                 </modifier>
               </modifiers>
