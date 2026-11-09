@@ -8709,7 +8709,7 @@ In addition, a unit gain a extra EXP point if it managed to do one of the follow
                     <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                   </costs>
                   <profiles>
-                    <profile name="Inspiring" id="6086-45f9-ee24-4305" hidden="false" typeId="9cbe-b8f7-8b06-3bdb" typeName="Crusade Battle Honour">
+                    <profile name="Inspiring" id="6086-45f9-ee24-4305" hidden="false" noindex="true" typeId="9cbe-b8f7-8b06-3bdb" typeName="Crusade Battle Honour">
                       <characteristics>
                         <characteristic name="Description" typeId="2cb3-f998-da99-e077">Add 1 to the Leadership characteristic of friendly units while they are within 6&quot; of a CHARACTER model from this unit. In addition, this unit can perform Heroic Interventions if, after the enemy has made all its charge moves, it is within 6&quot; of any enemy units, and it can move up to 6&quot; when doing so.</characteristic>
                       </characteristics>
