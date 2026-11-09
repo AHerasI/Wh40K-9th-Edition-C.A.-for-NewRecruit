@@ -24,11 +24,83 @@ Units successfully affected by this ability are considered to be Inspired. Unles
     <categoryEntry name="Questor Mechanicus" id="22c4-8656-056c-5e24" hidden="false">
       <infoLinks>
         <infoLink name="Questor Mechanicus" id="9f44-ce20-d030-72ff" hidden="false" targetId="3e7c-2644-4e39-84a9" type="profile"/>
+        <infoLink name="Defend the Realm" id="6b2b-90d6-2eeb-4478" hidden="false" targetId="05b4-bbb5-828d-7e7c" type="infoGroup">
+          <modifiers>
+            <modifier field="hidden" type="set" value="true">
+              <conditions>
+                <condition childId="2115-9f6a-811a-75c8" childName="Defend the Realm" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="0"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Lay Low The Tyrants" id="a93f-6c96-8f45-348a" hidden="false" targetId="8087-c1b8-21d0-504d" type="infoGroup">
+          <modifiers>
+            <modifier field="hidden" type="set" value="true">
+              <conditions>
+                <condition childId="e795-960a-234c-0124" childName="Lay Low The Tyrants" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="0"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Protect Those in Need" id="c6e4-9d4a-96e3-520e" hidden="false" targetId="e237-0cc6-b103-a805" type="infoGroup">
+          <modifiers>
+            <modifier field="hidden" type="set" value="true">
+              <conditions>
+                <condition childId="b858-86af-8f96-6cfa" childName="Protect Those in Need" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="0"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Refuse No Challenge" id="e01a-7e0e-7306-f679" hidden="false" targetId="709b-0c90-a441-24c7" type="infoGroup">
+          <modifiers>
+            <modifier field="hidden" type="set" value="true">
+              <conditions>
+                <condition childId="5068-f70b-d283-c4db" childName="Refuse No Challenge" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="0"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </categoryEntry>
     <categoryEntry name="Questor Imperialis" id="b617-2a8d-2118-9ce8" hidden="false">
       <infoLinks>
         <infoLink name="Questor Imperialis" id="c2dd-541a-1775-513c" hidden="false" targetId="e41b-1574-4d4a-07c7" type="profile"/>
+        <infoLink name="Defend the Realm" id="ca3c-10dd-a577-dcb1" hidden="false" targetId="05b4-bbb5-828d-7e7c" type="infoGroup">
+          <modifiers>
+            <modifier field="hidden" type="set" value="true">
+              <conditions>
+                <condition childId="2115-9f6a-811a-75c8" childName="Defend the Realm" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="0"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Lay Low The Tyrants" id="4341-58d4-6565-ef40" hidden="false" targetId="8087-c1b8-21d0-504d" type="infoGroup">
+          <modifiers>
+            <modifier field="hidden" type="set" value="true">
+              <conditions>
+                <condition childId="e795-960a-234c-0124" childName="Lay Low The Tyrants" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="0"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Protect Those in Need" id="2f95-108c-a0f9-c700" hidden="false" targetId="e237-0cc6-b103-a805" type="infoGroup">
+          <modifiers>
+            <modifier field="hidden" type="set" value="true">
+              <conditions>
+                <condition childId="b858-86af-8f96-6cfa" childName="Protect Those in Need" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="0"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Refuse No Challenge" id="3c80-6142-1199-9a6a" hidden="false" targetId="709b-0c90-a441-24c7" type="infoGroup">
+          <modifiers>
+            <modifier field="hidden" type="set" value="true">
+              <conditions>
+                <condition childId="5068-f70b-d283-c4db" childName="Refuse No Challenge" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="0"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </categoryEntry>
     <categoryEntry name="House: Other" id="c0fc-dd33-d677-57f8" hidden="false">
@@ -2434,8 +2506,8 @@ Each time an attack made with this weapon is allocated to a model, that model’
               <profiles>
                 <profile name="Protect Those in Need" id="7205-9f0d-27fc-f906" hidden="false" typeId="39d5-662d-8b39-c69c" typeName="Chivalric Oaths">
                   <characteristics>
-                    <characteristic name="Pledge." typeId="12cb-64b0-59e6-b6a8">Any IMPERIAL KNIGHTS model of this Detachment that are eligible to, must perform a Heroic Intervention or make a charge move against an enemy unit that started the Charge phase within engagement range of another friendly unit.</characteristic>
-                    <characteristic name="Troth." typeId="1912-abcd-fd39-6144">Any IMPERIAL KNIGHTS model of this Detachment that was eligible to declare a Heroic Intervention during your opponent’s charge phase, but failed to do so or were eligible to declare a charge against an enemy unit that started the phase within engagement range with another unit from your army, but did not made a charge move against such an enemy unit during that phase.</characteristic>
+                    <characteristic name="Pledge." typeId="12cb-64b0-59e6-b6a8">At the end of the Battle round, if any IMPERIAL KNIGHTS model of a Detachment with this Oath that are eligible to, must perform a Heroic Intervention or make a charge move against an enemy unit that started the Charge phase within engagement range of another friendly unit.</characteristic>
+                    <characteristic name="Troth." typeId="1912-abcd-fd39-6144">At the end of the Battle round, if any IMPERIAL KNIGHTS model of a Detachment with this Oath that was eligible to declare a Heroic Intervention during your opponent’s charge phase, but failed to do so, or were eligible to declare a charge against an enemy unit that started the phase within engagement range with another unit from your army, but did not made a charge move against such an enemy unit during that phase.</characteristic>
                     <characteristic name="Honoured Ability, active with 1+ Honour points." typeId="2be7-b9eb-05a1-18ed">IMPERIAL KNIGHTS models of this Detachment are eligible to perform Heroic Interventions as if it was a CHARACTER. 
 If this model is a CHARACTER, then it is eligible to perform a Heroic Intervention if it is within 6&quot; horizontally and 5&quot; vertically of any enemy unit, instead of 3&quot; horizontally and 5&quot; vertically, and each time this model makes a Heroic Intervention move, it can move up to 6&quot;. 
 All other rules for Heroic Interventions still apply.</characteristic>
@@ -2457,9 +2529,9 @@ All other rules for Heroic Interventions still apply.</characteristic>
               <profiles>
                 <profile name="Lay Low The Tyrants" id="da1f-27b3-7948-aa4f" hidden="false" typeId="39d5-662d-8b39-c69c" typeName="Chivalric Oaths">
                   <characteristics>
-                    <characteristic name="Pledge." typeId="12cb-64b0-59e6-b6a8">An IMPERIAL KNIGHTS model of this Detachment must destroy at least one WARLORD, CHARACTER, MONSTER or VEHICLE unit with a melee attack.</characteristic>
-                    <characteristic name="Troth." typeId="1912-abcd-fd39-6144">Less enemy units with MONSTER or VEHICLE Keywords have been destroyed by attacks made by IMPERIAL KNIGHTS models of this Detachment than friendly units with MONSTER or VEHICLE Keywords during the previous turn.</characteristic>
-                    <characteristic name="Honoured Ability, active with 1+ Honour points." typeId="2be7-b9eb-05a1-18ed">Each time an IMPERIAL KNIGHTS model of this Detachment is selected to shoot or fight, you can re-roll one hit roll or one wound roll.</characteristic>
+                    <characteristic name="Pledge." typeId="12cb-64b0-59e6-b6a8">At the end of the Battle round, at least one IMPERIAL KNIGHTS model of a Detachment with this Oath must destroy at least one enemy WARLORD, CHARACTER, MONSTER or VEHICLE unit with a melee attack.</characteristic>
+                    <characteristic name="Troth." typeId="1912-abcd-fd39-6144">At the end of the Battle round, if more friendly units with MONSTER or VEHICLE Keywords were destroyed than enemy units with the same Keywords.</characteristic>
+                    <characteristic name="Honoured Ability, active with 1+ Honour points." typeId="2be7-b9eb-05a1-18ed">Each time an IMPERIAL KNIGHTS model of this Detachment is selected to shoot or fight, you can re-roll one hit roll and one wound roll.</characteristic>
                     <characteristic name="Virtuous Ability, active with 5+ Honour points." typeId="ca4a-a2a2-76dd-5c30">Once per turn, when you make an Advance roll, hit roll, wound roll, or saving throw for one IMPERIAL KNIGHTS model of this Detachment, you can change the result of that roll to a 6.</characteristic>
                   </characteristics>
                 </profile>
@@ -2478,10 +2550,10 @@ All other rules for Heroic Interventions still apply.</characteristic>
               <profiles>
                 <profile name="Refuse No Challenge" id="9219-752b-8dd5-a118" hidden="false" typeId="39d5-662d-8b39-c69c" typeName="Chivalric Oaths">
                   <characteristics>
-                    <characteristic name="Pledge." typeId="12cb-64b0-59e6-b6a8">2 or more enemy units must be destroyed by melee attacks made by IMPERIAL KNIGHTS models of this Detachment during this turn.</characteristic>
-                    <characteristic name="Troth." typeId="1912-abcd-fd39-6144">Any IMPERIAL KNIGHTS model of this Detachment fell back.</characteristic>
-                    <characteristic name="Honoured Ability, active with 1+ Honour points." typeId="2be7-b9eb-05a1-18ed">Each time an IMPERIAL KNIGHTS model of this Detachment makes a melee attack, if it made a charge move, was charged, or performed a Heroic Intervention this turn, add 1 to that attack’s hit roll.</characteristic>
-                    <characteristic name="Virtuous Ability, active with 5+ Honour points." typeId="ca4a-a2a2-76dd-5c30">You can re-roll Advance and charge rolls made for IMPERIAL KNIGHTS models of this Detachment.</characteristic>
+                    <characteristic name="Pledge." typeId="12cb-64b0-59e6-b6a8">At the end of the Battle round, at least 2 enemy units must be destroyed by melee attacks made by IMPERIAL KNIGHTS models of a Detachment with this Oath during this turn.</characteristic>
+                    <characteristic name="Troth." typeId="1912-abcd-fd39-6144">At the end of the Battle round, any IMPERIAL KNIGHTS model of a Detachment with this Oath fell back.</characteristic>
+                    <characteristic name="Honoured Ability, active with 1+ Honour points." typeId="2be7-b9eb-05a1-18ed">Each time an IMPERIAL KNIGHTS model of a Detachment with this Oath makes a melee attack, if it made a charge move, was charged, or performed a Heroic Intervention this turn, add 1 to that attack’s hit roll.</characteristic>
+                    <characteristic name="Virtuous Ability, active with 5+ Honour points." typeId="ca4a-a2a2-76dd-5c30">You can re-roll Advance and charge rolls made for IMPERIAL KNIGHTS models of a Detachment with this Oath.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2499,10 +2571,10 @@ All other rules for Heroic Interventions still apply.</characteristic>
               <profiles>
                 <profile name="Defend the Realm" id="2faa-4258-c890-9255" hidden="false" typeId="39d5-662d-8b39-c69c" typeName="Chivalric Oaths">
                   <characteristics>
-                    <characteristic name="Pledge." typeId="12cb-64b0-59e6-b6a8">At the end of your turn, you must control more objective markers than your opponent does.</characteristic>
-                    <characteristic name="Troth." typeId="1912-abcd-fd39-6144">At the end of your turn, you control less objective markers than you did at the start of your turn.</characteristic>
+                    <characteristic name="Pledge." typeId="12cb-64b0-59e6-b6a8">At the end of the Battle round, you must control more objective markers than your opponent does.</characteristic>
+                    <characteristic name="Troth." typeId="1912-abcd-fd39-6144">At the end of the Battle round, you control less objective markers than you did at the start of your turn.</characteristic>
                     <characteristic name="Honoured Ability, active with 1+ Honour points." typeId="2be7-b9eb-05a1-18ed">At the start of your Command phase, you gain 1 Command Point.</characteristic>
-                    <characteristic name="Virtuous Ability, active with 5+ Honour points." typeId="ca4a-a2a2-76dd-5c30">IMPERIAL KNIGHTS models of this Detachment have the Objective Secured ability. 
+                    <characteristic name="Virtuous Ability, active with 5+ Honour points." typeId="ca4a-a2a2-76dd-5c30">IMPERIAL KNIGHTS models of a Detachment with this Oath have the Objective Secured ability.
 If a model already has this ability, each remaining wound of that model counts as 3 wounds instead of 2 when determining control of an objective marker.</characteristic>
                   </characteristics>
                 </profile>
@@ -9543,6 +9615,109 @@ Ion Aegis [Aura]: While a friendly NOBLE HOUSEHOLD ARMIGER-CLASS model is within
           </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry name=" Chivalry Oath RFERENCES" id="1e91-a027-0a03-d9c7" hidden="false" import="true" type="upgrade">
+      <infoGroups>
+        <infoGroup name="Defend the Realm" id="05b4-bbb5-828d-7e7c" hidden="false">
+          <profiles>
+            <profile name="(1-4HP) Honoured Ability" id="4a34-e9e0-3328-951a" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the start of your Command phase, you gain 1 Command Point.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Oath Troth" id="1836-d1c3-7156-3b5e" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the end of your turn, you control less objective markers than you did at the start of your turn.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="(5+HP) Virtuous Ability" id="baee-6c6c-3780-75dd" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">IMPERIAL KNIGHTS models of a Detachment with this Oath have the Objective Secured ability.
+If a model already has this ability, each remaining wound of that model counts as 3 wounds instead of 2 when determining control of an objective marker.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Oath Pledge" id="9594-c57a-f9b3-973e" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the end of your turn, you must control more objective markers than your opponent does.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+        <infoGroup name="Lay Low The Tyrants" id="8087-c1b8-21d0-504d" hidden="false">
+          <profiles>
+            <profile name="(1-4HP) Honoured Ability" id="de85-a69a-a788-21e9" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time an IMPERIAL KNIGHTS model of this Detachment is selected to shoot or fight, you can re-roll one hit roll and one wound roll.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="(5+HP) Virtuous Ability" id="37de-812e-84fb-1c76" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Once per turn, when you make an Advance roll, hit roll, wound roll, or saving throw for one IMPERIAL KNIGHTS model of a Detachment with this Oath, you can change the result of that roll to a 6.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Oath Pledge" id="0c96-14cb-dfc2-f12e" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the end of the Battle round, at least one IMPERIAL KNIGHTS model of a Detachment with this Oath must destroy at least one enemy WARLORD, CHARACTER, MONSTER or VEHICLE unit with a melee attack.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Oath Troth" id="ace0-c76b-cda7-4113" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the end of the Battle round, if more friendly units with MONSTER or VEHICLE Keywords were destroyed than enemy units with the same Keywords.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+        <infoGroup name="Protect Those in Need" id="e237-0cc6-b103-a805" hidden="false">
+          <profiles>
+            <profile name="(1-4HP) Honoured Ability" id="0cc4-21e5-359c-084b" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">IMPERIAL KNIGHTS models of this Detachment are eligible to perform Heroic Interventions as if it was a CHARACTER.
+If this model is a CHARACTER, then it is eligible to perform a Heroic Intervention if it is within 6&quot; horizontally and 5&quot; vertically of any enemy unit, instead of 3&quot; horizontally and 5&quot; vertically, and each time this model makes a Heroic Intervention move, it can move up to 6&quot;.
+All other rules for Heroic Interventions still apply.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="(5+HP) Virtuous Ability" id="d28c-5487-bfc9-816e" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">If this model has a Bondsman ability, it can use it one additional time in each of your Command phases.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Oath Pledge" id="6a85-c56a-3ab8-c083" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the end of the Battle round, if any IMPERIAL KNIGHTS model of a Detachment with this Oath that are eligible to, must perform a Heroic Intervention or make a charge move against an enemy unit that started the Charge phase within engagement range of another friendly unit.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Oath Troth" id="3f41-297c-d042-db89" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the end of the Battle round, if any IMPERIAL KNIGHTS model of a Detachment with this Oath that was eligible to declare a Heroic Intervention during your opponent’s charge phase, but failed to do so, or were eligible to declare a charge against an enemy unit that started the phase within engagement range with another unit from your army, but did not made a charge move against such an enemy unit during that phase.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+        <infoGroup name="Refuse No Challenge" id="709b-0c90-a441-24c7" hidden="false">
+          <profiles>
+            <profile name="(1-4HP) Honoured Ability" id="a76e-fae2-7060-dbdc" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time an IMPERIAL KNIGHTS model of a Detachment with this Oath makes a melee attack, if it made a charge move, was charged, or performed a Heroic Intervention this turn, add 1 to that attack’s hit roll.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="(5+HP) Virtuous Ability" id="4f81-b141-bf00-834a" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">You can re-roll Advance and charge rolls made for IMPERIAL KNIGHTS models of a Detachment with this Oath.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Oath Pledge" id="b48e-8131-7810-9367" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the end of the Battle round, at least 2 enemy units must be destroyed by melee attacks made by IMPERIAL KNIGHTS models of a Detachment with this Oath during this turn.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Oath Troth" id="fd00-4386-d282-f4af" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the end of the Battle round, any IMPERIAL KNIGHTS model of a Detachment with this Oath fell back.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
