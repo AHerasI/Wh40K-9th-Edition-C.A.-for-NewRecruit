@@ -775,8 +775,15 @@ Then, in your next Shooting phase, you can either:
       </rules>
     </categoryEntry>
     <categoryEntry name="Vehicle Section" id="780f-68a5-fbfb-bdea" hidden="false">
+      <profiles>
+        <profile name="Vehicle Section" id="ab4e-bb1c-b2a9-e18a" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The first time this unit is set up, all models in this unit must be placed within 6&quot; of each other. From that point onwards, each operates independently and is treated as a separate unit for all rules purposes.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <rules>
-        <rule name="Vehicle Section" id="ce9a-ee86-9484-91f3" hidden="false">
+        <rule name="Vehicle Section" id="ce9a-ee86-9484-91f3" hidden="true">
           <description>The first time this unit is set up, all models in this unit must be placed within 6&quot; of each other. From that point onwards, each operates independently and is treated as a separate unit for all rules purposes.</description>
         </rule>
       </rules>
