@@ -3987,7 +3987,7 @@ Until the start of your next Command phase, each time a model in that unit makes
         <categoryLink name="Ordo Hereticus" id="de52-cdd9-c6a0-4391" hidden="false" primary="false" targetId="2981-f499-19fc-bc80"/>
       </categoryLinks>
       <costs>
-        <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+        <cost name="Pts" typeId="points" value="0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
@@ -4033,18 +4033,6 @@ Until the start of your next Command phase, each time a model in that unit makes
           </modifiers>
         </modifierGroup>
       </modifierGroups>
-      <modifiers>
-        <modifier field="e356-c769-5920-6e14" type="increment" value="1">
-          <repeats>
-            <repeat childId="model" childName="model" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="a639-f277-4d34-c5f8" shared="true" value="3"/>
-          </repeats>
-        </modifier>
-        <modifier field="e356-c769-5920-6e14" type="decrement" value="1">
-          <conditions>
-            <condition childId="model" childName="model" field="selections" includeChildSelections="true" scope="a639-f277-4d34-c5f8" shared="true" type="atLeast" value="5"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <selectionEntries>
         <selectionEntry name="Sacresant Superior" id="07ff-d7be-29af-6f5c" collective="false" hidden="false" import="true" type="model">
           <constraints>
@@ -4052,8 +4040,8 @@ Until the start of your next Command phase, each time a model in that unit makes
             <constraint id="7558-12e0-6700-fa83" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
           </constraints>
           <costs>
-            <cost name="Pts" typeId="points" value="25"/>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+            <cost name="Pts" typeId="points" value="30"/>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
@@ -4064,6 +4052,7 @@ Until the start of your next Command phase, each time a model in that unit makes
           </entryLinks>
           <infoLinks>
             <infoLink name="Blessed Sister Superior" id="dad7-efda-d3d0-201d" hidden="false" targetId="4bff-750d-cc33-c092" type="profile"/>
+            <infoLink name="Rosarius" id="74dd-293c-c91e-2f9e" hidden="false" targetId="ace1-892d-7d99-bc9e" type="profile"/>
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapon option" id="5157-deeb-cbe3-2b36" collective="false" defaultSelectionEntryId="7fbc-11ee-39b8-ea67" hidden="false" import="true">
@@ -4095,8 +4084,8 @@ Until the start of your next Command phase, each time a model in that unit makes
                 <constraint id="4ef3-d4ce-c3c1-0e07" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="9"/>
               </constraints>
               <costs>
-                <cost name="Pts" typeId="points" value="25"/>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                <cost name="Pts" typeId="points" value="30"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
@@ -4108,6 +4097,7 @@ Until the start of your next Command phase, each time a model in that unit makes
               </entryLinks>
               <infoLinks>
                 <infoLink name="Blessed Battle Sister" id="167d-c366-399f-2c83" hidden="false" targetId="3aa7-072f-61e1-5a43" type="profile"/>
+                <infoLink name="Rosarius" id="a47f-50e1-e3fd-5768" hidden="false" targetId="ace1-892d-7d99-bc9e" type="profile"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry name="Celestian Sacresant w/Lance" id="6b26-98a6-2794-246a" collective="false" hidden="false" import="true" type="model">
@@ -4115,8 +4105,8 @@ Until the start of your next Command phase, each time a model in that unit makes
                 <constraint id="9cc6-e2e2-a4a1-6c23" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="9"/>
               </constraints>
               <costs>
-                <cost name="Pts" typeId="points" value="30"/>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                <cost name="Pts" typeId="points" value="35"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
@@ -4128,6 +4118,7 @@ Until the start of your next Command phase, each time a model in that unit makes
               </entryLinks>
               <infoLinks>
                 <infoLink name="Blessed Battle Sister" id="300c-b67e-4925-f740" hidden="false" targetId="3aa7-072f-61e1-5a43" type="profile"/>
+                <infoLink name="Rosarius" id="5573-17ee-1951-852d" hidden="false" targetId="ace1-892d-7d99-bc9e" type="profile"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -5192,6 +5183,9 @@ This unit&apos;s models can move and shoot Heavy Weapons without penalty to the 
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Refractor Field" id="9b8f-44ca-e45d-6e14" hidden="false" targetId="76f9-878f-4057-ce75" type="profile"/>
+          </infoLinks>
           <profiles>
             <profile name="Paragon" id="e8af-1c3d-6341-7b15" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
@@ -5334,6 +5328,9 @@ This unit&apos;s models can move and shoot Heavy Weapons without penalty to the 
             <entryLink name="Melee weapon" id="bf16-879f-5b15-0d2a" collective="false" hidden="false" import="true" targetId="49aa-3de1-999f-84da" type="selectionEntryGroup"/>
             <entryLink name="Ranged weapon" id="e074-238f-75be-a33c" collective="false" hidden="false" import="true" targetId="59ac-9916-2b1c-053e" type="selectionEntryGroup"/>
           </entryLinks>
+          <infoLinks>
+            <infoLink name="Refractor Field" id="d4a9-8462-7859-e22c" hidden="false" targetId="76f9-878f-4057-ce75" type="profile"/>
+          </infoLinks>
           <profiles>
             <profile name="Paragon Superior" id="864c-c293-6ce3-db5a" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
@@ -5625,6 +5622,7 @@ In addition, after the first turn begins, when this unit is deployed on the Batt
                 <modifier field="0bdf-a96e-9e38-7779" type="set" value="12"/>
               </modifiers>
             </infoLink>
+            <infoLink name="Rosarius" id="98c3-a68a-aa65-c1de" hidden="false" targetId="ace1-892d-7d99-bc9e" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry name="Zephyrim pennant" id="8508-464c-dbe9-676d" collective="false" hidden="false" import="true" type="upgrade">
@@ -5685,6 +5683,7 @@ In addition, after the first turn begins, when this unit is deployed on the Batt
                 <modifier field="0bdf-a96e-9e38-7779" type="set" value="12"/>
               </modifiers>
             </infoLink>
+            <infoLink name="Rosarius" id="5b94-ae29-0555-86bd" hidden="false" targetId="ace1-892d-7d99-bc9e" type="profile"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
