@@ -1471,6 +1471,11 @@ Additional reference data obtained from Wahapedia, https://wahapedia.ru/</readme
         <categoryLink name="Heavy Support" id="3854-c7a2-a27c-c864" hidden="false" primary="true" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6"/>
       </categoryLinks>
     </entryLink>
+    <entryLink name="Lady Malys" id="e213-d569-7506-62c1" hidden="false" import="true" targetId="ab80-ff57-a598-6ac9" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="HQ" id="8d33-203a-ba28-245b" hidden="false" primary="true" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <profileTypes>
     <profileType name="Dice Result" id="06d3-135c-ed1a-605b">
@@ -35430,6 +35435,101 @@ If the unit cannot be set-up, it&apos;s placed in the Strategic Reserves of your
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
+        </selectionEntry>
+        <selectionEntry name="Lady Malys" id="ab80-ff57-a598-6ac9" hidden="false" import="true" type="model">
+          <categoryLinks>
+            <categoryLink name="Character" id="9363-3c72-53ec-2d88" hidden="false" primary="false" targetId="ef18-746a-369f-43a4"/>
+            <categoryLink name="Kabal: Poisoned tongue" id="b993-b0d4-dae5-9f7f" hidden="false" primary="false" targetId="efc7-bf1c-bc2e-7cb4"/>
+            <categoryLink name="Faction: Aeldari" id="f006-e9f4-15d5-656e" hidden="false" primary="false" targetId="1924-ef18-000b-d2ba"/>
+            <categoryLink name="Faction: Drukhari" id="1f7c-eaa8-5806-2025" hidden="false" primary="false" targetId="137f-9a86-a5a7-ce94"/>
+            <categoryLink name="Drukhari Kabal" id="f0ac-58d2-0999-3e33" hidden="false" primary="false" targetId="395b-75d9-5ac9-7a81"/>
+            <categoryLink name="Ø25mm" id="3ad5-ec95-b2f9-ef9a" hidden="false" primary="false" targetId="a9eb-ffb1-e9f2-2b60"/>
+          </categoryLinks>
+          <constraints>
+            <constraint id="1db7-aaa1-1f5e-6191" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Shadowfield" id="f278-4ab4-d764-0b8f" hidden="false" targetId="40e7-74a3-9849-028e" type="profile"/>
+            <infoLink name="Forceshield" id="8369-91ba-aba2-9bab" hidden="false" targetId="1f21-f836-36fd-d65e" type="profile"/>
+            <infoLink name="Skillful Parry" id="c659-bcdc-5afe-7008" hidden="false" targetId="4ee4-0937-e94e-6728" type="profile"/>
+          </infoLinks>
+          <modifiers>
+            <modifier field="hidden" type="set" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition childId="8cce-3ddd-1ecb-6b49" childName="Poisoned tongue" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Renowned Overlord [Aura]" id="09b7-d767-d72f-b733" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly POISONED TONGUE or INCUBI unit is within 9&quot; of this model, each time an attack is made by a model in that unit, re-roll a hit roll of 1.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Aurelia Malys" id="61a1-8f6e-9958-47f4" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">9</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">5</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D6</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Lady’s Blade" id="47f4-dfae-6367-2c42" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This unit cannot be affected by Psychic Powers.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry name="Lady’s Blade" id="3d1b-c6d6-27b9-6a86" hidden="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink name="Force Weapon" id="9efd-908e-579e-2e92" hidden="false" primary="false" targetId="808b-5304-c3f4-9ff5"/>
+              </categoryLinks>
+              <constraints>
+                <constraint id="f744-3dc2-5d03-9df8" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                <constraint id="a950-25ca-6c88-85fe" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+              </constraints>
+              <profiles>
+                <profile name="Lady’s Blade" id="779b-2c2f-5f91-f5ad" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">2</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry name="Razor fan" id="03bb-035f-2116-f068" hidden="false" import="true" type="upgrade">
+              <constraints>
+                <constraint id="dbba-a5e9-0ada-99d9" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                <constraint id="04fb-4499-045c-d88c" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+              </constraints>
+              <profiles>
+                <profile name="Razor fan" id="0b9a-0584-b8eb-746d" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it makes 6 additional attacks with this weapon.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
