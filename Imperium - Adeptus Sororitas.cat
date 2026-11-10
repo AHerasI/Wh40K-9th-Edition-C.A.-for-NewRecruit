@@ -1586,9 +1586,9 @@ If you do so, 1 Miracle dice you use in that Act of Faith is considered to be a 
         <categoryLink name="Ordo Hereticus" id="bc3a-8e7b-d6a8-a7f4" hidden="false" primary="false" targetId="2981-f499-19fc-bc80"/>
       </categoryLinks>
       <costs>
-        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="Pts" typeId="points" value="0"/>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="3"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
       <entryLinks>
@@ -1639,21 +1639,19 @@ If you do so, 1 Miracle dice you use in that Act of Faith is considered to be a 
             </modifier>
           </modifiers>
         </modifierGroup>
-        <modifierGroup type="and">
-          <comment>Multi Plasma-Melta</comment>
-          <modifiers>
-            <modifier field="e356-c769-5920-6e14" type="increment" value="1">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <repeats>
-                    <repeat childId="65dd-a3e7-b044-4659" childName="Melta Weapon" field="selections" includeChildSelections="true" percentValue="false" repeats="1" roundUp="false" scope="c2db-b2d3-5460-98d1" shared="true" value="2"/>
-                  </repeats>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier field="e356-c769-5920-6e14" type="increment" value="1">
+          <repeats>
+            <repeat childId="model" childName="model" field="selections" includeChildSelections="true" repeats="1" roundUp="true" scope="c2db-b2d3-5460-98d1" shared="true" value="2"/>
+          </repeats>
+        </modifier>
+        <modifier field="e356-c769-5920-6e14" type="decrement" value="3">
+          <conditions>
+            <condition childId="model" childName="model" field="selections" scope="c2db-b2d3-5460-98d1" shared="true" type="atLeast" value="5"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <selectionEntries>
         <selectionEntry name="Sister Superior" id="04eb-9658-645e-ec76" collective="false" hidden="false" import="true" type="model">
           <constraints>
