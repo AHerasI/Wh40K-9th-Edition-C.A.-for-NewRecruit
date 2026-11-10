@@ -18301,6 +18301,18 @@ Remove this model from the battlefield. In the Reinforcements step of one of you
                 <modifier field="f330-5e6e-4110-0978" type="increment" value="1"/>
               </modifiers>
             </modifierGroup>
+            <modifierGroup type="and">
+              <comment>PFlesh</comment>
+              <conditions>
+                <condition childId="73c5-e876-f6e4-64f1" childName="PF - Diabolical soothsayer" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+              </conditions>
+              <modifiers>
+                <modifier field="9c9f-9774-a358-3a39" type="increment" value="1"/>
+                <modifier field="f330-5e6e-4110-0978" type="increment" value="1"/>
+                <modifier field="0bdf-a96e-9e38-7779" type="set" value="8"/>
+                <modifier field="13fc-b29b-31f2-ab9f" type="increment" value="1"/>
+              </modifiers>
+            </modifierGroup>
           </modifierGroups>
           <modifiers>
             <modifier field="2218-aa3c-265f-2939" type="increment" value="1">
@@ -37238,9 +37250,8 @@ Until the start of your next Command phase, each time a model in that unit makes
                   <profiles>
                     <profile name="Diabolical soothsayer" id="50c7-e043-24c2-f606" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                       <characteristics>
-                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">After this model is set up on the battlefield for the first time, choose one of the below:
-- Until the end of the battle, add 1 to this WARLORD’s Toughness and Wounds characteristics.
-- Until the end of the battle, add 1 to this WARLORD’s Movement and Attacks characteristics.</characteristic>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Add 1 to the Movement, Attacks, Toughness and Wounds characteristics of this WARLORD.
+</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
