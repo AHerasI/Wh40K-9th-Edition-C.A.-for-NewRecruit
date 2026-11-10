@@ -607,6 +607,32 @@ Units successfully affected by this ability are considered to be Inspired. Unles
         <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This unit cannot perform any actions.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Blessed Battle Sister" id="3aa7-072f-61e1-5a43" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+      <characteristics>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
+        <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+        <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
+        <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
+        <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+        <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Blessed Sister Superior" id="4bff-750d-cc33-c092" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+      <characteristics>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
+        <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+        <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
+        <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
+        <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+        <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
     <selectionEntry name=" Orders Militant" id="f276-fb41-8cdd-5a9c" collective="false" hidden="false" import="true" type="upgrade">
@@ -3961,9 +3987,8 @@ Until the start of your next Command phase, each time a model in that unit makes
         <categoryLink name="Ordo Hereticus" id="de52-cdd9-c6a0-4391" hidden="false" primary="false" targetId="2981-f499-19fc-bc80"/>
       </categoryLinks>
       <costs>
-        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-        <cost name="Pts" typeId="points" value="0"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
       <modifierGroups>
@@ -4008,6 +4033,18 @@ Until the start of your next Command phase, each time a model in that unit makes
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier field="e356-c769-5920-6e14" type="increment" value="1">
+          <repeats>
+            <repeat childId="model" childName="model" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="a639-f277-4d34-c5f8" shared="true" value="3"/>
+          </repeats>
+        </modifier>
+        <modifier field="e356-c769-5920-6e14" type="decrement" value="1">
+          <conditions>
+            <condition childId="model" childName="model" field="selections" includeChildSelections="true" scope="a639-f277-4d34-c5f8" shared="true" type="atLeast" value="5"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <selectionEntries>
         <selectionEntry name="Sacresant Superior" id="07ff-d7be-29af-6f5c" collective="false" hidden="false" import="true" type="model">
           <constraints>
@@ -4015,7 +4052,7 @@ Until the start of your next Command phase, each time a model in that unit makes
             <constraint id="7558-12e0-6700-fa83" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
           </constraints>
           <costs>
-            <cost name="Pts" typeId="points" value="15"/>
+            <cost name="Pts" typeId="points" value="25"/>
             <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
@@ -4026,7 +4063,7 @@ Until the start of your next Command phase, each time a model in that unit makes
             <entryLink name="Storm Shield" id="19eb-c1f1-89f6-6bea" collective="false" hidden="false" import="true" targetId="5d5f-55bb-690a-8737" type="selectionEntry"/>
           </entryLinks>
           <infoLinks>
-            <infoLink name="Veteran Sister Superior" id="dad7-efda-d3d0-201d" hidden="false" targetId="0a4b-c872-9ff2-6129" type="profile"/>
+            <infoLink name="Blessed Sister Superior" id="dad7-efda-d3d0-201d" hidden="false" targetId="4bff-750d-cc33-c092" type="profile"/>
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapon option" id="5157-deeb-cbe3-2b36" collective="false" defaultSelectionEntryId="7fbc-11ee-39b8-ea67" hidden="false" import="true">
@@ -4058,7 +4095,7 @@ Until the start of your next Command phase, each time a model in that unit makes
                 <constraint id="4ef3-d4ce-c3c1-0e07" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="9"/>
               </constraints>
               <costs>
-                <cost name="Pts" typeId="points" value="15"/>
+                <cost name="Pts" typeId="points" value="25"/>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
@@ -4070,7 +4107,7 @@ Until the start of your next Command phase, each time a model in that unit makes
                 <entryLink name="Storm Shield" id="032c-bf35-4a1b-bad4" collective="false" hidden="false" import="true" targetId="5d5f-55bb-690a-8737" type="selectionEntry"/>
               </entryLinks>
               <infoLinks>
-                <infoLink name="Veteran Battle Sister" id="167d-c366-399f-2c83" hidden="false" targetId="1e7f-3a00-9371-81f0" type="profile"/>
+                <infoLink name="Blessed Battle Sister" id="167d-c366-399f-2c83" hidden="false" targetId="3aa7-072f-61e1-5a43" type="profile"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry name="Celestian Sacresant w/Lance" id="6b26-98a6-2794-246a" collective="false" hidden="false" import="true" type="model">
@@ -4078,7 +4115,7 @@ Until the start of your next Command phase, each time a model in that unit makes
                 <constraint id="9cc6-e2e2-a4a1-6c23" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="9"/>
               </constraints>
               <costs>
-                <cost name="Pts" typeId="points" value="20"/>
+                <cost name="Pts" typeId="points" value="30"/>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
@@ -4090,7 +4127,7 @@ Until the start of your next Command phase, each time a model in that unit makes
                 <entryLink name="Storm Shield" id="999c-2bf3-3a05-59a4" collective="false" hidden="false" import="true" targetId="5d5f-55bb-690a-8737" type="selectionEntry"/>
               </entryLinks>
               <infoLinks>
-                <infoLink name="Veteran Battle Sister" id="300c-b67e-4925-f740" hidden="false" targetId="1e7f-3a00-9371-81f0" type="profile"/>
+                <infoLink name="Blessed Battle Sister" id="300c-b67e-4925-f740" hidden="false" targetId="3aa7-072f-61e1-5a43" type="profile"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -5583,7 +5620,7 @@ In addition, after the first turn begins, when this unit is deployed on the Batt
             <entryLink name="Power Sword" id="9b4c-b09c-00ee-680b" collective="false" hidden="false" import="true" targetId="6168-426f-d99c-ad99" type="selectionEntry"/>
           </entryLinks>
           <infoLinks>
-            <infoLink name="Veteran Sister Superior" id="c15f-3eca-5b75-1034" hidden="false" targetId="0a4b-c872-9ff2-6129" type="profile">
+            <infoLink name="Blessed Sister Superior" id="c15f-3eca-5b75-1034" hidden="false" targetId="4bff-750d-cc33-c092" type="profile">
               <modifiers>
                 <modifier field="0bdf-a96e-9e38-7779" type="set" value="12"/>
               </modifiers>
@@ -5643,7 +5680,7 @@ In addition, after the first turn begins, when this unit is deployed on the Batt
             <entryLink name="Power Sword" id="988c-36b7-7269-fbe6" collective="false" hidden="false" import="true" targetId="6168-426f-d99c-ad99" type="selectionEntry"/>
           </entryLinks>
           <infoLinks>
-            <infoLink name="Veteran Battle Sister" id="9e49-68ee-8ebf-b541" hidden="false" targetId="1e7f-3a00-9371-81f0" type="profile">
+            <infoLink name="Blessed Battle Sister" id="9e49-68ee-8ebf-b541" hidden="false" targetId="3aa7-072f-61e1-5a43" type="profile">
               <modifiers>
                 <modifier field="0bdf-a96e-9e38-7779" type="set" value="12"/>
               </modifiers>
