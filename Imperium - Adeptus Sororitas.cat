@@ -1628,13 +1628,6 @@ If you do so, 1 Miracle dice you use in that Act of Faith is considered to be a 
           </modifiers>
         </modifierGroup>
       </modifierGroups>
-      <modifiers>
-        <modifier field="e356-c769-5920-6e14" type="increment" value="1">
-          <repeats>
-            <repeat childId="model" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" repeats="1" roundUp="true" scope="c2db-b2d3-5460-98d1" shared="true" value="2"/>
-          </repeats>
-        </modifier>
-      </modifiers>
       <selectionEntries>
         <selectionEntry name="Sister Superior" id="04eb-9658-645e-ec76" collective="false" hidden="false" import="true" type="model">
           <constraints>
@@ -3078,6 +3071,7 @@ When this model suffers damage that reduces its number of relics, select which o
       </entryLinks>
       <infoLinks>
         <infoLink name="Explodes 6+ (6&quot;)" id="efa6-e99e-9627-8085" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
+        <infoLink name="Rhino APC Chassis" id="59b8-8ede-c273-b97c" hidden="false" targetId="5315-4845-2fdb-2b07" type="infoGroup"/>
       </infoLinks>
       <modifierGroups>
         <modifierGroup>
@@ -3122,45 +3116,6 @@ When this model suffers damage that reduces its number of relics, select which o
         </modifierGroup>
       </modifierGroups>
       <profiles>
-        <profile name="Rhino [1] (6+ Wounds remaining)" id="49dd-d274-54ba-9acb" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">10</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Rhino [2] (3-5 Wounds remaining)" id="7f47-36f7-0f59-101b" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">10</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Rhino [3] (1-3 Wounds remaining)" id="9f00-d296-b7f3-7a01" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">3</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">10</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Rhino" id="626d-c866-0f98-4ff8" hidden="false" typeId="b3a8-0452-7436-44d1" typeName="Transport">
           <characteristics>
             <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 10 ADEPTUS SORORITAS INFANTRY or IMPERIUM SERVANTS INFANTRY models. It cannot transport JUMP PACK models.</characteristic>
@@ -3216,6 +3171,7 @@ When this model suffers damage that reduces its number of relics, select which o
       </entryLinks>
       <infoLinks>
         <infoLink name="Explodes 6+ (6&quot;)" id="9051-1202-6a91-0ac3" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
+        <infoLink name="Rhino APC Chassis" id="65ae-7bf8-a419-0c83" hidden="false" targetId="5315-4845-2fdb-2b07" type="infoGroup"/>
       </infoLinks>
       <modifierGroups>
         <modifierGroup>
@@ -3260,45 +3216,6 @@ When this model suffers damage that reduces its number of relics, select which o
         </modifierGroup>
       </modifierGroups>
       <profiles>
-        <profile name="Immolator [1] (6+ Wounds remaining)" id="e02d-b74e-ff51-e2ac" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">11</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Immolator [2] (3-5 Wounds remaining)" id="b7c4-d1aa-a3a2-717c" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">11</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Immolator [3] (1-3 Wounds remaining)" id="1d7f-8365-de03-d496" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">3</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">11</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Immolator" id="a354-5976-1162-35ff" hidden="false" typeId="b3a8-0452-7436-44d1" typeName="Transport">
           <characteristics>
             <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 6 ADEPTUS SORORITAS INFANTRY or IMPERIUM SERVANTS INFANTRY models. It cannot transport JUMP PACK models.</characteristic>
@@ -3580,6 +3497,7 @@ When this model suffers damage that reduces its number of relics, select which o
       <infoLinks>
         <infoLink name="Explodes 6+ (6&quot;)" id="84d3-0a71-e756-af36" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
         <infoLink name="Fire Points (5)" id="5fa2-e253-c2dc-959a" hidden="false" targetId="e433-6678-6be1-355c" type="profile"/>
+        <infoLink name="Rhino APC Chassis" id="7b85-9b69-7f31-7486" hidden="false" targetId="5315-4845-2fdb-2b07" type="infoGroup"/>
       </infoLinks>
       <modifierGroups>
         <modifierGroup>
@@ -3624,45 +3542,6 @@ When this model suffers damage that reduces its number of relics, select which o
         </modifierGroup>
       </modifierGroups>
       <profiles>
-        <profile name="Repressor [1] (7+ Wounds remaining)" id="725c-6936-2f97-73ff" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">10</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Repressor [2] (4-6 Wounds remaining)" id="d6e9-b4e9-62e0-c6b9" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">10</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Repressor [3] (1-3 Wounds remaining)" id="33e3-c4de-12e1-497d" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">3</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">10</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Repressor" id="2ff9-6462-9aed-1c24" hidden="false" typeId="b3a8-0452-7436-44d1" typeName="Transport">
           <characteristics>
             <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 10 ADEPTUS SORORITAS INFANTRY or IMPERIUM SERVANTS INFANTRY models. It cannot transport JUMP PACK models.</characteristic>
@@ -5271,8 +5150,8 @@ This unit&apos;s models can move and shoot Heavy Weapons without penalty to the 
             <constraint id="2177-c6a1-0971-6f71" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
           </constraints>
           <costs>
-            <cost name="Pts" typeId="points" value="60"/>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="3"/>
+            <cost name="Pts" typeId="points" value="45"/>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
@@ -5408,8 +5287,8 @@ This unit&apos;s models can move and shoot Heavy Weapons without penalty to the 
             <constraint id="29dc-beb7-e07e-e97c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
           </constraints>
           <costs>
-            <cost name="Pts" typeId="points" value="60"/>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="3"/>
+            <cost name="Pts" typeId="points" value="45"/>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
@@ -9084,6 +8963,7 @@ While this unit is Inspired by this hymn, each time a model in the Inspired unit
         <entryLink name="Multi-melta" id="ca95-dbe4-6616-69d5" collective="false" hidden="false" import="true" targetId="2b37-65ee-9443-b4ef" type="selectionEntry">
           <costs>
             <cost name="pts" typeId="points" value="10"/>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
           </costs>
         </entryLink>
       </entryLinks>
