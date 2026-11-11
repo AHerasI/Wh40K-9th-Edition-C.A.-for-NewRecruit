@@ -13062,16 +13062,6 @@ Additionaly, each unmodified hit roll of 6 made for this Infiltrator unit&apos;s
             </modifier>
           </modifiers>
         </modifierGroup>
-        <modifierGroup type="and">
-          <comment>Multi Plasma-Melta</comment>
-          <modifiers>
-            <modifier field="e356-c769-5920-6e14" type="increment" value="1">
-              <repeats>
-                <repeat childId="d691-91d9-76e1-b276" childName="Plasma Weapon" field="selections" includeChildSelections="true" repeats="1" roundUp="true" scope="d691-91d9-76e1-b276" shared="true" value="4"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
       </modifierGroups>
       <modifiers>
         <modifier field="hidden" type="set" value="false">
@@ -14101,26 +14091,6 @@ Additionaly, each unmodified hit roll of 6 made for this Infiltrator unit&apos;s
             </modifier>
           </modifiers>
         </modifierGroup>
-        <modifierGroup type="and">
-          <comment>Multi Plasma-Melta</comment>
-          <modifiers>
-            <modifier field="e356-c769-5920-6e14" type="increment" value="1">
-              <repeats>
-                <repeat childId="65dd-a3e7-b044-4659" childName="Melta Weapon" field="selections" includeChildSelections="true" repeats="1" roundUp="true" scope="8c0e-7d0f-5bad-da9e" shared="true" value="4"/>
-              </repeats>
-            </modifier>
-            <modifier field="e356-c769-5920-6e14" type="increment" value="1">
-              <repeats>
-                <repeat childId="d691-91d9-76e1-b276" childName="Plasma Weapon" field="selections" includeChildSelections="true" repeats="1" roundUp="true" scope="8c0e-7d0f-5bad-da9e" shared="true" value="4"/>
-              </repeats>
-            </modifier>
-            <modifier field="e356-c769-5920-6e14" type="increment" value="1">
-              <repeats>
-                <repeat childId="3d88-9c27-596b-4688" childName="Chainfist" field="selections" includeChildSelections="true" repeats="1" roundUp="true" scope="8c0e-7d0f-5bad-da9e" shared="true" value="4"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
       </modifierGroups>
       <modifiers>
         <modifier field="category" type="add" value="ba29-cfac-95f3-7a63">
@@ -14271,21 +14241,6 @@ Additionaly, each unmodified hit roll of 6 made for this Infiltrator unit&apos;s
               <conditions>
                 <condition childId="fe8c-9fa3-c71e-d8de" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="true" type="atLeast" value="1"/>
               </conditions>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
-        <modifierGroup type="and">
-          <comment>Multi Plasma-Melta</comment>
-          <modifiers>
-            <modifier field="e356-c769-5920-6e14" type="increment" value="1">
-              <repeats>
-                <repeat childId="d691-91d9-76e1-b276" childName="Plasma Weapon" field="selections" includeChildSelections="true" repeats="1" roundUp="true" scope="f4dc-a727-b572-f006" shared="true" value="2"/>
-              </repeats>
-            </modifier>
-            <modifier field="e356-c769-5920-6e14" type="increment" value="1">
-              <repeats>
-                <repeat childId="65dd-a3e7-b044-4659" childName="Melta Weapon" field="selections" includeChildSelections="true" repeats="1" roundUp="true" scope="f4dc-a727-b572-f006" shared="true" value="2"/>
-              </repeats>
             </modifier>
           </modifiers>
         </modifierGroup>
@@ -15486,26 +15441,6 @@ Additionaly, each unmodified hit roll of 6 made for this Infiltrator unit&apos;s
             </modifier>
           </modifiers>
         </modifierGroup>
-        <modifierGroup type="and">
-          <comment>Multi Plasma-Melta</comment>
-          <modifiers>
-            <modifier field="e356-c769-5920-6e14" type="increment" value="1">
-              <repeats>
-                <repeat childId="65dd-a3e7-b044-4659" childName="Melta Weapon" field="selections" includeChildSelections="true" repeats="1" roundUp="true" scope="057d-02d4-5c8c-c1ec" shared="true" value="4"/>
-              </repeats>
-            </modifier>
-            <modifier field="e356-c769-5920-6e14" type="increment" value="1">
-              <repeats>
-                <repeat childId="d691-91d9-76e1-b276" childName="Plasma Weapon" field="selections" includeChildSelections="true" repeats="1" roundUp="true" scope="057d-02d4-5c8c-c1ec" shared="true" value="2"/>
-              </repeats>
-            </modifier>
-            <modifier field="e356-c769-5920-6e14" type="increment" value="1">
-              <repeats>
-                <repeat childId="3d88-9c27-596b-4688" childName="Chainfist" field="selections" includeChildSelections="true" repeats="1" roundUp="true" scope="057d-02d4-5c8c-c1ec" shared="true" value="4"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
       </modifierGroups>
       <modifiers>
         <modifier field="category" type="add" value="ba29-cfac-95f3-7a63">
@@ -15553,6 +15488,30 @@ Additionaly, each unmodified hit roll of 6 made for this Infiltrator unit&apos;s
             <infoLink name="Terminator Sergeant" id="5635-4b77-dcc1-7e8e" hidden="false" targetId="6752-8fb7-fc6e-2d73" type="profile"/>
             <infoLink name="Terminator Armour" id="5eae-6bd1-5382-85d9" hidden="false" targetId="f150-98d9-31b2-31cf" type="profile"/>
           </infoLinks>
+          <modifiers>
+            <modifier field="e356-c769-5920-6e14" type="increment" value="1">
+              <comment>Control</comment>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition childId="d691-91d9-76e1-b276" childName="Plasma Weapon" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                        <condition childId="65dd-a3e7-b044-4659" childName="Melta Weapon" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition childId="e464-77c1-12bb-e52f" childName="Chainfist" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                        <condition childId="01e6-56df-9f4a-2db5" childName="Grand Power Axe" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                        <condition childId="0e57-eaf5-763f-9c45" childName="Thunder hammer" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -15585,6 +15544,30 @@ Additionaly, each unmodified hit roll of 6 made for this Infiltrator unit&apos;s
                 <infoLink name="Terminator Armour" id="9a13-7739-f0d6-e5db" hidden="false" targetId="f150-98d9-31b2-31cf" type="profile"/>
                 <infoLink name="Terminator" id="033b-7fcd-2b84-a2b3" hidden="false" targetId="3d95-3de0-3d42-d0a2" type="profile"/>
               </infoLinks>
+              <modifiers>
+                <modifier field="e356-c769-5920-6e14" type="increment" value="1">
+                  <comment>Control</comment>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition childId="d691-91d9-76e1-b276" childName="Plasma Weapon" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                            <condition childId="65dd-a3e7-b044-4659" childName="Melta Weapon" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition childId="e464-77c1-12bb-e52f" childName="Chainfist" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                            <condition childId="01e6-56df-9f4a-2db5" childName="Grand Power Axe" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                            <condition childId="0e57-eaf5-763f-9c45" childName="Thunder hammer" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
@@ -15613,6 +15596,28 @@ Additionaly, each unmodified hit roll of 6 made for this Infiltrator unit&apos;s
                       <repeats>
                         <repeat childId="model" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" repeats="1" roundUp="false" scope="057d-02d4-5c8c-c1ec" shared="true" value="5"/>
                       </repeats>
+                    </modifier>
+                    <modifier field="e356-c769-5920-6e14" type="increment" value="1">
+                      <comment>Control</comment>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition childId="d691-91d9-76e1-b276" childName="Plasma Weapon" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                                <condition childId="65dd-a3e7-b044-4659" childName="Melta Weapon" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                              </conditions>
+                            </conditionGroup>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition childId="e464-77c1-12bb-e52f" childName="Chainfist" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                                <condition childId="01e6-56df-9f4a-2db5" childName="Grand Power Axe" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                                <condition childId="0e57-eaf5-763f-9c45" childName="Thunder hammer" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </selectionEntry>
@@ -32920,21 +32925,6 @@ This unit cannot perform any Actions.</characteristic>
             </modifier>
           </modifiers>
         </modifierGroup>
-        <modifierGroup type="and">
-          <comment>Multi Plasma-Melta</comment>
-          <modifiers>
-            <modifier field="e356-c769-5920-6e14" type="increment" value="1">
-              <repeats>
-                <repeat childId="46b4-0a8c-8137-cd94" childName="Nemesis daemon hammer" field="selections" includeChildSelections="true" repeats="1" roundUp="true" scope="ebe9-6818-ea1d-530f" shared="true" value="2"/>
-              </repeats>
-            </modifier>
-            <modifier field="e356-c769-5920-6e14" type="increment" value="1">
-              <repeats>
-                <repeat childId="3243-34bd-b944-0737" childName="Nemesis force warding stave" field="selections" includeChildSelections="true" repeats="1" roundUp="true" scope="ebe9-6818-ea1d-530f" shared="true" value="4"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
       </modifierGroups>
       <profiles>
         <profile name="Brotherhood Terminator Squad" id="45f8-be69-ba62-ae15" hidden="false" typeId="bc97-dea9-9e88-bb7d" typeName="Psyker">
@@ -34941,16 +34931,6 @@ This unit cannot perform any Actions.</characteristic>
               <conditions>
                 <condition childId="fe8c-9fa3-c71e-d8de" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="true" type="atLeast" value="1"/>
               </conditions>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
-        <modifierGroup type="and">
-          <comment>Multi Plasma-Melta</comment>
-          <modifiers>
-            <modifier field="e356-c769-5920-6e14" type="increment" value="1">
-              <repeats>
-                <repeat childId="d691-91d9-76e1-b276" childName="Plasma Weapon" field="selections" includeChildSelections="true" repeats="1" roundUp="true" scope="64a4-9eb5-1f77-4803" shared="true" value="4"/>
-              </repeats>
             </modifier>
           </modifiers>
         </modifierGroup>
