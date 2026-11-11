@@ -475,17 +475,8 @@ For the purposes of this ability, a Rapid Fire Bolt weapon is any Bolt weapon wi
     <categoryEntry name="Drop Pod" id="6339-9f4c-2364-5516" hidden="false">
       <infoLinks>
         <infoLink name="Explodes 6+ (3&quot;)" id="a140-daeb-ac64-cd4e" hidden="false" targetId="a90c-078f-b826-e2d4" type="rule"/>
+        <infoLink name="Drop Pod Assault" id="c388-8edb-61f0-5094" hidden="false" targetId="4159-e1db-2238-8765" type="profile"/>
       </infoLinks>
-      <profiles>
-        <profile name="Drop Pod Assault" id="4778-cf8e-acc8-39f8" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- This transport must start the battle set up high in the skies, but neither it, nor any units embarked within it, are counted towards any limits that the mission you are playing places on the maximum number of Reinforcements units you can have in your army.
-- This transport can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules, and they must set up more than 6+D3&quot; away from any enemy models.
-- Any units embarked within this transport must immediately disembark after it has been set up on the battlefield, and they must be set up more than 3+D6&quot; away from any enemy models.
-- After this transport has been set up on the battlefield, no units can embark within it.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
     </categoryEntry>
     <categoryEntry name="Techmarine" id="5d58-afe1-021b-b2ed" hidden="false"/>
     <categoryEntry name="Apothecary" id="1258-3b7d-adec-81b0" hidden="false">
@@ -33899,6 +33890,7 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
         <categoryLink name="Transport" id="c3a2-6b2c-9b3b-499c" hidden="false" primary="false" targetId="6cc4-1b62-8e8a-05cd"/>
         <categoryLink name="Assault Transport" id="eeca-5321-ee84-9ee0" hidden="false" primary="false" targetId="3c95-4bac-d4d4-d0b2"/>
         <categoryLink name="Assault ramp" id="80ba-bf2a-db33-47a3" hidden="false" primary="false" targetId="d7c1-93c2-0c88-7c3c"/>
+        <categoryLink name="Drop Pod" id="d663-2305-dded-a17f" hidden="false" primary="false" targetId="6339-9f4c-2364-5516"/>
       </categoryLinks>
       <costs>
         <cost name="Pts" typeId="points" value="70"/>
@@ -33911,6 +33903,14 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
           <constraints>
             <constraint id="05ea-90af-a2d3-3086" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
+          <modifiers>
+            <modifier field="hidden" type="set" value="false">
+              <conditions>
+                <condition childId="2c5f-769b-663f-092b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                <condition childId="29bf-7f89-9955-87fc" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink name="Smokescreen Launcher" id="66d7-b146-91ca-e142" collective="false" hidden="false" import="true" targetId="bded-2b06-5ea3-d7d5" type="selectionEntry">
           <constraints>
@@ -34058,14 +34058,6 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
             <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 10 LEGION INFANTRY models. It cannot transport JUMP PACK, TERMINATOR or POSSESSED models.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Drop Pod Assault" id="f711-cccb-437b-ac21" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- This transport must start the battle set up high in the skies, but neither it, nor any units embarked within it, are counted towards any limits that the mission you are playing places on the maximum number of Reinforcements units you can have in your army. 
-- This transport can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules, and they must set up more than 6+D3&quot; away from any enemy models. 
-- Any units embarked within this transport must immediately disembark after it has been set up on the battlefield, and they must be set up more than 6+D3&quot; away from any enemy models.
-- After this trasnport has been set up on the battlefield, no units can embark within it.</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Drop Pod" id="087a-4856-cee0-4056" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
@@ -34081,7 +34073,7 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry name="Drop Pod [Dreadnought]" id="e59c-86d5-2ef4-31f7" collective="false" hidden="true" import="true" type="model">
+    <selectionEntry name="Drop Pod [Heavy]" id="e59c-86d5-2ef4-31f7" collective="false" hidden="true" import="true" type="model">
       <categoryLinks>
         <categoryLink name="Vehicle" id="8214-bc4b-2c7f-4cc3" hidden="false" primary="false" targetId="c8fd-783f-3230-493e"/>
         <categoryLink name="Breaching Vehicle" id="4798-30dd-5819-9944" hidden="false" primary="false" targetId="32e3-a565-9834-5c1d"/>
@@ -34090,6 +34082,7 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
         <categoryLink name="Transport" id="dc3a-4a36-7c94-5f2e" hidden="false" primary="false" targetId="6cc4-1b62-8e8a-05cd"/>
         <categoryLink name="Assault Transport" id="2b48-c839-c64f-951d" hidden="false" primary="false" targetId="3c95-4bac-d4d4-d0b2"/>
         <categoryLink name="Assault ramp" id="faa5-b3d5-f691-6172" hidden="false" primary="false" targetId="d7c1-93c2-0c88-7c3c"/>
+        <categoryLink name="Drop Pod" id="edc3-3a06-0cbe-1c74" hidden="false" primary="false" targetId="6339-9f4c-2364-5516"/>
       </categoryLinks>
       <costs>
         <cost name="Pts" typeId="points" value="70"/>
@@ -34102,6 +34095,14 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
           <constraints>
             <constraint id="703e-6107-7fe1-fc05" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
+          <modifiers>
+            <modifier field="hidden" type="set" value="false">
+              <conditions>
+                <condition childId="2c5f-769b-663f-092b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                <condition childId="29bf-7f89-9955-87fc" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink name="Smokescreen Launcher" id="8bdb-7518-448e-f779" collective="false" hidden="false" import="true" targetId="bded-2b06-5ea3-d7d5" type="selectionEntry">
           <constraints>
@@ -34113,7 +34114,6 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
       </entryLinks>
       <infoLinks>
         <infoLink name="Drop Pod" id="dde4-1004-fc1f-3c2b" hidden="false" targetId="2421-3ff1-cfe7-c97a" type="profile"/>
-        <infoLink name="Drop Pod Assault" id="a745-d2ab-a232-c16e" hidden="false" targetId="f711-cccb-437b-ac21" type="profile"/>
         <infoLink name="Explodes 6+ (3&quot;)" id="5da3-afa4-ab84-be94" hidden="false" targetId="a90c-078f-b826-e2d4" type="rule"/>
         <infoLink name="Drop Pod" id="3240-369e-3181-4ad5" hidden="false" targetId="087a-4856-cee0-4056" type="profile"/>
       </infoLinks>
@@ -34260,7 +34260,7 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
       <profiles>
         <profile name="Drop Pod [Dreadnought]" id="92d9-8b7f-cf20-c141" hidden="false" typeId="b3a8-0452-7436-44d1" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 1 DREADNOUGTH model with a Wounds characteristic of 9 or less.</characteristic>
+            <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 3 LEGION INFANTRY models or 1 LEGION DREADNOUGHT model with a Wounds characteristic of 9 or less.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -40113,6 +40113,14 @@ If completed, until the end of the battle, add 1 to the Strength characteristic 
           <constraints>
             <constraint id="c99c-ef91-e57a-c079" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
+          <modifiers>
+            <modifier field="hidden" type="set" value="false">
+              <conditions>
+                <condition childId="2c5f-769b-663f-092b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                <condition childId="29bf-7f89-9955-87fc" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink name="Crushing bulk" id="016d-9945-48c9-283b" collective="false" hidden="false" import="true" targetId="502f-45c2-6fd1-443b" type="selectionEntry"/>
         <entryLink name="Hunter-killer missile" id="1278-e17c-fbc6-32ae" collective="false" hidden="false" import="true" targetId="32bf-b117-4ecf-5165" type="selectionEntry">
