@@ -35462,6 +35462,46 @@ If the unit cannot be set-up, it&apos;s placed in the Strategic Reserves of your
           <constraints>
             <constraint id="1db7-aaa1-1f5e-6191" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
           </constraints>
+          <costs>
+            <cost name="Pts" typeId="points" value="130"/>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="7"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink name=" Character definition" id="0595-3b65-53b8-7ccf" collective="false" hidden="false" import="true" targetId="d8db-2eb2-c5d2-7168" type="selectionEntryGroup">
+              <selectionEntries>
+                <selectionEntry name="Towering arrogance" id="703a-8086-60ec-f208" collective="false" hidden="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="27df-6a0e-2314-a81c" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="max" value="1"/>
+                    <constraint id="75af-e544-54e7-0b78" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="Pts" typeId="points" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Towering arrogance" id="563e-a298-8b43-fba3" hidden="false" targetId="b118-3013-3425-f834" type="profile"/>
+                    <infoLink name="Towering arrogance [Aura]" id="4ee2-dd76-90dc-8144" hidden="false" targetId="508f-d082-3f3d-3827" type="profile"/>
+                  </infoLinks>
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="false">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition childId="15e7-ffe5-1f1b-384e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="true" type="equalTo" value="1"/>
+                            <condition childId="e2e9-f19f-f2eb-1fb6" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="true" type="equalTo" value="1"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </selectionEntry>
+              </selectionEntries>
+            </entryLink>
+          </entryLinks>
           <infoLinks>
             <infoLink name="Shadowfield" id="f278-4ab4-d764-0b8f" hidden="false" targetId="40e7-74a3-9849-028e" type="profile"/>
             <infoLink name="Forceshield" id="8369-91ba-aba2-9bab" hidden="false" targetId="1f21-f836-36fd-d65e" type="profile"/>
@@ -37097,7 +37137,7 @@ Until the start of your next Command phase, each time a model in that unit makes
                   <profiles>
                     <profile name="Towering arrogance" id="b118-3013-3425-f834" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                       <characteristics>
-                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time this WARLORD would lose a wound as the result of a mortal wound, roll one D6: on a 5+, that wound is not lost.</characteristic>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time this WARLORD would lose a wound as the result of a mortal wound, roll one D6: on a 4+, that wound is not lost.</characteristic>
                       </characteristics>
                     </profile>
                     <profile name="Towering arrogance [Aura]" id="508f-d082-3f3d-3827" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
