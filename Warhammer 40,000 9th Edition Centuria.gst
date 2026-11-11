@@ -6540,6 +6540,14 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Beam. Blast.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Drop Pod Assault" id="4159-e1db-2238-8765" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- This Transport can start the battle set up high in the skies.
+- This Transport can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules, and it must set up more than D3+6&quot; away from any enemy models.
+- Any units embarked within this transport must immediately disembark after it has been set up on the battlefield, and they must be set up more than 6&quot; away from any enemy models, and within 3&quot; from the Transport.
+- After this Transport has been set up on the battlefield, no units can embark within it.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedRules>
     <rule name="Explodes 6+ (6&quot;)" id="3541-94a7-a138-358b" hidden="false">
