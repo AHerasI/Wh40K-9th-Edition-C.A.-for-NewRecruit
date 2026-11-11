@@ -8172,21 +8172,6 @@ At the start of your Command phase, you can select one of the following:
             </modifier>
           </modifiers>
         </modifierGroup>
-        <modifierGroup type="and">
-          <comment>Multi Plasma-Melta</comment>
-          <modifiers>
-            <modifier field="e356-c769-5920-6e14" type="increment" value="1">
-              <repeats>
-                <repeat childId="d691-91d9-76e1-b276" childName="Plasma Weapon" field="selections" includeChildSelections="true" repeats="1" roundUp="true" scope="5e15-b099-2312-92b5" shared="true" value="2"/>
-              </repeats>
-            </modifier>
-            <modifier field="e356-c769-5920-6e14" type="increment" value="1">
-              <repeats>
-                <repeat childId="65dd-a3e7-b044-4659" childName="Melta Weapon" field="selections" includeChildSelections="true" repeats="1" roundUp="true" scope="5e15-b099-2312-92b5" shared="true" value="4"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
       </modifierGroups>
       <modifiers>
         <modifier field="hidden" type="set" value="false">
@@ -8246,6 +8231,30 @@ At the start of your Command phase, you can select one of the following:
             <infoLink name="Terminator Armour" id="da07-ab23-d88c-2656" hidden="false" targetId="f150-98d9-31b2-31cf" type="profile"/>
             <infoLink name="Impervious to small weapons fire" id="0404-7db9-aa01-5d90" hidden="false" targetId="b48e-9a4a-2fdc-5d7c" type="profile"/>
           </infoLinks>
+          <modifiers>
+            <modifier field="e356-c769-5920-6e14" type="increment" value="1">
+              <comment>Control</comment>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition childId="d691-91d9-76e1-b276" childName="Plasma Weapon" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                        <condition childId="65dd-a3e7-b044-4659" childName="Melta Weapon" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition childId="e464-77c1-12bb-e52f" childName="Chainfist" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                        <condition childId="01e6-56df-9f4a-2db5" childName="Grand Power Axe" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                        <condition childId="29cb-3ccf-5a2e-2677" childName="Great Power Sword" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -8281,6 +8290,28 @@ At the start of your Command phase, you can select one of the following:
                     <condition childId="e87f-c8ff-111b-3226" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
                   </conditions>
                 </modifier>
+                <modifier field="e356-c769-5920-6e14" type="increment" value="1">
+                  <comment>Control</comment>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition childId="d691-91d9-76e1-b276" childName="Plasma Weapon" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                            <condition childId="65dd-a3e7-b044-4659" childName="Melta Weapon" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition childId="e464-77c1-12bb-e52f" childName="Chainfist" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                            <condition childId="01e6-56df-9f4a-2db5" childName="Grand Power Axe" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                            <condition childId="29cb-3ccf-5a2e-2677" childName="Great Power Sword" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
               </modifiers>
             </selectionEntry>
             <selectionEntry name="Chaos Terminator w/Heavy weapon" id="1682-4179-75e8-dc5e" collective="false" hidden="false" import="true" type="model">
@@ -8311,6 +8342,28 @@ At the start of your Command phase, you can select one of the following:
                   <conditions>
                     <condition childId="model" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="5e15-b099-2312-92b5" shared="true" type="atLeast" value="10"/>
                   </conditions>
+                </modifier>
+                <modifier field="e356-c769-5920-6e14" type="increment" value="1">
+                  <comment>Control</comment>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition childId="d691-91d9-76e1-b276" childName="Plasma Weapon" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                            <condition childId="65dd-a3e7-b044-4659" childName="Melta Weapon" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition childId="e464-77c1-12bb-e52f" childName="Chainfist" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                            <condition childId="01e6-56df-9f4a-2db5" childName="Grand Power Axe" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                            <condition childId="29cb-3ccf-5a2e-2677" childName="Great Power Sword" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntry>
@@ -9726,36 +9779,6 @@ At the start of your Command phase, you can select one of the following:
             </modifier>
           </modifiers>
         </modifierGroup>
-        <modifierGroup type="and">
-          <comment>Multi Plasma-Melta</comment>
-          <modifiers>
-            <modifier field="e356-c769-5920-6e14" type="increment" value="1">
-              <repeats>
-                <repeat childId="65dd-a3e7-b044-4659" childName="Melta Weapon" field="selections" includeChildSelections="true" repeats="1" roundUp="true" scope="7bc2-8010-54e1-8c86" shared="true" value="4"/>
-              </repeats>
-            </modifier>
-            <modifier field="e356-c769-5920-6e14" type="increment" value="1">
-              <repeats>
-                <repeat childId="d691-91d9-76e1-b276" childName="Plasma Weapon" field="selections" includeChildSelections="true" repeats="1" roundUp="true" scope="7bc2-8010-54e1-8c86" shared="true" value="2"/>
-              </repeats>
-            </modifier>
-            <modifier field="e356-c769-5920-6e14" type="increment" value="1">
-              <repeats>
-                <repeat childId="e464-77c1-12bb-e52f" childName="Chainfist" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="7bc2-8010-54e1-8c86" shared="true" value="4"/>
-              </repeats>
-            </modifier>
-            <modifier field="e356-c769-5920-6e14" type="increment" value="1">
-              <repeats>
-                <repeat childId="01e6-56df-9f4a-2db5" childName="Grand Power Axe" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="7bc2-8010-54e1-8c86" shared="true" value="4"/>
-              </repeats>
-            </modifier>
-            <modifier field="e356-c769-5920-6e14" type="increment" value="1">
-              <repeats>
-                <repeat childId="29cb-3ccf-5a2e-2677" childName="Great Power Sword" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="7bc2-8010-54e1-8c86" shared="true" value="4"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
       </modifierGroups>
       <modifiers>
         <modifier field="hidden" type="set" value="false">
@@ -9804,6 +9827,30 @@ At the start of your Command phase, you can select one of the following:
             <infoLink name="Terminator Armour" id="d897-4760-ebb8-99c8" hidden="false" targetId="f150-98d9-31b2-31cf" type="profile"/>
             <infoLink name="Impervious to small weapons fire" id="2a8a-2bfe-cf0a-3ab5" hidden="false" targetId="b48e-9a4a-2fdc-5d7c" type="profile"/>
           </infoLinks>
+          <modifiers>
+            <modifier field="e356-c769-5920-6e14" type="increment" value="1">
+              <comment>Control</comment>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition childId="d691-91d9-76e1-b276" childName="Plasma Weapon" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                        <condition childId="65dd-a3e7-b044-4659" childName="Melta Weapon" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition childId="e464-77c1-12bb-e52f" childName="Chainfist" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                        <condition childId="01e6-56df-9f4a-2db5" childName="Grand Power Axe" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                        <condition childId="29cb-3ccf-5a2e-2677" childName="Great Power Sword" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -9842,6 +9889,28 @@ At the start of your Command phase, you can select one of the following:
                     <condition childId="model" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="7bc2-8010-54e1-8c86" shared="true" type="atLeast" value="10"/>
                   </conditions>
                 </modifier>
+                <modifier field="e356-c769-5920-6e14" type="increment" value="1">
+                  <comment>Control</comment>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition childId="d691-91d9-76e1-b276" childName="Plasma Weapon" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                            <condition childId="65dd-a3e7-b044-4659" childName="Melta Weapon" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition childId="e464-77c1-12bb-e52f" childName="Chainfist" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                            <condition childId="01e6-56df-9f4a-2db5" childName="Grand Power Axe" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                            <condition childId="29cb-3ccf-5a2e-2677" childName="Great Power Sword" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
               </modifiers>
             </selectionEntry>
             <selectionEntry name="Terminator" id="b94e-e5af-13f6-f6b0" collective="false" hidden="false" import="true" type="model">
@@ -9864,6 +9933,30 @@ At the start of your Command phase, you can select one of the following:
                 <infoLink name="Terminator Armour" id="070e-0472-6bc6-9db9" hidden="false" targetId="f150-98d9-31b2-31cf" type="profile"/>
                 <infoLink name="Impervious to small weapons fire" id="80f2-e2da-77e7-2489" hidden="false" targetId="b48e-9a4a-2fdc-5d7c" type="profile"/>
               </infoLinks>
+              <modifiers>
+                <modifier field="e356-c769-5920-6e14" type="increment" value="1">
+                  <comment>Control</comment>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition childId="d691-91d9-76e1-b276" childName="Plasma Weapon" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                            <condition childId="65dd-a3e7-b044-4659" childName="Melta Weapon" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition childId="e464-77c1-12bb-e52f" childName="Chainfist" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                            <condition childId="01e6-56df-9f4a-2db5" childName="Grand Power Axe" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                            <condition childId="29cb-3ccf-5a2e-2677" childName="Great Power Sword" field="selections" includeChildSelections="true" scope="self" shared="true" type="equalTo" value="1"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
