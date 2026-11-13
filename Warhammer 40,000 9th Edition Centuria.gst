@@ -730,15 +730,27 @@ While a friendly non VEHICLE CHARACTER unit is within 3&quot; of this unit, enem
         </profile>
       </profiles>
     </categoryEntry>
-    <categoryEntry name="Turret-mounted" id="f28c-7e4e-75e1-2474" hidden="false">
+    <categoryEntry name="[T] Turret-mount" id="f28c-7e4e-75e1-2474" hidden="false">
       <rules>
-        <rule name="Turret-mounted weapon" id="a5b3-873a-4892-5bb0" hidden="false">
-          <description>While this unit is within Engagement Range of an enemy unit, this unit may chose to shoot with this weapon against any elegible enemy unit, even those outside Engagement Range. While doing so, a hit roll modifier of -1 is applied.</description>
+        <rule name="Turret-mount weapon" id="a5b3-873a-4892-5bb0" hidden="false">
+          <description>- While this unit is within Engagement Range of an enemy unit, this unit may chose to shoot with this weapon against any elegible enemy unit, even those outside Engagement Range. When doing so, a hit roll modifier of -1 is applied.</description>
         </rule>
       </rules>
     </categoryEntry>
-    <categoryEntry name="Sponsor-mounted" id="ceeb-83af-6f77-8baa" hidden="false"/>
-    <categoryEntry name="Hull mounted" id="6018-2ce0-fcc7-6ed7" hidden="false"/>
+    <categoryEntry name="[L] Limited angle Side facing" id="ceeb-83af-6f77-8baa" hidden="false">
+      <rules>
+        <rule name="Limited angle Side facing weapon" id="ce72-4e3b-c9f0-3e5f" hidden="false">
+          <description>Can target objectives within a 90° arc, measured from the front of the model to the side the weapon is represented in the model.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="[F] Front facing" id="6018-2ce0-fcc7-6ed7" hidden="false">
+      <rules>
+        <rule name="Front facing weapon" id="47af-49dd-1da4-a4bd" hidden="false">
+          <description>Can target objectives within a 90° arc from the front of the model.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
     <categoryEntry name="Nemesis Weapon" id="e6a0-6ca3-a8b1-f687" hidden="false">
       <rules>
         <rule name="Nemesis Weapon" id="aef4-6754-c588-4299" hidden="false">
@@ -1734,6 +1746,35 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
       <rules>
         <rule name="Precision Weapon" id="c0f6-fea7-a91f-38d8" hidden="false">
           <description>Attacks made by a Weapon profile with this trait ignores the Look out, Sir! rule. In addition, if an attack made by a Weapon profile with this trait successfully wounds a unit, if all the unit&apos;s remaining models have all it&apos;s wounds, the attacking model’s player can select a model from that unit, visible to the attacking model, to assign the wounds to.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="[S] Side facing" id="a257-2b11-c606-59b5" hidden="false">
+      <rules>
+        <rule name="Side facing weapon" id="c47b-79bd-addb-7096" hidden="false">
+          <description>Can target objectives within a 180° arc measured from the front of the model to the side the weapon is represented in the model.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="[R] Rear facing" id="e8e6-4c0a-d894-5f97" hidden="false">
+      <rules>
+        <rule name="Rear facing weapon" id="9766-fd87-7661-3da5" hidden="false">
+          <description>Can target objectives within a 90° arc from the rear of the model.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="[C] Turreted Coaxial-mount" id="5a5f-3ed0-79c5-df43" hidden="false">
+      <rules>
+        <rule name="Coaxial-mount weapon on turret" id="72b3-eaab-a4e1-20d9" hidden="false">
+          <description>- Weapons of this model that share the Coaxial tag must select objectives in a 15° arc of each other.
+- While this unit is within Engagement Range of an enemy unit, this unit may chose to shoot with this weapon against any elegible enemy unit, even those outside Engagement Range. When doing so, a hit roll modifier of -1 is applied.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="[H] Fixed-mount" id="59a9-afa0-7ef5-f014" hidden="false">
+      <rules>
+        <rule name="Fixed-mount weapon" id="3c32-c03a-9503-b2c0" hidden="false">
+          <description>Can target objectives within a 30° arc from the front of the model.</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -3682,6 +3723,46 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
             <modifier field="name" type="set" value="Icarus Autocannon"/>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
       </modifierGroups>
     </profile>
     <profile name="Punisher Gatling cannon" id="9fac-07c9-3595-784e" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -3693,6 +3774,48 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Battle cannon" id="bc34-f1ec-56fa-2829" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -3703,6 +3826,48 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Bolt pistol" id="e6d5-677a-d8ed-f6a5" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -3723,6 +3888,48 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, an unmodified hit roll of 5+ scores an additional hit. Compatible with Heavy Special Amunition.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Flamer" id="cdc3-3459-a28c-a9cf" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -3733,6 +3940,48 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Meltagun" id="ec4c-1132-ddaf-db8e" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -3743,6 +3992,48 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack made with this weapon targets a unit within half range, that attack has a Damage characteristic of D6+2.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Plasma gun, Standard" id="03e5-60f2-4726-5cdd" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -3773,6 +4064,48 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack made with this weapon is allocated to a model with a Save characteristic of 3+ or better, that attack has a Damage characteristic of 2.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Hot-Shot Laspistol" id="4609-79eb-7505-68a5" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -3803,6 +4136,48 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Multi-Laser" id="92be-1bfc-f355-f214" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -3813,6 +4188,48 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Launcher, Krak missile" id="8161-3b0e-8048-0e83" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -3823,6 +4240,48 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Launcher, Frag missile" id="603d-3e82-38f6-c5c3" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -3833,6 +4292,48 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Each time an attack is made with this weapon, an unmodified hit roll of 5+ scores an additional hit.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Multi-Melta" id="1768-d7b9-37ba-f3bf" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -3843,6 +4344,48 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack made with this weapon targets a unit within half range, that attack has a Damage characteristic of D6+2.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Frag grenades" id="fdd8-1a5f-5722-d6ee" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -3873,6 +4416,48 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Dreadnought Combat Weapon" id="3b26-3098-155f-0e58" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -3998,6 +4583,46 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
             <modifier field="name" type="set" value="Icarus Lascannon"/>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
       </modifierGroups>
     </profile>
     <profile name="Ordnance Launchers" id="c883-3078-1367-cc2c" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -4019,6 +4644,48 @@ Before using it, select one of the available ammo.
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Quad Autocannon" id="3922-981d-ccb7-c169" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -4044,6 +4711,46 @@ Before using it, select one of the available ammo.
             <modifier field="name" type="set" value="Icarus Quad Autocannon"/>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
       </modifierGroups>
     </profile>
     <profile name="Boltgun" id="3d4b-95ea-f860-dd22" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -4055,6 +4762,48 @@ Before using it, select one of the available ammo.
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Compatible with Special Amunition.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Grav-Gun" id="a3d2-b0d7-70bc-695e" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -4085,6 +4834,48 @@ Before using it, select one of the available ammo.
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Bolt Sniper rifle" id="45a4-5982-7f8b-fb33" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -4135,6 +4926,48 @@ Before using it, select one of the available ammo.
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">The bearer can only shoot with each hunter-killer missile it is equipped with once per battle.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Plasma gun, Overcharge" id="acb5-7b58-0d17-a33a" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <comment>Infantry Weapon</comment>
@@ -4166,6 +4999,48 @@ Before using it, select one of the available ammo.
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, an unmodified hit roll of 5+ scores an additional hit. Compatible with Heavy Special Amunition.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Plasma cannon, Overcharge" id="fbb2-f4cb-e47d-1d10" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <comment>Infantry profile</comment>
@@ -4177,6 +5052,48 @@ Before using it, select one of the available ammo.
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Add 1 to the Wound rolls. If any unmodified hit rolls of 1 are made for attacks with this weapon profile, the bearer is destroyed after shooting with this weapon.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Auto-Boltgun" id="21ef-7459-ad22-ece0" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -4247,6 +5164,48 @@ Before using it, select one of the available ammo.
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Beam.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Cyclone missile launcher, Frag missile" id="5207-ef08-27f7-166d" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -4257,6 +5216,48 @@ Before using it, select one of the available ammo.
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Each time an attack is made with this weapon, an unmodified hit roll of 5+ scores an additional hit.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Cyclone missile launcher, Krak missile" id="d9ac-d70c-de0b-1897" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -4267,6 +5268,48 @@ Before using it, select one of the available ammo.
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Demolisher cannon" id="d2d1-43d6-8c52-7a6a" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -4277,6 +5320,48 @@ Before using it, select one of the available ammo.
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Splash.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Disintegration Gun" id="c86e-fd57-5a10-6b61" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -4297,6 +5382,48 @@ Before using it, select one of the available ammo.
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Heavy Plasma cannon, Overcharge" id="691d-11e2-ebfb-d4ad" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -4307,6 +5434,48 @@ Before using it, select one of the available ammo.
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Add 1 to the Wound rolls. For each hit rolls of 1 are made for attacks with this weapon profile, the bearer suffers 1D3 mortal wound.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Hurricane Bolter" id="0c32-fc5b-5235-f6ba" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -4317,6 +5486,48 @@ Before using it, select one of the available ammo.
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Compatible with Special Amunition.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Kheres-pattern Assault cannon" id="10cf-9931-74ee-504e" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -4327,6 +5538,48 @@ Before using it, select one of the available ammo.
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Master-crafted Auto Boltgun" id="1f2f-512e-9ca3-13f9" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -4370,6 +5623,48 @@ Blast.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Plasma blaster, Overcharge" id="ae8f-c03c-8929-bedc" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <comment>Infantry Weapon</comment>
@@ -4381,6 +5676,48 @@ Blast.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Add 1 to the Wound rolls. If any unmodified hit rolls of 1 are made for attacks with this weapon profile, the bearer is destroyed after shooting with this weapon.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Plasma cutter, Standard" id="614c-c09f-c4b4-504f" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -4431,6 +5768,48 @@ Blast.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Reaper Autocannon" id="9c2a-cd9e-dc44-ca31" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -4441,6 +5820,48 @@ Blast.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Launcher, Skyhammer missile" id="b808-ff6d-2ba3-cd8a" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -4451,6 +5872,48 @@ Blast.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Attacks with this weapon ignore the rule Hard to hit. Each time an attack made with this weapon is allocated to an AIRCRAFT model, that attack has a Damage characteristic of 4.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Launcher, Skyspear missile" id="11e1-cbd0-5c56-dce9" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -4461,6 +5924,48 @@ Blast.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Attacks with this weapon ignore the rule Hard to hit. Each time an attack made with this weapon is allocated to an AIRCRAFT model, that attack has a Damage characteristic of 6.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Stormstrike missile launcher" id="f465-e051-3946-f328" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -4471,6 +5976,48 @@ Blast.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Thunderfire Shells" id="e768-5449-ec9e-e9a5" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -4481,6 +6028,48 @@ Blast.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Indirect fire.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Twin Assault Cannon" id="acb8-7501-1f1b-b483" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -4491,6 +6080,48 @@ Blast.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Twin Autocannon" id="3a89-dec9-f41d-7719" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -4516,6 +6147,46 @@ Blast.</characteristic>
             <modifier field="name" type="set" value="Twin Icarus Autocannon"/>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
       </modifierGroups>
     </profile>
     <profile name="Twin Boltgun" id="6471-9a1a-0f1d-acb1" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -4527,6 +6198,48 @@ Blast.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Compatible with Special Amunition.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Twin Heavy Flamer" id="1a79-9730-f078-07b6" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -4537,6 +6250,48 @@ Blast.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Twin Heavy Plasma cannon, Standard" id="3f51-8cbe-78c2-0b36" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -4547,6 +6302,48 @@ Blast.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Twin Heavy Plasma cannon, Overcharge" id="f2db-d913-989b-2841" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <comment>Vehicle Weapon</comment>
@@ -4558,6 +6355,48 @@ Blast.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Add 1 to the Wound rolls. Blast. Each time an unmodified hit roll of 1 is made for an attack with this weapon profile, the bearer suffers 1D3 mortal wounds after shooting with this weapon.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Twin Lascannon" id="1662-54b9-46da-fefc" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -4583,6 +6422,46 @@ Blast.</characteristic>
             <modifier field="name" type="set" value="Twin Icarus Lascannon"/>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
       </modifierGroups>
     </profile>
     <profile name="Twin Multi-Melta" id="c3c9-08d7-bfae-4ff7" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -4594,6 +6473,48 @@ Blast.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack made with this weapon targets a unit within half range, that attack has a Damage characteristic of D6+2.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Twin Plasma gun, Standard" id="f7ba-88b9-c604-cd89" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -4604,6 +6525,48 @@ Blast.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Twin Plasma gun, Overcharge" id="840a-7f35-72ad-baef" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <comment>Vehicle</comment>
@@ -4615,6 +6578,48 @@ Blast.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Add 1 to the Wound rolls. Each time an unmodified hit roll of 1 is made for an attack with this weapon profile, the bearer suffers 1D3 mortal wounds after shooting with this weapon.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Volkite Culebrin" id="c943-413e-8c92-ae9b" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -4625,6 +6630,48 @@ Blast.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, an unmodified wound roll of 6 inflicts 2 mortal wounds on the target in addition to any normal damage.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Castellan launcher" id="b4c9-cb72-ef2f-76cb" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -4635,6 +6682,48 @@ Blast.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Indirect fire.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Vengeance launcher" id="f4df-b39c-08a7-5255" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -4645,6 +6734,48 @@ Blast.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Indirect fire.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Wrist-mounted Grenade launcher" id="802b-8d1b-8b9f-41e2" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -4887,6 +7018,48 @@ Enemy models cannot target a model in this unit with ranged attacks unless they 
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Indirect fire.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Long Lasgun" id="4758-0e05-3030-87af" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -4968,6 +7141,48 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack made with this weapon targets a unit within half range, that attack has a Damage characteristic of D6+2.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Overcharged Heavy Meltagun" id="8614-717b-a782-1a67" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -4978,8 +7193,50 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6+2</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack made with this weapon targets a unit within half range, that attack has a Damage characteristic of D6+4.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
-    <profile name="Terrax Melta Cutter" id="79c3-79bf-926c-3163" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+    <profile name="[H] Terrax Melta Cutter" id="79c3-79bf-926c-3163" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 5</characteristic>
@@ -4998,6 +7255,48 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack made with this weapon targets a unit within half range, that attack has a Damage characteristic of D6+2.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Siege Melta Array" id="7ca3-c8c0-5bfa-c727" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5008,6 +7307,48 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack made with this weapon targets a unit within half range, that attack has a Damage characteristic of D6+2.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Laser Fusil" id="f23c-ffc0-2a4f-1b51" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5028,6 +7369,48 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Re-roll wound rolls of 1 against MONSTER, VEHICLE or TITANIC units.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Volley Lascannon" id="bb0b-d9fa-a82d-e0ac" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5038,6 +7421,48 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Twin Laser Destroyer" id="7ba2-6083-56ad-8a0a" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5048,6 +7473,48 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Heavy Laser Destroyer" id="7f70-5d15-cc83-b744" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5058,6 +7525,48 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Neutron Projector" id="1637-7407-41a4-eac7" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5068,6 +7577,48 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+6</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Overcharged Laser Destructor" id="1774-a176-d4b4-e2b8" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5078,6 +7629,48 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+6</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Chem-Cannon" id="95ae-4009-82e5-8199" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5088,6 +7681,48 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent.  Each time an attack is made with this weapon against units without INORGANIC, VEHICLE or TITANIC Keywords, a wound roll of 2+ is always successful.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Inferno Heavy Flamer" id="4424-dba8-5c8f-953d" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5098,6 +7733,48 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Accelerator Autocannon" id="daae-732d-a228-a279" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5123,6 +7800,46 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
             <modifier field="name" type="set" value="Accelerator Icarus Autocannon"/>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
       </modifierGroups>
     </profile>
     <profile name="Anvillus Autocannon" id="f031-8406-8d96-2cfa" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -5134,6 +7851,48 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Plasma cannon, Standard" id="5bf9-11ef-56fe-a1c7" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5144,6 +7903,48 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Hellfire Plasma cannon, Standard" id="bc3a-0347-55b2-6686" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <comment>Relic</comment>
@@ -5155,6 +7956,48 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Hellfire Plasma cannon, Overcharge" id="99f7-0bee-b96b-c184" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <comment>Relic</comment>
@@ -5166,6 +8009,48 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Add 1 to the Wound rolls. For each hit rolls of 1 are made for attacks with this weapon profile, the bearer suffers 1D3 mortal wounds.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Rad-Cleanser" id="f2b0-9477-6932-7369" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5176,6 +8061,48 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent. Each time an attack is made with this weapon against units without INORGANIC, VEHICLE or TITANIC Keyword, a wound roll of 2+ is always successful.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Twin Rad-Cleanser" id="be5b-216d-c3a8-0fc8" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5186,6 +8113,48 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent. Each time an attack is made with this weapon against units without INORGANIC, VEHICLE or TITANIC Keyword, a wound roll of 2+ is always successful.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Wrist-mounted Boltgun" id="b36b-fa53-cdc4-4141" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5206,6 +8175,48 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Icarus Weapons ignore the Hard to hit ability. This weapon always make 3 attacks against units with AIRCRAFT Keyword.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Hand Flamer" id="d830-eae6-17a0-0bff" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5317,6 +8328,48 @@ Each time this model is declared to Hover, it loses this ability until the begin
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Each time an attack is made with this weapon, an unmodified hit roll of 5+ scores an additional hit.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Flamestorm Gauntlets (Melee)" id="399c-e9cd-c9fb-0e34" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5542,6 +8595,48 @@ Its Move characteristic becomes 20&quot;, and it loses the Hard to Hit and Super
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack made with this weapon is allocated to a model with a Save characteristic of 3+ or better, that attack has a Damage characteristic of 2.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="C. Beam cannon, Long range" id="c7e3-3ec3-e212-dc62" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5552,6 +8647,48 @@ Its Move characteristic becomes 20&quot;, and it loses the Hard to Hit and Super
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">6</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Beam. Blast.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="C. Beam cannon, Medium range" id="d3c2-5035-36cc-46bd" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5562,6 +8699,48 @@ Its Move characteristic becomes 20&quot;, and it loses the Hard to Hit and Super
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">4</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Beam. Blast.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="C. Beam cannon, Short range" id="ed55-bf50-e69e-298f" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5572,6 +8751,48 @@ Its Move characteristic becomes 20&quot;, and it loses the Hard to Hit and Super
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Beam. Blast.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Dreadnought Power Fist" id="03b9-d662-7977-3cbd" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5628,6 +8849,48 @@ If the result is less than the Strength characteristic of that enemy unit, it ca
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. If the target is within half range, add 1 to this weapon&apos;s Strength.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Cyclone Melta Lance" id="1df8-8c8b-f3e7-d94a" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5638,6 +8901,48 @@ If the result is less than the Strength characteristic of that enemy unit, it ca
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack made with this weapon targets a unit within half range, that attack has a damage characteristic of D6+2</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Grav-flux Bombard" id="1656-fc74-25b5-a381" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5648,6 +8953,48 @@ If the result is less than the Strength characteristic of that enemy unit, it ca
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Each time an attack made with this weapon is allocated to a model with a save characteristic of 3+ or better, that attack has a Damage characteristic of 4.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Storm Cannon Array" id="b1de-1a35-30a1-da27" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5658,6 +9005,48 @@ If the result is less than the Strength characteristic of that enemy unit, it ca
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Volkite pistol" id="0565-63d1-ab05-9342" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5678,6 +9067,48 @@ If the result is less than the Strength characteristic of that enemy unit, it ca
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, an unmodified wound roll of 6 inflicts 1 mortal wound on the target in addition to any normal damage.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Volkite Falconet" id="bc5b-ab2a-f8f5-7861" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5688,6 +9119,48 @@ If the result is less than the Strength characteristic of that enemy unit, it ca
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, an unmodified wound roll of 6 inflicts 3 mortal wounds on the target in addition to any normal damage.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Twin Volkite Culebrin" id="beab-51a4-cccb-87f3" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5698,6 +9171,48 @@ If the result is less than the Strength characteristic of that enemy unit, it ca
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, an unmodified wound roll of 6 inflicts 2 mortal wounds on the target in addition to any normal damage.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Fenrisian Great Axe, Scythe" id="44ab-53f6-b39f-c573" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5728,6 +9243,48 @@ If the result is less than the Strength characteristic of that enemy unit, it ca
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, an unmodified wound roll of 6 inflicts 1 mortal wound on the target in addition to any normal damage.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Ripper shotgun (Ranged)" id="119d-57c0-2932-af9d" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5758,6 +9315,48 @@ If the result is less than the Strength characteristic of that enemy unit, it ca
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Indirect fire.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Scorpius launcher" id="f1c6-cacb-b4d2-8475" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5768,6 +9367,48 @@ If the result is less than the Strength characteristic of that enemy unit, it ca
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Indirect fire.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Twin Accelerator Autocannon" id="8307-43eb-68f9-e413" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5791,6 +9432,46 @@ If the result is less than the Strength characteristic of that enemy unit, it ca
           <modifiers>
             <modifier field="837d-5e63-aeb7-1410" type="set" value="Icarus Weapons ignore the Hard to hit ability."/>
             <modifier field="name" type="set" value="Twin Accelerator Icarus Autocannon"/>
+          </modifiers>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
@@ -5817,6 +9498,46 @@ If the result is less than the Strength characteristic of that enemy unit, it ca
           <modifiers>
             <modifier field="837d-5e63-aeb7-1410" type="set" value="Icarus Weapons ignore the Hard to hit ability."/>
             <modifier field="name" type="set" value="Twin Icarus Heavy Stubber"/>
+          </modifiers>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
@@ -5874,6 +9595,48 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Compatible with Special Amunition.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Off-hand weapon" id="e14b-37da-f8e9-1752" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
       <characteristics>
@@ -5889,6 +9652,48 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Each time an attack is made with this weapon, an unmodified hit roll of 5+ scores an additional hit.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Twin Krak missile" id="5b11-a535-3db4-2a92" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5899,6 +9704,48 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Krakstorm Grenade launcher" id="4841-aa85-a680-e296" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5909,6 +9756,48 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Rocket pod" id="da18-fd5b-dfed-189d" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5919,6 +9808,48 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Twin Rocket pod" id="3550-f3d1-2f0a-8394" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5929,6 +9860,48 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Servitor" id="13f5-df94-118f-00ac" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
@@ -5957,6 +9930,48 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, an unmodified hit roll of 5+ scores an additional hit. Compatible with Heavy Special Amunition.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Auspex Array" id="2840-f5e7-fc6e-2879" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
       <characteristics>
@@ -5973,6 +9988,48 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Laser Destroyer" id="6c76-89d8-06d3-ea06" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5983,6 +10040,48 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Dozer Blade" id="cd96-d3c4-4d0e-ad88" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
       <characteristics>
@@ -5999,6 +10098,48 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+6</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time a successful wound roll is made for an attack with this weapon, it inflicts 2 mortal wounds on the target in addition to any normal damage.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Erradicator Nova cannon" id="097d-fba0-cdcf-4d0b" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -6009,6 +10150,48 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Units attacked by this weapon do not gain any bonus for being in cover.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Track guards" id="61d5-a8b1-8070-663f" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
       <characteristics>
@@ -6034,6 +10217,48 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Quad Heavy Bolter" id="9ba3-45ca-4682-0595" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -6059,6 +10284,46 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
             <modifier field="name" type="set" value="Quad Icarus Heavy Bolter"/>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
       </modifierGroups>
     </profile>
     <profile name="Accelerator Heavy Autocannon" id="084d-a7da-aabd-e2e6" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -6070,6 +10335,48 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Twin Accelerator Heavy Autocannon" id="5937-3a3a-833b-923e" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -6093,6 +10400,46 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
           <modifiers>
             <modifier field="837d-5e63-aeb7-1410" type="set" value="Icarus Weapons ignore the Hard to hit ability."/>
             <modifier field="name" type="set" value="Twin Accelerator Icarus Heavy Autocannon"/>
+          </modifiers>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
@@ -6121,6 +10468,46 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
             <modifier field="name" type="set" value="Twin Icarus Heavy Autocannon"/>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
       </modifierGroups>
     </profile>
     <profile name="Quad Lascannon" id="a0e6-ae3d-5e7f-3e14" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -6147,6 +10534,46 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
             <modifier field="name" type="set" value="Quad Icarus Lascannon"/>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
       </modifierGroups>
     </profile>
     <profile name="Volcano Lance" id="07e1-bc1f-fd6e-b5ea" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -6158,6 +10585,48 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">6</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon against a TITANIC unit, you can re-roll the wound roll.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Volkite Carronade" id="257e-0d33-993e-a91d" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -6168,6 +10637,48 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">6</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, an unmodified wound roll of 6 inflicts 3 mortal wounds on the target in addition to any normal damage.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="[Action] Void Shield Recharge" id="723a-3186-0153-98ca" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
       <characteristics>
@@ -6261,6 +10772,48 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Ignore the Hard to hit rule.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Twin Flak missile" id="ae23-1142-af1c-06e1" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -6271,6 +10824,48 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Ignore the Hard to hit rule.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Skillful Parry" id="4ee4-0937-e94e-6728" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
       <characteristics>
@@ -6312,6 +10907,48 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, an unmodified hit roll of 5+ scores an additional hit. Compatible with Heavy Special Amunition.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Twin Mega-Bolter" id="4212-542d-7957-8899" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -6322,6 +10959,48 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, an unmodified hit roll of 5+ scores an additional hit. Compatible with Heavy Special Amunition.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Vulcan Mega-Bolter" id="3095-f82c-14bb-a798" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -6332,6 +11011,48 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, an unmodified hit roll of 5+ scores an additional hit. Compatible with Heavy Special Amunition.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Lightning Reflexes" id="4bed-9edb-ac60-e62a" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
       <characteristics>
@@ -6348,6 +11069,48 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Twin Multi-Laser" id="23f7-92aa-6748-e6ed" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -6358,6 +11121,48 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Earthshaker cannon" id="5d25-fdf1-06a1-0b96" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -6368,6 +11173,48 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Splash. Indirect fire.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Medusa Siege cannon" id="2aab-7d1a-1437-1775" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -6378,6 +11225,48 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Indirect fire.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Field gun" id="c5c8-3468-e3e0-85b8" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <comment>c5c8-3468-e3e0-85b8</comment>
@@ -6389,6 +11278,48 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Indirect fire.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Field rocket launcher" id="3b79-5604-e637-5244" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <comment>3b79-5604-e637-5244</comment>
@@ -6400,6 +11331,48 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Indirect fire.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Hellstrike Missile Rack" id="0edd-d5a5-013e-8f2c" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -6410,6 +11383,48 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410"/>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Walking fire" id="1af0-1816-f797-64e6" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
       <characteristics>
@@ -6438,6 +11453,48 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">12</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon against a TITANIC unit, you can re-roll the wound roll.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Vanquisher BC, High explosive rounds" id="3c93-7ab2-26fe-1a7f" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -6448,6 +11505,48 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Seismic Hammer, sweep" id="86d6-d84b-3213-a879" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -6468,6 +11567,48 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Indirect fire.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Twin Heavy Gatling cannon" id="55c0-8057-0831-0bd7" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -6478,6 +11619,48 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Lone Operative" id="d330-126a-2734-65ca" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
       <characteristics>
@@ -6493,6 +11676,48 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Beam.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Obstacle" id="0410-ca22-5532-bfb0" hidden="false" page="66" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
       <characteristics>
@@ -6529,6 +11754,48 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">4</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Beam. Blast.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Light C. Beam cannon, Short range" id="e9bf-6105-1a27-93e3" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -6539,6 +11806,48 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Beam. Blast.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" type="prepend" value="[H]">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[F]">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[S]">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[L]">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[R]">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[T]">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" type="prepend" value="[C]">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Drop Pod Assault" id="4159-e1db-2238-8765" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
       <characteristics>
@@ -12918,24 +18227,6 @@ Each Multi-Purpose Reactive Armour packcage can be used once per battle.</descri
         <infoLink name="Boltstorm gauntlet (shooting)" id="e70c-0f9f-fec6-01b5" hidden="false" targetId="eb60-1a3c-5699-dadb" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Centurion missile launcher" id="5453-27cb-db38-ee9d" collective="true" hidden="false" import="true" type="upgrade">
-      <categoryLinks>
-        <categoryLink name="Blast" id="cb34-6152-8d59-b7be" hidden="false" primary="false" targetId="a30d-0055-6710-6284"/>
-      </categoryLinks>
-      <constraints>
-        <constraint id="db55-49df-b519-ad2b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-        <constraint id="fd54-7453-2e8c-3a41" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-        <cost name="Pts" typeId="points" value="0"/>
-        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Centurion missile launcher" id="c2d2-e565-f4bf-b9f7" hidden="false" targetId="19eb-bb51-72c6-7829" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry name="Chainsword" id="68c5-3abd-8fe9-a7ae" collective="true" hidden="false" import="true" type="upgrade">
       <constraints>
         <constraint id="024e-f8a3-9602-ef96" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -14457,6 +19748,48 @@ If the battle ends and this unit is not on the battlefield it is considered to b
             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">-</characteristic>
             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Indirect fire. Each time you hit the target with this weapon it suffers D6 mortal wounds. If a model is wounded but not slain by this attack, roll another dice; on a 6, the model suffers a further D6 mortal wounds.</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Weapon tag</comment>
+              <modifiers>
+                <modifier field="name" type="prepend" value="[H]">
+                  <conditions>
+                    <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[F]">
+                  <conditions>
+                    <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[S]">
+                  <conditions>
+                    <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[L]">
+                  <conditions>
+                    <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[R]">
+                  <conditions>
+                    <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[T]">
+                  <conditions>
+                    <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[C]">
+                  <conditions>
+                    <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
     </selectionEntry>
@@ -17164,6 +22497,48 @@ HAEMONCULUS</description>
             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent.</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Weapon tag</comment>
+              <modifiers>
+                <modifier field="name" type="prepend" value="[H]">
+                  <conditions>
+                    <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[F]">
+                  <conditions>
+                    <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[S]">
+                  <conditions>
+                    <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[L]">
+                  <conditions>
+                    <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[R]">
+                  <conditions>
+                    <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[T]">
+                  <conditions>
+                    <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[C]">
+                  <conditions>
+                    <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
     </selectionEntry>
@@ -17185,6 +22560,48 @@ HAEMONCULUS</description>
             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent.</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Weapon tag</comment>
+              <modifiers>
+                <modifier field="name" type="prepend" value="[H]">
+                  <conditions>
+                    <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[F]">
+                  <conditions>
+                    <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[S]">
+                  <conditions>
+                    <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[L]">
+                  <conditions>
+                    <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[R]">
+                  <conditions>
+                    <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[T]">
+                  <conditions>
+                    <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[C]">
+                  <conditions>
+                    <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
     </selectionEntry>
@@ -17205,6 +22622,48 @@ HAEMONCULUS</description>
             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Sonic weapon. Torrent. If the unit of the weapon&apos;s bearer is in engagement range of enemy units, this weapon changes it&apos;s profile to Pistol D6.</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Weapon tag</comment>
+              <modifiers>
+                <modifier field="name" type="prepend" value="[H]">
+                  <conditions>
+                    <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[F]">
+                  <conditions>
+                    <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[S]">
+                  <conditions>
+                    <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[L]">
+                  <conditions>
+                    <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[R]">
+                  <conditions>
+                    <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[T]">
+                  <conditions>
+                    <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[C]">
+                  <conditions>
+                    <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
     </selectionEntry>
@@ -17229,6 +22688,48 @@ HAEMONCULUS</description>
             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Plague Weapon. Torrent.</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Weapon tag</comment>
+              <modifiers>
+                <modifier field="name" type="prepend" value="[H]">
+                  <conditions>
+                    <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[F]">
+                  <conditions>
+                    <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[S]">
+                  <conditions>
+                    <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[L]">
+                  <conditions>
+                    <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[R]">
+                  <conditions>
+                    <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[T]">
+                  <conditions>
+                    <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[C]">
+                  <conditions>
+                    <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
     </selectionEntry>
@@ -17298,6 +22799,48 @@ HAEMONCULUS</description>
             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack made with this weapon is allocated to a model with a Save characteristic of 3+ or better, that attack has a Damage characteristic of 4.</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Weapon tag</comment>
+              <modifiers>
+                <modifier field="name" type="prepend" value="[H]">
+                  <conditions>
+                    <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[F]">
+                  <conditions>
+                    <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[S]">
+                  <conditions>
+                    <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[L]">
+                  <conditions>
+                    <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[R]">
+                  <conditions>
+                    <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[T]">
+                  <conditions>
+                    <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[C]">
+                  <conditions>
+                    <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile name="Graviton, singularity" id="164e-109e-81e4-d02b" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
           <characteristics>
@@ -17308,6 +22851,48 @@ HAEMONCULUS</description>
             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time you select this profile to shoot with, roll one D6; on a 1-3, the bearer suffers D3 mortal wounds. Each time an attack made with this weapon is allocated to a model with a Save characteristic of 3+ or better, that attack has a Damage characteristic of 5.</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Weapon tag</comment>
+              <modifiers>
+                <modifier field="name" type="prepend" value="[H]">
+                  <conditions>
+                    <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[F]">
+                  <conditions>
+                    <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[S]">
+                  <conditions>
+                    <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[L]">
+                  <conditions>
+                    <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[R]">
+                  <conditions>
+                    <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[T]">
+                  <conditions>
+                    <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[C]">
+                  <conditions>
+                    <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
     </selectionEntry>
@@ -17410,6 +22995,48 @@ HAEMONCULUS</description>
             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Splash. Indirect fire.</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Weapon tag</comment>
+              <modifiers>
+                <modifier field="name" type="prepend" value="[H]">
+                  <conditions>
+                    <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[F]">
+                  <conditions>
+                    <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[S]">
+                  <conditions>
+                    <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[L]">
+                  <conditions>
+                    <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[R]">
+                  <conditions>
+                    <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[T]">
+                  <conditions>
+                    <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[C]">
+                  <conditions>
+                    <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile name="Plasma Obliterator, Overcharge" id="630d-ca66-8e12-823c" hidden="false" page="134" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
           <characteristics>
@@ -17420,6 +23047,48 @@ HAEMONCULUS</description>
             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Splash. Indirect fire. Add 1 to the Wound rolls. Each time you roll a hit roll of 1 when firing this weapon, this model suffers a mortal wound after all of its shots have been resolved.</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Weapon tag</comment>
+              <modifiers>
+                <modifier field="name" type="prepend" value="[H]">
+                  <conditions>
+                    <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[F]">
+                  <conditions>
+                    <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[S]">
+                  <conditions>
+                    <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[L]">
+                  <conditions>
+                    <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[R]">
+                  <conditions>
+                    <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[T]">
+                  <conditions>
+                    <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" type="prepend" value="[C]">
+                  <conditions>
+                    <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
     </selectionEntry>
@@ -17544,7 +23213,7 @@ HAEMONCULUS</description>
         <infoLink name="Variable weapon profile" id="d6be-405f-7ea7-622d" hidden="false" targetId="2dd5-c9f0-aa5a-818a" type="rule"/>
       </infoLinks>
       <profiles>
-        <profile name="Battlecannon, HE rounds" id="9e0f-115d-c0d2-1c70" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+        <profile name="[T] Battlecannon, HE rounds" id="9e0f-115d-c0d2-1c70" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">72</characteristic>
             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D6+6</characteristic>
@@ -17554,7 +23223,7 @@ HAEMONCULUS</description>
             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Battlecannon, Vanquisher rounds" id="9ed6-b38a-2c65-06cc" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+        <profile name="[T] Battlecannon, Vanquisher rounds" id="9ed6-b38a-2c65-06cc" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">72</characteristic>
             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2</characteristic>
@@ -18279,6 +23948,9 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                           </constraints>
                           <selectionEntries>
                             <selectionEntry name="Twin Long-barrelled Autocannon" id="bf05-63f5-fba5-351b" collective="true" hidden="false" import="true" type="upgrade">
+                              <categoryLinks>
+                                <categoryLink name="[T] Turret-mount" id="d4e3-08db-a0b9-6673" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                              </categoryLinks>
                               <constraints>
                                 <constraint id="79e8-3fd1-ec82-1cec" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                                 <constraint id="98cd-2cb8-d90e-5f62" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -18299,6 +23971,48 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                                     <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
                                   </characteristics>
+                                  <modifierGroups>
+                                    <modifierGroup type="and">
+                                      <comment>Weapon tag</comment>
+                                      <modifiers>
+                                        <modifier field="name" type="prepend" value="[H]">
+                                          <conditions>
+                                            <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                                          </conditions>
+                                        </modifier>
+                                        <modifier field="name" type="prepend" value="[F]">
+                                          <conditions>
+                                            <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                                          </conditions>
+                                        </modifier>
+                                        <modifier field="name" type="prepend" value="[S]">
+                                          <conditions>
+                                            <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                                          </conditions>
+                                        </modifier>
+                                        <modifier field="name" type="prepend" value="[L]">
+                                          <conditions>
+                                            <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                                          </conditions>
+                                        </modifier>
+                                        <modifier field="name" type="prepend" value="[R]">
+                                          <conditions>
+                                            <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                                          </conditions>
+                                        </modifier>
+                                        <modifier field="name" type="prepend" value="[T]">
+                                          <conditions>
+                                            <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                                          </conditions>
+                                        </modifier>
+                                        <modifier field="name" type="prepend" value="[C]">
+                                          <conditions>
+                                            <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                                          </conditions>
+                                        </modifier>
+                                      </modifiers>
+                                    </modifierGroup>
+                                  </modifierGroups>
                                 </profile>
                               </profiles>
                             </selectionEntry>
@@ -18547,6 +24261,48 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
                     <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Weapon tag</comment>
+                      <modifiers>
+                        <modifier field="name" type="prepend" value="[H]">
+                          <conditions>
+                            <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" type="prepend" value="[F]">
+                          <conditions>
+                            <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" type="prepend" value="[S]">
+                          <conditions>
+                            <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" type="prepend" value="[L]">
+                          <conditions>
+                            <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" type="prepend" value="[R]">
+                          <conditions>
+                            <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" type="prepend" value="[T]">
+                          <conditions>
+                            <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" type="prepend" value="[C]">
+                          <conditions>
+                            <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
                 <profile name="Silo, Fragstorm Missiles" id="8f33-f5d3-bd3a-915e" hidden="false" page="67" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                   <characteristics>
@@ -18557,6 +24313,48 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                     <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Weapon tag</comment>
+                      <modifiers>
+                        <modifier field="name" type="prepend" value="[H]">
+                          <conditions>
+                            <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" type="prepend" value="[F]">
+                          <conditions>
+                            <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" type="prepend" value="[S]">
+                          <conditions>
+                            <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" type="prepend" value="[L]">
+                          <conditions>
+                            <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" type="prepend" value="[R]">
+                          <conditions>
+                            <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" type="prepend" value="[T]">
+                          <conditions>
+                            <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" type="prepend" value="[C]">
+                          <conditions>
+                            <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
             </selectionEntry>
@@ -18588,6 +24386,48 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
                     <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Weapon tag</comment>
+                      <modifiers>
+                        <modifier field="name" type="prepend" value="[H]">
+                          <conditions>
+                            <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" type="prepend" value="[F]">
+                          <conditions>
+                            <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" type="prepend" value="[S]">
+                          <conditions>
+                            <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" type="prepend" value="[L]">
+                          <conditions>
+                            <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" type="prepend" value="[R]">
+                          <conditions>
+                            <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" type="prepend" value="[T]">
+                          <conditions>
+                            <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" type="prepend" value="[C]">
+                          <conditions>
+                            <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
             </selectionEntry>
@@ -18705,6 +24545,7 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                     <categoryLink name="Blast" id="deae-8ea9-25b4-e391" hidden="false" primary="false" targetId="a30d-0055-6710-6284"/>
                     <categoryLink name="Splash" id="87c5-6055-752e-3d42" hidden="false" primary="false" targetId="a1e8-34a8-13a9-7a54"/>
                     <categoryLink name="Indirect fire" id="58ce-b543-8447-efec" hidden="false" primary="false" targetId="9f18-f587-3245-07e5"/>
+                    <categoryLink name="[T] Turret-mount" id="c8d5-0a5f-e1a6-b2b7" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
                   </categoryLinks>
                   <costs>
                     <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -18725,6 +24566,48 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
                         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Indirect fire.</characteristic>
                       </characteristics>
+                      <modifierGroups>
+                        <modifierGroup type="and">
+                          <comment>Weapon tag</comment>
+                          <modifiers>
+                            <modifier field="name" type="prepend" value="[H]">
+                              <conditions>
+                                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" type="prepend" value="[F]">
+                              <conditions>
+                                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" type="prepend" value="[S]">
+                              <conditions>
+                                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" type="prepend" value="[L]">
+                              <conditions>
+                                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" type="prepend" value="[R]">
+                              <conditions>
+                                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" type="prepend" value="[T]">
+                              <conditions>
+                                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" type="prepend" value="[C]">
+                              <conditions>
+                                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </modifierGroup>
+                      </modifierGroups>
                     </profile>
                     <profile name="Aquila Macro-cannon (Quake Shell)" id="b37c-66b4-2e57-d95e" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                       <characteristics>
@@ -18735,6 +24618,48 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
                         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Splash. Indirect fire.</characteristic>
                       </characteristics>
+                      <modifierGroups>
+                        <modifierGroup type="and">
+                          <comment>Weapon tag</comment>
+                          <modifiers>
+                            <modifier field="name" type="prepend" value="[H]">
+                              <conditions>
+                                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" type="prepend" value="[F]">
+                              <conditions>
+                                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" type="prepend" value="[S]">
+                              <conditions>
+                                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" type="prepend" value="[L]">
+                              <conditions>
+                                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" type="prepend" value="[R]">
+                              <conditions>
+                                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" type="prepend" value="[T]">
+                              <conditions>
+                                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" type="prepend" value="[C]">
+                              <conditions>
+                                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </modifierGroup>
+                      </modifierGroups>
                     </profile>
                   </profiles>
                 </selectionEntry>
