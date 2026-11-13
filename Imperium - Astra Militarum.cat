@@ -20552,6 +20552,7 @@ In addition, at the beginning of your Command phase, embarked VEHICLE models are
                 <categoryLink name="Tactical Weapon" id="c38c-cbc4-78a5-7e29" hidden="false" primary="false" targetId="9369-4930-4f3e-67a4"/>
                 <categoryLink name="Blast" id="fc55-30f8-2f8a-80a4" hidden="false" primary="false" targetId="a30d-0055-6710-6284"/>
                 <categoryLink name="Dumb weapon" id="5413-cb48-a7a9-da52" hidden="false" primary="false" targetId="e2fa-b062-134a-0604"/>
+                <categoryLink name="{H} Fixed-mount" id="27e1-e380-f81d-5afa" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
               </categoryLinks>
               <constraints>
                 <constraint id="e6fd-e67e-ff24-4ff4" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
@@ -20771,9 +20772,17 @@ This TRANSPORT cannot embark DEATHSTRIKE or TITANIC models.</characteristic>
                 <constraint id="5fe9-4467-a7c8-972a" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
               </constraints>
               <entryLinks>
-                <entryLink name="Plasma Obliterator" id="362b-ec04-e528-3fa6" hidden="false" import="true" targetId="a7bd-d64e-5886-bdab" type="selectionEntry"/>
+                <entryLink name="Plasma Obliterator" id="362b-ec04-e528-3fa6" hidden="false" import="true" targetId="a7bd-d64e-5886-bdab" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{T} Turret-mount" id="8c24-2075-6077-5393" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                  </categoryLinks>
+                </entryLink>
                 <entryLink name="Aquila Macro-cannon" id="e462-016d-93fd-c0a3" hidden="false" import="true" targetId="59be-7ab6-1bf4-b31a" type="selectionEntry"/>
-                <entryLink name="Overcharged Laser Destructor" id="5704-b333-2750-e22c" hidden="false" import="true" targetId="0ddf-18b1-7b80-2b49" type="selectionEntry"/>
+                <entryLink name="Overcharged Laser Destructor" id="5704-b333-2750-e22c" hidden="false" import="true" targetId="0ddf-18b1-7b80-2b49" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{T} Turret-mount" id="c178-1b5d-2157-5c25" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                  </categoryLinks>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Secondary weapons" id="912e-1b38-956e-f796" defaultSelectionEntryId="32b2-39d3-5ff1-2d56" hidden="false" sortIndex="4">
@@ -20785,6 +20794,9 @@ This TRANSPORT cannot embark DEATHSTRIKE or TITANIC models.</characteristic>
                 <selectionEntry name="2x Twin Battlecannon" id="32b2-39d3-5ff1-2d56" collective="true" hidden="false" import="true" type="upgrade">
                   <entryLinks>
                     <entryLink name="Twin Battle cannon" id="ec98-200e-b490-ab9e" hidden="false" import="true" targetId="2d4c-e864-9441-0c33" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{S} Side facing" id="e544-c5a0-1435-0066" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="d1cf-d314-de48-a48b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="641a-2a0d-4e57-20b9" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
@@ -20795,6 +20807,9 @@ This TRANSPORT cannot embark DEATHSTRIKE or TITANIC models.</characteristic>
                 <selectionEntry name="2x Twin Heavy Plasma Cannon" id="2cbc-ceac-34df-d614" collective="true" hidden="true" import="true" type="upgrade">
                   <entryLinks>
                     <entryLink name="Twin Heavy Plasma cannon" id="55c1-083f-7ce4-1da3" hidden="false" import="true" targetId="353e-3e4d-a6ed-d25c" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{S} Side facing" id="dfae-1520-836d-1c65" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="d163-d6b4-b9eb-1aca" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="c8f7-f51d-c2d7-ceae" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
@@ -20812,6 +20827,9 @@ This TRANSPORT cannot embark DEATHSTRIKE or TITANIC models.</characteristic>
                 <selectionEntry name="2x Twin Laser Destroyer" id="6afa-5b05-5977-2000" collective="true" hidden="true" import="true" type="upgrade">
                   <entryLinks>
                     <entryLink name="Twin Laser Destroyer" id="534e-743c-5011-b1f8" hidden="false" import="true" targetId="1d11-b5ed-289b-047b" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{S} Side facing" id="e89f-632d-0016-910b" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="f1aa-fefe-215a-6789" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="533f-6467-7581-95c3" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
@@ -20829,6 +20847,9 @@ This TRANSPORT cannot embark DEATHSTRIKE or TITANIC models.</characteristic>
                 <selectionEntry name="2x Heavy Plasma Cannon" id="90c5-f008-18a0-d207" collective="true" hidden="false" import="true" type="upgrade">
                   <entryLinks>
                     <entryLink name="Heavy Plasma cannon" id="e9f6-067f-a5c1-fa87" hidden="false" import="true" targetId="221a-6109-61df-015e" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{S} Side facing" id="571c-cb75-b5bb-4898" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="4e4f-db38-cdcc-15f9" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="a55e-34e9-42f6-117b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
@@ -20850,6 +20871,9 @@ This TRANSPORT cannot embark DEATHSTRIKE or TITANIC models.</characteristic>
                 <selectionEntry name="6x Twin Heavy bolter" id="2cb5-f525-c39a-9141" hidden="false" import="true" type="upgrade">
                   <entryLinks>
                     <entryLink name="Twin Heavy Bolter" id="3b6e-321f-905e-75be" hidden="false" import="true" targetId="09d8-7790-ed3f-4d6d" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{S} Side facing" id="9d8e-7550-cedf-3a87" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="7497-0dd4-db75-ff10" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="6"/>
                         <constraint id="700f-e819-8a40-2742" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="6"/>
@@ -20860,6 +20884,9 @@ This TRANSPORT cannot embark DEATHSTRIKE or TITANIC models.</characteristic>
                 <selectionEntry name="6x Avenger Mega-bolter" id="efb6-1f08-805d-7033" hidden="true" import="true" type="upgrade">
                   <entryLinks>
                     <entryLink name="Avenger Mega-bolter" id="f1a6-9b31-9375-3254" hidden="false" import="true" targetId="5074-2a44-6c58-4c3f" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{S} Side facing" id="82c2-8d89-4ffd-c800" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="52a1-4668-c464-9b07" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="6"/>
                         <constraint id="9cbc-f11d-bf6a-70ef" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="6"/>
@@ -20885,6 +20912,9 @@ This TRANSPORT cannot embark DEATHSTRIKE or TITANIC models.</characteristic>
                 <selectionEntry name="2x Icarus Twin Heavy Autocannon" id="fbd0-a580-5971-61cc" hidden="false" import="true" type="upgrade">
                   <entryLinks>
                     <entryLink name="Icarus Twin Heavy Autocannon" id="94e1-d081-ff6c-af98" hidden="false" import="true" targetId="8bc5-f922-6b91-95bf" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{T} Turret-mount" id="04ef-6b9d-4967-0279" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="0747-9e9d-8132-3391" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="5b40-bd9d-cc8a-35df" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
@@ -20895,6 +20925,9 @@ This TRANSPORT cannot embark DEATHSTRIKE or TITANIC models.</characteristic>
                 <selectionEntry name="2x Icarus Twin Lascannon" id="144b-e96c-9923-9403" hidden="false" import="true" type="upgrade">
                   <entryLinks>
                     <entryLink name="Icarus Twin Lascannon" id="af18-ae31-a7f9-858c" hidden="false" import="true" targetId="2e50-f562-c0df-3e83" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{T} Turret-mount" id="22db-713e-e008-55e4" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="9890-5a6d-4851-508e" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="f597-41b9-8bd2-0370" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
