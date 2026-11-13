@@ -732,21 +732,21 @@ While a friendly non VEHICLE CHARACTER unit is within 3&quot; of this unit, enem
     </categoryEntry>
     <categoryEntry name="{T} Turret-mount" id="f28c-7e4e-75e1-2474" hidden="false">
       <rules>
-        <rule name="Turret-mount weapon" id="a5b3-873a-4892-5bb0" hidden="false">
+        <rule name="{T} Turret-mount weapon" id="a5b3-873a-4892-5bb0" hidden="false">
           <description>- While this unit is within Engagement Range of an enemy unit, this unit may chose to shoot with this weapon against any elegible enemy unit, even those outside Engagement Range. When doing so, a hit roll modifier of -1 is applied.</description>
         </rule>
       </rules>
     </categoryEntry>
     <categoryEntry name="{L} Limited angle Side facing" id="ceeb-83af-6f77-8baa" hidden="false">
       <rules>
-        <rule name="Limited angle Side facing weapon" id="ce72-4e3b-c9f0-3e5f" hidden="false">
+        <rule name="{L} Limited angle Side facing weapon" id="ce72-4e3b-c9f0-3e5f" hidden="false">
           <description>Can target objectives within a 90° arc, measured from the front of the model to the side the weapon is represented in the model.</description>
         </rule>
       </rules>
     </categoryEntry>
     <categoryEntry name="{F} Front facing" id="6018-2ce0-fcc7-6ed7" hidden="false">
       <rules>
-        <rule name="Front facing weapon" id="47af-49dd-1da4-a4bd" hidden="false">
+        <rule name="{F} Front facing weapon" id="47af-49dd-1da4-a4bd" hidden="false">
           <description>Can target objectives within a 90° arc from the front of the model.</description>
         </rule>
       </rules>
@@ -1751,21 +1751,21 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
     </categoryEntry>
     <categoryEntry name="{S} Side facing" id="a257-2b11-c606-59b5" hidden="false">
       <rules>
-        <rule name="Side facing weapon" id="c47b-79bd-addb-7096" hidden="false">
+        <rule name="{S} Side facing weapon" id="c47b-79bd-addb-7096" hidden="false">
           <description>Can target objectives within a 180° arc measured from the front of the model to the side the weapon is represented in the model.</description>
         </rule>
       </rules>
     </categoryEntry>
     <categoryEntry name="{R} Rear facing" id="e8e6-4c0a-d894-5f97" hidden="false">
       <rules>
-        <rule name="Rear facing weapon" id="9766-fd87-7661-3da5" hidden="false">
+        <rule name="{R} Rear facing weapon" id="9766-fd87-7661-3da5" hidden="false">
           <description>Can target objectives within a 90° arc from the rear of the model.</description>
         </rule>
       </rules>
     </categoryEntry>
     <categoryEntry name="{C} Turreted Coaxial-mount" id="5a5f-3ed0-79c5-df43" hidden="false">
       <rules>
-        <rule name="Coaxial-mount weapon on turret" id="72b3-eaab-a4e1-20d9" hidden="false">
+        <rule name="{C} Coaxial-mount weapon on turret" id="72b3-eaab-a4e1-20d9" hidden="false">
           <description>- Weapons of this model that share the Coaxial tag must select objectives in a 15° arc of each other.
 - While this unit is within Engagement Range of an enemy unit, this unit may chose to shoot with this weapon against any elegible enemy unit, even those outside Engagement Range. When doing so, a hit roll modifier of -1 is applied.</description>
         </rule>
@@ -1773,7 +1773,7 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
     </categoryEntry>
     <categoryEntry name="{H} Fixed-mount" id="59a9-afa0-7ef5-f014" hidden="false">
       <rules>
-        <rule name="Fixed-mount weapon" id="3c32-c03a-9503-b2c0" hidden="false">
+        <rule name="{H} Fixed-mount weapon" id="3c32-c03a-9503-b2c0" hidden="false">
           <description>Can target objectives within a 30° arc from the front of the model.</description>
         </rule>
       </rules>
