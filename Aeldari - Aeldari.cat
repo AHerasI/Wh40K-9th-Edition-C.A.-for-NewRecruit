@@ -9010,24 +9010,40 @@ Until the end of the phase, this unit cannot fire Overwatch, Set to Defend or ma
           </constraints>
           <entryLinks>
             <entryLink name="Twin Asuryani missile launcher" id="3b1a-4881-0e84-0aec" collective="false" hidden="false" import="true" targetId="f776-083d-3269-496e" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="733b-1119-8584-7d6a" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="20"/>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
               </costs>
             </entryLink>
-            <entryLink name="Twin Shuriken cannon" id="9819-5228-f3f7-cd33" collective="false" hidden="false" import="true" targetId="f8d8-f741-df37-dec4" type="selectionEntry"/>
+            <entryLink name="Twin Shuriken cannon" id="9819-5228-f3f7-cd33" collective="false" hidden="false" import="true" targetId="f8d8-f741-df37-dec4" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="abbc-6041-78a7-3b9e" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
+            </entryLink>
             <entryLink name="Twin Scatter laser" id="4fbf-ea56-1cdd-97ba" collective="false" hidden="false" import="true" targetId="593a-b88b-c959-6b3f" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="3109-2e07-b8cd-8349" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="5"/>
               </costs>
             </entryLink>
             <entryLink name="Twin Bright Lance" id="513f-eae4-8079-0fdd" collective="false" hidden="false" import="true" targetId="949a-2f69-c3e9-2e1b" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="b50a-ef4e-bff1-00ad" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="30"/>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
               </costs>
             </entryLink>
             <entryLink name="Twin Starcannon" id="733a-25aa-53c7-9491" collective="false" hidden="false" import="true" targetId="34f4-8a4b-485e-d8de" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="fb39-4d03-e671-3df4" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10"/>
               </costs>
@@ -9043,8 +9059,15 @@ Until the end of the phase, this unit cannot fire Overwatch, Set to Defend or ma
             <constraint id="a264-6cd2-0a8e-7e50" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Twin Shuriken rifle" id="8ea8-68c5-3819-5a8b" collective="false" hidden="false" import="true" targetId="d11e-b646-8b69-ef4a" type="selectionEntry"/>
+            <entryLink name="Twin Shuriken rifle" id="8ea8-68c5-3819-5a8b" collective="false" hidden="false" import="true" targetId="d11e-b646-8b69-ef4a" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="80a3-622c-e604-6e5b" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
+            </entryLink>
             <entryLink name="Shuriken cannon" id="1413-0575-4653-fbf8" collective="false" hidden="false" import="true" targetId="3691-b24f-77b6-8ee5" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="a88d-c463-d907-8e80" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10"/>
               </costs>
@@ -9140,7 +9163,11 @@ Until the end of the phase, this unit cannot fire Overwatch, Set to Defend or ma
             <constraint id="e7ac-5c28-6513-0ad2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Twin Shuriken cannon" id="0b63-3c17-c61d-cf36" collective="false" hidden="false" import="true" targetId="f8d8-f741-df37-dec4" type="selectionEntry"/>
+            <entryLink name="Twin Shuriken cannon" id="0b63-3c17-c61d-cf36" collective="false" hidden="false" import="true" targetId="f8d8-f741-df37-dec4" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="3e76-cb28-0b51-895d" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -9717,12 +9744,19 @@ Until the end of the phase, this unit cannot fire Overwatch, Set to Defend or ma
               </constraints>
               <entryLinks>
                 <entryLink name="Haywire cannon" id="c675-dbbc-6829-77df" collective="false" hidden="false" import="true" targetId="0de8-dd3c-a7f6-9a86" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{H} Fixed-mount" id="15be-52f5-cf5f-3f5e" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="15"/>
                     <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
                   </costs>
                 </entryLink>
-                <entryLink name="Shuriken cannon" id="a174-e266-5f97-b72b" collective="false" hidden="false" import="true" targetId="3691-b24f-77b6-8ee5" type="selectionEntry"/>
+                <entryLink name="Shuriken cannon" id="a174-e266-5f97-b72b" collective="false" hidden="false" import="true" targetId="3691-b24f-77b6-8ee5" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{H} Fixed-mount" id="79b9-bd1b-79d5-7eed" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+                  </categoryLinks>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Hand Weapon" id="0b06-7f9b-2ca7-3622" collective="false" defaultSelectionEntryId="3d8a-968d-edb4-2062" hidden="false" import="true">
@@ -13312,6 +13346,9 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
           </constraints>
           <entryLinks>
             <entryLink name="Asuryani missile launcher" id="74f8-1e76-9a08-b50b" collective="false" hidden="false" import="true" targetId="3fcf-5cd4-8611-1d89" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="f262-2f41-861c-565f" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="d86d-7e8d-f179-1cef" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
               </constraints>
@@ -13321,6 +13358,9 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
               </costs>
             </entryLink>
             <entryLink name="Bright Lance" id="e65d-543b-8cf8-832a" collective="false" hidden="false" import="true" targetId="5e65-eceb-686c-8a33" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="8093-93b7-5af2-7591" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="f2e5-e281-4f45-c737" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
               </constraints>
@@ -13330,6 +13370,9 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
               </costs>
             </entryLink>
             <entryLink name="Scatter laser" id="aee4-652a-e838-2b22" collective="false" hidden="false" import="true" targetId="bc00-c737-73c7-0625" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="97b3-7147-55a5-6bf5" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="ad54-3c8b-034d-9218" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
               </constraints>
@@ -13338,6 +13381,9 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
               </costs>
             </entryLink>
             <entryLink name="Shuriken cannon" id="45e1-4654-dd38-e5bb" collective="false" hidden="false" import="true" targetId="3691-b24f-77b6-8ee5" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="4780-0ba2-0ab3-2d2e" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="684e-c451-a9a2-deb9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
               </constraints>
@@ -13346,6 +13392,9 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
               </costs>
             </entryLink>
             <entryLink name="Starcannon" id="2716-9a52-07f1-94b5" collective="false" hidden="false" import="true" targetId="b738-7084-a2eb-2c55" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="e321-2028-6d34-961f" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="870d-5555-025b-a532" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
               </constraints>
@@ -13401,8 +13450,16 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
             <constraint id="45d5-3864-a690-65b2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Flamer" id="8a91-9e2b-ef21-4857" collective="false" hidden="false" import="true" targetId="fd22-6743-2d4c-dd62" type="selectionEntry"/>
-            <entryLink name="Twin Shuriken rifle" id="a583-1bcd-8a4f-1447" collective="false" hidden="false" import="true" targetId="d11e-b646-8b69-ef4a" type="selectionEntry"/>
+            <entryLink name="Flamer" id="8a91-9e2b-ef21-4857" collective="false" hidden="false" import="true" targetId="fd22-6743-2d4c-dd62" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{L} Limited angle Side facing" id="8396-b9d8-7c2e-5ef7" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink name="Twin Shuriken rifle" id="a583-1bcd-8a4f-1447" collective="false" hidden="false" import="true" targetId="d11e-b646-8b69-ef4a" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{L} Limited angle Side facing" id="1480-0c47-328e-58dd" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -13938,18 +13995,35 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
                       </constraints>
                       <entryLinks>
                         <entryLink name="Asuryani missile launcher" id="f3b8-462e-735f-a18c" collective="false" hidden="false" import="true" targetId="3fcf-5cd4-8611-1d89" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{T} Turret-mount" id="0d82-fd9e-3949-e108" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                          </categoryLinks>
                           <costs>
                             <cost name="pts" typeId="points" value="10"/>
                           </costs>
                         </entryLink>
                         <entryLink name="Bright Lance" id="2522-abb5-2c01-0cc4" collective="false" hidden="false" import="true" targetId="5e65-eceb-686c-8a33" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{T} Turret-mount" id="5a38-3951-8bea-c57a" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                          </categoryLinks>
                           <costs>
                             <cost name="pts" typeId="points" value="15"/>
                           </costs>
                         </entryLink>
-                        <entryLink name="Scatter laser" id="ed42-60d2-198b-d90d" collective="false" hidden="false" import="true" targetId="bc00-c737-73c7-0625" type="selectionEntry"/>
-                        <entryLink name="Shuriken cannon" id="f57f-6cd8-1134-3092" collective="false" hidden="false" import="true" targetId="3691-b24f-77b6-8ee5" type="selectionEntry"/>
+                        <entryLink name="Scatter laser" id="ed42-60d2-198b-d90d" collective="false" hidden="false" import="true" targetId="bc00-c737-73c7-0625" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{T} Turret-mount" id="49ac-59a7-27a4-e51e" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                          </categoryLinks>
+                        </entryLink>
+                        <entryLink name="Shuriken cannon" id="f57f-6cd8-1134-3092" collective="false" hidden="false" import="true" targetId="3691-b24f-77b6-8ee5" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{T} Turret-mount" id="0ac4-f669-4d76-08dc" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                          </categoryLinks>
+                        </entryLink>
                         <entryLink name="Starcannon" id="1fcb-0479-e5a2-e735" collective="false" hidden="false" import="true" targetId="b738-7084-a2eb-2c55" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{T} Turret-mount" id="5e8e-52f8-4a5b-a74e" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                          </categoryLinks>
                           <costs>
                             <cost name="pts" typeId="points" value="10"/>
                           </costs>
@@ -13962,7 +14036,11 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
                         <constraint id="4da5-3cab-0d4d-487e" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                       </constraints>
                       <entryLinks>
-                        <entryLink name="Twin Shuriken rifle" id="1429-ae82-9451-6763" collective="false" hidden="false" import="true" targetId="ff3d-42fe-2ba4-3026" type="selectionEntry"/>
+                        <entryLink name="Twin Shuriken rifle" id="1429-ae82-9451-6763" collective="false" hidden="false" import="true" targetId="ff3d-42fe-2ba4-3026" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{F} Front facing" id="7f05-ad85-61f1-3a76" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                          </categoryLinks>
+                        </entryLink>
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
@@ -13988,8 +14066,15 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
                         <constraint id="4f69-188e-ce8b-21c8" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                       </constraints>
                       <entryLinks>
-                        <entryLink name="Shuriken cannon" id="e620-ddc5-eec6-3559" hidden="false" import="true" targetId="3691-b24f-77b6-8ee5" type="selectionEntry"/>
+                        <entryLink name="Shuriken cannon" id="e620-ddc5-eec6-3559" hidden="false" import="true" targetId="3691-b24f-77b6-8ee5" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{H} Fixed-mount" id="b2f3-dc1e-80bb-e097" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+                          </categoryLinks>
+                        </entryLink>
                         <entryLink name="Asuryani missile launcher" id="6051-a92d-2086-2dc3" hidden="false" import="true" targetId="3fcf-5cd4-8611-1d89" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{H} Fixed-mount" id="eed6-1fb3-558a-5282" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+                          </categoryLinks>
                           <costs>
                             <cost name="Pts" typeId="points" value="10"/>
                           </costs>
@@ -14004,9 +14089,55 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
                       <selectionEntries>
                         <selectionEntry name="Disintegrator&amp;GL" id="abaf-5daf-a8ed-ba75" hidden="false" import="true" type="upgrade">
                           <comment>Starfang</comment>
+                          <categoryLinks>
+                            <categoryLink name="{T} Turret-mount" id="2590-7cdd-5d54-3b0b" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                          </categoryLinks>
                           <infoLinks>
                             <infoLink name="Disintegrator cannon" id="a9c7-f417-cda4-f248" hidden="false" targetId="3d2e-fa2e-748b-1534" type="profile"/>
-                            <infoLink name="Phantasm grenade launcher" id="90a8-8bdb-5618-ffa5" hidden="false" targetId="6cd6-e1d4-d01e-a8bd" type="profile"/>
+                            <infoLink name="Phantasm grenade launcher" id="90a8-8bdb-5618-ffa5" hidden="false" targetId="6cd6-e1d4-d01e-a8bd" type="profile">
+                              <modifierGroups>
+                                <modifierGroup type="and">
+                                  <comment>Weapon tag</comment>
+                                  <modifiers>
+                                    <modifier field="name" join=" " type="prepend" value="{H}">
+                                      <conditions>
+                                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier field="name" join=" " type="prepend" value="{F}">
+                                      <conditions>
+                                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier field="name" join=" " type="prepend" value="{S}">
+                                      <conditions>
+                                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier field="name" join=" " type="prepend" value="{L}">
+                                      <conditions>
+                                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier field="name" join=" " type="prepend" value="{R}">
+                                      <conditions>
+                                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier field="name" join=" " type="prepend" value="{T}">
+                                      <conditions>
+                                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier field="name" join=" " type="prepend" value="{C}">
+                                      <conditions>
+                                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                                      </conditions>
+                                    </modifier>
+                                  </modifiers>
+                                </modifierGroup>
+                              </modifierGroups>
+                            </infoLink>
                           </infoLinks>
                         </selectionEntry>
                       </selectionEntries>
@@ -14031,13 +14162,23 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
                       </constraints>
                       <entryLinks>
                         <entryLink name="Bright Lance" id="9ce4-a5a9-0383-ab3f" collective="false" hidden="false" import="true" targetId="5e65-eceb-686c-8a33" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{T} Turret-mount" id="a23a-0abd-8a20-42e2" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                          </categoryLinks>
                           <costs>
                             <cost name="pts" typeId="points" value="15"/>
                             <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
                           </costs>
                         </entryLink>
-                        <entryLink name="Scatter laser" id="55d9-eb26-397c-0b35" collective="false" hidden="false" import="true" targetId="bc00-c737-73c7-0625" type="selectionEntry"/>
+                        <entryLink name="Scatter laser" id="55d9-eb26-397c-0b35" collective="false" hidden="false" import="true" targetId="bc00-c737-73c7-0625" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{T} Turret-mount" id="04b7-2ec9-6598-c255" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                          </categoryLinks>
+                        </entryLink>
                         <entryLink name="Starcannon" id="54b0-0e7d-97c7-fbfa" collective="false" hidden="false" import="true" targetId="b738-7084-a2eb-2c55" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{T} Turret-mount" id="d521-963a-fc3f-018e" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                          </categoryLinks>
                           <costs>
                             <cost name="pts" typeId="points" value="10"/>
                             <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -14153,7 +14294,11 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
               <entryLinks>
-                <entryLink name="Twin Shuriken rifle" id="2ea8-ad66-6289-8f0d" collective="false" hidden="false" import="true" targetId="ff3d-42fe-2ba4-3026" type="selectionEntry"/>
+                <entryLink name="Twin Shuriken rifle" id="2ea8-ad66-6289-8f0d" collective="false" hidden="false" import="true" targetId="ff3d-42fe-2ba4-3026" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{H} Fixed-mount" id="35f9-58e7-6c73-6796" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+                  </categoryLinks>
+                </entryLink>
                 <entryLink name="Crushing bulk" id="f36a-5fed-7cbc-da2c" collective="false" hidden="false" import="true" targetId="502f-45c2-6fd1-443b" type="selectionEntry"/>
               </entryLinks>
               <profiles>
@@ -14187,7 +14332,11 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
               <entryLinks>
-                <entryLink name="Shuriken cannon" id="c8fe-5df3-3822-7b92" collective="false" hidden="false" import="true" targetId="8299-2e24-9b9c-959b" type="selectionEntry"/>
+                <entryLink name="Shuriken cannon" id="c8fe-5df3-3822-7b92" collective="false" hidden="false" import="true" targetId="8299-2e24-9b9c-959b" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{H} Fixed-mount" id="235c-89ab-67be-9780" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+                  </categoryLinks>
+                </entryLink>
                 <entryLink name="Crushing bulk" id="d22f-d386-93b0-1c0e" collective="false" hidden="false" import="true" targetId="502f-45c2-6fd1-443b" type="selectionEntry"/>
               </entryLinks>
               <infoLinks>
@@ -14202,7 +14351,11 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
               <entryLinks>
-                <entryLink name="Scatter laser" id="6550-eaa7-a847-e5cc" collective="false" hidden="false" import="true" targetId="d44e-3899-0049-b13d" type="selectionEntry"/>
+                <entryLink name="Scatter laser" id="6550-eaa7-a847-e5cc" collective="false" hidden="false" import="true" targetId="d44e-3899-0049-b13d" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{H} Fixed-mount" id="dafd-cba2-c5eb-43d0" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+                  </categoryLinks>
+                </entryLink>
                 <entryLink name="Crushing bulk" id="f205-b9bc-9df9-167a" collective="false" hidden="false" import="true" targetId="502f-45c2-6fd1-443b" type="selectionEntry"/>
               </entryLinks>
               <infoLinks>
@@ -14546,8 +14699,7 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
           </costs>
           <entryLinks>
             <entryLink name="Crushing bulk" id="9766-9750-ac96-039b" collective="false" hidden="false" import="true" targetId="502f-45c2-6fd1-443b" type="selectionEntry"/>
-            <entryLink name="Weapon option" id="0cdc-9f73-521c-1998" collective="false" hidden="false" import="true" targetId="a253-196d-0f41-99c8" type="selectionEntryGroup"/>
-            <entryLink name="Weapon option" id="5e6d-e5e7-c27a-00d3" collective="false" hidden="false" import="true" targetId="a253-196d-0f41-99c8" type="selectionEntryGroup"/>
+            <entryLink name="Weapon option" id="5e6d-e5e7-c27a-00d3" collective="false" hidden="false" import="true" targetId="fa4a-cafe-2637-6259" type="selectionEntryGroup"/>
           </entryLinks>
           <profiles>
             <profile name="Wasp Assault Walker" id="1f27-8206-4339-b480" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
@@ -14571,6 +14723,50 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
               </modifiers>
             </profile>
           </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapon option" id="fa4a-cafe-2637-6259" collective="false" defaultSelectionEntryId="b580-ddb4-2c2a-996f" hidden="false" import="true">
+              <constraints>
+                <constraint id="0243-e473-29b4-55e3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+                <constraint id="8827-6e44-3b98-8891" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
+              </constraints>
+              <entryLinks>
+                <entryLink name="Asuryani missile launcher" id="947c-096c-c3f9-95c2" collective="false" hidden="false" import="true" targetId="3fcf-5cd4-8611-1d89" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{L} Limited angle Side facing" id="fe2d-d416-ebf0-1b5a" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink name="Bright Lance" id="cdb5-4f70-3e37-1cdb" collective="false" hidden="false" import="true" targetId="5e65-eceb-686c-8a33" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{L} Limited angle Side facing" id="9cd0-7fb7-a803-92a5" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink name="Scatter laser" id="56e6-2595-bf41-9504" collective="false" hidden="false" import="true" targetId="bc00-c737-73c7-0625" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{L} Limited angle Side facing" id="c35b-bf8e-efef-ba2a" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                  </categoryLinks>
+                </entryLink>
+                <entryLink name="Shuriken cannon" id="b580-ddb4-2c2a-996f" collective="false" hidden="false" import="true" targetId="3691-b24f-77b6-8ee5" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{L} Limited angle Side facing" id="9b8f-15bb-ab90-17ba" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                  </categoryLinks>
+                </entryLink>
+                <entryLink name="Starcannon" id="fbf5-172f-74c3-03de" collective="false" hidden="false" import="true" targetId="b738-7084-a2eb-2c55" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{L} Limited angle Side facing" id="a049-9dc3-6a3c-2667" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -16374,8 +16570,8 @@ If an enemy unit (excluding units that can FLY, or has INORGANIC, VEHICLE or TIT
           </costs>
           <entryLinks>
             <entryLink name="Crushing bulk" id="507b-8ff5-12ea-82af" collective="false" hidden="false" import="true" targetId="502f-45c2-6fd1-443b" type="selectionEntry"/>
-            <entryLink name="Weapon option" id="b45d-d33e-d4bc-e9ed" collective="false" hidden="false" import="true" targetId="a253-196d-0f41-99c8" type="selectionEntryGroup"/>
-            <entryLink name="Weapon option" id="b3e3-264e-5c2f-aa3d" collective="false" hidden="false" import="true" targetId="a253-196d-0f41-99c8" type="selectionEntryGroup"/>
+            <entryLink name="Weapon option" id="b45d-d33e-d4bc-e9ed" collective="false" hidden="false" import="true" targetId="fa4a-cafe-2637-6259" type="selectionEntryGroup"/>
+            <entryLink name="Weapon option" id="b3e3-264e-5c2f-aa3d" collective="false" hidden="false" import="true" targetId="fa4a-cafe-2637-6259" type="selectionEntryGroup"/>
           </entryLinks>
           <profiles>
             <profile name="War Walker" id="1d45-8ab7-37c3-a645" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
@@ -16957,7 +17153,11 @@ If an enemy unit (excluding units that can FLY, or has INORGANIC, VEHICLE or TIT
             <constraint id="a772-be35-c7c5-b682" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="D-Flail" id="167b-3a5b-5583-f39a" collective="false" hidden="false" import="true" targetId="d6db-7dac-51ec-93af" type="selectionEntry"/>
+            <entryLink name="D-Flail" id="167b-3a5b-5583-f39a" collective="false" hidden="false" import="true" targetId="d6db-7dac-51ec-93af" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{H} Fixed-mount" id="2142-4d68-3c38-e05a" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Hull weapon" id="16f2-15ca-5e40-b88d" collective="false" defaultSelectionEntryId="bc24-a2cd-96f6-11f3" hidden="false" import="true">
@@ -16970,23 +17170,44 @@ If an enemy unit (excluding units that can FLY, or has INORGANIC, VEHICLE or TIT
           </constraints>
           <entryLinks>
             <entryLink name="Asuryani missile launcher" id="b088-3bea-8ecb-7691" collective="false" hidden="false" import="true" targetId="3fcf-5cd4-8611-1d89" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="a4e8-0645-af55-335d" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10"/>
               </costs>
             </entryLink>
             <entryLink name="Bright Lance" id="e562-5744-0afc-d6ff" collective="false" hidden="false" import="true" targetId="5e65-eceb-686c-8a33" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="a14f-4499-0e9d-bf68" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Scatter laser" id="6220-61a3-e591-e870" collective="false" hidden="false" import="true" targetId="bc00-c737-73c7-0625" type="selectionEntry"/>
+            <entryLink name="Scatter laser" id="6220-61a3-e591-e870" collective="false" hidden="false" import="true" targetId="bc00-c737-73c7-0625" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="9ae6-9dfb-c29f-4f94" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
+            </entryLink>
             <entryLink name="Starcannon" id="0d11-8280-dd0c-6700" collective="false" hidden="false" import="true" targetId="b738-7084-a2eb-2c55" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="f6fa-5473-8cc5-76db" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="5"/>
               </costs>
             </entryLink>
-            <entryLink name="Shuriken cannon" id="bf28-4609-2cbb-edc9" collective="false" hidden="false" import="true" targetId="3691-b24f-77b6-8ee5" type="selectionEntry"/>
-            <entryLink name="Twin Shuriken rifle" id="bc24-a2cd-96f6-11f3" collective="false" hidden="false" import="true" targetId="d11e-b646-8b69-ef4a" type="selectionEntry"/>
+            <entryLink name="Shuriken cannon" id="bf28-4609-2cbb-edc9" collective="false" hidden="false" import="true" targetId="3691-b24f-77b6-8ee5" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="284c-1364-4212-e34c" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink name="Twin Shuriken rifle" id="bc24-a2cd-96f6-11f3" collective="false" hidden="false" import="true" targetId="d11e-b646-8b69-ef4a" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="434d-a9eb-f9f5-e821" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -17117,34 +17338,52 @@ If an enemy unit (excluding units that can FLY, or has INORGANIC, VEHICLE or TIT
           </constraints>
           <entryLinks>
             <entryLink name="Asuryani missile launcher" id="fd75-7c57-6443-6430" collective="false" hidden="false" import="true" targetId="3fcf-5cd4-8611-1d89" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="73b7-8eaa-26ae-c67c" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="20"/>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
               </costs>
             </entryLink>
             <entryLink name="Bright Lance" id="72c6-b813-b5fa-70c2" collective="false" hidden="false" import="true" targetId="5e65-eceb-686c-8a33" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="1abd-2eee-f4e4-340b" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="20"/>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
               </costs>
             </entryLink>
             <entryLink name="Scatter laser" id="15e5-20fa-c079-51d1" collective="false" hidden="false" import="true" targetId="bc00-c737-73c7-0625" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="502e-6d4c-3971-d82e" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="5"/>
               </costs>
             </entryLink>
             <entryLink name="Shuriken cannon" id="2817-a0d0-9aa3-4ed0" collective="false" hidden="false" import="true" targetId="3691-b24f-77b6-8ee5" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="1fbe-6896-8660-0afa" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="5"/>
               </costs>
             </entryLink>
             <entryLink name="Starcannon" id="21f1-5e7b-db68-f722" collective="false" hidden="false" import="true" targetId="b738-7084-a2eb-2c55" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="2eeb-6411-0c49-93c3" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="15"/>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
               </costs>
             </entryLink>
             <entryLink name="D-Cannon" id="4979-2f2b-00f1-3d30" collective="false" hidden="false" import="true" targetId="ee51-eb7a-b678-7add" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="1c2e-a253-6b88-ef1f" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="40"/>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="2"/>
@@ -17486,7 +17725,11 @@ If an enemy unit (excluding units that can FLY, or has INORGANIC, VEHICLE or TIT
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink name="Starcannon" id="6d42-13d8-5434-ed77" collective="false" hidden="false" import="true" targetId="6977-4d96-57f8-0903" type="selectionEntry"/>
+        <entryLink name="Starcannon" id="6d42-13d8-5434-ed77" collective="false" hidden="false" import="true" targetId="6977-4d96-57f8-0903" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{H} Fixed-mount" id="5dc0-3133-93f0-c824" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="Supersonic" id="618a-7518-813a-8301" hidden="false" targetId="9287-7a45-71ff-3a46" type="profile"/>
@@ -17634,6 +17877,7 @@ If an enemy unit (excluding units that can FLY, or has INORGANIC, VEHICLE or TIT
         <selectionEntry name="Twin Vampire pulsar" id="ea36-9bb9-7769-ebe5" collective="false" hidden="false" import="true" type="upgrade">
           <categoryLinks>
             <categoryLink name="Laser Weapon" id="830c-85b7-3e1b-6f57" hidden="false" primary="false" targetId="f74f-8bb9-7448-707c"/>
+            <categoryLink name="{H} Fixed-mount" id="f1f1-8292-58f0-2c31" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
           </categoryLinks>
           <constraints>
             <constraint id="d506-d669-bf48-92e7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -17659,6 +17903,9 @@ If an enemy unit (excluding units that can FLY, or has INORGANIC, VEHICLE or TIT
           </profiles>
         </selectionEntry>
         <selectionEntry name="2x Twin Pulse laser" id="4911-b33e-a64a-e1f5" collective="false" hidden="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink name="{H} Fixed-mount" id="05e8-b6b3-ddfd-4fe3" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+          </categoryLinks>
           <constraints>
             <constraint id="a983-28f2-adb8-1f18" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="aba8-5627-8f4c-0aeb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -17671,6 +17918,9 @@ If an enemy unit (excluding units that can FLY, or has INORGANIC, VEHICLE or TIT
           </costs>
           <entryLinks>
             <entryLink name="Twin Pulse laser" id="b79f-ef0d-9056-4af5" collective="false" hidden="false" import="true" targetId="7f15-7994-435e-cfd4" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{H} Fixed-mount" id="caf9-c0b4-de2e-f7e6" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="3d4c-fc4f-47ef-5077" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                 <constraint id="2b07-909e-bb8f-5d66" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -17700,7 +17950,11 @@ If an enemy unit (excluding units that can FLY, or has INORGANIC, VEHICLE or TIT
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink name="Starcannon" id="7e6d-2bff-1206-d840" collective="false" hidden="false" import="true" targetId="6977-4d96-57f8-0903" type="selectionEntry"/>
+        <entryLink name="Starcannon" id="7e6d-2bff-1206-d840" collective="false" hidden="false" import="true" targetId="6977-4d96-57f8-0903" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{H} Fixed-mount" id="ccdb-74ed-e651-7b50" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="Supersonic" id="0158-efa6-7f57-f2ad" hidden="false" targetId="9287-7a45-71ff-3a46" type="profile"/>
@@ -17851,6 +18105,9 @@ If an enemy unit (excluding units that can FLY, or has INORGANIC, VEHICLE or TIT
       </profiles>
       <selectionEntries>
         <selectionEntry name="2x Twin Pulse laser" id="1ae5-e8ed-29ba-bb6a" collective="false" hidden="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink name="{H} Fixed-mount" id="7534-dec2-efb7-d091" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+          </categoryLinks>
           <constraints>
             <constraint id="269d-199a-f6ba-34e9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="abf6-8899-d427-cef9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -17863,6 +18120,9 @@ If an enemy unit (excluding units that can FLY, or has INORGANIC, VEHICLE or TIT
           </costs>
           <entryLinks>
             <entryLink name="Twin Pulse laser" id="80a0-2ba2-90b4-c626" collective="false" hidden="false" import="true" targetId="7f15-7994-435e-cfd4" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{H} Fixed-mount" id="01be-e158-1a5e-88d4" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="1393-a3b6-6e6c-97cd" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                 <constraint id="8b91-e3fc-07d1-5a35" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -18061,6 +18321,9 @@ If an enemy unit (excluding units that can FLY, or has INORGANIC, VEHICLE or TIT
           </constraints>
           <entryLinks>
             <entryLink name="Scatter laser" id="36bc-6f49-496f-a3b3" collective="false" hidden="false" import="true" targetId="bc00-c737-73c7-0625" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="ee29-7d24-9d49-5e07" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="9a86-89f0-79c7-b523" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
               </constraints>
@@ -18069,6 +18332,9 @@ If an enemy unit (excluding units that can FLY, or has INORGANIC, VEHICLE or TIT
               </costs>
             </entryLink>
             <entryLink name="Shuriken cannon" id="3341-590b-77f1-4b10" collective="false" hidden="false" import="true" targetId="3691-b24f-77b6-8ee5" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="11b8-07d2-1495-6809" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="f59f-f549-d4f2-5bdd" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
               </constraints>
@@ -18077,6 +18343,9 @@ If an enemy unit (excluding units that can FLY, or has INORGANIC, VEHICLE or TIT
               </costs>
             </entryLink>
             <entryLink name="Starcannon" id="fcaf-6d22-4d44-bc40" collective="false" hidden="false" import="true" targetId="b738-7084-a2eb-2c55" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="4523-5d72-8da1-4a05" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="c7e1-1af5-b5e4-4c12" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
               </constraints>
@@ -18481,6 +18750,9 @@ Remove this model from the battlefield. In the Reinforcements step of one of you
           </constraints>
           <entryLinks>
             <entryLink name="Scatter laser" id="e5ae-ab2f-4cb4-6804" collective="false" hidden="false" import="true" targetId="bc00-c737-73c7-0625" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="748d-c421-91f0-780f" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="87f0-f205-b326-372c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
               </constraints>
@@ -18489,6 +18761,9 @@ Remove this model from the battlefield. In the Reinforcements step of one of you
               </costs>
             </entryLink>
             <entryLink name="Shuriken cannon" id="d019-2fd4-0446-ae23" collective="false" hidden="false" import="true" targetId="3691-b24f-77b6-8ee5" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="af3a-e2ad-560b-0e41" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="ef28-9ac5-5143-1905" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
               </constraints>
@@ -18497,6 +18772,9 @@ Remove this model from the battlefield. In the Reinforcements step of one of you
               </costs>
             </entryLink>
             <entryLink name="Starcannon" id="4104-1598-ffd7-e6dd" collective="false" hidden="false" import="true" targetId="b738-7084-a2eb-2c55" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="6cbd-dcdc-3ef7-1bd9" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="ce07-c1b8-2034-7172" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
               </constraints>
@@ -18527,6 +18805,7 @@ Remove this model from the battlefield. In the Reinforcements step of one of you
             <selectionEntry name="Inferno Lance" id="2751-37fa-68d6-5c42" collective="false" hidden="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink name="Melta Weapon" id="5cf8-93d1-184a-222a" hidden="false" primary="false" targetId="65dd-a3e7-b044-4659"/>
+                <categoryLink name="{L} Limited angle Side facing" id="2f4b-6eb1-43d9-294f" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
               </categoryLinks>
               <constraints>
                 <constraint id="211a-276c-1257-c9d8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
@@ -18554,6 +18833,7 @@ Remove this model from the battlefield. In the Reinforcements step of one of you
               <categoryLinks>
                 <categoryLink name="Torrent" id="2b32-87d4-c1f5-b82b" hidden="false" primary="false" targetId="795f-a8d3-dc18-cb2e"/>
                 <categoryLink name="Blast" id="0b83-4c06-5943-40ad" hidden="false" primary="false" targetId="a30d-0055-6710-6284"/>
+                <categoryLink name="{L} Limited angle Side facing" id="d03f-21b9-a36a-bbfb" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
               </categoryLinks>
               <constraints>
                 <constraint id="44d3-fa1f-2ba9-b7d2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -18831,6 +19111,9 @@ Remove this model from the battlefield. In the Reinforcements step of one of you
           </constraints>
           <selectionEntries>
             <selectionEntry name="Twin Scorpion pulsar" id="6f27-42d4-4fe7-ad53" collective="false" hidden="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="d817-ea77-af20-6d68" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
               <costs>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
@@ -18853,31 +19136,45 @@ Remove this model from the battlefield. In the Reinforcements step of one of you
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup name="Hull weapon" id="5077-134c-e092-6fad" collective="false" defaultSelectionEntryId="2cd2-2a0d-18dd-edaf" hidden="false" import="true">
-          <categoryLinks>
-            <categoryLink name="{F} Front facing" id="6725-8688-5147-25b9" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
-          </categoryLinks>
           <constraints>
             <constraint id="dce1-86b3-4f60-6eeb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="0505-8384-a426-a849" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
           </constraints>
           <entryLinks>
             <entryLink name="Asuryani missile launcher" id="a169-7f90-c18a-44c8" collective="false" hidden="false" import="true" targetId="3fcf-5cd4-8611-1d89" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="5ca7-43a3-4cc2-fdcc" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10"/>
               </costs>
             </entryLink>
             <entryLink name="Bright Lance" id="7297-a822-edfb-f3c1" collective="false" hidden="false" import="true" targetId="5e65-eceb-686c-8a33" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="6b21-541e-5409-f026" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Scatter laser" id="a7e7-0e6b-fa50-b823" collective="false" hidden="false" import="true" targetId="bc00-c737-73c7-0625" type="selectionEntry"/>
+            <entryLink name="Scatter laser" id="a7e7-0e6b-fa50-b823" collective="false" hidden="false" import="true" targetId="bc00-c737-73c7-0625" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="424d-4dff-c740-a666" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
+            </entryLink>
             <entryLink name="Starcannon" id="d67f-6773-5e10-0842" collective="false" hidden="false" import="true" targetId="b738-7084-a2eb-2c55" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="3cf0-3b9b-8029-0df5" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="5"/>
               </costs>
             </entryLink>
-            <entryLink name="Shuriken cannon" id="2cd2-2a0d-18dd-edaf" collective="false" hidden="false" import="true" targetId="3691-b24f-77b6-8ee5" type="selectionEntry"/>
+            <entryLink name="Shuriken cannon" id="2cd2-2a0d-18dd-edaf" collective="false" hidden="false" import="true" targetId="3691-b24f-77b6-8ee5" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="1ae5-5c9e-dca2-b428" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -20137,7 +20434,11 @@ Remove this model from the battlefield. In the Reinforcements step of one of you
       <entryLinks>
         <entryLink name="Drukhari Vehicle equipment" id="ed78-0acf-4411-32e5" collective="false" hidden="false" import="true" targetId="9ec7-1ab7-513d-537c" type="selectionEntryGroup"/>
         <entryLink name="Bladevanes" id="3c86-716b-d1de-13a6" collective="false" hidden="false" import="true" targetId="c7c6-0519-f9e9-f291" type="selectionEntry"/>
-        <entryLink name="Twin Splinter rifle" id="54a8-df6d-22a2-a353" collective="false" hidden="false" import="true" targetId="12d3-3f03-45c9-5725" type="selectionEntry"/>
+        <entryLink name="Twin Splinter rifle" id="54a8-df6d-22a2-a353" collective="false" hidden="false" import="true" targetId="12d3-3f03-45c9-5725" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{F} Front facing" id="dce3-6565-a450-bd59" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="Impervious to small weapons fire" id="61fe-5975-abcf-5f0b" hidden="false" targetId="b48e-9a4a-2fdc-5d7c" type="profile"/>
@@ -20257,6 +20558,7 @@ Remove this model from the battlefield. In the Reinforcements step of one of you
         <selectionEntry name="Splinter cannon" id="cc55-ea1d-93ac-12af" collective="true" hidden="false" import="true" type="upgrade">
           <categoryLinks>
             <categoryLink name="Poisoned weapon" id="e86d-1d43-aff3-b2af" hidden="false" primary="false" targetId="7512-bcba-18b0-eadc"/>
+            <categoryLink name="{T} Turret-mount" id="e80c-981f-91f5-87ef" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
           </categoryLinks>
           <constraints>
             <constraint id="1315-316d-e05b-0610" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -24892,6 +25194,7 @@ After this unit has fought, for each model destroyed, one model in the selected 
                     <selectionEntry name="Twin liquifier gun" id="b641-170c-5409-206b" collective="false" hidden="false" import="true" type="upgrade">
                       <categoryLinks>
                         <categoryLink name="Torrent" id="6f6e-51ca-9ed4-2ca5" hidden="false" primary="false" targetId="795f-a8d3-dc18-cb2e"/>
+                        <categoryLink name="{L} Limited angle Side facing" id="62bf-42ab-c68a-310b" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
                       </categoryLinks>
                       <costs>
                         <cost name="Pts" typeId="points" value="15"/>
@@ -24975,6 +25278,9 @@ After this unit has fought, for each model destroyed, one model in the selected 
                   </constraints>
                   <selectionEntries>
                     <selectionEntry name="2x Haywire cannon" id="a634-f3cf-dae1-4f9f" collective="false" hidden="false" import="true" type="upgrade">
+                      <categoryLinks>
+                        <categoryLink name="{F} Front facing" id="6fcf-140a-5001-e0f8" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="Pts" typeId="points" value="15"/>
                         <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -24991,6 +25297,9 @@ After this unit has fought, for each model destroyed, one model in the selected 
                       </entryLinks>
                     </selectionEntry>
                     <selectionEntry name="2x Heat lance" id="0d63-9c33-ae51-6bf8" collective="false" hidden="false" import="true" type="upgrade">
+                      <categoryLinks>
+                        <categoryLink name="{F} Front facing" id="1c22-3a08-167d-193b" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="Pts" typeId="points" value="15"/>
                         <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -25007,6 +25316,9 @@ After this unit has fought, for each model destroyed, one model in the selected 
                       </entryLinks>
                     </selectionEntry>
                     <selectionEntry name="2x Splinter cannon" id="5f4a-be1a-52ee-3470" collective="false" hidden="false" import="true" type="upgrade">
+                      <categoryLinks>
+                        <categoryLink name="{F} Front facing" id="0025-984a-f3dd-9f6d" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
@@ -25244,15 +25556,15 @@ After this unit has fought, for each model destroyed, one model in the selected 
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Turret weapon" id="19f1-1fe5-bb53-5727" collective="false" defaultSelectionEntryId="2b77-7625-1277-96c8" hidden="false" import="true">
-          <categoryLinks>
-            <categoryLink name="{T} Turret-mount" id="4b6e-56ea-7fed-9f92" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
-          </categoryLinks>
           <constraints>
             <constraint id="28c2-caef-b004-1817" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="f12f-88da-0eb6-d8b8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
           </constraints>
           <selectionEntries>
             <selectionEntry name="Storm vortex projector" id="2b77-7625-1277-96c8" collective="false" hidden="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="a9f4-ac02-104c-99c2" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
               <costs>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
@@ -25262,7 +25574,7 @@ After this unit has fought, for each model destroyed, one model in the selected 
               <profiles>
                 <profile name="Projector, blast" id="64f2-baca-7096-2fa5" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                   <characteristics>
-                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24</characteristic>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36</characteristic>
                     <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D6</characteristic>
                     <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
                     <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
@@ -25270,14 +25582,14 @@ After this unit has fought, for each model destroyed, one model in the selected 
                     <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Projector, beam" id="142d-228f-fa2b-728b" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                <profile name="Projector, pulse" id="142d-228f-fa2b-728b" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36</characteristic>
                     <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D6</characteristic>
                     <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
                     <characteristic name="AP" typeId="75aa-a838-b675-6484">4</characteristic>
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
-                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410"/>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -25529,6 +25841,7 @@ After this unit has fought, for each model destroyed, one model in the selected 
             <selectionEntry name="Pulse disintegrator" id="bcd0-21c1-9176-66ad" collective="false" hidden="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink name="Laser Weapon" id="66ba-0f80-eb8a-3995" hidden="false" primary="false" targetId="f74f-8bb9-7448-707c"/>
+                <categoryLink name="{T} Turret-mount" id="68b4-2a42-c026-6c91" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
               </categoryLinks>
               <costs>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -25852,10 +26165,17 @@ After this unit has fought, for each model destroyed, one model in the selected 
             <constraint id="8ce8-384a-71d5-da4d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Splinter cannon" id="21e8-bf4d-7d0a-bf75" collective="false" hidden="false" import="true" targetId="32f4-1705-e28b-6194" type="selectionEntry"/>
+            <entryLink name="Splinter cannon" id="21e8-bf4d-7d0a-bf75" collective="false" hidden="false" import="true" targetId="32f4-1705-e28b-6194" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="caa6-61f0-7191-0fa6" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
           <selectionEntries>
             <selectionEntry name="Twin splinter rifle" id="4e61-a6bc-b3c7-013d" collective="false" hidden="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="a3e9-f2b0-98cc-5644" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <costs>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
@@ -26089,7 +26409,7 @@ After this unit has fought, for each model destroyed, one model in the selected 
         <selectionEntry name="Voidraven missiles" id="15ec-835f-71ef-fabf" collective="false" hidden="false" import="true" type="upgrade">
           <categoryLinks>
             <categoryLink name="Blast" id="7d94-2422-a8ae-e3cc" hidden="false" primary="false" targetId="a30d-0055-6710-6284"/>
-            <categoryLink name="{R} Rear facing" id="2337-f249-a2fd-24a6" hidden="false" primary="false" targetId="e8e6-4c0a-d894-5f97"/>
+            <categoryLink name="{F} Front facing" id="034c-ac93-6a04-fc3c" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
           </categoryLinks>
           <constraints>
             <constraint id="318b-d4ae-186c-2adc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -26243,6 +26563,9 @@ After this unit has fought, for each model destroyed, one model in the selected 
           </constraints>
           <selectionEntries>
             <selectionEntry name="2x Void lance" id="c180-2039-a04f-1794" collective="false" hidden="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink name="{H} Fixed-mount" id="57b2-eced-a012-90bd" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+              </categoryLinks>
               <costs>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
@@ -26272,6 +26595,9 @@ After this unit has fought, for each model destroyed, one model in the selected 
               </selectionEntries>
             </selectionEntry>
             <selectionEntry name="2x Dark scythe" id="515f-759f-804f-7a60" collective="false" hidden="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink name="{H} Fixed-mount" id="2c23-4781-b4e6-3f18" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+              </categoryLinks>
               <costs>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
@@ -28058,6 +28384,7 @@ You can use this Stratagem up to 3 times.</characteristic>
             <selectionEntry name="Cloudburst missile launcher" id="8353-61ff-671a-7217" collective="false" hidden="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink name="Blast" id="a1cf-beb9-1828-bf7a" hidden="false" primary="false" targetId="a30d-0055-6710-6284"/>
+                <categoryLink name="{F} Front facing" id="422e-67b8-f3a5-9505" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
               </categoryLinks>
               <costs>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -28087,6 +28414,9 @@ You can use this Stratagem up to 3 times.</characteristic>
           </constraints>
           <selectionEntries>
             <selectionEntry name="Revenant pulsar" id="0cee-e4bf-a30c-7d69" collective="false" hidden="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink name="{L} Limited angle Side facing" id="4c86-7a4e-47cc-793f" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+              </categoryLinks>
               <costs>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -28109,6 +28439,7 @@ You can use this Stratagem up to 3 times.</characteristic>
             <selectionEntry name="Sonic lance" id="e9b3-57f4-3ef7-b84f" collective="false" hidden="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink name="Torrent" id="ad3d-8ee6-3264-eed3" hidden="false" primary="false" targetId="795f-a8d3-dc18-cb2e"/>
+                <categoryLink name="{L} Limited angle Side facing" id="3ff5-8d12-2146-90d5" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
               </categoryLinks>
               <costs>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
@@ -28258,7 +28589,11 @@ You can use this Stratagem up to 3 times.</characteristic>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
               <entryLinks>
-                <entryLink name="Twin Shuriken rifle" id="d4e8-7f9d-5fb2-3288" collective="false" hidden="false" import="true" targetId="ff3d-42fe-2ba4-3026" type="selectionEntry"/>
+                <entryLink name="Twin Shuriken rifle" id="d4e8-7f9d-5fb2-3288" collective="false" hidden="false" import="true" targetId="ff3d-42fe-2ba4-3026" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{H} Fixed-mount" id="e1ce-4443-a71b-a3e4" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+                  </categoryLinks>
+                </entryLink>
                 <entryLink name="Crushing bulk" id="c097-b4c7-b404-2e46" collective="false" hidden="false" import="true" targetId="502f-45c2-6fd1-443b" type="selectionEntry"/>
                 <entryLink name="Combat knife" id="59cb-d8ac-81a1-3787" collective="false" hidden="false" import="true" targetId="92e8-af3a-fe14-06c1" type="selectionEntry">
                   <infoLinks>
@@ -28299,7 +28634,11 @@ You can use this Stratagem up to 3 times.</characteristic>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
               <entryLinks>
-                <entryLink name="Shuriken cannon" id="fde9-f7b5-ac2f-dd38" collective="false" hidden="false" import="true" targetId="8299-2e24-9b9c-959b" type="selectionEntry"/>
+                <entryLink name="Shuriken cannon" id="fde9-f7b5-ac2f-dd38" collective="false" hidden="false" import="true" targetId="8299-2e24-9b9c-959b" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{H} Fixed-mount" id="85b8-a387-5c24-1f4e" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+                  </categoryLinks>
+                </entryLink>
                 <entryLink name="Crushing bulk" id="b005-4152-0a49-ad88" collective="false" hidden="false" import="true" targetId="502f-45c2-6fd1-443b" type="selectionEntry"/>
                 <entryLink name="Combat knife" id="49a2-d82d-b29a-53bf" collective="false" hidden="false" import="true" targetId="92e8-af3a-fe14-06c1" type="selectionEntry">
                   <infoLinks>
@@ -28321,7 +28660,11 @@ You can use this Stratagem up to 3 times.</characteristic>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
               <entryLinks>
-                <entryLink name="Scatter laser" id="f8d0-dd70-933b-e834" collective="false" hidden="false" import="true" targetId="d44e-3899-0049-b13d" type="selectionEntry"/>
+                <entryLink name="Scatter laser" id="f8d0-dd70-933b-e834" collective="false" hidden="false" import="true" targetId="d44e-3899-0049-b13d" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{H} Fixed-mount" id="635c-26b2-8b92-9dc5" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+                  </categoryLinks>
+                </entryLink>
                 <entryLink name="Crushing bulk" id="2a99-018b-ce48-1b70" collective="false" hidden="false" import="true" targetId="502f-45c2-6fd1-443b" type="selectionEntry"/>
                 <entryLink name="Combat knife" id="7f07-58ff-999c-49d2" collective="false" hidden="false" import="true" targetId="92e8-af3a-fe14-06c1" type="selectionEntry">
                   <infoLinks>
@@ -41910,16 +42253,26 @@ Until that happens, that model is still considered to be in play, but no further
       </constraints>
       <entryLinks>
         <entryLink name="Bright Lance" id="7e0a-e50c-cce8-f41a" hidden="false" import="true" targetId="5e65-eceb-686c-8a33" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{S} Side facing" id="ec0e-e989-ac44-f45e" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+          </categoryLinks>
           <costs>
             <cost name="Pts" typeId="points" value="10"/>
           </costs>
         </entryLink>
         <entryLink name="Starcannon" id="75de-fa31-29f3-4148" hidden="false" import="true" targetId="b738-7084-a2eb-2c55" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{S} Side facing" id="c516-5e5b-2611-b809" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+          </categoryLinks>
           <costs>
             <cost name="Pts" typeId="points" value="5"/>
           </costs>
         </entryLink>
-        <entryLink name="Scatter laser" id="5755-c910-9767-0865" hidden="false" import="true" targetId="bc00-c737-73c7-0625" type="selectionEntry"/>
+        <entryLink name="Scatter laser" id="5755-c910-9767-0865" hidden="false" import="true" targetId="bc00-c737-73c7-0625" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{S} Side facing" id="15d2-34a5-2bfc-c356" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
