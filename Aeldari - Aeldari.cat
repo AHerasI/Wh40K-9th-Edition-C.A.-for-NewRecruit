@@ -14712,6 +14712,7 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
             <selectionEntry name="Heavy D-scythe" id="ecde-a0f3-a574-3d0b" collective="false" hidden="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink name="Torrent" id="e627-3594-69a0-ec86" hidden="false" primary="false" targetId="795f-a8d3-dc18-cb2e"/>
+                <categoryLink name="{H} Fixed-mount" id="64b1-e310-36ac-7176" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
               </categoryLinks>
               <constraints>
                 <constraint id="aad0-1e5a-1cb1-5510" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
@@ -14724,7 +14725,7 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
               <profiles>
-                <profile name="Heavy D-scythe" id="15c8-f523-9467-0851" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                <profile name="{H} Heavy D-scythe" id="15c8-f523-9467-0851" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18</characteristic>
                     <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 1</characteristic>
@@ -15975,8 +15976,15 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
             <constraint id="3e18-99eb-d22f-b5d7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Twin Shuriken rifle" id="cb3e-6bbe-f1a6-e451" collective="false" hidden="false" import="true" targetId="d11e-b646-8b69-ef4a" type="selectionEntry"/>
+            <entryLink name="Twin Shuriken rifle" id="cb3e-6bbe-f1a6-e451" collective="false" hidden="false" import="true" targetId="d11e-b646-8b69-ef4a" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="0fc8-57d1-3cc8-638e" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
+            </entryLink>
             <entryLink name="Shuriken cannon" id="bb32-7c66-abdd-8268" collective="false" hidden="false" import="true" targetId="3691-b24f-77b6-8ee5" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="7e86-4538-5137-8f88" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10"/>
               </costs>
@@ -16569,6 +16577,9 @@ If an enemy unit (excluding units that can FLY, or has INORGANIC, VEHICLE or TIT
           </constraints>
           <selectionEntries>
             <selectionEntry name="Lynx pulsar" id="cd97-2cad-0739-2c52" collective="false" hidden="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink name="{H} Fixed-mount" id="19e5-4859-297d-6c3b" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+              </categoryLinks>
               <costs>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
@@ -16576,7 +16587,7 @@ If an enemy unit (excluding units that can FLY, or has INORGANIC, VEHICLE or TIT
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
               <profiles>
-                <profile name="Lynx pulsar" id="f6d1-bc87-5791-bf6b" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                <profile name="{H} Lynx pulsar" id="f6d1-bc87-5791-bf6b" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48</characteristic>
                     <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 6</characteristic>
@@ -16600,22 +16611,39 @@ If an enemy unit (excluding units that can FLY, or has INORGANIC, VEHICLE or TIT
           </constraints>
           <entryLinks>
             <entryLink name="Asuryani missile launcher" id="ff53-9afc-645b-7418" collective="false" hidden="false" import="true" targetId="3fcf-5cd4-8611-1d89" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="786d-8556-3947-e0ff" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10"/>
               </costs>
             </entryLink>
             <entryLink name="Bright Lance" id="14f2-40b2-488c-520e" collective="false" hidden="false" import="true" targetId="5e65-eceb-686c-8a33" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="d5da-93b4-eca5-4d66" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Scatter laser" id="1780-c452-8f41-7c24" collective="false" hidden="false" import="true" targetId="bc00-c737-73c7-0625" type="selectionEntry"/>
+            <entryLink name="Scatter laser" id="1780-c452-8f41-7c24" collective="false" hidden="false" import="true" targetId="bc00-c737-73c7-0625" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="5887-91c6-e30d-bd57" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
+            </entryLink>
             <entryLink name="Starcannon" id="05c7-9e51-35ef-acf5" collective="false" hidden="false" import="true" targetId="b738-7084-a2eb-2c55" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="0fa0-2cbe-d9a7-7c7e" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="5"/>
               </costs>
             </entryLink>
-            <entryLink name="Shuriken cannon" id="781c-3a7d-78b0-b209" collective="false" hidden="false" import="true" targetId="3691-b24f-77b6-8ee5" type="selectionEntry"/>
+            <entryLink name="Shuriken cannon" id="781c-3a7d-78b0-b209" collective="false" hidden="false" import="true" targetId="3691-b24f-77b6-8ee5" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="f652-9fcc-0184-d3c9" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -17358,7 +17386,11 @@ If an enemy unit (excluding units that can FLY, or has INORGANIC, VEHICLE or TIT
             <constraint id="03eb-1c80-cac5-fda9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Shuriken cannon" id="b8a0-a4c7-1414-3397" collective="false" hidden="false" import="true" targetId="3691-b24f-77b6-8ee5" type="selectionEntry"/>
+            <entryLink name="Shuriken cannon" id="b8a0-a4c7-1414-3397" collective="false" hidden="false" import="true" targetId="3691-b24f-77b6-8ee5" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="b053-0b11-6751-3bde" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Asuryani Vehicle equipment" id="329b-23b1-17cf-8780" hidden="false" sortIndex="1">
