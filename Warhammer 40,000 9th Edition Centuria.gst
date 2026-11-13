@@ -12891,7 +12891,50 @@ Non AIRCRAFT MONSTER, VEHICLE and TITANIC units in the way of the pushed WRECKED
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
       <infoLinks>
-        <infoLink name="Storm Bolter" id="df42-5dc2-4e53-ec49" hidden="false" targetId="505e-a5aa-edab-6d5b" type="profile"/>
+        <infoLink name="Storm Bolter" id="df42-5dc2-4e53-ec49" hidden="false" targetId="505e-a5aa-edab-6d5b" type="profile">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Weapon tag</comment>
+              <modifiers>
+                <modifier field="name" join=" " type="prepend" value="{H}">
+                  <conditions>
+                    <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" join=" " type="prepend" value="{F}">
+                  <conditions>
+                    <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" join=" " type="prepend" value="{S}">
+                  <conditions>
+                    <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" join=" " type="prepend" value="{L}">
+                  <conditions>
+                    <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" join=" " type="prepend" value="{R}">
+                  <conditions>
+                    <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" join=" " type="prepend" value="{T}">
+                  <conditions>
+                    <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="name" join=" " type="prepend" value="{C}">
+                  <conditions>
+                    <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Stormstrike missile launcher" id="38e3-37a8-42a3-e195" collective="false" hidden="false" import="true" type="upgrade">
