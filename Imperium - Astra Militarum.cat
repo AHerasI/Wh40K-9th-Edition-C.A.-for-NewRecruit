@@ -3064,7 +3064,7 @@ In your Command phase, this unit’s PRIEST model can attempt to chant one praye
                 </entryLink>
                 <entryLink name="Assault cannon" id="75d3-c92c-f83b-5fe0" hidden="false" import="true" targetId="987b-2dc9-8ab5-af1d" type="selectionEntry">
                   <categoryLinks>
-                    <categoryLink name="Hull mounted" id="c69f-b53b-62a4-1fd6" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                    <categoryLink name="{F} Front facing" id="c69f-b53b-62a4-1fd6" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
                   </categoryLinks>
                 </entryLink>
               </entryLinks>
@@ -3234,12 +3234,12 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
               <selectionEntryGroups>
                 <selectionEntryGroup name="Hatch Weapon selection" id="9299-d56e-0602-a12f" collective="false" hidden="false" import="true">
                   <categoryLinks>
-                    <categoryLink name="Turret-mounted" id="cae8-6630-27f7-1f5e" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                    <categoryLink name="{T} Turret-mount" id="cae8-6630-27f7-1f5e" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
                   </categoryLinks>
                   <entryLinks>
                     <entryLink name="Heavy stubber" id="5939-573c-cc3f-be61" collective="false" hidden="false" import="true" targetId="cfa3-5fcd-af10-5520" type="selectionEntry">
                       <categoryLinks>
-                        <categoryLink name="Sponsor-mounted" id="d210-4c44-ecb7-4448" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                        <categoryLink name="{L} Limited angle Side facing" id="d210-4c44-ecb7-4448" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
                       </categoryLinks>
                       <constraints>
                         <constraint id="a30a-c342-45f4-9f0f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
@@ -3258,7 +3258,7 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
                     </entryLink>
                     <entryLink name="Heavy stubber" id="fbaa-b549-6600-db05" collective="false" hidden="false" import="true" targetId="cfa3-5fcd-af10-5520" type="selectionEntry">
                       <categoryLinks>
-                        <categoryLink name="Sponsor-mounted" id="a9f3-da37-d2a1-77cd" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                        <categoryLink name="{L} Limited angle Side facing" id="a9f3-da37-d2a1-77cd" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
                       </categoryLinks>
                       <constraints>
                         <constraint id="747a-525b-86d2-e05f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
@@ -12576,10 +12576,10 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
             </profile>
           </profiles>
           <selectionEntries>
-            <selectionEntry name="Las-Array" id="54f1-5a6f-91fa-f643" collective="false" hidden="false" import="true" type="upgrade">
+            <selectionEntry name="2x Las-Array" id="54f1-5a6f-91fa-f643" collective="false" hidden="false" import="true" type="upgrade">
               <constraints>
-                <constraint id="0696-00dd-b76b-514a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                <constraint id="fa5f-49a7-29e9-4321" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="0696-00dd-b76b-514a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
+                <constraint id="fa5f-49a7-29e9-4321" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
               </constraints>
               <costs>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -12589,9 +12589,12 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
               </costs>
               <entryLinks>
                 <entryLink name="Lasgun" id="9d4b-8abb-a3f7-6fe1" collective="false" hidden="false" import="true" targetId="eb6c-1d1e-bdb8-7b5d" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{S} Side facing" id="b70e-cbd1-841e-26ad" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                  </categoryLinks>
                   <constraints>
-                    <constraint id="4bd5-1da1-c0f7-d834" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="6"/>
-                    <constraint id="945c-93e0-e545-d73f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="6"/>
+                    <constraint id="4bd5-1da1-c0f7-d834" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="3"/>
+                    <constraint id="945c-93e0-e545-d73f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="3"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -12599,20 +12602,24 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
           </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup name="Turret weapon" id="37bc-941e-3d1f-48c8" collective="false" defaultSelectionEntryId="c11d-24f4-677b-0bf0" hidden="false" import="true">
-              <categoryLinks>
-                <categoryLink name="Turret-mounted" id="6bb8-a123-557b-b8a2" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
-              </categoryLinks>
               <constraints>
                 <constraint id="05cb-beb0-2192-e7f1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                 <constraint id="77b5-63c5-b75e-f582" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
               </constraints>
               <entryLinks>
                 <entryLink name="Twin Heavy Bolter" id="7f28-2be7-cb00-0bd9" collective="false" hidden="false" import="true" targetId="09d8-7790-ed3f-4d6d" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{T} Turret-mount" id="e29d-517d-1bb7-40d9" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="5"/>
                   </costs>
                 </entryLink>
-                <entryLink name="Multi-Laser" id="c11d-24f4-677b-0bf0" collective="false" hidden="false" import="true" targetId="da9f-a4e9-0f67-9b0e" type="selectionEntry"/>
+                <entryLink name="Multi-Laser" id="c11d-24f4-677b-0bf0" collective="false" hidden="false" import="true" targetId="da9f-a4e9-0f67-9b0e" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{T} Turret-mount" id="e4d9-29ac-a0b7-e176" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                  </categoryLinks>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -12831,21 +12838,28 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
           </profiles>
           <selectionEntryGroups>
             <selectionEntryGroup name="Turret weapon" id="81b0-42de-4b09-706f" collective="false" defaultSelectionEntryId="3e48-ec20-b576-ba52" hidden="false" import="true">
-              <categoryLinks>
-                <categoryLink name="Turret-mounted" id="f471-fb15-29c1-e97e" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
-              </categoryLinks>
               <constraints>
                 <constraint id="afc4-e844-b46c-a6e3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                 <constraint id="3b59-86d0-f697-34a7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
               </constraints>
               <entryLinks>
                 <entryLink name="Twin Heavy Bolter" id="f7e5-f163-4bdf-8882" collective="false" hidden="false" import="true" targetId="09d8-7790-ed3f-4d6d" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{T} Turret-mount" id="3c63-1eb3-b099-148d" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="5"/>
                   </costs>
                 </entryLink>
-                <entryLink name="Multi-Laser" id="3e48-ec20-b576-ba52" collective="false" hidden="false" import="true" targetId="da9f-a4e9-0f67-9b0e" type="selectionEntry"/>
+                <entryLink name="Multi-Laser" id="3e48-ec20-b576-ba52" collective="false" hidden="false" import="true" targetId="da9f-a4e9-0f67-9b0e" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{T} Turret-mount" id="6217-ea81-abfe-ad9c" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                  </categoryLinks>
+                </entryLink>
                 <entryLink name="Heavy Autocannon" id="4bbe-f653-a083-e6be" collective="false" hidden="false" import="true" targetId="974d-570e-66b3-e971" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{T} Turret-mount" id="8a02-f2a8-50f0-3ba6" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                  </categoryLinks>
                   <costs>
                     <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
                     <cost name="pts" typeId="points" value="15"/>
@@ -13521,7 +13535,7 @@ This weapon can only be fired once per battle. Each time an attack is made with 
           <selectionEntryGroups>
             <selectionEntryGroup name="Sponsors weapon selection" id="dd71-1d5c-6bcd-2ac4" collective="false" hidden="false" import="true">
               <categoryLinks>
-                <categoryLink name="Sponsor-mounted" id="b446-31b9-5ce3-d0db" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                <categoryLink name="{L} Limited angle Side facing" id="b446-31b9-5ce3-d0db" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
               </categoryLinks>
               <constraints>
                 <constraint id="8529-1f07-0449-ea0c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -13585,7 +13599,7 @@ This weapon can only be fired once per battle. Each time an attack is made with 
               <selectionEntries>
                 <selectionEntry name="Heavy Bolter Bastion" id="4931-0240-95b5-c98e" collective="false" hidden="false" import="true" type="upgrade">
                   <categoryLinks>
-                    <categoryLink name="Sponsor-mounted" id="1dbb-9deb-8f51-bac8" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                    <categoryLink name="{L} Limited angle Side facing" id="1dbb-9deb-8f51-bac8" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
                   </categoryLinks>
                   <costs>
                     <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -13613,7 +13627,7 @@ This weapon can only be fired once per battle. Each time an attack is made with 
                 </selectionEntry>
                 <selectionEntry name="Gimballed Twin Heavy Autocannon" id="4c29-f92d-500a-fc03" collective="false" hidden="false" import="true" type="upgrade">
                   <categoryLinks>
-                    <categoryLink name="Sponsor-mounted" id="99ad-75d5-7e8d-0d73" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                    <categoryLink name="{L} Limited angle Side facing" id="99ad-75d5-7e8d-0d73" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
                   </categoryLinks>
                   <costs>
                     <cost name="Pts" typeId="points" value="15"/>
@@ -13641,7 +13655,7 @@ This weapon can only be fired once per battle. Each time an attack is made with 
                 </selectionEntry>
                 <selectionEntry name="Gimballed Twin Lascannon" id="0af0-2507-b8e2-4871" collective="false" hidden="false" import="true" type="upgrade">
                   <categoryLinks>
-                    <categoryLink name="Sponsor-mounted" id="2dc1-1188-2cc8-25a6" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                    <categoryLink name="{L} Limited angle Side facing" id="2dc1-1188-2cc8-25a6" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
                   </categoryLinks>
                   <costs>
                     <cost name="Pts" typeId="points" value="10"/>
@@ -13669,7 +13683,7 @@ This weapon can only be fired once per battle. Each time an attack is made with 
                 </selectionEntry>
                 <selectionEntry name="Turreted Battle Cannon" id="35d3-aeb6-7c47-51a8" collective="false" hidden="false" import="true" type="upgrade">
                   <categoryLinks>
-                    <categoryLink name="Turret-mounted" id="3bf1-eb92-61a1-751a" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                    <categoryLink name="{T} Turret-mount" id="3bf1-eb92-61a1-751a" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
                   </categoryLinks>
                   <costs>
                     <cost name="Pts" typeId="points" value="10"/>
@@ -13691,7 +13705,7 @@ This weapon can only be fired once per battle. Each time an attack is made with 
                 </selectionEntry>
                 <selectionEntry name="Turreted Vanquisher Cannon" id="0531-ae95-68c1-d091" collective="false" hidden="false" import="true" type="upgrade">
                   <categoryLinks>
-                    <categoryLink name="Turret-mounted" id="7b8d-ed55-a5cc-a15f" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                    <categoryLink name="{T} Turret-mount" id="7b8d-ed55-a5cc-a15f" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
                   </categoryLinks>
                   <costs>
                     <cost name="Pts" typeId="points" value="40"/>
@@ -13713,7 +13727,7 @@ This weapon can only be fired once per battle. Each time an attack is made with 
                 </selectionEntry>
                 <selectionEntry name="Fixed Conflagration cannon" id="c127-5227-a7ca-1d6e" collective="false" hidden="false" import="true" type="upgrade">
                   <categoryLinks>
-                    <categoryLink name="Hull mounted" id="3c67-baaa-c07e-d3f4" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                    <categoryLink name="{F} Front facing" id="3c67-baaa-c07e-d3f4" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
                   </categoryLinks>
                   <costs>
                     <cost name="Pts" typeId="points" value="20"/>
@@ -13763,7 +13777,7 @@ This weapon can only be fired once per battle. Each time an attack is made with 
                 </selectionEntry>
                 <selectionEntry name="Gimballed Battle cannon" id="f34b-7a2d-3ff7-6d48" collective="false" hidden="false" import="true" type="upgrade">
                   <categoryLinks>
-                    <categoryLink name="Sponsor-mounted" id="5b23-13a3-a404-31d6" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                    <categoryLink name="{L} Limited angle Side facing" id="5b23-13a3-a404-31d6" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
                   </categoryLinks>
                   <costs>
                     <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -13791,7 +13805,7 @@ This weapon can only be fired once per battle. Each time an attack is made with 
                 </selectionEntry>
                 <selectionEntry name="Gimballed Laser Destroyer" id="5eda-f88f-9d90-165d" collective="false" hidden="false" import="true" type="upgrade">
                   <categoryLinks>
-                    <categoryLink name="Sponsor-mounted" id="3f84-eadf-f0c9-6de4" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                    <categoryLink name="{L} Limited angle Side facing" id="3f84-eadf-f0c9-6de4" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
                   </categoryLinks>
                   <costs>
                     <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -13819,7 +13833,7 @@ This weapon can only be fired once per battle. Each time an attack is made with 
                 </selectionEntry>
                 <selectionEntry name="Fixed Neutron Projector" id="6fe6-aa35-1090-bf70" collective="false" hidden="true" import="true" type="upgrade">
                   <categoryLinks>
-                    <categoryLink name="Hull mounted" id="ec7b-ecb9-4ce4-a619" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                    <categoryLink name="{F} Front facing" id="ec7b-ecb9-4ce4-a619" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
                   </categoryLinks>
                   <costs>
                     <cost name="Pts" typeId="points" value="40"/>
@@ -13859,7 +13873,7 @@ This weapon can only be fired once per battle. Each time an attack is made with 
                 </selectionEntry>
                 <selectionEntry name="Autocannon Bastion" id="ce57-7fc9-99b7-052b" collective="false" hidden="false" import="true" type="upgrade">
                   <categoryLinks>
-                    <categoryLink name="Sponsor-mounted" id="c7f3-3a1c-f1f8-e50e" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                    <categoryLink name="{L} Limited angle Side facing" id="c7f3-3a1c-f1f8-e50e" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
                   </categoryLinks>
                   <costs>
                     <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -13893,7 +13907,7 @@ This weapon can only be fired once per battle. Each time an attack is made with 
                 </selectionEntry>
                 <selectionEntry name="Lascannon Bastion" id="92e2-4f19-2174-ccba" collective="false" hidden="false" import="true" type="upgrade">
                   <categoryLinks>
-                    <categoryLink name="Sponsor-mounted" id="fa16-b0e8-7e55-7139" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                    <categoryLink name="{L} Limited angle Side facing" id="fa16-b0e8-7e55-7139" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
                   </categoryLinks>
                   <costs>
                     <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -13927,7 +13941,7 @@ This weapon can only be fired once per battle. Each time an attack is made with 
                 </selectionEntry>
                 <selectionEntry name="Turreted Laser Destroyer" id="37b7-6ac1-fcf4-3ef9" collective="false" hidden="false" import="true" type="upgrade">
                   <categoryLinks>
-                    <categoryLink name="Turret-mounted" id="9264-744f-aee6-267b" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                    <categoryLink name="{T} Turret-mount" id="9264-744f-aee6-267b" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
                   </categoryLinks>
                   <costs>
                     <cost name="Pts" typeId="points" value="30"/>
@@ -13951,7 +13965,7 @@ This weapon can only be fired once per battle. Each time an attack is made with 
             </selectionEntryGroup>
             <selectionEntryGroup name="Hull Weapon selection" id="448f-c254-29a2-3769" collective="false" defaultSelectionEntryId="c775-af14-6f38-f355" hidden="false" import="true">
               <categoryLinks>
-                <categoryLink name="Hull mounted" id="3bb0-fdff-d9bb-f6a6" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                <categoryLink name="{F} Front facing" id="3bb0-fdff-d9bb-f6a6" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
               </categoryLinks>
               <constraints>
                 <constraint id="fab6-e38b-1fe8-3ff9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -14229,7 +14243,7 @@ This weapon can only be fired once per battle. Each time an attack is made with 
           <selectionEntryGroups>
             <selectionEntryGroup name="Sponsors weapon selection" id="ddf0-7fda-97a3-01ed" collective="false" hidden="false" import="true">
               <categoryLinks>
-                <categoryLink name="Sponsor-mounted" id="4ce9-9473-5bdf-3835" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                <categoryLink name="{L} Limited angle Side facing" id="4ce9-9473-5bdf-3835" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
               </categoryLinks>
               <constraints>
                 <constraint id="e4dd-1db1-5cad-7f4a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -14319,7 +14333,7 @@ This weapon can only be fired once per battle. Each time an attack is made with 
             </selectionEntryGroup>
             <selectionEntryGroup name="Main Weapon selection" id="009e-71c8-63db-d06a" collective="false" defaultSelectionEntryId="40bf-ccc1-ff61-0537" hidden="false" import="true">
               <categoryLinks>
-                <categoryLink name="Turret-mounted" id="4c53-8116-4b9e-bc3e" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                <categoryLink name="{T} Turret-mount" id="4c53-8116-4b9e-bc3e" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
               </categoryLinks>
               <constraints>
                 <constraint id="0f7a-d727-616e-0f36" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -14491,7 +14505,7 @@ This weapon can only be fired once per battle. Each time an attack is made with 
           <selectionEntryGroups>
             <selectionEntryGroup name="Sponsors weapon selection" id="f972-a5f2-98aa-769b" collective="false" hidden="false" import="true">
               <categoryLinks>
-                <categoryLink name="Sponsor-mounted" id="e9c7-8cde-2423-975b" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                <categoryLink name="{L} Limited angle Side facing" id="e9c7-8cde-2423-975b" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
               </categoryLinks>
               <constraints>
                 <constraint id="c01b-7c32-6c4c-c8d0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -14533,7 +14547,7 @@ This weapon can only be fired once per battle. Each time an attack is made with 
             </selectionEntryGroup>
             <selectionEntryGroup name="Main Weapon selection" id="70c5-2695-d94f-17e6" collective="false" defaultSelectionEntryId="ad3c-0ec7-d2e3-cb7c" hidden="false" import="true">
               <categoryLinks>
-                <categoryLink name="Turret-mounted" id="ddde-957d-dd89-ab06" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                <categoryLink name="{T} Turret-mount" id="ddde-957d-dd89-ab06" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
               </categoryLinks>
               <constraints>
                 <constraint id="1dae-1d07-b7bc-ac0a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -14559,7 +14573,7 @@ This weapon can only be fired once per battle. Each time an attack is made with 
             </selectionEntryGroup>
             <selectionEntryGroup name="Hull Weapon selection" id="578f-dd34-0336-6922" collective="false" defaultSelectionEntryId="a60f-798d-1766-e96f" hidden="false" import="true">
               <categoryLinks>
-                <categoryLink name="Hull mounted" id="04eb-f5db-c5c1-b5a4" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                <categoryLink name="{F} Front facing" id="04eb-f5db-c5c1-b5a4" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
               </categoryLinks>
               <constraints>
                 <constraint id="f5e8-3d0a-6e0f-054f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -14811,26 +14825,32 @@ This weapon can only be fired once per battle. Each time an attack is made with 
           </modifiers>
           <selectionEntryGroups>
             <selectionEntryGroup name="Turret weapon" id="6a17-78aa-982a-f631" collective="false" defaultSelectionEntryId="0834-1e4b-df8d-bb7a" hidden="false" import="true">
-              <categoryLinks>
-                <categoryLink name="Turret-mounted" id="e161-24d2-a2e0-ca63" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
-              </categoryLinks>
               <constraints>
                 <constraint id="f144-55d0-2aea-c796" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                 <constraint id="438a-688b-a997-4cf2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
               </constraints>
               <entryLinks>
                 <entryLink name="Twin Accelerator Autocannon" id="078c-83a6-33b8-c10f" collective="false" hidden="false" import="true" targetId="d08e-c528-a542-b019" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{T} Turret-mount" id="812e-ee48-0cd4-a9a1" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="5"/>
                   </costs>
                 </entryLink>
                 <entryLink name="Twin Lascannon" id="c13e-4e92-04be-8736" collective="false" hidden="false" import="true" targetId="ee18-b1cd-6b60-464d" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{T} Turret-mount" id="f846-2f4e-25b9-0697" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="20"/>
                     <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
                   </costs>
                 </entryLink>
                 <entryLink name="Volkite Culebrin" id="3849-8508-f14b-de07" collective="false" hidden="false" import="true" targetId="7c66-f22b-a58d-0073" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{T} Turret-mount" id="dd1e-2476-fb9f-cc34" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="20"/>
                     <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -14841,6 +14861,7 @@ This weapon can only be fired once per battle. Each time an attack is made with 
                 <selectionEntry name="Twin Multi-Laser" id="0834-1e4b-df8d-bb7a" collective="false" hidden="false" import="true" type="upgrade">
                   <categoryLinks>
                     <categoryLink name="Laser Weapon" id="cf4d-1ec0-81c6-1c3a" hidden="false" primary="false" targetId="f74f-8bb9-7448-707c"/>
+                    <categoryLink name="{T} Turret-mount" id="b0ae-eee6-bdbe-6277" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
                   </categoryLinks>
                   <costs>
                     <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -14855,15 +14876,15 @@ This weapon can only be fired once per battle. Each time an attack is made with 
               </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="Sponsors weapon selection" id="5947-f6b4-7faa-01e3" collective="false" defaultSelectionEntryId="831c-d5b4-ed83-ef42" hidden="false" import="true">
-              <categoryLinks>
-                <categoryLink name="Sponsor-mounted" id="daaf-a7a2-6ae3-c1ba" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
-              </categoryLinks>
               <constraints>
                 <constraint id="aabc-4a7b-3969-b418" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                 <constraint id="8fa5-bc35-a40b-ee4c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry name="2x Autocannon" id="831c-d5b4-ed83-ef42" collective="false" hidden="false" import="true" type="upgrade">
+                  <categoryLinks>
+                    <categoryLink name="{L} Limited angle Side facing" id="6896-92de-4be5-9ff0" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                     <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
@@ -14880,6 +14901,9 @@ This weapon can only be fired once per battle. Each time an attack is made with 
                   </entryLinks>
                 </selectionEntry>
                 <selectionEntry name="2x Lascannon" id="1d68-1822-fdaf-8a0c" collective="false" hidden="false" import="true" type="upgrade">
+                  <categoryLinks>
+                    <categoryLink name="{L} Limited angle Side facing" id="9bdf-f0d4-a4c4-8219" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
                     <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
@@ -14896,6 +14920,9 @@ This weapon can only be fired once per battle. Each time an attack is made with 
                   </entryLinks>
                 </selectionEntry>
                 <selectionEntry name="2x Heavy flamer" id="40e5-85c4-78ac-6a61" collective="false" hidden="false" import="true" type="upgrade">
+                  <categoryLinks>
+                    <categoryLink name="{L} Limited angle Side facing" id="423a-b57e-77cd-8165" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                     <cost name="Pts" typeId="points" value="10"/>
@@ -14912,6 +14939,9 @@ This weapon can only be fired once per battle. Each time an attack is made with 
                   </entryLinks>
                 </selectionEntry>
                 <selectionEntry name="2x Volkite Culebrin" id="3674-3528-2e9a-3005" collective="false" hidden="false" import="true" type="upgrade">
+                  <categoryLinks>
+                    <categoryLink name="{L} Limited angle Side facing" id="53a3-6c62-904b-180f" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
                     <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
@@ -14928,6 +14958,9 @@ This weapon can only be fired once per battle. Each time an attack is made with 
                   </entryLinks>
                 </selectionEntry>
                 <selectionEntry name="2x Heavy Bolter" id="af04-4b18-1547-a3d7" collective="false" hidden="false" import="true" type="upgrade">
+                  <categoryLinks>
+                    <categoryLink name="{L} Limited angle Side facing" id="ffd5-6842-33f6-043e" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                     <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
@@ -14944,6 +14977,9 @@ This weapon can only be fired once per battle. Each time an attack is made with 
                   </entryLinks>
                 </selectionEntry>
                 <selectionEntry name="2x Multi-laser" id="0c63-c324-3bbd-5a77" collective="false" hidden="false" import="true" type="upgrade">
+                  <categoryLinks>
+                    <categoryLink name="{L} Limited angle Side facing" id="fbc1-8787-414d-315d" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                     <cost name="Pts" typeId="points" value="-10"/>
@@ -15959,6 +15995,9 @@ While this unit is Inspired by this hymn, each time a model in the Inspired unit
           </costs>
           <entryLinks>
             <entryLink name="Twin Heavy Bolter" id="4be5-79a1-eaa3-12b1" collective="false" hidden="false" import="true" targetId="09d8-7790-ed3f-4d6d" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="d8e9-693c-fa9c-de2f" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="9ba1-098d-8d7e-e497" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                 <constraint id="05bf-e084-5135-29f9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -16182,12 +16221,18 @@ While this unit is Inspired by this hymn, each time a model in the Inspired unit
                   </costs>
                   <entryLinks>
                     <entryLink name="Lascannon" id="ade4-825d-3395-57b2" collective="false" hidden="false" import="true" targetId="a908-4664-11cd-f8b2" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{T} Turret-mount" id="9d8a-d77c-a719-439f" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="5700-50fd-6fc4-669f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="3d3f-646f-11ef-333e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
                       </constraints>
                     </entryLink>
                     <entryLink name="Twin Heavy Bolter" id="5215-bebc-6003-0966" collective="false" hidden="false" import="true" targetId="09d8-7790-ed3f-4d6d" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="37dd-cd45-b2c8-818e" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="9d85-5be5-0f3b-be00" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="9183-e97c-4d5d-904d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -16204,12 +16249,18 @@ While this unit is Inspired by this hymn, each time a model in the Inspired unit
                   </costs>
                   <entryLinks>
                     <entryLink name="Lascannon" id="68c6-8750-a43c-72ad" collective="false" hidden="false" import="true" targetId="a908-4664-11cd-f8b2" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{T} Turret-mount" id="babb-5222-ca09-4198" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="dc04-da33-0723-d12b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="8065-4a9d-13ed-44c7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
                       </constraints>
                     </entryLink>
                     <entryLink name="Twin Heavy Flamer" id="8321-4bd5-c5cd-2e7c" collective="false" hidden="false" import="true" targetId="8d70-a6af-cbad-f08c" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="a11e-b664-d8a0-c2eb" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="58f6-3565-d5af-17c3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="63c3-23f0-dda7-9ef6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -16233,12 +16284,18 @@ While this unit is Inspired by this hymn, each time a model in the Inspired unit
                   </costs>
                   <entryLinks>
                     <entryLink name="Lascannon" id="d9ad-2e5a-86be-d046" collective="false" hidden="false" import="true" targetId="a908-4664-11cd-f8b2" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{T} Turret-mount" id="fbd1-fbce-edb8-e99e" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="f570-3772-0d76-9697" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="97ad-88d1-5bc2-c7fe" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
                       </constraints>
                     </entryLink>
                     <entryLink name="Twin Heavy Bolter" id="e2a5-9d7c-9266-76e9" collective="false" hidden="false" import="true" targetId="09d8-7790-ed3f-4d6d" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="99b1-bacf-d84d-2798" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="e960-d248-7aa4-58fb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="f98e-ec07-4e9a-cc64" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -16255,12 +16312,18 @@ While this unit is Inspired by this hymn, each time a model in the Inspired unit
                   </costs>
                   <entryLinks>
                     <entryLink name="Lascannon" id="8804-5145-6f1f-7859" collective="false" hidden="false" import="true" targetId="a908-4664-11cd-f8b2" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{T} Turret-mount" id="7bf5-a6b1-b229-35be" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="3935-6541-3d04-1c06" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="1b29-8eef-68ae-1c46" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
                       </constraints>
                     </entryLink>
                     <entryLink name="Twin Heavy Flamer" id="a81e-c5cf-32db-f0f3" collective="false" hidden="false" import="true" targetId="8d70-a6af-cbad-f08c" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="ec82-84ec-0dcf-423a" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="323c-62a3-d6a0-d768" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="b732-03a2-41a4-f8b0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -16289,7 +16352,7 @@ While this unit is Inspired by this hymn, each time a model in the Inspired unit
                   <entryLinks>
                     <entryLink name="Demolisher cannon" id="4732-0447-040e-ccc3" collective="false" hidden="false" import="true" targetId="1f7e-32c4-61af-510f" type="selectionEntry">
                       <categoryLinks>
-                        <categoryLink name="Hull mounted" id="cfe1-8cae-0cb7-aa38" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                        <categoryLink name="{H} Fixed-mount" id="b283-623f-f91e-55cb" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
                       </categoryLinks>
                       <constraints>
                         <constraint id="69a6-7ea7-9b58-3be7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -16299,9 +16362,6 @@ While this unit is Inspired by this hymn, each time a model in the Inspired unit
                   </entryLinks>
                   <selectionEntries>
                     <selectionEntry name="Baneblade Turret" id="e547-2eef-8a8d-43f8" collective="false" hidden="false" import="true" type="upgrade">
-                      <categoryLinks>
-                        <categoryLink name="Turret-mounted" id="3599-4a52-1cb9-65ea" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
-                      </categoryLinks>
                       <constraints>
                         <constraint id="0e3a-2a7f-3d53-5911" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                         <constraint id="dfe8-f2dd-03f0-81be" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -16314,6 +16374,9 @@ While this unit is Inspired by this hymn, each time a model in the Inspired unit
                       </costs>
                       <entryLinks>
                         <entryLink name="Heavy Autocannon" id="f307-2215-8744-c8dd" collective="false" hidden="false" import="true" targetId="974d-570e-66b3-e971" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{C} Turreted Coaxial-mount" id="466f-35f9-aa2e-943c" hidden="false" primary="false" targetId="5a5f-3ed0-79c5-df43"/>
+                          </categoryLinks>
                           <constraints>
                             <constraint id="98a6-01fc-f721-e160" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                             <constraint id="4eee-ab99-6054-7304" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -16333,6 +16396,7 @@ While this unit is Inspired by this hymn, each time a model in the Inspired unit
                         <selectionEntry name="Baneblade cannon" id="a824-3ded-708b-28f8" collective="false" hidden="false" import="true" type="upgrade">
                           <categoryLinks>
                             <categoryLink name="Blast" id="71f3-fdbc-1ce1-9860" hidden="false" primary="false" targetId="a30d-0055-6710-6284"/>
+                            <categoryLink name="{C} Turreted Coaxial-mount" id="bb08-9c64-1cdb-957b" hidden="false" primary="false" targetId="5a5f-3ed0-79c5-df43"/>
                           </categoryLinks>
                           <constraints>
                             <constraint id="90ec-6775-0f85-1a3e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -16385,8 +16449,8 @@ While this unit is Inspired by this hymn, each time a model in the Inspired unit
                       <categoryLinks>
                         <categoryLink name="Blast" id="3c2a-642e-6236-c1a1" hidden="false" primary="false" targetId="a30d-0055-6710-6284"/>
                         <categoryLink name="Splash" id="1bfc-53dc-a82c-2588" hidden="false" primary="false" targetId="a1e8-34a8-13a9-7a54"/>
-                        <categoryLink name="Hull mounted" id="c42b-7f0a-62c5-c0f1" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
                         <categoryLink name="Indirect fire" id="e43a-3c66-3ff4-a711" hidden="false" primary="false" targetId="9f18-f587-3245-07e5"/>
+                        <categoryLink name="{H} Fixed-mount" id="7962-e8ee-25ea-f9dc" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
                       </categoryLinks>
                       <constraints>
                         <constraint id="ca83-c355-8410-1fb7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -16436,8 +16500,8 @@ While this unit is Inspired by this hymn, each time a model in the Inspired unit
                     <selectionEntry name="Quake cannon" id="9c2e-13d3-5e43-6297" collective="false" hidden="false" import="true" type="upgrade">
                       <categoryLinks>
                         <categoryLink name="Blast" id="c89d-5749-6925-96e9" hidden="false" primary="false" targetId="a30d-0055-6710-6284"/>
-                        <categoryLink name="Hull mounted" id="fb85-fc27-0131-9477" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
                         <categoryLink name="Splash" id="55ea-11d7-5f3c-49b1" hidden="false" primary="false" targetId="a1e8-34a8-13a9-7a54"/>
+                        <categoryLink name="{H} Fixed-mount" id="520d-3651-2700-14b2" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
                       </categoryLinks>
                       <constraints>
                         <constraint id="73e4-5341-b295-d54c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -16500,7 +16564,7 @@ While this unit is Inspired by this hymn, each time a model in the Inspired unit
                       <categoryLinks>
                         <categoryLink name="Melta Weapon" id="e623-3b28-0b2b-1378" hidden="false" primary="false" targetId="65dd-a3e7-b044-4659"/>
                         <categoryLink name="Blast" id="f56e-335c-d84b-14d0" hidden="false" primary="false" targetId="a30d-0055-6710-6284"/>
-                        <categoryLink name="Hull mounted" id="111d-19f1-8ffc-8b38" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                        <categoryLink name="{H} Fixed-mount" id="cbb3-c12b-2168-f137" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
                       </categoryLinks>
                       <constraints>
                         <constraint id="c75c-296f-1017-a367" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -16539,6 +16603,9 @@ While this unit is Inspired by this hymn, each time a model in the Inspired unit
                   </costs>
                   <entryLinks>
                     <entryLink name="Demolisher cannon" id="fd32-1d15-8162-0a00" collective="false" hidden="false" import="true" targetId="1f7e-32c4-61af-510f" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{H} Fixed-mount" id="914e-f900-405c-3dea" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="f3c4-8a01-09d5-c92d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                         <constraint id="f0d9-5dd5-be65-1820" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -16547,9 +16614,6 @@ While this unit is Inspired by this hymn, each time a model in the Inspired unit
                   </entryLinks>
                   <selectionEntries>
                     <selectionEntry name="Hellhammer Turret" id="85f6-1306-9aec-e42e" collective="false" hidden="false" import="true" type="upgrade">
-                      <categoryLinks>
-                        <categoryLink name="Turret-mounted" id="1c24-2636-13c9-45d8" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
-                      </categoryLinks>
                       <constraints>
                         <constraint id="037c-91ee-32e9-39d6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                         <constraint id="0479-c951-20d4-a731" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -16562,6 +16626,9 @@ While this unit is Inspired by this hymn, each time a model in the Inspired unit
                       </costs>
                       <entryLinks>
                         <entryLink name="Heavy Autocannon" id="7230-8c23-71ea-af35" collective="false" hidden="false" import="true" targetId="974d-570e-66b3-e971" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{C} Turreted Coaxial-mount" id="54a3-3325-30ca-31b6" hidden="false" primary="false" targetId="5a5f-3ed0-79c5-df43"/>
+                          </categoryLinks>
                           <constraints>
                             <constraint id="e3da-8621-c397-e338" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                             <constraint id="3f4c-30cd-fab1-5eb3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -16581,6 +16648,7 @@ While this unit is Inspired by this hymn, each time a model in the Inspired unit
                         <selectionEntry name="Hellhammer cannon" id="ac7e-7b24-ffe6-ce9c" collective="false" hidden="false" import="true" type="upgrade">
                           <categoryLinks>
                             <categoryLink name="Blast" id="d295-eba3-78dc-54a5" hidden="false" primary="false" targetId="a30d-0055-6710-6284"/>
+                            <categoryLink name="{C} Turreted Coaxial-mount" id="5e93-7185-619f-1526" hidden="false" primary="false" targetId="5a5f-3ed0-79c5-df43"/>
                           </categoryLinks>
                           <constraints>
                             <constraint id="b842-cabc-c318-a8b0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -16642,6 +16710,9 @@ While this unit is Inspired by this hymn, each time a model in the Inspired unit
                   </modifiers>
                   <selectionEntries>
                     <selectionEntry name="Heavy Volcano Lance" id="f566-af16-51d4-841b" collective="false" hidden="false" import="true" type="upgrade">
+                      <categoryLinks>
+                        <categoryLink name="{H} Fixed-mount" id="974f-3a13-2be3-dd8c" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="6735-5ecb-ca14-1646" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                         <constraint id="6ff6-bb3f-bd51-861e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -16678,9 +16749,9 @@ While this unit is Inspired by this hymn, each time a model in the Inspired unit
                     </infoLink>
                   </infoLinks>
                   <selectionEntries>
-                    <selectionEntry name="Vulcan Mega-Bolter" id="4c10-bf17-6c46-16c0" collective="false" hidden="false" import="true" type="upgrade">
+                    <selectionEntry name="Twin Vulcan Mega-Bolter" id="4c10-bf17-6c46-16c0" collective="false" hidden="false" import="true" type="upgrade">
                       <categoryLinks>
-                        <categoryLink name="Hull mounted" id="0999-18b9-e805-891e" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                        <categoryLink name="{T} Turret-mount" id="5746-ba2c-bac9-9e3e" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
                       </categoryLinks>
                       <constraints>
                         <constraint id="235a-7d68-9cd3-b08b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -16693,7 +16764,12 @@ While this unit is Inspired by this hymn, each time a model in the Inspired unit
                         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                       </costs>
                       <infoLinks>
-                        <infoLink name="Vulcan Mega-Bolter" id="654b-8d09-a174-f392" hidden="false" targetId="3095-f82c-14bb-a798" type="profile"/>
+                        <infoLink name="Vulcan Mega-Bolter" id="654b-8d09-a174-f392" hidden="false" targetId="3095-f82c-14bb-a798" type="profile">
+                          <modifiers>
+                            <modifier field="name" type="set" value="Twin Vulcan Mega-Bolter"/>
+                            <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" type="set" value="Heavy 40"/>
+                          </modifiers>
+                        </infoLink>
                       </infoLinks>
                     </selectionEntry>
                   </selectionEntries>
@@ -16722,7 +16798,7 @@ While this unit is Inspired by this hymn, each time a model in the Inspired unit
                       <categoryLinks>
                         <categoryLink name="Blast" id="2be0-e046-32e3-2810" hidden="false" primary="false" targetId="a30d-0055-6710-6284"/>
                         <categoryLink name="Indirect fire" id="9d80-6928-71cb-13a6" hidden="false" primary="false" targetId="9f18-f587-3245-07e5"/>
-                        <categoryLink name="Hull mounted" id="1200-1141-0397-5625" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                        <categoryLink name="{H} Fixed-mount" id="50d3-4bb7-3c7c-9bf5" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
                       </categoryLinks>
                       <constraints>
                         <constraint id="3a91-3d8e-0f02-0d1f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -16762,7 +16838,8 @@ While this unit is Inspired by this hymn, each time a model in the Inspired unit
                   <entryLinks>
                     <entryLink name="Twin Battle cannon" id="630e-54fd-c96a-f56a" collective="false" hidden="false" import="true" targetId="2d4c-e864-9441-0c33" type="selectionEntry">
                       <categoryLinks>
-                        <categoryLink name="Hull mounted" id="3ae0-63cd-ae4a-f7a0" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                        <categoryLink name="{F} Front facing" id="3ae0-63cd-ae4a-f7a0" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                        <categoryLink name="{T} Turret-mount" id="653f-9e4e-afee-d699" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
                       </categoryLinks>
                       <constraints>
                         <constraint id="5112-f051-54d9-8294" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -16794,7 +16871,7 @@ While this unit is Inspired by this hymn, each time a model in the Inspired unit
                   <selectionEntries>
                     <selectionEntry name="Baneblade Turret" id="77e0-30e4-c94d-2513" collective="false" hidden="false" import="true" type="upgrade">
                       <categoryLinks>
-                        <categoryLink name="Turret-mounted" id="71e4-702f-65a7-0772" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                        <categoryLink name="{T} Turret-mount" id="71e4-702f-65a7-0772" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
                       </categoryLinks>
                       <constraints>
                         <constraint id="eb83-9a89-f762-7151" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -16808,6 +16885,9 @@ While this unit is Inspired by this hymn, each time a model in the Inspired unit
                       </costs>
                       <entryLinks>
                         <entryLink name="Heavy Autocannon" id="5c23-c847-a52c-fad6" collective="false" hidden="false" import="true" targetId="974d-570e-66b3-e971" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{C} Turreted Coaxial-mount" id="ddcc-1b0f-cbe6-2aab" hidden="false" primary="false" targetId="5a5f-3ed0-79c5-df43"/>
+                          </categoryLinks>
                           <constraints>
                             <constraint id="e166-392a-6312-d2d2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                             <constraint id="b0c3-4994-06ae-c1a6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -16830,6 +16910,9 @@ While this unit is Inspired by this hymn, each time a model in the Inspired unit
                   </costs>
                   <entryLinks>
                     <entryLink name="Twin Plasma Blastgun" id="ba2d-439c-0851-3767" collective="false" hidden="false" import="true" targetId="e020-936a-0859-4466" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{H} Fixed-mount" id="51cd-0682-039f-d47d" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="8771-36f7-2e48-e6bc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                         <constraint id="2ca9-5f33-0f90-0e1d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -17147,7 +17230,7 @@ While this unit is Inspired by this hymn, each time a model in the Inspired unit
               <entryLinks>
                 <entryLink name="Twin Battle cannon" id="6ab5-bd3a-9eb3-d3af" collective="false" hidden="false" import="true" targetId="2d4c-e864-9441-0c33" type="selectionEntry">
                   <categoryLinks>
-                    <categoryLink name="Turret-mounted" id="f0a8-6ec0-f5f9-7e42" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                    <categoryLink name="{T} Turret-mount" id="f0a8-6ec0-f5f9-7e42" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
                   </categoryLinks>
                   <infoLinks>
                     <infoLink name="Grinding Advance" id="6b9e-8484-d2b0-a103" hidden="false" targetId="f093-6f54-0873-e90c" type="profile"/>
@@ -17155,7 +17238,7 @@ While this unit is Inspired by this hymn, each time a model in the Inspired unit
                 </entryLink>
                 <entryLink name="Avenger Mega-bolter" id="3a60-b8e1-b7b9-e83a" collective="false" hidden="false" import="true" targetId="5074-2a44-6c58-4c3f" type="selectionEntry">
                   <categoryLinks>
-                    <categoryLink name="Turret-mounted" id="c10a-a059-9ffd-dae0" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                    <categoryLink name="{T} Turret-mount" id="c10a-a059-9ffd-dae0" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
                   </categoryLinks>
                   <infoLinks>
                     <infoLink name="Grinding Advance" id="e4ab-b47f-4e29-b116" hidden="false" targetId="f093-6f54-0873-e90c" type="profile"/>
@@ -17163,7 +17246,7 @@ While this unit is Inspired by this hymn, each time a model in the Inspired unit
                 </entryLink>
                 <entryLink name="Plasma Blastgun" id="583f-5f44-a4da-7e67" collective="false" hidden="true" import="true" targetId="c327-2959-cfb1-95e6" type="selectionEntry">
                   <categoryLinks>
-                    <categoryLink name="Hull mounted" id="a042-3d10-f4df-cbea" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                    <categoryLink name="{F} Front facing" id="a042-3d10-f4df-cbea" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
                   </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="60"/>
@@ -17193,7 +17276,7 @@ While this unit is Inspired by this hymn, each time a model in the Inspired unit
                 </entryLink>
                 <entryLink name="Twin Vanquisher Battle cannon" id="5c75-f0b9-726b-0bd4" collective="false" hidden="false" import="true" targetId="7331-92ba-fad0-3e01" type="selectionEntry">
                   <categoryLinks>
-                    <categoryLink name="Turret-mounted" id="f3e8-a0b9-ceff-9f26" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                    <categoryLink name="{T} Turret-mount" id="f3e8-a0b9-ceff-9f26" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
                   </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="60"/>
@@ -17236,7 +17319,7 @@ While this unit is Inspired by this hymn, each time a model in the Inspired unit
             </selectionEntryGroup>
             <selectionEntryGroup name="Sponsors weapon selection" id="626a-358f-ab13-c9c6" collective="false" defaultSelectionEntryId="bfe5-bd05-5f38-413c" hidden="false" import="true">
               <categoryLinks>
-                <categoryLink name="Sponsor-mounted" id="5456-3158-d980-1e77" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                <categoryLink name="{L} Limited angle Side facing" id="5456-3158-d980-1e77" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
               </categoryLinks>
               <constraints>
                 <constraint id="e873-9a35-32bb-4b35" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -17310,7 +17393,7 @@ While this unit is Inspired by this hymn, each time a model in the Inspired unit
             </selectionEntryGroup>
             <selectionEntryGroup name="Hull Weapon selection" id="9db5-2d4c-94a3-4677" collective="false" defaultSelectionEntryId="8a7a-94e2-ba22-5bb4" hidden="false" import="true">
               <categoryLinks>
-                <categoryLink name="Hull mounted" id="e629-6cdb-d71b-874d" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                <categoryLink name="{F} Front facing" id="e629-6cdb-d71b-874d" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
               </categoryLinks>
               <constraints>
                 <constraint id="d39e-22a0-9bec-5298" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -17359,7 +17442,7 @@ While this unit is Inspired by this hymn, each time a model in the Inspired unit
             </selectionEntryGroup>
             <selectionEntryGroup name="Hatch Weapon selection" id="81bb-e052-74d0-1e0c" collective="false" hidden="false" import="true">
               <categoryLinks>
-                <categoryLink name="Turret-mounted" id="dd75-6d9d-3519-b7ee" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                <categoryLink name="{T} Turret-mount" id="dd75-6d9d-3519-b7ee" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
               </categoryLinks>
               <constraints>
                 <constraint id="6ec2-cb7a-f1cf-4cca" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -17764,7 +17847,7 @@ After this unit shoots with Cyclops demolition charge, it is destroyed. In addit
                   <entryLinks>
                     <entryLink name="Heavy Bolter" id="6bcb-5aad-c336-106e" collective="false" hidden="false" import="true" targetId="05ab-e7cc-e856-c36f" type="selectionEntry">
                       <categoryLinks>
-                        <categoryLink name="Turret-mounted" id="b367-44f8-a3f5-1036" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                        <categoryLink name="{L} Limited angle Side facing" id="336a-063d-cae9-7c59" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
                       </categoryLinks>
                       <constraints>
                         <constraint id="bcd5-d258-d73d-4391" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="4"/>
@@ -17776,24 +17859,30 @@ After this unit shoots with Cyclops demolition charge, it is destroyed. In addit
               </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="Hatch Weapon selection" id="ca53-08a1-9767-bb5d" collective="false" hidden="false" import="true">
-              <categoryLinks>
-                <categoryLink name="Turret-mounted" id="c901-f65a-4cfd-832d" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
-              </categoryLinks>
               <constraints>
                 <constraint id="f226-4180-514d-22a5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
               <entryLinks>
                 <entryLink name="Storm Bolter" id="b36f-6db6-3c59-4aab" collective="false" hidden="false" import="true" targetId="2b03-8d64-3711-f300" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{T} Turret-mount" id="b046-971e-ba44-c770" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="5"/>
                   </costs>
                 </entryLink>
                 <entryLink name="Heavy stubber" id="f4c2-fa5a-c3be-0e2c" collective="false" hidden="false" import="true" targetId="cfa3-5fcd-af10-5520" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{T} Turret-mount" id="7338-c859-df44-711d" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="5"/>
                   </costs>
                 </entryLink>
                 <entryLink name="Hot-Shot Volley gun" id="fbb8-3ab2-8b31-3be9" collective="false" hidden="true" import="true" targetId="d528-a2c9-23d0-b00f" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{T} Turret-mount" id="530b-4512-106e-8029" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="5"/>
                   </costs>
@@ -18003,7 +18092,7 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. It cannot transport OGRY
                   <entryLinks>
                     <entryLink name="Heavy Bolter" id="ec51-1377-ccd0-b83c" collective="false" hidden="false" import="true" targetId="05ab-e7cc-e856-c36f" type="selectionEntry">
                       <categoryLinks>
-                        <categoryLink name="Turret-mounted" id="f789-23c5-545a-2a56" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                        <categoryLink name="{T} Turret-mount" id="f789-23c5-545a-2a56" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
                       </categoryLinks>
                       <constraints>
                         <constraint id="5b2c-e6e1-0a69-9ce0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
@@ -18016,7 +18105,7 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. It cannot transport OGRY
             </selectionEntryGroup>
             <selectionEntryGroup name="Hatch Weapon selection" id="fa60-939e-da56-9760" collective="false" hidden="false" import="true">
               <categoryLinks>
-                <categoryLink name="Turret-mounted" id="0365-9490-e8a7-ddf9" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                <categoryLink name="{T} Turret-mount" id="0365-9490-e8a7-ddf9" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
               </categoryLinks>
               <constraints>
                 <constraint id="f9e2-2eb2-7775-b6fb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -18115,7 +18204,7 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. It cannot transport OGRY
                   <selectionEntryGroups>
                     <selectionEntryGroup name="Tail Turret" id="a071-4ab7-c5fc-0a8d" collective="false" defaultSelectionEntryId="55d1-395d-aafe-b97f" hidden="false" import="true">
                       <categoryLinks>
-                        <categoryLink name="Sponsor-mounted" id="d667-04c9-3b54-50ff" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                        <categoryLink name="{L} Limited angle Side facing" id="d667-04c9-3b54-50ff" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
                       </categoryLinks>
                       <constraints>
                         <constraint id="2c84-134b-943e-a0f9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -18134,7 +18223,7 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. It cannot transport OGRY
                     </selectionEntryGroup>
                     <selectionEntryGroup name="Nose" id="cbae-223e-6249-de37" collective="false" defaultSelectionEntryId="8761-a2c5-be01-f5ec" hidden="false" import="true">
                       <categoryLinks>
-                        <categoryLink name="Sponsor-mounted" id="bce8-da55-2276-9c53" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                        <categoryLink name="{L} Limited angle Side facing" id="bce8-da55-2276-9c53" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
                       </categoryLinks>
                       <constraints>
                         <constraint id="610f-b5cc-1be0-6b05" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -18146,7 +18235,7 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. It cannot transport OGRY
                     </selectionEntryGroup>
                     <selectionEntryGroup name="Wing Pylons" id="7c92-f39c-64b8-b467" collective="false" hidden="false" import="true">
                       <categoryLinks>
-                        <categoryLink name="Hull mounted" id="2358-0f67-f251-f276" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                        <categoryLink name="{F} Front facing" id="2358-0f67-f251-f276" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
                       </categoryLinks>
                       <constraints>
                         <constraint id="5a3d-a3d2-6bdf-4468" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -18189,7 +18278,7 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. It cannot transport OGRY
                   <selectionEntryGroups>
                     <selectionEntryGroup name="Tail Turret" id="3051-8c8c-61e3-5218" collective="false" defaultSelectionEntryId="f35b-be90-e565-24ee" hidden="false" import="true">
                       <categoryLinks>
-                        <categoryLink name="Sponsor-mounted" id="6eed-7810-1693-9acc" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                        <categoryLink name="{L} Limited angle Side facing" id="6eed-7810-1693-9acc" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
                       </categoryLinks>
                       <constraints>
                         <constraint id="e3be-c6a5-4ea1-85be" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -18201,7 +18290,7 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. It cannot transport OGRY
                     </selectionEntryGroup>
                     <selectionEntryGroup name="Nose" id="5edc-ac33-a8dc-c071" collective="false" defaultSelectionEntryId="89d5-82c0-2f0c-15b2" hidden="false" import="true">
                       <categoryLinks>
-                        <categoryLink name="Hull mounted" id="0a39-384a-0301-6a49" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                        <categoryLink name="{F} Front facing" id="0a39-384a-0301-6a49" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
                       </categoryLinks>
                       <constraints>
                         <constraint id="dea5-eaaa-edcc-7333" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -18232,7 +18321,7 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. It cannot transport OGRY
                     </selectionEntryGroup>
                     <selectionEntryGroup name="Wing Pylons" id="384f-f2a6-491c-71e5" collective="false" hidden="false" import="true">
                       <categoryLinks>
-                        <categoryLink name="Hull mounted" id="8ba8-6228-082e-a17d" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                        <categoryLink name="{F} Front facing" id="8ba8-6228-082e-a17d" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
                       </categoryLinks>
                       <constraints>
                         <constraint id="d3e6-48fe-9fb0-f445" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -18257,7 +18346,7 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. It cannot transport OGRY
             </selectionEntryGroup>
             <selectionEntryGroup name="Dorsal Turret" id="f0c4-c2ab-1300-a0cc" collective="false" defaultSelectionEntryId="9893-257d-e9d3-7973" hidden="false" import="true">
               <categoryLinks>
-                <categoryLink name="Turret-mounted" id="4aee-fb0f-b94b-6136" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                <categoryLink name="{T} Turret-mount" id="4aee-fb0f-b94b-6136" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
               </categoryLinks>
               <constraints>
                 <constraint id="8a85-aa9c-c468-7204" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -18276,7 +18365,7 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. It cannot transport OGRY
             </selectionEntryGroup>
             <selectionEntryGroup name="Internal Bomb Bay" id="b8fe-0f11-d251-dd88" collective="false" defaultSelectionEntryId="616f-2780-811e-0073" hidden="false" import="true">
               <categoryLinks>
-                <categoryLink name="Hull mounted" id="d67c-a42d-d9d2-8274" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                <categoryLink name="{F} Front facing" id="d67c-a42d-d9d2-8274" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
               </categoryLinks>
               <constraints>
                 <constraint id="775f-9b3c-ce9c-5603" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -18320,6 +18409,9 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. It cannot transport OGRY
             <entryLink name="Additional equipment" id="d2a6-fc4b-7c6e-8cce" collective="false" hidden="false" import="true" targetId="eafe-4816-f1ce-0b19" type="selectionEntryGroup"/>
             <entryLink name="Hull Weapon selection" id="4763-b94c-2986-84a1" collective="false" hidden="false" import="true" targetId="dbbc-c0d7-60b3-ef92" type="selectionEntryGroup"/>
             <entryLink name="Earthshaker cannon" id="a5c9-cb62-b5c6-9bdb" collective="false" hidden="false" import="true" targetId="0c38-a2c7-5bca-54a9" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{H} Fixed-mount" id="bc54-53e2-3e59-047f" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="8ce2-2264-810b-545a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                 <constraint id="794e-ad5b-40d5-2186" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -19517,9 +19609,6 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
           </modifiers>
           <selectionEntryGroups>
             <selectionEntryGroup name="Turret weapon" id="cfa9-0588-962c-f7bb" collective="false" defaultSelectionEntryId="f9b6-8060-2fc5-6c6d" hidden="false" import="true">
-              <categoryLinks>
-                <categoryLink name="Turret-mounted" id="a4c0-de82-9eb8-73d8" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
-              </categoryLinks>
               <constraints>
                 <constraint id="01ca-1273-322e-7bc7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                 <constraint id="abc2-a661-5e73-7a86" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -19527,19 +19616,23 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
               <entryLinks>
                 <entryLink name="Multi-melta" id="dc1b-9f24-d77d-d32c" collective="false" hidden="false" import="true" targetId="2b37-65ee-9443-b4ef" type="selectionEntry">
                   <categoryLinks>
-                    <categoryLink name="Turret-mounted" id="a396-f8f6-f879-819b" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                    <categoryLink name="{T} Turret-mount" id="a396-f8f6-f879-819b" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
                   </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="20"/>
                     <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
                   </costs>
                 </entryLink>
-                <entryLink name="Inferno Heavy Flamer" id="f9b6-8060-2fc5-6c6d" collective="false" hidden="false" import="true" targetId="d02e-e18b-10b3-0e7d" type="selectionEntry"/>
+                <entryLink name="Inferno Heavy Flamer" id="f9b6-8060-2fc5-6c6d" collective="false" hidden="false" import="true" targetId="d02e-e18b-10b3-0e7d" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{T} Turret-mount" id="3f43-b1bf-56eb-aac4" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                  </categoryLinks>
+                </entryLink>
               </entryLinks>
               <selectionEntries>
                 <selectionEntry name="Chem-Cannon" id="28a5-c77c-b5e4-eb5b" collective="false" hidden="false" import="true" type="upgrade">
                   <categoryLinks>
-                    <categoryLink name="Turret-mounted" id="fd41-11de-062c-14e0" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                    <categoryLink name="{T} Turret-mount" id="fd41-11de-062c-14e0" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
                     <categoryLink name="Torrent" id="f440-ac67-6a7e-f931" hidden="false" primary="false" targetId="795f-a8d3-dc18-cb2e"/>
                   </categoryLinks>
                   <costs>
@@ -20086,26 +20179,36 @@ Re-roll Invulnerable saving throws of 1 for this WARLORD.</characteristic>
             <selectionEntryGroup name="Turret Weapon" id="83a8-f5a8-0e5e-27b7" collective="false" defaultSelectionEntryId="cd34-3c1a-44d9-a18d" hidden="false" import="true">
               <selectionEntryGroups>
                 <selectionEntryGroup name="Main Weapon selection" id="1c90-d77d-fc75-fe84" collective="false" defaultSelectionEntryId="80a4-4a97-d0a8-a033" hidden="false" import="true">
-                  <categoryLinks>
-                    <categoryLink name="Turret-mounted" id="e055-c49c-84c6-ff9a" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
-                  </categoryLinks>
                   <constraints>
                     <constraint id="aceb-29ed-a8f6-f718" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                     <constraint id="816a-6855-bc52-ff85" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Assault cannon" id="80a4-4a97-d0a8-a033" collective="false" hidden="false" import="true" targetId="51b0-3d46-5af4-683e" type="selectionEntry"/>
+                    <entryLink name="Assault cannon" id="80a4-4a97-d0a8-a033" collective="false" hidden="false" import="true" targetId="51b0-3d46-5af4-683e" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{C} Turreted Coaxial-mount" id="6392-ce2e-704c-d0a7" hidden="false" primary="false" targetId="5a5f-3ed0-79c5-df43"/>
+                      </categoryLinks>
+                    </entryLink>
                     <entryLink name="Overcharged Heavy Meltagun" id="f9af-9392-c096-9ddc" collective="false" hidden="false" import="true" targetId="5dc9-a5c9-7c43-630c" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{C} Turreted Coaxial-mount" id="1c07-dcb1-bbb1-ecf6" hidden="false" primary="false" targetId="5a5f-3ed0-79c5-df43"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="10"/>
                       </costs>
                     </entryLink>
                     <entryLink name="Heavy Autocannon" id="8f37-816e-46a4-dcd3" collective="false" hidden="false" import="true" targetId="974d-570e-66b3-e971" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{C} Turreted Coaxial-mount" id="bc71-a38c-f5c5-5091" hidden="false" primary="false" targetId="5a5f-3ed0-79c5-df43"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="10"/>
                       </costs>
                     </entryLink>
                     <entryLink name="Lascannon" id="0e63-0f5a-51a6-c40e" collective="false" hidden="false" import="true" targetId="a908-4664-11cd-f8b2" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{C} Turreted Coaxial-mount" id="0799-16aa-3ccc-356a" hidden="false" primary="false" targetId="5a5f-3ed0-79c5-df43"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="15"/>
                       </costs>
@@ -20113,15 +20216,15 @@ Re-roll Invulnerable saving throws of 1 for this WARLORD.</characteristic>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Coaxial Weapon selection" id="22b2-cc16-af9d-d744" collective="false" defaultSelectionEntryId="2f71-d2c7-9913-0051" hidden="false" import="true">
-                  <categoryLinks>
-                    <categoryLink name="Turret-mounted" id="f775-5037-de90-f562" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
-                  </categoryLinks>
                   <constraints>
                     <constraint id="710a-ff80-b9c5-b1c2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                     <constraint id="d99c-9666-1169-a463" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                   </constraints>
                   <entryLinks>
                     <entryLink name="Meltagun" id="e7cf-5812-c35a-043a" collective="false" hidden="false" import="true" targetId="efc8-c51d-5b02-a3a2" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{C} Turreted Coaxial-mount" id="3749-856b-7e2b-9cc0" hidden="false" primary="false" targetId="5a5f-3ed0-79c5-df43"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="043b-2009-d843-1cb8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -20130,6 +20233,9 @@ Re-roll Invulnerable saving throws of 1 for this WARLORD.</characteristic>
                       </costs>
                     </entryLink>
                     <entryLink name="Heavy stubber" id="2f71-d2c7-9913-0051" collective="false" hidden="false" import="true" targetId="cfa3-5fcd-af10-5520" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{C} Turreted Coaxial-mount" id="881f-edaf-8bb1-2a7b" hidden="false" primary="false" targetId="5a5f-3ed0-79c5-df43"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="5564-3ee8-4a82-5ac1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -20377,14 +20483,14 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
               </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="Hatch Weapon selection" id="4feb-1e05-73d9-c08b" collective="false" hidden="false" import="true">
-              <categoryLinks>
-                <categoryLink name="Turret-mounted" id="d83a-a1fd-ee55-c579" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
-              </categoryLinks>
               <constraints>
                 <constraint id="bc2e-1972-83d6-4c1f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
               <entryLinks>
                 <entryLink name="Heavy stubber" id="f536-6cdc-eea2-1755" collective="false" hidden="false" import="true" targetId="cfa3-5fcd-af10-5520" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{T} Turret-mount" id="8e1f-e3a0-5dd2-67f2" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="ae22-444c-c12a-f0b3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
@@ -21056,7 +21162,7 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
         <selectionEntry name="Plasma Blastgun" id="c327-2959-cfb1-95e6" collective="false" hidden="false" import="true" type="upgrade">
           <categoryLinks>
             <categoryLink name="Blast" id="60e2-5ff5-9607-d8ed" hidden="false" primary="false" targetId="a30d-0055-6710-6284"/>
-            <categoryLink name="Hull mounted" id="cd2c-41fb-e28e-c170" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+            <categoryLink name="{F} Front facing" id="cd2c-41fb-e28e-c170" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
             <categoryLink name="Plasma Weapon" id="8a01-92b2-97de-fbba" hidden="false" primary="false" targetId="d691-91d9-76e1-b276"/>
           </categoryLinks>
           <costs>
@@ -21094,7 +21200,6 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
         <selectionEntry name="Twin Plasma Blastgun" id="e020-936a-0859-4466" collective="false" hidden="false" import="true" type="upgrade">
           <categoryLinks>
             <categoryLink name="Blast" id="a21a-c900-1bf3-142f" hidden="false" primary="false" targetId="a30d-0055-6710-6284"/>
-            <categoryLink name="Hull mounted" id="d92b-3732-1898-8108" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
             <categoryLink name="Plasma Weapon" id="ffe7-224d-fb99-2efe" hidden="false" primary="false" targetId="d691-91d9-76e1-b276"/>
           </categoryLinks>
           <costs>
@@ -23013,7 +23118,7 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
           <selectionEntryGroups>
             <selectionEntryGroup name="Turret weapon" id="a302-72a9-3437-5ce1" collective="false" defaultSelectionEntryId="586d-20c4-1675-7f9b" hidden="false" import="true">
               <categoryLinks>
-                <categoryLink name="Turret-mounted" id="da80-fd56-bb95-e0f9" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                <categoryLink name="{T} Turret-mount" id="da80-fd56-bb95-e0f9" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
               </categoryLinks>
               <constraints>
                 <constraint id="96ab-5545-e6d0-f5ad" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -26923,7 +27028,7 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
                           <selectionEntries>
                             <selectionEntry name="Icarus Autocannon" id="f085-1035-a79c-e614" collective="false" hidden="false" import="true" type="upgrade">
                               <categoryLinks>
-                                <categoryLink name="Hull mounted" id="53a4-a5e5-08ae-9982" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                                <categoryLink name="{F} Front facing" id="53a4-a5e5-08ae-9982" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
                               </categoryLinks>
                               <constraints>
                                 <constraint id="f980-5a27-b2b8-8476" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -26970,7 +27075,7 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
                     </selectionEntryGroup>
                     <selectionEntryGroup name="Wing Pylons" id="a680-393f-7fc5-d924" collective="false" defaultSelectionEntryId="9c66-1638-bf71-e8f6" hidden="false" import="true">
                       <categoryLinks>
-                        <categoryLink name="Hull mounted" id="5cce-842b-dff2-5c5b" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                        <categoryLink name="{F} Front facing" id="5cce-842b-dff2-5c5b" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
                       </categoryLinks>
                       <constraints>
                         <constraint id="241d-de5e-34d4-32dc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
@@ -27021,7 +27126,7 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
                           <entryLinks>
                             <entryLink name="Hellstrike Missile Rack" id="eef7-6068-19d8-dfa5" collective="false" hidden="false" import="true" targetId="39fd-4f42-230f-b199" type="selectionEntry">
                               <categoryLinks>
-                                <categoryLink name="Hull mounted" id="1e24-a006-f09a-4fb8" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                                <categoryLink name="{F} Front facing" id="1e24-a006-f09a-4fb8" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
                               </categoryLinks>
                               <constraints>
                                 <constraint id="3ce6-7114-bc44-7661" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
@@ -27145,7 +27250,7 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
                   <entryLinks>
                     <entryLink name="Punisher Gatling Cannon" id="987e-d9aa-3781-05e5" collective="false" hidden="false" import="true" targetId="3ee3-74ec-d970-9b43" type="selectionEntry">
                       <categoryLinks>
-                        <categoryLink name="Hull mounted" id="ba1a-99ed-d23b-81d2" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                        <categoryLink name="{F} Front facing" id="ba1a-99ed-d23b-81d2" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
                       </categoryLinks>
                       <constraints>
                         <constraint id="4b32-5e7b-c811-08be" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -27154,7 +27259,7 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
                     </entryLink>
                     <entryLink name="Heavy stubber" id="69e3-fd57-79c1-1609" collective="false" hidden="false" import="true" targetId="2800-dfcf-4a01-cfdf" type="selectionEntry">
                       <categoryLinks>
-                        <categoryLink name="Hull mounted" id="3541-422b-2164-9abf" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                        <categoryLink name="{F} Front facing" id="3541-422b-2164-9abf" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
                       </categoryLinks>
                     </entryLink>
                   </entryLinks>
@@ -27244,7 +27349,7 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
                   <selectionEntryGroups>
                     <selectionEntryGroup name="Wing Pylons" id="ec66-d834-9563-199f" collective="false" defaultSelectionEntryId="c916-ddb6-c447-79de" hidden="false" import="true">
                       <categoryLinks>
-                        <categoryLink name="Hull mounted" id="f8ab-1c06-9712-6f91" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                        <categoryLink name="{F} Front facing" id="f8ab-1c06-9712-6f91" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
                       </categoryLinks>
                       <constraints>
                         <constraint id="5b39-faca-3e88-b3ba" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
@@ -27312,7 +27417,7 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
                   <entryLinks>
                     <entryLink name="Icarus Twin Lascannon" id="1fc0-eb08-f8be-f754" collective="false" hidden="false" import="true" targetId="2e50-f562-c0df-3e83" type="selectionEntry">
                       <categoryLinks>
-                        <categoryLink name="Hull mounted" id="2ed6-4e98-e526-d9f3" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                        <categoryLink name="{F} Front facing" id="2ed6-4e98-e526-d9f3" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
                       </categoryLinks>
                       <constraints>
                         <constraint id="1246-52a4-70f8-41fd" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -27321,7 +27426,7 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
                     </entryLink>
                     <entryLink name="Icarus Quad Autocannon" id="efb8-7c49-1734-aae1" collective="false" hidden="false" import="true" targetId="e4c2-0571-1de7-02e1" type="selectionEntry">
                       <categoryLinks>
-                        <categoryLink name="Hull mounted" id="c3fe-48ce-527e-2ea5" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                        <categoryLink name="{F} Front facing" id="c3fe-48ce-527e-2ea5" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
                       </categoryLinks>
                       <constraints>
                         <constraint id="b59c-3b4f-adcc-839c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -27415,7 +27520,7 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
                   <selectionEntryGroups>
                     <selectionEntryGroup name="Wing Pylons" id="5488-83ad-aad5-564a" collective="false" hidden="false" import="true">
                       <categoryLinks>
-                        <categoryLink name="Hull mounted" id="a8c4-feff-8b2d-1512" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                        <categoryLink name="{F} Front facing" id="a8c4-feff-8b2d-1512" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
                       </categoryLinks>
                       <constraints>
                         <constraint id="12f8-419b-5ad5-f4c7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
@@ -29651,14 +29756,14 @@ Re-roll Invulnerable saving throws of 1 for this WARLORD.</characteristic>
       </selectionEntryGroups>
     </selectionEntryGroup>
     <selectionEntryGroup name="Hatch Weapon selection" id="e8c7-c0dc-ecbe-f1e7" collective="false" hidden="false" import="true">
-      <categoryLinks>
-        <categoryLink name="Turret-mounted" id="111e-1f3b-83ff-2a05" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
-      </categoryLinks>
       <constraints>
         <constraint id="e4b7-c26a-1fc0-e7d1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
       </constraints>
       <entryLinks>
         <entryLink name="Storm Bolter" id="8f50-1a9b-bd66-0c34" collective="false" hidden="false" import="true" targetId="2b03-8d64-3711-f300" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{T} Turret-mount" id="8fb1-ae9c-615b-02f0" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+          </categoryLinks>
           <constraints>
             <constraint id="703d-28ad-31e9-9e41" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -29667,6 +29772,9 @@ Re-roll Invulnerable saving throws of 1 for this WARLORD.</characteristic>
           </costs>
         </entryLink>
         <entryLink name="Heavy stubber" id="c4d7-6c18-4ac2-602a" collective="false" hidden="false" import="true" targetId="cfa3-5fcd-af10-5520" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{T} Turret-mount" id="ca02-f6ae-e7e0-15f6" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+          </categoryLinks>
           <constraints>
             <constraint id="df57-a8dc-3918-5b6d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -29675,6 +29783,9 @@ Re-roll Invulnerable saving throws of 1 for this WARLORD.</characteristic>
           </costs>
         </entryLink>
         <entryLink name="Hot-Shot Volley gun" id="1db4-8ad6-70f7-9743" collective="false" hidden="true" import="true" targetId="d528-a2c9-23d0-b00f" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{T} Turret-mount" id="5a59-2f01-3a62-bb6b" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+          </categoryLinks>
           <constraints>
             <constraint id="baf2-ca1b-8df7-c891" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -29698,21 +29809,28 @@ Re-roll Invulnerable saving throws of 1 for this WARLORD.</characteristic>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Hull Weapon selection" id="dbbc-c0d7-60b3-ef92" collective="false" defaultSelectionEntryId="1e83-1929-b17c-6c1a" hidden="false" import="true">
-      <categoryLinks>
-        <categoryLink name="Hull mounted" id="bdb4-97dd-b682-b49f" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
-      </categoryLinks>
       <constraints>
         <constraint id="9498-bb75-42e5-37ec" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
         <constraint id="96ae-9b67-3314-70a1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
       </constraints>
       <entryLinks>
         <entryLink name="Heavy Flamer" id="b18b-012a-3632-0805" collective="false" hidden="false" import="true" targetId="18bc-b335-29c2-2ae2" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{F} Front facing" id="b86a-4862-1dc6-cd03" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="points" value="5"/>
           </costs>
         </entryLink>
-        <entryLink name="Heavy Bolter" id="1e83-1929-b17c-6c1a" collective="false" hidden="false" import="true" targetId="05ab-e7cc-e856-c36f" type="selectionEntry"/>
+        <entryLink name="Heavy Bolter" id="1e83-1929-b17c-6c1a" collective="false" hidden="false" import="true" targetId="05ab-e7cc-e856-c36f" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{F} Front facing" id="42a5-d2a5-533c-346c" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+          </categoryLinks>
+        </entryLink>
         <entryLink name="Lascannon" id="ab5a-c6d7-8442-0eb6" collective="false" hidden="true" import="true" targetId="a908-4664-11cd-f8b2" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{F} Front facing" id="4025-8179-eb4b-c7b4" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="points" value="15"/>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -29726,6 +29844,9 @@ Re-roll Invulnerable saving throws of 1 for this WARLORD.</characteristic>
           </modifiers>
         </entryLink>
         <entryLink name="Multi-melta" id="4087-c3b2-49a7-df53" collective="false" hidden="true" import="true" targetId="2b37-65ee-9443-b4ef" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{F} Front facing" id="e49f-5104-92b6-d669" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="points" value="10"/>
           </costs>
