@@ -25960,12 +25960,12 @@ After this unit has fought, for each model destroyed, one model in the selected 
                     </modifier>
                     <modifier field="name" join=" " type="prepend" value="{S}">
                       <conditions>
-                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                       </conditions>
                     </modifier>
                     <modifier field="name" join=" " type="prepend" value="{L}">
                       <conditions>
-                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                       </conditions>
                     </modifier>
                     <modifier field="name" join=" " type="prepend" value="{R}">
@@ -25975,12 +25975,12 @@ After this unit has fought, for each model destroyed, one model in the selected 
                     </modifier>
                     <modifier field="name" join=" " type="prepend" value="{T}">
                       <conditions>
-                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                       </conditions>
                     </modifier>
                     <modifier field="name" join=" " type="prepend" value="{C}">
                       <conditions>
-                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -26087,6 +26087,7 @@ After this unit has fought, for each model destroyed, one model in the selected 
                 <selectionEntry name="Void lance" id="39d6-511a-21aa-dce1" collective="false" hidden="false" import="true" type="upgrade">
                   <categoryLinks>
                     <categoryLink name="Laser Weapon" id="c45f-9098-ce08-9a4a" hidden="false" primary="false" targetId="f74f-8bb9-7448-707c"/>
+                    <categoryLink name="{H} Fixed-mount" id="6783-6436-648b-b59f" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
                   </categoryLinks>
                   <constraints>
                     <constraint id="c9fd-1331-c39f-1cb2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
@@ -26115,6 +26116,7 @@ After this unit has fought, for each model destroyed, one model in the selected 
                 <selectionEntry name="Dark scythe" id="c3df-afc7-1cfe-3adf" collective="false" hidden="false" import="true" type="upgrade">
                   <categoryLinks>
                     <categoryLink name="Laser Weapon" id="cddd-9079-c8e6-eae7" hidden="false" primary="false" targetId="f74f-8bb9-7448-707c"/>
+                    <categoryLink name="{H} Fixed-mount" id="e2df-c1c3-68b2-1045" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
                   </categoryLinks>
                   <constraints>
                     <constraint id="df86-74ba-0dbe-5cf1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
