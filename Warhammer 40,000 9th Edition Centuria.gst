@@ -3738,27 +3738,27 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3790,27 +3790,27 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3842,27 +3842,27 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3904,27 +3904,27 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3956,27 +3956,27 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4008,27 +4008,27 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4080,27 +4080,27 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4152,27 +4152,27 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4204,27 +4204,27 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4256,27 +4256,27 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4308,27 +4308,27 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4360,27 +4360,27 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4432,27 +4432,27 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4598,27 +4598,27 @@ You cannot field more than 6 Ambush markers on the battlefield at the same time.
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4660,27 +4660,27 @@ Before using it, select one of the available ammo.
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4726,27 +4726,27 @@ Before using it, select one of the available ammo.
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4778,27 +4778,27 @@ Before using it, select one of the available ammo.
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4850,27 +4850,27 @@ Before using it, select one of the available ammo.
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4942,27 +4942,27 @@ Before using it, select one of the available ammo.
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5015,27 +5015,27 @@ Before using it, select one of the available ammo.
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5068,27 +5068,27 @@ Before using it, select one of the available ammo.
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5180,27 +5180,27 @@ Before using it, select one of the available ammo.
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5232,27 +5232,27 @@ Before using it, select one of the available ammo.
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5284,27 +5284,27 @@ Before using it, select one of the available ammo.
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5336,27 +5336,27 @@ Before using it, select one of the available ammo.
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5398,27 +5398,27 @@ Before using it, select one of the available ammo.
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5450,27 +5450,27 @@ Before using it, select one of the available ammo.
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5502,27 +5502,27 @@ Before using it, select one of the available ammo.
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5554,27 +5554,27 @@ Before using it, select one of the available ammo.
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5639,27 +5639,27 @@ Blast.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5692,27 +5692,27 @@ Blast.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5784,27 +5784,27 @@ Blast.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5836,27 +5836,27 @@ Blast.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5888,27 +5888,27 @@ Blast.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5940,27 +5940,27 @@ Blast.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5992,27 +5992,27 @@ Blast.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6044,27 +6044,27 @@ Blast.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6096,27 +6096,27 @@ Blast.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6162,27 +6162,27 @@ Blast.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6214,27 +6214,27 @@ Blast.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6266,27 +6266,27 @@ Blast.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6318,27 +6318,27 @@ Blast.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6371,27 +6371,27 @@ Blast.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6437,27 +6437,27 @@ Blast.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6489,27 +6489,27 @@ Blast.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6541,27 +6541,27 @@ Blast.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6594,27 +6594,27 @@ Blast.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6646,27 +6646,27 @@ Blast.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6698,27 +6698,27 @@ Blast.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6750,27 +6750,27 @@ Blast.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7034,27 +7034,27 @@ Enemy models cannot target a model in this unit with ranged attacks unless they 
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7157,27 +7157,27 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7209,27 +7209,27 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7271,27 +7271,27 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7323,27 +7323,27 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7385,27 +7385,27 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7437,27 +7437,27 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7489,27 +7489,27 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7541,27 +7541,27 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7593,27 +7593,27 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7645,27 +7645,27 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7697,27 +7697,27 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7749,27 +7749,27 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7815,27 +7815,27 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7867,27 +7867,27 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7919,27 +7919,27 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7972,27 +7972,27 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8025,27 +8025,27 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8077,27 +8077,27 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8129,27 +8129,27 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8191,27 +8191,27 @@ In addition, this model does not suffer the penalty for moving and firing Heavy 
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8344,27 +8344,27 @@ Each time this model is declared to Hover, it loses this ability until the begin
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8611,27 +8611,27 @@ Its Move characteristic becomes 20&quot;, and it loses the Hard to Hit and Super
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8663,27 +8663,27 @@ Its Move characteristic becomes 20&quot;, and it loses the Hard to Hit and Super
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8715,27 +8715,27 @@ Its Move characteristic becomes 20&quot;, and it loses the Hard to Hit and Super
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8767,27 +8767,27 @@ Its Move characteristic becomes 20&quot;, and it loses the Hard to Hit and Super
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8865,27 +8865,27 @@ If the result is less than the Strength characteristic of that enemy unit, it ca
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8917,27 +8917,27 @@ If the result is less than the Strength characteristic of that enemy unit, it ca
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8969,27 +8969,27 @@ If the result is less than the Strength characteristic of that enemy unit, it ca
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -9021,27 +9021,27 @@ If the result is less than the Strength characteristic of that enemy unit, it ca
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -9083,27 +9083,27 @@ If the result is less than the Strength characteristic of that enemy unit, it ca
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -9135,27 +9135,27 @@ If the result is less than the Strength characteristic of that enemy unit, it ca
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -9187,27 +9187,27 @@ If the result is less than the Strength characteristic of that enemy unit, it ca
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -9259,27 +9259,27 @@ If the result is less than the Strength characteristic of that enemy unit, it ca
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -9331,27 +9331,27 @@ If the result is less than the Strength characteristic of that enemy unit, it ca
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -9383,27 +9383,27 @@ If the result is less than the Strength characteristic of that enemy unit, it ca
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -9449,27 +9449,27 @@ If the result is less than the Strength characteristic of that enemy unit, it ca
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -9515,27 +9515,27 @@ If the result is less than the Strength characteristic of that enemy unit, it ca
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -9611,27 +9611,27 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -9668,27 +9668,27 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -9720,27 +9720,27 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -9772,27 +9772,27 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -9824,27 +9824,27 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -9876,27 +9876,27 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -9946,27 +9946,27 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -10004,27 +10004,27 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -10056,27 +10056,27 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -10114,27 +10114,27 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -10166,27 +10166,27 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -10233,27 +10233,27 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -10299,27 +10299,27 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -10351,27 +10351,27 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -10417,27 +10417,27 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -10483,27 +10483,27 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -10549,27 +10549,27 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -10601,27 +10601,27 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -10653,27 +10653,27 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -10788,27 +10788,27 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -10840,27 +10840,27 @@ Each Melta Demolition Charge can be used once per battle.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -10923,27 +10923,27 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -10975,27 +10975,27 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -11027,27 +11027,27 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -11085,27 +11085,27 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -11137,27 +11137,27 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -11189,27 +11189,27 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -11241,27 +11241,27 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -11294,27 +11294,27 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -11347,27 +11347,27 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -11399,27 +11399,27 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -11469,27 +11469,27 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -11521,27 +11521,27 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -11583,27 +11583,27 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -11635,27 +11635,27 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -11692,27 +11692,27 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -11770,27 +11770,27 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -11822,27 +11822,27 @@ Substract 1 from that attack&apos;s hit roll.</characteristic>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{S}">
               <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{L}">
               <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{R}">
               <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{T}">
               <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
             <modifier field="name" join=" " type="prepend" value="{C}">
               <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -13745,7 +13745,7 @@ Non AIRCRAFT MONSTER, VEHICLE and TITANIC units in the way of the pushed WRECKED
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
           <infoLinks>
-            <infoLink name="Terrax Melta Cutter" id="2a50-be90-508f-9cdf" hidden="false" targetId="79c3-79bf-926c-3163" type="profile"/>
+            <infoLink name="[H] Terrax Melta Cutter" id="2a50-be90-508f-9cdf" hidden="false" targetId="79c3-79bf-926c-3163" type="profile"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -17738,8 +17738,8 @@ Each Multi-Purpose Reactive Armour packcage can be used once per battle.</descri
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
       <infoLinks>
-        <infoLink name="Thunderfire Shells" id="7337-344c-683f-dc87" hidden="false" targetId="e768-5449-ec9e-e9a5" type="profile"/>
-        <infoLink name="Shatter Shells" id="b9bf-aeb0-df03-033b" hidden="false" targetId="5b61-bd90-ea80-1ee2" type="profile"/>
+        <infoLink name="Launcher, Thunderfire Shells" id="7337-344c-683f-dc87" hidden="false" targetId="e768-5449-ec9e-e9a5" type="profile"/>
+        <infoLink name="Launcher, Shatter Shells" id="b9bf-aeb0-df03-033b" hidden="false" targetId="5b61-bd90-ea80-1ee2" type="profile"/>
         <infoLink name="Variable weapon profile" id="14fd-e8d6-2dc2-e044" hidden="false" targetId="2dd5-c9f0-aa5a-818a" type="rule"/>
       </infoLinks>
     </selectionEntry>
@@ -19764,27 +19764,27 @@ If the battle ends and this unit is not on the battlefield it is considered to b
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{S}">
                   <conditions>
-                    <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{L}">
                   <conditions>
-                    <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{R}">
                   <conditions>
-                    <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{T}">
                   <conditions>
-                    <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{C}">
                   <conditions>
-                    <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -22513,27 +22513,27 @@ HAEMONCULUS</description>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{S}">
                   <conditions>
-                    <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{L}">
                   <conditions>
-                    <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{R}">
                   <conditions>
-                    <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{T}">
                   <conditions>
-                    <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{C}">
                   <conditions>
-                    <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -22576,27 +22576,27 @@ HAEMONCULUS</description>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{S}">
                   <conditions>
-                    <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{L}">
                   <conditions>
-                    <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{R}">
                   <conditions>
-                    <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{T}">
                   <conditions>
-                    <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{C}">
                   <conditions>
-                    <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -22638,27 +22638,27 @@ HAEMONCULUS</description>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{S}">
                   <conditions>
-                    <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{L}">
                   <conditions>
-                    <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{R}">
                   <conditions>
-                    <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{T}">
                   <conditions>
-                    <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{C}">
                   <conditions>
-                    <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -22704,27 +22704,27 @@ HAEMONCULUS</description>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{S}">
                   <conditions>
-                    <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{L}">
                   <conditions>
-                    <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{R}">
                   <conditions>
-                    <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{T}">
                   <conditions>
-                    <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{C}">
                   <conditions>
-                    <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -22805,37 +22805,37 @@ HAEMONCULUS</description>
               <modifiers>
                 <modifier field="name" join=" " type="prepend" value="{H}">
                   <conditions>
-                    <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{F}">
                   <conditions>
-                    <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{S}">
                   <conditions>
-                    <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{L}">
                   <conditions>
-                    <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{R}">
                   <conditions>
-                    <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{T}">
                   <conditions>
-                    <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{C}">
                   <conditions>
-                    <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -22867,27 +22867,27 @@ HAEMONCULUS</description>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{S}">
                   <conditions>
-                    <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{L}">
                   <conditions>
-                    <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{R}">
                   <conditions>
-                    <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{T}">
                   <conditions>
-                    <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{C}">
                   <conditions>
-                    <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -22971,7 +22971,7 @@ HAEMONCULUS</description>
     <selectionEntry name="Plasma Obliterator" id="a7bd-d64e-5886-bdab" collective="false" hidden="false" import="true" type="upgrade">
       <categoryLinks>
         <categoryLink name="Plasma Weapon" id="4ac4-2adf-b454-f4c8" hidden="false" primary="false" targetId="d691-91d9-76e1-b276"/>
-        <categoryLink name="Turret-mounted" id="d78d-e46c-f769-a624" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+        <categoryLink name="{T} Turret-mount" id="d78d-e46c-f769-a624" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
         <categoryLink name="Indirect fire" id="eafc-8d28-e368-fa5a" hidden="false" primary="false" targetId="9f18-f587-3245-07e5"/>
         <categoryLink name="Blast" id="509a-38e6-ff17-1569" hidden="false" primary="false" targetId="a30d-0055-6710-6284"/>
         <categoryLink name="Splash" id="0c69-daa1-8f5b-6919" hidden="false" primary="false" targetId="a1e8-34a8-13a9-7a54"/>
@@ -23011,27 +23011,27 @@ HAEMONCULUS</description>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{S}">
                   <conditions>
-                    <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{L}">
                   <conditions>
-                    <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{R}">
                   <conditions>
-                    <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{T}">
                   <conditions>
-                    <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{C}">
                   <conditions>
-                    <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -23063,27 +23063,27 @@ HAEMONCULUS</description>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{S}">
                   <conditions>
-                    <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{L}">
                   <conditions>
-                    <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{R}">
                   <conditions>
-                    <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{T}">
                   <conditions>
-                    <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
                 <modifier field="name" join=" " type="prepend" value="{C}">
                   <conditions>
-                    <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                    <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -23197,7 +23197,7 @@ HAEMONCULUS</description>
     </selectionEntry>
     <selectionEntry name="Fellblade Battlecannon" id="4de3-15dc-4cc2-ba8d" collective="false" hidden="false" import="true" type="upgrade">
       <categoryLinks>
-        <categoryLink name="Turret-mounted" id="4eb6-be0e-5971-6e74" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+        <categoryLink name="{T} Turret-mount" id="4eb6-be0e-5971-6e74" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
       </categoryLinks>
       <constraints>
         <constraint id="ab50-91e7-69e5-3799" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -23459,7 +23459,7 @@ Operate Gun Emplacement (Action): At the end of your Command phase, one INFANTRY
               <selectionEntryGroups>
                 <selectionEntryGroup name="Emplaced Weapon" id="28be-7f92-ad54-2625" collective="false" defaultSelectionEntryId="fbd7-e53d-031f-b10b" hidden="false" import="true">
                   <categoryLinks>
-                    <categoryLink name="Turret-mounted" id="872b-2422-0ecd-715c" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                    <categoryLink name="{T} Turret-mount" id="872b-2422-0ecd-715c" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
                   </categoryLinks>
                   <constraints>
                     <constraint id="f797-5685-ff8d-0179" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -23493,7 +23493,7 @@ Operate Gun Emplacement (Action): At the end of your Command phase, one INFANTRY
           <entryLinks>
             <entryLink name="Heavy Bolter" id="b40f-4733-1438-b724" collective="true" hidden="false" import="true" targetId="05ab-e7cc-e856-c36f" type="selectionEntry">
               <categoryLinks>
-                <categoryLink name="Sponsor-mounted" id="005b-f81f-dda3-f10f" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                <categoryLink name="{L} Limited angle Side facing" id="005b-f81f-dda3-f10f" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
               </categoryLinks>
               <constraints>
                 <constraint id="7166-0eaa-6bc1-ad5b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="4"/>
@@ -23579,7 +23579,7 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
           <selectionEntryGroups>
             <selectionEntryGroup name="Secondary Weapon" id="537a-4aec-c366-f4a9" collective="false" hidden="false" import="true">
               <categoryLinks>
-                <categoryLink name="Turret-mounted" id="f1a4-37ca-dae7-c14e" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                <categoryLink name="{T} Turret-mount" id="f1a4-37ca-dae7-c14e" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
               </categoryLinks>
               <constraints>
                 <constraint id="6d81-3e13-36db-846e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -23653,7 +23653,7 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
             </selectionEntryGroup>
             <selectionEntryGroup name="Main weapon" id="75aa-5bc8-3447-2663" collective="false" hidden="false" import="true">
               <categoryLinks>
-                <categoryLink name="Turret-mounted" id="ca44-2793-a2d7-f8bd" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                <categoryLink name="{T} Turret-mount" id="ca44-2793-a2d7-f8bd" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink name="Overcharged Laser Destructor" id="ffc1-dfcf-494c-8f7f" collective="false" hidden="false" import="true" targetId="0ddf-18b1-7b80-2b49" type="selectionEntry">
@@ -23924,7 +23924,7 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                       <selectionEntryGroups>
                         <selectionEntryGroup name="Additional Tower Weapon" id="b6cb-0aa9-2e3f-72c2" collective="false" hidden="false" import="true">
                           <categoryLinks>
-                            <categoryLink name="Sponsor-mounted" id="3d11-a0fd-9a78-1e5f" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                            <categoryLink name="{L} Limited angle Side facing" id="3d11-a0fd-9a78-1e5f" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
                           </categoryLinks>
                           <constraints>
                             <constraint id="0578-4df7-8404-012a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -23941,7 +23941,7 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                         </selectionEntryGroup>
                         <selectionEntryGroup name="Main weapon" id="0a57-052b-8d44-2bc1" collective="false" defaultSelectionEntryId="bf05-63f5-fba5-351b" hidden="false" import="true">
                           <categoryLinks>
-                            <categoryLink name="Turret-mounted" id="123c-cc90-7840-d57c" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                            <categoryLink name="{T} Turret-mount" id="123c-cc90-7840-d57c" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
                           </categoryLinks>
                           <constraints>
                             <constraint id="503a-c433-86aa-691f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -23949,7 +23949,7 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                           <selectionEntries>
                             <selectionEntry name="Twin Long-barrelled Autocannon" id="bf05-63f5-fba5-351b" collective="true" hidden="false" import="true" type="upgrade">
                               <categoryLinks>
-                                <categoryLink name="[T] Turret-mount" id="d4e3-08db-a0b9-6673" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                                <categoryLink name="{T} Turret-mount" id="d4e3-08db-a0b9-6673" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
                               </categoryLinks>
                               <constraints>
                                 <constraint id="79e8-3fd1-ec82-1cec" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -23987,27 +23987,27 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                                         </modifier>
                                         <modifier field="name" join=" " type="prepend" value="{S}">
                                           <conditions>
-                                            <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                                            <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                                           </conditions>
                                         </modifier>
                                         <modifier field="name" join=" " type="prepend" value="{L}">
                                           <conditions>
-                                            <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                                            <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                                           </conditions>
                                         </modifier>
                                         <modifier field="name" join=" " type="prepend" value="{R}">
                                           <conditions>
-                                            <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                                            <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                                           </conditions>
                                         </modifier>
                                         <modifier field="name" join=" " type="prepend" value="{T}">
                                           <conditions>
-                                            <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                                            <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                                           </conditions>
                                         </modifier>
                                         <modifier field="name" join=" " type="prepend" value="{C}">
                                           <conditions>
-                                            <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                                            <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                                           </conditions>
                                         </modifier>
                                       </modifiers>
@@ -24151,7 +24151,7 @@ Repair and Rearm (Action): At the end of your Shooting phase, one AIRCRAFT unit 
           <entryLinks>
             <entryLink name="Heavy Bolter" id="5fd0-1f5b-a3f1-52cf" collective="true" hidden="false" import="true" targetId="05ab-e7cc-e856-c36f" type="selectionEntry">
               <categoryLinks>
-                <categoryLink name="Sponsor-mounted" id="ab41-ffe8-8c5f-ba70" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                <categoryLink name="{L} Limited angle Side facing" id="ab41-ffe8-8c5f-ba70" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
               </categoryLinks>
               <constraints>
                 <constraint id="0324-0c0d-f81d-ff22" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="4"/>
@@ -24236,7 +24236,7 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
           <selectionEntries>
             <selectionEntry name="Redemption Missile Silo" id="625e-b06c-17c3-784c" collective="false" hidden="false" import="true" type="upgrade">
               <categoryLinks>
-                <categoryLink name="Turret-mounted" id="1d52-d912-41fb-c241" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                <categoryLink name="{T} Turret-mount" id="1d52-d912-41fb-c241" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
               </categoryLinks>
               <constraints>
                 <constraint id="6b64-aa95-e2b5-9901" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -24277,27 +24277,27 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                         </modifier>
                         <modifier field="name" join=" " type="prepend" value="{S}">
                           <conditions>
-                            <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                            <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                           </conditions>
                         </modifier>
                         <modifier field="name" join=" " type="prepend" value="{L}">
                           <conditions>
-                            <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                            <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                           </conditions>
                         </modifier>
                         <modifier field="name" join=" " type="prepend" value="{R}">
                           <conditions>
-                            <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                            <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                           </conditions>
                         </modifier>
                         <modifier field="name" join=" " type="prepend" value="{T}">
                           <conditions>
-                            <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                            <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                           </conditions>
                         </modifier>
                         <modifier field="name" join=" " type="prepend" value="{C}">
                           <conditions>
-                            <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                            <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                           </conditions>
                         </modifier>
                       </modifiers>
@@ -24329,27 +24329,27 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                         </modifier>
                         <modifier field="name" join=" " type="prepend" value="{S}">
                           <conditions>
-                            <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                            <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                           </conditions>
                         </modifier>
                         <modifier field="name" join=" " type="prepend" value="{L}">
                           <conditions>
-                            <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                            <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                           </conditions>
                         </modifier>
                         <modifier field="name" join=" " type="prepend" value="{R}">
                           <conditions>
-                            <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                            <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                           </conditions>
                         </modifier>
                         <modifier field="name" join=" " type="prepend" value="{T}">
                           <conditions>
-                            <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                            <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                           </conditions>
                         </modifier>
                         <modifier field="name" join=" " type="prepend" value="{C}">
                           <conditions>
-                            <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                            <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                           </conditions>
                         </modifier>
                       </modifiers>
@@ -24361,7 +24361,7 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
             <selectionEntry name="Redemption Icarus Lascannons" id="d16d-33fd-66f2-9549" collective="false" hidden="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink name="Laser Weapon" id="ea42-016a-709d-06ff" hidden="false" primary="false" targetId="f74f-8bb9-7448-707c"/>
-                <categoryLink name="Turret-mounted" id="e5bb-7d50-7ed0-7e15" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                <categoryLink name="{T} Turret-mount" id="e5bb-7d50-7ed0-7e15" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
               </categoryLinks>
               <constraints>
                 <constraint id="103b-a649-4d69-1ee7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -24402,27 +24402,27 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                         </modifier>
                         <modifier field="name" join=" " type="prepend" value="{S}">
                           <conditions>
-                            <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                            <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                           </conditions>
                         </modifier>
                         <modifier field="name" join=" " type="prepend" value="{L}">
                           <conditions>
-                            <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                            <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                           </conditions>
                         </modifier>
                         <modifier field="name" join=" " type="prepend" value="{R}">
                           <conditions>
-                            <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                            <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                           </conditions>
                         </modifier>
                         <modifier field="name" join=" " type="prepend" value="{T}">
                           <conditions>
-                            <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                            <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                           </conditions>
                         </modifier>
                         <modifier field="name" join=" " type="prepend" value="{C}">
                           <conditions>
-                            <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                            <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                           </conditions>
                         </modifier>
                       </modifiers>
@@ -24525,7 +24525,7 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
           <selectionEntryGroups>
             <selectionEntryGroup name="Primary Weapon" id="f0de-f077-5ed8-680d" collective="false" defaultSelectionEntryId="59be-7ab6-1bf4-b31a" hidden="false" import="true">
               <categoryLinks>
-                <categoryLink name="Turret-mounted" id="5458-f499-755b-5664" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                <categoryLink name="{T} Turret-mount" id="5458-f499-755b-5664" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
               </categoryLinks>
               <constraints>
                 <constraint id="63f1-dfbb-319d-26d0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -24545,7 +24545,7 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                     <categoryLink name="Blast" id="deae-8ea9-25b4-e391" hidden="false" primary="false" targetId="a30d-0055-6710-6284"/>
                     <categoryLink name="Splash" id="87c5-6055-752e-3d42" hidden="false" primary="false" targetId="a1e8-34a8-13a9-7a54"/>
                     <categoryLink name="Indirect fire" id="58ce-b543-8447-efec" hidden="false" primary="false" targetId="9f18-f587-3245-07e5"/>
-                    <categoryLink name="[T] Turret-mount" id="c8d5-0a5f-e1a6-b2b7" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                    <categoryLink name="{T} Turret-mount" id="c8d5-0a5f-e1a6-b2b7" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
                   </categoryLinks>
                   <costs>
                     <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -24582,27 +24582,27 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                             </modifier>
                             <modifier field="name" join=" " type="prepend" value="{S}">
                               <conditions>
-                                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                               </conditions>
                             </modifier>
                             <modifier field="name" join=" " type="prepend" value="{L}">
                               <conditions>
-                                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                               </conditions>
                             </modifier>
                             <modifier field="name" join=" " type="prepend" value="{R}">
                               <conditions>
-                                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                               </conditions>
                             </modifier>
                             <modifier field="name" join=" " type="prepend" value="{T}">
                               <conditions>
-                                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                               </conditions>
                             </modifier>
                             <modifier field="name" join=" " type="prepend" value="{C}">
                               <conditions>
-                                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                               </conditions>
                             </modifier>
                           </modifiers>
@@ -24634,27 +24634,27 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
                             </modifier>
                             <modifier field="name" join=" " type="prepend" value="{S}">
                               <conditions>
-                                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                               </conditions>
                             </modifier>
                             <modifier field="name" join=" " type="prepend" value="{L}">
                               <conditions>
-                                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                               </conditions>
                             </modifier>
                             <modifier field="name" join=" " type="prepend" value="{R}">
                               <conditions>
-                                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                               </conditions>
                             </modifier>
                             <modifier field="name" join=" " type="prepend" value="{T}">
                               <conditions>
-                                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                               </conditions>
                             </modifier>
                             <modifier field="name" join=" " type="prepend" value="{C}">
                               <conditions>
-                                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="parent" shared="true" type="instanceOf" value="1"/>
+                                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
                               </conditions>
                             </modifier>
                           </modifiers>
@@ -24743,7 +24743,7 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
           <selectionEntryGroups>
             <selectionEntryGroup name="Turret Weapon" id="93ec-9da2-6085-32ac" collective="false" defaultSelectionEntryId="4dba-49e3-5909-32b6" hidden="false" import="true">
               <categoryLinks>
-                <categoryLink name="Turret-mounted" id="8abf-fb2b-e9bd-6cde" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                <categoryLink name="{T} Turret-mount" id="8abf-fb2b-e9bd-6cde" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
               </categoryLinks>
               <constraints>
                 <constraint id="87b2-c495-aa70-c27d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -24772,7 +24772,7 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
           <entryLinks>
             <entryLink name="Heavy Bolter" id="c242-69dc-a0e2-33ab" collective="true" hidden="false" import="true" targetId="05ab-e7cc-e856-c36f" type="selectionEntry">
               <categoryLinks>
-                <categoryLink name="Sponsor-mounted" id="0e46-1bfa-4da6-dad1" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                <categoryLink name="{L} Limited angle Side facing" id="0e46-1bfa-4da6-dad1" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
               </categoryLinks>
               <constraints>
                 <constraint id="34b6-a096-131d-6854" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="4"/>
@@ -24842,7 +24842,7 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
           <selectionEntryGroups>
             <selectionEntryGroup name="Turret Weapon" id="b033-393d-0118-5520" collective="false" hidden="false" import="true">
               <categoryLinks>
-                <categoryLink name="Turret-mounted" id="46a4-62d9-f751-3ce9" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                <categoryLink name="{T} Turret-mount" id="46a4-62d9-f751-3ce9" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
               </categoryLinks>
               <constraints>
                 <constraint id="f20c-d4ea-7f3f-70f9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -24955,7 +24955,7 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
           <entryLinks>
             <entryLink name="Heavy Bolter" id="0e6b-21a5-b87b-cab5" collective="true" hidden="false" import="true" targetId="05ab-e7cc-e856-c36f" type="selectionEntry">
               <categoryLinks>
-                <categoryLink name="Sponsor-mounted" id="8a2f-dae2-2b12-f2eb" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                <categoryLink name="{L} Limited angle Side facing" id="8a2f-dae2-2b12-f2eb" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
               </categoryLinks>
               <constraints>
                 <constraint id="c3c9-d6e5-c695-36bc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="4"/>
@@ -25216,7 +25216,7 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
           <selectionEntryGroups>
             <selectionEntryGroup name="Turret Weapons" id="2182-3f5d-4ebb-ba2d" collective="false" defaultSelectionEntryId="cf30-3392-2000-4645" hidden="false" import="true">
               <categoryLinks>
-                <categoryLink name="Turret-mounted" id="e1a2-0778-d9a7-afa3" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                <categoryLink name="{T} Turret-mount" id="e1a2-0778-d9a7-afa3" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
               </categoryLinks>
               <constraints>
                 <constraint id="b572-abf5-9447-9ff5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -25390,7 +25390,7 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapon option" id="5b43-ef13-aab0-5296" collective="false" hidden="false" import="true">
                   <categoryLinks>
-                    <categoryLink name="Turret-mounted" id="6eed-1951-cc22-dba5" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                    <categoryLink name="{T} Turret-mount" id="6eed-1951-cc22-dba5" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
                   </categoryLinks>
                   <constraints>
                     <constraint id="9d06-cf4e-88d4-f228" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
