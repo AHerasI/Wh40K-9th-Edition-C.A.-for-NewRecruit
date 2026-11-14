@@ -10121,19 +10121,32 @@ At the start of your Command phase, you can select one of the following:
           </constraints>
           <entryLinks>
             <entryLink name="Quad projectile launcher" id="3816-69f9-aee4-1d31" collective="false" hidden="false" import="true" targetId="99ec-b1a2-470f-60ab" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{H} Fixed-mount" id="9c74-983a-90e5-96ba" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="20"/>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
               </costs>
             </entryLink>
             <entryLink name="Twin Lascannon" id="56a9-9aa9-4e5e-0230" collective="false" hidden="false" import="true" targetId="ee18-b1cd-6b60-464d" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{H} Fixed-mount" id="b59b-1e7a-ff57-e1f8" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10"/>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
               </costs>
             </entryLink>
-            <entryLink name="Quad Heavy Bolter" id="2420-5b82-06d6-3c3c" collective="false" hidden="false" import="true" targetId="4e52-2999-2c4f-403d" type="selectionEntry"/>
+            <entryLink name="Quad Heavy Bolter" id="2420-5b82-06d6-3c3c" collective="false" hidden="false" import="true" targetId="4e52-2999-2c4f-403d" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{H} Fixed-mount" id="448c-c44d-49b6-832e" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+              </categoryLinks>
+            </entryLink>
             <entryLink name="Plasma cannon" id="c7eb-b69b-351d-6de8" collective="false" hidden="false" import="true" targetId="eb15-db61-5d4f-b65e" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{H} Fixed-mount" id="e6e4-f667-8038-169e" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="15"/>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -15244,6 +15257,9 @@ Each JUMP PACK, TERMINATOR or POSSESSED model takes the space of two other model
                   </constraints>
                   <entryLinks>
                     <entryLink name="Storm Bolter" id="afbd-05c0-3b33-8f5e" collective="false" hidden="false" import="true" targetId="2b03-8d64-3711-f300" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{T} Turret-mount" id="1bc5-bc2f-4810-b90d" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="4e2a-c645-2453-9c9f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -15271,6 +15287,9 @@ Each JUMP PACK, TERMINATOR or POSSESSED model takes the space of two other model
                       </costs>
                       <entryLinks>
                         <entryLink name="Twin Lascannon" id="7a94-5f54-2889-46bd" collective="false" hidden="false" import="true" targetId="ee18-b1cd-6b60-464d" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{S} Side facing" id="25a0-0ffc-e4e9-38fd" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                          </categoryLinks>
                           <constraints>
                             <constraint id="f6bc-d3a9-8d92-fcfe" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                             <constraint id="ed5b-3f00-0068-b792" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -15286,6 +15305,9 @@ Each JUMP PACK, TERMINATOR or POSSESSED model takes the space of two other model
                   </constraints>
                   <entryLinks>
                     <entryLink name="Multi-melta" id="7e55-0a41-b464-b574" collective="false" hidden="false" import="true" targetId="2b37-65ee-9443-b4ef" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{T} Turret-mount" id="2d40-36b5-dd59-6cfc" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="182d-755e-c6a1-7090" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -15302,6 +15324,9 @@ Each JUMP PACK, TERMINATOR or POSSESSED model takes the space of two other model
                   </constraints>
                   <entryLinks>
                     <entryLink name="Heavy Bolter" id="47fd-4d64-86ca-7a7b" collective="false" hidden="false" import="true" targetId="05ab-e7cc-e856-c36f" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{F} Front facing" id="7410-e060-071f-7b79" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="a26a-d295-da09-c464" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                         <constraint id="226b-06ef-9715-ef5a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -15353,6 +15378,9 @@ Each JUMP PACK, TERMINATOR or POSSESSED model takes the space of two other model
                   </constraints>
                   <entryLinks>
                     <entryLink name="Storm Bolter" id="b4d7-9e49-981a-2c84" collective="false" hidden="false" import="true" targetId="2b03-8d64-3711-f300" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{T} Turret-mount" id="7654-83e7-3882-8d3f" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="8f4e-f479-100e-f3fd" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -15380,6 +15408,9 @@ Each JUMP PACK, TERMINATOR or POSSESSED model takes the space of two other model
                       </costs>
                       <entryLinks>
                         <entryLink name="Twin Multi-melta" id="df2b-cf8c-0961-880b" collective="false" hidden="false" import="true" targetId="d496-bdd5-426e-3e80" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{S} Side facing" id="e25d-efae-ec28-4b40" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                          </categoryLinks>
                           <constraints>
                             <constraint id="d94d-98dd-bba8-934f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                             <constraint id="8cea-b438-109c-e54a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -15399,6 +15430,9 @@ Each JUMP PACK, TERMINATOR or POSSESSED model takes the space of two other model
                       </costs>
                       <entryLinks>
                         <entryLink name="Twin Volkite Culebrin" id="3a4e-b108-2dbf-7aa8" collective="false" hidden="false" import="true" targetId="3123-289e-b924-31de" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{S} Side facing" id="e75a-7ea7-e6a7-e29c" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                          </categoryLinks>
                           <constraints>
                             <constraint id="3b48-492f-0af3-2435" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                             <constraint id="edb9-3af3-eb36-2247" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -15420,6 +15454,9 @@ Each JUMP PACK, TERMINATOR or POSSESSED model takes the space of two other model
                   </constraints>
                   <entryLinks>
                     <entryLink name="Quad projectile launcher" id="7675-084f-87ed-411d" collective="false" hidden="false" import="true" targetId="99ec-b1a2-470f-60ab" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{F} Front facing" id="3c8a-826c-e46c-8d74" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="bb61-b6be-dd10-9480" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                         <constraint id="535c-04f4-ecfb-ae8b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -15470,6 +15507,9 @@ Each JUMP PACK, TERMINATOR or POSSESSED model takes the space of two other model
                   </constraints>
                   <entryLinks>
                     <entryLink name="Storm Bolter" id="63a6-ad5e-3976-8bb5" collective="false" hidden="false" import="true" targetId="2b03-8d64-3711-f300" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{T} Turret-mount" id="c42e-3fd7-1e85-6b11" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="0583-b810-1167-29c8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -15497,6 +15537,9 @@ Each JUMP PACK, TERMINATOR or POSSESSED model takes the space of two other model
                       </costs>
                       <entryLinks>
                         <entryLink name="Twin Lascannon" id="fb85-ace7-2317-e6bb" collective="false" hidden="false" import="true" targetId="ee18-b1cd-6b60-464d" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{S} Side facing" id="02be-8514-679f-029e" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                          </categoryLinks>
                           <constraints>
                             <constraint id="5aa8-e9f3-aa83-f213" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                             <constraint id="efca-c87e-1b41-ed2c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -15542,11 +15585,17 @@ Each JUMP PACK, TERMINATOR or POSSESSED model takes the space of two other model
                   </constraints>
                   <entryLinks>
                     <entryLink name="Heavy Bolter" id="cd4a-8dd9-2674-00a6" collective="false" hidden="false" import="true" targetId="05ab-e7cc-e856-c36f" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{F} Front facing" id="5f64-6378-e36c-4d41" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="15e5-5bf4-5a80-83b0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
                     </entryLink>
                     <entryLink name="Multi-melta" id="3c4a-3d81-ed3b-f3f5" collective="false" hidden="false" import="true" targetId="2b37-65ee-9443-b4ef" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{F} Front facing" id="42a7-a80e-304d-7626" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="711d-6f62-0755-4bdc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -15555,6 +15604,9 @@ Each JUMP PACK, TERMINATOR or POSSESSED model takes the space of two other model
                       </costs>
                     </entryLink>
                     <entryLink name="Twin Heavy Bolter" id="3ad5-1579-bd0f-2013" collective="false" hidden="false" import="true" targetId="09d8-7790-ed3f-4d6d" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{F} Front facing" id="f6bf-830e-3791-6322" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="11d2-d0a9-f34d-975a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -15563,6 +15615,9 @@ Each JUMP PACK, TERMINATOR or POSSESSED model takes the space of two other model
                       </costs>
                     </entryLink>
                     <entryLink name="Twin Heavy Flamer" id="c60a-a8a3-c482-32a0" collective="false" hidden="false" import="true" targetId="8d70-a6af-cbad-f08c" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{F} Front facing" id="604d-6008-7f01-9e36" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="1fe3-5f89-5dec-c624" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -15630,6 +15685,9 @@ Each JUMP PACK or TERMINATOR model takes the space of two other models and each 
                   </constraints>
                   <entryLinks>
                     <entryLink name="Storm Bolter" id="7b84-7794-709f-82bb" collective="false" hidden="false" import="true" targetId="2b03-8d64-3711-f300" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{T} Turret-mount" id="d7cd-a9db-e3f6-8b8f" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="aede-e6b1-1837-e4e6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -15657,6 +15715,9 @@ Each JUMP PACK or TERMINATOR model takes the space of two other models and each 
                       </costs>
                       <entryLinks>
                         <entryLink name="Twin Lascannon" id="f3c5-6076-79ea-5fcc" collective="false" hidden="false" import="true" targetId="ee18-b1cd-6b60-464d" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{S} Side facing" id="6107-b2ad-a849-fe1d" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                          </categoryLinks>
                           <constraints>
                             <constraint id="83ad-6bc3-bebc-a6e4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                             <constraint id="e0ce-26e1-759e-029c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -15685,6 +15746,9 @@ Each JUMP PACK or TERMINATOR model takes the space of two other models and each 
                       </costs>
                       <entryLinks>
                         <entryLink name="Vengeance launcher" id="35a9-0874-0397-b055" collective="false" hidden="false" import="true" targetId="79a5-23f2-b542-a73f" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{T} Turret-mount" id="775e-7e00-2073-f185" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                          </categoryLinks>
                           <constraints>
                             <constraint id="8785-5edd-a55d-e0ea" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                             <constraint id="c2e8-c503-dbc6-2583" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -15740,6 +15804,9 @@ Each JUMP PACK or TERMINATOR model takes the space of two other models and each 
                   </constraints>
                   <entryLinks>
                     <entryLink name="Storm Bolter" id="5000-8d2e-376f-5029" collective="false" hidden="false" import="true" targetId="2b03-8d64-3711-f300" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{T} Turret-mount" id="cb57-35db-171b-f0ac" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="5"/>
                       </costs>
@@ -15761,6 +15828,9 @@ Each JUMP PACK or TERMINATOR model takes the space of two other models and each 
                       </costs>
                       <entryLinks>
                         <entryLink name="Twin Lascannon" id="13d6-eff2-e172-26fa" collective="false" hidden="false" import="true" targetId="ee18-b1cd-6b60-464d" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{S} Side facing" id="01c1-5fec-b374-177d" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                          </categoryLinks>
                           <constraints>
                             <constraint id="d7b1-d152-3526-1dbe" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                             <constraint id="268b-e358-104f-e34a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -15777,6 +15847,9 @@ Each JUMP PACK or TERMINATOR model takes the space of two other models and each 
                       </costs>
                       <entryLinks>
                         <entryLink name="Twin Multi-melta" id="143a-1cf8-c5ec-e517" collective="false" hidden="false" import="true" targetId="d496-bdd5-426e-3e80" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{S} Side facing" id="311a-35bc-bf8f-573c" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                          </categoryLinks>
                           <constraints>
                             <constraint id="0d29-6d44-432c-3154" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                             <constraint id="8a16-6fac-3c28-6405" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -15792,6 +15865,9 @@ Each JUMP PACK or TERMINATOR model takes the space of two other models and each 
                   </constraints>
                   <entryLinks>
                     <entryLink name="Multi-melta" id="2f8e-62b4-a4cd-d74a" collective="false" hidden="false" import="true" targetId="2b37-65ee-9443-b4ef" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{T} Turret-mount" id="0ba4-fd6a-2530-7d92" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="10"/>
                       </costs>
@@ -15804,7 +15880,11 @@ Each JUMP PACK or TERMINATOR model takes the space of two other models and each 
                     <constraint id="fadb-78bb-2b11-c4a2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Demolisher cannon" id="915a-4e42-599a-9aef" collective="false" hidden="false" import="true" targetId="1f7e-32c4-61af-510f" type="selectionEntry"/>
+                    <entryLink name="Demolisher cannon" id="915a-4e42-599a-9aef" collective="false" hidden="false" import="true" targetId="1f7e-32c4-61af-510f" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{H} Fixed-mount" id="8df0-1abc-dad0-c120" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+                      </categoryLinks>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -19706,6 +19786,9 @@ Until the end of the phase, add 1 to the Strength characteristic of models in th
       </costs>
       <entryLinks>
         <entryLink name="Avenger Mega-bolter" id="6a35-1aec-f76d-e2e9" collective="false" hidden="false" import="true" targetId="5074-2a44-6c58-4c3f" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{H} Fixed-mount" id="ecf1-b2de-c530-cea2" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+          </categoryLinks>
           <constraints>
             <constraint id="925f-042c-2972-c85b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
             <constraint id="5c01-dda7-9104-4645" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
@@ -19779,6 +19862,9 @@ Until the end of the phase, add 1 to the Strength characteristic of models in th
               </costs>
               <entryLinks>
                 <entryLink name="Twin Autocannon" id="5c06-335b-5105-df94" collective="false" hidden="false" import="true" targetId="afe0-3771-1982-92b4" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{S} Side facing" id="8a3b-8ca4-23a9-b7dd" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="c9bd-1998-866d-0b57" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                     <constraint id="1c50-e43c-cb9b-b55e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -19798,6 +19884,9 @@ Until the end of the phase, add 1 to the Strength characteristic of models in th
               </costs>
               <entryLinks>
                 <entryLink name="Twin Heavy Bolter" id="6a9a-ee1b-f2a7-5a13" collective="false" hidden="false" import="true" targetId="09d8-7790-ed3f-4d6d" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{S} Side facing" id="f95f-275f-8ec0-952e" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="201e-9cdc-a477-9a6b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="4"/>
                     <constraint id="b885-df95-7bf7-edbc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="4"/>
@@ -19825,6 +19914,9 @@ Until the end of the phase, add 1 to the Strength characteristic of models in th
               </costs>
               <entryLinks>
                 <entryLink name="Twin Missile launcher" id="3878-c74a-c87d-9651" collective="false" hidden="false" import="true" targetId="0627-01f6-427d-0f11" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="4873-deea-71da-062b" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="bb28-3068-25ad-3ba0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                     <constraint id="2786-587e-2062-6054" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -19844,6 +19936,9 @@ Until the end of the phase, add 1 to the Strength characteristic of models in th
               </costs>
               <entryLinks>
                 <entryLink name="Twin Lascannon" id="3977-5bde-9e7d-311a" collective="false" hidden="false" import="true" targetId="ee18-b1cd-6b60-464d" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{H} Fixed-mount" id="5048-879c-2f2d-3f50" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="e112-02cc-98ca-c2a1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                     <constraint id="be87-6a6a-e314-485f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -20136,6 +20231,9 @@ Until the end of the phase, add 1 to the Strength characteristic of models in th
       </costs>
       <entryLinks>
         <entryLink name="Vengeance launcher" id="f090-8787-ed3d-aa86" collective="false" hidden="false" import="true" targetId="79a5-23f2-b542-a73f" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{T} Turret-mount" id="26c4-ec16-452a-1358" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+          </categoryLinks>
           <constraints>
             <constraint id="3668-44ab-a7d5-55dd" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
           </constraints>
@@ -20205,11 +20303,17 @@ Until the end of the phase, add 1 to the Strength characteristic of models in th
           </constraints>
           <entryLinks>
             <entryLink name="Twin Heavy Bolter" id="32ad-abaf-ee6f-79c2" collective="false" hidden="false" import="true" targetId="09d8-7790-ed3f-4d6d" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="d97f-cd09-3abe-8f54" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="1202-48b3-bddc-1f87" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
             <entryLink name="Twin Missile launcher" id="1fdb-5d21-344a-fc4d" collective="false" hidden="false" import="true" targetId="0627-01f6-427d-0f11" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="374b-7992-9a1c-4525" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="91e1-0633-8ae8-673b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -20218,6 +20322,9 @@ Until the end of the phase, add 1 to the Strength characteristic of models in th
               </costs>
             </entryLink>
             <entryLink name="Twin Multi-melta" id="a0cc-df6f-530e-ff26" collective="false" hidden="false" import="true" targetId="d496-bdd5-426e-3e80" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{H} Fixed-mount" id="2153-129c-1f26-4cf2" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="8269-bbc8-80ee-3be2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -20242,6 +20349,9 @@ Until the end of the phase, add 1 to the Strength characteristic of models in th
               </costs>
               <entryLinks>
                 <entryLink name="Skyhammer missile launcher" id="ae1b-1d77-58fe-340c" collective="false" hidden="false" import="true" targetId="dc9d-4795-4788-d6e6" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="1243-9aed-1888-d732" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="78dd-849f-32b9-ac52" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                     <constraint id="ab33-18de-1754-fda5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -20261,6 +20371,9 @@ Until the end of the phase, add 1 to the Strength characteristic of models in th
               </costs>
               <entryLinks>
                 <entryLink name="Twin Lascannon" id="fabc-fdf3-c99b-a7e6" collective="false" hidden="false" import="true" targetId="ee18-b1cd-6b60-464d" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{H} Fixed-mount" id="296b-5726-133d-64c9" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="dd88-d3b2-8ae2-6637" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                     <constraint id="7e3d-3ad7-2fac-5015" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -20489,12 +20602,18 @@ Until the end of the phase, add 1 to the Strength characteristic of models in th
       </costs>
       <entryLinks>
         <entryLink name="Twin Lascannon" id="7a4e-8d02-d89f-2e44" collective="false" hidden="false" import="true" targetId="ee18-b1cd-6b60-464d" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{H} Fixed-mount" id="cf2a-7602-8394-dd74" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+          </categoryLinks>
           <constraints>
             <constraint id="6cf2-bafb-86bd-9b3e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
             <constraint id="157d-beb9-b5b4-60da" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
           </constraints>
         </entryLink>
         <entryLink name="Skyhammer missile launcher" id="58a6-de70-b410-efa6" collective="false" hidden="false" import="true" targetId="dc9d-4795-4788-d6e6" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{F} Front facing" id="4573-1e21-2f7b-bf52" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+          </categoryLinks>
           <constraints>
             <constraint id="01cf-a872-27d2-bcec" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="466f-d097-125c-caf7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -33486,11 +33605,17 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
                       </entryLinks>
                     </entryLink>
                     <entryLink name="Missile launcher" id="65e2-28bf-5e34-f856" collective="false" hidden="false" import="true" targetId="1469-1964-7a91-94d4" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="567b-5d48-14af-a605" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="10"/>
                       </costs>
                     </entryLink>
                     <entryLink name="Twin Autocannon" id="3d6b-cc9e-a033-e44d" collective="false" hidden="false" import="true" targetId="afe0-3771-1982-92b4" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="11b6-1ea7-68b2-e139" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="5"/>
                       </costs>
@@ -33503,35 +33628,57 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
                     <constraint id="1142-99b2-4a74-b268" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Assault cannon" id="7c50-5438-f5b0-e4db" collective="false" hidden="false" import="true" targetId="51b0-3d46-5af4-683e" type="selectionEntry"/>
+                    <entryLink name="Assault cannon" id="7c50-5438-f5b0-e4db" collective="false" hidden="false" import="true" targetId="51b0-3d46-5af4-683e" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="c458-73f2-52e6-12cf" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
+                    </entryLink>
                     <entryLink name="Multi-melta" id="654a-d34e-07d3-2f38" collective="false" hidden="false" import="true" targetId="2b37-65ee-9443-b4ef" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="3a5a-1c8b-e5b0-8317" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="10"/>
                       </costs>
                     </entryLink>
                     <entryLink name="Heavy Plasma cannon" id="1d0e-d97e-a468-3ce1" collective="false" hidden="false" import="true" targetId="221a-6109-61df-015e" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="a083-2668-1e09-7cb0" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="20"/>
                         <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
                       </costs>
                     </entryLink>
                     <entryLink name="Twin Lascannon" id="767f-0fed-487f-06f9" collective="false" hidden="false" import="true" targetId="ee18-b1cd-6b60-464d" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="09ef-5f50-8f4a-28ab" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="15"/>
                         <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
                       </costs>
                     </entryLink>
                     <entryLink name="Twin Autocannon" id="b40b-6cb6-82d2-6c0c" collective="false" hidden="false" import="true" targetId="afe0-3771-1982-92b4" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="a3cd-72a0-6a12-827b" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="5"/>
                       </costs>
                     </entryLink>
                     <entryLink name="Twin Heavy Bolter" id="2dab-ed60-c2b3-5483" collective="false" hidden="false" import="true" targetId="09d8-7790-ed3f-4d6d" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="a4a0-39b3-ae1b-c9ad" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="5"/>
                       </costs>
                     </entryLink>
                     <entryLink name="Twin Heavy Flamer" id="9e72-f19e-7759-7776" collective="false" hidden="false" import="true" targetId="8d70-a6af-cbad-f08c" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="dcc9-4677-287f-064c" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="5"/>
                       </costs>
@@ -33624,6 +33771,9 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
                       </constraints>
                     </entryLink>
                     <entryLink name="Twin Missile launcher" id="07fa-fe99-ff1c-440b" collective="false" hidden="false" import="true" targetId="0627-01f6-427d-0f11" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{F} Front facing" id="a495-64b5-9869-c461" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="9f2b-8cc4-3807-feef" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -33645,16 +33795,25 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
                         <entryLink name="Dreadnought mounted weapon" id="a598-fab3-2049-4308" collective="false" hidden="false" import="true" targetId="9d30-a23c-1ce5-c745" type="selectionEntryGroup">
                           <entryLinks>
                             <entryLink name="Meltagun" id="3aff-fb97-b1df-457c" collective="false" hidden="false" import="true" targetId="efc8-c51d-5b02-a3a2" type="selectionEntry">
+                              <categoryLinks>
+                                <categoryLink name="{L} Limited angle Side facing" id="eb06-70c2-d3dd-707e" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                              </categoryLinks>
                               <costs>
                                 <cost name="pts" typeId="points" value="10"/>
                               </costs>
                             </entryLink>
                             <entryLink name="Grav-Blaster" id="d605-6025-caf9-aaea" collective="false" hidden="false" import="true" targetId="c1e1-e958-ffdd-9be6" type="selectionEntry">
+                              <categoryLinks>
+                                <categoryLink name="{L} Limited angle Side facing" id="882b-efa5-80e6-3679" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                              </categoryLinks>
                               <costs>
                                 <cost name="pts" typeId="points" value="10"/>
                               </costs>
                             </entryLink>
                             <entryLink name="Plasma blaster" id="f2e2-fc1c-f013-894b" collective="false" hidden="false" import="true" targetId="5aaf-d2e4-ec59-0407" type="selectionEntry">
+                              <categoryLinks>
+                                <categoryLink name="{L} Limited angle Side facing" id="8a9f-fd3d-09df-a6a2" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                              </categoryLinks>
                               <costs>
                                 <cost name="pts" typeId="points" value="15"/>
                                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -33673,17 +33832,26 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
                         <entryLink name="Dreadnought mounted weapon" id="c78e-1425-9838-f838" collective="false" hidden="false" import="true" targetId="9d30-a23c-1ce5-c745" type="selectionEntryGroup">
                           <entryLinks>
                             <entryLink name="Meltagun" id="60a0-6342-43e5-ee6b" collective="false" hidden="false" import="true" targetId="efc8-c51d-5b02-a3a2" type="selectionEntry">
+                              <categoryLinks>
+                                <categoryLink name="{L} Limited angle Side facing" id="21bd-3609-e8c9-d576" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                              </categoryLinks>
                               <costs>
                                 <cost name="pts" typeId="points" value="10"/>
                               </costs>
                             </entryLink>
                             <entryLink name="Plasma blaster" id="c9ad-4e85-60c8-4410" collective="false" hidden="false" import="true" targetId="5aaf-d2e4-ec59-0407" type="selectionEntry">
+                              <categoryLinks>
+                                <categoryLink name="{L} Limited angle Side facing" id="09c0-713a-4024-8979" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                              </categoryLinks>
                               <costs>
                                 <cost name="pts" typeId="points" value="15"/>
                                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
                               </costs>
                             </entryLink>
                             <entryLink name="Grav-Blaster" id="f8ee-643f-9077-e57d" collective="false" hidden="false" import="true" targetId="c1e1-e958-ffdd-9be6" type="selectionEntry">
+                              <categoryLinks>
+                                <categoryLink name="{L} Limited angle Side facing" id="63ab-5c43-9378-89ea" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                              </categoryLinks>
                               <costs>
                                 <cost name="pts" typeId="points" value="10"/>
                               </costs>
@@ -33700,29 +33868,57 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
                     <constraint id="cc93-c930-274c-5f70" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Multi-melta" id="a783-71c6-87c6-7536" collective="false" hidden="false" import="true" targetId="2b37-65ee-9443-b4ef" type="selectionEntry"/>
+                    <entryLink name="Multi-melta" id="a783-71c6-87c6-7536" collective="false" hidden="false" import="true" targetId="2b37-65ee-9443-b4ef" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="e476-5657-f377-53ea" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
+                    </entryLink>
                     <entryLink name="Heavy Plasma cannon" id="daf2-3b6e-9749-7f0d" collective="false" hidden="false" import="true" targetId="221a-6109-61df-015e" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="73a8-7553-d413-0e0d" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="20"/>
                         <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Kheres-pattern Assault Cannon" id="b5b2-ae7d-5c5b-de1a" collective="false" hidden="false" import="true" targetId="db1d-3a08-13f2-72fa" type="selectionEntry"/>
+                    <entryLink name="Kheres-pattern Assault Cannon" id="b5b2-ae7d-5c5b-de1a" collective="false" hidden="false" import="true" targetId="db1d-3a08-13f2-72fa" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="a544-f78b-c5ca-6cab" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
+                    </entryLink>
                     <entryLink name="Conversion beam cannon" id="6102-902d-46d1-7e74" collective="false" hidden="false" import="true" targetId="62f8-165c-f44d-a2dd" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="0d0e-30a1-2937-ca83" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="20"/>
                         <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Twin Autocannon" id="21a3-cbc8-dce5-499d" collective="false" hidden="false" import="true" targetId="afe0-3771-1982-92b4" type="selectionEntry"/>
-                    <entryLink name="Twin Heavy Bolter" id="f3fd-19b2-9c65-9477" collective="false" hidden="false" import="true" targetId="09d8-7790-ed3f-4d6d" type="selectionEntry"/>
+                    <entryLink name="Twin Autocannon" id="21a3-cbc8-dce5-499d" collective="false" hidden="false" import="true" targetId="afe0-3771-1982-92b4" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="a703-e6b1-5782-84d0" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
+                    </entryLink>
+                    <entryLink name="Twin Heavy Bolter" id="f3fd-19b2-9c65-9477" collective="false" hidden="false" import="true" targetId="09d8-7790-ed3f-4d6d" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="ec6a-3853-359e-4ec8" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
+                    </entryLink>
                     <entryLink name="Twin Lascannon" id="8b61-0c63-6ac5-4a60" collective="false" hidden="false" import="true" targetId="ee18-b1cd-6b60-464d" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="d935-31d9-e8ef-41d5" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="15"/>
                         <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
                       </costs>
                     </entryLink>
                     <entryLink name="Twin Volkite Culebrin" id="07a6-efe4-1f0c-da9c" collective="false" hidden="false" import="true" targetId="3123-289e-b924-31de" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="23ec-b006-c961-b187" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="20"/>
                         <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -33804,6 +34000,9 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
                       </costs>
                       <entryLinks>
                         <entryLink name="Heavy Bolter" id="c255-191e-2099-be1a" collective="false" hidden="false" import="true" targetId="05ab-e7cc-e856-c36f" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{H} Fixed-mount" id="0d60-520c-729a-0c84" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+                          </categoryLinks>
                           <constraints>
                             <constraint id="6b55-73a0-aabf-3f8f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
                             <constraint id="0226-5f08-4aed-0b81" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
@@ -33823,6 +34022,9 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
                       </costs>
                       <entryLinks>
                         <entryLink name="Twin Volkite Culebrin" id="225d-37d5-47c6-ee40" collective="false" hidden="false" import="true" targetId="3123-289e-b924-31de" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{H} Fixed-mount" id="1721-0431-d4e6-135e" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+                          </categoryLinks>
                           <constraints>
                             <constraint id="1bcd-4996-321c-680a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                             <constraint id="4889-3262-3a95-fcff" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -33842,6 +34044,9 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
                       </costs>
                       <entryLinks>
                         <entryLink name="Heavy Flamer" id="7cbb-908b-ad02-c514" collective="false" hidden="false" import="true" targetId="18bc-b335-29c2-2ae2" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{H} Fixed-mount" id="e144-b8ac-ea45-ef13" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+                          </categoryLinks>
                           <constraints>
                             <constraint id="af93-129d-62e1-00a3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
                             <constraint id="a550-3f4f-a9b0-676a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
@@ -33862,6 +34067,9 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
                       </constraints>
                     </entryLink>
                     <entryLink name="Multiple Hunter-killer missile launcher" id="8722-3a50-a027-6d3b" collective="false" hidden="false" import="true" targetId="3c1f-8f02-513c-38cf" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{F} Front facing" id="2747-26a7-d66c-ab87" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="Pts" typeId="points" value="20"/>
                         <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -33877,13 +34085,23 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
                   </constraints>
                   <entryLinks>
                     <entryLink name="Cyclonic Melta Lance" id="8c52-1c81-5add-73a6" collective="false" hidden="false" import="true" targetId="19e6-46d2-b3d6-ce06" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="02ec-d830-b739-1d0e" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
                       <costs>
                         <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
                         <cost name="pts" typeId="points" value="20"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Storm Cannon Array" id="57a8-d493-b421-b99b" collective="false" hidden="false" import="true" targetId="c1ec-e3ed-394f-bc0c" type="selectionEntry"/>
+                    <entryLink name="Storm Cannon Array" id="57a8-d493-b421-b99b" collective="false" hidden="false" import="true" targetId="c1ec-e3ed-394f-bc0c" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="1be3-8cb8-91e1-9919" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
+                    </entryLink>
                     <entryLink name="Heavy Plasma cannon" id="40a8-51ea-70f6-c233" collective="false" hidden="false" import="true" targetId="221a-6109-61df-015e" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="dff1-0f90-350d-5c78" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
                       <costs>
                         <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
                         <cost name="pts" typeId="points" value="20"/>
@@ -33894,6 +34112,9 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
                         <entryLink name="Dreadnought mounted weapon" id="1003-cc45-3604-d7f9" collective="false" hidden="false" import="true" targetId="9d30-a23c-1ce5-c745" type="selectionEntryGroup">
                           <entryLinks>
                             <entryLink name="Meltagun" id="a9b5-0fc0-d143-44c8" collective="false" hidden="false" import="true" targetId="efc8-c51d-5b02-a3a2" type="selectionEntry">
+                              <categoryLinks>
+                                <categoryLink name="{L} Limited angle Side facing" id="d228-9162-8075-422f" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                              </categoryLinks>
                               <costs>
                                 <cost name="pts" typeId="points" value="10"/>
                                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -33908,6 +34129,9 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
                         <entryLink name="Dreadnought mounted weapon" id="2eb3-04be-41b4-7654" collective="false" hidden="false" import="true" targetId="9d30-a23c-1ce5-c745" type="selectionEntryGroup">
                           <entryLinks>
                             <entryLink name="Meltagun" id="49a6-6bf6-24de-5e78" collective="false" hidden="false" import="true" targetId="efc8-c51d-5b02-a3a2" type="selectionEntry">
+                              <categoryLinks>
+                                <categoryLink name="{L} Limited angle Side facing" id="f829-c927-afc9-80b3" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                              </categoryLinks>
                               <costs>
                                 <cost name="pts" typeId="points" value="10"/>
                                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -33927,6 +34151,9 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
                   </constraints>
                   <entryLinks>
                     <entryLink name="Cyclonic Melta Lance" id="d7a6-c761-d63b-e45e" collective="false" hidden="false" import="true" targetId="19e6-46d2-b3d6-ce06" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="ed1a-c07f-fbee-aef3" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
                       <costs>
                         <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
                         <cost name="pts" typeId="points" value="20"/>
@@ -33937,6 +34164,9 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
                         <entryLink name="Dreadnought mounted weapon" id="acf1-6cba-58b2-16d5" collective="false" hidden="false" import="true" targetId="9d30-a23c-1ce5-c745" type="selectionEntryGroup">
                           <entryLinks>
                             <entryLink name="Meltagun" id="68e7-367e-7abb-8771" collective="false" hidden="false" import="true" targetId="efc8-c51d-5b02-a3a2" type="selectionEntry">
+                              <categoryLinks>
+                                <categoryLink name="{L} Limited angle Side facing" id="46bc-4f2d-09b6-4429" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                              </categoryLinks>
                               <costs>
                                 <cost name="pts" typeId="points" value="10"/>
                                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -33951,6 +34181,9 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
                         <entryLink name="Dreadnought mounted weapon" id="0da2-c733-fdaa-e1c9" collective="false" hidden="false" import="true" targetId="9d30-a23c-1ce5-c745" type="selectionEntryGroup">
                           <entryLinks>
                             <entryLink name="Meltagun" id="768e-cead-d07a-ac8e" collective="false" hidden="false" import="true" targetId="efc8-c51d-5b02-a3a2" type="selectionEntry">
+                              <categoryLinks>
+                                <categoryLink name="{L} Limited angle Side facing" id="34b2-9d60-f772-01da" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                              </categoryLinks>
                               <costs>
                                 <cost name="pts" typeId="points" value="10"/>
                                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -33961,12 +34194,19 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
                       </entryLinks>
                     </entryLink>
                     <entryLink name="Heavy Plasma cannon" id="b1db-8908-50fa-643e" collective="false" hidden="false" import="true" targetId="221a-6109-61df-015e" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="85b0-5064-4e80-8b74" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
                       <costs>
                         <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
                         <cost name="pts" typeId="points" value="20"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Storm Cannon Array" id="fe25-a752-fb5a-2f54" collective="false" hidden="false" import="true" targetId="c1ec-e3ed-394f-bc0c" type="selectionEntry"/>
+                    <entryLink name="Storm Cannon Array" id="fe25-a752-fb5a-2f54" collective="false" hidden="false" import="true" targetId="c1ec-e3ed-394f-bc0c" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="63ff-8fba-5140-9150" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -34030,8 +34270,16 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
                     <constraint id="8508-cde6-7926-9a8f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Twin Heavy Flamer" id="d6b8-6e9b-f669-f142" collective="false" hidden="false" import="true" targetId="8d70-a6af-cbad-f08c" type="selectionEntry"/>
-                    <entryLink name="Twin Heavy Bolter" id="1aed-6e71-c894-f866" collective="false" hidden="false" import="true" targetId="09d8-7790-ed3f-4d6d" type="selectionEntry"/>
+                    <entryLink name="Twin Heavy Flamer" id="d6b8-6e9b-f669-f142" collective="false" hidden="false" import="true" targetId="8d70-a6af-cbad-f08c" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{H} Fixed-mount" id="fcfa-1ab4-9093-a1bb" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+                      </categoryLinks>
+                    </entryLink>
+                    <entryLink name="Twin Heavy Bolter" id="1aed-6e71-c894-f866" collective="false" hidden="false" import="true" targetId="09d8-7790-ed3f-4d6d" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{H} Fixed-mount" id="e978-87e1-1826-d977" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+                      </categoryLinks>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Dreadnought Caparace Systems" id="7afd-51ad-6667-72e6" collective="false" defaultSelectionEntryId="819d-cb8d-10b4-435d" hidden="false" import="true">
@@ -34053,12 +34301,18 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
                       </constraints>
                       <entryLinks>
                         <entryLink name="Heavy Missile launcher" id="6ab3-c72a-3133-9926" collective="false" hidden="false" import="true" targetId="cd63-9586-da03-ec49" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{F} Front facing" id="49e3-134f-b6b0-7721" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                          </categoryLinks>
                           <costs>
                             <cost name="pts" typeId="points" value="50"/>
                             <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
                           </costs>
                         </entryLink>
                         <entryLink name="Aiolos missile launcher" id="7686-2578-6e72-b784" collective="false" hidden="false" import="true" targetId="20ef-fa42-dd34-b29c" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{F} Front facing" id="daa9-8d6c-46ea-4db7" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                          </categoryLinks>
                           <costs>
                             <cost name="pts" typeId="points" value="10"/>
                           </costs>
@@ -34083,6 +34337,9 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
                       </costs>
                       <entryLinks>
                         <entryLink name="Anvillus Autocannon" id="25a3-a080-b405-3153" collective="false" hidden="false" import="true" targetId="a579-c888-6267-aa12" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{F} Front facing" id="e80e-2024-dbc6-9593" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                          </categoryLinks>
                           <constraints>
                             <constraint id="287c-e4f4-3ff1-2524" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="2"/>
                             <constraint id="1ddc-937e-dfc1-9f74" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="2"/>
@@ -34099,6 +34356,9 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
                       </costs>
                       <entryLinks>
                         <entryLink name="Arachnus Heavy Lascannon" id="b8aa-5043-eac0-2063" collective="false" hidden="false" import="true" targetId="5e5c-078a-3b64-0989" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{F} Front facing" id="a16c-8e0d-3158-0f2d" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                          </categoryLinks>
                           <constraints>
                             <constraint id="7a2e-a73c-26b3-2011" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="2"/>
                             <constraint id="ac4d-054e-9767-5238" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="2"/>
@@ -34115,6 +34375,9 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
                       </costs>
                       <entryLinks>
                         <entryLink name="Hellfire Plasma cannon" id="cf4c-4d27-a703-b48b" collective="false" hidden="false" import="true" targetId="5ca0-47c1-101b-5de3" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{F} Front facing" id="ffcc-6ade-3805-1ba3" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                          </categoryLinks>
                           <constraints>
                             <constraint id="152b-7e9a-edea-0c3b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="2"/>
                             <constraint id="8d64-9b3a-9202-ad22" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="2"/>
@@ -34131,6 +34394,9 @@ If that action is sucessfull, all the Force weapons this unit is bearing increme
                       </costs>
                       <entryLinks>
                         <entryLink name="Volkite Falconet" id="dd51-49b8-fbf1-256e" collective="false" hidden="false" import="true" targetId="d3c8-20ba-9149-269f" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{F} Front facing" id="f546-9a7a-40e3-0195" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                          </categoryLinks>
                           <constraints>
                             <constraint id="50c6-bedf-2d0b-78a8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="2"/>
                             <constraint id="2acd-0e77-63d1-11ce" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="2"/>
