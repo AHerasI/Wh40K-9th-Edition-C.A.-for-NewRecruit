@@ -2999,9 +2999,20 @@ If the result is equal or lesser than the current Battle round, HERETEK CULT uni
                 <constraint id="99de-bae6-1e7e-5793" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
               </constraints>
               <entryLinks>
-                <entryLink name="Lightning lock" id="b0b6-ecdb-3174-8809" collective="false" hidden="false" import="true" targetId="4ebf-3561-9092-da32" type="selectionEntry"/>
-                <entryLink name="Torsion cannon" id="abe0-4361-ed61-48fe" collective="false" hidden="false" import="true" targetId="e09d-ca49-be5e-ae25" type="selectionEntry"/>
+                <entryLink name="Lightning lock" id="b0b6-ecdb-3174-8809" collective="false" hidden="false" import="true" targetId="4ebf-3561-9092-da32" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="bc0b-a575-1863-bc42" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
+                </entryLink>
+                <entryLink name="Torsion cannon" id="abe0-4361-ed61-48fe" collective="false" hidden="false" import="true" targetId="e09d-ca49-be5e-ae25" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="f02d-9159-ea53-cae4" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
+                </entryLink>
                 <entryLink name="Xenotech Ion repeater" id="a232-cd41-f163-6bb0" collective="false" hidden="false" import="true" targetId="d7b7-5250-e830-89c2" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="a175-cdce-f2ff-20fd" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
                   <modifiers>
                     <modifier field="hidden" type="set" value="true">
                       <conditions>
@@ -3011,6 +3022,9 @@ If the result is equal or lesser than the current Battle round, HERETEK CULT uni
                   </modifiers>
                 </entryLink>
                 <entryLink name="Xenotech Missile launcher" id="7a87-8f67-b966-e0ce" collective="false" hidden="false" import="true" targetId="444d-7e1d-b968-28b9" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="3c02-5342-23f4-f38a" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
                   <modifiers>
                     <modifier field="hidden" type="set" value="true">
                       <conditions>
@@ -3020,6 +3034,9 @@ If the result is equal or lesser than the current Battle round, HERETEK CULT uni
                   </modifiers>
                 </entryLink>
                 <entryLink name="Xenotech Light Linear Accelerator" id="b5bf-0922-e798-2834" collective="false" hidden="false" import="true" targetId="d8ec-f79d-a49f-0e39" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="5889-00ba-3163-566e" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
                   <modifiers>
                     <modifier field="hidden" type="set" value="true">
                       <conditions>
@@ -3048,6 +3065,9 @@ If the result is equal or lesser than the current Battle round, HERETEK CULT uni
                   </costs>
                   <entryLinks>
                     <entryLink name="Havoc launcher" id="78c1-cffb-374b-3ba7" collective="false" hidden="false" import="true" targetId="be68-020b-cdcb-6a2c" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="1335-2547-61a2-ffa7" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="e7ed-1744-39bc-d8b8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="2"/>
                       </constraints>
@@ -3066,6 +3086,9 @@ If the result is equal or lesser than the current Battle round, HERETEK CULT uni
                   </costs>
                   <entryLinks>
                     <entryLink name="Autocannon" id="6868-314e-4f8c-d573" collective="false" hidden="false" import="true" targetId="714a-c683-29ac-afb9" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="27bb-d7e4-2028-0333" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="cfdd-c13a-64d5-f38d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="2"/>
                         <constraint id="880e-2109-6267-de12" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="2"/>
@@ -3082,6 +3105,9 @@ If the result is equal or lesser than the current Battle round, HERETEK CULT uni
                   </costs>
                   <entryLinks>
                     <entryLink name="Incendine combustor" id="14fc-5d21-441a-8569" collective="false" hidden="false" import="true" targetId="8d4f-a493-22f0-ef42" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="3120-2057-aef6-856c" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="a8d1-eb07-f5e0-5713" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="b9de-15e7-035c-c8b7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -3098,6 +3124,9 @@ If the result is equal or lesser than the current Battle round, HERETEK CULT uni
                   </costs>
                   <entryLinks>
                     <entryLink name="Xenotech Disintegrator Beam" id="9875-0e0d-f9e4-9d1a" collective="false" hidden="false" import="true" targetId="dfc1-212c-9a52-dc7a" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="9be8-7b65-dc78-010c" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="55c1-2c18-044b-5651" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="0659-7e97-ef8f-4c3d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -3121,6 +3150,9 @@ If the result is equal or lesser than the current Battle round, HERETEK CULT uni
                   </costs>
                   <entryLinks>
                     <entryLink name="Xenotech Flechette Autocannon" id="929a-0030-4733-bcf0" collective="false" hidden="false" import="true" targetId="2b4a-ca67-9764-e85e" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="2482-4450-7edc-aa88" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="4bc8-f55d-af1c-50ec" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="e585-0cbd-5233-3b2c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -3220,9 +3252,20 @@ If the result is equal or lesser than the current Battle round, HERETEK CULT uni
                 <constraint id="c6ac-1cd4-a807-2334" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
               </constraints>
               <entryLinks>
-                <entryLink name="Rad-Cleanser" id="1489-e21a-b001-7a9f" collective="false" hidden="false" import="true" targetId="2c77-c883-63d8-9eb2" type="selectionEntry"/>
-                <entryLink name="Incendine combustor" id="db17-e05d-1a27-cc8d" collective="false" hidden="false" import="true" targetId="8d4f-a493-22f0-ef42" type="selectionEntry"/>
+                <entryLink name="Rad-Cleanser" id="1489-e21a-b001-7a9f" collective="false" hidden="false" import="true" targetId="2c77-c883-63d8-9eb2" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="db4e-834e-eba7-2f06" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
+                </entryLink>
+                <entryLink name="Incendine combustor" id="db17-e05d-1a27-cc8d" collective="false" hidden="false" import="true" targetId="8d4f-a493-22f0-ef42" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="e3bb-facd-eea8-0217" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
+                </entryLink>
                 <entryLink name="Xenotech Disintegrator Beam" id="9ebc-4aa9-8e65-18a1" collective="false" hidden="false" import="true" targetId="dfc1-212c-9a52-dc7a" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="a1e7-5e1e-7962-12a2" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="10"/>
                     <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -3236,6 +3279,9 @@ If the result is equal or lesser than the current Battle round, HERETEK CULT uni
                   </modifiers>
                 </entryLink>
                 <entryLink name="Xenotech Light Warpcannon" id="2a5e-f2c3-aa23-3c62" collective="false" hidden="false" import="true" targetId="61b4-c95e-6ad8-4a79" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="bce8-a287-7203-f0ee" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
                   <modifiers>
                     <modifier field="hidden" type="set" value="true">
                       <conditions>
@@ -3260,8 +3306,16 @@ If the result is equal or lesser than the current Battle round, HERETEK CULT uni
                     <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                   </costs>
                   <entryLinks>
-                    <entryLink name="Bladed Assault Cannon" id="4a0b-0e87-5b33-279a" collective="false" hidden="false" import="true" targetId="23e5-b5fd-9972-d3a9" type="selectionEntry"/>
-                    <entryLink name="Bladed Assault Cannon" id="821e-22d4-2943-3883" collective="false" hidden="false" import="true" targetId="23e5-b5fd-9972-d3a9" type="selectionEntry"/>
+                    <entryLink name="Bladed Assault Cannon" id="4a0b-0e87-5b33-279a" collective="false" hidden="false" import="true" targetId="23e5-b5fd-9972-d3a9" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="2cff-9751-57ac-22c0" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
+                    </entryLink>
+                    <entryLink name="Bladed Assault Cannon" id="821e-22d4-2943-3883" collective="false" hidden="false" import="true" targetId="23e5-b5fd-9972-d3a9" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="100c-c10f-e8d7-4217" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
+                    </entryLink>
                   </entryLinks>
                   <infoLinks>
                     <infoLink name="Off-hand weapon" id="4c10-137a-c552-f942" hidden="false" targetId="e14b-37da-f8e9-1752" type="profile"/>
@@ -9062,7 +9116,11 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
                     <constraint id="74f8-628c-18fa-9edd" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Hellex-pattern Plasma mortar" id="a14c-3be1-d94f-9a52" collective="false" hidden="false" import="true" targetId="565b-10c7-2056-ad23" type="selectionEntry"/>
+                    <entryLink name="Hellex-pattern Plasma mortar" id="a14c-3be1-d94f-9a52" collective="false" hidden="false" import="true" targetId="565b-10c7-2056-ad23" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{H} Fixed-mount" id="db2a-128c-b2b3-22f0" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+                      </categoryLinks>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Left Arm weapon" id="318c-f86d-5e64-5af9" collective="false" defaultSelectionEntryId="fcff-39ba-6154-4919" hidden="false" import="true">
@@ -9071,7 +9129,11 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
                     <constraint id="913a-3701-155b-fd1f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Twin Mega-Bolter" id="fcff-39ba-6154-4919" collective="false" hidden="false" import="true" targetId="02af-1cb8-f7be-ef9c" type="selectionEntry"/>
+                    <entryLink name="Twin Mega-Bolter" id="fcff-39ba-6154-4919" collective="false" hidden="false" import="true" targetId="02af-1cb8-f7be-ef9c" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="8ed7-d0ab-db4f-0857" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Right Arm weapon" id="6e9e-24f7-9fe6-f2fd" collective="false" defaultSelectionEntryId="686a-b01f-f621-5b6e" hidden="false" import="true">
@@ -9103,8 +9165,15 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
                     <constraint id="b92d-551c-ecd8-23a9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Overcharged Laser Destructor" id="4d6b-df28-9faf-fca7" collective="false" hidden="false" import="true" targetId="b9a8-5ed5-1338-0c6b" type="selectionEntry"/>
+                    <entryLink name="Overcharged Laser Destructor" id="4d6b-df28-9faf-fca7" collective="false" hidden="false" import="true" targetId="b9a8-5ed5-1338-0c6b" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{F} Front facing" id="a689-6000-f192-607a" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                      </categoryLinks>
+                    </entryLink>
                     <entryLink name="Xenotech Heavy Linear Accelerator" id="cb79-5f65-5a55-43a0" collective="false" hidden="false" import="true" targetId="a293-1a6c-7b1c-d915" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{F} Front facing" id="0b66-96a5-262c-7659" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                      </categoryLinks>
                       <modifiers>
                         <modifier field="hidden" type="set" value="true">
                           <conditions>
@@ -9121,7 +9190,11 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
                     <constraint id="9be8-8d62-99be-71be" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Twin Mega-Bolter" id="8d95-e0ca-6461-0ec1" collective="false" hidden="false" import="true" targetId="02af-1cb8-f7be-ef9c" type="selectionEntry"/>
+                    <entryLink name="Twin Mega-Bolter" id="8d95-e0ca-6461-0ec1" collective="false" hidden="false" import="true" targetId="02af-1cb8-f7be-ef9c" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="8a8f-e4fd-10c0-8f22" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Right Arm weapon" id="a660-a0dd-29e5-69d4" collective="false" defaultSelectionEntryId="9efb-a78c-37e9-df11" hidden="false" import="true">
@@ -11336,8 +11409,15 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
             <constraint id="fbc6-66d0-0eb8-2dbb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Lightning cannon" id="28de-7bd4-8e8c-9908" collective="false" hidden="false" import="true" targetId="0aa7-525f-de61-f0b7" type="selectionEntry"/>
+            <entryLink name="Lightning cannon" id="28de-7bd4-8e8c-9908" collective="false" hidden="false" import="true" targetId="0aa7-525f-de61-f0b7" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{H} Fixed-mount" id="3866-25bd-5f38-37cc" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+              </categoryLinks>
+            </entryLink>
             <entryLink name="Neutron Projector" id="b5d3-e174-49ed-b7cb" collective="false" hidden="false" import="true" targetId="c063-a43f-5f5d-67e4" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{H} Fixed-mount" id="cca0-5b21-fbba-3f0d" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="60"/>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="3"/>
@@ -11355,6 +11435,9 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
               </modifierGroups>
             </entryLink>
             <entryLink name="Xenotech Warpcannon" id="ba53-2e41-1854-a68e" collective="false" hidden="false" import="true" targetId="df64-a2e8-c275-d19a" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{H} Fixed-mount" id="e25b-07ee-47ff-24a0" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+              </categoryLinks>
               <modifiers>
                 <modifier field="hidden" type="set" value="true">
                   <conditions>
@@ -11364,6 +11447,9 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
               </modifiers>
             </entryLink>
             <entryLink name="Xenotech Heavy Linear Accelerator" id="0015-9ea8-a1f9-4dfa" collective="false" hidden="false" import="true" targetId="a293-1a6c-7b1c-d915" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{H} Fixed-mount" id="25b0-0217-cba1-b7ca" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="60"/>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="3"/>
@@ -11377,6 +11463,9 @@ If this weapon targets a unit that has between 6 and 10 models, it always makes 
               </modifiers>
             </entryLink>
             <entryLink name="Hellex-pattern Plasma mortar" id="6843-cb28-8403-a6bb" collective="false" hidden="false" import="true" targetId="565b-10c7-2056-ad23" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{H} Fixed-mount" id="4d15-9a79-0fb1-f94b" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="60"/>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="3"/>
@@ -15897,9 +15986,6 @@ Each SERVITOR takes up the space of 2 models</characteristic>
           </profiles>
           <selectionEntryGroups>
             <selectionEntryGroup name="Ventral weapon" id="17aa-8f02-026a-59a8" collective="false" defaultSelectionEntryId="9588-1dd5-b90b-47fd" hidden="false" import="true">
-              <categoryLinks>
-                <categoryLink name="{F} Front facing" id="80af-f55a-e1bc-aabd" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
-              </categoryLinks>
               <constraints>
                 <constraint id="8a99-55c2-6ad5-d908" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
                 <constraint id="0bf1-3990-5a7e-f7a8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
@@ -15918,9 +16004,6 @@ Each SERVITOR takes up the space of 2 models</characteristic>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Sponsor weapons" id="0bf9-3201-17c6-a93b" collective="false" defaultSelectionEntryId="569b-7f1e-378f-40a8" hidden="false" import="true">
-              <categoryLinks>
-                <categoryLink name="{L} Limited angle Side facing" id="5312-7e12-cd2a-5579" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
-              </categoryLinks>
               <constraints>
                 <constraint id="b361-69bb-3f6d-1dc8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
                 <constraint id="3c18-6ae0-7a80-9103" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
@@ -15936,7 +16019,7 @@ Each SERVITOR takes up the space of 2 models</characteristic>
                   <entryLinks>
                     <entryLink name="Havoc launcher" id="d62a-85f9-5b2c-a485" collective="false" hidden="false" import="true" targetId="be68-020b-cdcb-6a2c" type="selectionEntry">
                       <categoryLinks>
-                        <categoryLink name="{F} Front facing" id="dbec-b9c4-47b1-c598" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                        <categoryLink name="{L} Limited angle Side facing" id="75f8-2148-bf41-8e38" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
                       </categoryLinks>
                       <constraints>
                         <constraint id="9cfe-4621-4ed2-883d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="2"/>
@@ -15957,7 +16040,7 @@ Each SERVITOR takes up the space of 2 models</characteristic>
                   <entryLinks>
                     <entryLink name="Autocannon" id="06d6-ff28-ae51-260b" collective="false" hidden="false" import="true" targetId="714a-c683-29ac-afb9" type="selectionEntry">
                       <categoryLinks>
-                        <categoryLink name="{F} Front facing" id="49ef-05ef-a8ff-f1e5" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                        <categoryLink name="{L} Limited angle Side facing" id="c5c7-ba25-7476-e9d4" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
                       </categoryLinks>
                       <constraints>
                         <constraint id="6f64-4c14-e1be-0fff" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="2"/>
@@ -15976,7 +16059,7 @@ Each SERVITOR takes up the space of 2 models</characteristic>
                   <entryLinks>
                     <entryLink name="Heavy Flamer" id="6ac5-ecf4-096e-ff9f" collective="false" hidden="false" import="true" targetId="18bc-b335-29c2-2ae2" type="selectionEntry">
                       <categoryLinks>
-                        <categoryLink name="{F} Front facing" id="7fc4-d756-fa3a-6581" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                        <categoryLink name="{L} Limited angle Side facing" id="0973-c2f5-c256-6082" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
                       </categoryLinks>
                       <constraints>
                         <constraint id="6bc9-1aa6-ea02-4e7b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
@@ -16377,8 +16460,16 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink name="Twin Lascannon" id="1a5b-afab-0942-9fc5" collective="false" hidden="false" targetId="94b1-fa6b-0de5-604f" type="selectionEntry"/>
-        <entryLink name="Skyhammer missile launcher" id="b4f8-07cd-1f06-47f5" collective="false" hidden="false" targetId="aaf6-698b-42c2-7e65" type="selectionEntry"/>
+        <entryLink name="Twin Lascannon" id="1a5b-afab-0942-9fc5" collective="false" hidden="false" targetId="94b1-fa6b-0de5-604f" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{H} Fixed-mount" id="8418-4c7f-f7a7-6067" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink name="Skyhammer missile launcher" id="b4f8-07cd-1f06-47f5" collective="false" hidden="false" targetId="aaf6-698b-42c2-7e65" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{F} Front facing" id="8218-922b-6264-aa07" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="High-altitude Flyer" id="d83a-5986-2591-c96d" hidden="false" targetId="d06a-b840-4ef0-aa2f" type="profile"/>
@@ -19704,6 +19795,9 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
           </profiles>
         </selectionEntry>
         <selectionEntry name="Kytan gatling cannon" id="4d95-1c90-91bd-89e3" collective="false" hidden="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink name="{L} Limited angle Side facing" id="986f-890f-7e71-a499" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+          </categoryLinks>
           <constraints>
             <constraint id="3a39-2221-b88f-8a64" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
             <constraint id="e152-643f-3b10-bfb4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
@@ -19715,7 +19809,7 @@ The first time this unit is selected to fight in each Fight phase, roll one D3: 
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
           <profiles>
-            <profile name="Hades gatling cannon" id="5193-76a7-a26d-3e1a" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+            <profile name="{L} Hades gatling cannon" id="5193-76a7-a26d-3e1a" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 8</characteristic>
@@ -20100,6 +20194,7 @@ Each model can only be corrupted once per turn.</characteristic>
                 <selectionEntry name="Magma cutter" id="d35f-ec02-6170-e383" collective="false" hidden="false" import="true" type="upgrade">
                   <categoryLinks>
                     <categoryLink name="Melta Weapon" id="cb41-2001-fb42-9473" hidden="false" primary="false" targetId="65dd-a3e7-b044-4659"/>
+                    <categoryLink name="{L} Limited angle Side facing" id="7eb2-2401-8c36-8f54" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
                   </categoryLinks>
                   <constraints>
                     <constraint id="5e72-1015-f8bb-1337" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="2"/>
@@ -20121,6 +20216,48 @@ Each model can only be corrupted once per turn.</characteristic>
                         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6+2</characteristic>
                         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
                       </characteristics>
+                      <modifierGroups>
+                        <modifierGroup type="and">
+                          <comment>Weapon tag</comment>
+                          <modifiers>
+                            <modifier field="name" join=" " type="prepend" value="{H}">
+                              <conditions>
+                                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" join=" " type="prepend" value="{F}">
+                              <conditions>
+                                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" join=" " type="prepend" value="{S}">
+                              <conditions>
+                                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" join=" " type="prepend" value="{L}">
+                              <conditions>
+                                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" join=" " type="prepend" value="{R}">
+                              <conditions>
+                                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" join=" " type="prepend" value="{T}">
+                              <conditions>
+                                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" join=" " type="prepend" value="{C}">
+                              <conditions>
+                                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </modifierGroup>
+                      </modifierGroups>
                     </profile>
                   </profiles>
                 </selectionEntry>
@@ -20818,11 +20955,17 @@ At the start of your Command phase, you can select one of the following:
           </constraints>
         </entryLink>
         <entryLink name="Hunter-killer missile launcher" id="014b-6bd5-bac2-6224" collective="false" hidden="false" import="true" targetId="76ce-74fa-9676-1a4b" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{H} Fixed-mount" id="2eea-2c99-bd7a-6df6" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+          </categoryLinks>
           <constraints>
             <constraint id="51d1-760c-caca-07d1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
         </entryLink>
         <entryLink name="Storm Bolter" id="f58e-000c-d189-fff0" collective="false" hidden="false" import="true" targetId="1485-8446-272d-20c2" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{T} Turret-mount" id="7782-c9ae-e3cd-4e9a" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+          </categoryLinks>
           <constraints>
             <constraint id="217f-627f-3efa-d133" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -20943,6 +21086,9 @@ At the start of your Command phase, you can select one of the following:
               </costs>
               <entryLinks>
                 <entryLink name="Heavy Bolter" id="5e9a-0270-cead-e3d9" collective="false" hidden="false" import="true" targetId="0d54-3fc7-faed-f9b3" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{S} Side facing" id="6b88-bd65-db6a-43d8" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="8a5d-1a88-015c-6301" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                     <constraint id="f7b3-bde4-3ebb-a69b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -20962,6 +21108,9 @@ At the start of your Command phase, you can select one of the following:
               </costs>
               <entryLinks>
                 <entryLink name="Lascannon" id="25be-52db-eaba-455a" collective="false" hidden="false" import="true" targetId="523b-986c-cd55-30d6" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{S} Side facing" id="3978-f2a3-e0ae-8bad" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="ca81-dc99-deda-325f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                     <constraint id="d4ac-f47b-f98a-067c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -20981,6 +21130,9 @@ At the start of your Command phase, you can select one of the following:
               </costs>
               <entryLinks>
                 <entryLink name="Autocannon" id="1e6a-5bde-b0b3-6a18" collective="false" hidden="false" import="true" targetId="714a-c683-29ac-afb9" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{S} Side facing" id="2316-a1fd-107e-68d6" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="70e0-9a61-8584-4e34" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                     <constraint id="2124-cfec-cff7-9483" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -21000,6 +21152,9 @@ At the start of your Command phase, you can select one of the following:
           </constraints>
           <entryLinks>
             <entryLink name="Xenotech Heavy Linear Accelerator" id="17b4-a2ac-dc03-7e37" collective="false" hidden="false" import="true" targetId="a293-1a6c-7b1c-d915" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="1498-1ab6-42ce-6503" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="60"/>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="3"/>
@@ -21015,6 +21170,9 @@ At the start of your Command phase, you can select one of the following:
           </entryLinks>
           <selectionEntries>
             <selectionEntry name="Hull-mounted Neutron Projector" id="9095-64ab-ae1e-9ffa" collective="false" hidden="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink name="{H} Fixed-mount" id="51aa-546f-59cb-a4ce" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+              </categoryLinks>
               <costs>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
@@ -21066,7 +21224,10 @@ At the start of your Command phase, you can select one of the following:
                 </infoLink>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry name="Heavy Gatling cannon" id="ef21-ff59-8ee3-0778" hidden="false" import="true" type="upgrade">
+            <selectionEntry name="Accelerated Gatling cannon" id="ef21-ff59-8ee3-0778" hidden="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="adb5-1bd0-811d-5150" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
               <costs>
                 <cost name="Pts" typeId="points" value="10"/>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -21078,8 +21239,7 @@ At the start of your Command phase, you can select one of the following:
                   <modifierGroups>
                     <modifierGroup type="and">
                       <modifiers>
-                        <modifier field="name" type="set" value="Heavy Gatling cannon"/>
-                        <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" type="set" value="Heavy 16"/>
+                        <modifier field="name" type="set" value="Accelerated Gatling cannon"/>
                       </modifiers>
                     </modifierGroup>
                   </modifierGroups>
@@ -21101,7 +21261,11 @@ At the start of your Command phase, you can select one of the following:
             <constraint id="ee7c-328f-b979-d1f0" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Heavy Bolter" id="60f3-5bd6-a461-b823" hidden="false" import="true" targetId="0d54-3fc7-faed-f9b3" type="selectionEntry"/>
+            <entryLink name="Heavy Bolter" id="60f3-5bd6-a461-b823" hidden="false" import="true" targetId="0d54-3fc7-faed-f9b3" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="5dbc-f57a-f2bb-5e1a" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -21261,29 +21425,38 @@ At the start of your Command phase, you can select one of the following:
               </profiles>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Hatch weapon" id="7a7f-bdc4-be2b-2ce9" collective="false" hidden="false" import="true">
-                  <categoryLinks>
-                    <categoryLink name="{T} Turret-mount" id="af75-836b-d1a7-0e02" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
-                  </categoryLinks>
                   <constraints>
                     <constraint id="f803-2eff-8023-4c28" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <entryLinks>
                     <entryLink name="Storm Bolter" id="ed7f-6784-97da-57dd" collective="false" hidden="false" import="true" targetId="1485-8446-272d-20c2" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{T} Turret-mount" id="1506-b93c-7f33-d462" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="5"/>
                       </costs>
                     </entryLink>
                     <entryLink name="Heavy Bolter" id="76ba-7c81-2e7b-6a2c" collective="false" hidden="false" import="true" targetId="0d54-3fc7-faed-f9b3" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{T} Turret-mount" id="eb8f-f972-6567-9fb8" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="10"/>
                       </costs>
                     </entryLink>
                     <entryLink name="Heavy Flamer" id="f6a6-2f2e-9a6d-6772" collective="false" hidden="false" import="true" targetId="23ec-f17c-15a4-dce8" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{T} Turret-mount" id="3a69-d856-23e4-b051" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="15"/>
                       </costs>
                     </entryLink>
                     <entryLink name="Multi-melta" id="53d0-c3f4-a3bd-4358" collective="false" hidden="false" import="true" targetId="2b37-65ee-9443-b4ef" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{T} Turret-mount" id="c86e-7ad5-0f64-c839" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="20"/>
                         <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -21292,9 +21465,6 @@ At the start of your Command phase, you can select one of the following:
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Sponsor Weapon selection" id="1aca-54dd-0241-ae6e" collective="false" hidden="false" import="true">
-                  <categoryLinks>
-                    <categoryLink name="{L} Limited angle Side facing" id="0014-973c-02ef-97f7" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
-                  </categoryLinks>
                   <constraints>
                     <constraint id="b1a4-b808-7e8d-9bcc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                     <constraint id="7896-f65d-1aba-33c5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -21309,6 +21479,9 @@ At the start of your Command phase, you can select one of the following:
                       </costs>
                       <entryLinks>
                         <entryLink name="Quad Lascannon" id="535b-7ef9-d1c5-38b8" collective="false" hidden="false" import="true" targetId="fdf6-388f-1692-eb4b" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{S} Side facing" id="be21-31e1-f57f-aadb" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                          </categoryLinks>
                           <constraints>
                             <constraint id="7e35-595e-c2cc-e166" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                             <constraint id="5000-9dea-0c07-3e3d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -21325,6 +21498,9 @@ At the start of your Command phase, you can select one of the following:
                       </costs>
                       <entryLinks>
                         <entryLink name="Heavy Laser Destroyer" id="42dc-f83a-3a6a-ca1d" collective="false" hidden="false" import="true" targetId="da6b-07c5-0338-f539" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{S} Side facing" id="4eb9-3594-f76c-5b76" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                          </categoryLinks>
                           <constraints>
                             <constraint id="ae73-4d22-9146-2dde" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                             <constraint id="c254-f028-e012-e54f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -21335,16 +21511,20 @@ At the start of your Command phase, you can select one of the following:
                   </selectionEntries>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Front Weapon selection" id="395d-a8b3-e206-f8f4" collective="false" hidden="false" import="true">
-                  <categoryLinks>
-                    <categoryLink name="{F} Front facing" id="169c-83f2-3cb4-4844" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
-                  </categoryLinks>
                   <constraints>
                     <constraint id="1ae7-e1a6-260d-251f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                     <constraint id="a240-ed7f-2fe2-c368" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Heavy Bolter" id="e2e5-9356-0d40-b98b" collective="false" hidden="false" import="true" targetId="0d54-3fc7-faed-f9b3" type="selectionEntry"/>
+                    <entryLink name="Heavy Bolter" id="e2e5-9356-0d40-b98b" collective="false" hidden="false" import="true" targetId="0d54-3fc7-faed-f9b3" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{F} Front facing" id="e898-93f8-9222-1aa9" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                      </categoryLinks>
+                    </entryLink>
                     <entryLink name="Heavy Flamer" id="63fa-7054-e71b-cbb8" collective="false" hidden="false" import="true" targetId="23ec-f17c-15a4-dce8" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{F} Front facing" id="672d-0985-861e-2fb3" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="5"/>
                       </costs>
@@ -21377,29 +21557,38 @@ At the start of your Command phase, you can select one of the following:
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Hatch weapon" id="d3d1-af44-a33a-b20f" collective="false" hidden="false" import="true">
-                  <categoryLinks>
-                    <categoryLink name="{T} Turret-mount" id="15cb-6bba-1f05-caaa" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
-                  </categoryLinks>
                   <constraints>
                     <constraint id="24ff-da43-3b12-b743" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <entryLinks>
                     <entryLink name="Storm Bolter" id="0c1f-1e7e-fb0c-97c3" collective="false" hidden="false" import="true" targetId="1485-8446-272d-20c2" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{T} Turret-mount" id="db97-552b-32b9-ee1c" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="5"/>
                       </costs>
                     </entryLink>
                     <entryLink name="Heavy Bolter" id="361d-0d9e-583e-e5dc" collective="false" hidden="false" import="true" targetId="0d54-3fc7-faed-f9b3" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{T} Turret-mount" id="6710-a064-5cac-e452" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="10"/>
                       </costs>
                     </entryLink>
                     <entryLink name="Heavy Flamer" id="147f-708f-eec5-e2c5" collective="false" hidden="false" import="true" targetId="23ec-f17c-15a4-dce8" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{T} Turret-mount" id="e657-45d6-d8df-7abc" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="15"/>
                       </costs>
                     </entryLink>
                     <entryLink name="Multi-melta" id="4307-5948-e763-2903" collective="false" hidden="false" import="true" targetId="2b37-65ee-9443-b4ef" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{T} Turret-mount" id="6cd7-2ba7-50ee-f9f0" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="20"/>
                         <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -21408,9 +21597,6 @@ At the start of your Command phase, you can select one of the following:
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Sponsor Weapon selection" id="ce9c-16ae-c24a-63d2" collective="false" hidden="false" import="true">
-                  <categoryLinks>
-                    <categoryLink name="{L} Limited angle Side facing" id="7512-ee50-53c0-6d04" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
-                  </categoryLinks>
                   <constraints>
                     <constraint id="d235-8343-e592-f18f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                     <constraint id="f5ae-e1b4-c44b-c6f6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -21425,6 +21611,9 @@ At the start of your Command phase, you can select one of the following:
                       </costs>
                       <entryLinks>
                         <entryLink name="Heavy Bolter" id="4dc9-7c33-995d-935d" collective="false" hidden="false" import="true" targetId="0d54-3fc7-faed-f9b3" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{S} Side facing" id="0ec1-6175-60b0-a265" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                          </categoryLinks>
                           <constraints>
                             <constraint id="9559-4327-51e7-3743" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                             <constraint id="d107-f469-1502-fa2b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -21441,6 +21630,9 @@ At the start of your Command phase, you can select one of the following:
                       </costs>
                       <entryLinks>
                         <entryLink name="Laser Destroyer" id="69dd-9411-a511-a11c" collective="false" hidden="false" import="true" targetId="a31b-b29c-2dfa-a4fc" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{S} Side facing" id="b43a-112f-cea8-f82b" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                          </categoryLinks>
                           <constraints>
                             <constraint id="0dfc-5528-c4ac-8b40" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                             <constraint id="4661-329a-2184-8ac3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -21459,7 +21651,11 @@ At the start of your Command phase, you can select one of the following:
                     <constraint id="2e32-553c-427b-c6f2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Neutron Projector" id="7274-823f-4d30-16fd" collective="false" hidden="false" import="true" targetId="c063-a43f-5f5d-67e4" type="selectionEntry"/>
+                    <entryLink name="Neutron Projector" id="7274-823f-4d30-16fd" collective="false" hidden="false" import="true" targetId="c063-a43f-5f5d-67e4" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{H} Fixed-mount" id="26fd-dcfd-31a9-944b" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+                      </categoryLinks>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -21488,29 +21684,38 @@ At the start of your Command phase, you can select one of the following:
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Hatch weapon" id="ecf8-505e-1e7f-6c69" collective="false" hidden="false" import="true">
-                  <categoryLinks>
-                    <categoryLink name="{T} Turret-mount" id="c43f-9a45-0dfc-6610" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
-                  </categoryLinks>
                   <constraints>
                     <constraint id="af4b-dcb1-1678-7791" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <entryLinks>
                     <entryLink name="Storm Bolter" id="cb10-b740-8620-36c2" collective="false" hidden="false" import="true" targetId="1485-8446-272d-20c2" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{T} Turret-mount" id="2e07-e8b0-16bb-0f8b" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="5"/>
                       </costs>
                     </entryLink>
                     <entryLink name="Heavy Bolter" id="e680-41ff-0890-ec43" collective="false" hidden="false" import="true" targetId="0d54-3fc7-faed-f9b3" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{T} Turret-mount" id="a336-055b-cdeb-66b2" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="10"/>
                       </costs>
                     </entryLink>
                     <entryLink name="Heavy Flamer" id="07b0-5966-8c47-3dd7" collective="false" hidden="false" import="true" targetId="23ec-f17c-15a4-dce8" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{T} Turret-mount" id="98fd-93a4-7312-95d3" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="15"/>
                       </costs>
                     </entryLink>
                     <entryLink name="Multi-melta" id="f367-a037-83b9-dba5" collective="false" hidden="false" import="true" targetId="2b37-65ee-9443-b4ef" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{T} Turret-mount" id="1f0f-7ea7-491a-a9eb" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="20"/>
                         <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -21519,9 +21724,6 @@ At the start of your Command phase, you can select one of the following:
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Sponsor Weapon selection" id="3f1a-5174-ee72-fd99" collective="false" hidden="false" import="true">
-                  <categoryLinks>
-                    <categoryLink name="{L} Limited angle Side facing" id="cf1b-0d06-4d1a-43d4" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
-                  </categoryLinks>
                   <constraints>
                     <constraint id="e36f-ee24-2efe-bb21" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                     <constraint id="c219-92ce-975b-dc32" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -21536,6 +21738,9 @@ At the start of your Command phase, you can select one of the following:
                       </costs>
                       <entryLinks>
                         <entryLink name="Heavy Bolter" id="6e78-2f9d-9527-ff73" collective="false" hidden="false" import="true" targetId="0d54-3fc7-faed-f9b3" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{S} Side facing" id="d4ea-0d4e-91bf-00f3" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                          </categoryLinks>
                           <constraints>
                             <constraint id="e358-410d-a980-819f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                             <constraint id="b107-ac9a-0a7c-d79b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -21552,6 +21757,9 @@ At the start of your Command phase, you can select one of the following:
                       </costs>
                       <entryLinks>
                         <entryLink name="Laser Destroyer" id="f765-5168-a51c-9a9c" collective="false" hidden="false" import="true" targetId="a31b-b29c-2dfa-a4fc" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{S} Side facing" id="0475-4873-901f-7735" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                          </categoryLinks>
                           <constraints>
                             <constraint id="cd9b-3b61-0ae7-91a4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                             <constraint id="894d-64de-37ee-acac" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -21562,15 +21770,15 @@ At the start of your Command phase, you can select one of the following:
                   </selectionEntries>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Front Weapon selection" id="8ae4-a9ac-f5fa-d640" collective="false" hidden="false" import="true">
-                  <categoryLinks>
-                    <categoryLink name="{F} Front facing" id="1cc5-1885-1441-65a3" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
-                  </categoryLinks>
                   <constraints>
                     <constraint id="dbcd-29ab-bd19-56a3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                     <constraint id="ef7b-f6b8-45c2-a5ba" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <selectionEntries>
                     <selectionEntry name="Heavy Demolisher Cannon" id="2211-683e-7785-ddc4" collective="false" hidden="false" import="true" type="upgrade">
+                      <categoryLinks>
+                        <categoryLink name="{H} Fixed-mount" id="6438-7f2e-054c-dd30" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
@@ -21616,6 +21824,9 @@ At the start of your Command phase, you can select one of the following:
       </costs>
       <entryLinks>
         <entryLink name="Vengeance launcher" id="6638-fcae-8aff-61ee" collective="false" hidden="false" import="true" targetId="79a5-23f2-b542-a73f" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{T} Turret-mount" id="9a17-d038-5da7-4dec" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+          </categoryLinks>
           <constraints>
             <constraint id="393a-af8f-4c8c-303d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
           </constraints>
@@ -21726,11 +21937,17 @@ At the start of your Command phase, you can select one of the following:
           </constraints>
           <entryLinks>
             <entryLink name="Twin Heavy Bolter" id="a417-0423-7f6c-ed12" collective="false" hidden="false" import="true" targetId="b5f6-da12-be29-dac1" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="d2f0-2583-c0a7-2ce9" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="5e32-9fb7-cc08-f32f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
             <entryLink name="Twin Missile launcher" id="f22c-0d70-e477-797b" collective="false" hidden="false" import="true" targetId="0627-01f6-427d-0f11" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="b807-886d-6153-fec0" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="989b-4daa-6a71-c7fc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -21739,6 +21956,9 @@ At the start of your Command phase, you can select one of the following:
               </costs>
             </entryLink>
             <entryLink name="Twin Multi-melta" id="ad5a-c2b3-2dd8-973c" collective="false" hidden="false" import="true" targetId="d496-bdd5-426e-3e80" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{H} Fixed-mount" id="7d0e-f67c-1f5e-65a8" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="15ef-a96d-035d-ae21" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -21764,6 +21984,9 @@ At the start of your Command phase, you can select one of the following:
               </costs>
               <entryLinks>
                 <entryLink name="Skyhammer missile launcher" id="5bb9-84f9-c0d0-7168" collective="false" hidden="false" import="true" targetId="dc9d-4795-4788-d6e6" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="d2de-b396-ea91-885c" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="6d9f-d2ad-ce92-d92f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                     <constraint id="c66e-cae4-4f52-714f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -21783,6 +22006,9 @@ At the start of your Command phase, you can select one of the following:
               </costs>
               <entryLinks>
                 <entryLink name="Twin Lascannon" id="9704-8a69-da1b-9c1d" collective="false" hidden="false" import="true" targetId="94b1-fa6b-0de5-604f" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{H} Fixed-mount" id="7a17-dce4-4698-0def" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="7f9e-c8b0-5b1a-430c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                     <constraint id="03c5-2afd-4fd1-f55e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -22085,7 +22311,7 @@ At the start of your Command phase, you can select one of the following:
         </selectionEntry>
         <selectionEntry name="Excruciator cannon" id="fdb5-10b1-1a82-3fc9" collective="false" hidden="false" import="true" type="upgrade">
           <categoryLinks>
-            <categoryLink name="{F} Front facing" id="a6f4-90bf-2c10-fc6e" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+            <categoryLink name="{L} Limited angle Side facing" id="3890-bf7c-fefe-4deb" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
           </categoryLinks>
           <constraints>
             <constraint id="63df-e255-5507-5bae" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="2"/>
@@ -22098,7 +22324,7 @@ At the start of your Command phase, you can select one of the following:
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
           <profiles>
-            <profile name="Excruciator cannon" id="def4-9d24-ced8-d96b" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+            <profile name="{L} Excruciator cannon" id="def4-9d24-ced8-d96b" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 3</characteristic>
