@@ -489,23 +489,35 @@ Each time a unit with this ability kills an enemy model with a melee attack, it 
           </constraints>
           <entryLinks>
             <entryLink name="Overcharged Laser Destructor" id="110b-b42a-5b81-5efd" collective="false" hidden="false" import="true" targetId="0ddf-18b1-7b80-2b49" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{L} Limited angle Side facing" id="7109-01e1-9e30-7629" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+              </categoryLinks>
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="2"/>
                 <cost name="pts" typeId="points" value="40"/>
               </costs>
             </entryLink>
             <entryLink name="Plasma Blastgun" id="e665-1f95-a7a1-de12" collective="false" hidden="false" import="true" targetId="314c-5091-8227-6fe5" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{L} Limited angle Side facing" id="c6bb-68e3-0aec-5900" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="60"/>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="3"/>
               </costs>
             </entryLink>
-            <entryLink name="Twin Vulcan Mega-Bolter" id="ac19-0f74-62d5-ec14" collective="false" hidden="false" import="true" targetId="18fb-9baf-44c7-bb47" type="selectionEntry"/>
+            <entryLink name="Twin Vulcan Mega-Bolter" id="ac19-0f74-62d5-ec14" collective="false" hidden="false" import="true" targetId="18fb-9baf-44c7-bb47" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{L} Limited angle Side facing" id="6d17-7b1f-b4bd-2d24" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
           <selectionEntries>
             <selectionEntry name="Heavy Inferno flame cannon" id="5f00-ae51-01d2-7634" collective="false" hidden="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink name="Torrent" id="fe83-598f-5e48-92e1" hidden="false" primary="false" targetId="795f-a8d3-dc18-cb2e"/>
+                <categoryLink name="Flame Weapon" id="6517-11ad-a69f-94ce" hidden="false" primary="false" targetId="dbad-8265-94be-9c47"/>
+                <categoryLink name="{L} Limited angle Side facing" id="6fde-302f-a8b8-f02a" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
               </categoryLinks>
               <costs>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -523,6 +535,48 @@ Each time a unit with this ability kills an enemy model with a melee attack, it 
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                     <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent.</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Weapon tag</comment>
+                      <modifiers>
+                        <modifier field="name" join=" " type="prepend" value="{H}">
+                          <conditions>
+                            <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{F}">
+                          <conditions>
+                            <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{S}">
+                          <conditions>
+                            <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{L}">
+                          <conditions>
+                            <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{R}">
+                          <conditions>
+                            <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{T}">
+                          <conditions>
+                            <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{C}">
+                          <conditions>
+                            <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
             </selectionEntry>
@@ -1291,10 +1345,26 @@ Each time a unit with this ability kills an enemy model with a melee attack, it 
             <constraint id="be0c-2bdc-ceb0-6fe5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Twin Plasma Blastgun" id="7fc4-eb29-5f2f-cbef" collective="false" hidden="false" import="true" targetId="8f61-e1c2-9fb1-b492" type="selectionEntry"/>
-            <entryLink name="Volcano Lance" id="0cec-b919-55f2-c1ad" collective="false" hidden="false" import="true" targetId="0a0f-f929-fbaf-1989" type="selectionEntry"/>
-            <entryLink name="Heavy Multi-laser Revolver cannon" id="4427-ea9e-041d-60f3" collective="false" hidden="false" import="true" targetId="7d24-0af3-65b7-a6db" type="selectionEntry"/>
-            <entryLink name="Twin Overcharged Laser Destructor" id="da20-0911-581e-b082" collective="false" hidden="false" import="true" targetId="8bc2-e1fe-720b-3260" type="selectionEntry"/>
+            <entryLink name="Twin Plasma Blastgun" id="7fc4-eb29-5f2f-cbef" collective="false" hidden="false" import="true" targetId="8f61-e1c2-9fb1-b492" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{L} Limited angle Side facing" id="37b0-a691-012f-f92f" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink name="Volcano Lance" id="0cec-b919-55f2-c1ad" collective="false" hidden="false" import="true" targetId="0a0f-f929-fbaf-1989" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{L} Limited angle Side facing" id="6058-3ce2-923a-a879" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink name="Heavy Multi-laser Revolver cannon" id="4427-ea9e-041d-60f3" collective="false" hidden="false" import="true" targetId="7d24-0af3-65b7-a6db" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{L} Limited angle Side facing" id="8361-0811-07f9-747d" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink name="Twin Overcharged Laser Destructor" id="da20-0911-581e-b082" collective="false" hidden="false" import="true" targetId="8bc2-e1fe-720b-3260" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{L} Limited angle Side facing" id="1ce6-f88f-5e90-ec79" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Carapace Weapon" id="5fb9-1cd4-a767-2476" collective="false" defaultSelectionEntryId="4172-9cf4-5c51-2c55" hidden="false" import="true">
@@ -1304,6 +1374,9 @@ Each time a unit with this ability kills an enemy model with a melee attack, it 
           </constraints>
           <entryLinks>
             <entryLink name="Quake cannon" id="4172-9cf4-5c51-2c55" collective="false" hidden="false" import="true" targetId="6795-18fd-1dfd-c81d" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="3956-469d-2299-e823" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <profiles>
                 <profile name="Unwieldy" id="e865-8e98-c822-bb64" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
@@ -1313,6 +1386,9 @@ Each time a unit with this ability kills an enemy model with a melee attack, it 
               </profiles>
             </entryLink>
             <entryLink name="Heavy Volcano Lance" id="9f0d-2bf5-d1f4-7e48" collective="false" hidden="false" import="true" targetId="38a1-8eaa-3973-5f3b" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="d32d-fe1d-821c-a9af" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="100"/>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="5"/>
@@ -1336,7 +1412,11 @@ Each time a unit with this ability kills an enemy model with a melee attack, it 
             <constraint id="0b44-98c7-2b36-1923" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="3"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Vulcan Mega-Bolter" id="8c66-ae57-2aff-c071" collective="false" hidden="false" import="true" targetId="dc1e-6352-6493-5571" type="selectionEntry"/>
+            <entryLink name="Vulcan Mega-Bolter" id="8c66-ae57-2aff-c071" collective="false" hidden="false" import="true" targetId="dc1e-6352-6493-5571" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="aa14-c308-574f-f31e" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="AA turrets" id="e158-8383-fc96-d09c" collective="false" defaultSelectionEntryId="5d63-1671-7e84-6279" hidden="false" import="true">
@@ -1348,7 +1428,11 @@ Each time a unit with this ability kills an enemy model with a melee attack, it 
             <constraint id="bbc5-430c-d268-8148" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Icarus Twin Accelerator Autocannon" id="5d63-1671-7e84-6279" collective="false" hidden="false" import="true" targetId="8cc8-d9e1-9f3b-50de" type="selectionEntry"/>
+            <entryLink name="Icarus Twin Accelerator Autocannon" id="5d63-1671-7e84-6279" collective="false" hidden="false" import="true" targetId="8cc8-d9e1-9f3b-50de" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="2dbe-c07a-564a-af15" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1551,14 +1635,29 @@ Each time a unit with this ability kills an enemy model with a melee attack, it 
           </constraints>
           <entryLinks>
             <entryLink name="Plasma Anihilator" id="049b-afa4-70ce-96b1" collective="false" hidden="false" import="true" targetId="11cf-71d7-129d-263e" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{L} Limited angle Side facing" id="9e15-08c2-8711-af4c" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="100"/>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="20"/>
               </costs>
             </entryLink>
-            <entryLink name="Heavy Volcano Lance" id="2fa6-bf88-21c7-211b" collective="false" hidden="false" import="true" targetId="38a1-8eaa-3973-5f3b" type="selectionEntry"/>
-            <entryLink name="Macro Multi-laser Revolver cannon" id="aace-7939-3bda-7c34" collective="false" hidden="false" import="true" targetId="38f2-7d73-1cb6-bc0f" type="selectionEntry"/>
-            <entryLink name="Quake cannon" id="2c98-32d8-b46c-7d10" collective="false" hidden="false" import="true" targetId="6795-18fd-1dfd-c81d" type="selectionEntry"/>
+            <entryLink name="Heavy Volcano Lance" id="2fa6-bf88-21c7-211b" collective="false" hidden="false" import="true" targetId="38a1-8eaa-3973-5f3b" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{L} Limited angle Side facing" id="e279-fe98-5773-8ec3" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink name="Macro Multi-laser Revolver cannon" id="aace-7939-3bda-7c34" collective="false" hidden="false" import="true" targetId="38f2-7d73-1cb6-bc0f" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{L} Limited angle Side facing" id="6f67-fc34-8851-a969" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink name="Quake cannon" id="2c98-32d8-b46c-7d10" collective="false" hidden="false" import="true" targetId="6795-18fd-1dfd-c81d" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{L} Limited angle Side facing" id="532b-94f3-aab8-7a3c" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Carapace weapons" id="d0ce-91ed-0a38-ee3c" collective="false" defaultSelectionEntryId="a266-8242-a29a-2e1e" hidden="false" import="true">
@@ -1567,8 +1666,15 @@ Each time a unit with this ability kills an enemy model with a melee attack, it 
             <constraint id="4a88-3f80-b4db-1fde" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Apocalypse launcher" id="a266-8242-a29a-2e1e" collective="false" hidden="false" import="true" targetId="715e-277e-4e84-c5d5" type="selectionEntry"/>
+            <entryLink name="Apocalypse launcher" id="a266-8242-a29a-2e1e" collective="false" hidden="false" import="true" targetId="715e-277e-4e84-c5d5" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="1af6-ac0c-067c-ce34" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
+            </entryLink>
             <entryLink name="Overcharged Laser Destructor" id="cb1d-6f36-a6ca-a4cc" collective="false" hidden="false" import="true" targetId="0ddf-18b1-7b80-2b49" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="dcd3-0d7f-f694-2573" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <profiles>
                 <profile name="Unwieldy" id="ac04-8e39-fcc3-5c20" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
@@ -1588,7 +1694,11 @@ Each time a unit with this ability kills an enemy model with a melee attack, it 
             <constraint id="c93e-4f14-8708-9f5a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Icarus Twin Lascannon" id="32bc-a492-074b-2f19" collective="false" hidden="false" import="true" targetId="2e50-f562-c0df-3e83" type="selectionEntry"/>
+            <entryLink name="Icarus Twin Lascannon" id="32bc-a492-074b-2f19" collective="false" hidden="false" import="true" targetId="2e50-f562-c0df-3e83" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="afbd-843c-092b-5e91" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Point-defence turrets" id="5f08-891b-43b8-7d24" collective="false" defaultSelectionEntryId="1c1e-151e-601f-17ec" hidden="false" import="true">
@@ -1600,7 +1710,11 @@ Each time a unit with this ability kills an enemy model with a melee attack, it 
             <constraint id="8822-1eb4-a831-40c5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Vulcan Mega-Bolter" id="1c1e-151e-601f-17ec" collective="false" hidden="false" import="true" targetId="dc1e-6352-6493-5571" type="selectionEntry"/>
+            <entryLink name="Vulcan Mega-Bolter" id="1c1e-151e-601f-17ec" collective="false" hidden="false" import="true" targetId="dc1e-6352-6493-5571" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="40d0-eeab-1d36-6a1a" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1770,6 +1884,9 @@ Each time a unit with this ability kills an enemy model with a melee attack, it 
           </constraints>
           <entryLinks>
             <entryLink name="Twin Plasma Anihilator" id="a525-0ac8-877e-da82" collective="false" hidden="false" import="true" targetId="f494-f22f-766b-f1ae" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{L} Limited angle Side facing" id="2fac-0003-64d7-9347" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="300"/>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="15"/>
@@ -1817,6 +1934,9 @@ Each time a unit with this ability kills an enemy model with a melee attack, it 
               </costs>
               <entryLinks>
                 <entryLink name="Field gun" id="541d-f225-e209-822b" collective="false" hidden="false" import="true" targetId="fd50-2858-1b7d-fcf2" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{T} Turret-mount" id="6f35-8428-645e-69bb" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="1adc-6dd3-02cd-30c5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                     <constraint id="5d8d-42cc-8cfe-f473" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -1833,6 +1953,9 @@ Each time a unit with this ability kills an enemy model with a melee attack, it 
               </costs>
               <entryLinks>
                 <entryLink name="Twin Heavy Autocannon" id="ed00-a32e-5ccb-9d6e" collective="false" hidden="false" import="true" targetId="3d80-09da-5fa8-677f" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{T} Turret-mount" id="0ea9-acfd-6d7d-66f3" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="4886-8998-8ba1-2264" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                     <constraint id="ba8f-2abf-9ad1-f9c4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -1860,6 +1983,9 @@ Each time a unit with this ability kills an enemy model with a melee attack, it 
               </costs>
               <entryLinks>
                 <entryLink name="Twin Lascannon" id="abec-7134-e567-0bbe" collective="false" hidden="false" import="true" targetId="ee18-b1cd-6b60-464d" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="23f4-9043-3673-6581" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="011a-ae78-f761-b46b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                     <constraint id="a69a-fde5-af24-cca2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -1876,6 +2002,9 @@ Each time a unit with this ability kills an enemy model with a melee attack, it 
               </costs>
               <entryLinks>
                 <entryLink name="Twin Missile launcher" id="231a-f279-99ba-fc0b" collective="false" hidden="false" import="true" targetId="0627-01f6-427d-0f11" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="881a-0b60-1fd2-5fbd" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="fa40-b100-9286-5e80" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                     <constraint id="d194-0413-c5bb-c12e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -1891,8 +2020,15 @@ Each time a unit with this ability kills an enemy model with a melee attack, it 
             <constraint id="5ce3-ee80-a7d2-f5f0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Apocalypse launcher" id="de89-148b-ce81-a082" collective="false" hidden="false" import="true" targetId="715e-277e-4e84-c5d5" type="selectionEntry"/>
+            <entryLink name="Apocalypse launcher" id="de89-148b-ce81-a082" collective="false" hidden="false" import="true" targetId="715e-277e-4e84-c5d5" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="ea6b-bb8f-3f85-b4fc" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
+            </entryLink>
             <entryLink name="Overcharged Laser Destructor" id="e7ff-0465-167e-1cc1" collective="false" hidden="false" import="true" targetId="0ddf-18b1-7b80-2b49" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="833c-61a4-ccf3-c4af" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <profiles>
                 <profile name="Unwieldy" id="87fa-a4f4-1203-2e54" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
@@ -1902,6 +2038,9 @@ Each time a unit with this ability kills an enemy model with a melee attack, it 
               </profiles>
             </entryLink>
             <entryLink name="Twin Vulcan Mega-Bolter" id="34ec-ae23-5ed8-318d" collective="false" hidden="false" import="true" targetId="18fb-9baf-44c7-bb47" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="ccbf-48c2-6500-0f34" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <profiles>
                 <profile name="Unwieldy" id="f1f1-7178-50bf-0e13" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
@@ -1911,6 +2050,9 @@ Each time a unit with this ability kills an enemy model with a melee attack, it 
               </profiles>
             </entryLink>
             <entryLink name="Plasma Blastgun" id="3870-21cc-c7a8-db00" collective="false" hidden="false" import="true" targetId="314c-5091-8227-6fe5" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="9b58-6992-471a-f215" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="80"/>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="4"/>
@@ -1924,6 +2066,9 @@ Each time a unit with this ability kills an enemy model with a melee attack, it 
               </profiles>
             </entryLink>
             <entryLink name="Heavy Multi-laser Revolver cannon" id="7a95-54c9-0cb7-0dd8" collective="false" hidden="false" import="true" targetId="7d24-0af3-65b7-a6db" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="95bb-05e6-d392-916c" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <profiles>
                 <profile name="Unwieldy" id="3cdb-915d-eb1b-2200" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
@@ -1941,6 +2086,9 @@ Each time a unit with this ability kills an enemy model with a melee attack, it 
           </constraints>
           <entryLinks>
             <entryLink name="Twin Vulcan Mega-Bolter" id="6efb-606c-96bb-f414" collective="false" hidden="false" import="true" targetId="18fb-9baf-44c7-bb47" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="43ef-dc7f-3b94-345d" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <profiles>
                 <profile name="Unwieldy" id="97e7-09ae-2ea8-fe59" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
@@ -1950,6 +2098,9 @@ Each time a unit with this ability kills an enemy model with a melee attack, it 
               </profiles>
             </entryLink>
             <entryLink name="Vortex Missile Battery" id="94ed-d829-6c99-b41e" collective="false" hidden="false" import="true" targetId="9302-1c42-feb9-89e7" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="ad2b-768f-7585-9546" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="200"/>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="10"/>
@@ -1971,6 +2122,9 @@ Each time a unit with this ability kills an enemy model with a melee attack, it 
           </constraints>
           <entryLinks>
             <entryLink name="Twin Plasma Anihilator" id="dc30-c716-2429-76c7" collective="false" hidden="false" import="true" targetId="f494-f22f-766b-f1ae" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{L} Limited angle Side facing" id="75df-32ff-28a9-7449" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="300"/>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="15"/>
@@ -1999,6 +2153,9 @@ Each time a unit with this ability kills an enemy model with a melee attack, it 
               </profiles>
             </selectionEntry>
             <selectionEntry name="Krius Grav Imploder" id="7c01-b89f-7dbb-5ba8" collective="false" hidden="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink name="{L} Limited angle Side facing" id="779f-17c9-d1a9-a8d6" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+              </categoryLinks>
               <costs>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="30"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
@@ -2015,6 +2172,48 @@ Each time a unit with this ability kills an enemy model with a melee attack, it 
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">15</characteristic>
                     <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time a VEHICLE or MONSTER model is destroyed as a result of an attack made with this weapon, you can select one enemy unit within 3&quot; and roll one D6; on a 4+ that unit suffers D6 mortal wounds.</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Weapon tag</comment>
+                      <modifiers>
+                        <modifier field="name" join=" " type="prepend" value="{H}">
+                          <conditions>
+                            <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{F}">
+                          <conditions>
+                            <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{S}">
+                          <conditions>
+                            <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{L}">
+                          <conditions>
+                            <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{R}">
+                          <conditions>
+                            <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{T}">
+                          <conditions>
+                            <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{C}">
+                          <conditions>
+                            <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
                 <profile name="Krius Grav Imploder" id="b1d6-e312-b0b8-81b3" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                   <characteristics>
@@ -2025,6 +2224,48 @@ Each time a unit with this ability kills an enemy model with a melee attack, it 
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">6</characteristic>
                     <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack made with this weapon is allocated to a model with a Save characteristic of 2+ or better, that attack has a Damage characteristic of 12.</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Weapon tag</comment>
+                      <modifiers>
+                        <modifier field="name" join=" " type="prepend" value="{H}">
+                          <conditions>
+                            <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{F}">
+                          <conditions>
+                            <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{S}">
+                          <conditions>
+                            <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{L}">
+                          <conditions>
+                            <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{R}">
+                          <conditions>
+                            <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{T}">
+                          <conditions>
+                            <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{C}">
+                          <conditions>
+                            <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
             </selectionEntry>
@@ -3692,6 +3933,48 @@ Each time a unit with this ability kills an enemy model with a melee attack, it 
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Weapon tag</comment>
+                  <modifiers>
+                    <modifier field="name" join=" " type="prepend" value="{H}">
+                      <conditions>
+                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{F}">
+                      <conditions>
+                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{S}">
+                      <conditions>
+                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{L}">
+                      <conditions>
+                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{R}">
+                      <conditions>
+                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{T}">
+                      <conditions>
+                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{C}">
+                      <conditions>
+                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
         </selectionEntry>
@@ -3944,6 +4227,48 @@ Each time a unit with this ability kills an enemy model with a melee attack, it 
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">4</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Weapon tag</comment>
+                  <modifiers>
+                    <modifier field="name" join=" " type="prepend" value="{H}">
+                      <conditions>
+                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{F}">
+                      <conditions>
+                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{S}">
+                      <conditions>
+                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{L}">
+                      <conditions>
+                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{R}">
+                      <conditions>
+                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{T}">
+                      <conditions>
+                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{C}">
+                      <conditions>
+                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
         </selectionEntry>
@@ -3968,6 +4293,48 @@ Each time a unit with this ability kills an enemy model with a melee attack, it 
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">4</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Weapon tag</comment>
+                  <modifiers>
+                    <modifier field="name" join=" " type="prepend" value="{H}">
+                      <conditions>
+                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{F}">
+                      <conditions>
+                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{S}">
+                      <conditions>
+                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{L}">
+                      <conditions>
+                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{R}">
+                      <conditions>
+                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{T}">
+                      <conditions>
+                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{C}">
+                      <conditions>
+                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
             <profile name="Plasma Anihilator, Overcharge" id="962a-353b-40c1-d4ff" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
@@ -3978,6 +4345,48 @@ Each time a unit with this ability kills an enemy model with a melee attack, it 
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">8</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Add 1 to the Wound rolls. Blast. Each time an unmodified hit roll of 1 is made for an attack with this weapon profile, the bearer suffers 1D3 mortal wounds after shooting with this weapon.</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Weapon tag</comment>
+                  <modifiers>
+                    <modifier field="name" join=" " type="prepend" value="{H}">
+                      <conditions>
+                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{F}">
+                      <conditions>
+                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{S}">
+                      <conditions>
+                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{L}">
+                      <conditions>
+                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{R}">
+                      <conditions>
+                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{T}">
+                      <conditions>
+                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{C}">
+                      <conditions>
+                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
         </selectionEntry>
@@ -4018,6 +4427,48 @@ Each time a unit with this ability kills an enemy model with a melee attack, it 
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">4</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Weapon tag</comment>
+                  <modifiers>
+                    <modifier field="name" join=" " type="prepend" value="{H}">
+                      <conditions>
+                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{F}">
+                      <conditions>
+                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{S}">
+                      <conditions>
+                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{L}">
+                      <conditions>
+                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{R}">
+                      <conditions>
+                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{T}">
+                      <conditions>
+                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{C}">
+                      <conditions>
+                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
             <profile name="Twin Plasma Anihilator, Overcharge" id="c1c3-1d60-ca11-8e1d" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
@@ -4028,6 +4479,48 @@ Each time a unit with this ability kills an enemy model with a melee attack, it 
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">8</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Add 1 to the Wound rolls. Blast. Each time an unmodified hit roll of 1 is made for an attack with this weapon profile, the bearer suffers 1D3 mortal wounds after shooting with this weapon.</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Weapon tag</comment>
+                  <modifiers>
+                    <modifier field="name" join=" " type="prepend" value="{H}">
+                      <conditions>
+                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{F}">
+                      <conditions>
+                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{S}">
+                      <conditions>
+                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{L}">
+                      <conditions>
+                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{R}">
+                      <conditions>
+                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{T}">
+                      <conditions>
+                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{C}">
+                      <conditions>
+                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
         </selectionEntry>
