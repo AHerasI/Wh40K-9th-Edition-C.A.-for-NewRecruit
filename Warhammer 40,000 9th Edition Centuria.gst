@@ -5114,6 +5114,48 @@ Before using it, select one of the available ammo.
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Each time an attack is made with this weapon, an unmodified hit roll of 5+ scores an additional hit.</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" join=" " type="prepend" value="{H}">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" join=" " type="prepend" value="{F}">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" join=" " type="prepend" value="{S}">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" join=" " type="prepend" value="{L}">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" join=" " type="prepend" value="{R}">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" join=" " type="prepend" value="{T}">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" join=" " type="prepend" value="{C}">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Grenade launcher, Krak grenade" id="ac6d-bf1b-73d0-e6af" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
@@ -5124,6 +5166,48 @@ Before using it, select one of the available ammo.
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Weapon tag</comment>
+          <modifiers>
+            <modifier field="name" join=" " type="prepend" value="{H}">
+              <conditions>
+                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" join=" " type="prepend" value="{F}">
+              <conditions>
+                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" join=" " type="prepend" value="{S}">
+              <conditions>
+                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" join=" " type="prepend" value="{L}">
+              <conditions>
+                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" join=" " type="prepend" value="{R}">
+              <conditions>
+                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" join=" " type="prepend" value="{T}">
+              <conditions>
+                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="name" join=" " type="prepend" value="{C}">
+              <conditions>
+                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </profile>
     <profile name="Shotgun - Groxshot" id="961a-afdd-b0a9-f43d" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
