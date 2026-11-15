@@ -3073,10 +3073,13 @@ When this model suffers damage that reduces its number of relics, select which o
       <entryLinks>
         <entryLink name="Storm Bolter" id="e9ef-f919-9211-6d50" collective="false" hidden="false" import="true" targetId="a363-1b59-6eea-e8ea" type="selectionEntry">
           <categoryLinks>
-            <categoryLink name="Turret-mounted" id="2a4d-531d-d880-81eb" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+            <categoryLink name="{T} Turret-mount" id="2a4d-531d-d880-81eb" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
           </categoryLinks>
         </entryLink>
         <entryLink name="Hunter-killer missile launcher" id="99fa-3e16-a313-b7da" collective="false" hidden="false" import="true" targetId="76ce-74fa-9676-1a4b" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{H} Fixed-mount" id="d4dc-7077-ec1f-1521" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+          </categoryLinks>
           <constraints>
             <constraint id="f0f3-ecae-287e-b0d1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -3167,7 +3170,7 @@ When this model suffers damage that reduces its number of relics, select which o
       <entryLinks>
         <entryLink name="Storm Bolter" id="1df0-2b89-ba46-4b18" collective="false" hidden="false" import="true" targetId="2b03-8d64-3711-f300" type="selectionEntry">
           <categoryLinks>
-            <categoryLink name="Turret-mounted" id="466c-a9e9-ee85-cbd4" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+            <categoryLink name="{T} Turret-mount" id="466c-a9e9-ee85-cbd4" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
           </categoryLinks>
           <constraints>
             <constraint id="bec3-0035-0807-5cdf" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -3177,6 +3180,9 @@ When this model suffers damage that reduces its number of relics, select which o
           </costs>
         </entryLink>
         <entryLink name="Hunter-killer missile launcher" id="d931-cff2-89fa-b0b6" collective="false" hidden="false" import="true" targetId="76ce-74fa-9676-1a4b" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{H} Fixed-mount" id="a2ca-9e1c-a6db-885b" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+          </categoryLinks>
           <constraints>
             <constraint id="d20d-9d9e-e25e-5424" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -3248,21 +3254,28 @@ When this model suffers damage that reduces its number of relics, select which o
       </profiles>
       <selectionEntryGroups>
         <selectionEntryGroup name="Turret weapon" id="17e0-3098-0d9c-a8d4" collective="false" defaultSelectionEntryId="c7c5-4ac0-e712-72ca" hidden="false" import="true">
-          <categoryLinks>
-            <categoryLink name="Turret-mounted" id="e024-b8f8-e179-f97d" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
-          </categoryLinks>
           <constraints>
             <constraint id="edd6-7366-ce14-bfbf" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="0c47-6f9d-831d-3bc1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
             <entryLink name="Twin Heavy Flamer" id="2004-8ff5-9e1a-d189" collective="false" hidden="false" import="true" targetId="8d70-a6af-cbad-f08c" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="dbf8-8563-7f8d-05ca" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Twin Heavy Bolter" id="c7c5-4ac0-e712-72ca" collective="false" hidden="false" import="true" targetId="09d8-7790-ed3f-4d6d" type="selectionEntry"/>
+            <entryLink name="Twin Heavy Bolter" id="c7c5-4ac0-e712-72ca" collective="false" hidden="false" import="true" targetId="09d8-7790-ed3f-4d6d" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="e32d-a563-2841-028a" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
+            </entryLink>
             <entryLink name="Twin Multi-melta" id="eb6b-a003-463a-2617" collective="false" hidden="false" import="true" targetId="d496-bdd5-426e-3e80" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="7f8a-f2a2-39a8-6690" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="20"/>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -3271,11 +3284,12 @@ When this model suffers damage that reduces its number of relics, select which o
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Hull weapon" id="c6c4-5bb0-d4b9-f855" collective="false" defaultSelectionEntryId="4e09-dbd3-332b-9009" hidden="false" import="true">
-          <categoryLinks>
-            <categoryLink name="Hull mounted" id="dc97-3210-453b-5bf6" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
-          </categoryLinks>
           <entryLinks>
-            <entryLink name="Heavy Bolter" id="4e09-dbd3-332b-9009" collective="false" hidden="false" import="true" targetId="e8a1-aee7-852b-ec88" type="selectionEntry"/>
+            <entryLink name="Heavy Bolter" id="4e09-dbd3-332b-9009" collective="false" hidden="false" import="true" targetId="e8a1-aee7-852b-ec88" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="8b94-4576-e8b9-27f9" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -3399,6 +3413,9 @@ When this model suffers damage that reduces its number of relics, select which o
         <selectionEntryGroup name="Additional weapons:" id="5075-0796-9059-27ad" collective="false" hidden="false" import="true">
           <entryLinks>
             <entryLink name="Hunter-killer missile launcher" id="6614-105f-46f4-fff9" collective="false" hidden="false" import="true" targetId="76ce-74fa-9676-1a4b" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{H} Fixed-mount" id="e7d6-d1d1-c1b1-b0a2" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="5ac2-840a-45a0-deee" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -3406,11 +3423,11 @@ When this model suffers damage that reduces its number of relics, select which o
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Hatch weapon:" id="cb39-ecf3-c079-9449" collective="false" hidden="false" import="true">
-              <categoryLinks>
-                <categoryLink name="Turret-mounted" id="3943-69c4-1475-8ded" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
-              </categoryLinks>
               <entryLinks>
                 <entryLink name="Storm Bolter" id="3f10-1229-3648-63b9" collective="false" hidden="false" import="true" targetId="2b03-8d64-3711-f300" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{T} Turret-mount" id="9bf4-2837-6136-ad31" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="9f31-6592-888a-3e69" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
@@ -3423,9 +3440,6 @@ When this model suffers damage that reduces its number of relics, select which o
           </selectionEntryGroups>
         </selectionEntryGroup>
         <selectionEntryGroup name="Sponsors weapons:" id="dc72-b146-d58a-3c1f" collective="false" defaultSelectionEntryId="ec7f-0f11-8aab-6b54" hidden="false" import="true">
-          <categoryLinks>
-            <categoryLink name="Sponsor-mounted" id="c672-c66c-dad7-61d8" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
-          </categoryLinks>
           <constraints>
             <constraint id="8b36-e8cd-5646-daac" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="197c-e705-9f55-edf0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -3440,6 +3454,9 @@ When this model suffers damage that reduces its number of relics, select which o
               </costs>
               <entryLinks>
                 <entryLink name="Heavy Bolter" id="be73-ebe1-dc41-cd5c" collective="false" hidden="false" import="true" targetId="05ab-e7cc-e856-c36f" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{S} Side facing" id="5dd6-472d-6eac-3513" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="9f46-5283-bca9-f9ea" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                     <constraint id="0105-735b-42d5-52cc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -3450,16 +3467,20 @@ When this model suffers damage that reduces its number of relics, select which o
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup name="Turret weapon:" id="2b3e-ece1-8bca-c8fa" collective="false" defaultSelectionEntryId="a3b5-fe5c-f3b9-1321" hidden="false" import="true">
-          <categoryLinks>
-            <categoryLink name="Turret-mounted" id="061a-2137-af3c-1ec7" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
-          </categoryLinks>
           <constraints>
             <constraint id="0d75-28da-b3f8-18ea" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="2ad9-8f7a-32bf-b5c8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Twin Autocannon" id="a3b5-fe5c-f3b9-1321" collective="false" hidden="false" import="true" targetId="afe0-3771-1982-92b4" type="selectionEntry"/>
+            <entryLink name="Twin Autocannon" id="a3b5-fe5c-f3b9-1321" collective="false" hidden="false" import="true" targetId="afe0-3771-1982-92b4" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="17c1-4c6f-69fe-2d38" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
+            </entryLink>
             <entryLink name="Battle Cannon" id="b14b-55f0-a807-b446" collective="false" hidden="false" import="true" targetId="1d7b-4f46-b77b-ead1" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="dd88-4c54-d053-66fe" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="15"/>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -3468,11 +3489,12 @@ When this model suffers damage that reduces its number of relics, select which o
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Hull weapon" id="43be-bc7c-839b-fcf4" collective="false" defaultSelectionEntryId="4be0-4526-cfee-616c" hidden="false" import="true">
-          <categoryLinks>
-            <categoryLink name="Hull mounted" id="e227-4d33-f88e-c956" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
-          </categoryLinks>
           <entryLinks>
-            <entryLink name="Heavy Bolter" id="4be0-4526-cfee-616c" collective="false" hidden="false" import="true" targetId="e8a1-aee7-852b-ec88" type="selectionEntry"/>
+            <entryLink name="Heavy Bolter" id="4be0-4526-cfee-616c" collective="false" hidden="false" import="true" targetId="e8a1-aee7-852b-ec88" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="0e71-4a30-878b-9504" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -3496,6 +3518,9 @@ When this model suffers damage that reduces its number of relics, select which o
       </costs>
       <entryLinks>
         <entryLink name="Hunter-killer missile launcher" id="8f67-ff69-7ec1-8105" collective="false" hidden="false" import="true" targetId="76ce-74fa-9676-1a4b" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{H} Fixed-mount" id="0457-66c9-4997-b72d" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+          </categoryLinks>
           <constraints>
             <constraint id="e158-3f88-e8cb-c310" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -3580,11 +3605,18 @@ When this model suffers damage that reduces its number of relics, select which o
           </constraints>
           <entryLinks>
             <entryLink name="Heavy Flamer" id="4140-7e1d-943b-6fb9" collective="false" hidden="false" import="true" targetId="18bc-b335-29c2-2ae2" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="a92d-8df3-b12f-5a62" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="5"/>
               </costs>
             </entryLink>
-            <entryLink name="Storm Bolter" id="caef-1aa6-ff41-83fd" collective="false" hidden="false" import="true" targetId="2b03-8d64-3711-f300" type="selectionEntry"/>
+            <entryLink name="Heavy Bolter" id="caef-1aa6-ff41-83fd" collective="false" hidden="false" import="true" targetId="05ab-e7cc-e856-c36f" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="25a9-be94-b004-daed" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Additional Weapon option" id="1edf-a4fb-a5bb-9dcc" collective="false" hidden="false" import="true">
@@ -3593,11 +3625,17 @@ When this model suffers damage that reduces its number of relics, select which o
           </constraints>
           <entryLinks>
             <entryLink name="Heavy Flamer" id="8c29-e73b-c3c6-0cb5" collective="false" hidden="false" import="true" targetId="18bc-b335-29c2-2ae2" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="43ba-c3e1-2519-c074" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10"/>
               </costs>
             </entryLink>
             <entryLink name="Storm Bolter" id="36c3-a4cd-5bba-8a79" collective="false" hidden="false" import="true" targetId="2b03-8d64-3711-f300" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="a4f3-966c-4bd2-e7a4" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="5"/>
               </costs>
@@ -6232,6 +6270,9 @@ In addition, after the first turn begins, when this unit is deployed on the Batt
         </entryLink>
         <entryLink name="Crushing bulk" id="736e-ed28-d64c-fc2d" collective="false" hidden="false" import="true" targetId="502f-45c2-6fd1-443b" type="selectionEntry"/>
         <entryLink name="Hunter-killer missile launcher" id="c8c5-f499-0164-1695" collective="false" hidden="false" import="true" targetId="76ce-74fa-9676-1a4b" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{H} Fixed-mount" id="25e8-af23-018d-9987" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+          </categoryLinks>
           <constraints>
             <constraint id="f4ed-b92a-61f2-b689" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -6325,17 +6366,15 @@ In addition, after the first turn begins, when this unit is deployed on the Batt
       </profiles>
       <selectionEntryGroups>
         <selectionEntryGroup name="Hull weapon" id="1503-be1b-d40f-c2df" collective="false" defaultSelectionEntryId="dfb5-9fe7-f60f-3219" hidden="false" import="true">
-          <categoryLinks>
-            <categoryLink name="Hull mounted" id="fd46-5953-5ff8-d229" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
-          </categoryLinks>
           <entryLinks>
-            <entryLink name="Heavy Bolter" id="dfb5-9fe7-f60f-3219" collective="false" hidden="false" import="true" targetId="e8a1-aee7-852b-ec88" type="selectionEntry"/>
+            <entryLink name="Heavy Bolter" id="dfb5-9fe7-f60f-3219" collective="false" hidden="false" import="true" targetId="e8a1-aee7-852b-ec88" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="b790-8416-bfe0-5f85" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Main weapon" id="3757-5d15-0dbd-c5b8" collective="false" defaultSelectionEntryId="28d6-e4b2-2630-0f73" hidden="false" import="true">
-          <categoryLinks>
-            <categoryLink name="Turret-mounted" id="fab6-41b6-baea-9b29" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
-          </categoryLinks>
           <constraints>
             <constraint id="27bf-8cfb-1837-2eac" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="a275-ff3f-7275-b7b8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -6345,6 +6384,9 @@ In addition, after the first turn begins, when this unit is deployed on the Batt
           </infoLinks>
           <selectionEntries>
             <selectionEntry name="Exorcist MMLS" id="28d6-e4b2-2630-0f73" hidden="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="b955-0b12-862e-b939" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
               <infoLinks>
                 <infoLink name="Vengeance launcher" id="4536-c7ba-a418-25f8" hidden="false" targetId="f4df-b39c-08a7-5255" type="profile">
                   <modifiers>
@@ -6362,6 +6404,48 @@ In addition, after the first turn begins, when this unit is deployed on the Batt
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                     <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Indirect fire. Each time an attack is made with this profile, the target cannot have the Benefit of Cover against that attack.</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Weapon tag</comment>
+                      <modifiers>
+                        <modifier field="name" join=" " type="prepend" value="{H}">
+                          <conditions>
+                            <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{F}">
+                          <conditions>
+                            <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{S}">
+                          <conditions>
+                            <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{L}">
+                          <conditions>
+                            <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{R}">
+                          <conditions>
+                            <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{T}">
+                          <conditions>
+                            <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{C}">
+                          <conditions>
+                            <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
             </selectionEntry>
@@ -6536,6 +6620,9 @@ In addition, after the first turn begins, when this unit is deployed on the Batt
                       </costs>
                       <entryLinks>
                         <entryLink name="Heavy Bolter" id="e724-2cbf-6e83-e90c" collective="false" hidden="false" import="true" targetId="05ab-e7cc-e856-c36f" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{L} Limited angle Side facing" id="cee7-736d-7cb9-b505" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                          </categoryLinks>
                           <constraints>
                             <constraint id="3ef2-b59c-f80b-36c6" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
                             <constraint id="3902-f60b-b344-a20a" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
@@ -6551,8 +6638,16 @@ In addition, after the first turn begins, when this unit is deployed on the Batt
                         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                       </costs>
                       <entryLinks>
-                        <entryLink name="Heavy Bolter" id="2296-d52f-c97d-0410" collective="false" hidden="false" import="true" targetId="e8a1-aee7-852b-ec88" type="selectionEntry"/>
-                        <entryLink name="Heavy Flamer" id="e764-680d-fe3b-15f9" collective="false" hidden="false" import="true" targetId="327e-1af5-d908-9245" type="selectionEntry"/>
+                        <entryLink name="Heavy Bolter" id="2296-d52f-c97d-0410" collective="false" hidden="false" import="true" targetId="e8a1-aee7-852b-ec88" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{L} Limited angle Side facing" id="0308-91db-3757-cb74" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                          </categoryLinks>
+                        </entryLink>
+                        <entryLink name="Heavy Flamer" id="e764-680d-fe3b-15f9" collective="false" hidden="false" import="true" targetId="327e-1af5-d908-9245" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{L} Limited angle Side facing" id="dd3c-427f-66be-079f" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                          </categoryLinks>
+                        </entryLink>
                       </entryLinks>
                     </selectionEntry>
                     <selectionEntry name="2x Heavy Flamer" id="14fb-c984-09d5-6e09" collective="false" hidden="false" import="true" type="upgrade">
@@ -6564,6 +6659,9 @@ In addition, after the first turn begins, when this unit is deployed on the Batt
                       </costs>
                       <entryLinks>
                         <entryLink name="Heavy Flamer" id="d6a1-513b-f184-b31c" collective="false" hidden="false" import="true" targetId="18bc-b335-29c2-2ae2" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{L} Limited angle Side facing" id="bf13-02c6-ce1e-912f" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                          </categoryLinks>
                           <constraints>
                             <constraint id="0678-fa01-2535-0b41" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
                             <constraint id="991e-2991-23eb-c489" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
@@ -6643,8 +6741,16 @@ In addition, after the first turn begins, when this unit is deployed on the Batt
           </costs>
           <entryLinks>
             <entryLink name="Melee options" id="f873-da26-7332-5c05" collective="false" hidden="false" import="true" targetId="05c9-cca6-79dc-2f20" type="selectionEntryGroup"/>
-            <entryLink name="Heavy Flamer" id="cb87-6ac9-4253-00f6" collective="false" hidden="false" import="true" targetId="327e-1af5-d908-9245" type="selectionEntry"/>
-            <entryLink name="Heavy Flamer" id="00cb-1724-0821-7c8a" collective="false" hidden="false" import="true" targetId="327e-1af5-d908-9245" type="selectionEntry"/>
+            <entryLink name="Heavy Flamer" id="cb87-6ac9-4253-00f6" collective="false" hidden="false" import="true" targetId="327e-1af5-d908-9245" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{L} Limited angle Side facing" id="58e9-0303-2fd3-58fa" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink name="Heavy Flamer" id="00cb-1724-0821-7c8a" collective="false" hidden="false" import="true" targetId="327e-1af5-d908-9245" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{L} Limited angle Side facing" id="1b6a-041c-d111-8023" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
           <infoLinks>
             <infoLink name="Off-hand weapon" id="d202-13bd-757d-e98a" hidden="false" targetId="e14b-37da-f8e9-1752" type="profile"/>
