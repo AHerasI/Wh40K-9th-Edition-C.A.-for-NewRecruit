@@ -1808,6 +1808,48 @@ Unless stated otherwise, when a Doctrina Imperative is active, both of the effec
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Indirect fire.</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Weapon tag</comment>
+                  <modifiers>
+                    <modifier field="name" join=" " type="prepend" value="{H}">
+                      <conditions>
+                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{F}">
+                      <conditions>
+                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{S}">
+                      <conditions>
+                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{L}">
+                      <conditions>
+                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{R}">
+                      <conditions>
+                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{T}">
+                      <conditions>
+                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{C}">
+                      <conditions>
+                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
               <modifiers>
                 <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="set" value="39">
                   <conditions>
@@ -1839,6 +1881,48 @@ Unless stated otherwise, when a Doctrina Imperative is active, both of the effec
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Cognis. Torrent.</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Weapon tag</comment>
+                  <modifiers>
+                    <modifier field="name" join=" " type="prepend" value="{H}">
+                      <conditions>
+                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{F}">
+                      <conditions>
+                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{S}">
+                      <conditions>
+                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{L}">
+                      <conditions>
+                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{R}">
+                      <conditions>
+                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{T}">
+                      <conditions>
+                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{C}">
+                      <conditions>
+                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
               <modifiers>
                 <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="set" value="15">
                   <conditions>
@@ -1899,6 +1983,48 @@ Unless stated otherwise, when a Doctrina Imperative is active, both of the effec
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Ignore the Hard to hit rule. Each time an attack with this weapon is allocated to a unit with AIRCRAFT Keyword, the attack has a Damage characteristic of 6.</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Weapon tag</comment>
+                  <modifiers>
+                    <modifier field="name" join=" " type="prepend" value="{H}">
+                      <conditions>
+                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{F}">
+                      <conditions>
+                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{S}">
+                      <conditions>
+                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{L}">
+                      <conditions>
+                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{R}">
+                      <conditions>
+                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{T}">
+                      <conditions>
+                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{C}">
+                      <conditions>
+                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
               <modifiers>
                 <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="set" value="51">
                   <conditions>
@@ -2000,6 +2126,48 @@ Unless stated otherwise, when a Doctrina Imperative is active, both of the effec
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Weapon tag</comment>
+                  <modifiers>
+                    <modifier field="name" join=" " type="prepend" value="{H}">
+                      <conditions>
+                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{F}">
+                      <conditions>
+                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{S}">
+                      <conditions>
+                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{L}">
+                      <conditions>
+                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{R}">
+                      <conditions>
+                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{T}">
+                      <conditions>
+                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{C}">
+                      <conditions>
+                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
               <modifiers>
                 <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="set" value="39">
                   <conditions>
@@ -2017,6 +2185,48 @@ Unless stated otherwise, when a Doctrina Imperative is active, both of the effec
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Weapon tag</comment>
+                  <modifiers>
+                    <modifier field="name" join=" " type="prepend" value="{H}">
+                      <conditions>
+                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{F}">
+                      <conditions>
+                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{S}">
+                      <conditions>
+                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{L}">
+                      <conditions>
+                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{R}">
+                      <conditions>
+                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{T}">
+                      <conditions>
+                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{C}">
+                      <conditions>
+                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
               <modifiers>
                 <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="set" value="21">
                   <conditions>
@@ -2091,6 +2301,48 @@ Unless stated otherwise, when a Doctrina Imperative is active, both of the effec
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Weapon tag</comment>
+                  <modifiers>
+                    <modifier field="name" join=" " type="prepend" value="{H}">
+                      <conditions>
+                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{F}">
+                      <conditions>
+                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{S}">
+                      <conditions>
+                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{L}">
+                      <conditions>
+                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{R}">
+                      <conditions>
+                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{T}">
+                      <conditions>
+                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{C}">
+                      <conditions>
+                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
               <modifiers>
                 <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="set" value="27">
                   <conditions>
@@ -2108,6 +2360,48 @@ Unless stated otherwise, when a Doctrina Imperative is active, both of the effec
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Weapon tag</comment>
+                  <modifiers>
+                    <modifier field="name" join=" " type="prepend" value="{H}">
+                      <conditions>
+                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{F}">
+                      <conditions>
+                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{S}">
+                      <conditions>
+                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{L}">
+                      <conditions>
+                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{R}">
+                      <conditions>
+                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{T}">
+                      <conditions>
+                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{C}">
+                      <conditions>
+                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
               <modifiers>
                 <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="set" value="15">
                   <conditions>
@@ -2135,6 +2429,48 @@ Unless stated otherwise, when a Doctrina Imperative is active, both of the effec
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Weapon tag</comment>
+                  <modifiers>
+                    <modifier field="name" join=" " type="prepend" value="{H}">
+                      <conditions>
+                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{F}">
+                      <conditions>
+                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{S}">
+                      <conditions>
+                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{L}">
+                      <conditions>
+                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{R}">
+                      <conditions>
+                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{T}">
+                      <conditions>
+                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{C}">
+                      <conditions>
+                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
               <modifiers>
                 <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="set" value="51">
                   <conditions>
@@ -2346,6 +2682,48 @@ Unless stated otherwise, when a Doctrina Imperative is active, both of the effec
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Icarus Weapons ignore the Hard to hit ability.</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Weapon tag</comment>
+                  <modifiers>
+                    <modifier field="name" join=" " type="prepend" value="{H}">
+                      <conditions>
+                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{F}">
+                      <conditions>
+                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{S}">
+                      <conditions>
+                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{L}">
+                      <conditions>
+                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{R}">
+                      <conditions>
+                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{T}">
+                      <conditions>
+                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{C}">
+                      <conditions>
+                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
               <modifiers>
                 <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="set" value="51">
                   <conditions>
@@ -2452,6 +2830,48 @@ Unless stated otherwise, when a Doctrina Imperative is active, both of the effec
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack made with this weapon is allocated to a model with a Save characteristic of 3+ or better, that attack has a Damage characteristic of 2.</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Weapon tag</comment>
+                  <modifiers>
+                    <modifier field="name" join=" " type="prepend" value="{H}">
+                      <conditions>
+                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{F}">
+                      <conditions>
+                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{S}">
+                      <conditions>
+                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{L}">
+                      <conditions>
+                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{R}">
+                      <conditions>
+                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{T}">
+                      <conditions>
+                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{C}">
+                      <conditions>
+                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
               <modifiers>
                 <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="set" value="33">
                   <conditions>
@@ -2482,6 +2902,48 @@ Unless stated otherwise, when a Doctrina Imperative is active, both of the effec
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Phosphor weapon.</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Weapon tag</comment>
+                  <modifiers>
+                    <modifier field="name" join=" " type="prepend" value="{H}">
+                      <conditions>
+                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{F}">
+                      <conditions>
+                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{S}">
+                      <conditions>
+                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{L}">
+                      <conditions>
+                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{R}">
+                      <conditions>
+                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{T}">
+                      <conditions>
+                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{C}">
+                      <conditions>
+                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
               <modifiers>
                 <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="set" value="39">
                   <conditions>
@@ -2513,6 +2975,48 @@ Unless stated otherwise, when a Doctrina Imperative is active, both of the effec
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent.</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Weapon tag</comment>
+                  <modifiers>
+                    <modifier field="name" join=" " type="prepend" value="{H}">
+                      <conditions>
+                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{F}">
+                      <conditions>
+                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{S}">
+                      <conditions>
+                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{L}">
+                      <conditions>
+                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{R}">
+                      <conditions>
+                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{T}">
+                      <conditions>
+                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{C}">
+                      <conditions>
+                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
               <modifiers>
                 <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="set" value="15">
                   <conditions>
@@ -2669,6 +3173,48 @@ Unless stated otherwise, when a Doctrina Imperative is active, both of the effec
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Weapon tag</comment>
+                  <modifiers>
+                    <modifier field="name" join=" " type="prepend" value="{H}">
+                      <conditions>
+                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{F}">
+                      <conditions>
+                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{S}">
+                      <conditions>
+                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{L}">
+                      <conditions>
+                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{R}">
+                      <conditions>
+                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{T}">
+                      <conditions>
+                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{C}">
+                      <conditions>
+                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
               <modifiers>
                 <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="set" value="51">
                   <conditions>
@@ -3368,6 +3914,48 @@ Unless stated otherwise, when a Doctrina Imperative is active, both of the effec
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Phosphor weapon.</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Weapon tag</comment>
+                  <modifiers>
+                    <modifier field="name" join=" " type="prepend" value="{H}">
+                      <conditions>
+                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{F}">
+                      <conditions>
+                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{S}">
+                      <conditions>
+                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{L}">
+                      <conditions>
+                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{R}">
+                      <conditions>
+                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{T}">
+                      <conditions>
+                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{C}">
+                      <conditions>
+                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
               <modifiers>
                 <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="set" value="39">
                   <conditions>
@@ -3398,6 +3986,48 @@ Unless stated otherwise, when a Doctrina Imperative is active, both of the effec
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, an unmodified wound roll of 6 inflicts 2 mortal wounds on the target in addition to any normal damage.</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Weapon tag</comment>
+                  <modifiers>
+                    <modifier field="name" join=" " type="prepend" value="{H}">
+                      <conditions>
+                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{F}">
+                      <conditions>
+                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{S}">
+                      <conditions>
+                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{L}">
+                      <conditions>
+                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{R}">
+                      <conditions>
+                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{T}">
+                      <conditions>
+                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{C}">
+                      <conditions>
+                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
               <modifiers>
                 <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="set" value="27">
                   <conditions>
@@ -3456,6 +4086,7 @@ Unless stated otherwise, when a Doctrina Imperative is active, both of the effec
         <selectionEntry name="Terrax Melta Cutter" id="3f09-ac8f-15e6-db67" collective="false" hidden="false" import="true" type="upgrade">
           <categoryLinks>
             <categoryLink name="Melta Weapon" id="c7bf-f9d9-3786-c079" hidden="false" primary="false" targetId="65dd-a3e7-b044-4659"/>
+            <categoryLink name="{H} Fixed-mount" id="9821-47f2-af97-a80d" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
           </categoryLinks>
           <costs>
             <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -3464,7 +4095,7 @@ Unless stated otherwise, when a Doctrina Imperative is active, both of the effec
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
           <infoLinks>
-            <infoLink name="Terrax Melta Cutter" id="0558-558d-67cc-229a" hidden="false" targetId="79c3-79bf-926c-3163" type="profile">
+            <infoLink name="[H] Terrax Melta Cutter" id="0558-558d-67cc-229a" hidden="false" targetId="79c3-79bf-926c-3163" type="profile">
               <modifiers>
                 <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="set" value="15">
                   <conditions>
@@ -4414,6 +5045,48 @@ Unless stated otherwise, when a Doctrina Imperative is active, both of the effec
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Splash. Indirect fire. Add 1 to the Wound rolls. If any unmodified hit rolls of 1 are made for attacks with this weapon profile, the bearer suffers 1 mortal wound after shooting with this weapon.</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Weapon tag</comment>
+                  <modifiers>
+                    <modifier field="name" join=" " type="prepend" value="{H}">
+                      <conditions>
+                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{F}">
+                      <conditions>
+                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{S}">
+                      <conditions>
+                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{L}">
+                      <conditions>
+                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{R}">
+                      <conditions>
+                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{T}">
+                      <conditions>
+                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{C}">
+                      <conditions>
+                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
               <modifiers>
                 <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="set" value="75">
                   <conditions>
@@ -4431,6 +5104,48 @@ Unless stated otherwise, when a Doctrina Imperative is active, both of the effec
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Splash. Indirect fire.</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Weapon tag</comment>
+                  <modifiers>
+                    <modifier field="name" join=" " type="prepend" value="{H}">
+                      <conditions>
+                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{F}">
+                      <conditions>
+                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{S}">
+                      <conditions>
+                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{L}">
+                      <conditions>
+                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{R}">
+                      <conditions>
+                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{T}">
+                      <conditions>
+                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{C}">
+                      <conditions>
+                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
               <modifiers>
                 <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="set" value="75">
                   <conditions>
@@ -4536,6 +5251,48 @@ Unless stated otherwise, when a Doctrina Imperative is active, both of the effec
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, an unmodified hit roll of 6 scores 2 additional hits.</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Weapon tag</comment>
+                  <modifiers>
+                    <modifier field="name" join=" " type="prepend" value="{H}">
+                      <conditions>
+                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{F}">
+                      <conditions>
+                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{S}">
+                      <conditions>
+                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{L}">
+                      <conditions>
+                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{R}">
+                      <conditions>
+                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{T}">
+                      <conditions>
+                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{C}">
+                      <conditions>
+                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
               <modifiers>
                 <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="set" value="51">
                   <conditions>
@@ -4582,6 +5339,48 @@ Unless stated otherwise, when a Doctrina Imperative is active, both of the effec
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, an unmodified hit roll of 6 scores 2 additional hits.</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Weapon tag</comment>
+                  <modifiers>
+                    <modifier field="name" join=" " type="prepend" value="{H}">
+                      <conditions>
+                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{F}">
+                      <conditions>
+                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{S}">
+                      <conditions>
+                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{L}">
+                      <conditions>
+                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{R}">
+                      <conditions>
+                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{T}">
+                      <conditions>
+                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{C}">
+                      <conditions>
+                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
               <modifiers>
                 <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="set" value="27">
                   <conditions>
@@ -4650,9 +5449,10 @@ Unless stated otherwise, when a Doctrina Imperative is active, both of the effec
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
           <infoLinks>
-            <infoLink name="C. Beam, Short range" id="6124-38c5-45be-6c1c" hidden="false" targetId="60d6-1b2a-e2a8-5106" type="profile">
+            <infoLink name="C. Beam, Short range" id="6124-38c5-45be-6c1c" hidden="false" targetId="60d6-1b2a-e2a8-5106" type="profile"/>
+            <infoLink name="C. Beam, Long range" id="b658-6080-ae86-c584" hidden="false" targetId="ed24-63db-0ddf-dac2" type="profile">
               <modifiers>
-                <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="set" value="51">
+                <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="set" value="24-51">
                   <conditions>
                     <condition childId="f6e1-f088-18d0-1010" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
                   </conditions>
@@ -6239,12 +7039,18 @@ Until the start of your next Command phase, that unit ignores the Deprecation ef
       </costs>
       <entryLinks>
         <entryLink name="Twin Cognis Heavy stubber" id="0de6-0d6f-38d8-e588" collective="false" hidden="false" import="true" targetId="3542-1dc1-2658-e26a" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{T} Turret-mount" id="cdd6-38eb-a716-734e" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+          </categoryLinks>
           <constraints>
             <constraint id="ee13-0731-fefb-236c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="4b1b-6ced-98ff-6adb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
           </constraints>
         </entryLink>
         <entryLink name="Cognis Heavy stubber" id="6743-3146-69b9-caa6" collective="false" hidden="false" import="true" targetId="47f1-5bef-3995-592e" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{T} Turret-mount" id="06ac-9936-ef3e-af71" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+          </categoryLinks>
           <constraints>
             <constraint id="1f2f-bd85-055e-4a18" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
             <constraint id="3803-61bb-d43f-d650" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -6534,6 +7340,9 @@ Until the start of your next Command phase, that unit ignores the Deprecation ef
               </costs>
               <entryLinks>
                 <entryLink name="Storm Bolter" id="acee-4205-333b-669e" collective="false" hidden="false" import="true" targetId="c8f8-a944-153a-cf35" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{S} Side facing" id="03ac-aca1-702c-dd3f" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="c1ea-02f4-7a27-33b7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                     <constraint id="b903-3d87-f993-c9bb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -6550,6 +7359,9 @@ Until the start of your next Command phase, that unit ignores the Deprecation ef
               </costs>
               <entryLinks>
                 <entryLink name="Heavy Flamer" id="14a5-1fe3-051a-aabf" collective="false" hidden="false" import="true" targetId="ed06-3764-382e-0912" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{S} Side facing" id="6ef2-6bba-07e7-a79f" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="0b0b-f0c6-201c-3f2c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                     <constraint id="101a-cbca-f4fa-d477" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -6566,6 +7378,9 @@ Until the start of your next Command phase, that unit ignores the Deprecation ef
               </costs>
               <entryLinks>
                 <entryLink name="Twin Volkite charger" id="60f2-3407-a1d3-23e7" collective="false" hidden="false" import="true" targetId="7113-b5ab-aa25-f07b" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{S} Side facing" id="45fd-60b0-9390-26f8" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="aab1-beac-bc23-cc79" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                     <constraint id="e8ee-7c70-dbec-f643" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -8115,11 +8930,17 @@ The action is completed at the end of your next Command phase. When it is comple
               </constraints>
               <entryLinks>
                 <entryLink name="Twin Cognis Autocannon" id="ebbd-8c9e-8800-144a" collective="false" hidden="false" import="true" targetId="d99f-8f64-3be9-d2da" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="ad75-49b3-7379-8d3e" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="10"/>
                   </costs>
                 </entryLink>
                 <entryLink name="Twin Cognis Lascannon" id="aacf-2e24-f3ac-d754" collective="false" hidden="false" import="true" targetId="5499-0e26-ae82-9954" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="1d93-7f8d-c9aa-9e47" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="30"/>
                     <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -8888,9 +9709,29 @@ Models in this unit are eligible to shoot with any Assault weapons they are equi
       </costs>
       <entryLinks>
         <entryLink name="Cognis Heavy stubber" id="3596-fef6-7425-d876" collective="false" hidden="false" import="true" targetId="47f1-5bef-3995-592e" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{F} Front facing" id="e884-addc-e190-97f3" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+          </categoryLinks>
           <constraints>
-            <constraint id="be81-7e6a-d940-32aa" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="4"/>
-            <constraint id="7cb2-6f24-13b4-e578" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="4"/>
+            <constraint id="be81-7e6a-d940-32aa" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="2"/>
+            <constraint id="7cb2-6f24-13b4-e578" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="2"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Cognis Heavy stubber" id="1dbb-86ee-a945-e7dc" collective="false" hidden="false" import="true" targetId="47f1-5bef-3995-592e" type="selectionEntry">
+              <constraints>
+                <constraint id="3aa4-ff15-4173-01d2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="4"/>
+                <constraint id="2638-2162-6936-2e02" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="4"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </entryLink>
+        <entryLink name="Cognis Heavy stubber" id="2cc6-af3b-1141-58ef" collective="false" hidden="false" import="true" targetId="47f1-5bef-3995-592e" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{S} Side facing" id="e339-789a-fa00-4c1f" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+          </categoryLinks>
+          <constraints>
+            <constraint id="98ee-ba90-e687-b088" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="2"/>
+            <constraint id="c4c6-9254-b9bd-0d25" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="2"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -9183,12 +10024,18 @@ This effect is not cumulable with other effects that decrease the Toughness.</ch
           </costs>
           <entryLinks>
             <entryLink name="Cognis Heavy stubber" id="2a27-bc85-9b72-4e90" collective="false" hidden="false" import="true" targetId="47f1-5bef-3995-592e" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{S} Side facing" id="022a-0f96-cab9-f163" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="2dab-908b-1cd0-b555" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                 <constraint id="ce8b-92a8-b936-61bd" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
               </constraints>
             </entryLink>
             <entryLink name="Twin Cognis Heavy stubber" id="f5de-8ed2-5a7a-b8a7" collective="false" hidden="false" import="true" targetId="3542-1dc1-2658-e26a" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="966c-55b6-3cdc-7a62" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="7be1-0356-3381-ecd2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                 <constraint id="6736-ca6b-1b17-65d1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -9294,18 +10141,27 @@ This effect is not cumulable with other effects that decrease the Toughness.</ch
       </costs>
       <entryLinks>
         <entryLink name="Cognis Heavy stubber" id="ceec-d301-8d98-37b5" collective="false" hidden="false" import="true" targetId="47f1-5bef-3995-592e" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{S} Side facing" id="5ec3-2b5f-5ff0-3f67" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+          </categoryLinks>
           <constraints>
             <constraint id="b27c-3094-fbea-bf79" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
             <constraint id="19e4-86f7-c0e4-ae38" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
           </constraints>
         </entryLink>
         <entryLink name="Heavy Phosphor blaster" id="e66b-f383-43fa-525d" collective="false" hidden="false" import="true" targetId="f015-62ed-da19-dda3" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{F} Front facing" id="1b2d-f3de-c676-f1a0" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+          </categoryLinks>
           <constraints>
             <constraint id="29ef-5da5-3853-bfde" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
             <constraint id="3aca-81f5-2827-f35d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
           </constraints>
         </entryLink>
         <entryLink name="Twin Cognis Lascannon" id="0054-fd72-fa4e-511a" collective="false" hidden="false" import="true" targetId="5499-0e26-ae82-9954" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{F} Front facing" id="a963-92bb-05ad-c693" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+          </categoryLinks>
           <constraints>
             <constraint id="86b3-90d0-2526-37e5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="1246-ec82-056e-3db3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -9450,6 +10306,9 @@ This effect is not cumulable with other effects that decrease the Toughness.</ch
       </costs>
       <entryLinks>
         <entryLink name="Disruptor missile launcher" id="ba54-278b-b8a0-fa36" collective="false" hidden="false" import="true" targetId="d033-a788-13bf-0fcd" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{F} Front facing" id="c1e8-a4c1-9618-00fa" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+          </categoryLinks>
           <constraints>
             <constraint id="630c-e278-ed10-493f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="1765-119a-b3ac-98ac" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -9571,8 +10430,16 @@ This effect is not cumulable with other effects that decrease the Toughness.</ch
             <constraint id="8cba-0e36-79f9-66c4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Belleros energy cannon" id="cc6d-5a7f-0644-eacb" collective="false" hidden="false" import="true" targetId="6a32-a9e7-3bb6-32b6" type="selectionEntry"/>
-            <entryLink name="Ferrumite cannon" id="ec0f-b543-c3d1-06ba" collective="false" hidden="false" import="true" targetId="77cd-7667-5f37-6e47" type="selectionEntry"/>
+            <entryLink name="Belleros energy cannon" id="cc6d-5a7f-0644-eacb" collective="false" hidden="false" import="true" targetId="6a32-a9e7-3bb6-32b6" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="1632-49cc-04b1-7a37" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink name="Ferrumite cannon" id="ec0f-b543-c3d1-06ba" collective="false" hidden="false" import="true" targetId="77cd-7667-5f37-6e47" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="df0b-c0b8-e19a-cbe5" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -9595,6 +10462,9 @@ This effect is not cumulable with other effects that decrease the Toughness.</ch
       </costs>
       <entryLinks>
         <entryLink name="Cognis Heavy stubber" id="ac56-03d9-b38a-e769" collective="false" hidden="false" import="true" targetId="47f1-5bef-3995-592e" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{T} Turret-mount" id="f428-3703-2b90-39d5" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+          </categoryLinks>
           <constraints>
             <constraint id="b95a-fc42-ec59-db62" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -9732,7 +10602,11 @@ This effect is not cumulable with other effects that decrease the Toughness.</ch
             <constraint id="01bc-2b78-f3c9-6574" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Twin Heavy phosphor blaster" id="b0de-2ece-a37f-9b9d" collective="false" hidden="false" import="true" targetId="47f7-865f-e471-77c2" type="selectionEntry"/>
+            <entryLink name="Twin Heavy phosphor blaster" id="b0de-2ece-a37f-9b9d" collective="false" hidden="false" import="true" targetId="47f7-865f-e471-77c2" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="f644-f06c-7677-0bd3" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
           <selectionEntries>
             <selectionEntry name="Icarus system" id="09a0-75ca-6435-ffbf" collective="false" hidden="false" import="true" type="upgrade">
@@ -9749,6 +10623,7 @@ This effect is not cumulable with other effects that decrease the Toughness.</ch
                 <entryLink name="Twin Icarus Autocannon" id="551f-7660-827c-345e" collective="false" hidden="false" import="true" targetId="63e5-caa4-3ab2-3ce1" type="selectionEntry">
                   <categoryLinks>
                     <categoryLink name="Icarus mount" id="c549-4a16-081a-bc5a" hidden="false" primary="false" targetId="1f9d-db7b-1926-9dfa"/>
+                    <categoryLink name="{C} Turreted Coaxial-mount" id="6a4c-4b17-d45f-8501" hidden="false" primary="false" targetId="5a5f-3ed0-79c5-df43"/>
                   </categoryLinks>
                   <constraints>
                     <constraint id="7434-1fc7-7289-bc7c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -9761,6 +10636,7 @@ This effect is not cumulable with other effects that decrease the Toughness.</ch
                 <entryLink name="Gatling rocket launcher" id="299d-48f3-7088-4ade" collective="false" hidden="false" import="true" targetId="5cd9-248d-4c80-b1f0" type="selectionEntry">
                   <categoryLinks>
                     <categoryLink name="Icarus mount" id="f3d4-6231-db31-5e38" hidden="false" primary="false" targetId="1f9d-db7b-1926-9dfa"/>
+                    <categoryLink name="{C} Turreted Coaxial-mount" id="540e-6e80-3bdb-bb48" hidden="false" primary="false" targetId="5a5f-3ed0-79c5-df43"/>
                   </categoryLinks>
                   <constraints>
                     <constraint id="e2a3-788a-68f2-a4b7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -9770,6 +10646,7 @@ This effect is not cumulable with other effects that decrease the Toughness.</ch
                 <entryLink name="Daedalus missile launcher" id="9376-2796-5505-6f5e" collective="false" hidden="false" import="true" targetId="7c20-b609-20cf-6cfb" type="selectionEntry">
                   <categoryLinks>
                     <categoryLink name="Icarus mount" id="dd66-23b5-668b-5eae" hidden="false" primary="false" targetId="1f9d-db7b-1926-9dfa"/>
+                    <categoryLink name="{F} Front facing" id="1beb-2ea1-5c61-3334" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
                   </categoryLinks>
                   <constraints>
                     <constraint id="f8d0-c5e6-aae9-677e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -9787,12 +10664,18 @@ This effect is not cumulable with other effects that decrease the Toughness.</ch
               </costs>
               <entryLinks>
                 <entryLink name="Light Neutron projector" id="d541-346f-c7fb-f68e" collective="false" hidden="false" import="true" targetId="5a88-f440-b447-4bf9" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{C} Turreted Coaxial-mount" id="c025-bbf4-ba6a-3de8" hidden="false" primary="false" targetId="5a5f-3ed0-79c5-df43"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="008b-d191-fa6b-77af" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                     <constraint id="572d-b72b-faac-666f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                   </constraints>
                 </entryLink>
                 <entryLink name="Cognis Heavy stubber" id="48ba-5a40-03da-e6b4" collective="false" hidden="false" import="true" targetId="47f1-5bef-3995-592e" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{C} Turreted Coaxial-mount" id="9d99-8b6f-3baf-00b9" hidden="false" primary="false" targetId="5a5f-3ed0-79c5-df43"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="0ba8-0137-7d28-204e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                     <constraint id="ce1e-3991-d35a-3786" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -9936,8 +10819,16 @@ This effect is not cumulable with other effects that decrease the Toughness.</ch
                 <constraint id="d97c-c868-119b-1c28" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
               </constraints>
               <entryLinks>
-                <entryLink name="Heavy Phosphor blaster" id="adbc-9b8e-73de-d14c" collective="false" hidden="false" import="true" targetId="f015-62ed-da19-dda3" type="selectionEntry"/>
-                <entryLink name="Incendine combustor" id="75a9-a61d-2368-cb57" collective="false" hidden="false" import="true" targetId="54d3-0696-6783-05d0" type="selectionEntry"/>
+                <entryLink name="Heavy Phosphor blaster" id="adbc-9b8e-73de-d14c" collective="false" hidden="false" import="true" targetId="f015-62ed-da19-dda3" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="c28e-a6de-4c7a-f563" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
+                </entryLink>
+                <entryLink name="Incendine combustor" id="75a9-a61d-2368-cb57" collective="false" hidden="false" import="true" targetId="54d3-0696-6783-05d0" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="d6f9-9b6b-b6e9-42bc" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Arm weapon" id="5c56-eb64-c98d-8e10" collective="false" defaultSelectionEntryId="5d5c-4eca-5488-4ce3" hidden="false" import="true">
@@ -9947,7 +10838,11 @@ This effect is not cumulable with other effects that decrease the Toughness.</ch
               </constraints>
               <entryLinks>
                 <entryLink name="Kastelan fist" id="5d5c-4eca-5488-4ce3" collective="false" hidden="false" import="true" targetId="0ffa-7f73-8e90-8448" type="selectionEntry"/>
-                <entryLink name="Heavy Phosphor blaster" id="2bcf-4ecb-9669-3535" collective="false" hidden="false" import="true" targetId="f015-62ed-da19-dda3" type="selectionEntry"/>
+                <entryLink name="Heavy Phosphor blaster" id="2bcf-4ecb-9669-3535" collective="false" hidden="false" import="true" targetId="f015-62ed-da19-dda3" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{L} Limited angle Side facing" id="d45e-1d01-3498-376d" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                  </categoryLinks>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -11063,8 +11958,16 @@ Blast.</characteristic>
                 <constraint id="d140-c8ed-88f1-fcad" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
               </constraints>
               <entryLinks>
-                <entryLink name="Rad-Cleanser" id="e7fa-b7ac-63f3-88e2" collective="false" hidden="false" import="true" targetId="4a54-c620-3a8e-b346" type="selectionEntry"/>
-                <entryLink name="Incendine combustor" id="bfcc-6dcd-d0f3-15c3" collective="false" hidden="false" import="true" targetId="54d3-0696-6783-05d0" type="selectionEntry"/>
+                <entryLink name="Rad-Cleanser" id="e7fa-b7ac-63f3-88e2" collective="false" hidden="false" import="true" targetId="4a54-c620-3a8e-b346" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="b8fe-af9e-d2e0-f2ba" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
+                </entryLink>
+                <entryLink name="Incendine combustor" id="bfcc-6dcd-d0f3-15c3" collective="false" hidden="false" import="true" targetId="54d3-0696-6783-05d0" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="69e7-fbd8-be41-e73c" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Arm weapon" id="c63c-10cb-6022-885e" collective="false" defaultSelectionEntryId="495e-d0b4-0397-1e03" hidden="false" import="true">
@@ -11081,8 +11984,16 @@ Blast.</characteristic>
                     <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                   </costs>
                   <entryLinks>
-                    <entryLink name="Bladed Assault Cannons" id="b19f-4c91-8a73-c386" collective="false" hidden="false" import="true" targetId="5013-4519-3cc4-1ca3" type="selectionEntry"/>
-                    <entryLink name="Bladed Assault Cannons" id="a3a0-f915-4c7e-368f" collective="false" hidden="false" import="true" targetId="5013-4519-3cc4-1ca3" type="selectionEntry"/>
+                    <entryLink name="Bladed Assault Cannons" id="b19f-4c91-8a73-c386" collective="false" hidden="false" import="true" targetId="5013-4519-3cc4-1ca3" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="c51f-6c58-4a10-bee4" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
+                    </entryLink>
+                    <entryLink name="Bladed Assault Cannons" id="a3a0-f915-4c7e-368f" collective="false" hidden="false" import="true" targetId="5013-4519-3cc4-1ca3" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="6eca-24d5-c86b-49f6" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
+                    </entryLink>
                   </entryLinks>
                   <infoLinks>
                     <infoLink name="Off-hand weapon" id="3a95-da01-c44c-ac50" hidden="false" targetId="e14b-37da-f8e9-1752" type="profile"/>
@@ -11201,7 +12112,11 @@ Blast.</characteristic>
                 <constraint id="288c-2862-17da-01bc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
               </constraints>
               <entryLinks>
-                <entryLink name="Caparace Missile launcher" id="3dff-fcad-634d-7630" collective="false" hidden="false" import="true" targetId="f6d6-1207-454e-f438" type="selectionEntry"/>
+                <entryLink name="Caparace Missile launcher" id="3dff-fcad-634d-7630" collective="false" hidden="false" import="true" targetId="f6d6-1207-454e-f438" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="a677-4e85-e5f2-7cba" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Arm weapon" id="5123-df2d-528c-60a4" collective="false" defaultSelectionEntryId="d811-cb92-f37e-f618" hidden="false" import="true">
@@ -11357,7 +12272,11 @@ Blast.</characteristic>
                     <constraint id="cc95-c41f-ae6f-775e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Hellex-pattern Plasma mortar" id="7395-fda6-aa40-9803" collective="false" hidden="false" import="true" targetId="152d-77f1-cccd-86a5" type="selectionEntry"/>
+                    <entryLink name="Hellex-pattern Plasma mortar" id="7395-fda6-aa40-9803" collective="false" hidden="false" import="true" targetId="152d-77f1-cccd-86a5" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{H} Fixed-mount" id="67c7-2844-02af-e772" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+                      </categoryLinks>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Left Arm weapon" id="3df1-9f96-b57c-5df4" collective="false" defaultSelectionEntryId="4509-a52d-68ae-47a5" hidden="false" import="true">
@@ -11366,7 +12285,11 @@ Blast.</characteristic>
                     <constraint id="0d84-a36f-a93d-58aa" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Twin Mega-Bolter" id="4509-a52d-68ae-47a5" collective="false" hidden="false" import="true" targetId="ac7b-79b1-8af1-3580" type="selectionEntry"/>
+                    <entryLink name="Twin Mega-Bolter" id="4509-a52d-68ae-47a5" collective="false" hidden="false" import="true" targetId="ac7b-79b1-8af1-3580" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="980c-4ab7-476e-8f54" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Right Arm weapon" id="25d9-53c7-e2d5-b8a0" collective="false" defaultSelectionEntryId="4b5e-dbb2-798a-d7c1" hidden="false" import="true">
@@ -11398,7 +12321,11 @@ Blast.</characteristic>
                     <constraint id="3694-0ef5-5bea-f63a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Overcharged Laser Destructor" id="2ce3-07f2-e240-f0a3" collective="false" hidden="false" import="true" targetId="0336-54b6-bf22-e79f" type="selectionEntry"/>
+                    <entryLink name="Overcharged Laser Destructor" id="2ce3-07f2-e240-f0a3" collective="false" hidden="false" import="true" targetId="0336-54b6-bf22-e79f" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{F} Front facing" id="ab08-92b6-e030-ff44" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                      </categoryLinks>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Left Arm weapon" id="20fb-9d21-812d-b1d2" collective="false" defaultSelectionEntryId="5bbc-08d5-afb4-f4f1" hidden="false" import="true">
@@ -11407,7 +12334,11 @@ Blast.</characteristic>
                     <constraint id="e5c7-6ffa-32ff-14c8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Twin Mega-Bolter" id="5bbc-08d5-afb4-f4f1" collective="false" hidden="false" import="true" targetId="ac7b-79b1-8af1-3580" type="selectionEntry"/>
+                    <entryLink name="Twin Mega-Bolter" id="5bbc-08d5-afb4-f4f1" collective="false" hidden="false" import="true" targetId="ac7b-79b1-8af1-3580" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="4660-88f4-64a7-28ec" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Right Arm weapon" id="27ad-81ca-5802-a46a" collective="false" defaultSelectionEntryId="13c1-74f6-e6d8-573b" hidden="false" import="true">
@@ -11532,19 +12463,23 @@ Blast.</characteristic>
           <selectionEntryGroups>
             <selectionEntryGroup name="Ventral weapon" id="8a07-acb0-980f-cfb5" collective="false" defaultSelectionEntryId="5822-5310-3079-b913" hidden="false" import="true">
               <categoryLinks>
-                <categoryLink name="Hull mounted" id="8aa3-7f03-e8ac-6763" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                <categoryLink name="{F} Front facing" id="8aa3-7f03-e8ac-6763" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
               </categoryLinks>
               <constraints>
                 <constraint id="ffe3-5b29-7f8b-c210" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
                 <constraint id="d8e9-c62b-25c4-4840" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
               </constraints>
               <entryLinks>
-                <entryLink name="Lightning lock" id="5822-5310-3079-b913" collective="false" hidden="false" import="true" targetId="be80-0b7e-7cef-4ca2" type="selectionEntry"/>
+                <entryLink name="Lightning lock" id="5822-5310-3079-b913" collective="false" hidden="false" import="true" targetId="be80-0b7e-7cef-4ca2" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="56d1-623f-a0e5-2273" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Sponsor weapons" id="1820-25d5-ddf5-9eb6" collective="false" defaultSelectionEntryId="6f0b-8e53-a0a4-a1ab" hidden="false" import="true">
               <categoryLinks>
-                <categoryLink name="Sponsor-mounted" id="2024-0c0f-9aec-6bfa" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                <categoryLink name="{L} Limited angle Side facing" id="2024-0c0f-9aec-6bfa" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
               </categoryLinks>
               <constraints>
                 <constraint id="9972-4afe-dc7f-5f3f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
@@ -11560,6 +12495,9 @@ Blast.</characteristic>
                   </costs>
                   <entryLinks>
                     <entryLink name="Havoc launcher" id="bf06-63f0-b947-9029" collective="false" hidden="false" import="true" targetId="be68-020b-cdcb-6a2c" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{F} Front facing" id="eb45-8fdf-e361-9723" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="8901-df87-823b-324e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="2"/>
                       </constraints>
@@ -11702,8 +12640,15 @@ Blast.</characteristic>
             <constraint id="8b66-0b02-f0c3-b661" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Lightning cannon" id="12b6-4752-1fc3-73eb" collective="false" hidden="false" import="true" targetId="6e9c-59ec-67ff-b5e1" type="selectionEntry"/>
+            <entryLink name="Lightning cannon" id="12b6-4752-1fc3-73eb" collective="false" hidden="false" import="true" targetId="6e9c-59ec-67ff-b5e1" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="7fec-e77d-67d3-b20e" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
+            </entryLink>
             <entryLink name="Neutron Projector" id="aa11-9992-4bb3-4bbd" collective="false" hidden="false" import="true" targetId="c063-a43f-5f5d-67e4" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="0480-e2e0-21d2-92d4" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <costs>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="-1"/>
                 <cost name="pts" typeId="points" value="60"/>
@@ -11711,6 +12656,9 @@ Blast.</characteristic>
               </costs>
             </entryLink>
             <entryLink name="Hellex-pattern Plasma mortar" id="31d4-7403-d306-053b" collective="false" hidden="false" import="true" targetId="152d-77f1-cccd-86a5" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="347c-5790-068f-34fa" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <costs>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="-1"/>
                 <cost name="pts" typeId="points" value="60"/>
@@ -11721,7 +12669,7 @@ Blast.</characteristic>
         </selectionEntryGroup>
         <selectionEntryGroup name="Sponsor weapons" id="0303-5c4f-62a7-8012" collective="false" defaultSelectionEntryId="7f96-c16d-460b-180e" hidden="false" import="true">
           <categoryLinks>
-            <categoryLink name="Sponsor-mounted" id="98fb-3dee-db73-9594" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+            <categoryLink name="{L} Limited angle Side facing" id="98fb-3dee-db73-9594" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
           </categoryLinks>
           <constraints>
             <constraint id="b9fd-f076-2823-0763" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -11744,6 +12692,9 @@ Blast.</characteristic>
               </costs>
               <entryLinks>
                 <entryLink name="Lightning lock" id="f144-7464-c160-adc9" collective="false" hidden="false" import="true" targetId="be80-0b7e-7cef-4ca2" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{S} Side facing" id="df5c-cb1b-36ac-4e1a" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="1ee4-c975-af2b-97f0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                     <constraint id="0378-a072-e607-1ffc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -11902,7 +12853,7 @@ Blast.</characteristic>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Sponsor weapons" id="59e6-7f0c-c732-07b0" collective="false" defaultSelectionEntryId="c516-73fe-4c85-3515" hidden="false" import="true">
                   <categoryLinks>
-                    <categoryLink name="Sponsor-mounted" id="d3c8-d781-1e12-a4bd" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                    <categoryLink name="{L} Limited angle Side facing" id="d3c8-d781-1e12-a4bd" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
                   </categoryLinks>
                   <constraints>
                     <constraint id="7879-40f2-f894-44ac" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -11918,6 +12869,9 @@ Blast.</characteristic>
                       </costs>
                       <entryLinks>
                         <entryLink name="Volkite Culebrin" id="dcaf-d2c1-b648-ac11" collective="false" hidden="false" import="true" targetId="7c66-f22b-a58d-0073" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{S} Side facing" id="f814-0805-fb20-b61e" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                          </categoryLinks>
                           <constraints>
                             <constraint id="e75c-d600-c5db-3ffd" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                             <constraint id="7b8e-6368-b76b-2131" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -11934,6 +12888,9 @@ Blast.</characteristic>
                       </costs>
                       <entryLinks>
                         <entryLink name="Plasma blaster" id="9665-af80-b9dc-16d5" collective="false" hidden="false" import="true" targetId="5aaf-d2e4-ec59-0407" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{S} Side facing" id="c07b-1b4a-75d0-1166" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                          </categoryLinks>
                           <constraints>
                             <constraint id="e517-8cf6-85af-3cfe" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                             <constraint id="f345-d324-c4d1-1263" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -11945,14 +12902,18 @@ Blast.</characteristic>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Turret weapons" id="d8ac-4be5-ef03-5a20" collective="false" defaultSelectionEntryId="d169-7db4-ebce-8810" hidden="false" import="true">
                   <categoryLinks>
-                    <categoryLink name="Turret-mounted" id="d527-5d8e-be76-fcba" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                    <categoryLink name="{T} Turret-mount" id="d527-5d8e-be76-fcba" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
                   </categoryLinks>
                   <constraints>
                     <constraint id="1359-3299-a89d-8bf4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                     <constraint id="990b-e5b7-30e5-840f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Twin Mega-Bolter" id="d169-7db4-ebce-8810" collective="false" hidden="false" import="true" targetId="ac7b-79b1-8af1-3580" type="selectionEntry"/>
+                    <entryLink name="Twin Mega-Bolter" id="d169-7db4-ebce-8810" collective="false" hidden="false" import="true" targetId="ac7b-79b1-8af1-3580" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{F} Front facing" id="0c0a-d639-1635-6ac5" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                      </categoryLinks>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -12037,7 +12998,7 @@ Blast.</characteristic>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Sponsor weapons" id="12d3-f43e-8106-d94f" collective="false" defaultSelectionEntryId="7f96-c16d-460b-180e" hidden="false" import="true">
                   <categoryLinks>
-                    <categoryLink name="Sponsor-mounted" id="fbdd-b578-54ab-000b" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                    <categoryLink name="{L} Limited angle Side facing" id="fbdd-b578-54ab-000b" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
                   </categoryLinks>
                   <constraints>
                     <constraint id="1df0-b95c-f07e-bd80" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -12053,6 +13014,9 @@ Blast.</characteristic>
                       </costs>
                       <entryLinks>
                         <entryLink name="Lightning lock" id="f852-d602-fbc8-a537" collective="false" hidden="false" import="true" targetId="be80-0b7e-7cef-4ca2" type="selectionEntry">
+                          <categoryLinks>
+                            <categoryLink name="{S} Side facing" id="b63a-9b72-4ae9-d92c" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                          </categoryLinks>
                           <constraints>
                             <constraint id="04a2-fb79-060f-ef0d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                             <constraint id="7726-6fa5-9f5e-f9f2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -12064,7 +13028,7 @@ Blast.</characteristic>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Hull weapons" id="5f3e-d1b5-fe6b-9f58" collective="false" defaultSelectionEntryId="3692-7385-8bd8-25ca" hidden="false" import="true">
                   <categoryLinks>
-                    <categoryLink name="Hull mounted" id="f39b-fb9b-70c6-2672" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                    <categoryLink name="{F} Front facing" id="f39b-fb9b-70c6-2672" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
                   </categoryLinks>
                   <constraints>
                     <constraint id="dbb8-adf0-830f-18ef" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -12075,6 +13039,7 @@ Blast.</characteristic>
                       <categoryLinks>
                         <categoryLink name="Blast" id="38e3-c746-4963-82e8" hidden="false" primary="false" targetId="a30d-0055-6710-6284"/>
                         <categoryLink name="Indirect fire" id="c03f-8813-ce16-680d" hidden="false" primary="false" targetId="9f18-f587-3245-07e5"/>
+                        <categoryLink name="{F} Front facing" id="bfcd-4c9a-0f07-3d70" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
                       </categoryLinks>
                       <costs>
                         <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -12092,6 +13057,48 @@ Blast.</characteristic>
                             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Indirect fire.</characteristic>
                           </characteristics>
+                          <modifierGroups>
+                            <modifierGroup type="and">
+                              <comment>Weapon tag</comment>
+                              <modifiers>
+                                <modifier field="name" join=" " type="prepend" value="{H}">
+                                  <conditions>
+                                    <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                                  </conditions>
+                                </modifier>
+                                <modifier field="name" join=" " type="prepend" value="{F}">
+                                  <conditions>
+                                    <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                                  </conditions>
+                                </modifier>
+                                <modifier field="name" join=" " type="prepend" value="{S}">
+                                  <conditions>
+                                    <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                                  </conditions>
+                                </modifier>
+                                <modifier field="name" join=" " type="prepend" value="{L}">
+                                  <conditions>
+                                    <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                                  </conditions>
+                                </modifier>
+                                <modifier field="name" join=" " type="prepend" value="{R}">
+                                  <conditions>
+                                    <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                                  </conditions>
+                                </modifier>
+                                <modifier field="name" join=" " type="prepend" value="{T}">
+                                  <conditions>
+                                    <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                                  </conditions>
+                                </modifier>
+                                <modifier field="name" join=" " type="prepend" value="{C}">
+                                  <conditions>
+                                    <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                                  </conditions>
+                                </modifier>
+                              </modifiers>
+                            </modifierGroup>
+                          </modifierGroups>
                           <modifiers>
                             <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="set" value="63">
                               <conditions>
@@ -12240,6 +13247,9 @@ Blast.</characteristic>
               </costs>
               <entryLinks>
                 <entryLink name="Incendine combustor" id="d6c4-7040-86ca-012e" collective="false" hidden="false" import="true" targetId="54d3-0696-6783-05d0" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{L} Limited angle Side facing" id="1045-fd27-c745-4308" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="4808-b6e0-e6d7-06f2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                     <constraint id="e3b1-504f-246e-5412" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -12268,6 +13278,9 @@ Blast.</characteristic>
               </costs>
               <entryLinks>
                 <entryLink name="Heavy Bolter" id="39cd-b116-90fb-083f" collective="false" hidden="false" import="true" targetId="5dfe-014a-29d4-fa0d" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{L} Limited angle Side facing" id="6aa2-bed5-a911-778a" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="c05b-ada4-eec9-de6c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                     <constraint id="ad34-57fb-b6fc-2724" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -12306,17 +13319,27 @@ Blast.</characteristic>
           </constraints>
           <entryLinks>
             <entryLink name="Laser Destroyer" id="f089-35e5-60a8-b196" collective="false" hidden="false" import="true" targetId="a31b-b29c-2dfa-a4fc" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="5c2b-6437-9118-22bb" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10"/>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
               </costs>
             </entryLink>
             <entryLink name="Multi-melta" id="bfd8-022d-ba34-a9b1" collective="false" hidden="false" import="true" targetId="3a12-1083-72c5-6b34" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="be17-1bf5-81bc-16be" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="5"/>
               </costs>
             </entryLink>
-            <entryLink name="Mega-Bolter" id="e6ea-8dec-cda5-dafd" collective="false" hidden="false" import="true" targetId="46b3-45a9-4154-0878" type="selectionEntry"/>
+            <entryLink name="Mega-Bolter" id="e6ea-8dec-cda5-dafd" collective="false" hidden="false" import="true" targetId="46b3-45a9-4154-0878" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="5e48-a79e-7552-62b8" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
