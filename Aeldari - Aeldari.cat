@@ -9001,9 +9001,6 @@ Until the end of the phase, this unit cannot fire Overwatch, Set to Defend or ma
       </profiles>
       <selectionEntryGroups>
         <selectionEntryGroup name="Turret weapon" id="6c42-e117-a49f-7fa6" collective="false" defaultSelectionEntryId="9819-5228-f3f7-cd33" hidden="false" import="true" sortIndex="2">
-          <categoryLinks>
-            <categoryLink name="{T} Turret-mount" id="b6ee-998d-84ea-c2e2" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
-          </categoryLinks>
           <constraints>
             <constraint id="9a19-9730-7091-4ff5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="ee32-9889-d9e4-e230" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -9051,9 +9048,6 @@ Until the end of the phase, this unit cannot fire Overwatch, Set to Defend or ma
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Hull weapon" id="274e-69b6-0807-e67f" collective="false" defaultSelectionEntryId="8ea8-68c5-3819-5a8b" hidden="false" import="true" sortIndex="3">
-          <categoryLinks>
-            <categoryLink name="{F} Front facing" id="6fab-3d26-ba16-280d" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
-          </categoryLinks>
           <constraints>
             <constraint id="5d49-5979-d716-1e8b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="a264-6cd2-0a8e-7e50" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -9155,9 +9149,6 @@ Until the end of the phase, this unit cannot fire Overwatch, Set to Defend or ma
       </profiles>
       <selectionEntryGroups>
         <selectionEntryGroup name="Turret weapon" id="58f3-925b-2799-56e9" collective="false" defaultSelectionEntryId="0b63-3c17-c61d-cf36" hidden="false" import="true">
-          <categoryLinks>
-            <categoryLink name="{T} Turret-mount" id="2d1a-9c6b-d65d-97e4" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
-          </categoryLinks>
           <constraints>
             <constraint id="0fad-ed43-1672-0ad1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="e7ac-5c28-6513-0ad2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -16196,9 +16187,6 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
       </modifiers>
       <selectionEntryGroups>
         <selectionEntryGroup name="Turret weapon" id="4c33-6821-5cd6-30ee" collective="false" defaultSelectionEntryId="9633-7120-6d05-24d2" hidden="false" import="true">
-          <categoryLinks>
-            <categoryLink name="{T} Turret-mount" id="d4b9-71ca-7e8c-d7d8" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
-          </categoryLinks>
           <constraints>
             <constraint id="3725-7a08-08d6-e48d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="b09c-766c-85e8-d1c1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -19102,9 +19090,6 @@ Remove this model from the battlefield. In the Reinforcements step of one of you
       </modifiers>
       <selectionEntryGroups>
         <selectionEntryGroup name="Turret weapon" id="4bd6-88b8-9364-5f9f" collective="false" defaultSelectionEntryId="6f27-42d4-4fe7-ad53" hidden="false" import="true">
-          <categoryLinks>
-            <categoryLink name="{T} Turret-mount" id="2dce-8ae9-8264-9fb0" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
-          </categoryLinks>
           <constraints>
             <constraint id="4952-8055-8c87-abb1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="df45-b27e-2c66-1782" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -19130,6 +19115,48 @@ Remove this model from the battlefield. In the Reinforcements step of one of you
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">4</characteristic>
                     <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, you can re-roll Wound rolls of 1.</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Weapon tag</comment>
+                      <modifiers>
+                        <modifier field="name" join=" " type="prepend" value="{H}">
+                          <conditions>
+                            <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{F}">
+                          <conditions>
+                            <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{S}">
+                          <conditions>
+                            <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{L}">
+                          <conditions>
+                            <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{R}">
+                          <conditions>
+                            <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{T}">
+                          <conditions>
+                            <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{C}">
+                          <conditions>
+                            <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
             </selectionEntry>
