@@ -23705,72 +23705,102 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
           </profiles>
           <selectionEntryGroups>
             <selectionEntryGroup name="Secondary Weapon" id="537a-4aec-c366-f4a9" collective="false" hidden="false" import="true">
-              <categoryLinks>
-                <categoryLink name="{T} Turret-mount" id="f1a4-37ca-dae7-c14e" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
-              </categoryLinks>
               <constraints>
                 <constraint id="6d81-3e13-36db-846e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
               <entryLinks>
                 <entryLink name="Battle Cannon" id="16fc-a042-c8af-e4f3" collective="false" hidden="false" import="true" targetId="1d7b-4f46-b77b-ead1" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{T} Turret-mount" id="89cd-901d-a358-0266" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="25"/>
                     <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
                   </costs>
                 </entryLink>
                 <entryLink name="Multi-melta" id="25fa-4f75-c002-e053" collective="false" hidden="false" import="true" targetId="2b37-65ee-9443-b4ef" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{T} Turret-mount" id="6584-4f6b-09a7-3989" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="15"/>
                     <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
                   </costs>
                 </entryLink>
                 <entryLink name="Twin Heavy Bolter" id="4c06-4f1d-c055-35f9" collective="false" hidden="false" import="true" targetId="09d8-7790-ed3f-4d6d" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{T} Turret-mount" id="b4be-7c3b-7490-156c" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="5"/>
                   </costs>
                 </entryLink>
                 <entryLink name="Twin Lascannon" id="515a-9542-226f-35f4" collective="false" hidden="false" import="true" targetId="ee18-b1cd-6b60-464d" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{T} Turret-mount" id="9a01-c6ad-e986-3cd9" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="35"/>
                     <cost name=" PL" typeId="e356-c769-5920-6e14" value="2"/>
                   </costs>
                 </entryLink>
                 <entryLink name="Twin Heavy Flamer" id="1296-2bcc-a18f-3a0b" collective="false" hidden="false" import="true" targetId="8d70-a6af-cbad-f08c" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{T} Turret-mount" id="2b9c-a3db-5b2d-3701" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="10"/>
                   </costs>
                 </entryLink>
                 <entryLink name="Icarus Missile launcher" id="26bc-dd45-60eb-020d" collective="false" hidden="false" import="true" targetId="66e0-473e-4003-9a5b" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{T} Turret-mount" id="c233-454f-f830-bf23" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="20"/>
                     <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
                   </costs>
                 </entryLink>
                 <entryLink name="Castellan launcher" id="fae6-e2d1-d842-1401" collective="false" hidden="false" import="true" targetId="e640-c148-5944-6874" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{T} Turret-mount" id="ea99-9b8c-5a6f-567c" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="15"/>
                     <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
                   </costs>
                 </entryLink>
                 <entryLink name="Icarus Lascannon" id="2afb-91ba-d375-21de" collective="false" hidden="false" import="true" targetId="c0a2-9100-e1e5-8bc0" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{T} Turret-mount" id="b873-b3b5-aae2-49cd" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="20"/>
                     <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
                   </costs>
                 </entryLink>
                 <entryLink name="Quad projectile launcher" id="ac23-2a66-1842-74fd" collective="false" hidden="false" import="true" targetId="99ec-b1a2-470f-60ab" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{T} Turret-mount" id="3871-228a-213a-816e" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                  </categoryLinks>
                   <costs>
                     <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
                     <cost name="pts" typeId="points" value="25"/>
                   </costs>
                 </entryLink>
                 <entryLink name="Icarus Quad Lascannon" id="9110-26d8-7b11-82dc" collective="false" hidden="false" import="true" targetId="76b1-73c7-7aef-26d3" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{T} Turret-mount" id="5d85-e710-794b-593f" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="65"/>
                     <cost name=" PL" typeId="e356-c769-5920-6e14" value="3"/>
                   </costs>
                 </entryLink>
                 <entryLink name="Vengeance launcher" id="8ee1-fd79-dcab-0797" collective="false" hidden="false" import="true" targetId="79a5-23f2-b542-a73f" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{T} Turret-mount" id="15e4-a1a1-fb13-8ccb" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="20"/>
                     <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -23779,11 +23809,11 @@ It cannot transport non-CHARACTER models with a Wounds characteristic of 5 or mo
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Main weapon" id="75aa-5bc8-3447-2663" collective="false" hidden="false" import="true">
-              <categoryLinks>
-                <categoryLink name="{T} Turret-mount" id="ca44-2793-a2d7-f8bd" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
-              </categoryLinks>
               <entryLinks>
                 <entryLink name="Overcharged Laser Destructor" id="ffc1-dfcf-494c-8f7f" collective="false" hidden="false" import="true" targetId="0ddf-18b1-7b80-2b49" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{T} Turret-mount" id="4b2a-6f62-8fbb-952f" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="7b27-4b3f-7904-f3cd" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                     <constraint id="83ab-849d-0526-3ae1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
