@@ -3293,19 +3293,22 @@ D6--&gt;Result
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Additional weapons" id="1b1c-805c-ab54-f4c5" collective="false" hidden="false" import="true">
-          <categoryLinks>
-            <categoryLink name="{T} Turret-mount" id="5d5f-b295-74b1-ff1e" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
-          </categoryLinks>
           <constraints>
             <constraint id="ff8a-4ebb-cdf5-da63" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
           </constraints>
           <entryLinks>
             <entryLink name="Skorcha" id="ccae-1015-13d5-d226" collective="false" hidden="false" import="true" targetId="f873-7ff9-9650-47f0" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="dd1a-17a4-5d44-df9b" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10"/>
               </costs>
             </entryLink>
             <entryLink name="Big Shoota" id="32d7-28a4-9a58-367a" collective="false" hidden="false" import="true" targetId="f5c9-ea3b-0323-de74" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="3fb5-a5a1-dd7f-4f58" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="5"/>
               </costs>
@@ -7398,6 +7401,48 @@ The range of this aura cannot be modified.</characteristic>
                         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6</characteristic>
                         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Each time this weapon is selected to shoot with, roll 2D6 to determine the Strength of all its attacks: on an 11+, each failed save roll inflicts D3 mortal wounds on the target in addition to any normal damage.</characteristic>
                       </characteristics>
+                      <modifierGroups>
+                        <modifierGroup type="and">
+                          <comment>Weapon tag</comment>
+                          <modifiers>
+                            <modifier field="name" join=" " type="prepend" value="{H}">
+                              <conditions>
+                                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" join=" " type="prepend" value="{F}">
+                              <conditions>
+                                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" join=" " type="prepend" value="{S}">
+                              <conditions>
+                                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" join=" " type="prepend" value="{L}">
+                              <conditions>
+                                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" join=" " type="prepend" value="{R}">
+                              <conditions>
+                                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" join=" " type="prepend" value="{T}">
+                              <conditions>
+                                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" join=" " type="prepend" value="{C}">
+                              <conditions>
+                                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </modifierGroup>
+                      </modifierGroups>
                     </profile>
                   </profiles>
                 </selectionEntry>
@@ -9429,6 +9474,48 @@ In addition, each time a model in such unit is destroyed by an attack made by an
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
                     <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Weapon tag</comment>
+                      <modifiers>
+                        <modifier field="name" join=" " type="prepend" value="{H}">
+                          <conditions>
+                            <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{F}">
+                          <conditions>
+                            <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{S}">
+                          <conditions>
+                            <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{L}">
+                          <conditions>
+                            <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{R}">
+                          <conditions>
+                            <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{T}">
+                          <conditions>
+                            <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{C}">
+                          <conditions>
+                            <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
             </selectionEntry>
@@ -9480,6 +9567,48 @@ In addition, each time a model in such unit is destroyed by an attack made by an
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
                     <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Weapon tag</comment>
+                      <modifiers>
+                        <modifier field="name" join=" " type="prepend" value="{H}">
+                          <conditions>
+                            <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{F}">
+                          <conditions>
+                            <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{S}">
+                          <conditions>
+                            <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{L}">
+                          <conditions>
+                            <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{R}">
+                          <conditions>
+                            <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{T}">
+                          <conditions>
+                            <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{C}">
+                          <conditions>
+                            <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
             </selectionEntry>
@@ -10233,16 +10362,59 @@ Each time an attack is made with this weapon, an unmodified wound roll of 6 infl
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                     <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Weapon tag</comment>
+                      <modifiers>
+                        <modifier field="name" join=" " type="prepend" value="{H}">
+                          <conditions>
+                            <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{F}">
+                          <conditions>
+                            <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{S}">
+                          <conditions>
+                            <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{L}">
+                          <conditions>
+                            <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{R}">
+                          <conditions>
+                            <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{T}">
+                          <conditions>
+                            <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{C}">
+                          <conditions>
+                            <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
             </selectionEntry>
             <selectionEntry name="Burna exhaust" id="3a26-3b84-c3f9-aba1" collective="true" hidden="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink name="Torrent" id="9edf-a0a1-a025-7405" hidden="false" primary="false" targetId="795f-a8d3-dc18-cb2e"/>
+                <categoryLink name="{S} Side facing" id="e240-bf2d-3295-4d20" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
               </categoryLinks>
               <constraints>
-                <constraint id="0088-e298-e1ab-83c4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="4"/>
-                <constraint id="1cf9-b1cd-dcc2-f9b6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="4"/>
+                <constraint id="0088-e298-e1ab-83c4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
+                <constraint id="1cf9-b1cd-dcc2-f9b6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
               </constraints>
               <costs>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -10254,12 +10426,54 @@ Each time an attack is made with this weapon, an unmodified wound roll of 6 infl
                 <profile name="Burna exhaust" id="dacd-6510-6dc4-d134" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">8</characteristic>
-                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault D6</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 2D6</characteristic>
                     <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
                     <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                     <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent.</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Weapon tag</comment>
+                      <modifiers>
+                        <modifier field="name" join=" " type="prepend" value="{H}">
+                          <conditions>
+                            <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{F}">
+                          <conditions>
+                            <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{S}">
+                          <conditions>
+                            <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{L}">
+                          <conditions>
+                            <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{R}">
+                          <conditions>
+                            <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{T}">
+                          <conditions>
+                            <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="name" join=" " type="prepend" value="{C}">
+                          <conditions>
+                            <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
             </selectionEntry>
@@ -11921,6 +12135,11 @@ Each time an attack is made with this weapon, an unmodified wound roll of 6 infl
             <constraint id="c027-0a82-36be-a07e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
           </constraints>
           <entryLinks>
+            <entryLink name="Twinn Skorcha" id="6457-0650-24d6-1dc4" collective="false" hidden="false" targetId="a6cc-c71b-c16b-c02f" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="74c2-bbeb-6ce9-4a25" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
+            </entryLink>
             <entryLink name="Twinn big shoota" id="1279-cc45-fbc2-4eb4" collective="false" hidden="false" import="true" targetId="08de-ee53-9299-3213" type="selectionEntry">
               <categoryLinks>
                 <categoryLink name="{T} Turret-mount" id="14be-bda4-cbe0-f9f6" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
@@ -11931,35 +12150,10 @@ Each time an attack is made with this weapon, an unmodified wound roll of 6 infl
             </entryLink>
           </entryLinks>
           <selectionEntries>
-            <selectionEntry name="Twinn Skorcha" id="a6cc-c71b-c16b-c02f" collective="false" hidden="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink name="Flame Weapon" id="0ff4-2ecc-aca7-b917" hidden="false" primary="false" targetId="dbad-8265-94be-9c47"/>
-              </categoryLinks>
-              <constraints>
-                <constraint id="4ce2-99d4-199f-297d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="points" value="5"/>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-              <infoLinks>
-                <infoLink name="Skorcha" id="699e-b51a-a7fe-ad3a" hidden="false" targetId="b5ba-7dde-0fff-4561" type="profile">
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <modifiers>
-                        <modifier field="name" type="set" value="Twinn Skorcha"/>
-                        <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" type="set" value="Assault 2D6"/>
-                      </modifiers>
-                    </modifierGroup>
-                  </modifierGroups>
-                </infoLink>
-              </infoLinks>
-            </selectionEntry>
             <selectionEntry name="Twinn Rokkit launcha" id="536f-492e-daf9-6699" collective="false" hidden="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink name="Blast" id="5934-8410-aa8d-0862" hidden="false" primary="false" targetId="a30d-0055-6710-6284"/>
+                <categoryLink name="{T} Turret-mount" id="5722-4289-e89d-f9cd" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
               </categoryLinks>
               <constraints>
                 <constraint id="184b-8d2e-e98c-d5e5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
@@ -11986,6 +12180,7 @@ Each time an attack is made with this weapon, an unmodified wound roll of 6 infl
             <selectionEntry name="Twinn Kustom mega-blasta" id="5652-63b4-9e61-0b86" collective="false" hidden="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink name="Blast" id="8b69-f00b-df80-6c9a" hidden="false" primary="false" targetId="a30d-0055-6710-6284"/>
+                <categoryLink name="{T} Turret-mount" id="05cc-c3de-6159-c9a6" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
               </categoryLinks>
               <constraints>
                 <constraint id="d7a2-2d12-2522-1a0a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
@@ -12012,6 +12207,7 @@ Each time an attack is made with this weapon, an unmodified wound roll of 6 infl
             <selectionEntry name="Twinn Grotzooka" id="669f-d9ea-f74d-c59f" collective="false" hidden="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink name="Blast" id="58e7-596f-3d41-142c" hidden="false" primary="false" targetId="a30d-0055-6710-6284"/>
+                <categoryLink name="{T} Turret-mount" id="940c-7021-f719-f9de" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
               </categoryLinks>
               <constraints>
                 <constraint id="a501-3ab9-8f60-9980" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
@@ -19825,20 +20021,120 @@ Each MEGA ARMOUR or JUMP PACK model takes the space of 2 models, and each 5 INFA
         <categoryLink name="Mek" id="7bda-7008-bd11-90aa" hidden="false" primary="false" targetId="9daa-b6ae-fc06-236a"/>
       </categoryLinks>
       <costs>
-        <cost name="PL" typeId="e356-c769-5920-6e14" value="9"/>
+        <cost name="Pts" typeId="points" value="255"/>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="13"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-        <cost name="Pts" typeId="points" value="175"/>
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
       <entryLinks>
+        <entryLink name="Dread Weapon option" id="93d4-0b2c-6d28-2216" hidden="false" targetId="29a6-947f-711e-b3c2" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink name="Zzap gun" id="f136-e9f9-6cb7-5339" hidden="false" import="true" targetId="8d66-3140-6628-a737" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{L} Limited angle Side facing" id="ba45-3509-8c41-1d01" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink name="Smasha gun" id="07cf-d0bc-a885-2d14" hidden="false" import="true" targetId="5dcb-d1c6-7275-729e" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{L} Limited angle Side facing" id="b5a1-1b2d-d2de-19c6" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="5"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </entryLink>
         <entryLink name="Model options" id="3f2d-35e2-2326-120b" collective="false" hidden="false" import="true" targetId="cabb-c994-faef-667a" type="selectionEntryGroup"/>
-        <entryLink name="Dread Weapon option" id="f5f7-ec0d-bdcc-3b10" collective="false" hidden="false" import="true" targetId="29a6-947f-711e-b3c2" type="selectionEntryGroup"/>
+        <entryLink name="Dread Weapon option" id="f5f7-ec0d-bdcc-3b10" collective="false" hidden="false" import="true" targetId="29a6-947f-711e-b3c2" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink name="Zzap gun" id="ade9-5164-cc45-d8a0" hidden="false" import="true" targetId="8d66-3140-6628-a737" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{L} Limited angle Side facing" id="50bc-53f0-0f27-9f2e" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink name="Smasha gun" id="fa81-628f-34f2-543e" hidden="false" import="true" targetId="5dcb-d1c6-7275-729e" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{L} Limited angle Side facing" id="2053-3208-6576-db3c" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="5"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </entryLink>
+        <entryLink name="Twinn Skorcha" id="42e9-4c65-5064-a556" hidden="false" import="true" targetId="a6cc-c71b-c16b-c02f" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{F} Front facing" id="c455-db2a-69ce-3f8e" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+          </categoryLinks>
+          <constraints>
+            <constraint id="33aa-8a02-0ad7-4313" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="points" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier field="4ce2-99d4-199f-297d" type="set" value="1"/>
+          </modifiers>
+        </entryLink>
+        <entryLink name="Kustom force field" id="1905-20ac-edee-b9b1" collective="false" hidden="false" import="true" targetId="67a4-5694-7c2e-a7f1" type="selectionEntry"/>
+        <entryLink name="Rokkit launcha" id="cfea-b135-6b91-0cab" collective="false" hidden="false" import="true" targetId="fa16-5d7c-2df3-fdce" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{F} Front facing" id="052e-70e8-0491-1cc7" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+          </categoryLinks>
+          <constraints>
+            <constraint id="9a7e-4f1c-9306-ef4f" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
+            <constraint id="c745-843b-1015-8087" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="Explodes 6+ (6&quot;)" id="d3cf-383c-767b-497b" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
         <infoLink name="Cybork body" id="e8cb-6c4a-6ebb-bf2d" hidden="false" targetId="6535-4870-9fd4-fc94" type="profile"/>
         <infoLink name="Rigger Crew" id="b81f-c087-82db-ea72" hidden="false" targetId="f851-bbb6-45d5-4ee6" type="profile"/>
         <infoLink name="Weapon tinkering" id="6139-9f95-cd80-a104" hidden="false" targetId="9bc1-f2e4-6d30-26a7" type="profile"/>
+        <infoLink name="Off-hand weapon" id="eab9-c1b5-3de2-a72f" hidden="false" targetId="e14b-37da-f8e9-1752" type="profile">
+          <modifiers>
+            <modifier field="hidden" type="set" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition childId="fe59-72b5-4b27-6a4d" childName="Dread killsaw" field="selections" scope="9cfa-3a7d-3b5a-8b3c" shared="true" type="equalTo" value="1"/>
+                        <condition childId="5dd3-6773-a628-fc88" childName="Dread Rippa Klaw" field="selections" scope="9cfa-3a7d-3b5a-8b3c" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition childId="fe59-72b5-4b27-6a4d" childName="Dread killsaw" field="selections" scope="9cfa-3a7d-3b5a-8b3c" shared="true" type="atLeast" value="2"/>
+                    <condition childId="5dd3-6773-a628-fc88" childName="Dread Rippa Klaw" field="selections" scope="9cfa-3a7d-3b5a-8b3c" shared="true" type="atLeast" value="2"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Crushing bulk" id="a13e-148c-07b3-ba7e" hidden="false" targetId="3491-4b17-34d4-b9ba" type="profile">
+          <modifiers>
+            <modifier field="hidden" type="set" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition childId="fe59-72b5-4b27-6a4d" childName="Dread killsaw" field="selections" scope="9cfa-3a7d-3b5a-8b3c" shared="true" type="equalTo" value="1"/>
+                    <condition childId="5dd3-6773-a628-fc88" childName="Dread Rippa Klaw" field="selections" scope="9cfa-3a7d-3b5a-8b3c" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Mek tinkering" id="65a6-2d6e-a167-18b9" hidden="false" targetId="14ee-e596-0a78-b689" type="profile"/>
       </infoLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -19984,71 +20280,7 @@ Each MEGA ARMOUR or JUMP PACK model takes the space of 2 models, and each 5 INFA
             </modifier>
           </modifiers>
         </profile>
-        <profile name="Fixin’ Jobs" id="2851-95ac-a885-36f3" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the end of each of your Movement phases, this model can repair one friendly &lt;CLAN&gt; VEHICLE model within 1&quot; (it cannot repair itself). If it does, that model regains up to D3 lost wounds. A model can only be repaired once each turn.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Dread Weapon option" id="29a6-947f-711e-b3c2" collective="false" defaultSelectionEntryId="5dd3-6773-a628-fc88" hidden="false" import="true">
-          <constraints>
-            <constraint id="754d-73f1-f187-db52" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-            <constraint id="da9c-eefe-8700-7dea" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
-          </constraints>
-          <entryLinks>
-            <entryLink name="Killkannon" id="58ec-e8e6-a7ea-3bac" collective="false" hidden="false" import="true" targetId="727f-f2e9-933a-d920" type="selectionEntry"/>
-          </entryLinks>
-          <selectionEntries>
-            <selectionEntry name="Dread killsaw" id="fe59-72b5-4b27-6a4d" collective="false" hidden="false" import="true" type="upgrade">
-              <constraints>
-                <constraint id="1e8d-a660-18c5-f1b3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
-              <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Dread killsaw" id="53a6-1699-e73b-6df1" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
-                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-                    <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
-                    <characteristic name="AP" typeId="75aa-a838-b675-6484">4</characteristic>
-                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it makes D6 additional attack with this weapon.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry name="Dread Rippa Klaw" id="5dd3-6773-a628-fc88" collective="false" hidden="false" import="true" type="upgrade">
-              <constraints>
-                <constraint id="0758-bd88-de9a-7b3a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-              </constraints>
-              <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Dread Rippa Klaw" id="c046-1af6-0a4a-5191" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
-                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-                    <characteristic name="S" typeId="59b1-319e-ec13-d466">x2</characteristic>
-                    <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
-                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
-                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry name="Mega-Dread" id="f6ba-a233-c1c0-6acc" collective="false" hidden="true" import="true" type="unit">
       <categoryLinks>
@@ -20072,6 +20304,42 @@ Each MEGA ARMOUR or JUMP PACK model takes the space of 2 models, and each 5 INFA
       </entryLinks>
       <infoLinks>
         <infoLink name="Explodes 6+ (6&quot;)" id="bca7-574f-b51a-fec3" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
+        <infoLink name="Crushing bulk" id="6d91-3bce-26f4-3f3e" hidden="false" targetId="3491-4b17-34d4-b9ba" type="profile">
+          <modifiers>
+            <modifier field="hidden" type="set" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition childId="fe59-72b5-4b27-6a4d" childName="Dread killsaw" field="selections" scope="f6ba-a233-c1c0-6acc" shared="true" type="equalTo" value="1"/>
+                    <condition childId="5dd3-6773-a628-fc88" childName="Dread Rippa Klaw" field="selections" scope="f6ba-a233-c1c0-6acc" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Off-hand weapon" id="7a38-a4b3-ade3-9130" hidden="false" targetId="e14b-37da-f8e9-1752" type="profile">
+          <modifiers>
+            <modifier field="hidden" type="set" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition childId="fe59-72b5-4b27-6a4d" childName="Dread killsaw" field="selections" scope="f6ba-a233-c1c0-6acc" shared="true" type="equalTo" value="1"/>
+                        <condition childId="5dd3-6773-a628-fc88" childName="Dread Rippa Klaw" field="selections" scope="f6ba-a233-c1c0-6acc" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition childId="fe59-72b5-4b27-6a4d" childName="Dread killsaw" field="selections" scope="f6ba-a233-c1c0-6acc" shared="true" type="equalTo" value="2"/>
+                    <condition childId="5dd3-6773-a628-fc88" childName="Dread Rippa Klaw" field="selections" scope="f6ba-a233-c1c0-6acc" shared="true" type="equalTo" value="2"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -20285,7 +20553,7 @@ Each MEGA ARMOUR or JUMP PACK model takes the space of 2 models, and each 5 INFA
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
           <profiles>
-            <profile name="Boombits" id="d9b9-75e8-04eb-de42" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+            <profile name="{F} Boombits" id="d9b9-75e8-04eb-de42" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault D6</characteristic>
@@ -27152,8 +27420,8 @@ Each MEGA ARMOUR or JUMP PACK model takes up the space of 2 models, and each 5 I
           <profiles>
             <profile name="Killkannon" id="2349-9525-29ff-4ead" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D6</characteristic>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D3+3</characteristic>
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
                 <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
@@ -28033,6 +28301,32 @@ Each time an attack of strength 7 or less is allocated to this model, subtract 1
               </modifierGroups>
             </profile>
           </profiles>
+        </selectionEntry>
+        <selectionEntry name="Twinn Skorcha" id="a6cc-c71b-c16b-c02f" collective="false" hidden="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink name="Flame Weapon" id="0ff4-2ecc-aca7-b917" hidden="false" primary="false" targetId="dbad-8265-94be-9c47"/>
+          </categoryLinks>
+          <constraints>
+            <constraint id="4ce2-99d4-199f-297d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="points" value="5"/>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Skorcha" id="699e-b51a-a7fe-ad3a" hidden="false" targetId="b5ba-7dde-0fff-4561" type="profile">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier field="name" type="set" value="Twinn Skorcha"/>
+                    <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" type="set" value="Assault 2D6"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </infoLink>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -31825,6 +32119,67 @@ All other rules of Heroic Intervention still apply.</characteristic>
           </modifiers>
         </entryLink>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Dread Weapon option" id="29a6-947f-711e-b3c2" collective="false" defaultSelectionEntryId="5dd3-6773-a628-fc88" hidden="false" import="true">
+      <constraints>
+        <constraint id="754d-73f1-f187-db52" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+        <constraint id="da9c-eefe-8700-7dea" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
+      </constraints>
+      <entryLinks>
+        <entryLink name="Killkannon" id="58ec-e8e6-a7ea-3bac" collective="false" hidden="false" import="true" targetId="727f-f2e9-933a-d920" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{L} Limited angle Side facing" id="bfc0-6411-fde5-f84e" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+          </categoryLinks>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry name="Dread killsaw" id="fe59-72b5-4b27-6a4d" collective="false" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="1e8d-a660-18c5-f1b3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="Pts" typeId="points" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Dread killsaw" id="53a6-1699-e73b-6df1" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">4</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it makes D6 additional attack with this weapon.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="Dread Rippa Klaw" id="5dd3-6773-a628-fc88" collective="false" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="0758-bd88-de9a-7b3a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="Pts" typeId="points" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Dread Rippa Klaw" id="c046-1af6-0a4a-5191" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                <characteristic name="S" typeId="59b1-319e-ec13-d466">x2</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </catalogue>
