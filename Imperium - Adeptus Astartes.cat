@@ -28482,9 +28482,6 @@ If a wound is scored against a target without the FLY, VEHICLE or TITANIC keywor
       </profiles>
       <selectionEntryGroups>
         <selectionEntryGroup name="Turret weapon" id="f095-dc73-ab3c-5bc2" collective="false" defaultSelectionEntryId="d791-f88a-f3f2-0d3e" hidden="false" import="true">
-          <categoryLinks>
-            <categoryLink name="{T} Turret-mount" id="69df-f876-d89a-5fa1" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
-          </categoryLinks>
           <constraints>
             <constraint id="9c3f-9129-f518-7b0e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="c9f2-05ec-e4c3-738f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -43464,9 +43461,6 @@ Each time this model fires Overwatch, it only resolves attacks with its weapons 
           </profiles>
           <selectionEntryGroups>
             <selectionEntryGroup name="Hull weapon array" id="e198-1e68-fae7-3dbd" collective="false" defaultSelectionEntryId="8f48-1656-9003-c5ce" hidden="false" import="true">
-              <categoryLinks>
-                <categoryLink name="{F} Front facing" id="fd54-05b9-9af3-a7ba" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
-              </categoryLinks>
               <constraints>
                 <constraint id="273f-0484-7d6e-1a88" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                 <constraint id="8d77-7516-a066-e3d3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -43485,15 +43479,15 @@ Each time this model fires Overwatch, it only resolves attacks with its weapons 
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Turret weapon" id="b974-1c8b-1e6b-2367" collective="false" defaultSelectionEntryId="1f30-802a-8bd4-9b23" hidden="false" import="true">
-              <categoryLinks>
-                <categoryLink name="{T} Turret-mount" id="dc16-1633-f14f-710e" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
-              </categoryLinks>
               <constraints>
                 <constraint id="3a55-b0a4-a513-ec53" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                 <constraint id="3e8a-fb19-0b00-436c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry name="Hammerfall missile launcher" id="1f30-802a-8bd4-9b23" collective="false" hidden="false" import="true" type="upgrade">
+                  <categoryLinks>
+                    <categoryLink name="{T} Turret-mount" id="8e27-5978-bafc-46bf" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                     <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
@@ -43510,6 +43504,48 @@ Each time this model fires Overwatch, it only resolves attacks with its weapons 
                         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
                       </characteristics>
+                      <modifierGroups>
+                        <modifierGroup type="and">
+                          <comment>Weapon tag</comment>
+                          <modifiers>
+                            <modifier field="name" join=" " type="prepend" value="{H}">
+                              <conditions>
+                                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" join=" " type="prepend" value="{F}">
+                              <conditions>
+                                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" join=" " type="prepend" value="{S}">
+                              <conditions>
+                                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" join=" " type="prepend" value="{L}">
+                              <conditions>
+                                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" join=" " type="prepend" value="{R}">
+                              <conditions>
+                                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" join=" " type="prepend" value="{T}">
+                              <conditions>
+                                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" join=" " type="prepend" value="{C}">
+                              <conditions>
+                                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </modifierGroup>
+                      </modifierGroups>
                     </profile>
                     <profile name="Missile launcher, Superkrak" id="13e8-66e6-ab96-4aa0" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                       <characteristics>
@@ -43520,6 +43556,48 @@ Each time this model fires Overwatch, it only resolves attacks with its weapons 
                         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
                         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
                       </characteristics>
+                      <modifierGroups>
+                        <modifierGroup type="and">
+                          <comment>Weapon tag</comment>
+                          <modifiers>
+                            <modifier field="name" join=" " type="prepend" value="{H}">
+                              <conditions>
+                                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" join=" " type="prepend" value="{F}">
+                              <conditions>
+                                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" join=" " type="prepend" value="{S}">
+                              <conditions>
+                                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" join=" " type="prepend" value="{L}">
+                              <conditions>
+                                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" join=" " type="prepend" value="{R}">
+                              <conditions>
+                                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" join=" " type="prepend" value="{T}">
+                              <conditions>
+                                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" join=" " type="prepend" value="{C}">
+                              <conditions>
+                                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </modifierGroup>
+                      </modifierGroups>
                     </profile>
                   </profiles>
                 </selectionEntry>
