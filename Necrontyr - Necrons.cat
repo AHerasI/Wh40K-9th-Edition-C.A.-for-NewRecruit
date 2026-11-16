@@ -4621,6 +4621,48 @@ The designated Protocol of a Named Dynasty always have both of it&apos;s Directi
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Splash. Each time an attack is made with this weapon, an unmodified hit roll of 5+ scores 2 additional hits.</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Weapon tag</comment>
+                  <modifiers>
+                    <modifier field="name" join=" " type="prepend" value="{H}">
+                      <conditions>
+                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{F}">
+                      <conditions>
+                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{S}">
+                      <conditions>
+                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{L}">
+                      <conditions>
+                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{R}">
+                      <conditions>
+                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{T}">
+                      <conditions>
+                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{C}">
+                      <conditions>
+                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
               <modifiers>
                 <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="set" value="30">
                   <conditions>
@@ -11219,8 +11261,15 @@ If the battle ends and this unit is not on the battlefield it is considered to b
                 <constraint id="fe07-38b3-9243-a0d1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
               </constraints>
               <entryLinks>
-                <entryLink name="Particle beam" id="0b47-5d97-16f7-29a1" collective="false" hidden="false" import="true" targetId="1c3b-30f9-dd5a-09c1" type="selectionEntry"/>
+                <entryLink name="Particle beam" id="0b47-5d97-16f7-29a1" collective="false" hidden="false" import="true" targetId="1c3b-30f9-dd5a-09c1" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="0983-0b42-0905-3aaf" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
+                </entryLink>
                 <entryLink name="Twin Tesla carbine" id="5e33-e13e-1c26-67bd" collective="false" hidden="false" import="true" targetId="4613-b633-08f1-5dd3" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="04a0-74cd-147f-62aa" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="5"/>
                   </costs>
@@ -11228,6 +11277,9 @@ If the battle ends and this unit is not on the battlefield it is considered to b
               </entryLinks>
               <selectionEntries>
                 <selectionEntry name="Twin Gauss blaster" id="8d1e-918c-7a5f-29eb" collective="false" hidden="false" import="true" type="upgrade">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="7ea4-3b4f-a653-32af" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                     <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
@@ -11244,6 +11296,48 @@ If the battle ends and this unit is not on the battlefield it is considered to b
                         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
                       </characteristics>
+                      <modifierGroups>
+                        <modifierGroup type="and">
+                          <comment>Weapon tag</comment>
+                          <modifiers>
+                            <modifier field="name" join=" " type="prepend" value="{H}">
+                              <conditions>
+                                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" join=" " type="prepend" value="{F}">
+                              <conditions>
+                                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" join=" " type="prepend" value="{S}">
+                              <conditions>
+                                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" join=" " type="prepend" value="{L}">
+                              <conditions>
+                                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" join=" " type="prepend" value="{R}">
+                              <conditions>
+                                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" join=" " type="prepend" value="{T}">
+                              <conditions>
+                                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                            <modifier field="name" join=" " type="prepend" value="{C}">
+                              <conditions>
+                                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </modifierGroup>
+                      </modifierGroups>
                     </profile>
                   </profiles>
                 </selectionEntry>
