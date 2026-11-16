@@ -6238,8 +6238,15 @@ If a wound is scored against a target without the FLY, VEHICLE or TITANIC keywor
               <entryLinks>
                 <entryLink name="Plasma Drill" id="30e0-7df2-296e-c975" collective="false" hidden="false" import="true" targetId="48a3-989c-d221-74ce" type="selectionEntry"/>
                 <entryLink name="Weapon option" id="6b35-388a-7c20-5229" collective="false" hidden="false" import="true" targetId="7dfa-eae6-357c-1555" type="selectionEntryGroup"/>
-                <entryLink name="Mole grenade launcher" id="8b09-2a0d-873a-05b7" collective="false" hidden="false" import="true" targetId="cbd2-6802-7d43-3402" type="selectionEntry"/>
+                <entryLink name="Mole grenade launcher" id="8b09-2a0d-873a-05b7" collective="false" hidden="false" import="true" targetId="cbd2-6802-7d43-3402" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="6259-9c05-2171-99d5" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
+                </entryLink>
                 <entryLink name="Heavy Ion Mining Tool" id="3470-5f8e-5c4b-e178" collective="false" hidden="false" import="true" targetId="7809-34f5-6fa7-445b" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{L} Limited angle Side facing" id="daf7-a3ee-f081-1f6b" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="a9b3-cacd-e38d-fbee" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                     <constraint id="d4cb-82f0-9b20-4aa8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -6263,8 +6270,15 @@ If a wound is scored against a target without the FLY, VEHICLE or TITANIC keywor
               </costs>
               <entryLinks>
                 <entryLink name="Plasma Drill" id="6cbe-53d6-4d48-5bc8" collective="false" hidden="false" import="true" targetId="48a3-989c-d221-74ce" type="selectionEntry"/>
-                <entryLink name="Mole grenade launcher" id="7a24-aa97-cfac-03b8" collective="false" hidden="false" import="true" targetId="cbd2-6802-7d43-3402" type="selectionEntry"/>
+                <entryLink name="Mole grenade launcher" id="7a24-aa97-cfac-03b8" collective="false" hidden="false" import="true" targetId="cbd2-6802-7d43-3402" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="8689-b49a-5ac1-1068" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
+                </entryLink>
                 <entryLink name="Heavy Ion Mining Tool" id="5221-fedd-8539-6e9a" collective="false" hidden="false" import="true" targetId="7809-34f5-6fa7-445b" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{L} Limited angle Side facing" id="e060-20fd-7c2e-eac8" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="a834-7287-dcc9-dd36" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                     <constraint id="d0cf-f301-e801-3932" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -6282,17 +6296,27 @@ If a wound is scored against a target without the FLY, VEHICLE or TITANIC keywor
                   </constraints>
                   <entryLinks>
                     <entryLink name="Ion beamer" id="03c5-be13-5972-07c3" collective="false" hidden="false" import="true" targetId="cdb8-11cc-3a7f-61d5" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="065a-e764-c7b2-ae8c" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="10"/>
                         <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
                       </costs>
                     </entryLink>
                     <entryLink name="Bolt cannon" id="ba65-a6df-823d-2544" collective="false" hidden="false" import="true" targetId="e78a-90e4-8c38-aaca" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="de16-6b35-6816-0061" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="5"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Twin Heavy Flamer" id="8f44-6aec-ed1b-2ac9" collective="false" hidden="false" import="true" targetId="7e0b-04af-4315-0a06" type="selectionEntry"/>
+                    <entryLink name="Twin Heavy Flamer" id="8f44-6aec-ed1b-2ac9" collective="false" hidden="false" import="true" targetId="7e0b-04af-4315-0a06" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="30e7-7408-d68d-1ee7" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
