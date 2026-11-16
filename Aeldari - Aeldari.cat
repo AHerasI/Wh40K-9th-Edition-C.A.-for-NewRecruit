@@ -9867,8 +9867,16 @@ Until the end of the phase, this unit cannot fire Overwatch, Set to Defend or ma
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
           <entryLinks>
-            <entryLink name="Shuriken cannon" id="8da3-ad8f-388d-4f12" collective="false" hidden="false" import="true" targetId="8299-2e24-9b9c-959b" type="selectionEntry"/>
-            <entryLink name="Shuriken cannon" id="b5cd-7222-0238-a599" collective="false" hidden="false" import="true" targetId="8299-2e24-9b9c-959b" type="selectionEntry"/>
+            <entryLink name="Shuriken cannon" id="8da3-ad8f-388d-4f12" collective="false" hidden="false" import="true" targetId="8299-2e24-9b9c-959b" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{H} Fixed-mount" id="cbf0-070f-391b-0f96" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink name="Shuriken cannon" id="b5cd-7222-0238-a599" collective="false" hidden="false" import="true" targetId="8299-2e24-9b9c-959b" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{R} Rear facing" id="3174-5d43-aa45-0432" hidden="false" primary="false" targetId="e8e6-4c0a-d894-5f97"/>
+              </categoryLinks>
+            </entryLink>
             <entryLink name="Crushing bulk" id="6433-b42c-dc48-3d2e" collective="false" hidden="false" import="true" targetId="502f-45c2-6fd1-443b" type="selectionEntry"/>
           </entryLinks>
           <profiles>
@@ -9888,16 +9896,20 @@ Until the end of the phase, this unit cannot fire Overwatch, Set to Defend or ma
           </profiles>
           <selectionEntryGroups>
             <selectionEntryGroup name="Main Weapon" id="42f5-5cf4-5bfb-72b8" collective="false" defaultSelectionEntryId="bf15-893f-ca59-c803" hidden="false" import="true">
-              <categoryLinks>
-                <categoryLink name="{T} Turret-mount" id="8521-30b9-9436-fc66" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
-              </categoryLinks>
               <constraints>
                 <constraint id="8a9d-1b9d-d0e7-8acb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                 <constraint id="0e32-90f7-f3e0-63bf" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
               </constraints>
               <entryLinks>
-                <entryLink name="Heavy Haywire cannon" id="bf15-893f-ca59-c803" collective="false" hidden="false" import="true" targetId="491e-69a4-b85f-2098" type="selectionEntry"/>
+                <entryLink name="Heavy Haywire cannon" id="bf15-893f-ca59-c803" collective="false" hidden="false" import="true" targetId="491e-69a4-b85f-2098" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="30d4-c778-161e-05ea" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
+                </entryLink>
                 <entryLink name="Prism cannon" id="896b-6fdc-f5ed-c711" collective="false" hidden="false" import="true" targetId="f66c-2422-e2e7-5a74" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="fb7c-56b0-1110-5426" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="20"/>
                     <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -15635,9 +15647,6 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Secondary weapon" id="6e98-1c71-ea56-7899" collective="false" defaultSelectionEntryId="d825-5505-e256-018d" hidden="false" import="true">
-              <categoryLinks>
-                <categoryLink name="{C} Turreted Coaxial-mount" id="832b-0bf3-4832-a930" hidden="false" primary="false" targetId="5a5f-3ed0-79c5-df43"/>
-              </categoryLinks>
               <constraints>
                 <constraint id="5722-06e7-1f45-9fa1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
                 <constraint id="ac93-dd6c-242d-f609" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
