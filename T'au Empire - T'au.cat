@@ -2313,48 +2313,6 @@ The table below describes the benefits T&apos;AU EMPIRE models have when shootin
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">This weapon can target units that are not visible to the bearer. Each time an attack is made with this weapon, the target does not receive the benefits of Light Cover against that attack.</characteristic>
       </characteristics>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <comment>Weapon tag</comment>
-          <modifiers>
-            <modifier field="name" join=" " type="prepend" value="{H}">
-              <conditions>
-                <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
-              </conditions>
-            </modifier>
-            <modifier field="name" join=" " type="prepend" value="{F}">
-              <conditions>
-                <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
-              </conditions>
-            </modifier>
-            <modifier field="name" join=" " type="prepend" value="{S}">
-              <conditions>
-                <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
-              </conditions>
-            </modifier>
-            <modifier field="name" join=" " type="prepend" value="{L}">
-              <conditions>
-                <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
-              </conditions>
-            </modifier>
-            <modifier field="name" join=" " type="prepend" value="{R}">
-              <conditions>
-                <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
-              </conditions>
-            </modifier>
-            <modifier field="name" join=" " type="prepend" value="{T}">
-              <conditions>
-                <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
-              </conditions>
-            </modifier>
-            <modifier field="name" join=" " type="prepend" value="{C}">
-              <conditions>
-                <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
     </profile>
     <profile name="Skyspear Missile Rack" id="4519-55c1-2d57-b5b2" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <comment>4519-55c1-2d57-b5b2</comment>
@@ -14053,18 +14011,27 @@ Any models embarked within another model when it embarks upon this model do not 
       </costs>
       <entryLinks>
         <entryLink name="Cluster Rocket System" id="3048-7c76-6dde-b4c6" collective="false" hidden="false" import="true" targetId="49fc-9e7b-0309-161e" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{F} Front facing" id="cd9a-fee8-34b9-2a9e" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+          </categoryLinks>
           <constraints>
             <constraint id="3745-3090-f66e-247f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="4856-0dcd-850e-1107" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
           </constraints>
         </entryLink>
         <entryLink name="Destroyer Missile" id="a023-ac0f-4c14-cac7" collective="false" hidden="false" import="true" targetId="59e7-b89e-2d1d-5098" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{F} Front facing" id="99db-ee36-6819-d0b0" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+          </categoryLinks>
           <constraints>
             <constraint id="d8fd-552c-360c-3409" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="4"/>
             <constraint id="4584-fa31-ec07-c9eb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="4"/>
           </constraints>
         </entryLink>
         <entryLink name="Smart Missile System" id="5de3-3b1d-3eaf-dce2" collective="false" hidden="false" import="true" targetId="735b-b0c0-84c0-8af4" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{T} Turret-mount" id="8d27-740a-f376-a469" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+          </categoryLinks>
           <constraints>
             <constraint id="8182-0d9c-c9cf-25d5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
             <constraint id="5856-39a3-c823-7e66" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -14291,11 +14258,18 @@ Any models embarked within another model when it embarks upon this model do not 
           </constraints>
           <entryLinks>
             <entryLink name="Pulse Blastcannon" id="81b9-f8d0-aba0-fa09" collective="false" hidden="false" import="true" targetId="8270-03de-e09a-0f33" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="d422-5649-c8b5-2e7d" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Pulse Driver Cannon" id="cfc8-d57e-f1cd-0fa9" collective="false" hidden="false" import="true" targetId="34c9-0b20-97a2-06ae" type="selectionEntry"/>
+            <entryLink name="Pulse Driver Cannon" id="cfc8-d57e-f1cd-0fa9" collective="false" hidden="false" import="true" targetId="34c9-0b20-97a2-06ae" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="4ac9-84d3-c4ff-c272" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Stormsurge Sub-Weapons" id="9e00-4975-28ae-c892" collective="false" defaultSelectionEntryId="82e0-5b6c-4229-300e" hidden="false" import="true">
@@ -14307,9 +14281,20 @@ Any models embarked within another model when it embarks upon this model do not 
             <constraint id="3a83-c322-f425-90d9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Twin T&apos;au Flamer" id="82e0-5b6c-4229-300e" collective="false" hidden="false" import="true" targetId="140f-6a7e-8996-14ff" type="selectionEntry"/>
-            <entryLink name="Twin Airbursting Fragmentation Projector" id="e6be-c1e7-c6ff-9029" collective="false" hidden="false" import="true" targetId="7e8b-7f32-0a65-37cb" type="selectionEntry"/>
+            <entryLink name="Twin T&apos;au Flamer" id="82e0-5b6c-4229-300e" collective="false" hidden="false" import="true" targetId="140f-6a7e-8996-14ff" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="9f81-c574-37a1-e025" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink name="Twin Airbursting Fragmentation Projector" id="e6be-c1e7-c6ff-9029" collective="false" hidden="false" import="true" targetId="7e8b-7f32-0a65-37cb" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="ee54-51bf-9228-3257" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
+            </entryLink>
             <entryLink name="Twin Heavy Burst Cannon" id="c31e-0b3b-8b9d-abea" collective="false" hidden="false" import="true" targetId="9e7c-1aba-ddad-26d0" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="2067-53d9-9d55-96bc" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10"/>
               </costs>
@@ -14349,12 +14334,18 @@ Any models embarked within another model when it embarks upon this model do not 
       </costs>
       <entryLinks>
         <entryLink name="Smart Missile System" id="ee71-e216-93f0-dfb1" collective="false" hidden="false" import="true" targetId="735b-b0c0-84c0-8af4" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{T} Turret-mount" id="b945-75b0-bbc0-bb19" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+          </categoryLinks>
           <constraints>
             <constraint id="9f73-4f80-1779-8b24" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="4"/>
             <constraint id="bf8e-0d24-1201-28fc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="4"/>
           </constraints>
         </entryLink>
         <entryLink name="Heavy Burst Cannon" id="62df-2dd5-b291-6ab7" collective="false" hidden="false" import="true" targetId="78e1-c262-3ec5-41e1" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{T} Turret-mount" id="0373-4f13-5861-af9c" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+          </categoryLinks>
           <constraints>
             <constraint id="d138-5bbb-0b4d-99c3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="4"/>
             <constraint id="c61b-04cd-5096-ada1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="4"/>
@@ -14576,12 +14567,18 @@ Any models embarked within another model when it embarks upon this model do not 
               </costs>
               <entryLinks>
                 <entryLink name="Heavy Rail Cannon Array" id="1653-66d2-5d7d-5146" collective="false" hidden="false" import="true" targetId="bd1d-5ac6-4aa3-c6ab" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{H} Fixed-mount" id="0438-8256-45ea-e6b6" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="2c19-7922-ae56-5c89" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                     <constraint id="0b9d-a906-3595-80d5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                 </entryLink>
                 <entryLink name="Cluster Rocket System" id="26f1-2d3d-d3b8-397a" collective="false" hidden="false" import="true" targetId="49fc-9e7b-0309-161e" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="e06f-cbb2-f8a0-a282" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="7e87-0438-e2c8-7d05" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                     <constraint id="ce7c-a732-2382-e422" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -14598,6 +14595,9 @@ Any models embarked within another model when it embarks upon this model do not 
               </costs>
               <entryLinks>
                 <entryLink name="Nexus missile launcher" id="88e7-fec1-1760-c30a" collective="false" hidden="false" import="true" targetId="1148-e885-20b1-c8cc" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="1b3d-d04d-177b-53e9" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="7f5a-b6d2-7da3-6985" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                     <constraint id="6e46-26da-d260-18b7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -14614,6 +14614,9 @@ Any models embarked within another model when it embarks upon this model do not 
               </costs>
               <entryLinks>
                 <entryLink name="Pulse Ordnance Multi-driver" id="b9de-429d-6603-5b93" collective="false" hidden="false" import="true" targetId="2ca2-5530-2f8a-00ac" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="cf04-17ed-0816-f7b0" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="ebc0-0ff7-971e-bfe7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="3"/>
                     <constraint id="b042-c03b-0c8b-eb12" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="3"/>
@@ -14638,6 +14641,9 @@ Any models embarked within another model when it embarks upon this model do not 
               </costs>
               <entryLinks>
                 <entryLink name="Tri-axis Ion Cannon" id="8d70-6cbf-86bb-5e95" collective="false" hidden="false" import="true" targetId="cfc6-6250-26f7-32fb" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{L} Limited angle Side facing" id="ffb9-c97e-3c63-36b0" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="c320-26b0-6c3c-8142" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                     <constraint id="a555-6010-9a90-e055" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -14654,6 +14660,9 @@ Any models embarked within another model when it embarks upon this model do not 
               </costs>
               <entryLinks>
                 <entryLink name="Fusion Eradicator" id="12c6-0df4-7349-d1b7" collective="false" hidden="false" import="true" targetId="3608-dc58-745c-64a5" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{L} Limited angle Side facing" id="d380-7917-80ed-c5ce" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="7127-a315-26fc-8b83" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                     <constraint id="7267-8a63-fc51-4efe" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -14670,12 +14679,18 @@ Any models embarked within another model when it embarks upon this model do not 
               </costs>
               <entryLinks>
                 <entryLink name="Tri-axis Ion Cannon" id="fa30-395f-57ed-49f7" collective="false" hidden="false" import="true" targetId="cfc6-6250-26f7-32fb" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{L} Limited angle Side facing" id="3b7d-b152-6cdb-efe2" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="018e-5b96-a23c-c647" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                     <constraint id="935d-3422-6d5b-2ae7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                   </constraints>
                 </entryLink>
                 <entryLink name="Fusion Eradicator" id="9c81-5eb2-8962-43cd" collective="false" hidden="false" import="true" targetId="3608-dc58-745c-64a5" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{L} Limited angle Side facing" id="37cf-5e0a-5a01-cdb5" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="a5ef-3671-b29d-5cb2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                     <constraint id="4f8c-c04b-f021-d81a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -17302,6 +17317,9 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
       </costs>
       <entryLinks>
         <entryLink name="Railgun" id="b8df-ee5e-0e98-77ca" collective="false" hidden="false" import="true" targetId="9d04-a8cc-37e7-0873" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{T} Turret-mount" id="097c-8c7b-5291-29af" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+          </categoryLinks>
           <constraints>
             <constraint id="0181-c665-65ac-cdcd" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="d56c-fdce-cab4-f095" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -17632,7 +17650,11 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
           <entryLinks>
-            <entryLink name="High Intensity Markerlight" id="45a7-c40b-a1b9-55e6" collective="false" hidden="false" import="true" targetId="e2e4-0b28-9e2b-c238" type="selectionEntry"/>
+            <entryLink name="High Intensity Markerlight" id="45a7-c40b-a1b9-55e6" collective="false" hidden="false" import="true" targetId="e2e4-0b28-9e2b-c238" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="9eba-ab02-229f-1688" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
           <modifiers>
             <modifier field="e356-c769-5920-6e14" type="increment" value="1">
@@ -17694,6 +17716,9 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
               </costs>
               <entryLinks>
                 <entryLink name="Pulse Rifle" id="861c-327d-0c1c-7805" collective="false" hidden="false" import="true" targetId="bd45-84e7-5849-e159" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="5456-7e06-15a6-adc0" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="31d5-6c17-bb86-716e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                     <constraint id="5de7-b35d-7d3a-c772" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -17805,6 +17830,9 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
           </costs>
           <entryLinks>
             <entryLink name="Seeker Missile" id="2707-549f-969c-35cd" collective="false" hidden="false" import="true" targetId="f02c-098c-cb59-ccc3" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{H} Fixed-mount" id="1c08-3df1-7a61-c4ba" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="e9c2-985f-715f-f257" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
                 <constraint id="572e-65ed-b297-2d59" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
@@ -17908,8 +17936,15 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                 <constraint id="d013-31ea-f519-2dcd" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
               </constraints>
               <entryLinks>
-                <entryLink name="Burst Cannon" id="1cd5-1b82-cdda-6361" collective="false" hidden="false" import="true" targetId="2702-1d79-3888-1792" type="selectionEntry"/>
+                <entryLink name="Burst Cannon" id="1cd5-1b82-cdda-6361" collective="false" hidden="false" import="true" targetId="2702-1d79-3888-1792" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{H} Fixed-mount" id="b7c7-af8f-4610-dea2" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+                  </categoryLinks>
+                </entryLink>
                 <entryLink name="Fusion Blaster" id="c721-242b-cc42-4500" collective="false" hidden="false" import="true" targetId="0846-de51-7149-7860" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{H} Fixed-mount" id="b02f-0dc0-4765-abc7" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="10"/>
                   </costs>
@@ -18018,6 +18053,9 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
           </costs>
           <entryLinks>
             <entryLink name="Seeker Missile" id="b9a8-76dc-2d31-4bff" collective="false" hidden="false" import="true" targetId="f02c-098c-cb59-ccc3" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{H} Fixed-mount" id="a6b2-4f2c-959b-c262" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="782e-7895-9e0d-32e1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
                 <constraint id="e946-f244-8707-7bb7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
@@ -18093,6 +18131,9 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                   </costs>
                   <entryLinks>
                     <entryLink name="Rail Rifle" id="d18a-7ae9-10d7-5689" collective="false" hidden="false" import="true" targetId="69d8-fc42-68c7-bfb8" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{F} Front facing" id="ce37-9e10-82d3-ed19" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="6bcb-ec9d-ce9c-8330" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="e27e-b1c1-bd38-97dc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -18109,6 +18150,9 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                   </costs>
                   <entryLinks>
                     <entryLink name="Fusion Blaster" id="c80d-70ec-056a-3edb" collective="false" hidden="false" import="true" targetId="0846-de51-7149-7860" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{F} Front facing" id="15da-472b-ba61-b8f0" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="740f-e9c3-dc03-745a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="4a1a-4906-4c56-285b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -18125,6 +18169,9 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                   </costs>
                   <entryLinks>
                     <entryLink name="Missile Pod" id="6f07-b42a-f6e8-897f" collective="false" hidden="false" import="true" targetId="5f4d-cb85-c724-e2e3" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{F} Front facing" id="f7eb-5cab-4ae0-0df1" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="5342-f98d-42c3-9c30" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="44b7-289b-ab7c-0803" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -18141,6 +18188,9 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                   </costs>
                   <entryLinks>
                     <entryLink name="Plasma Rifle" id="2a66-ed19-cf5f-4c09" collective="false" hidden="false" import="true" targetId="cd85-f042-9778-d05e" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{F} Front facing" id="5130-cf59-4e71-a58d" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="26b8-fe6d-8902-f781" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="9418-2607-dc48-f8fb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -18184,6 +18234,9 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
       </costs>
       <entryLinks>
         <entryLink name="Seeker Missile" id="50c6-af80-e28b-10d6" collective="false" hidden="false" import="true" targetId="f02c-098c-cb59-ccc3" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{H} Fixed-mount" id="e57a-7e28-fb67-f6d4" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+          </categoryLinks>
           <constraints>
             <constraint id="bb2b-cab9-3a44-a801" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
             <constraint id="c3f2-698f-02f9-ac35" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
@@ -18621,6 +18674,9 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
           </constraints>
           <entryLinks>
             <entryLink name="Seeker Missile Rack" id="1677-d5fc-f14e-767f" collective="false" hidden="false" import="true" targetId="e647-ee5c-3b68-dfd8" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="c20e-7642-ef3e-91a8" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="30"/>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -18646,6 +18702,9 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
               </costs>
               <entryLinks>
                 <entryLink name="Markerlight" id="ac8c-b8d5-85c1-3451" collective="false" hidden="false" import="true" targetId="e578-6e85-febb-37ff" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{T} Turret-mount" id="e327-5f1a-6d36-5bab" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="bbb5-aa43-67cc-83a7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                     <constraint id="548b-f369-fd26-0cb3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -18678,6 +18737,9 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
       </costs>
       <entryLinks>
         <entryLink name="Seeker Missile" id="b4d6-20f3-a065-db10" collective="false" hidden="false" import="true" targetId="f02c-098c-cb59-ccc3" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{H} Fixed-mount" id="e815-a2b1-2a1a-ae5e" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+          </categoryLinks>
           <constraints>
             <constraint id="88ff-65bb-a8fb-37a7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
             <constraint id="e8ad-93c4-8641-28b6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
@@ -18889,7 +18951,11 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
             <categoryLink name="{L} Limited angle Side facing" id="123f-8ac0-6365-a434" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
           </categoryLinks>
           <entryLinks>
-            <entryLink name="Heavy Burst Cannon" id="ac96-6582-d9c9-2c84" collective="false" hidden="false" import="true" targetId="71cc-484a-65de-01bd" type="selectionEntry"/>
+            <entryLink name="Heavy Burst Cannon" id="ac96-6582-d9c9-2c84" collective="false" hidden="false" import="true" targetId="71cc-484a-65de-01bd" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="1b5c-7b1b-564d-ad54" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -19390,12 +19456,19 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
               </constraints>
               <entryLinks>
                 <entryLink name="Ion Accelerator" id="c129-42bf-6e0f-3444" collective="false" hidden="false" import="true" targetId="fbbf-e3a7-1db6-6780" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="ea7e-53ab-a490-136e" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="20"/>
                     <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
                   </costs>
                 </entryLink>
-                <entryLink name="Heavy Swiftstrike Burst Cannon" id="42d3-1326-50df-e84e" collective="false" hidden="false" import="true" targetId="5a7e-1b74-9810-0db6" type="selectionEntry"/>
+                <entryLink name="Heavy Swiftstrike Burst Cannon" id="42d3-1326-50df-e84e" collective="false" hidden="false" import="true" targetId="5a7e-1b74-9810-0db6" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="4d9b-ada4-3b71-e465" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Riptide Secondary System" id="87da-fee0-a284-8c39" collective="false" defaultSelectionEntryId="ffca-5940-b7b4-d2d3" hidden="false" import="true">
@@ -19413,6 +19486,9 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                   </costs>
                   <entryLinks>
                     <entryLink name="Smart Missile System" id="9625-8ca6-50d0-1fe4" collective="false" hidden="false" import="true" targetId="735b-b0c0-84c0-8af4" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{S} Side facing" id="3e12-eccc-5bc4-6409" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="58c1-a3a8-5a71-b9c4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="41a6-d016-3a4b-db0e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -19429,6 +19505,9 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                   </costs>
                   <entryLinks>
                     <entryLink name="Fusion Blaster" id="2d68-b4a5-073f-f1a1" collective="false" hidden="false" import="true" targetId="0846-de51-7149-7860" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{S} Side facing" id="fa87-bddc-287b-4d36" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="f4b3-7cc2-2b68-492b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="358c-4e7e-e41e-5823" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -19445,6 +19524,9 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                   </costs>
                   <entryLinks>
                     <entryLink name="Plasma Rifle" id="d521-d386-aec8-13cf" collective="false" hidden="false" import="true" targetId="cd85-f042-9778-d05e" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{S} Side facing" id="0eff-2303-e508-4584" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="aeb8-9114-5833-e628" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="2649-b646-7bf8-3876" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -19564,6 +19646,9 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
           </costs>
           <entryLinks>
             <entryLink name="Pulse Submunitions Cannon" id="b45a-f58a-bda9-834b" collective="false" hidden="false" import="true" targetId="8696-02fb-48ad-bcc3" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{L} Limited angle Side facing" id="7946-0ed5-ca79-094b" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="a192-0115-05e2-a787" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
                 <constraint id="7162-b971-d980-24ba" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
@@ -19824,12 +19909,18 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
           </costs>
           <entryLinks>
             <entryLink name="Ionic Discharge Cannon" id="6079-da39-3848-bf9c" collective="false" hidden="false" import="true" targetId="771a-573c-9533-9ac5" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{L} Limited angle Side facing" id="c715-a07f-1d31-114f" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="b23d-8a3b-298e-e967" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                 <constraint id="626d-a88d-9a0b-7a3a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
             <entryLink name="Phased Plasma-flamer" id="0ef1-7e07-9964-5124" collective="false" hidden="false" import="true" targetId="0e3a-2487-f5df-9668" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{L} Limited angle Side facing" id="b105-70ec-14c2-a5e5" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="c41b-3694-a823-b799" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                 <constraint id="3706-af08-ec7d-cc1f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -19978,6 +20069,9 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
           </profiles>
           <selectionEntries>
             <selectionEntry name="Fletchette Pod" id="185e-8907-82e3-6d53" collective="false" hidden="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="9839-b99d-8f89-8e42" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="e396-926d-91be-6df8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                 <constraint id="d332-eb27-8b2a-d0a1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -21585,8 +21679,15 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                 <constraint id="dcc0-4030-693f-907b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
               <entryLinks>
-                <entryLink name="Cyclic Ion Raker" id="99e7-5a35-f6ab-c675" collective="false" hidden="false" import="true" targetId="f6a3-6dac-cde0-76bc" type="selectionEntry"/>
+                <entryLink name="Cyclic Ion Raker" id="99e7-5a35-f6ab-c675" collective="false" hidden="false" import="true" targetId="f6a3-6dac-cde0-76bc" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="2edb-189d-3d74-9dde" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
+                </entryLink>
                 <entryLink name="Fusion Collider" id="e32a-9516-02e1-dafc" collective="false" hidden="false" import="true" targetId="88f3-d63b-b3a2-e4e0" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="54ec-170b-6002-c6fe" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="20"/>
                     <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -21609,6 +21710,9 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                   </costs>
                   <entryLinks>
                     <entryLink name="T&apos;au Flamer" id="5039-199c-5d14-44c7" collective="false" hidden="false" import="true" targetId="a51e-615d-3a83-7795" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{S} Side facing" id="c038-22bc-408d-2b14" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="f4de-224b-c36a-984b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="eb3a-0f66-8113-07ab" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -21625,6 +21729,9 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                   </costs>
                   <entryLinks>
                     <entryLink name="Burst Cannon" id="8657-ad1f-e7ad-6699" collective="false" hidden="false" import="true" targetId="2702-1d79-3888-1792" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{S} Side facing" id="92a8-0686-26bc-d3a5" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="2e70-f3f1-8fea-9d59" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="8c22-755b-bcda-d48d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -21641,6 +21748,9 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                   </costs>
                   <entryLinks>
                     <entryLink name="Fusion Blaster" id="402e-1a7d-1321-6af4" collective="false" hidden="false" import="true" targetId="0846-de51-7149-7860" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{S} Side facing" id="43bf-0d63-363a-e4a6" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="1411-2a56-3c72-6f23" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="060d-95d3-cd50-12a8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -22677,6 +22787,11 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
           </costs>
           <entryLinks>
             <entryLink name="Crushing bulk" id="e5d5-899d-8659-dfba" collective="false" hidden="false" import="true" targetId="502f-45c2-6fd1-443b" type="selectionEntry"/>
+            <entryLink name="Burst Cannon" id="b969-12d1-a385-3855" collective="false" hidden="false" import="true" targetId="d43d-d91b-51a9-c650" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{C} Turreted Coaxial-mount" id="a320-96d2-00e5-c594" hidden="false" primary="false" targetId="5a5f-3ed0-79c5-df43"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
           <profiles>
             <profile name="Gue&apos;vesa Light Tank" id="46c9-09af-d307-46e4" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
@@ -22701,18 +22816,18 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
               </constraints>
               <entryLinks>
                 <entryLink name="Heavy Rail Rifle" id="4ce2-4828-790e-9ca9" collective="false" hidden="false" import="true" targetId="7285-d4d1-e036-acdf" type="selectionEntry">
-                  <entryLinks>
-                    <entryLink name="Burst Cannon" id="b969-12d1-a385-3855" collective="false" hidden="false" import="true" targetId="d43d-d91b-51a9-c650" type="selectionEntry"/>
-                  </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="{C} Turreted Coaxial-mount" id="35d2-cab1-2516-eedb" hidden="false" primary="false" targetId="5a5f-3ed0-79c5-df43"/>
+                  </categoryLinks>
                 </entryLink>
                 <entryLink name="Ion Cannon" id="1484-87d1-d8c6-a0fb" collective="false" hidden="false" import="true" targetId="5e0d-04cc-682b-859c" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{C} Turreted Coaxial-mount" id="de09-e516-807a-d474" hidden="false" primary="false" targetId="5a5f-3ed0-79c5-df43"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="15"/>
                     <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
                   </costs>
-                  <entryLinks>
-                    <entryLink name="Burst Cannon" id="b1b2-71f8-6520-08dc" collective="false" hidden="false" import="true" targetId="d43d-d91b-51a9-c650" type="selectionEntry"/>
-                  </entryLinks>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -24467,6 +24582,9 @@ Farsight - Selection</characteristic>
             <selectionEntryGroup name="Riptide Main Weapon" id="2d59-c112-67ff-9832" collective="false" defaultSelectionEntryId="61e6-9081-96dc-9fb3" hidden="false" import="true">
               <entryLinks>
                 <entryLink name="Ion Accelerator" id="61e6-9081-96dc-9fb3" collective="false" hidden="false" import="true" targetId="fbbf-e3a7-1db6-6780" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="33b9-8886-cca6-54bc" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="278b-c814-8b30-23aa" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                     <constraint id="0505-fa8b-3b9d-221a" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
@@ -24489,6 +24607,9 @@ Farsight - Selection</characteristic>
                   </costs>
                   <entryLinks>
                     <entryLink name="Smart Missile System" id="59f4-2fb4-63ce-0972" collective="false" hidden="false" import="true" targetId="735b-b0c0-84c0-8af4" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{T} Turret-mount" id="b717-cc9c-3733-f10c" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="6a51-40d8-6f39-4608" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="c286-6842-de15-ac96" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -24503,6 +24624,9 @@ Farsight - Selection</characteristic>
                   </costs>
                   <entryLinks>
                     <entryLink name="Fusion Blaster" id="d261-8bab-633d-4e2a" collective="false" hidden="false" import="true" targetId="0846-de51-7149-7860" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{S} Side facing" id="bcaf-3550-59ac-5bfa" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="32bd-ea7a-da81-6fd1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="c527-18bb-b2dd-ea21" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -24519,6 +24643,9 @@ Farsight - Selection</characteristic>
                   </costs>
                   <entryLinks>
                     <entryLink name="Plasma Rifle" id="0365-c1c0-15d0-fc88" collective="false" hidden="false" import="true" targetId="cd85-f042-9778-d05e" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{S} Side facing" id="5872-8684-251b-e803" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="dcb9-b2bf-0087-5d2c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="7527-ac30-346b-568d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -25894,6 +26021,9 @@ Farsight - Selection</characteristic>
           </costs>
           <entryLinks>
             <entryLink name="High-yield Missile Pod" id="66a9-f1c0-2d59-e723" collective="false" hidden="false" import="true" targetId="1a2b-57ea-3b59-38bf" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{C} Turreted Coaxial-mount" id="70f1-b072-5c11-6be9" hidden="false" primary="false" targetId="5a5f-3ed0-79c5-df43"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="ac1c-aa8f-7de5-8480" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                 <constraint id="5309-a9b1-71b2-9cf0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -26078,7 +26208,50 @@ Farsight - Selection</characteristic>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
           <infoLinks>
-            <infoLink name="Pulse Rifle" id="82d4-d0a9-69e4-783f" hidden="false" targetId="9b19-f1d8-3531-4035" type="profile"/>
+            <infoLink name="Pulse Rifle" id="82d4-d0a9-69e4-783f" hidden="false" targetId="9b19-f1d8-3531-4035" type="profile">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Weapon tag</comment>
+                  <modifiers>
+                    <modifier field="name" join=" " type="prepend" value="{H}">
+                      <conditions>
+                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{F}">
+                      <conditions>
+                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{S}">
+                      <conditions>
+                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{L}">
+                      <conditions>
+                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{R}">
+                      <conditions>
+                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{T}">
+                      <conditions>
+                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{C}">
+                      <conditions>
+                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </infoLink>
           </infoLinks>
         </selectionEntry>
         <selectionEntry name="Krootox Fists" id="ca0f-e167-fafc-1853" collective="true" hidden="false" import="true" type="upgrade">
@@ -30780,25 +30953,41 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
           </costs>
         </entryLink>
-        <entryLink name="Ion Cannon" id="1bf7-976a-e818-31f1" collective="false" hidden="false" import="true" targetId="5e0d-04cc-682b-859c" type="selectionEntry"/>
+        <entryLink name="Ion Cannon" id="1bf7-976a-e818-31f1" collective="false" hidden="false" import="true" targetId="5e0d-04cc-682b-859c" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{T} Turret-mount" id="2866-58bc-8a07-3e11" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+          </categoryLinks>
+        </entryLink>
         <entryLink name="Railgun" id="d5ea-c6dd-e098-643d" collective="false" hidden="false" import="true" targetId="9d04-a8cc-37e7-0873" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{T} Turret-mount" id="86d9-5872-67a0-86e1" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="points" value="60"/>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="3"/>
           </costs>
         </entryLink>
         <entryLink name="Twin Heavy Fusion Cannon" id="a8e6-117c-50d6-60ae" collective="false" hidden="false" import="true" targetId="008a-20d8-1665-0efe" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{T} Turret-mount" id="5e8c-a28d-e9ed-1475" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="points" value="20"/>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
           </costs>
         </entryLink>
         <entryLink name="Twin Swiftstrike Burst Cannon" id="8dbe-c1bb-50e9-167f" collective="false" hidden="false" import="true" targetId="7f6e-f4d9-8364-8414" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{T} Turret-mount" id="80b1-4828-d05b-a4fc" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="points" value="10"/>
           </costs>
         </entryLink>
         <entryLink name="Twin T&apos;au Plasma Cannon" id="805e-c1cb-3dbf-8928" collective="false" hidden="false" import="true" targetId="5283-9a48-1a2f-a3e9" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{T} Turret-mount" id="a98f-354f-ed4b-01d7" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="points" value="30"/>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -30824,6 +31013,9 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
           </costs>
           <entryLinks>
             <entryLink name="Smart Missile System" id="6336-db85-fe0e-810b" collective="false" hidden="false" import="true" targetId="735b-b0c0-84c0-8af4" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="013b-566d-02d0-e57c" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="6041-21bf-3fa5-5322" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                 <constraint id="eeec-2fc9-c5d0-9fa6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -30869,6 +31061,9 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
           </costs>
           <entryLinks>
             <entryLink name="Heavy Burst Cannon" id="75a7-7a01-37df-0086" collective="false" hidden="false" import="true" targetId="78e1-c262-3ec5-41e1" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="1b6d-567b-55cb-f481" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="4030-89de-8fbe-2899" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                 <constraint id="a9cf-04cb-fa72-47be" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
