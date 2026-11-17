@@ -3031,7 +3031,7 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
     </rule>
     <rule name="Core rule modification: Look-out Sir" id="b37c-c782-2fbe-ae94" hidden="false" noindex="true">
       <description>Models cannot target a unit that contains any CHARACTER models that either have a Wounds characteristic of 9 or less, or have the MONSTER Keyword and have a Wounds characteristic of 14 or less, with a ranged weapon, while that CHARACTER unit is within 3&quot; of any of the following and is not the closest eligible unit:
-- A non CHARACTER INFANTRY, BEAST, CAVALRY, or SWARM unit of 3 or more models.
+- A non CHARACTER INFANTRY, BEAST, BIKER, CAVALRY, or SWARM unit of 3 or more models.
 - A non CHARACTER CHARIOT, VEHICLE, MONSTER or TITANIC unit of any number of models.
 - A CHARACTER unit which cannot be affected by Look-out Sir rule.</description>
     </rule>
