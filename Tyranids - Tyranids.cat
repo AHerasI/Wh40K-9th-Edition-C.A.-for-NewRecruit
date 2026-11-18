@@ -2676,6 +2676,9 @@ Tyranid Bioforms have been sorted in 6 separate classes.
                   </constraints>
                   <entryLinks>
                     <entryLink name="Stranglethorn cannon" id="df3f-2b3c-c8eb-0c8a" collective="false" hidden="false" import="true" targetId="f5db-cc04-be84-6a01" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{F} Front facing" id="8182-8bf0-c136-bbcd" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="7c96-ef93-c7e5-80fc" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="ca2a-d819-4e38-8cc7" shared="true" type="max" value="1"/>
                       </constraints>
@@ -2684,6 +2687,9 @@ Tyranid Bioforms have been sorted in 6 separate classes.
                       </costs>
                     </entryLink>
                     <entryLink name="Heavy venom cannon" id="f7fb-9fd0-de83-4a58" collective="false" hidden="false" import="true" targetId="2350-3b07-0c35-c3ab" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{F} Front facing" id="121e-02b8-d5ba-c067" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="2ef5-cdb8-8508-c08c" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="ca2a-d819-4e38-8cc7" shared="true" type="max" value="1"/>
                       </constraints>
@@ -3117,6 +3123,48 @@ Until the start of your next Command phase, the selected units are always consid
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Weapon tag</comment>
+                  <modifiers>
+                    <modifier field="name" join=" " type="prepend" value="{H}">
+                      <conditions>
+                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{F}">
+                      <conditions>
+                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{S}">
+                      <conditions>
+                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{L}">
+                      <conditions>
+                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{R}">
+                      <conditions>
+                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{T}">
+                      <conditions>
+                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{C}">
+                      <conditions>
+                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
         </selectionEntry>
@@ -3140,6 +3188,48 @@ Until the start of your next Command phase, the selected units are always consid
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Weapon tag</comment>
+                  <modifiers>
+                    <modifier field="name" join=" " type="prepend" value="{H}">
+                      <conditions>
+                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{F}">
+                      <conditions>
+                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{S}">
+                      <conditions>
+                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{L}">
+                      <conditions>
+                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{R}">
+                      <conditions>
+                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{T}">
+                      <conditions>
+                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{C}">
+                      <conditions>
+                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
         </selectionEntry>
@@ -3704,6 +3794,48 @@ Each time an attack is made with this weapon against a unit without INORGANIC, V
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Weapon tag</comment>
+                  <modifiers>
+                    <modifier field="name" join=" " type="prepend" value="{H}">
+                      <conditions>
+                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{F}">
+                      <conditions>
+                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{S}">
+                      <conditions>
+                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{L}">
+                      <conditions>
+                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{R}">
+                      <conditions>
+                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{T}">
+                      <conditions>
+                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{C}">
+                      <conditions>
+                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
         </selectionEntry>
@@ -3724,6 +3856,48 @@ Each time an attack is made with this weapon against a unit without INORGANIC, V
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, an unmodified hit roll of 6 scores 1 additional hit.</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Weapon tag</comment>
+                  <modifiers>
+                    <modifier field="name" join=" " type="prepend" value="{H}">
+                      <conditions>
+                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{F}">
+                      <conditions>
+                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{S}">
+                      <conditions>
+                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{L}">
+                      <conditions>
+                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{R}">
+                      <conditions>
+                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{T}">
+                      <conditions>
+                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{C}">
+                      <conditions>
+                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
         </selectionEntry>
@@ -3806,6 +3980,48 @@ Each time an attack is made with this weapon against a unit without INORGANIC, V
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Weapon tag</comment>
+                  <modifiers>
+                    <modifier field="name" join=" " type="prepend" value="{H}">
+                      <conditions>
+                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{F}">
+                      <conditions>
+                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{S}">
+                      <conditions>
+                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{L}">
+                      <conditions>
+                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{R}">
+                      <conditions>
+                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{T}">
+                      <conditions>
+                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" join=" " type="prepend" value="{C}">
+                      <conditions>
+                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
         </selectionEntry>
@@ -6982,6 +7198,9 @@ That model regains 1 lost wound (to a maximum of 3 regained wounds per phase).</
           </profiles>
         </selectionEntry>
         <selectionEntry name="Grasping tongue" id="9477-2609-4e25-9dfc" collective="false" hidden="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink name="{F} Front facing" id="b8a7-06b7-fa27-6cbf" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+          </categoryLinks>
           <constraints>
             <constraint id="6530-7a08-f5a7-e24c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="6f69-8e53-4411-66f4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -6993,7 +7212,7 @@ That model regains 1 lost wound (to a maximum of 3 regained wounds per phase).</
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
           <profiles>
-            <profile name="Grasping tongue" id="aa95-8922-a3a0-4d14" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+            <profile name="{F} Grasping tongue" id="aa95-8922-a3a0-4d14" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 1</characteristic>
@@ -7978,6 +8197,9 @@ That model regains 1 lost wound (to a maximum of 3 regained wounds per phase).</
       </profiles>
       <selectionEntries>
         <selectionEntry name="Massive toxic lashes" id="7c74-2a9d-2eb4-edf3" collective="false" hidden="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink name="{F} Front facing" id="ef6a-c4c1-d716-6ffa" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+          </categoryLinks>
           <constraints>
             <constraint id="bd4d-6c2e-ecfb-edbb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="5cfb-30f3-45b3-6dcd" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -7989,7 +8211,7 @@ That model regains 1 lost wound (to a maximum of 3 regained wounds per phase).</
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
           <profiles>
-            <profile name="Massive toxic lashes (shooting)" id="f02a-42a0-df6a-ac08" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+            <profile name="{F} Massive toxic lashes (shooting)" id="f02a-42a0-df6a-ac08" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">9</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 2D6</characteristic>
@@ -9924,6 +10146,7 @@ When it is completed, set up a new friendly SPORE MINES unit of the type the uni
                 <selectionEntry name="Bio-plasma" id="da16-7568-7fb9-304c" collective="false" hidden="false" import="true" type="upgrade">
                   <categoryLinks>
                     <categoryLink name="Blast" id="e016-dff2-c712-1ae2" hidden="false" primary="false" targetId="a30d-0055-6710-6284"/>
+                    <categoryLink name="{F} Front facing" id="5884-09ac-460a-3077" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
                   </categoryLinks>
                   <costs>
                     <cost name="Pts" typeId="points" value="15"/>
@@ -9932,7 +10155,7 @@ When it is completed, set up a new friendly SPORE MINES unit of the type the uni
                     <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                   </costs>
                   <profiles>
-                    <profile name="Bio-plasma" id="fb77-be02-ba0a-7af1" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                    <profile name="{F} Bio-plasma" id="fb77-be02-ba0a-7af1" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                       <characteristics>
                         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
                         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault D3</characteristic>
@@ -9971,12 +10194,18 @@ When it is completed, set up a new friendly SPORE MINES unit of the type the uni
               </constraints>
               <entryLinks>
                 <entryLink name="Heavy venom cannon" id="2dd0-af4d-bae1-0ce0" collective="false" hidden="false" import="true" targetId="2350-3b07-0c35-c3ab" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="eea8-14ce-c718-1933" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="20"/>
                     <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
                   </costs>
                 </entryLink>
                 <entryLink name="Stranglethorn cannon" id="221d-0d44-0261-ccd2" collective="false" hidden="false" import="true" targetId="f5db-cc04-be84-6a01" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="6f25-517c-2278-8fc3" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="15"/>
                     <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -10012,6 +10241,9 @@ When it is completed, set up a new friendly SPORE MINES unit of the type the uni
                   </costs>
                   <entryLinks>
                     <entryLink name="Devourer with brainleech worms" id="76cf-d725-a5b8-fbe3" collective="false" hidden="false" import="true" targetId="2046-2ae9-25f0-69db" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="b4c2-5157-2f5c-a6e7" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="02bd-336f-1c05-1534" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="dfe4-e3e4-61b1-dbf4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -10028,6 +10260,9 @@ When it is completed, set up a new friendly SPORE MINES unit of the type the uni
                   </costs>
                   <entryLinks>
                     <entryLink name="Deathspitter with slimer maggots" id="cff2-4625-7307-4e24" collective="false" hidden="false" import="true" targetId="0e57-45d6-5c51-67d2" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="8c86-9f6f-518b-c120" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="68ad-587d-773a-cb8a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="e19d-61af-c75d-9bfe" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -10325,6 +10560,9 @@ When it is completed, set up a new friendly SPORE MINES unit of the type the uni
               </constraints>
               <entryLinks>
                 <entryLink name="Stranglethorn cannon" id="a6eb-57af-97a2-646d" collective="false" hidden="false" import="true" targetId="f5db-cc04-be84-6a01" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="f076-8ba3-3ef2-fef3" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="15"/>
                     <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -10365,6 +10603,9 @@ When it is completed, set up a new friendly SPORE MINES unit of the type the uni
                   </costs>
                   <entryLinks>
                     <entryLink name="Devourer with brainleech worms" id="36f2-d723-fc63-1f92" collective="false" hidden="false" import="true" targetId="2046-2ae9-25f0-69db" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="3554-af5e-cb92-aa3a" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="5429-4ce1-0b76-07cb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="f1b2-ef83-8bea-a84d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -10381,6 +10622,9 @@ When it is completed, set up a new friendly SPORE MINES unit of the type the uni
                   </costs>
                   <entryLinks>
                     <entryLink name="Deathspitter with slimer maggots" id="c97f-bd43-334d-bedf" collective="false" hidden="false" import="true" targetId="0e57-45d6-5c51-67d2" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{L} Limited angle Side facing" id="785e-7d16-7f13-5350" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="2d7a-8bc5-db04-8e01" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="07c8-6f45-49bb-3e67" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -10554,6 +10798,7 @@ When it is completed, set up a new friendly SPORE MINES unit of the type the uni
             <selectionEntry name="Bio-plasma maw" id="5dbd-24e5-7c35-db23" collective="false" hidden="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink name="Blast" id="5eef-17f6-e0e9-2a4b" hidden="false" primary="false" targetId="a30d-0055-6710-6284"/>
+                <categoryLink name="{F} Front facing" id="24a1-c803-4563-def4" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
               </categoryLinks>
               <constraints>
                 <constraint id="b1b4-362e-80a0-2c58" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -10566,7 +10811,7 @@ When it is completed, set up a new friendly SPORE MINES unit of the type the uni
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
               <profiles>
-                <profile name="Bio-plasma maw" id="ef60-75bd-37b9-e599" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                <profile name="{F} Bio-plasma maw" id="ef60-75bd-37b9-e599" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18</characteristic>
                     <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault D6</characteristic>
@@ -10612,6 +10857,9 @@ When it is completed, set up a new friendly SPORE MINES unit of the type the uni
         <entryLink name="Adaptive Physiology" id="da23-0a01-9c03-d4cd" collective="false" hidden="false" import="true" targetId="0e10-c335-d6ae-3595" type="selectionEntryGroup"/>
         <entryLink name="Powerful limbs" id="f3d8-9635-83e4-d326" collective="false" hidden="false" import="true" targetId="0e22-bf8b-577c-3adf" type="selectionEntry"/>
         <entryLink name="Bio-plasma cannon" id="e8d4-f119-ccfd-e129" collective="false" hidden="false" import="true" targetId="18ee-a63e-9503-f0a7" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="{F} Front facing" id="ebc7-74a9-4f3d-8e6a" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+          </categoryLinks>
           <constraints>
             <constraint id="8a53-ab77-2180-dfec" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="741c-a907-18f4-eded" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -10889,6 +11137,9 @@ When it is completed, set up a new friendly SPORE MINES unit of the type the uni
           </constraints>
           <selectionEntries>
             <selectionEntry name="Fleshborer hive" id="5eea-734d-bb63-824f" collective="false" hidden="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="6346-c7d3-156e-7d1f" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <costs>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
@@ -10896,7 +11147,7 @@ When it is completed, set up a new friendly SPORE MINES unit of the type the uni
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
               <profiles>
-                <profile name="Fleshborer hive" id="5a16-424f-dcac-a18a" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                <profile name="{F} Fleshborer hive" id="5a16-424f-dcac-a18a" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18</characteristic>
                     <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 20</characteristic>
@@ -10909,6 +11160,10 @@ When it is completed, set up a new friendly SPORE MINES unit of the type the uni
               </profiles>
             </selectionEntry>
             <selectionEntry name="Bio-acid spray" id="e6fc-c253-02ca-2e98" collective="false" hidden="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="3378-cbbd-3d6f-4ad6" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                <categoryLink name="Torrent" id="942c-ed20-4afc-a19f" hidden="false" primary="false" targetId="795f-a8d3-dc18-cb2e"/>
+              </categoryLinks>
               <costs>
                 <cost name="Pts" typeId="points" value="20"/>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -10916,19 +11171,22 @@ When it is completed, set up a new friendly SPORE MINES unit of the type the uni
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
               <profiles>
-                <profile name="Bio-acid spray" id="cd3d-3840-56b9-237f" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                <profile name="{F} Bio-acid spray" id="cd3d-3840-56b9-237f" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18</characteristic>
                     <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault D6+6</characteristic>
                     <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
                     <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, that attack automatically hits the target.</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
             </selectionEntry>
             <selectionEntry name="Rupture cannon" id="0b24-faa7-ddf3-8e04" collective="false" hidden="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="a37d-9696-b6df-125e" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <costs>
                 <cost name="Pts" typeId="points" value="20"/>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -10936,7 +11194,7 @@ When it is completed, set up a new friendly SPORE MINES unit of the type the uni
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
               <profiles>
-                <profile name="Rupture cannon" id="c39a-b7a0-bd15-6aa5" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                <profile name="{F} Rupture cannon" id="c39a-b7a0-bd15-6aa5" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48</characteristic>
                     <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 3</characteristic>
@@ -11055,6 +11313,9 @@ When it is completed, set up a new friendly SPORE MINES unit of the type the uni
                   </costs>
                   <entryLinks>
                     <entryLink name="Bio-plasma cannon" id="4acf-84bd-ca6c-b0c3" collective="false" hidden="false" import="true" targetId="18ee-a63e-9503-f0a7" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="{F} Front facing" id="206f-149e-7540-b015" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                      </categoryLinks>
                       <constraints>
                         <constraint id="2afd-e8db-e196-44c5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                         <constraint id="4727-19fe-9554-dafb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -11160,6 +11421,7 @@ When it is completed, set up a new friendly SPORE MINES unit of the type the uni
                 <selectionEntry name="Greater Bio-acid spray" id="aeab-7767-0283-9a8c" collective="false" hidden="false" import="true" type="upgrade">
                   <categoryLinks>
                     <categoryLink name="Torrent" id="5f53-6d60-3ba9-01cb" hidden="false" primary="false" targetId="795f-a8d3-dc18-cb2e"/>
+                    <categoryLink name="{F} Front facing" id="d068-edfe-6494-e8f7" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
                   </categoryLinks>
                   <constraints>
                     <constraint id="6829-58f9-407b-3074" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -11172,7 +11434,7 @@ When it is completed, set up a new friendly SPORE MINES unit of the type the uni
                     <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                   </costs>
                   <profiles>
-                    <profile name="Greater Bio-acid spray" id="0a63-8de9-e540-1ad7" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                    <profile name="{F} Greater Bio-acid spray" id="0a63-8de9-e540-1ad7" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                       <characteristics>
                         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24</characteristic>
                         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D6+8</characteristic>
@@ -11363,6 +11625,9 @@ When it is completed, set up a new friendly SPORE MINES unit of the type the uni
           </profiles>
         </selectionEntry>
         <selectionEntry name="Drool cannon" id="3c0a-a462-80f2-b46b" collective="false" hidden="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink name="{F} Front facing" id="1585-3889-f9a7-5729" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+          </categoryLinks>
           <constraints>
             <constraint id="3d36-ece1-bc14-2b5c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="c504-0ed4-0891-0470" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -11374,7 +11639,7 @@ When it is completed, set up a new friendly SPORE MINES unit of the type the uni
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
           <profiles>
-            <profile name="Drool cannon" id="0cc4-8702-2166-eb9b" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+            <profile name="{F} Drool cannon" id="0cc4-8702-2166-eb9b" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 2D6</characteristic>
@@ -11387,6 +11652,9 @@ When it is completed, set up a new friendly SPORE MINES unit of the type the uni
           </profiles>
         </selectionEntry>
         <selectionEntry name="Tentaclids" id="b5b9-2b53-e4d2-2bf7" collective="false" hidden="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink name="{F} Front facing" id="8e22-0687-cf8a-93cc" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+          </categoryLinks>
           <constraints>
             <constraint id="214a-7d3f-c8c4-b530" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="e6f7-cd38-2252-9a42" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -11398,7 +11666,7 @@ When it is completed, set up a new friendly SPORE MINES unit of the type the uni
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
           <profiles>
-            <profile name="Tentaclids" id="5216-e60a-877b-3493" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+            <profile name="{F} Tentaclids" id="5216-e60a-877b-3493" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 4</characteristic>
@@ -11613,6 +11881,9 @@ When it is completed, set up a new friendly SPORE MINES unit of the type the uni
               </costs>
               <entryLinks>
                 <entryLink name="Stranglethorn cannon" id="8483-6289-5e4d-ba34" collective="false" hidden="false" import="true" targetId="f5db-cc04-be84-6a01" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="5248-096c-c021-e2ea" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="32cb-8587-e211-5baf" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                     <constraint id="6e80-d7d6-f06a-71ec" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -11629,6 +11900,9 @@ When it is completed, set up a new friendly SPORE MINES unit of the type the uni
               </costs>
               <entryLinks>
                 <entryLink name="Heavy venom cannon" id="fb00-2e05-ddba-66c9" collective="false" hidden="false" import="true" targetId="2350-3b07-0c35-c3ab" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{F} Front facing" id="2bf8-2215-6bb6-f850" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+                  </categoryLinks>
                   <constraints>
                     <constraint id="a974-33e6-987e-3557" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                     <constraint id="64af-0752-b9f1-9a9c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -11785,6 +12059,9 @@ When it is completed, set up a new friendly SPORE MINES unit of the type the uni
           </costs>
           <selectionEntries>
             <selectionEntry name="Dire bio-cannon" id="d151-5654-4673-0df4" collective="false" hidden="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="c477-3a71-57bf-4751" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="55b1-6ef8-eabc-c21e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                 <constraint id="7e15-b6f8-beeb-f05c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -11796,7 +12073,7 @@ When it is completed, set up a new friendly SPORE MINES unit of the type the uni
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
               <profiles>
-                <profile name="Dire bio-cannon" id="d0af-d9e6-b287-5981" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                <profile name="{F} Dire bio-cannon" id="d0af-d9e6-b287-5981" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48</characteristic>
                     <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 8</characteristic>
@@ -11813,6 +12090,7 @@ When it is completed, set up a new friendly SPORE MINES unit of the type the uni
         <selectionEntry name="Bio-plasma torrent" id="d598-5310-1b81-ec09" collective="false" hidden="false" import="true" type="upgrade">
           <categoryLinks>
             <categoryLink name="Torrent" id="a46d-30cc-04bd-8fd9" hidden="false" primary="false" targetId="795f-a8d3-dc18-cb2e"/>
+            <categoryLink name="{F} Front facing" id="cb1b-e703-f6df-e48b" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
           </categoryLinks>
           <constraints>
             <constraint id="af05-e48e-8d7c-1de7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -11825,7 +12103,7 @@ When it is completed, set up a new friendly SPORE MINES unit of the type the uni
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
           <profiles>
-            <profile name="Bio-plasma torrent" id="8f11-afab-1a0b-f8b1" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+            <profile name="{F} Bio-plasma torrent" id="8f11-afab-1a0b-f8b1" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 2D6</characteristic>
@@ -12778,6 +13056,9 @@ Do not remove that model from play - it can fight after the attacking model’s 
       </profiles>
       <selectionEntries>
         <selectionEntry name="Toxinjector Harpoon" id="002a-e426-dfe5-2f5d" collective="false" hidden="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink name="{F} Front facing" id="b8f9-f744-afcf-04e7" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+          </categoryLinks>
           <constraints>
             <constraint id="c92e-5d2e-4eba-4e7f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="f5ee-50c4-3cb4-97aa" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -12789,7 +13070,7 @@ Do not remove that model from play - it can fight after the attacking model’s 
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
           <profiles>
-            <profile name="Harpoon (ranged)" id="2a3b-202b-9993-59f6" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+            <profile name="{F} Harpoon (ranged)" id="2a3b-202b-9993-59f6" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 2</characteristic>
