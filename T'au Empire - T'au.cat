@@ -5256,7 +5256,7 @@ Each seeker missile can only be used once per battle.</characteristic>
     </profile>
     <profile name="Threat Identification Protocol" id="7ce6-3920-7846-6dd5" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a model with this ability makes a ranged attack, it can only target the closest eligible unit.</characteristic>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a model with this ability makes a ranged attack, it can only target the closest eligible unit, or an eligible unit with at least one markerlight token.</characteristic>
       </characteristics>
     </profile>
     <profile name="Twin Pulse Carbine" id="2338-c2c9-13fd-5600" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -5720,12 +5720,12 @@ Each time a successful hit is made for an attack made with this weapon, if the t
     </profile>
     <profile name="DS8 Support Turret" id="eb02-3010-2c00-6ac3" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
       <characteristics>
-        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
         <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
         <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
         <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
         <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
-        <characteristic name="W" typeId="f330-5e6e-4110-0978">1</characteristic>
+        <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">4</characteristic>
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4</characteristic>
@@ -13323,6 +13323,9 @@ Any models embarked within another model when it embarks upon this model do not 
                   </costs>
                 </entryLink>
                 <entryLink name="Smart Missile System" id="d501-f0b0-14c4-ee85" collective="false" hidden="false" import="true" targetId="735b-b0c0-84c0-8af4" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{T} Turret-mount" id="bf6e-3c90-3a47-e30f" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="20"/>
                     <cost name=" PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -16201,6 +16204,9 @@ Each time a successful hit is made for an attack made with this weapon, if the t
           </costs>
           <entryLinks>
             <entryLink name="Smart Missile System" id="0282-cac8-8936-5cdb" collective="false" hidden="false" import="true" targetId="735b-b0c0-84c0-8af4" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="55c5-6952-a303-810a" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="d8e4-5c00-91b6-373a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                 <constraint id="223d-5504-9ddf-c861" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -19487,7 +19493,7 @@ In addition, each time this unit is in any terrain feature, add 1 to the saving 
                   <entryLinks>
                     <entryLink name="Smart Missile System" id="9625-8ca6-50d0-1fe4" collective="false" hidden="false" import="true" targetId="735b-b0c0-84c0-8af4" type="selectionEntry">
                       <categoryLinks>
-                        <categoryLink name="{S} Side facing" id="3e12-eccc-5bc4-6409" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+                        <categoryLink name="{T} Turret-mount" id="2758-bb2d-dd0f-b292" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
                       </categoryLinks>
                       <constraints>
                         <constraint id="58c1-a3a8-5a71-b9c4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
@@ -30891,6 +30897,9 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
           </costs>
           <entryLinks>
             <entryLink name="Missile Pod" id="834b-9eb7-ff47-ffc8" collective="false" hidden="false" import="true" targetId="d6e6-378c-25cd-fc88" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="67d2-f1c5-f989-8c86" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="081b-d1fb-97a8-62c3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                 <constraint id="5a9e-2643-96ae-52f9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -30922,6 +30931,9 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
           </costs>
           <entryLinks>
             <entryLink name="Smart Missile System" id="8bd8-8ee2-d3c1-85f0" collective="false" hidden="false" import="true" targetId="b498-05f9-942d-ea0d" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{T} Turret-mount" id="5330-bf79-a82d-7c2f" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="7b28-c4f3-9647-326a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                 <constraint id="b238-dc08-3683-759e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
