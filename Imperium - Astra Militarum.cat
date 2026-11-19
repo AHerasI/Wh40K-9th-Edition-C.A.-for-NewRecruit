@@ -3673,6 +3673,21 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
     <infoGroup name="Lasgun" id="441e-dc4d-c2d5-4f16" hidden="false">
       <infoLinks>
         <infoLink name="Variable weapon profile" id="263c-7a4f-f841-4cae" hidden="false" targetId="2dd5-c9f0-aa5a-818a" type="rule"/>
+        <infoLink name="Lasgun - Low intensity" id="8d97-9dd4-7577-8534" hidden="false" targetId="3368-58d7-3bec-dbe7" type="profile">
+          <modifiers>
+            <modifier field="hidden" type="set" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition childId="dc39-529a-6aa3-33eb" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                    <condition childId="fdfe-3c10-2004-aa2b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                    <condition childId="901d-9cf4-c32e-cdbf" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <modifiers>
         <modifier field="name" type="set" value="Hot-Shot Lascarbine">
@@ -3703,29 +3718,6 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 1</characteristic>
             <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
             <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
-            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410"/>
-          </characteristics>
-          <modifiers>
-            <modifier field="hidden" type="set" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition childId="dc39-529a-6aa3-33eb" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                    <condition childId="fdfe-3c10-2004-aa2b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                    <condition childId="901d-9cf4-c32e-cdbf" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </profile>
-        <profile name="Lasgun - Low intensity" id="3368-58d7-3bec-dbe7" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24</characteristic>
-            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Rapid Fire 1</characteristic>
-            <characteristic name="S" typeId="59b1-319e-ec13-d466">3</characteristic>
-            <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410"/>
           </characteristics>
@@ -5981,6 +5973,16 @@ When doing so, measure distances to and from this TRANSPORT model.</characterist
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+    </profile>
+    <profile name="Lasgun - Low intensity" id="3368-58d7-3bec-dbe7" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Rapid Fire 1</characteristic>
+        <characteristic name="S" typeId="59b1-319e-ec13-d466">3</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
+        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410"/>
+      </characteristics>
     </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
@@ -12602,28 +12604,26 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
             </profile>
           </profiles>
           <selectionEntries>
-            <selectionEntry name="2x Las-Array" id="54f1-5a6f-91fa-f643" collective="false" hidden="false" import="true" type="upgrade">
+            <selectionEntry name="Las-Array" id="dbb2-2e1f-a935-6b5d" hidden="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink name="{S} Side facing" id="879c-65a5-977c-ba0f" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
+              </categoryLinks>
               <constraints>
                 <constraint id="0696-00dd-b76b-514a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                 <constraint id="fa5f-49a7-29e9-4321" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
               </constraints>
-              <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink name="Lasgun" id="9d4b-8abb-a3f7-6fe1" collective="false" hidden="false" import="true" targetId="eb6c-1d1e-bdb8-7b5d" type="selectionEntry">
-                  <categoryLinks>
-                    <categoryLink name="{S} Side facing" id="b70e-cbd1-841e-26ad" hidden="false" primary="false" targetId="a257-2b11-c606-59b5"/>
-                  </categoryLinks>
-                  <constraints>
-                    <constraint id="4bd5-1da1-c0f7-d834" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="3"/>
-                    <constraint id="945c-93e0-e545-d73f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="3"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+              <infoLinks>
+                <infoLink name="Lasgun - Low intensity" id="ccfa-06a0-9683-a1a7" hidden="false" targetId="3368-58d7-3bec-dbe7" type="profile">
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier field="name" type="set" value="{S} Las-Array"/>
+                        <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" type="set" value="Rapid Fire 3"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </infoLink>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
