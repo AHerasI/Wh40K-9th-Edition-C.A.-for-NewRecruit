@@ -1778,6 +1778,7 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
         </rule>
       </rules>
     </categoryEntry>
+    <categoryEntry name="Compound units" id="21f9-f3cf-3e48-8b3c" hidden="false"/>
   </categoryEntries>
   <costTypes>
     <costType name="Pts" id="points" defaultCostLimit="0" hidden="false"/>
@@ -2129,6 +2130,7 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
             </modifier>
           </modifiers>
         </categoryLink>
+        <categoryLink name="Compound units" id="23bb-dcf5-96e8-db15" hidden="false" targetId="21f9-f3cf-3e48-8b3c"/>
       </categoryLinks>
       <forceEntries>
         <forceEntry name="Patrol Detachment" id="22fe-e36f-71e2-b796" hidden="false">
@@ -2143,6 +2145,7 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
             <categoryLink name="Heavy Support" id="37de-4b8c-3cf3-00f3" hidden="false" primary="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6"/>
             <categoryLink name="Flyer" id="f494-d4ee-0846-773f" hidden="false" primary="false" targetId="e888-1504-aa61-95ff"/>
             <categoryLink name="Dedicated Transport" id="e62c-d409-cb2b-4d75" hidden="false" primary="false" targetId="1b66-3f5f-6705-079a"/>
+            <categoryLink name="Compound units" id="53be-85ad-f4bc-7d14" hidden="false" targetId="21f9-f3cf-3e48-8b3c"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -2208,6 +2211,7 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
             </modifier>
           </modifiers>
         </categoryLink>
+        <categoryLink name="Compound units" id="5a7c-1087-9994-da61" hidden="false" targetId="21f9-f3cf-3e48-8b3c"/>
       </categoryLinks>
       <forceEntries>
         <forceEntry name="Battalion Detachment" id="c7fc-1172-cd53-2dae" hidden="false">
@@ -2222,6 +2226,7 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
             <categoryLink name="Flyer" id="c2f9-82ad-e4c6-bc61" hidden="false" primary="false" targetId="e888-1504-aa61-95ff"/>
             <categoryLink name="Dedicated Transport" id="1d9c-2d5c-cea2-6bd0" hidden="false" primary="false" targetId="1b66-3f5f-6705-079a"/>
             <categoryLink name="Fast Attack" id="1153-a2ee-cd37-9992" hidden="false" primary="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438"/>
+            <categoryLink name="Compound units" id="c3c0-e940-1de0-0364" hidden="false" targetId="21f9-f3cf-3e48-8b3c"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -2286,6 +2291,7 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
             </modifier>
           </modifiers>
         </categoryLink>
+        <categoryLink name="Compound units" id="ed3d-7450-0e3b-554f" hidden="false" targetId="21f9-f3cf-3e48-8b3c"/>
       </categoryLinks>
       <forceEntries>
         <forceEntry name="Brigade Detachment" id="daea-75d3-1073-2ba0" hidden="false">
@@ -2300,6 +2306,7 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
             <categoryLink name="Heavy Support" id="cb04-2f0d-3fcf-a1e8" hidden="false" primary="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6"/>
             <categoryLink name="Flyer" id="b6e5-fe15-806b-2f33" hidden="false" primary="false" targetId="e888-1504-aa61-95ff"/>
             <categoryLink name="Dedicated Transport" id="b07f-f4bc-532d-ab27" hidden="false" primary="false" targetId="1b66-3f5f-6705-079a"/>
+            <categoryLink name="Compound units" id="d471-2c89-e55e-3949" hidden="false" targetId="21f9-f3cf-3e48-8b3c"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -2368,6 +2375,7 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
           </modifiers>
         </categoryLink>
         <categoryLink name="No Force Org Slot" id="e6f5-9c99-3434-371c" hidden="false" primary="false" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74"/>
+        <categoryLink name="Compound units" id="f225-af74-3cb4-d528" hidden="false" targetId="21f9-f3cf-3e48-8b3c"/>
       </categoryLinks>
       <forceEntries>
         <forceEntry name="Vanguard Detachment" id="780c-2ab9-34f4-7c30" hidden="false">
@@ -2382,6 +2390,7 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
             <categoryLink name="Heavy Support" id="0ef4-18ef-934a-1d58" hidden="false" primary="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6"/>
             <categoryLink name="Flyer" id="5936-09c6-fea5-3d3f" hidden="false" primary="false" targetId="e888-1504-aa61-95ff"/>
             <categoryLink name="Dedicated Transport" id="1466-b410-7bf3-3015" hidden="false" primary="false" targetId="1b66-3f5f-6705-079a"/>
+            <categoryLink name="Compound units" id="f13f-8489-1898-c3fa" hidden="false" targetId="21f9-f3cf-3e48-8b3c"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -2436,6 +2445,7 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
             </modifier>
           </modifiers>
         </categoryLink>
+        <categoryLink name="Compound units" id="07a4-80dc-3067-76c2" hidden="false" targetId="21f9-f3cf-3e48-8b3c"/>
       </categoryLinks>
       <forceEntries>
         <forceEntry name="Spearhead Detachment" id="c50f-184b-1482-8ce7" hidden="false">
@@ -2450,6 +2460,7 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
             <categoryLink name="Heavy Support" id="5170-e172-b302-a93e" hidden="false" primary="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6"/>
             <categoryLink name="Flyer" id="5eeb-2543-69d8-ca6f" hidden="false" primary="false" targetId="e888-1504-aa61-95ff"/>
             <categoryLink name="Dedicated Transport" id="51c8-aab8-02db-6836" hidden="false" primary="false" targetId="1b66-3f5f-6705-079a"/>
+            <categoryLink name="Compound units" id="c56f-38e4-7f82-18a4" hidden="false" targetId="21f9-f3cf-3e48-8b3c"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -2504,6 +2515,7 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
             </modifier>
           </modifiers>
         </categoryLink>
+        <categoryLink name="Compound units" id="6198-b04a-7986-0904" hidden="false" targetId="21f9-f3cf-3e48-8b3c"/>
       </categoryLinks>
       <forceEntries>
         <forceEntry name="Outrider Detachment" id="6fb7-031b-0276-59c9" hidden="false">
@@ -2518,6 +2530,7 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
             <categoryLink name="Heavy Support" id="5667-7ab6-831b-6bf9" hidden="false" primary="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6"/>
             <categoryLink name="Flyer" id="b48d-94da-807f-1dad" hidden="false" primary="false" targetId="e888-1504-aa61-95ff"/>
             <categoryLink name="Dedicated Transport" id="e8c7-f93f-12cc-1a41" hidden="false" primary="false" targetId="1b66-3f5f-6705-079a"/>
+            <categoryLink name="Compound units" id="e69c-04dc-f85f-ecd3" hidden="false" targetId="21f9-f3cf-3e48-8b3c"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -2848,6 +2861,7 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
             <modifier field="hidden" type="set" value="true"/>
           </modifiers>
         </categoryLink>
+        <categoryLink name="Compound units" id="628c-4547-f6c3-6f61" hidden="false" targetId="21f9-f3cf-3e48-8b3c"/>
       </categoryLinks>
       <constraints>
         <constraint id="b574-7a98-b5ff-6731" field="forces" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="roster" shared="true" type="max" value="0"/>
@@ -2885,6 +2899,7 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
         <categoryLink name="Dedicated Transport" id="d5f2-dac9-5cf7-ddac" hidden="false" primary="false" targetId="1b66-3f5f-6705-079a"/>
         <categoryLink name="Lord of War" id="b474-2366-f02e-6f49" hidden="false" primary="false" targetId="c888f08a-6cea-4a01-8126-d374a9231554"/>
         <categoryLink name="Fortification" id="7751-b628-068c-ae45" hidden="false" primary="false" targetId="d713cda3-5d0f-40d8-b621-69233263ec2a"/>
+        <categoryLink name="Compound units" id="0f13-db16-385b-5ee8" hidden="false" targetId="21f9-f3cf-3e48-8b3c"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Reinforcements" id="bffe-7939-c2e6-8f83" hidden="false">
@@ -2900,6 +2915,7 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
         <categoryLink name="Flyer" id="73bb-f183-0427-db60" hidden="false" primary="false" targetId="e888-1504-aa61-95ff"/>
         <categoryLink name="Dedicated Transport" id="0283-c857-f6d8-f26f" hidden="false" primary="false" targetId="1b66-3f5f-6705-079a"/>
         <categoryLink name="Lord of War" id="8b22-7e29-d1a4-9845" hidden="false" primary="false" targetId="c888f08a-6cea-4a01-8126-d374a9231554"/>
+        <categoryLink name="Compound units" id="1089-03aa-ee82-af13" hidden="false" targetId="21f9-f3cf-3e48-8b3c"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
