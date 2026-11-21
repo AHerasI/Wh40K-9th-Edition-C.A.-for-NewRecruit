@@ -25711,7 +25711,6 @@ After this unit has fought, for each model destroyed, one model in the selected 
       </costs>
       <entryLinks>
         <entryLink name="Drukhari Vehicle equipment" id="faf8-0c81-9918-4501" collective="false" hidden="false" import="true" targetId="9ec7-1ab7-513d-537c" type="selectionEntryGroup"/>
-        <entryLink name="Turret weapon" id="af5d-c3c2-1276-ae54" collective="false" hidden="false" import="true" targetId="ff5a-97d5-ae5d-65b9" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Explodes 6+ (6&quot;)" id="2133-2652-5291-0868" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
@@ -25919,102 +25918,54 @@ After this unit has fought, for each model destroyed, one model in the selected 
             </profile>
           </profiles>
         </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Turret weapon" id="ff5a-97d5-ae5d-65b9" collective="false" defaultSelectionEntryId="bcd0-21c1-9176-66ad" hidden="false" import="true">
+        <selectionEntry name="Pulse disintegrator" id="bcd0-21c1-9176-66ad" collective="false" hidden="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink name="Laser Weapon" id="66ba-0f80-eb8a-3995" hidden="false" primary="false" targetId="f74f-8bb9-7448-707c"/>
+            <categoryLink name="{H} Fixed-mount" id="ad86-0f1a-8475-96bd" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
+          </categoryLinks>
           <constraints>
-            <constraint id="3343-14a6-f9d1-0f46" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-            <constraint id="98cf-3d03-a6f2-303c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
+            <constraint id="702d-59f7-e4b9-1698" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
+            <constraint id="efe0-fd0e-8533-fe16" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry name="Pulse disintegrator" id="bcd0-21c1-9176-66ad" collective="false" hidden="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink name="Laser Weapon" id="66ba-0f80-eb8a-3995" hidden="false" primary="false" targetId="f74f-8bb9-7448-707c"/>
-                <categoryLink name="{T} Turret-mount" id="68b4-2a42-c026-6c91" hidden="false" primary="false" targetId="f28c-7e4e-75e1-2474"/>
-              </categoryLinks>
-              <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Pulse disintegrator" id="9559-3c65-f2ed-ff61" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36</characteristic>
-                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 6</characteristic>
-                    <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
-                    <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
-                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
-                  </characteristics>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <comment>Weapon tag</comment>
-                      <modifiers>
-                        <modifier field="name" join=" " type="prepend" value="{H}">
-                          <conditions>
-                            <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
-                          </conditions>
-                        </modifier>
-                        <modifier field="name" join=" " type="prepend" value="{F}">
-                          <conditions>
-                            <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
-                          </conditions>
-                        </modifier>
-                        <modifier field="name" join=" " type="prepend" value="{S}">
-                          <conditions>
-                            <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
-                          </conditions>
-                        </modifier>
-                        <modifier field="name" join=" " type="prepend" value="{L}">
-                          <conditions>
-                            <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
-                          </conditions>
-                        </modifier>
-                        <modifier field="name" join=" " type="prepend" value="{R}">
-                          <conditions>
-                            <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
-                          </conditions>
-                        </modifier>
-                        <modifier field="name" join=" " type="prepend" value="{T}">
-                          <conditions>
-                            <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
-                          </conditions>
-                        </modifier>
-                        <modifier field="name" join=" " type="prepend" value="{C}">
-                          <conditions>
-                            <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                  </modifierGroups>
-                  <modifiers>
-                    <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="set" value="42">
+          <costs>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="Pts" typeId="points" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="{H} Pulse disintegrator" id="9559-3c65-f2ed-ff61" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 6</characteristic>
+                <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="set" value="42">
+                  <conditionGroups>
+                    <conditionGroup type="and">
                       <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition childId="395b-75d9-5ac9-7a81" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="instanceOf" value="0"/>
-                                <condition childId="395b-75d9-5ac9-7a81" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="ancestor" shared="true" type="instanceOf" value="0"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
+                        <conditionGroup type="or">
                           <conditions>
-                            <condition childId="70cf-a42e-acd7-8d11" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                            <condition childId="395b-75d9-5ac9-7a81" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="instanceOf" value="0"/>
+                            <condition childId="395b-75d9-5ac9-7a81" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="ancestor" shared="true" type="instanceOf" value="0"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+                      <conditions>
+                        <condition childId="70cf-a42e-acd7-8d11" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Razorwing Jetfighter" id="9b5d-7553-9519-1a3f" collective="false" hidden="true" import="true" type="model">
       <categoryLinks>
