@@ -22421,11 +22421,7 @@ From that point onwards, each operates independently and is treated as a separat
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
           <entryLinks>
-            <entryLink name="Splinter pods" id="2167-f808-c677-e8b8" collective="false" hidden="false" import="true" targetId="423f-d5ac-51cc-805a" type="selectionEntry">
-              <categoryLinks>
-                <categoryLink name="{H} Fixed-mount" id="03c4-fd2b-a2b0-aee8" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
-              </categoryLinks>
-            </entryLink>
+            <entryLink name="Splinter pods" id="2167-f808-c677-e8b8" collective="false" hidden="false" import="true" targetId="423f-d5ac-51cc-805a" type="selectionEntry"/>
             <entryLink name="Combat Drugs" id="d4bb-37fa-3e6f-4563" collective="false" hidden="false" import="true" targetId="98c1-2f60-edeb-1af5" type="selectionEntryGroup"/>
             <entryLink name="Agoniser" id="cb8b-7537-0bd6-9bc5" collective="false" hidden="false" import="true" targetId="a573-37ac-abc5-8aa3" type="selectionEntry">
               <constraints>
@@ -24060,11 +24056,7 @@ From that point onwards, each operates independently and is treated as a separat
           </costs>
           <entryLinks>
             <entryLink name="Phantasm grenade launcher" id="a6ac-33d2-269a-ebe2" collective="false" hidden="false" import="true" targetId="2da7-171a-8b32-557a" type="selectionEntry"/>
-            <entryLink name="Splinter pods" id="c657-f605-d369-c172" collective="false" hidden="false" import="true" targetId="423f-d5ac-51cc-805a" type="selectionEntry">
-              <categoryLinks>
-                <categoryLink name="{H} Fixed-mount" id="bd2b-9440-8abc-eab0" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
-              </categoryLinks>
-            </entryLink>
+            <entryLink name="Splinter pods" id="c657-f605-d369-c172" collective="false" hidden="false" import="true" targetId="423f-d5ac-51cc-805a" type="selectionEntry"/>
           </entryLinks>
           <profiles>
             <profile name="Helliarch" id="2175-cc73-b7b3-4b9e" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
@@ -24205,11 +24197,7 @@ From that point onwards, each operates independently and is treated as a separat
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
               <entryLinks>
-                <entryLink name="Splinter pods" id="273f-cacb-f67b-b5e3" collective="false" hidden="false" import="true" targetId="423f-d5ac-51cc-805a" type="selectionEntry">
-                  <categoryLinks>
-                    <categoryLink name="{H} Fixed-mount" id="5c38-f200-144b-6e6b" hidden="false" primary="false" targetId="59a9-afa0-7ef5-f014"/>
-                  </categoryLinks>
-                </entryLink>
+                <entryLink name="Splinter pods" id="273f-cacb-f67b-b5e3" collective="false" hidden="false" import="true" targetId="423f-d5ac-51cc-805a" type="selectionEntry"/>
               </entryLinks>
               <profiles>
                 <profile name="Hellion" id="2db4-1092-2335-65a6" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
@@ -34009,48 +33997,6 @@ While an enemy unit is within Engagement Range of the bearer, if the bearer’s 
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Poisoned Weapon (3+)</characteristic>
               </characteristics>
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <comment>Weapon tag</comment>
-                  <modifiers>
-                    <modifier field="name" join=" " type="prepend" value="{H}">
-                      <conditions>
-                        <condition childId="59a9-afa0-7ef5-f014" childName="[H] Fixed-mount" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
-                      </conditions>
-                    </modifier>
-                    <modifier field="name" join=" " type="prepend" value="{F}">
-                      <conditions>
-                        <condition childId="6018-2ce0-fcc7-6ed7" childName="[F] Front facing" field="selections" includeChildSelections="true" scope="ancestor" shared="true" type="instanceOf" value="1"/>
-                      </conditions>
-                    </modifier>
-                    <modifier field="name" join=" " type="prepend" value="{S}">
-                      <conditions>
-                        <condition childId="a257-2b11-c606-59b5" childName="[S] Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
-                      </conditions>
-                    </modifier>
-                    <modifier field="name" join=" " type="prepend" value="{L}">
-                      <conditions>
-                        <condition childId="ceeb-83af-6f77-8baa" childName="[L] Limited angle Side facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
-                      </conditions>
-                    </modifier>
-                    <modifier field="name" join=" " type="prepend" value="{R}">
-                      <conditions>
-                        <condition childId="e8e6-4c0a-d894-5f97" childName="[R] Rear facing" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
-                      </conditions>
-                    </modifier>
-                    <modifier field="name" join=" " type="prepend" value="{T}">
-                      <conditions>
-                        <condition childId="f28c-7e4e-75e1-2474" childName="[T] Turret-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
-                      </conditions>
-                    </modifier>
-                    <modifier field="name" join=" " type="prepend" value="{C}">
-                      <conditions>
-                        <condition childId="5a5f-3ed0-79c5-df43" childName="[C] Turreted Coaxial-mount" field="selections" scope="ancestor" shared="true" type="instanceOf" value="1"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </modifierGroup>
-              </modifierGroups>
             </profile>
           </profiles>
         </selectionEntry>
@@ -42037,15 +41983,14 @@ Each time an enemy unit without FLY, VEHICLE or TITANIC Keywords moves within th
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
           <rules>
-            <rule name="Random combat drugs" id="eb03-0ca2-e039-3119" hidden="false">
-              <description>Determine it by rolling two D6 and looking up the result (if a double is rolled, roll both dice again until two different results are rolled).
-
-1---Adrenalight: Each time this unit fights, if it made a charge move or performed a Heroic Intervention this turn, then until that fight is resolved, add 1 to the Attacks characteristic of models in this unit. 
-2---Grave Lotus: Add 1 to the Strength characteristic of models in this unit. 
-3---Hypex: Add 2&quot; to the Move characteristic of models in this unit. 
-4---Painbringer: Add 1 to the Toughness characteristic of models in this unit. 
-5---Serpentin: Improve the Weapon Skill characteristic of models in this unit by 1. 
-6---Splintermind: Improve the Ballistic Skill and Leadership characteristics of models in this unit by 1.</description>
+            <rule name="Combat drugs - Random" id="eb03-0ca2-e039-3119" hidden="false">
+              <description>Determine it by rolling two D6 and looking up the result (if a double is rolled, roll both dice again until two different results are rolled):
+- 1: Adrenalight: Each time this unit fights, if it made a charge move or performed a Heroic Intervention this turn, then until that fight is resolved, add 1 to the Attacks characteristic of models in this unit.
+- 2: Grave Lotus: Add 1 to the Strength characteristic of models in this unit.
+- 3: Hypex: Add 2&quot; to the Move characteristic of models in this unit.
+- 4: Painbringer: Add 1 to the Toughness characteristic of models in this unit.
+- 5: Serpentin: Improve the Weapon Skill characteristic of models in this unit by 1.
+- 6: Splintermind: Improve the Ballistic Skill and Leadership characteristics of models in this unit by 1.</description>
             </rule>
           </rules>
         </selectionEntry>
