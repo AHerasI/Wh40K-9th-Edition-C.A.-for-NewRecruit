@@ -1482,6 +1482,7 @@ Additional reference data obtained from Wahapedia, https://wahapedia.ru/</readme
       </categoryLinks>
       <constraints>
         <constraint id="dfa7-6199-5a09-e46b" field="selections" scope="parent" shared="true" type="max" value="0"/>
+        <constraint id="6df0-7af5-31d3-cd86" field="selections" scope="parent" shared="true" type="min" value="0"/>
       </constraints>
       <modifiers>
         <modifier field="hidden" type="set" value="true">
@@ -1494,6 +1495,11 @@ Additional reference data obtained from Wahapedia, https://wahapedia.ru/</readme
             <repeat childId="1e19-e29b-fb3a-3524" childName="Clawed Fiend pack" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
           </repeats>
         </modifier>
+        <modifier field="6df0-7af5-31d3-cd86" type="increment" value="1">
+          <repeats>
+            <repeat childId="1e19-e29b-fb3a-3524" childName="Clawed Fiend pack" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
+          </repeats>
+        </modifier>
       </modifiers>
     </entryLink>
     <entryLink name="Khymera pack" id="3c71-188c-e168-aade" hidden="false" import="true" targetId="837c-e608-29a1-6abb" type="selectionEntry">
@@ -1502,6 +1508,7 @@ Additional reference data obtained from Wahapedia, https://wahapedia.ru/</readme
       </categoryLinks>
       <constraints>
         <constraint id="ba0e-c078-6db7-4446" field="selections" scope="parent" shared="true" type="max" value="0"/>
+        <constraint id="baa9-f66d-9cb0-7cbf" field="selections" scope="parent" shared="true" type="min" value="0"/>
       </constraints>
       <modifiers>
         <modifier field="hidden" type="set" value="true">
@@ -1514,6 +1521,11 @@ Additional reference data obtained from Wahapedia, https://wahapedia.ru/</readme
             <repeat childId="0dc4-efea-8802-574f" childName="Khymera pack" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
           </repeats>
         </modifier>
+        <modifier field="baa9-f66d-9cb0-7cbf" type="increment" value="1">
+          <repeats>
+            <repeat childId="0dc4-efea-8802-574f" childName="Khymera pack" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
+          </repeats>
+        </modifier>
       </modifiers>
     </entryLink>
     <entryLink name="Razorwing flocks" id="361b-c2d4-a9ce-35fc" hidden="false" import="true" targetId="b992-5e49-a4ae-c0ec" type="selectionEntry">
@@ -1522,16 +1534,22 @@ Additional reference data obtained from Wahapedia, https://wahapedia.ru/</readme
       </categoryLinks>
       <constraints>
         <constraint id="b052-fac9-87e7-fd26" field="selections" scope="parent" shared="true" type="max" value="0"/>
+        <constraint id="5aeb-5dbe-a90c-6614" field="selections" scope="parent" shared="true" type="min" value="0"/>
       </constraints>
       <modifiers>
         <modifier field="hidden" type="set" value="true">
           <conditions>
-            <condition childId="b992-5e49-a4ae-c0ec" childName="Razorwing flocks" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="0"/>
+            <condition childId="176d-70c0-f5c0-8b2b" childName="Razorwing flocks" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="0"/>
           </conditions>
         </modifier>
         <modifier field="b052-fac9-87e7-fd26" type="increment" value="1">
           <repeats>
-            <repeat childId="b992-5e49-a4ae-c0ec" childName="Razorwing flocks" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
+            <repeat childId="176d-70c0-f5c0-8b2b" childName="Razorwing flocks" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
+          </repeats>
+        </modifier>
+        <modifier field="5aeb-5dbe-a90c-6614" type="increment" value="1">
+          <repeats>
+            <repeat childId="176d-70c0-f5c0-8b2b" childName="Razorwing flocks" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
           </repeats>
         </modifier>
       </modifiers>
