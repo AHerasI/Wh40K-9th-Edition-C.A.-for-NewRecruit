@@ -3942,6 +3942,15 @@ Additional reference data obtained from Wahapedia, https://wahapedia.ru/</readme
         <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a model in this unit would lose a wound, roll one D6: on a 5+, that wound is not lost. In case of having a similar ability, add 1 to said roll.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Warlock" id="7150-011e-8ec2-92b7" hidden="false" typeId="bc97-dea9-9e88-bb7d" typeName="Psyker">
+      <comment>1</comment>
+      <characteristics>
+        <characteristic name="Cast" typeId="5afb-9914-904b-d3b3">1</characteristic>
+        <characteristic name="Deny" typeId="b5ac-9c20-5d5a-6f9b">1</characteristic>
+        <characteristic name="Powers Known" typeId="69d7-b45e-00a2-7e46">Smite or 1 Runes of Fortune, 1 Runes of Battle.</characteristic>
+        <characteristic name="Other" typeId="c2e2-f115-0003-5d7b">-</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedRules>
     <rule name="Asuryani Missile launcher" id="2351-b0d0-b620-41be" hidden="false">
@@ -8030,6 +8039,33 @@ Until the end of the phase, this unit cannot fire Overwatch, Set to Defend or ma
             <constraint id="ea0d-b3a2-e4a9-ac92" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="20"/>
             <constraint id="8fc9-11b2-7e27-2acf" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="10"/>
           </constraints>
+          <entryLinks>
+            <entryLink name="Warlock" id="97d4-4ead-8460-695f" hidden="false" import="true" targetId="a6d1-976b-e7d8-990c" type="selectionEntry">
+              <constraints>
+                <constraint id="9ce4-c1b4-1de5-e937" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="points" value="35"/>
+              </costs>
+              <entryLinks>
+                <entryLink name="Runes of Fortune &amp; Smite" id="c327-3f02-f2eb-955d" collective="false" hidden="false" import="true" targetId="fe10-bfed-ecb8-b54c" type="selectionEntryGroup"/>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Warlock" id="30bd-e31a-98df-5d60" hidden="false" targetId="7150-011e-8ec2-92b7" type="profile"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Psychic powers" id="bc20-ec53-b93b-842b" collective="false" hidden="false" import="true">
+                  <constraints>
+                    <constraint id="9d02-42c0-7382-6932" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                    <constraint id="08c7-463f-ed59-9093" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink name="Runes of Battle" id="fed5-2a01-1912-0c16" collective="false" hidden="false" import="true" targetId="6143-0d56-6bd7-b796" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </entryLink>
+          </entryLinks>
           <selectionEntries>
             <selectionEntry name="Guardian Defender" id="a11b-acaa-a7cf-294a" collective="false" hidden="false" import="true" type="model">
               <categoryLinks>
@@ -8265,6 +8301,33 @@ Until the end of the phase, this unit cannot fire Overwatch, Set to Defend or ma
             <constraint id="9c46-9e2f-c8ca-ea27" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="20"/>
             <constraint id="fb22-2ced-009d-5c27" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="10"/>
           </constraints>
+          <entryLinks>
+            <entryLink name="Warlock" id="2dc0-04df-f987-c513" hidden="false" import="true" targetId="a6d1-976b-e7d8-990c" type="selectionEntry">
+              <constraints>
+                <constraint id="1c0c-7ae0-d277-7d7b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="points" value="35"/>
+              </costs>
+              <entryLinks>
+                <entryLink name="Runes of Fortune &amp; Smite" id="b5a8-d1ba-14e1-6bf1" collective="false" hidden="false" import="true" targetId="fe10-bfed-ecb8-b54c" type="selectionEntryGroup"/>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Warlock" id="ce50-0296-f084-daa5" hidden="false" targetId="7150-011e-8ec2-92b7" type="profile"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Psychic powers" id="576f-3e45-a9a0-cf39" collective="false" hidden="false" import="true">
+                  <constraints>
+                    <constraint id="a308-a3ee-71ba-047e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                    <constraint id="e7bf-be67-d166-012a" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink name="Runes of Battle" id="fbb5-76da-729c-10c3" collective="false" hidden="false" import="true" targetId="6143-0d56-6bd7-b796" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </entryLink>
+          </entryLinks>
           <selectionEntries>
             <selectionEntry name="Guardian w/Power sword" id="f593-24bf-8e7f-cbcd" collective="false" hidden="false" import="true" type="model">
               <categoryLinks>
@@ -12781,6 +12844,15 @@ When the bearer’s unit makes a Battle Focus move, you can roll 2D6 instead of 
         <entryLink name="Runes of Fortune &amp; Smite" id="2c2b-c1a1-4ad3-aae2" collective="false" hidden="false" import="true" targetId="fe10-bfed-ecb8-b54c" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
+        <infoLink name="Warlock" id="e395-677b-9597-dce0" hidden="false" targetId="7150-011e-8ec2-92b7" type="profile">
+          <modifiers>
+            <modifier field="hidden" type="set" value="true">
+              <conditions>
+                <condition childId="model" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="6270-cc4b-0b7a-6b4b" shared="true" type="notEqualTo" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Rune armour" id="5909-f74e-31cc-e871" hidden="false" targetId="2c3c-bf97-572f-ed11" type="profile"/>
       </infoLinks>
       <modifierGroups>
@@ -12839,22 +12911,6 @@ When the bearer’s unit makes a Battle Focus move, you can roll 2D6 instead of 
         </modifier>
       </modifiers>
       <profiles>
-        <profile name="Warlock" id="7150-011e-8ec2-92b7" hidden="false" typeId="bc97-dea9-9e88-bb7d" typeName="Psyker">
-          <comment>1</comment>
-          <characteristics>
-            <characteristic name="Cast" typeId="5afb-9914-904b-d3b3">1</characteristic>
-            <characteristic name="Deny" typeId="b5ac-9c20-5d5a-6f9b">1</characteristic>
-            <characteristic name="Powers Known" typeId="69d7-b45e-00a2-7e46">Smite or 1 Runes of Fortune, 1 Runes of Battle.</characteristic>
-            <characteristic name="Other" typeId="c2e2-f115-0003-5d7b">-</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier field="hidden" type="set" value="true">
-              <conditions>
-                <condition childId="model" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="6270-cc4b-0b7a-6b4b" shared="true" type="notEqualTo" value="1"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </profile>
         <profile name="Warlock" id="770b-3b6f-6183-1208" hidden="false" typeId="bc97-dea9-9e88-bb7d" typeName="Psyker">
           <comment>2</comment>
           <characteristics>
@@ -27719,7 +27775,7 @@ You can use this Stratagem up to 3 times.</characteristic>
           <characteristics>
             <characteristic name="Cast" typeId="5afb-9914-904b-d3b3">1</characteristic>
             <characteristic name="Deny" typeId="b5ac-9c20-5d5a-6f9b">1</characteristic>
-            <characteristic name="Powers Known" typeId="69d7-b45e-00a2-7e46">Smite or 1 Runes of Fortune, 1 Runes of Fate.</characteristic>
+            <characteristic name="Powers Known" typeId="69d7-b45e-00a2-7e46">Smite or 1 Runes of Fortune, 1 Runes of Battle.</characteristic>
             <characteristic name="Other" typeId="c2e2-f115-0003-5d7b">-</characteristic>
           </characteristics>
         </profile>
@@ -27756,7 +27812,7 @@ You can use this Stratagem up to 3 times.</characteristic>
             <constraint id="2f42-eda3-2919-b7e4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Runes of Fate" id="5909-cb19-e31c-aa60" collective="false" hidden="false" import="true" targetId="3818-867e-48ff-e7d8" type="selectionEntryGroup"/>
+            <entryLink name="Runes of Battle" id="5909-cb19-e31c-aa60" collective="false" hidden="false" import="true" targetId="6143-0d56-6bd7-b796" type="selectionEntryGroup"/>
             <entryLink name="Revenant Discipline" id="3fe6-9486-af4a-b81e" collective="false" hidden="false" import="true" targetId="d7f8-edc6-8fa0-7afd" type="selectionEntryGroup"/>
           </entryLinks>
         </selectionEntryGroup>
