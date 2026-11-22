@@ -1778,7 +1778,11 @@ This action will inmediatly fail if a Morale check is failed, or if a enemy unit
         </rule>
       </rules>
     </categoryEntry>
-    <categoryEntry name="Compound units" id="21f9-f3cf-3e48-8b3c" hidden="false"/>
+    <categoryEntry name="Compound units" id="21f9-f3cf-3e48-8b3c" hidden="false">
+      <infoLinks>
+        <infoLink name="Compound unit" id="3c93-c310-583a-a4a2" hidden="false" targetId="293e-2187-c611-c338" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
   </categoryEntries>
   <costTypes>
     <costType name="Pts" id="points" defaultCostLimit="0" hidden="false"/>
@@ -12068,6 +12072,10 @@ TITANIC units can also push out of it&apos;s way other WRECKED TITANIC MONSTER o
 INFANTRY, SWARM and BEAST units that are in the way of the pushed WRECKED unit, must be moved out of the way, moving the minimun amount possible from the original positions, while standing in unit coherency.
 
 Non AIRCRAFT MONSTER, VEHICLE and TITANIC units in the way of the pushed WRECKED unit will stop further movement of it.</description>
+    </rule>
+    <rule name="Compound unit" id="293e-2187-c611-c338" hidden="false">
+      <description> - THIS METHOD IS USED TO PREVENT RULE/ABILITY BLOAT USING YELLOWSCRIBE OR SIMILAR SYSTEMS - 
+By keeping the units separated within de database logic. The groups of the compound unit still belong to the same unit.</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntries>
