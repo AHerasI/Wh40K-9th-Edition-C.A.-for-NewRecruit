@@ -14500,6 +14500,33 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
             <constraint id="bdef-79d2-20cf-c76c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="10"/>
             <constraint id="13ff-9774-f872-81c1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="3"/>
           </constraints>
+          <entryLinks>
+            <entryLink name="Warlock Skyrunner" id="98de-292e-3f8d-cb17" hidden="false" import="true" targetId="67e6-42cd-fad2-dd21" type="selectionEntry">
+              <constraints>
+                <constraint id="2120-c463-0f73-3333" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="points" value="40"/>
+              </costs>
+              <entryLinks>
+                <entryLink name="Runes of Fortune &amp; Smite" id="d941-fa9c-7ad3-a227" collective="false" hidden="false" import="true" targetId="fe10-bfed-ecb8-b54c" type="selectionEntryGroup"/>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Warlock" id="a6b3-2957-d0ea-3181" hidden="false" targetId="7150-011e-8ec2-92b7" type="profile"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Psychic powers" id="f4bd-cecb-1081-87d7" collective="false" hidden="false" import="true">
+                  <constraints>
+                    <constraint id="8260-1fa1-d07a-658d" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                    <constraint id="3f8b-2f26-8367-c0e2" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink name="Runes of Battle" id="f468-014e-dc65-29a6" collective="false" hidden="false" import="true" targetId="6143-0d56-6bd7-b796" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </entryLink>
+          </entryLinks>
           <selectionEntries>
             <selectionEntry name="Windrider w/Twin Shuriken" id="2748-0025-ebe9-b9c8" collective="false" hidden="false" import="true" type="model">
               <costs>
