@@ -22947,6 +22947,7 @@ From that point onwards, each operates independently and is treated as a separat
                     <modifier field="0bdf-a96e-9e38-7779" type="set" value="16"/>
                     <modifier field="00ca-f8b8-876d-b705" type="set" value="8"/>
                     <modifier field="13fc-b29b-31f2-ab9f" type="set" value="3"/>
+                    <modifier field="f330-5e6e-4110-0978" type="set" value="2"/>
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
@@ -23024,7 +23025,7 @@ From that point onwards, each operates independently and is treated as a separat
                 <constraint id="74e9-933f-7ebf-614c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="4"/>
               </constraints>
               <costs>
-                <cost name="Pts" typeId="points" value="15"/>
+                <cost name="Pts" typeId="points" value="20"/>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
@@ -23052,11 +23053,7 @@ From that point onwards, each operates independently and is treated as a separat
                     <constraint id="f574-2426-b36e-8c65" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Shredder" id="fc8b-ccbb-2bad-2524" collective="false" hidden="false" import="true" targetId="f4df-1f6c-81ff-5fed" type="selectionEntry">
-                      <costs>
-                        <cost name="pts" typeId="points" value="5"/>
-                      </costs>
-                    </entryLink>
+                    <entryLink name="Shredder" id="fc8b-ccbb-2bad-2524" collective="false" hidden="false" import="true" targetId="f4df-1f6c-81ff-5fed" type="selectionEntry"/>
                     <entryLink name="Dark lance" id="f571-084f-bacd-b60c" collective="false" hidden="false" import="true" targetId="64ee-21ac-f015-aabe" type="selectionEntry">
                       <costs>
                         <cost name="pts" typeId="points" value="20"/>
@@ -23066,16 +23063,19 @@ From that point onwards, each operates independently and is treated as a separat
                     <entryLink name="Heat lance" id="44af-a870-a07b-3d38" collective="false" hidden="false" import="true" targetId="5eae-385a-d0c4-2d4a" type="selectionEntry">
                       <costs>
                         <cost name="pts" typeId="points" value="15"/>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
                       </costs>
                     </entryLink>
                     <entryLink name="Haywire cannon" id="22fc-d6b8-6c59-b769" collective="false" hidden="false" import="true" targetId="0de8-dd3c-a7f6-9a86" type="selectionEntry">
                       <costs>
                         <cost name="pts" typeId="points" value="15"/>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
                       </costs>
                     </entryLink>
                     <entryLink name="Blaster rifle" id="6fb0-10c5-eef1-4f12" collective="false" hidden="false" import="true" targetId="a7cb-defc-369a-681a" type="selectionEntry">
                       <costs>
                         <cost name="pts" typeId="points" value="15"/>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
                       </costs>
                     </entryLink>
                     <entryLink name="Splinter cannon" id="ffb4-177d-6006-a9b0" collective="false" hidden="false" import="true" targetId="32f4-1705-e28b-6194" type="selectionEntry">
