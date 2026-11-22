@@ -29521,12 +29521,23 @@ Until the PRIEST inspires another unit with this prayer, each time a ranged atta
                       </costs>
                       <entryLinks>
                         <entryLink name="Frag &amp; Krak grenades" id="ca44-d13e-5541-9591" collective="false" hidden="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
-                        <entryLink name="Bolt carbine" id="461c-9ef9-2f8d-4294" collective="false" hidden="false" import="true" targetId="6517-8724-e365-2975" type="selectionEntry"/>
                         <entryLink name="Combat knife" id="c34e-72b5-fb41-1ed8" collective="false" hidden="false" import="true" targetId="92e8-af3a-fe14-06c1" type="selectionEntry"/>
                       </entryLinks>
                       <infoLinks>
                         <infoLink name="Arbites" id="341e-01ac-b2d7-2889" hidden="false" targetId="e1c9-00f3-2cfa-5ed8" type="profile"/>
                       </infoLinks>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon" id="69ef-9eb5-8a87-dc44" defaultSelectionEntryId="c8d0-cd90-1253-6f49" hidden="false">
+                          <constraints>
+                            <constraint id="c472-0eba-8f31-0ac7" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                            <constraint id="be0c-503c-3773-bf2e" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink name="Bolt carbine" id="461c-9ef9-2f8d-4294" collective="false" hidden="false" import="true" targetId="1cab-7778-6af4-e3e6" type="selectionEntry"/>
+                            <entryLink name="Shotgun" id="c8d0-cd90-1253-6f49" collective="false" hidden="false" import="true" targetId="ce59-8ed4-4497-8a53" type="selectionEntry"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </selectionEntry>
                     <selectionEntry name="Arbites Vigilant w/GL" id="6a92-e16b-dddf-893d" collective="false" hidden="false" import="true" type="model">
                       <categoryLinks>
