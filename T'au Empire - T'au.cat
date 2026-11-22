@@ -927,7 +927,7 @@ If the unit has the INFANTRY Keyword and is in a terrain with the DEFENSIBLE tra
         <categoryLink name="HQ" id="9ba5-fac1-cb33-d714" hidden="false" primary="true" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7"/>
       </categoryLinks>
     </entryLink>
-    <entryLink name="Firesight Marksman" id="2a85-9c53-85b0-4348" collective="false" hidden="false" import="true" targetId="9461-8ce2-38fb-b51c" type="selectionEntry">
+    <entryLink name="Firesight Marksman" id="2a85-9c53-85b0-4348" collective="false" hidden="false" import="true" targetId="d5cd-5841-2237-b4fb" type="selectionEntry">
       <categoryLinks>
         <categoryLink name="Elites" id="cef5-f198-29e1-c4e8" hidden="false" primary="true" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2"/>
       </categoryLinks>
@@ -1017,7 +1017,7 @@ If the unit has the INFANTRY Keyword and is in a terrain with the DEFENSIBLE tra
         <categoryLink name="Troops" id="28f4-4b0e-d9f7-d484" hidden="false" primary="true" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a"/>
       </categoryLinks>
     </entryLink>
-    <entryLink name="Cadre Fireblade" id="1ad1-ac71-17a4-4b34" collective="false" hidden="false" import="true" targetId="b44b-1bd9-b112-fe0d" type="selectionEntry">
+    <entryLink name="Cadre Fireblade" id="1ad1-ac71-17a4-4b34" collective="false" hidden="false" import="true" targetId="e2a5-23cb-0ab3-146c" type="selectionEntry">
       <categoryLinks>
         <categoryLink name="HQ" id="d874-24f4-e1ec-7989" hidden="false" primary="true" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7"/>
       </categoryLinks>
@@ -11618,182 +11618,6 @@ Any models embarked within another model when it embarks upon this model do not 
               </modifierGroups>
             </infoLink>
           </infoLinks>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntry>
-    <selectionEntry name="Cadre Fireblade" id="b44b-1bd9-b112-fe0d" collective="false" hidden="false" import="true" type="unit">
-      <categoryLinks>
-        <categoryLink name="Faction: T&apos;au Empire" id="f4bc-e688-dd0f-284e" hidden="false" primary="false" targetId="77ee-b03b-d244-d535"/>
-      </categoryLinks>
-      <costs>
-        <cost name="Pts" typeId="points" value="40"/>
-        <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
-        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-      </costs>
-      <entryLinks>
-        <entryLink name="Drones" id="49c7-dd92-6292-ec11" collective="false" hidden="false" import="true" targetId="d1fc-325a-4b92-bb25" type="selectionEntryGroup">
-          <constraints>
-            <constraint id="6abf-1fce-8969-640d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
-          </constraints>
-          <modifiers>
-            <modifier field="name" type="append" value=" (0-2)"/>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-      <modifierGroups>
-        <modifierGroup>
-          <modifiers>
-            <modifier field="category" type="add" value="5a50-8ff7-fba5-2d6e">
-              <conditions>
-                <condition childId="1743-c8d8-9cd2-7d78" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-              </conditions>
-            </modifier>
-            <modifier field="category" type="add" value="002a-5118-fc4e-d860">
-              <conditions>
-                <condition childId="ee1c-bd4c-f3cd-7f91" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-              </conditions>
-            </modifier>
-            <modifier field="category" type="add" value="bf09-6007-1a8f-792b">
-              <conditions>
-                <condition childId="f4eb-68c4-6c1f-a9e1" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-              </conditions>
-            </modifier>
-            <modifier field="category" type="add" value="ed44-e564-e8a5-6891">
-              <conditions>
-                <condition childId="c8c6-1f8c-99b8-8758" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-              </conditions>
-            </modifier>
-            <modifier field="category" type="add" value="f0d8-bf79-46e3-d82e">
-              <conditions>
-                <condition childId="367b-e23e-9f04-4be6" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-              </conditions>
-            </modifier>
-            <modifier field="category" type="add" value="ab9b-29f0-6b31-b217">
-              <conditions>
-                <condition childId="70d7-6877-d9ab-20e1" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-              </conditions>
-            </modifier>
-            <modifier field="category" type="add" value="4c0d-fd8d-e7c1-a2c1">
-              <conditions>
-                <condition childId="cd11-3986-f127-1a5b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-              </conditions>
-            </modifier>
-            <modifier field="category" type="add" value="dd0e-b02b-ef35-1616">
-              <conditions>
-                <condition childId="ccde-9fff-e83a-c26b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-              </conditions>
-            </modifier>
-            <modifier field="category" type="add" value="fa10-5b69-9887-b4c1">
-              <conditions>
-                <condition childId="9e82-c782-b939-36b4" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
-      <modifiers>
-        <modifier field="e356-c769-5920-6e14" type="increment" value="1">
-          <conditions>
-            <condition childId="d1fc-325a-4b92-bb25" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="b44b-1bd9-b112-fe0d" shared="true" type="equalTo" value="2"/>
-          </conditions>
-        </modifier>
-        <modifier field="category" type="add" value="f55d-9d66-abc1-f34f">
-          <conditions>
-            <condition childId="5ac3-b4a4-82cc-da42" childName="Play Their Part" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="1"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <selectionEntries>
-        <selectionEntry name="Cadre Fireblade" id="e2a5-23cb-0ab3-146c" collective="false" hidden="false" import="true" type="model">
-          <categoryLinks>
-            <categoryLink name="Cadre Fireblade" id="a575-cfaf-998e-d56d" hidden="false" primary="false" targetId="1e6a-d4bb-b363-8f61"/>
-            <categoryLink name="Character" id="5e37-4a78-bd0e-f2df" hidden="false" primary="false" targetId="ef18-746a-369f-43a4"/>
-            <categoryLink name="Infantry" id="4e4c-5352-60f7-2f99" hidden="false" primary="false" targetId="3d52-fccf-10c0-3fae"/>
-            <categoryLink name="T&apos;au Fire Caste Warrior" id="2224-b2a5-d280-dfd4" hidden="false" primary="false" targetId="dcd0-ba12-2a47-fbaa"/>
-          </categoryLinks>
-          <constraints>
-            <constraint id="2e91-da65-3108-f545" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-            <constraint id="921e-fb79-2fd7-a7d9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Pulse Rifle" id="807a-bb81-36dc-65ab" collective="false" hidden="false" import="true" targetId="bd45-84e7-5849-e159" type="selectionEntry">
-              <constraints>
-                <constraint id="e804-ff00-ae85-757b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                <constraint id="0dd6-dd0a-e092-23e1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-              </constraints>
-            </entryLink>
-            <entryLink name="Pulse Pistol" id="abb3-177b-c305-a6ff" collective="false" hidden="false" import="true" targetId="36ab-06f3-3f8d-bb55" type="selectionEntry">
-              <constraints>
-                <constraint id="32cb-75d2-c41a-6923" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                <constraint id="ee99-f3a9-e61b-a532" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-              </constraints>
-            </entryLink>
-            <entryLink name="Markerlight" id="6717-36f2-a9ac-a56c" collective="false" hidden="false" import="true" targetId="c907-2075-ec84-e2fb" type="selectionEntry"/>
-            <entryLink name="   Character definition:" id="3267-e46c-2b45-e4b0" collective="false" hidden="false" import="true" targetId="727f-9459-651d-5b07" type="selectionEntryGroup">
-              <entryLinks>
-                <entryLink name="Warlord traits" id="ab25-c0af-e1ba-3bed" collective="false" hidden="false" import="true" targetId="c29b-b027-c607-ebe7" type="selectionEntryGroup"/>
-                <entryLink name="Experimental systems" id="7341-8ae9-7431-0a09" collective="false" hidden="false" import="true" targetId="2c09-ad42-b855-1d03" type="selectionEntryGroup"/>
-                <entryLink name="Prototype Systems" id="512a-9be1-ee29-8906" collective="false" hidden="false" import="true" targetId="ae44-8dd0-b8f4-c2de" type="selectionEntryGroup"/>
-              </entryLinks>
-            </entryLink>
-            <entryLink name="Photon Grenades" id="8a0a-624e-9311-71c2" collective="false" hidden="false" import="true" targetId="ce97-a8d9-f755-476b" type="selectionEntry"/>
-          </entryLinks>
-          <profiles>
-            <profile name="Target Sighted" id="8014-784a-91bd-3d40" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-              <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">In your Shooting phase, select one enemy unit within 36&quot; and visible to this model. Until the start of your next Command phase, each time an SEPT INFANTRY CORE model, excluding BATTLESUIT models, makes a ranged attack against that unit, re-roll a wound roll of 1.</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Volley Fire [Aura]" id="f61d-a782-07f7-66c6" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-              <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly SEPT INFANTRY CORE unit is within 6&quot; of this model, each time a CORE model in that unit, excluding BATTLESUIT models, makes an attack with a pulse weapon, an unmodified hit roll of 6 scores one additional hit.</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Cadre Fireblade" id="b98c-042d-41e8-9e4e" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-              <characteristics>
-                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
-                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4</characteristic>
-                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
-                <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
-                <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
-                <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
-                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
-                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4</characteristic>
-              </characteristics>
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <comment>Ld modifiers</comment>
-                  <modifiers>
-                    <modifier field="00ca-f8b8-876d-b705" type="increment" value="1">
-                      <conditions>
-                        <condition childId="4395-6d64-41c4-24ef" childName="Loyal to the End" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="1"/>
-                      </conditions>
-                    </modifier>
-                    <modifier field="00ca-f8b8-876d-b705" type="increment" value="2">
-                      <conditions>
-                        <condition childId="1743-c8d8-9cd2-7d78" childName="Ke&apos;lshan Sept" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="1"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </modifierGroup>
-              </modifierGroups>
-              <modifiers>
-                <modifier field="e7f0-1278-0250-df0c" type="set" value="3">
-                  <conditions>
-                    <condition childId="9e82-c782-b939-36b4" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </profile>
-          </profiles>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -23203,7 +23027,14 @@ Each time a successful hit is made for an attack made with this weapon, if the t
             <constraint id="fd77-a49d-a33a-c0a2" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="3"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry name="Sniper drone section" id="d205-0a34-72c4-886d" hidden="false" import="true" type="upgrade"/>
+            <selectionEntry name="Sniper drone section" id="d205-0a34-72c4-886d" hidden="false" import="true" type="upgrade">
+              <costs>
+                <cost name="Pts" typeId="points" value="30"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -23220,10 +23051,6 @@ Each time a successful hit is made for an attack made with this weapon, if the t
         <categoryLink name="Commander" id="bd7c-af73-9187-90e0" hidden="false" primary="false" targetId="dd89-06e9-3ef5-7fe8"/>
         <categoryLink name="Faction: T&apos;au Empire" id="45ae-d79c-4e1e-2285" hidden="false" primary="false" targetId="77ee-b03b-d244-d535"/>
       </categoryLinks>
-      <constraints>
-        <constraint id="c99b-fa9d-e2bb-99fb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-        <constraint id="4d67-e4b3-6452-283b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-      </constraints>
       <costs>
         <cost name="Pts" typeId="points" value="90"/>
         <cost name="PL" typeId="e356-c769-5920-6e14" value="5"/>
@@ -23380,10 +23207,6 @@ Each time a successful hit is made for an attack made with this weapon, if the t
         <categoryLink name="XV81 Crisis Battlesuit" id="73da-95be-8030-13be" hidden="false" primary="false" targetId="1662-736b-3d5b-df1a"/>
         <categoryLink name="Faction: T&apos;au Empire" id="a4a5-a4f3-e36a-44b4" hidden="false" primary="false" targetId="77ee-b03b-d244-d535"/>
       </categoryLinks>
-      <constraints>
-        <constraint id="3bec-b59d-555b-307d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-        <constraint id="fe51-ae48-f07c-2d95" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
       <costs>
         <cost name="Pts" typeId="points" value="150"/>
         <cost name="PL" typeId="e356-c769-5920-6e14" value="8"/>
@@ -23528,10 +23351,6 @@ Each time a successful hit is made for an attack made with this weapon, if the t
         <categoryLink name="Commander" id="3898-40d1-2f2f-bd68" hidden="false" primary="false" targetId="dd89-06e9-3ef5-7fe8"/>
         <categoryLink name="Faction: T&apos;au Empire" id="460e-4256-e091-66ee" hidden="false" primary="false" targetId="77ee-b03b-d244-d535"/>
       </categoryLinks>
-      <constraints>
-        <constraint id="6a27-32bd-fb89-1364" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-        <constraint id="9d1f-4734-05de-92d9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-      </constraints>
       <costs>
         <cost name="Pts" typeId="points" value="130"/>
         <cost name="PL" typeId="e356-c769-5920-6e14" value="7"/>
@@ -23673,10 +23492,6 @@ Each time a successful hit is made for an attack made with this weapon, if the t
         <categoryLink name="XV85 Enforcer Battlesuit" id="8ddb-126d-3cce-2c84" hidden="false" primary="false" targetId="7732-8c03-1265-ca2d"/>
         <categoryLink name="Faction: T&apos;au Empire" id="8288-0e74-687c-99d7" hidden="false" primary="false" targetId="77ee-b03b-d244-d535"/>
       </categoryLinks>
-      <constraints>
-        <constraint id="3391-206b-aec0-6728" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-        <constraint id="d26f-6f8f-66d2-415f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
       <costs>
         <cost name="Pts" typeId="points" value="150"/>
         <cost name="PL" typeId="e356-c769-5920-6e14" value="8"/>
@@ -23854,10 +23669,6 @@ Each time a successful hit is made for an attack made with this weapon, if the t
         <categoryLink name="XV86 Coldstar Battlesuit" id="b681-0e70-1aa2-6eab" hidden="false" primary="false" targetId="421e-e63c-ae4e-1c0a"/>
         <categoryLink name="Faction: T&apos;au Empire" id="9fed-0edd-ede9-3283" hidden="false" primary="false" targetId="77ee-b03b-d244-d535"/>
       </categoryLinks>
-      <constraints>
-        <constraint id="0ea6-3b4d-2cdf-0b6a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-        <constraint id="9145-28fd-853c-aa3d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
       <costs>
         <cost name="Pts" typeId="points" value="130"/>
         <cost name="PL" typeId="e356-c769-5920-6e14" value="7"/>
@@ -24039,10 +23850,6 @@ Each time a successful hit is made for an attack made with this weapon, if the t
         <categoryLink name="Earth Caste Combat Engineer" id="6055-31c0-0171-cd0c" hidden="false" primary="false" targetId="d479-31b1-8a7c-130e"/>
         <categoryLink name="Faction: T&apos;au Empire" id="7f2d-8576-8057-3923" hidden="false" primary="false" targetId="77ee-b03b-d244-d535"/>
       </categoryLinks>
-      <constraints>
-        <constraint id="ae30-428e-bb89-5e28" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-        <constraint id="4f25-f155-d1ce-5727" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
       <costs>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
         <cost name="PL" typeId="e356-c769-5920-6e14" value="3"/>
@@ -24209,10 +24016,6 @@ Each time a successful hit is made for an attack made with this weapon, if the t
         <categoryLink name="Infantry" id="c65e-80ca-6c22-e100" hidden="false" primary="false" targetId="3d52-fccf-10c0-3fae"/>
         <categoryLink name="Ethereal" id="75fa-586c-0bb9-2686" hidden="false" primary="false" targetId="05f0-8653-4515-8349"/>
       </categoryLinks>
-      <constraints>
-        <constraint id="d2c8-6fd2-b3d5-96e5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-        <constraint id="c6a0-1a8f-8101-f1e6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-      </constraints>
       <costs>
         <cost name="Pts" typeId="points" value="60"/>
         <cost name="PL" typeId="e356-c769-5920-6e14" value="3"/>
@@ -24506,6 +24309,155 @@ Each time a successful hit is made for an attack made with this weapon, if the t
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4</characteristic>
           </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Cadre Fireblade" id="e2a5-23cb-0ab3-146c" collective="false" hidden="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink name="Cadre Fireblade" id="a575-cfaf-998e-d56d" hidden="false" primary="false" targetId="1e6a-d4bb-b363-8f61"/>
+        <categoryLink name="Character" id="5e37-4a78-bd0e-f2df" hidden="false" primary="false" targetId="ef18-746a-369f-43a4"/>
+        <categoryLink name="Infantry" id="4e4c-5352-60f7-2f99" hidden="false" primary="false" targetId="3d52-fccf-10c0-3fae"/>
+        <categoryLink name="T&apos;au Fire Caste Warrior" id="2224-b2a5-d280-dfd4" hidden="false" primary="false" targetId="dcd0-ba12-2a47-fbaa"/>
+        <categoryLink name="Faction: T&apos;au Empire" id="4226-d0e3-ca5d-3ff3" hidden="false" primary="false" targetId="77ee-b03b-d244-d535"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="2e91-da65-3108-f545" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+        <constraint id="921e-fb79-2fd7-a7d9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+      </constraints>
+      <costs>
+        <cost name="Pts" typeId="points" value="40"/>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink name="Pulse Rifle" id="807a-bb81-36dc-65ab" collective="false" hidden="false" import="true" targetId="bd45-84e7-5849-e159" type="selectionEntry">
+          <constraints>
+            <constraint id="e804-ff00-ae85-757b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+            <constraint id="0dd6-dd0a-e092-23e1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+          </constraints>
+        </entryLink>
+        <entryLink name="Pulse Pistol" id="abb3-177b-c305-a6ff" collective="false" hidden="false" import="true" targetId="36ab-06f3-3f8d-bb55" type="selectionEntry">
+          <constraints>
+            <constraint id="32cb-75d2-c41a-6923" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+            <constraint id="ee99-f3a9-e61b-a532" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+          </constraints>
+        </entryLink>
+        <entryLink name="Markerlight" id="6717-36f2-a9ac-a56c" collective="false" hidden="false" import="true" targetId="c907-2075-ec84-e2fb" type="selectionEntry"/>
+        <entryLink name="   Character definition:" id="3267-e46c-2b45-e4b0" collective="false" hidden="false" import="true" targetId="727f-9459-651d-5b07" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink name="Warlord traits" id="ab25-c0af-e1ba-3bed" collective="false" hidden="false" import="true" targetId="c29b-b027-c607-ebe7" type="selectionEntryGroup"/>
+            <entryLink name="Experimental systems" id="7341-8ae9-7431-0a09" collective="false" hidden="false" import="true" targetId="2c09-ad42-b855-1d03" type="selectionEntryGroup"/>
+            <entryLink name="Prototype Systems" id="512a-9be1-ee29-8906" collective="false" hidden="false" import="true" targetId="ae44-8dd0-b8f4-c2de" type="selectionEntryGroup"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink name="Photon Grenades" id="8a0a-624e-9311-71c2" collective="false" hidden="false" import="true" targetId="ce97-a8d9-f755-476b" type="selectionEntry"/>
+      </entryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier field="category" type="add" value="5a50-8ff7-fba5-2d6e">
+              <conditions>
+                <condition childId="1743-c8d8-9cd2-7d78" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="category" type="add" value="002a-5118-fc4e-d860">
+              <conditions>
+                <condition childId="ee1c-bd4c-f3cd-7f91" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="category" type="add" value="bf09-6007-1a8f-792b">
+              <conditions>
+                <condition childId="f4eb-68c4-6c1f-a9e1" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="category" type="add" value="ed44-e564-e8a5-6891">
+              <conditions>
+                <condition childId="c8c6-1f8c-99b8-8758" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="category" type="add" value="f0d8-bf79-46e3-d82e">
+              <conditions>
+                <condition childId="367b-e23e-9f04-4be6" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="category" type="add" value="ab9b-29f0-6b31-b217">
+              <conditions>
+                <condition childId="70d7-6877-d9ab-20e1" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="category" type="add" value="4c0d-fd8d-e7c1-a2c1">
+              <conditions>
+                <condition childId="cd11-3986-f127-1a5b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="category" type="add" value="dd0e-b02b-ef35-1616">
+              <conditions>
+                <condition childId="ccde-9fff-e83a-c26b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="category" type="add" value="fa10-5b69-9887-b4c1">
+              <conditions>
+                <condition childId="9e82-c782-b939-36b4" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <modifiers>
+        <modifier field="category" type="add" value="f55d-9d66-abc1-f34f">
+          <conditions>
+            <condition childId="5ac3-b4a4-82cc-da42" childName="Play Their Part" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Target Sighted" id="8014-784a-91bd-3d40" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">In your Shooting phase, select one enemy unit within 36&quot; and visible to this model. Until the start of your next Command phase, each time an SEPT INFANTRY CORE model, excluding BATTLESUIT models, makes a ranged attack against that unit, re-roll a wound roll of 1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Volley Fire [Aura]" id="f61d-a782-07f7-66c6" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly SEPT INFANTRY CORE unit is within 6&quot; of this model, each time a CORE model in that unit, excluding BATTLESUIT models, makes an attack with a pulse weapon, an unmodified hit roll of 6 scores one additional hit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Cadre Fireblade" id="b98c-042d-41e8-9e4e" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4</characteristic>
+          </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Ld modifiers</comment>
+              <modifiers>
+                <modifier field="00ca-f8b8-876d-b705" type="increment" value="1">
+                  <conditions>
+                    <condition childId="4395-6d64-41c4-24ef" childName="Loyal to the End" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="00ca-f8b8-876d-b705" type="increment" value="2">
+                  <conditions>
+                    <condition childId="1743-c8d8-9cd2-7d78" childName="Ke&apos;lshan Sept" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <modifiers>
+            <modifier field="e7f0-1278-0250-df0c" type="set" value="3">
+              <conditions>
+                <condition childId="9e82-c782-b939-36b4" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
     </selectionEntry>
@@ -30575,7 +30527,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
               </modifiers>
               <repeats>
                 <repeat childId="ce23-a05f-68ce-86b8" childName="Ethereal" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
-                <repeat childId="b44b-1bd9-b112-fe0d" childName="Cadre Fireblade" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+                <repeat childId="e2a5-23cb-0ab3-146c" childName="Cadre Fireblade" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
                 <repeat childId="fba6-ed46-5dd3-57fa" childName="Earth Caste Combat Engineer" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
               </repeats>
             </modifierGroup>
@@ -30635,7 +30587,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
                 <conditionGroup type="or">
                   <conditions>
                     <condition childId="ce23-a05f-68ce-86b8" childName="Ethereal" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
-                    <condition childId="b44b-1bd9-b112-fe0d" childName="Cadre Fireblade" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+                    <condition childId="e2a5-23cb-0ab3-146c" childName="Cadre Fireblade" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
                     <condition childId="fba6-ed46-5dd3-57fa" childName="Earth Caste Combat Engineer" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
                   </conditions>
                 </conditionGroup>
@@ -32328,7 +32280,6 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
           </constraints>
           <costs>
             <cost name="Pts" typeId="points" value="0"/>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
@@ -32338,6 +32289,9 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
                 <constraint id="63c0-b3ff-9e02-9e14" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="3"/>
                 <constraint id="2919-293b-ad93-bf3c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="3"/>
               </constraints>
+              <costs>
+                <cost name="Pts" typeId="points" value="0"/>
+              </costs>
             </entryLink>
           </entryLinks>
           <modifierGroups>
