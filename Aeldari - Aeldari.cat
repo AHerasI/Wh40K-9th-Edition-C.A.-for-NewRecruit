@@ -23928,6 +23928,26 @@ From that point onwards, each operates independently and is treated as a separat
           <entryLinks>
             <entryLink name="Phantasm grenade launcher" id="a6ac-33d2-269a-ebe2" collective="false" hidden="false" import="true" targetId="2da7-171a-8b32-557a" type="selectionEntry"/>
             <entryLink name="Splinter pods" id="c657-f605-d369-c172" collective="false" hidden="false" import="true" targetId="423f-d5ac-51cc-805a" type="selectionEntry"/>
+            <entryLink name="Weapon" id="d5bc-45e4-0e89-63e0" hidden="false" import="true" targetId="ae6e-a75a-66f9-bdf3" type="selectionEntryGroup">
+              <selectionEntries>
+                <selectionEntry name="Pistol&amp;Sword" id="f9cd-b2c8-8310-6046" collective="false" hidden="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name="Pts" typeId="points" value="5"/>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink name="Splinter pistol" id="da4a-0cf5-4487-2d86" collective="false" hidden="false" import="true" targetId="8baa-e14e-5a6a-972d" type="selectionEntry"/>
+                    <entryLink name="Power Sword" id="74a8-a5d3-3fad-d8f6" collective="false" hidden="false" import="true" targetId="6168-426f-d99c-ad99" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="points" value="5"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </entryLink>
           </entryLinks>
           <profiles>
             <profile name="Helliarch" id="2175-cc73-b7b3-4b9e" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
@@ -23951,106 +23971,6 @@ From that point onwards, each operates independently and is treated as a separat
               </modifiers>
             </profile>
           </profiles>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Weapon" id="ae6e-a75a-66f9-bdf3" collective="false" defaultSelectionEntryId="9508-23a8-e465-5770" hidden="false" import="true">
-              <constraints>
-                <constraint id="15d7-38d8-9ba3-7c26" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                <constraint id="fef5-1371-56a9-6145" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry name="Hellglaive" id="9508-23a8-e465-5770" collective="false" hidden="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                    <cost name="Pts" typeId="points" value="0"/>
-                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-                  </costs>
-                  <profiles>
-                    <profile name="Hellglaive" id="4a0a-422a-3fc0-146b" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
-                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-                        <characteristic name="S" typeId="59b1-319e-ec13-d466">+2</characteristic>
-                        <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
-                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry name="Pistol&amp;Agoniser" id="8fde-b364-3eca-4fb8" collective="false" hidden="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                    <cost name="Pts" typeId="points" value="0"/>
-                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-                  </costs>
-                  <entryLinks>
-                    <entryLink name="Splinter pistol" id="8b3f-89d5-25c4-8a75" collective="false" hidden="false" import="true" targetId="8baa-e14e-5a6a-972d" type="selectionEntry"/>
-                    <entryLink name="Agoniser" id="b18d-b075-4dc4-a977" collective="false" hidden="false" import="true" targetId="a573-37ac-abc5-8aa3" type="selectionEntry">
-                      <constraints>
-                        <constraint id="96c9-43e6-e9ae-962f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                        <constraint id="54d8-cb4b-712b-7ab7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntry>
-                <selectionEntry name="Pistol&amp;Stunclaw" id="9720-e85c-2593-13eb" collective="false" hidden="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name="Pts" typeId="points" value="5"/>
-                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-                  </costs>
-                  <entryLinks>
-                    <entryLink name="Splinter pistol" id="66d5-aace-14fe-b2ed" collective="false" hidden="false" import="true" targetId="8baa-e14e-5a6a-972d" type="selectionEntry"/>
-                  </entryLinks>
-                  <selectionEntries>
-                    <selectionEntry name="Stunclaw" id="9eca-0d34-ef8f-a727" collective="false" hidden="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint id="b1f7-20b4-2b1d-2f57" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                        <constraint id="1967-4d8e-f368-ee8e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                      </constraints>
-                      <costs>
-                        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                        <cost name="Pts" typeId="points" value="0"/>
-                        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-                      </costs>
-                      <profiles>
-                        <profile name="Stunclaw" id="fb05-7d7d-307c-90b3" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-                          <characteristics>
-                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
-                            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-                            <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
-                            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-                            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, an unmodified wound roll of 6 inflicts 1 mortal wound on the target in addition to any normal damage.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntry>
-                <selectionEntry name="Pistol&amp;Sword" id="f9cd-b2c8-8310-6046" collective="false" hidden="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name="Pts" typeId="points" value="5"/>
-                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-                  </costs>
-                  <entryLinks>
-                    <entryLink name="Splinter pistol" id="da4a-0cf5-4487-2d86" collective="false" hidden="false" import="true" targetId="8baa-e14e-5a6a-972d" type="selectionEntry"/>
-                    <entryLink name="Power Sword" id="74a8-a5d3-3fad-d8f6" collective="false" hidden="false" import="true" targetId="6168-426f-d99c-ad99" type="selectionEntry">
-                      <costs>
-                        <cost name="pts" typeId="points" value="5"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -24092,23 +24012,90 @@ From that point onwards, each operates independently and is treated as a separat
                   </modifiers>
                 </profile>
               </profiles>
-              <selectionEntries>
-                <selectionEntry name="Hellglaive" id="2d37-6085-086c-0b84" collective="true" hidden="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon" id="ae6e-a75a-66f9-bdf3" collective="false" defaultSelectionEntryId="9508-23a8-e465-5770" hidden="false" import="true">
                   <constraints>
-                    <constraint id="7c1b-3bdd-2411-ed11" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                    <constraint id="e529-bbd1-67fa-2d95" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="15d7-38d8-9ba3-7c26" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                    <constraint id="fef5-1371-56a9-6145" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                   </constraints>
-                  <costs>
-                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                    <cost name="Pts" typeId="points" value="0"/>
-                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-                  </costs>
-                  <infoLinks>
-                    <infoLink name="Hellglaive" id="1be5-9934-df6d-42b5" hidden="false" targetId="4a0a-422a-3fc0-146b" type="profile"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
+                  <selectionEntries>
+                    <selectionEntry name="Hellglaive" id="9508-23a8-e465-5770" collective="false" hidden="false" import="true" type="upgrade">
+                      <costs>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                        <cost name="Pts" typeId="points" value="0"/>
+                        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                      </costs>
+                      <profiles>
+                        <profile name="Hellglaive" id="4a0a-422a-3fc0-146b" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                            <characteristic name="S" typeId="59b1-319e-ec13-d466">+2</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
+                            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry name="Pistol&amp;Agoniser" id="8fde-b364-3eca-4fb8" collective="false" hidden="false" import="true" type="upgrade">
+                      <costs>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                        <cost name="Pts" typeId="points" value="0"/>
+                        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                      </costs>
+                      <entryLinks>
+                        <entryLink name="Splinter pistol" id="8b3f-89d5-25c4-8a75" collective="false" hidden="false" import="true" targetId="8baa-e14e-5a6a-972d" type="selectionEntry"/>
+                        <entryLink name="Agoniser" id="b18d-b075-4dc4-a977" collective="false" hidden="false" import="true" targetId="a573-37ac-abc5-8aa3" type="selectionEntry">
+                          <constraints>
+                            <constraint id="96c9-43e6-e9ae-962f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                            <constraint id="54d8-cb4b-712b-7ab7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry name="Pistol&amp;Stunclaw" id="9720-e85c-2593-13eb" collective="false" hidden="false" import="true" type="upgrade">
+                      <costs>
+                        <cost name="Pts" typeId="points" value="5"/>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                      </costs>
+                      <entryLinks>
+                        <entryLink name="Splinter pistol" id="66d5-aace-14fe-b2ed" collective="false" hidden="false" import="true" targetId="8baa-e14e-5a6a-972d" type="selectionEntry"/>
+                      </entryLinks>
+                      <selectionEntries>
+                        <selectionEntry name="Stunclaw" id="9eca-0d34-ef8f-a727" collective="false" hidden="false" import="true" type="upgrade">
+                          <constraints>
+                            <constraint id="b1f7-20b4-2b1d-2f57" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                            <constraint id="1967-4d8e-f368-ee8e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                          </constraints>
+                          <costs>
+                            <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                            <cost name="Pts" typeId="points" value="0"/>
+                            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                          </costs>
+                          <profiles>
+                            <profile name="Stunclaw" id="fb05-7d7d-307c-90b3" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                              <characteristics>
+                                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                                <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
+                                <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
+                                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, an unmodified wound roll of 6 inflicts 1 mortal wound on the target in addition to any normal damage.</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
