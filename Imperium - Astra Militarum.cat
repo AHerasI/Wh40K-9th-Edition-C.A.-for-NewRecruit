@@ -2893,6 +2893,45 @@ In your Command phase, this unit’s PRIEST model can attempt to chant one praye
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink name="Mechanised Command Vehicle" id="71b6-8302-52a6-f344" hidden="true" import="true" targetId="b498-a079-23ba-8e19" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Compound units" id="acca-97f2-1c59-70bd" hidden="false" primary="true" targetId="21f9-f3cf-3e48-8b3c"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="082d-f28b-29ad-1e57" field="selections" includeChildSelections="true" scope="force" shared="true" type="max" value="0"/>
+        <constraint id="fe2d-7ec6-e194-efce" field="selections" includeChildSelections="true" scope="force" shared="true" type="min" value="0"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier field="082d-f28b-29ad-1e57" type="increment" value="1">
+              <repeats>
+                <repeat childId="399f-f56b-0c0f-6fb5" childName="Mechanised Company Command" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
+                <repeat childId="4c57-ba87-a3d7-f151" childName="Mechanised Regimental Command" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
+              </repeats>
+            </modifier>
+            <modifier field="fe2d-7ec6-e194-efce" type="increment" value="1">
+              <repeats>
+                <repeat childId="399f-f56b-0c0f-6fb5" childName="Mechanised Company Command" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
+                <repeat childId="4c57-ba87-a3d7-f151" childName="Mechanised Regimental Command" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition childId="399f-f56b-0c0f-6fb5" childName="Mechanised Company Command" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="atLeast" value="1"/>
+                <condition childId="4c57-ba87-a3d7-f151" childName="Mechanised Regimental Command" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <profileTypes>
     <profileType name="Order" id="5e51-6902-58a8-00f5">
@@ -2942,39 +2981,6 @@ In your Command phase, this unit’s PRIEST model can attempt to chant one praye
           </conditions>
         </modifier>
       </modifiers>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Command Vehicle" id="f59e-f67a-7e15-2100" collective="false" defaultSelectionEntryId="a74c-549e-2201-4a1f" hidden="false" import="true">
-          <constraints>
-            <constraint id="b1c0-7e47-5f37-3355" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-            <constraint id="5345-933f-d5b0-7cb7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-          </constraints>
-          <entryLinks>
-            <entryLink name="Chimera APC" id="a74c-549e-2201-4a1f" collective="false" hidden="false" import="true" targetId="4658-d952-cddf-b78a" type="selectionEntry"/>
-            <entryLink name="Chimera IFV" id="23bc-7f9b-ce97-cb5b" collective="false" hidden="false" import="true" targetId="aa5e-d476-c0e1-e5e5" type="selectionEntry"/>
-            <entryLink name="Centauro APC Command Variant" id="54c2-9486-8cbc-f571" hidden="false" import="true" targetId="5049-c1f0-72de-b67e" type="selectionEntry"/>
-            <entryLink name="Taurox AC" id="44c2-6f99-1e97-0cce" collective="false" hidden="false" import="true" targetId="322d-555b-8a2d-a627" type="selectionEntry">
-              <categoryLinks>
-                <categoryLink name="Character" id="71a9-5682-ed95-2f1c" hidden="false" primary="false" targetId="ef18-746a-369f-43a4"/>
-                <categoryLink name="Officer" id="96eb-94be-094f-6030" hidden="false" primary="false" targetId="6f24-1326-b08a-81bc"/>
-                <categoryLink name="Tank Commander" id="b9b4-28b7-a2d1-243e" hidden="false" primary="false" targetId="9946-33a8-b502-a531"/>
-              </categoryLinks>
-              <entryLinks>
-                <entryLink name=" Character Definition" id="6032-13ef-1309-408c" collective="false" hidden="false" import="true" targetId="b8e4-216c-16cc-4263" type="selectionEntryGroup"/>
-              </entryLinks>
-            </entryLink>
-            <entryLink name="Taurox APC" id="bce3-62c9-0570-3574" collective="false" hidden="false" import="true" targetId="fb2a-9e7b-3cd5-9eca" type="selectionEntry">
-              <categoryLinks>
-                <categoryLink name="Character" id="e607-eec5-1d76-f9f4" hidden="false" primary="false" targetId="ef18-746a-369f-43a4"/>
-                <categoryLink name="Officer" id="fdff-1a96-56a0-cc28" hidden="false" primary="false" targetId="6f24-1326-b08a-81bc"/>
-                <categoryLink name="Tank Commander" id="39a0-511b-0215-34ef" hidden="false" primary="false" targetId="9946-33a8-b502-a531"/>
-              </categoryLinks>
-              <entryLinks>
-                <entryLink name=" Character Definition" id="2659-7dc6-7ed9-f5c7" collective="false" hidden="false" import="true" targetId="b8e4-216c-16cc-4263" type="selectionEntryGroup"/>
-              </entryLinks>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry name="Mechanised Regimental Command" id="4c57-ba87-a3d7-f151" collective="false" hidden="true" import="true" type="upgrade">
       <categoryLinks>
@@ -3009,276 +3015,6 @@ In your Command phase, this unit’s PRIEST model can attempt to chant one praye
           </conditionGroups>
         </modifier>
       </modifiers>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Command Vehicle" id="4d25-41c6-8a2d-3e7c" collective="false" defaultSelectionEntryId="48a5-4ae3-9377-5de1" hidden="false" import="true">
-          <constraints>
-            <constraint id="db6f-5baf-01c6-da56" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-            <constraint id="e9a8-0494-9dec-a0a0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-          </constraints>
-          <entryLinks>
-            <entryLink name="Chimera APC" id="48a5-4ae3-9377-5de1" collective="false" hidden="false" import="true" targetId="4658-d952-cddf-b78a" type="selectionEntry"/>
-            <entryLink name="Chimera IFV" id="9669-284d-e423-eee6" collective="false" hidden="false" import="true" targetId="aa5e-d476-c0e1-e5e5" type="selectionEntry"/>
-            <entryLink name="Taurox AC" id="6507-912a-2f65-0339" collective="false" hidden="false" import="true" targetId="322d-555b-8a2d-a627" type="selectionEntry">
-              <categoryLinks>
-                <categoryLink name="Character" id="1aa6-490f-b55b-be5e" hidden="false" primary="false" targetId="ef18-746a-369f-43a4"/>
-                <categoryLink name="Officer" id="d69f-17d8-4c50-01f1" hidden="false" primary="false" targetId="6f24-1326-b08a-81bc"/>
-                <categoryLink name="Tank Commander" id="6c3f-c163-4c18-a69d" hidden="false" primary="false" targetId="9946-33a8-b502-a531"/>
-              </categoryLinks>
-              <entryLinks>
-                <entryLink name=" Character Definition" id="f97c-4c56-d2be-f0a5" collective="false" hidden="false" import="true" targetId="b8e4-216c-16cc-4263" type="selectionEntryGroup"/>
-              </entryLinks>
-            </entryLink>
-            <entryLink name="Taurox APC" id="5715-d04d-71e5-efa1" collective="false" hidden="false" import="true" targetId="fb2a-9e7b-3cd5-9eca" type="selectionEntry">
-              <categoryLinks>
-                <categoryLink name="Character" id="89d4-2afd-7049-2bca" hidden="false" primary="false" targetId="ef18-746a-369f-43a4"/>
-                <categoryLink name="Officer" id="2f84-6999-714c-b2b3" hidden="false" primary="false" targetId="6f24-1326-b08a-81bc"/>
-                <categoryLink name="Tank Commander" id="2f81-833b-745c-4f31" hidden="false" primary="false" targetId="9946-33a8-b502-a531"/>
-              </categoryLinks>
-              <entryLinks>
-                <entryLink name=" Character Definition" id="ba2f-24cd-7f01-ac6c" collective="false" hidden="false" import="true" targetId="b8e4-216c-16cc-4263" type="selectionEntryGroup"/>
-              </entryLinks>
-            </entryLink>
-          </entryLinks>
-          <selectionEntries>
-            <selectionEntry name="Centauro APC Command Variant" id="5049-c1f0-72de-b67e" collective="false" hidden="false" import="true" type="model">
-              <categoryLinks>
-                <categoryLink name="Vehicle" id="a683-46ad-8eb8-3212" hidden="false" primary="false" targetId="c8fd-783f-3230-493e"/>
-                <categoryLink name="Wrecked" id="0948-e115-948b-fbe5" hidden="false" primary="false" targetId="972c-53fd-93b7-624b"/>
-                <categoryLink name="Regiment" id="1862-5b1c-0c46-f200" hidden="false" primary="false" targetId="3aa8-21df-b483-57dd"/>
-                <categoryLink name="Tracked" id="6f8b-9a6e-2c86-8a33" hidden="false" primary="false" targetId="7402-3477-84a2-08f8"/>
-                <categoryLink name="Transport" id="ea82-77f5-ab24-5c1d" hidden="false" primary="false" targetId="6cc4-1b62-8e8a-05cd"/>
-                <categoryLink name="Open-topped" id="4488-7688-6c1c-9844" hidden="false" primary="false" targetId="cdc5-4a32-031d-f86e"/>
-              </categoryLinks>
-              <costs>
-                <cost name="Pts" typeId="points" value="40"/>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink name="Crushing bulk" id="8ecf-094e-c4a7-fb8d" collective="false" hidden="false" import="true" targetId="502f-45c2-6fd1-443b" type="selectionEntry"/>
-                <entryLink name="Smokescreen Launcher" id="cc6d-27aa-c92f-8c13" collective="false" hidden="false" import="true" targetId="bded-2b06-5ea3-d7d5" type="selectionEntry">
-                  <constraints>
-                    <constraint id="9591-cc4d-7c14-3131" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                  </constraints>
-                </entryLink>
-                <entryLink name="Assault cannon" id="75d3-c92c-f83b-5fe0" hidden="false" import="true" targetId="987b-2dc9-8ab5-af1d" type="selectionEntry">
-                  <categoryLinks>
-                    <categoryLink name="{F} Front facing" id="c69f-b53b-62a4-1fd6" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
-                  </categoryLinks>
-                </entryLink>
-              </entryLinks>
-              <infoLinks>
-                <infoLink name="Outflank" id="4eeb-10c5-0351-59a4" hidden="false" targetId="1940-602f-f125-e350" type="profile"/>
-                <infoLink name="Additional armour plating" id="75ee-59ff-b846-4de5" hidden="false" targetId="5b3f-8e7c-f7ae-0f7c" type="profile"/>
-                <infoLink name="Explodes 6+ (6&quot;)" id="74d4-b433-ff1b-3f72" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
-              </infoLinks>
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <comment>IMPERIUM KEYWORDS</comment>
-                  <modifiers>
-                    <modifier field="category" type="add" value="cee0-4459-2f94-b827">
-                      <conditions>
-                        <condition childId="a5b4-4342-3a16-8270" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                      </conditions>
-                    </modifier>
-                    <modifier field="category" type="add" value="3c6d-c9b3-cd33-e5e5">
-                      <conditions>
-                        <condition childId="1b06-f117-011f-860e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                      </conditions>
-                    </modifier>
-                    <modifier field="category" type="add" value="ca27-5069-1c2c-a28b">
-                      <conditions>
-                        <condition childId="1115-ef9e-fc44-757e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                      </conditions>
-                    </modifier>
-                    <modifier field="category" type="add" value="2981-f499-19fc-bc80">
-                      <conditions>
-                        <condition childId="75e3-1aca-fccc-4aa1" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                      </conditions>
-                    </modifier>
-                    <modifier field="category" type="add" value="0eb0-346d-12e6-5924">
-                      <conditions>
-                        <condition childId="f9bb-f784-dc6d-d6dd" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                      </conditions>
-                    </modifier>
-                    <modifier field="category" type="add" value="1481-ffc3-f85a-eb36">
-                      <conditions>
-                        <condition childId="2315-9e36-478d-6576" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </modifierGroup>
-                <modifierGroup type="and">
-                  <comment>FACTION KEYWORDS</comment>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <conditions>
-                        <condition childId="06c4-f6da-bb1b-3cbd" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="0"/>
-                      </conditions>
-                      <modifiers>
-                        <modifier field="category" type="add" value="3263-4233-4344-6228"/>
-                        <modifier field="category" type="add" value="84e2-9fa9-ebe6-1d18"/>
-                      </modifiers>
-                    </modifierGroup>
-                    <modifierGroup type="and">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition childId="bc41-7bc9-1b3c-e921" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                            <condition childId="1efa-fe82-d536-5d34" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                            <condition childId="234b-40a5-35e4-ab8d" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                            <condition childId="f2f6-7cc9-43ee-f889" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                            <condition childId="c66e-d1d6-52ac-1640" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                      <modifiers>
-                        <modifier field="category" type="add" value="39bd-1989-42e4-056c"/>
-                        <modifier field="category" type="add" value="5cf1-acf2-ca3b-c2e5"/>
-                      </modifiers>
-                    </modifierGroup>
-                    <modifierGroup type="and">
-                      <conditions>
-                        <condition childId="7003-c834-e3b5-36ef" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                      </conditions>
-                      <modifiers>
-                        <modifier field="category" type="add" value="f1f2-1cf5-3d5c-e63d"/>
-                        <modifier field="category" type="add" value="a9de-36e3-d3ac-6337"/>
-                      </modifiers>
-                    </modifierGroup>
-                    <modifierGroup type="and">
-                      <modifiers>
-                        <modifier field="category" type="add" value="4097-5f68-1097-1f16">
-                          <conditions>
-                            <condition childId="234b-40a5-35e4-ab8d" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                          </conditions>
-                        </modifier>
-                        <modifier field="category" type="add" value="5b82-0ba7-db61-82db">
-                          <conditions>
-                            <condition childId="f2f6-7cc9-43ee-f889" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                          </conditions>
-                        </modifier>
-                        <modifier field="category" type="add" value="2226-f82a-fe58-178d">
-                          <conditions>
-                            <condition childId="bc41-7bc9-1b3c-e921" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                          </conditions>
-                        </modifier>
-                        <modifier field="category" type="add" value="11a0-1562-512f-d63b">
-                          <conditions>
-                            <condition childId="c66e-d1d6-52ac-1640" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                          </conditions>
-                        </modifier>
-                        <modifier field="category" type="add" value="51da-3457-1b10-cb14">
-                          <conditions>
-                            <condition childId="1efa-fe82-d536-5d34" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                  </modifierGroups>
-                </modifierGroup>
-              </modifierGroups>
-              <modifiers>
-                <modifier field="category" type="add" value="3c95-4bac-d4d4-d0b2">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition childId="7795-e688-5cdf-5aac" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                        <condition childId="4b65-65ca-65a8-938c" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                        <condition childId="831a-e995-faf1-39db" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Centauro APC CV" id="7ca6-7ad7-3c4e-f057" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-                  <characteristics>
-                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">14</characteristic>
-                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
-                    <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">6</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">8</characteristic>
-                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
-                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
-                  </characteristics>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <conditions>
-                        <condition childId="4399-7ac5-26a8-3c81" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                      </conditions>
-                      <modifiers>
-                        <modifier field="381b-eb28-74c3-df5f" type="set" value="3"/>
-                        <modifier field="00ca-f8b8-876d-b705" type="set" value="8"/>
-                      </modifiers>
-                    </modifierGroup>
-                  </modifierGroups>
-                  <modifiers>
-                    <modifier field="0bdf-a96e-9e38-7779" type="set" value="16">
-                      <conditions>
-                        <condition childId="8b57-b312-e2e6-ffc6" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </profile>
-                <profile name="Centauro Command Variant" id="2a10-0497-efeb-21e8" hidden="false" typeId="b3a8-0452-7436-44d1" typeName="Transport">
-                  <characteristics>
-                    <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 12 INFANTRY models. 
-Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes up the space of 3 models.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Hatch Weapon selection" id="9299-d56e-0602-a12f" collective="false" hidden="false" import="true">
-                  <entryLinks>
-                    <entryLink name="Heavy stubber" id="5939-573c-cc3f-be61" collective="false" hidden="false" import="true" targetId="cfa3-5fcd-af10-5520" type="selectionEntry">
-                      <categoryLinks>
-                        <categoryLink name="{L} Limited angle Side facing" id="d210-4c44-ecb7-4448" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
-                      </categoryLinks>
-                      <constraints>
-                        <constraint id="a30a-c342-45f4-9f0f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-                        <constraint id="b704-8e37-3ff6-9e05" field="selections" includeChildSelections="false" scope="parent" shared="false" type="min" value="1"/>
-                      </constraints>
-                      <costs>
-                        <cost name="pts" typeId="points" value="0"/>
-                      </costs>
-                      <modifiers>
-                        <modifier field="hidden" type="set" value="true">
-                          <conditions>
-                            <condition childId="4399-7ac5-26a8-3c81" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink name="Heavy stubber" id="fbaa-b549-6600-db05" collective="false" hidden="false" import="true" targetId="cfa3-5fcd-af10-5520" type="selectionEntry">
-                      <categoryLinks>
-                        <categoryLink name="{L} Limited angle Side facing" id="a9f3-da37-d2a1-77cd" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
-                      </categoryLinks>
-                      <constraints>
-                        <constraint id="747a-525b-86d2-e05f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
-                        <constraint id="802b-0b72-f7d9-3930" field="selections" includeChildSelections="false" scope="parent" shared="false" type="min" value="1"/>
-                      </constraints>
-                      <costs>
-                        <cost name="pts" typeId="points" value="0"/>
-                      </costs>
-                      <modifiers>
-                        <modifier field="hidden" type="set" value="true">
-                          <conditions>
-                            <condition childId="4399-7ac5-26a8-3c81" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry name="Agents of the Imperium" id="1d60-f158-29cc-60dc" collective="false" hidden="true" import="true" type="upgrade">
       <categoryLinks>
@@ -3318,6 +3054,148 @@ Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes 
                   </conditions>
                 </modifier>
               </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry name="Mechanised Company Command" id="cdfa-65db-4ea4-456e" collective="false" hidden="true" import="true" type="upgrade">
+      <comment>BCKPUP</comment>
+      <categoryLinks>
+        <categoryLink name="HQ" id="9907-ecb4-c4c5-154b" hidden="false" primary="true" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7"/>
+      </categoryLinks>
+      <costs>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="Pts" typeId="points" value="0"/>
+        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink name="Company Command Squad" id="3f23-e7c4-0b32-eb34" collective="false" hidden="false" import="true" targetId="e669-e6a4-97b5-faf7" type="selectionEntry">
+          <constraints>
+            <constraint id="e9e6-4e17-0177-f41d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+            <constraint id="9fcb-575c-c19b-4b92" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier field="hidden" type="set" value="true">
+          <comment>Set to false to enable</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition childId="7795-e688-5cdf-5aac" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                <condition childId="5785-1869-d25b-dd4b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                <condition childId="4b65-65ca-65a8-938c" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                <condition childId="b3fc-2bcc-a8ab-78e6" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier field="category" type="add" value="cee0-4459-2f94-b827">
+          <conditions>
+            <condition childId="a5b4-4342-3a16-8270" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Command Vehicle" id="534f-f598-e3cd-2475" collective="false" defaultSelectionEntryId="a74c-549e-2201-4a1f" hidden="false" import="true">
+          <constraints>
+            <constraint id="e2bb-6632-12a4-6ba8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+            <constraint id="da10-c11c-288c-0f81" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Chimera APC" id="e0ae-1ce2-3be7-f878" collective="false" hidden="false" import="true" targetId="4658-d952-cddf-b78a" type="selectionEntry"/>
+            <entryLink name="Chimera IFV" id="0527-c3fe-86d6-27d8" collective="false" hidden="false" import="true" targetId="aa5e-d476-c0e1-e5e5" type="selectionEntry"/>
+            <entryLink name="Centauro APC Command Variant" id="03ce-c624-8b02-da13" hidden="false" import="true" targetId="6dbe-eb41-953a-e721" type="selectionEntry"/>
+            <entryLink name="Taurox AC" id="7e4a-3929-cc88-6fcd" collective="false" hidden="false" import="true" targetId="322d-555b-8a2d-a627" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="Character" id="41da-6f0b-df14-153f" hidden="false" primary="false" targetId="ef18-746a-369f-43a4"/>
+                <categoryLink name="Officer" id="9d43-eb45-e0cb-bb28" hidden="false" primary="false" targetId="6f24-1326-b08a-81bc"/>
+                <categoryLink name="Tank Commander" id="613e-13bc-d060-a0bd" hidden="false" primary="false" targetId="9946-33a8-b502-a531"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink name=" Character Definition" id="b89d-9336-351a-5ed2" collective="false" hidden="false" import="true" targetId="b8e4-216c-16cc-4263" type="selectionEntryGroup"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink name="Taurox APC" id="acc8-1377-238e-db2d" collective="false" hidden="false" import="true" targetId="fb2a-9e7b-3cd5-9eca" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="Character" id="ac5a-3de4-6826-936d" hidden="false" primary="false" targetId="ef18-746a-369f-43a4"/>
+                <categoryLink name="Officer" id="6a84-b5d8-ac17-3877" hidden="false" primary="false" targetId="6f24-1326-b08a-81bc"/>
+                <categoryLink name="Tank Commander" id="1d88-7377-af6e-cf07" hidden="false" primary="false" targetId="9946-33a8-b502-a531"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink name=" Character Definition" id="ecad-b7df-f04b-5ca5" collective="false" hidden="false" import="true" targetId="b8e4-216c-16cc-4263" type="selectionEntryGroup"/>
+              </entryLinks>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry name="Mechanised Regimental Command" id="02c4-f744-1776-630d" collective="false" hidden="true" import="true" type="upgrade">
+      <comment>BCKPUP</comment>
+      <categoryLinks>
+        <categoryLink name="HQ" id="eab7-39d6-3fa7-c386" hidden="false" primary="true" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7"/>
+      </categoryLinks>
+      <costs>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="Pts" typeId="points" value="0"/>
+        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink name="Regimental Command Squad" id="3cba-450d-fa0a-2801" collective="false" hidden="false" import="true" targetId="79ef-9ce7-86c5-231c" type="selectionEntry">
+          <constraints>
+            <constraint id="00e8-fc15-a797-11b7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+            <constraint id="6391-c309-2be0-4c58" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier field="hidden" type="set" value="true">
+          <comment>Set to false to enable</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition childId="7795-e688-5cdf-5aac" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                <condition childId="5785-1869-d25b-dd4b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                <condition childId="b3fc-2bcc-a8ab-78e6" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                <condition childId="4b79-6320-95a3-63e1" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                <condition childId="4b65-65ca-65a8-938c" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Command Vehicle" id="7611-93d3-ade1-25ae" collective="false" defaultSelectionEntryId="48a5-4ae3-9377-5de1" hidden="false" import="true">
+          <constraints>
+            <constraint id="b22e-723b-dc01-fd52" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+            <constraint id="e7cb-5432-a2da-4080" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Centauro APC Command Variant" id="3232-2e67-6c26-a835" collective="false" hidden="false" targetId="6dbe-eb41-953a-e721" type="selectionEntry"/>
+            <entryLink name="Chimera APC" id="8694-2728-5166-30a3" collective="false" hidden="false" import="true" targetId="4658-d952-cddf-b78a" type="selectionEntry"/>
+            <entryLink name="Chimera IFV" id="ba38-8cb9-cb01-42ef" collective="false" hidden="false" import="true" targetId="aa5e-d476-c0e1-e5e5" type="selectionEntry"/>
+            <entryLink name="Taurox AC" id="da75-2cf1-9e5e-5100" collective="false" hidden="false" import="true" targetId="322d-555b-8a2d-a627" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="Character" id="8821-9f5c-0d3d-8f8c" hidden="false" primary="false" targetId="ef18-746a-369f-43a4"/>
+                <categoryLink name="Officer" id="c197-4a8e-2b1f-2f4a" hidden="false" primary="false" targetId="6f24-1326-b08a-81bc"/>
+                <categoryLink name="Tank Commander" id="acb6-ed26-d3f1-da2b" hidden="false" primary="false" targetId="9946-33a8-b502-a531"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink name=" Character Definition" id="4a40-72a4-2f69-0ed8" collective="false" hidden="false" import="true" targetId="b8e4-216c-16cc-4263" type="selectionEntryGroup"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink name="Taurox APC" id="d689-136a-75be-9297" collective="false" hidden="false" import="true" targetId="fb2a-9e7b-3cd5-9eca" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="Character" id="0f2c-82d8-ded7-5f0c" hidden="false" primary="false" targetId="ef18-746a-369f-43a4"/>
+                <categoryLink name="Officer" id="a5ac-fedf-fff4-5d73" hidden="false" primary="false" targetId="6f24-1326-b08a-81bc"/>
+                <categoryLink name="Tank Commander" id="776c-f2fc-b794-76a5" hidden="false" primary="false" targetId="9946-33a8-b502-a531"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink name=" Character Definition" id="661f-d10b-d404-c503" collective="false" hidden="false" import="true" targetId="b8e4-216c-16cc-4263" type="selectionEntryGroup"/>
+              </entryLinks>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -21179,6 +21057,242 @@ This TRANSPORT cannot embark DEATHSTRIKE or TITANIC models.</characteristic>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
+        <selectionEntry name="Centauro APC Command Variant" id="6dbe-eb41-953a-e721" collective="false" hidden="false" import="true" type="model">
+          <categoryLinks>
+            <categoryLink name="Vehicle" id="213f-2496-9d6b-9f84" hidden="false" primary="false" targetId="c8fd-783f-3230-493e"/>
+            <categoryLink name="Wrecked" id="459e-d3b0-9460-7be6" hidden="false" primary="false" targetId="972c-53fd-93b7-624b"/>
+            <categoryLink name="Regiment" id="9115-3aac-2e14-9c6e" hidden="false" primary="false" targetId="3aa8-21df-b483-57dd"/>
+            <categoryLink name="Tracked" id="a70e-5005-153f-a0d0" hidden="false" primary="false" targetId="7402-3477-84a2-08f8"/>
+            <categoryLink name="Transport" id="41da-e34f-84d3-2f93" hidden="false" primary="false" targetId="6cc4-1b62-8e8a-05cd"/>
+            <categoryLink name="Open-topped" id="6605-8401-01f2-2235" hidden="false" primary="false" targetId="cdc5-4a32-031d-f86e"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="points" value="40"/>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink name="Crushing bulk" id="ea72-80a4-8855-aa55" collective="false" hidden="false" import="true" targetId="502f-45c2-6fd1-443b" type="selectionEntry"/>
+            <entryLink name="Smokescreen Launcher" id="14c6-d6fa-6e22-4207" collective="false" hidden="false" import="true" targetId="bded-2b06-5ea3-d7d5" type="selectionEntry">
+              <constraints>
+                <constraint id="e058-de90-f11c-d827" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Assault cannon" id="e3e7-a5d8-57e9-be35" hidden="false" import="true" targetId="987b-2dc9-8ab5-af1d" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="{F} Front facing" id="ce3b-8906-f08d-9046" hidden="false" primary="false" targetId="6018-2ce0-fcc7-6ed7"/>
+              </categoryLinks>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Outflank" id="3262-f7cf-02b8-8a23" hidden="false" targetId="1940-602f-f125-e350" type="profile"/>
+            <infoLink name="Additional armour plating" id="0d50-7e4c-e4b0-1347" hidden="false" targetId="5b3f-8e7c-f7ae-0f7c" type="profile"/>
+            <infoLink name="Explodes 6+ (6&quot;)" id="5fa5-2c09-95e1-828f" hidden="false" targetId="3541-94a7-a138-358b" type="rule"/>
+          </infoLinks>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>IMPERIUM KEYWORDS</comment>
+              <modifiers>
+                <modifier field="category" type="add" value="cee0-4459-2f94-b827">
+                  <conditions>
+                    <condition childId="a5b4-4342-3a16-8270" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="category" type="add" value="3c6d-c9b3-cd33-e5e5">
+                  <conditions>
+                    <condition childId="1b06-f117-011f-860e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="category" type="add" value="ca27-5069-1c2c-a28b">
+                  <conditions>
+                    <condition childId="1115-ef9e-fc44-757e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="category" type="add" value="2981-f499-19fc-bc80">
+                  <conditions>
+                    <condition childId="75e3-1aca-fccc-4aa1" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="category" type="add" value="0eb0-346d-12e6-5924">
+                  <conditions>
+                    <condition childId="f9bb-f784-dc6d-d6dd" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="category" type="add" value="1481-ffc3-f85a-eb36">
+                  <conditions>
+                    <condition childId="2315-9e36-478d-6576" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup type="and">
+              <comment>FACTION KEYWORDS</comment>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition childId="06c4-f6da-bb1b-3cbd" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="0"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier field="category" type="add" value="3263-4233-4344-6228"/>
+                    <modifier field="category" type="add" value="84e2-9fa9-ebe6-1d18"/>
+                  </modifiers>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition childId="bc41-7bc9-1b3c-e921" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                        <condition childId="1efa-fe82-d536-5d34" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                        <condition childId="234b-40a5-35e4-ab8d" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                        <condition childId="f2f6-7cc9-43ee-f889" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                        <condition childId="c66e-d1d6-52ac-1640" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <modifiers>
+                    <modifier field="category" type="add" value="39bd-1989-42e4-056c"/>
+                    <modifier field="category" type="add" value="5cf1-acf2-ca3b-c2e5"/>
+                  </modifiers>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition childId="7003-c834-e3b5-36ef" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier field="category" type="add" value="f1f2-1cf5-3d5c-e63d"/>
+                    <modifier field="category" type="add" value="a9de-36e3-d3ac-6337"/>
+                  </modifiers>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier field="category" type="add" value="4097-5f68-1097-1f16">
+                      <conditions>
+                        <condition childId="234b-40a5-35e4-ab8d" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="category" type="add" value="5b82-0ba7-db61-82db">
+                      <conditions>
+                        <condition childId="f2f6-7cc9-43ee-f889" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="category" type="add" value="2226-f82a-fe58-178d">
+                      <conditions>
+                        <condition childId="bc41-7bc9-1b3c-e921" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="category" type="add" value="11a0-1562-512f-d63b">
+                      <conditions>
+                        <condition childId="c66e-d1d6-52ac-1640" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="category" type="add" value="51da-3457-1b10-cb14">
+                      <conditions>
+                        <condition childId="1efa-fe82-d536-5d34" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </modifierGroup>
+          </modifierGroups>
+          <modifiers>
+            <modifier field="category" type="add" value="3c95-4bac-d4d4-d0b2">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition childId="7795-e688-5cdf-5aac" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                    <condition childId="4b65-65ca-65a8-938c" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                    <condition childId="831a-e995-faf1-39db" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Centauro APC CV" id="dd03-6856-fdf2-20dd" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">14</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">6</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">8</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition childId="4399-7ac5-26a8-3c81" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier field="381b-eb28-74c3-df5f" type="set" value="3"/>
+                    <modifier field="00ca-f8b8-876d-b705" type="set" value="8"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <modifiers>
+                <modifier field="0bdf-a96e-9e38-7779" type="set" value="16">
+                  <conditions>
+                    <condition childId="8b57-b312-e2e6-ffc6" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Centauro Command Variant" id="d605-273a-d74a-a90f" hidden="false" typeId="b3a8-0452-7436-44d1" typeName="Transport">
+              <characteristics>
+                <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 12 INFANTRY models. 
+Each HEAVY WEAPONS TEAM takes up the space of 2 models. Each OGRYNS model takes up the space of 3 models.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Hatch Weapon selection" id="d3bf-8b7b-3b62-18d4" collective="false" hidden="false" import="true">
+              <entryLinks>
+                <entryLink name="Heavy stubber" id="c322-c56c-550b-e6ce" collective="false" hidden="false" import="true" targetId="cfa3-5fcd-af10-5520" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{L} Limited angle Side facing" id="cfb2-b829-c376-82ba" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint id="4207-736f-13e6-0b9a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+                    <constraint id="95cd-7ced-b6d4-6b03" field="selections" includeChildSelections="false" scope="parent" shared="false" type="min" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true">
+                      <conditions>
+                        <condition childId="4399-7ac5-26a8-3c81" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink name="Heavy stubber" id="116a-81e2-3f6c-a67a" collective="false" hidden="false" import="true" targetId="cfa3-5fcd-af10-5520" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="{L} Limited angle Side facing" id="c675-4381-6a0d-bdd5" hidden="false" primary="false" targetId="ceeb-83af-6f77-8baa"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint id="aa3d-2459-ea87-47e4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+                    <constraint id="103b-f373-260c-3459" field="selections" includeChildSelections="false" scope="parent" shared="false" type="min" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true">
+                      <conditions>
+                        <condition childId="4399-7ac5-26a8-3c81" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry name=" Equipment" id="cae5-d347-9e24-3317" collective="false" hidden="false" import="true" type="upgrade">
@@ -31940,6 +32054,52 @@ Until the PRIEST inspires another unit with this prayer, each time a ranged atta
               </characteristics>
             </profile>
           </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Compound units" id="f066-39ac-4d99-920d" hidden="false">
+      <selectionEntries>
+        <selectionEntry name="Mechanised Command Vehicle" id="b498-a079-23ba-8e19" hidden="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier field="category" type="add" value="cee0-4459-2f94-b827">
+              <conditions>
+                <condition childId="a5b4-4342-3a16-8270" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Command Vehicle" id="cd8d-fcfb-9da5-51de" collective="false" defaultSelectionEntryId="a74c-549e-2201-4a1f" hidden="false" import="true">
+              <constraints>
+                <constraint id="4b33-a28b-0aa9-bf68" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                <constraint id="6b1d-e134-af76-9825" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+              </constraints>
+              <entryLinks>
+                <entryLink name="Chimera APC" id="f72f-c295-84d5-88be" collective="false" hidden="false" import="true" targetId="4658-d952-cddf-b78a" type="selectionEntry"/>
+                <entryLink name="Chimera IFV" id="29d6-a260-805c-946f" collective="false" hidden="false" import="true" targetId="aa5e-d476-c0e1-e5e5" type="selectionEntry"/>
+                <entryLink name="Centauro APC Command Variant" id="de4e-cec6-942a-7c81" hidden="false" import="true" targetId="6dbe-eb41-953a-e721" type="selectionEntry"/>
+                <entryLink name="Taurox AC" id="43bd-4112-89c9-fb92" collective="false" hidden="false" import="true" targetId="322d-555b-8a2d-a627" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="Character" id="51f3-3d1b-d5ef-644d" hidden="false" primary="false" targetId="ef18-746a-369f-43a4"/>
+                    <categoryLink name="Officer" id="5198-6858-1d29-8d16" hidden="false" primary="false" targetId="6f24-1326-b08a-81bc"/>
+                    <categoryLink name="Tank Commander" id="2983-32e8-ec26-108e" hidden="false" primary="false" targetId="9946-33a8-b502-a531"/>
+                  </categoryLinks>
+                  <entryLinks>
+                    <entryLink name=" Character Definition" id="95af-190e-e075-cae6" collective="false" hidden="false" import="true" targetId="b8e4-216c-16cc-4263" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink name="Taurox APC" id="68c2-b3c6-4807-b1a4" collective="false" hidden="false" import="true" targetId="fb2a-9e7b-3cd5-9eca" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink name="Character" id="fe5e-681c-99e3-472a" hidden="false" primary="false" targetId="ef18-746a-369f-43a4"/>
+                    <categoryLink name="Officer" id="515a-86ef-db1b-57e2" hidden="false" primary="false" targetId="6f24-1326-b08a-81bc"/>
+                    <categoryLink name="Tank Commander" id="a1a3-dcb7-de6a-13f5" hidden="false" primary="false" targetId="9946-33a8-b502-a531"/>
+                  </categoryLinks>
+                  <entryLinks>
+                    <entryLink name=" Character Definition" id="d5a0-2772-f97b-b01a" collective="false" hidden="false" import="true" targetId="b8e4-216c-16cc-4263" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
