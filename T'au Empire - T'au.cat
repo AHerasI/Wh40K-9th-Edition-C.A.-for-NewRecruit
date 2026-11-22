@@ -1532,6 +1532,11 @@ If the unit has the INFANTRY Keyword and is in a terrain with the DEFENSIBLE tra
         <categoryLink name="Compound units" id="cbae-8b44-6896-a902" hidden="false" primary="true" targetId="21f9-f3cf-3e48-8b3c"/>
       </categoryLinks>
     </entryLink>
+    <entryLink name="Drone support - O&apos;Shovah" id="69ff-f117-3557-dbbc" hidden="false" import="true" targetId="bfa1-0b98-a888-4ab5" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Compound units" id="3695-7bcf-91f2-ebab" hidden="false" primary="true" targetId="21f9-f3cf-3e48-8b3c"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <profileTypes>
     <profileType name="Invocations" id="0c29-9351-f423-99b3">
@@ -30403,8 +30408,8 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
             <categoryLink name="Faction: T&apos;au Empire" id="eb65-edb0-f8d8-09ad" hidden="false" primary="false" targetId="77ee-b03b-d244-d535"/>
           </categoryLinks>
           <constraints>
-            <constraint id="0209-2986-3744-b9b1" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="min" value="0"/>
-            <constraint id="fcbd-af9c-edd2-d038" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="0"/>
+            <constraint id="0209-2986-3744-b9b1" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="min" value="0"/>
+            <constraint id="fcbd-af9c-edd2-d038" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="max" value="0"/>
           </constraints>
           <costs>
             <cost name="Pts" typeId="points" value="0"/>
@@ -30422,7 +30427,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
                 <modifier field="fcbd-af9c-edd2-d038" type="increment" value="1"/>
               </modifiers>
               <repeats>
-                <repeat childId="ba02-1d94-0302-aa4d" childName="Breacher Team" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+                <repeat childId="ba02-1d94-0302-aa4d" childName="Breacher Team" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
               </repeats>
             </modifierGroup>
             <modifierGroup type="and">
@@ -30478,7 +30483,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
           <modifiers>
             <modifier field="hidden" type="set" value="false">
               <conditions>
-                <condition childId="ba02-1d94-0302-aa4d" childName="Breacher Team" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+                <condition childId="ba02-1d94-0302-aa4d" childName="Breacher Team" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="1"/>
               </conditions>
             </modifier>
             <modifier field="category" type="add" value="f55d-9d66-abc1-f34f">
@@ -30507,8 +30512,8 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
             <categoryLink name="Faction: T&apos;au Empire" id="86cb-38f8-c5c2-8660" hidden="false" primary="false" targetId="77ee-b03b-d244-d535"/>
           </categoryLinks>
           <constraints>
-            <constraint id="efb0-5a9b-efa6-ec38" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="min" value="0"/>
-            <constraint id="23d0-a0fa-cfb2-a412" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="0"/>
+            <constraint id="efb0-5a9b-efa6-ec38" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="min" value="0"/>
+            <constraint id="23d0-a0fa-cfb2-a412" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="max" value="0"/>
           </constraints>
           <costs>
             <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -30614,8 +30619,8 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
             <categoryLink name="Faction: T&apos;au Empire" id="e6bd-afbd-57f3-5c85" hidden="false" primary="false" targetId="77ee-b03b-d244-d535"/>
           </categoryLinks>
           <constraints>
-            <constraint id="9fbf-4e10-1322-44cb" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="min" value="0"/>
-            <constraint id="8403-a4f0-45a3-cc30" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="0"/>
+            <constraint id="9fbf-4e10-1322-44cb" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="min" value="0"/>
+            <constraint id="8403-a4f0-45a3-cc30" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="max" value="0"/>
           </constraints>
           <costs>
             <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -30629,11 +30634,11 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
                 <modifier field="8403-a4f0-45a3-cc30" type="increment" value="1"/>
               </modifiers>
               <repeats>
-                <repeat childId="7b3a-e470-95ee-d572" childName="XV109 Y&apos;vahra Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
-                <repeat childId="38e6-fae6-695d-0a03" childName="XV107 R&apos;varna Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
-                <repeat childId="8bca-23eb-f63a-1fb1" childName="XV104 Riptide Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
-                <repeat childId="f0b7-ee74-02db-15a8" childName="KX139 Ta&apos;unar Supremacy Armour" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
-                <repeat childId="0d45-4a64-b300-dd7d" childName="KV128 Stormsurge" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+                <repeat childId="7b3a-e470-95ee-d572" childName="XV109 Y&apos;vahra Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
+                <repeat childId="38e6-fae6-695d-0a03" childName="XV107 R&apos;varna Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
+                <repeat childId="8bca-23eb-f63a-1fb1" childName="XV104 Riptide Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
+                <repeat childId="f0b7-ee74-02db-15a8" childName="KX139 Ta&apos;unar Supremacy Armour" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
+                <repeat childId="0d45-4a64-b300-dd7d" childName="KV128 Stormsurge" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
               </repeats>
             </modifierGroup>
             <modifierGroup type="and">
@@ -30691,11 +30696,11 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition childId="7b3a-e470-95ee-d572" childName="XV109 Y&apos;vahra Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
-                    <condition childId="38e6-fae6-695d-0a03" childName="XV107 R&apos;varna Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
-                    <condition childId="8bca-23eb-f63a-1fb1" childName="XV104 Riptide Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
-                    <condition childId="f0b7-ee74-02db-15a8" childName="KX139 Ta&apos;unar Supremacy Armour" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
-                    <condition childId="0d45-4a64-b300-dd7d" childName="KV128 Stormsurge" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+                    <condition childId="7b3a-e470-95ee-d572" childName="XV109 Y&apos;vahra Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="1"/>
+                    <condition childId="38e6-fae6-695d-0a03" childName="XV107 R&apos;varna Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="1"/>
+                    <condition childId="8bca-23eb-f63a-1fb1" childName="XV104 Riptide Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="1"/>
+                    <condition childId="f0b7-ee74-02db-15a8" childName="KX139 Ta&apos;unar Supremacy Armour" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="1"/>
+                    <condition childId="0d45-4a64-b300-dd7d" childName="KV128 Stormsurge" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="1"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -30740,8 +30745,8 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
             <categoryLink name="Faction: T&apos;au Empire" id="dfd2-ec91-ac69-e8de" hidden="false" primary="false" targetId="77ee-b03b-d244-d535"/>
           </categoryLinks>
           <constraints>
-            <constraint id="d3ec-e501-d404-234e" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="min" value="0"/>
-            <constraint id="de31-16fb-cf68-ab14" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="0"/>
+            <constraint id="d3ec-e501-d404-234e" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="min" value="0"/>
+            <constraint id="de31-16fb-cf68-ab14" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="max" value="0"/>
           </constraints>
           <costs>
             <cost name="Pts" typeId="points" value="0"/>
@@ -30756,7 +30761,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
                 <modifier field="de31-16fb-cf68-ab14" type="increment" value="1"/>
               </modifiers>
               <repeats>
-                <repeat childId="eac2-5dfa-d139-903b" childName="XV88 Broadside Battlesuit Team" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+                <repeat childId="eac2-5dfa-d139-903b" childName="XV88 Broadside Battlesuit Team" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
               </repeats>
             </modifierGroup>
             <modifierGroup type="and">
@@ -30812,7 +30817,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
           <modifiers>
             <modifier field="hidden" type="set" value="false">
               <conditions>
-                <condition childId="eac2-5dfa-d139-903b" childName="XV88 Broadside Battlesuit Team" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+                <condition childId="eac2-5dfa-d139-903b" childName="XV88 Broadside Battlesuit Team" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="1"/>
               </conditions>
             </modifier>
             <modifier field="e356-c769-5920-6e14" type="increment" value="1">
@@ -30851,8 +30856,8 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
             <categoryLink name="Faction: T&apos;au Empire" id="2dd7-c17a-7106-fb9d" hidden="false" primary="false" targetId="77ee-b03b-d244-d535"/>
           </categoryLinks>
           <constraints>
-            <constraint id="6e6e-2f04-0b9c-841d" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="min" value="0"/>
-            <constraint id="2f67-c83e-a7bd-915f" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="0"/>
+            <constraint id="6e6e-2f04-0b9c-841d" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="min" value="0"/>
+            <constraint id="2f67-c83e-a7bd-915f" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="max" value="0"/>
           </constraints>
           <modifierGroups>
             <modifierGroup type="and">
@@ -30861,7 +30866,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
                 <modifier field="2f67-c83e-a7bd-915f" type="increment" value="1"/>
               </modifiers>
               <repeats>
-                <repeat childId="9cb0-5796-b674-39af" childName="2x Gun Drone" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+                <repeat childId="9cb0-5796-b674-39af" childName="2x Gun Drone" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
               </repeats>
             </modifierGroup>
             <modifierGroup type="and">
@@ -30917,7 +30922,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
           <modifiers>
             <modifier field="hidden" type="set" value="false">
               <conditions>
-                <condition childId="9cb0-5796-b674-39af" childName="2x Gun Drone" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+                <condition childId="9cb0-5796-b674-39af" childName="2x Gun Drone" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="1"/>
               </conditions>
             </modifier>
             <modifier field="category" type="add" value="f55d-9d66-abc1-f34f">
@@ -30947,8 +30952,8 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
             <categoryLink name="Faction: T&apos;au Empire" id="adc8-f85e-57a1-976b" hidden="false" primary="false" targetId="77ee-b03b-d244-d535"/>
           </categoryLinks>
           <constraints>
-            <constraint id="96ac-01ec-11d1-70b6" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="min" value="0"/>
-            <constraint id="780a-4f1b-19fd-8937" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="0"/>
+            <constraint id="96ac-01ec-11d1-70b6" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="min" value="0"/>
+            <constraint id="780a-4f1b-19fd-8937" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="max" value="0"/>
           </constraints>
           <costs>
             <cost name="Pts" typeId="points" value="0"/>
@@ -30963,7 +30968,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
                 <modifier field="780a-4f1b-19fd-8937" type="increment" value="1"/>
               </modifiers>
               <repeats>
-                <repeat childId="b5d3-a40a-817a-faa5" childName="Tidewall Droneport" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+                <repeat childId="b5d3-a40a-817a-faa5" childName="Tidewall Droneport" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
               </repeats>
             </modifierGroup>
             <modifierGroup type="and">
@@ -31019,7 +31024,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
           <modifiers>
             <modifier field="hidden" type="set" value="false">
               <conditions>
-                <condition childId="b5d3-a40a-817a-faa5" childName="Tidewall Droneport" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+                <condition childId="b5d3-a40a-817a-faa5" childName="Tidewall Droneport" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="1"/>
               </conditions>
             </modifier>
             <modifier field="category" type="add" value="f55d-9d66-abc1-f34f">
@@ -31047,8 +31052,8 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
             <categoryLink name="Faction: T&apos;au Empire" id="cb98-ddab-039d-b976" hidden="false" primary="false" targetId="77ee-b03b-d244-d535"/>
           </categoryLinks>
           <constraints>
-            <constraint id="89f6-0bde-561e-2645" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="min" value="0"/>
-            <constraint id="66ed-0893-69ac-057b" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="0"/>
+            <constraint id="89f6-0bde-561e-2645" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="min" value="0"/>
+            <constraint id="66ed-0893-69ac-057b" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="max" value="0"/>
           </constraints>
           <costs>
             <cost name="Pts" typeId="points" value="0"/>
@@ -31066,7 +31071,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
                 <modifier field="66ed-0893-69ac-057b" type="increment" value="1"/>
               </modifiers>
               <repeats>
-                <repeat childId="a354-0bcb-66fb-51f3" childName="XV8 Crisis Battlesuit Team" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+                <repeat childId="a354-0bcb-66fb-51f3" childName="XV8 Crisis Battlesuit Team" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
               </repeats>
             </modifierGroup>
             <modifierGroup type="and">
@@ -31142,7 +31147,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
           <modifiers>
             <modifier field="hidden" type="set" value="false">
               <conditions>
-                <condition childId="a354-0bcb-66fb-51f3" childName="XV8 Crisis Battlesuit Team" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+                <condition childId="a354-0bcb-66fb-51f3" childName="XV8 Crisis Battlesuit Team" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="1"/>
               </conditions>
             </modifier>
             <modifier field="category" type="add" value="f55d-9d66-abc1-f34f">
@@ -31170,8 +31175,8 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
             <categoryLink name="Faction: T&apos;au Empire" id="2ceb-de66-e9fa-fa90" hidden="false" primary="false" targetId="77ee-b03b-d244-d535"/>
           </categoryLinks>
           <constraints>
-            <constraint id="00b2-09d8-0033-ac42" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="min" value="0"/>
-            <constraint id="79e9-a21b-dda8-4d10" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="0"/>
+            <constraint id="00b2-09d8-0033-ac42" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="min" value="0"/>
+            <constraint id="79e9-a21b-dda8-4d10" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="max" value="0"/>
           </constraints>
           <costs>
             <cost name="Pts" typeId="points" value="0"/>
@@ -31189,7 +31194,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
                 <modifier field="79e9-a21b-dda8-4d10" type="increment" value="1"/>
               </modifiers>
               <repeats>
-                <repeat childId="bc15-1ae1-591e-2565" childName="XV8 Crisis Bodyguard Team" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+                <repeat childId="bc15-1ae1-591e-2565" childName="XV8 Crisis Bodyguard Team" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
               </repeats>
             </modifierGroup>
             <modifierGroup type="and">
@@ -31245,7 +31250,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
           <modifiers>
             <modifier field="hidden" type="set" value="false">
               <conditions>
-                <condition childId="bc15-1ae1-591e-2565" childName="XV8 Crisis Bodyguard Team" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+                <condition childId="bc15-1ae1-591e-2565" childName="XV8 Crisis Bodyguard Team" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="1"/>
               </conditions>
             </modifier>
             <modifier field="e356-c769-5920-6e14" type="increment" value="1">
@@ -31278,8 +31283,8 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
             <categoryLink name="Faction: T&apos;au Empire" id="3bf7-26cd-05c8-71dc" hidden="false" primary="false" targetId="77ee-b03b-d244-d535"/>
           </categoryLinks>
           <constraints>
-            <constraint id="4f51-4705-09ca-15a3" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="min" value="0"/>
-            <constraint id="7cff-134a-34d9-ad30" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="0"/>
+            <constraint id="4f51-4705-09ca-15a3" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="min" value="0"/>
+            <constraint id="7cff-134a-34d9-ad30" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="max" value="0"/>
           </constraints>
           <costs>
             <cost name="Pts" typeId="points" value="0"/>
@@ -31297,7 +31302,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
                 <modifier field="7cff-134a-34d9-ad30" type="increment" value="1"/>
               </modifiers>
               <repeats>
-                <repeat childId="6960-3f01-2a36-f3cc" childName="XV9 Hazard Battlesuit Team" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+                <repeat childId="6960-3f01-2a36-f3cc" childName="XV9 Hazard Battlesuit Team" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
               </repeats>
             </modifierGroup>
             <modifierGroup type="and">
@@ -31353,7 +31358,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
           <modifiers>
             <modifier field="hidden" type="set" value="false">
               <conditions>
-                <condition childId="6960-3f01-2a36-f3cc" childName="XV9 Hazard Battlesuit Team" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+                <condition childId="6960-3f01-2a36-f3cc" childName="XV9 Hazard Battlesuit Team" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="1"/>
               </conditions>
             </modifier>
             <modifier field="e356-c769-5920-6e14" type="increment" value="1">
@@ -31386,8 +31391,8 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
             <categoryLink name="Faction: T&apos;au Empire" id="c538-c4cf-37f9-1e5d" hidden="false" primary="false" targetId="77ee-b03b-d244-d535"/>
           </categoryLinks>
           <constraints>
-            <constraint id="f545-4898-d628-e6a8" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="min" value="0"/>
-            <constraint id="e3ae-db7e-ac44-9f82" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="0"/>
+            <constraint id="f545-4898-d628-e6a8" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="min" value="0"/>
+            <constraint id="e3ae-db7e-ac44-9f82" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="max" value="0"/>
           </constraints>
           <costs>
             <cost name="Pts" typeId="points" value="0"/>
@@ -31407,7 +31412,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
                 <modifier field="e3ae-db7e-ac44-9f82" type="increment" value="1"/>
               </modifiers>
               <repeats>
-                <repeat childId="adca-d911-fde7-5b57" childName="XV15 Stealth Battlesuit Team" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+                <repeat childId="adca-d911-fde7-5b57" childName="XV15 Stealth Battlesuit Team" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
               </repeats>
             </modifierGroup>
             <modifierGroup type="and">
@@ -31483,7 +31488,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
           <modifiers>
             <modifier field="hidden" type="set" value="false">
               <conditions>
-                <condition childId="adca-d911-fde7-5b57" childName="XV15 Stealth Battlesuit Team" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+                <condition childId="adca-d911-fde7-5b57" childName="XV15 Stealth Battlesuit Team" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="1"/>
               </conditions>
             </modifier>
             <modifier field="category" type="add" value="f55d-9d66-abc1-f34f">
@@ -31511,8 +31516,8 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
             <categoryLink name="Faction: T&apos;au Empire" id="162b-ebf1-da9b-e1de" hidden="false" primary="false" targetId="77ee-b03b-d244-d535"/>
           </categoryLinks>
           <constraints>
-            <constraint id="ff97-4176-3f35-bfa0" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="min" value="0"/>
-            <constraint id="f684-362b-bd25-a216" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="0"/>
+            <constraint id="ff97-4176-3f35-bfa0" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="min" value="0"/>
+            <constraint id="f684-362b-bd25-a216" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="max" value="0"/>
           </constraints>
           <costs>
             <cost name="Pts" typeId="points" value="0"/>
@@ -31532,7 +31537,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
                 <modifier field="f684-362b-bd25-a216" type="increment" value="1"/>
               </modifiers>
               <repeats>
-                <repeat childId="d99f-cadf-14c3-6475" childName="XV25 Stealth Battlesuit Team" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+                <repeat childId="d99f-cadf-14c3-6475" childName="XV25 Stealth Battlesuit Team" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
               </repeats>
             </modifierGroup>
             <modifierGroup type="and">
@@ -31608,7 +31613,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
           <modifiers>
             <modifier field="hidden" type="set" value="false">
               <conditions>
-                <condition childId="d99f-cadf-14c3-6475" childName="XV25 Stealth Battlesuit Team" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+                <condition childId="d99f-cadf-14c3-6475" childName="XV25 Stealth Battlesuit Team" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="1"/>
               </conditions>
             </modifier>
             <modifier field="category" type="add" value="f55d-9d66-abc1-f34f">
@@ -31636,8 +31641,8 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
             <categoryLink name="Faction: T&apos;au Empire" id="155c-4591-d276-c331" hidden="false" primary="false" targetId="77ee-b03b-d244-d535"/>
           </categoryLinks>
           <constraints>
-            <constraint id="566e-995a-ed3d-931e" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="min" value="0"/>
-            <constraint id="8427-256e-1b54-e32f" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="0"/>
+            <constraint id="566e-995a-ed3d-931e" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="min" value="0"/>
+            <constraint id="8427-256e-1b54-e32f" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="max" value="0"/>
           </constraints>
           <entryLinks>
             <entryLink name="MV5 Stealth Drone" id="2bd5-3e32-b3dd-b855" collective="false" hidden="false" import="true" targetId="120f-5064-5aee-9eb8" type="selectionEntry">
@@ -31661,7 +31666,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
                 <modifier field="8427-256e-1b54-e32f" type="increment" value="1"/>
               </modifiers>
               <repeats>
-                <repeat childId="6962-febd-1667-45bd" childName="XV95 Ghostkeel Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+                <repeat childId="6962-febd-1667-45bd" childName="XV95 Ghostkeel Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
               </repeats>
             </modifierGroup>
             <modifierGroup type="and">
@@ -31717,7 +31722,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
           <modifiers>
             <modifier field="hidden" type="set" value="false">
               <conditions>
-                <condition childId="6962-febd-1667-45bd" childName="XV95 Ghostkeel Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+                <condition childId="6962-febd-1667-45bd" childName="XV95 Ghostkeel Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="1"/>
               </conditions>
             </modifier>
             <modifier field="category" type="add" value="f55d-9d66-abc1-f34f">
@@ -31727,9 +31732,10 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry name="Drone support - O&apos;saserra" id="06bb-6fee-462b-3d7b" hidden="true" import="true" type="unit">
+        <selectionEntry name="Drone support - O&apos;Saserra" id="06bb-6fee-462b-3d7b" hidden="true" import="true" type="unit">
           <categoryLinks>
             <categoryLink name="Faction: T&apos;au Empire" id="c0a2-09ee-251c-6762" hidden="false" primary="false" targetId="77ee-b03b-d244-d535"/>
+            <categoryLink name="T&apos;au Sept" id="0358-fc97-2b2b-8026" hidden="false" primary="false" targetId="4c0d-fd8d-e7c1-a2c1"/>
           </categoryLinks>
           <constraints>
             <constraint id="27d6-776c-4488-705c" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="min" value="0"/>
@@ -31765,70 +31771,14 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
                 <modifier field="04c4-d7d0-a734-f633" type="set" value="1"/>
               </modifiers>
             </modifierGroup>
-            <modifierGroup type="and">
-              <modifiers>
-                <modifier field="category" type="add" value="5a50-8ff7-fba5-2d6e">
-                  <conditions>
-                    <condition childId="1743-c8d8-9cd2-7d78" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                  </conditions>
-                </modifier>
-                <modifier field="category" type="add" value="002a-5118-fc4e-d860">
-                  <conditions>
-                    <condition childId="ee1c-bd4c-f3cd-7f91" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                  </conditions>
-                </modifier>
-                <modifier field="category" type="add" value="bf09-6007-1a8f-792b">
-                  <conditions>
-                    <condition childId="f4eb-68c4-6c1f-a9e1" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                  </conditions>
-                </modifier>
-                <modifier field="category" type="add" value="ed44-e564-e8a5-6891">
-                  <conditions>
-                    <condition childId="c8c6-1f8c-99b8-8758" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                  </conditions>
-                </modifier>
-                <modifier field="category" type="add" value="f0d8-bf79-46e3-d82e">
-                  <conditions>
-                    <condition childId="367b-e23e-9f04-4be6" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                  </conditions>
-                </modifier>
-                <modifier field="category" type="add" value="ab9b-29f0-6b31-b217">
-                  <conditions>
-                    <condition childId="70d7-6877-d9ab-20e1" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                  </conditions>
-                </modifier>
-                <modifier field="category" type="add" value="4c0d-fd8d-e7c1-a2c1">
-                  <conditions>
-                    <condition childId="cd11-3986-f127-1a5b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                  </conditions>
-                </modifier>
-                <modifier field="category" type="add" value="dd0e-b02b-ef35-1616">
-                  <conditions>
-                    <condition childId="ccde-9fff-e83a-c26b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                  </conditions>
-                </modifier>
-                <modifier field="category" type="add" value="fa10-5b69-9887-b4c1">
-                  <conditions>
-                    <condition childId="9e82-c782-b939-36b4" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </modifierGroup>
           </modifierGroups>
-          <modifiers>
-            <modifier field="category" type="add" value="f55d-9d66-abc1-f34f">
-              <conditions>
-                <condition childId="5ac3-b4a4-82cc-da42" childName="Play Their Part" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="1"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </selectionEntry>
         <selectionEntry name="Drone support - Strike team" id="3efc-3e4b-f600-26ba" hidden="true" import="true" type="unit">
           <categoryLinks>
             <categoryLink name="Faction: T&apos;au Empire" id="e492-0175-8d23-6500" hidden="false" primary="false" targetId="77ee-b03b-d244-d535"/>
           </categoryLinks>
           <constraints>
-            <constraint id="40d2-94b7-951a-a0c9" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="min" value="0"/>
+            <constraint id="40d2-94b7-951a-a0c9" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="min" value="0"/>
             <constraint id="8787-9b6e-7c06-de7f" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="0"/>
           </constraints>
           <costs>
@@ -31847,7 +31797,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
                 <modifier field="8787-9b6e-7c06-de7f" type="increment" value="1"/>
               </modifiers>
               <repeats>
-                <repeat childId="2065-1316-d0b9-982b" childName="Strike Team" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+                <repeat childId="2065-1316-d0b9-982b" childName="Strike Team" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
               </repeats>
             </modifierGroup>
             <modifierGroup type="and">
@@ -31903,7 +31853,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
           <modifiers>
             <modifier field="hidden" type="set" value="false">
               <conditions>
-                <condition childId="2065-1316-d0b9-982b" childName="Strike Team" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+                <condition childId="2065-1316-d0b9-982b" childName="Strike Team" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="1"/>
               </conditions>
             </modifier>
             <modifier field="category" type="add" value="f55d-9d66-abc1-f34f">
@@ -31932,8 +31882,8 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
             <categoryLink name="Faction: T&apos;au Empire" id="c114-f9ce-3b8e-34e4" hidden="false" primary="false" targetId="77ee-b03b-d244-d535"/>
           </categoryLinks>
           <constraints>
-            <constraint id="3afa-b004-60d6-771d" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="min" value="0"/>
-            <constraint id="24f4-2089-7d6b-0d66" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="0"/>
+            <constraint id="3afa-b004-60d6-771d" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="min" value="0"/>
+            <constraint id="24f4-2089-7d6b-0d66" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="max" value="0"/>
           </constraints>
           <costs>
             <cost name="Pts" typeId="points" value="0"/>
@@ -31948,7 +31898,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
                 <modifier field="24f4-2089-7d6b-0d66" type="increment" value="1"/>
               </modifiers>
               <repeats>
-                <repeat childId="da96-ab95-0420-eb3e" childName="Pathfinder Team" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+                <repeat childId="da96-ab95-0420-eb3e" childName="Pathfinder Team" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
               </repeats>
             </modifierGroup>
             <modifierGroup type="and">
@@ -32004,7 +31954,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
           <modifiers>
             <modifier field="hidden" type="set" value="false">
               <conditions>
-                <condition childId="da96-ab95-0420-eb3e" childName="Pathfinder Team" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+                <condition childId="da96-ab95-0420-eb3e" childName="Pathfinder Team" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="1"/>
               </conditions>
             </modifier>
             <modifier field="category" type="add" value="f55d-9d66-abc1-f34f">
@@ -32040,8 +31990,8 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
             <categoryLink name="Faction: T&apos;au Empire" id="8557-2e78-da99-df67" hidden="false" primary="false" targetId="77ee-b03b-d244-d535"/>
           </categoryLinks>
           <constraints>
-            <constraint id="2cd5-8f04-4a00-c53a" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="min" value="0"/>
-            <constraint id="f3b3-6cff-37a4-d9ab" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="0"/>
+            <constraint id="2cd5-8f04-4a00-c53a" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="min" value="0"/>
+            <constraint id="f3b3-6cff-37a4-d9ab" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="max" value="0"/>
           </constraints>
           <entryLinks>
             <entryLink name="MV17 Interceptor Drone" id="531c-ee37-115b-aff7" collective="false" hidden="false" import="true" targetId="34a6-4e69-d6f6-b62a" type="selectionEntry">
@@ -32061,7 +32011,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
                 <modifier field="f3b3-6cff-37a4-d9ab" type="increment" value="1"/>
               </modifiers>
               <repeats>
-                <repeat childId="b771-1145-a40d-44e8" childName="AX39 Sun Shark Bomber" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+                <repeat childId="b771-1145-a40d-44e8" childName="AX39 Sun Shark Bomber" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
               </repeats>
             </modifierGroup>
             <modifierGroup type="and">
@@ -32117,7 +32067,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
           <modifiers>
             <modifier field="hidden" type="set" value="false">
               <conditions>
-                <condition childId="b771-1145-a40d-44e8" childName="AX39 Sun Shark Bomber" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+                <condition childId="b771-1145-a40d-44e8" childName="AX39 Sun Shark Bomber" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="1"/>
               </conditions>
             </modifier>
             <modifier field="category" type="add" value="f55d-9d66-abc1-f34f">
@@ -32130,6 +32080,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
         <selectionEntry name="Drone support - O&apos;Kais" id="8b8e-f861-036d-fa07" hidden="true" import="true" type="unit">
           <categoryLinks>
             <categoryLink name="Faction: T&apos;au Empire" id="1ec8-bdc4-f9d6-5c25" hidden="false" primary="false" targetId="77ee-b03b-d244-d535"/>
+            <categoryLink name="T&apos;au Sept" id="0949-e1f4-3920-788c" hidden="false" primary="false" targetId="4c0d-fd8d-e7c1-a2c1"/>
           </categoryLinks>
           <constraints>
             <constraint id="013a-b2fd-ab31-63d9" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="min" value="0"/>
@@ -32160,55 +32111,6 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
                 <repeat childId="2ef8-ce7f-baae-4306" childName="Shas&apos;O Kais" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
               </repeats>
             </modifierGroup>
-            <modifierGroup type="and">
-              <modifiers>
-                <modifier field="category" type="add" value="5a50-8ff7-fba5-2d6e">
-                  <conditions>
-                    <condition childId="1743-c8d8-9cd2-7d78" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                  </conditions>
-                </modifier>
-                <modifier field="category" type="add" value="002a-5118-fc4e-d860">
-                  <conditions>
-                    <condition childId="ee1c-bd4c-f3cd-7f91" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                  </conditions>
-                </modifier>
-                <modifier field="category" type="add" value="bf09-6007-1a8f-792b">
-                  <conditions>
-                    <condition childId="f4eb-68c4-6c1f-a9e1" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                  </conditions>
-                </modifier>
-                <modifier field="category" type="add" value="ed44-e564-e8a5-6891">
-                  <conditions>
-                    <condition childId="c8c6-1f8c-99b8-8758" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                  </conditions>
-                </modifier>
-                <modifier field="category" type="add" value="f0d8-bf79-46e3-d82e">
-                  <conditions>
-                    <condition childId="367b-e23e-9f04-4be6" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                  </conditions>
-                </modifier>
-                <modifier field="category" type="add" value="ab9b-29f0-6b31-b217">
-                  <conditions>
-                    <condition childId="70d7-6877-d9ab-20e1" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                  </conditions>
-                </modifier>
-                <modifier field="category" type="add" value="4c0d-fd8d-e7c1-a2c1">
-                  <conditions>
-                    <condition childId="cd11-3986-f127-1a5b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                  </conditions>
-                </modifier>
-                <modifier field="category" type="add" value="dd0e-b02b-ef35-1616">
-                  <conditions>
-                    <condition childId="ccde-9fff-e83a-c26b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                  </conditions>
-                </modifier>
-                <modifier field="category" type="add" value="fa10-5b69-9887-b4c1">
-                  <conditions>
-                    <condition childId="9e82-c782-b939-36b4" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </modifierGroup>
           </modifierGroups>
           <modifiers>
             <modifier field="hidden" type="set" value="false">
@@ -32216,21 +32118,16 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
                 <condition childId="2ef8-ce7f-baae-4306" childName="Shas&apos;O Kais" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
               </conditions>
             </modifier>
-            <modifier field="category" type="add" value="f55d-9d66-abc1-f34f">
-              <conditions>
-                <condition childId="5ac3-b4a4-82cc-da42" childName="Play Their Part" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="1"/>
-              </conditions>
-            </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry name="Drone support - O&apos;vesu&apos;r" id="2f3d-8233-3d82-c456" hidden="true" import="true" type="unit">
+        <selectionEntry name="Drone support - O&apos;Vesu&apos;r" id="2f3d-8233-3d82-c456" hidden="true" import="true" type="unit">
           <categoryLinks>
             <categoryLink name="Faction: T&apos;au Empire" id="c7bc-0365-bba9-5a2d" hidden="false" primary="false" targetId="77ee-b03b-d244-d535"/>
             <categoryLink name="Ke&apos;lshan Sept" id="09aa-d941-db42-4d56" hidden="false" primary="false" targetId="5a50-8ff7-fba5-2d6e"/>
           </categoryLinks>
           <constraints>
-            <constraint id="ea29-c072-f0c1-353c" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="min" value="0"/>
-            <constraint id="bf94-2a03-012e-1f4d" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="0"/>
+            <constraint id="ea29-c072-f0c1-353c" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="min" value="0"/>
+            <constraint id="bf94-2a03-012e-1f4d" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="max" value="0"/>
           </constraints>
           <entryLinks>
             <entryLink name="MV7 Marker Drone" id="a995-1cf1-0eb8-fac4" hidden="false" import="true" targetId="e29a-716e-e430-5079" type="selectionEntry">
@@ -32249,7 +32146,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
           <modifierGroups>
             <modifierGroup type="and">
               <conditions>
-                <condition childId="bca9-3727-0767-e20d" childName="Shas&apos;O Vesu&apos;r Ra&apos;lai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="equalTo" value="1"/>
+                <condition childId="bca9-3727-0767-e20d" childName="Shas&apos;O Vesu&apos;r Ra&apos;lai" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="1"/>
               </conditions>
               <modifiers>
                 <modifier field="hidden" type="set" value="false"/>
@@ -32271,8 +32168,8 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
             <categoryLink name="Faction: T&apos;au Empire" id="0ccd-567a-ace5-4507" hidden="false" primary="false" targetId="77ee-b03b-d244-d535"/>
           </categoryLinks>
           <constraints>
-            <constraint id="36b0-11df-76d9-1139" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="min" value="0"/>
-            <constraint id="355b-12b1-f87b-9b98" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="0"/>
+            <constraint id="36b0-11df-76d9-1139" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="min" value="0"/>
+            <constraint id="355b-12b1-f87b-9b98" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="max" value="0"/>
           </constraints>
           <costs>
             <cost name="Pts" typeId="points" value="0"/>
@@ -32295,12 +32192,12 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
               <modifiers>
                 <modifier field="36b0-11df-76d9-1139" type="increment" value="1">
                   <repeats>
-                    <repeat childId="d205-0a34-72c4-886d" childName="Sniper drone section" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+                    <repeat childId="d205-0a34-72c4-886d" childName="Sniper drone section" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
                   </repeats>
                 </modifier>
                 <modifier field="355b-12b1-f87b-9b98" type="increment" value="1">
                   <repeats>
-                    <repeat childId="d205-0a34-72c4-886d" childName="Sniper drone section" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+                    <repeat childId="d205-0a34-72c4-886d" childName="Sniper drone section" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
                   </repeats>
                 </modifier>
               </modifiers>
@@ -32358,7 +32255,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
           <modifiers>
             <modifier field="hidden" type="set" value="false">
               <conditions>
-                <condition childId="9461-8ce2-38fb-b51c" childName="Firesight Marksman" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="equalTo" value="1"/>
+                <condition childId="9461-8ce2-38fb-b51c" childName="Firesight Marksman" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="1"/>
               </conditions>
             </modifier>
             <modifier field="category" type="add" value="f55d-9d66-abc1-f34f">
@@ -32373,8 +32270,8 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
             <categoryLink name="Faction: T&apos;au Empire" id="097c-557f-bfe6-214f" hidden="false" primary="false" targetId="77ee-b03b-d244-d535"/>
           </categoryLinks>
           <constraints>
-            <constraint id="98e4-709f-a9cd-16b0" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="min" value="0"/>
-            <constraint id="1cd7-204f-23e9-2fe7" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="0"/>
+            <constraint id="98e4-709f-a9cd-16b0" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="min" value="0"/>
+            <constraint id="1cd7-204f-23e9-2fe7" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="max" value="0"/>
           </constraints>
           <costs>
             <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
@@ -32391,14 +32288,14 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
                 <modifier field="1cd7-204f-23e9-2fe7" type="increment" value="1"/>
               </modifiers>
               <repeats>
-                <repeat childId="51af-4e81-7a95-7375" childName="Commander in XV86 Coldstar Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
-                <repeat childId="afbf-b865-0a0f-60a9" childName="Commander in XV85 Enforcer Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
-                <repeat childId="01f9-1f24-cdda-6f34" childName="Commander in XV81 Crisis Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
-                <repeat childId="4df2-ea62-b89b-f27f" childName="Commander in XV8 Crisis Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
-                <repeat childId="4797-f31f-8a79-35f0" childName="Commander in XV84 Crisis Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+                <repeat childId="51af-4e81-7a95-7375" childName="Commander in XV86 Coldstar Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
+                <repeat childId="afbf-b865-0a0f-60a9" childName="Commander in XV85 Enforcer Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
+                <repeat childId="01f9-1f24-cdda-6f34" childName="Commander in XV81 Crisis Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
+                <repeat childId="4df2-ea62-b89b-f27f" childName="Commander in XV8 Crisis Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
+                <repeat childId="4797-f31f-8a79-35f0" childName="Commander in XV84 Crisis Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
                 <repeat childId="89ab-176f-349e-c664" childName="Shas&apos;O Shovah" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
-                <repeat childId="af4f-77fe-98a9-2bfe" childName="Shas&apos;O R&apos;myr" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
-                <repeat childId="c973-568e-c1e8-e1fc" childName="The Twin Lance" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+                <repeat childId="af4f-77fe-98a9-2bfe" childName="Shas&apos;O R&apos;myr" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
+                <repeat childId="c973-568e-c1e8-e1fc" childName="The Twin Lance" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
               </repeats>
             </modifierGroup>
             <modifierGroup type="and">
@@ -32456,14 +32353,13 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition childId="51af-4e81-7a95-7375" childName="Commander in XV86 Coldstar Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
-                    <condition childId="afbf-b865-0a0f-60a9" childName="Commander in XV85 Enforcer Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
-                    <condition childId="01f9-1f24-cdda-6f34" childName="Commander in XV81 Crisis Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
-                    <condition childId="4df2-ea62-b89b-f27f" childName="Commander in XV8 Crisis Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
-                    <condition childId="4797-f31f-8a79-35f0" childName="Commander in XV84 Crisis Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
-                    <condition childId="89ab-176f-349e-c664" childName="Shas&apos;O Shovah" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
-                    <condition childId="af4f-77fe-98a9-2bfe" childName="Shas&apos;O R&apos;myr" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
-                    <condition childId="c973-568e-c1e8-e1fc" childName="The Twin Lance" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+                    <condition childId="51af-4e81-7a95-7375" childName="Commander in XV86 Coldstar Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="1"/>
+                    <condition childId="afbf-b865-0a0f-60a9" childName="Commander in XV85 Enforcer Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="1"/>
+                    <condition childId="01f9-1f24-cdda-6f34" childName="Commander in XV81 Crisis Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="1"/>
+                    <condition childId="4df2-ea62-b89b-f27f" childName="Commander in XV8 Crisis Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="1"/>
+                    <condition childId="4797-f31f-8a79-35f0" childName="Commander in XV84 Crisis Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="1"/>
+                    <condition childId="af4f-77fe-98a9-2bfe" childName="Shas&apos;O R&apos;myr" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="1"/>
+                    <condition childId="c973-568e-c1e8-e1fc" childName="The Twin Lance" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="1"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -32493,8 +32389,8 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
             <categoryLink name="Faction: T&apos;au Empire" id="4aa0-4942-ab08-5cd8" hidden="false" primary="false" targetId="77ee-b03b-d244-d535"/>
           </categoryLinks>
           <constraints>
-            <constraint id="8e7a-9750-b65a-1fda" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="min" value="0"/>
-            <constraint id="3747-542a-a984-8ec9" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="0"/>
+            <constraint id="8e7a-9750-b65a-1fda" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="min" value="0"/>
+            <constraint id="3747-542a-a984-8ec9" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="max" value="0"/>
           </constraints>
           <costs>
             <cost name="Pts" typeId="points" value="0"/>
@@ -32514,7 +32410,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
                 <modifier field="3747-542a-a984-8ec9" type="increment" value="1"/>
               </modifiers>
               <repeats>
-                <repeat childId="6bac-95a9-1b95-909b" childName="Commander in XV25 Stealth Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+                <repeat childId="6bac-95a9-1b95-909b" childName="Commander in XV25 Stealth Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
               </repeats>
             </modifierGroup>
             <modifierGroup type="and">
@@ -32572,7 +32468,7 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition childId="6bac-95a9-1b95-909b" childName="Commander in XV25 Stealth Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+                    <condition childId="6bac-95a9-1b95-909b" childName="Commander in XV25 Stealth Battlesuit" field="selections" includeChildForces="true" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="1"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -32608,7 +32504,6 @@ This WARLORD attacks ignore the Look out sir Rule.</characteristic>
           </constraints>
           <infoLinks>
             <infoLink name="Death from Above" id="ce04-d3e5-d195-05bc" hidden="false" targetId="2a93-0488-0277-cb07" type="profile"/>
-            <infoLink name="Infiltrator" id="c0d0-7083-1005-e547" hidden="false" targetId="e5f0-f07d-da24-96b0" type="profile"/>
           </infoLinks>
           <modifierGroups>
             <modifierGroup type="and">
@@ -32697,6 +32592,44 @@ Farsight - Selection</characteristic>
                     <cost name="Pts" typeId="points" value="0"/>
                   </costs>
                 </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+        <selectionEntry name="Drone support - O&apos;Shovah" id="bfa1-0b98-a888-4ab5" hidden="true" import="true" type="unit">
+          <categoryLinks>
+            <categoryLink name="Faction: T&apos;au Empire" id="f5fa-1567-858f-75e0" hidden="false" primary="false" targetId="77ee-b03b-d244-d535"/>
+            <categoryLink name="Farsight Enclaves" id="af49-35cc-f3d6-6690" hidden="false" primary="false" targetId="fa10-5b69-9887-b4c1"/>
+          </categoryLinks>
+          <constraints>
+            <constraint id="f7a1-7fee-a64d-a6f5" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="min" value="0"/>
+            <constraint id="8ac2-3db7-f369-d679" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="0"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Death from Above" id="233d-81b8-4744-7ff5" hidden="false" targetId="2a93-0488-0277-cb07" type="profile"/>
+          </infoLinks>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <conditions>
+                <condition childId="89ab-176f-349e-c664" childName="Shas&apos;O Shovah" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="equalTo" value="1"/>
+              </conditions>
+              <modifiers>
+                <modifier field="hidden" type="set" value="false"/>
+                <modifier field="f7a1-7fee-a64d-a6f5" type="set" value="1"/>
+                <modifier field="8ac2-3db7-f369-d679" type="set" value="1"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Drones" id="cc33-1dc2-889a-6c5e" defaultSelectionEntryId="1899-1b5e-2d24-8592" hidden="false">
+              <constraints>
+                <constraint id="5885-05eb-1ba2-0a9a" field="selections" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="6b6f-b46d-d3f8-55f0" field="selections" scope="parent" shared="true" type="max" value="2"/>
+              </constraints>
+              <entryLinks>
+                <entryLink name="MV1 Gun Drone" id="f9ad-87db-b75f-4ea6" collective="false" hidden="false" import="true" targetId="023e-bd70-2cba-51b3" type="selectionEntry"/>
+                <entryLink name="MV4 Shield Drone" id="aada-dd95-edb9-80a8" collective="false" hidden="false" import="true" targetId="50ee-ed10-becd-a968" type="selectionEntry"/>
+                <entryLink name="MV7 Marker Drone" id="d923-39dd-bd50-b76b" collective="false" hidden="false" import="true" targetId="e29a-716e-e430-5079" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
