@@ -31931,9 +31931,9 @@ Until the PRIEST inspires another unit with this prayer, each time a ranged atta
                 <categoryLink name="Core" id="6e07-f00a-7ab2-fc2a" hidden="false" primary="false" targetId="08f1-d244-eb44-7e01"/>
               </categoryLinks>
               <costs>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="Pts" typeId="points" value="0"/>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
               <entryLinks>
@@ -32068,9 +32068,9 @@ Until the PRIEST inspires another unit with this prayer, each time a ranged atta
                   </repeats>
                 </modifier>
                 <modifier field="e356-c769-5920-6e14" type="increment" value="1">
-                  <repeats>
-                    <repeat childId="342e-1cef-6b9d-2c43" field="selections" includeChildForces="true" includeChildSelections="true" percentValue="false" repeats="1" roundUp="true" scope="2d2a-73cc-6239-b52d" shared="true" value="2"/>
-                  </repeats>
+                  <conditions>
+                    <condition childId="model" childName="model" field="selections" scope="2d2a-73cc-6239-b52d" shared="true" type="atLeast" value="3"/>
+                  </conditions>
                 </modifier>
               </modifiers>
             </selectionEntry>
