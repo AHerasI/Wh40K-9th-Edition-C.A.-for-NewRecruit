@@ -1528,7 +1528,7 @@ Additional reference data obtained from Wahapedia, https://wahapedia.ru/</readme
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink name="Razorwing flocks" id="361b-c2d4-a9ce-35fc" hidden="false" import="true" targetId="b992-5e49-a4ae-c0ec" type="selectionEntry">
+    <entryLink name="Razorwing flock" id="361b-c2d4-a9ce-35fc" hidden="false" import="true" targetId="b992-5e49-a4ae-c0ec" type="selectionEntry">
       <categoryLinks>
         <categoryLink name="Compound units" id="4067-ce6f-fb77-a408" hidden="false" primary="true" targetId="21f9-f3cf-3e48-8b3c"/>
       </categoryLinks>
@@ -1550,6 +1550,84 @@ Additional reference data obtained from Wahapedia, https://wahapedia.ru/</readme
         <modifier field="5aeb-5dbe-a90c-6614" type="increment" value="1">
           <repeats>
             <repeat childId="176d-70c0-f5c0-8b2b" childName="Razorwing flocks" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink name="Lhamaean" id="3780-5f7d-fb7d-985f" hidden="false" import="true" targetId="4da2-5341-b041-0c2d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Compound units" id="2885-bd3d-ba39-d262" hidden="false" primary="true" targetId="21f9-f3cf-3e48-8b3c"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="7b72-6009-805f-cbb8" field="selections" scope="parent" shared="true" type="max" value="0"/>
+        <constraint id="85d2-66ef-b23e-e36a" field="selections" scope="parent" shared="true" type="min" value="0"/>
+      </constraints>
+      <modifiers>
+        <modifier field="hidden" type="set" value="true">
+          <conditions>
+            <condition childId="7df4-aaa2-f3a1-5f88" childName="Lhamaean retinue" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="0"/>
+          </conditions>
+        </modifier>
+        <modifier field="7b72-6009-805f-cbb8" type="increment" value="1">
+          <repeats>
+            <repeat childId="7df4-aaa2-f3a1-5f88" childName="Lhamaean retinue" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
+          </repeats>
+        </modifier>
+        <modifier field="85d2-66ef-b23e-e36a" type="increment" value="1">
+          <repeats>
+            <repeat childId="7df4-aaa2-f3a1-5f88" childName="Lhamaean retinue" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink name="Medusae" id="6cc5-c4b9-0492-59a3" hidden="false" import="true" targetId="59bd-4daa-cb7a-9c07" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Compound units" id="24c7-460f-712c-fa8e" hidden="false" primary="true" targetId="21f9-f3cf-3e48-8b3c"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="d317-91bc-ffa2-0115" field="selections" scope="parent" shared="true" type="max" value="0"/>
+        <constraint id="acf7-1e62-03c2-f02b" field="selections" scope="parent" shared="true" type="min" value="0"/>
+      </constraints>
+      <modifiers>
+        <modifier field="hidden" type="set" value="true">
+          <conditions>
+            <condition childId="dfe9-1c88-1c45-3229" childName="Medusae retinue" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="0"/>
+          </conditions>
+        </modifier>
+        <modifier field="d317-91bc-ffa2-0115" type="increment" value="1">
+          <repeats>
+            <repeat childId="dfe9-1c88-1c45-3229" childName="Medusae retinue" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
+          </repeats>
+        </modifier>
+        <modifier field="acf7-1e62-03c2-f02b" type="increment" value="1">
+          <repeats>
+            <repeat childId="dfe9-1c88-1c45-3229" childName="Medusae retinue" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink name="Ur-Ghuls" id="0338-79d1-3cb4-58bf" hidden="false" import="true" targetId="6f9f-d4a1-f96e-0702" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Compound units" id="56cc-b6b5-ad11-930f" hidden="false" primary="true" targetId="21f9-f3cf-3e48-8b3c"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="427c-34a2-3840-fd80" field="selections" scope="parent" shared="true" type="max" value="0"/>
+        <constraint id="108b-a3f2-93a6-74df" field="selections" scope="parent" shared="true" type="min" value="0"/>
+      </constraints>
+      <modifiers>
+        <modifier field="hidden" type="set" value="true">
+          <conditions>
+            <condition childId="0840-dcdc-8ca3-3726" childName="Ur-Ghul retinue" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="0"/>
+          </conditions>
+        </modifier>
+        <modifier field="427c-34a2-3840-fd80" type="increment" value="1">
+          <repeats>
+            <repeat childId="0840-dcdc-8ca3-3726" childName="Ur-Ghul retinue" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
+          </repeats>
+        </modifier>
+        <modifier field="108b-a3f2-93a6-74df" type="increment" value="1">
+          <repeats>
+            <repeat childId="0840-dcdc-8ca3-3726" childName="Ur-Ghul retinue" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -22553,9 +22631,30 @@ From that point onwards, each operates independently and is treated as a separat
             <constraint id="bd77-f047-8007-047a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="3"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry name="Clawed Fiend pack" id="1e19-e29b-fb3a-3524" hidden="false" import="true" type="upgrade"/>
-            <selectionEntry name="Khymera pack" id="0dc4-efea-8802-574f" hidden="false" import="true" type="upgrade"/>
-            <selectionEntry name="Razorwing flocks" id="176d-70c0-f5c0-8b2b" hidden="false" import="true" type="upgrade"/>
+            <selectionEntry name="Clawed Fiend pack" id="1e19-e29b-fb3a-3524" hidden="false" import="true" type="upgrade">
+              <costs>
+                <cost name="Pts" typeId="points" value="10"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry name="Khymera pack" id="0dc4-efea-8802-574f" hidden="false" import="true" type="upgrade">
+              <costs>
+                <cost name="Pts" typeId="points" value="10"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry name="Razorwing flocks" id="176d-70c0-f5c0-8b2b" hidden="false" import="true" type="upgrade">
+              <costs>
+                <cost name="Pts" typeId="points" value="5"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -22566,7 +22665,6 @@ From that point onwards, each operates independently and is treated as a separat
         <categoryLink name="Drukhari Kabal" id="95db-e41b-084a-cd9a" hidden="false" primary="false" targetId="395b-75d9-5ac9-7a81"/>
         <categoryLink name="Faction: Drukhari" id="ae7e-63b2-10c8-d628" hidden="false" primary="false" targetId="137f-9a86-a5a7-ce94"/>
         <categoryLink name="Faction: Aeldari" id="25db-8822-b1d0-58e6" hidden="false" primary="false" targetId="1924-ef18-000b-d2ba"/>
-        <categoryLink name="Faction: Drukhari Servants" id="e07b-fa15-a971-ccc5" hidden="false" primary="false" targetId="2f12-f4c0-1931-f355"/>
       </categoryLinks>
       <costs>
         <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -22639,261 +22737,103 @@ From that point onwards, each operates independently and is treated as a separat
           </conditionGroups>
         </modifier>
       </modifiers>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Packs" id="a52a-a2ef-c2bc-c5fb" collective="false" defaultSelectionEntryId="696d-e810-679a-fcec" hidden="false" import="true">
+      <selectionEntries>
+        <selectionEntry name="Sslyth" id="696d-e810-679a-fcec" collective="false" hidden="false" import="true" type="model">
+          <categoryLinks>
+            <categoryLink name="Bodyguard" id="c449-da04-049f-a735" hidden="false" primary="false" targetId="b9f1-de64-cd51-3db4"/>
+          </categoryLinks>
+          <constraints>
+            <constraint id="77b7-beb1-600a-4c55" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="4"/>
+            <constraint id="ab41-9f5d-c34a-f904" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="Pts" typeId="points" value="15"/>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink name="Splinter carbine" id="45c1-8d56-e11d-6b7c" collective="false" hidden="false" import="true" targetId="5888-8ddc-ceff-1cd1" type="selectionEntry"/>
+            <entryLink name="Splinter pistol" id="7eba-44e3-8a84-b5ca" collective="false" hidden="false" import="true" targetId="8baa-e14e-5a6a-972d" type="selectionEntry"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Sslyth" id="9239-1bd6-4fdf-2d21" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">9</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <selectionEntries>
-            <selectionEntry name="Lhamaean" id="51f1-14bb-4dcd-3e1a" collective="false" hidden="false" import="true" type="model">
+            <selectionEntry name="Sslyth battle-blade" id="0716-4ff3-1f3c-f033" collective="true" hidden="false" import="true" type="upgrade">
               <constraints>
-                <constraint id="6180-0879-feac-53ee" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="4"/>
+                <constraint id="cec9-a443-564e-793f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                <constraint id="be33-65eb-9271-6de4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
               </constraints>
               <costs>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="10"/>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
               <profiles>
-                <profile name="Lhamaean" id="1755-9adb-78b1-fbf0" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+                <profile name="Sslyth battle-blade" id="812b-1f2a-3c72-99b1" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                   <characteristics>
-                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8</characteristic>
-                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
-                    <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
-                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
-                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
-                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Toxin Crafter [Aura]" id="8aea-de4f-6d98-0d96" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-                  <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly KABAL ARCHON or KABAL CORE unit is within 3&quot; of this unit, if this unit contains any LHAMAEAN models, each time a model in that unit makes an attack with a Poisoned weapon against units without INORGANIC, VEHICLE and TITANIC Keywords, an unmodified hit roll of 6 automatically wounds the target.</characteristic>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
-              <selectionEntries>
-                <selectionEntry name="Shaimeshi blade" id="5e29-ca8e-cb31-3929" collective="true" hidden="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint id="f8f6-fb2f-0789-f0b5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                    <constraint id="6cdc-b3de-752e-cf9e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                  </constraints>
-                  <costs>
-                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                    <cost name="Pts" typeId="points" value="0"/>
-                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-                  </costs>
-                  <profiles>
-                    <profile name="Shaimeshi blade" id="fad6-c4b1-dbae-ff54" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
-                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-                        <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
-                        <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
-                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Poisoned Weapon (2+). Each time an attack is made with this weapon, if the target is not a INORGANIC, VEHICLE or TITANIC unit, an unmodified wound roll of 6 inflicts 1 mortal wound on the target in addition to any normal damage.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-              </selectionEntries>
             </selectionEntry>
-            <selectionEntry name="Medusae" id="5f5d-15ed-ee45-f055" collective="false" hidden="false" import="true" type="model">
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Additional retinue" id="2279-149c-aa95-cd6a" hidden="false">
+          <selectionEntries>
+            <selectionEntry name="Lhamaean retinue" id="7df4-aaa2-f3a1-5f88" hidden="false" import="true" type="upgrade">
               <constraints>
-                <constraint id="a322-b28f-19d3-d780" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="4"/>
+                <constraint id="0987-d16f-89c6-7d07" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
               <costs>
+                <cost name="Pts" typeId="points" value="10"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry name="Medusae retinue" id="dfe9-1c88-1c45-3229" hidden="false" import="true" type="upgrade">
+              <constraints>
+                <constraint id="410e-a74a-516a-14e7" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
                 <cost name="Pts" typeId="points" value="15"/>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
-              <profiles>
-                <profile name="Medusae" id="85b2-e7f8-b119-808d" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-                  <characteristics>
-                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8</characteristic>
-                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
-                    <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
-                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
-                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
-                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <selectionEntries>
-                <selectionEntry name="Claws" id="1dd4-3741-4299-ee4c" collective="true" hidden="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint id="5b99-7f42-7cc9-8679" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                    <constraint id="c595-f0c9-b0eb-aa0b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                  </constraints>
-                  <costs>
-                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                    <cost name="Pts" typeId="points" value="0"/>
-                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-                  </costs>
-                  <profiles>
-                    <profile name="Claws" id="23d4-46a0-25b0-e02b" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
-                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-                        <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
-                        <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
-                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry name="Eyeburst" id="6556-326c-e108-9d77" collective="true" hidden="false" import="true" type="upgrade">
-                  <categoryLinks>
-                    <categoryLink name="Torrent" id="abed-ea88-9e12-9587" hidden="false" primary="false" targetId="795f-a8d3-dc18-cb2e"/>
-                  </categoryLinks>
-                  <constraints>
-                    <constraint id="fa04-9046-da07-56e8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                    <constraint id="969a-5b9a-7d71-f3ce" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                  </constraints>
-                  <costs>
-                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                    <cost name="Pts" typeId="points" value="0"/>
-                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-                  </costs>
-                  <profiles>
-                    <profile name="Eyeburst" id="b96c-a8c3-9fe6-5c78" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
-                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol D6</characteristic>
-                        <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
-                        <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
-                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-              </selectionEntries>
             </selectionEntry>
-            <selectionEntry name="Sslyth" id="696d-e810-679a-fcec" collective="false" hidden="false" import="true" type="model">
-              <categoryLinks>
-                <categoryLink name="Bodyguard" id="c449-da04-049f-a735" hidden="false" primary="false" targetId="b9f1-de64-cd51-3db4"/>
-              </categoryLinks>
+            <selectionEntry name="Ur-Ghul retinue" id="0840-dcdc-8ca3-3726" hidden="false" import="true" type="upgrade">
               <constraints>
-                <constraint id="77b7-beb1-600a-4c55" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="4"/>
-                <constraint id="ab41-9f5d-c34a-f904" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="3314-03bd-1aa3-1ba9" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
               <costs>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="15"/>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink name="Splinter carbine" id="45c1-8d56-e11d-6b7c" collective="false" hidden="false" import="true" targetId="5888-8ddc-ceff-1cd1" type="selectionEntry"/>
-                <entryLink name="Splinter pistol" id="7eba-44e3-8a84-b5ca" collective="false" hidden="false" import="true" targetId="8baa-e14e-5a6a-972d" type="selectionEntry"/>
-              </entryLinks>
-              <profiles>
-                <profile name="Sslyth" id="9239-1bd6-4fdf-2d21" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-                  <characteristics>
-                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8</characteristic>
-                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
-                    <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
-                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
-                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
-                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <selectionEntries>
-                <selectionEntry name="Sslyth battle-blade" id="0716-4ff3-1f3c-f033" collective="true" hidden="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint id="cec9-a443-564e-793f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                    <constraint id="be33-65eb-9271-6de4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                  </constraints>
-                  <costs>
-                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                    <cost name="Pts" typeId="points" value="0"/>
-                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-                  </costs>
-                  <profiles>
-                    <profile name="Sslyth battle-blade" id="812b-1f2a-3c72-99b1" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
-                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-                        <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
-                        <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
-                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntry>
-            <selectionEntry name="Ur-Ghul" id="8069-07f7-803f-224e" collective="false" hidden="false" import="true" type="model">
-              <constraints>
-                <constraint id="45d7-093e-27c0-bf0d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="4"/>
-              </constraints>
-              <costs>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="Pts" typeId="points" value="5"/>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
-              <profiles>
-                <profile name="Ur-Ghul" id="fc8f-5d9d-a309-1d01" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-                  <characteristics>
-                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8</characteristic>
-                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">-</characteristic>
-                    <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
-                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
-                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
-                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">4</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">7</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Ferocious Charge" id="e6ac-5d37-f96b-4a78" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-                  <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time this unit fights, if it made a charge move this turn, add 2 to the Attacks characteristic of Ur-Ghul models in this unit.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <selectionEntries>
-                <selectionEntry name="Ur-Ghul talons" id="87fe-35ab-9ad4-1c52" collective="true" hidden="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint id="fe68-ad81-5043-87c1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                    <constraint id="5850-8ad1-722c-2353" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                  </constraints>
-                  <costs>
-                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                    <cost name="Pts" typeId="points" value="0"/>
-                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-                  </costs>
-                  <profiles>
-                    <profile name="Ur-Ghul talons" id="0685-6f48-24dc-7e9e" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
-                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-                        <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
-                        <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
-                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-              </selectionEntries>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -42168,272 +42108,547 @@ Until that happens, that model is still considered to be in play, but no further
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Compound units" id="9230-ec5c-bafd-6295" hidden="false">
-      <selectionEntries>
-        <selectionEntry name="Clawed Fiend pack" id="58da-1dc6-96b9-2d0e" collective="false" hidden="false" import="true" type="unit">
-          <categoryLinks>
-            <categoryLink name="Beast" id="b0e5-69cb-b056-759b" hidden="false" primary="false" targetId="7892-58f7-e769-4d87"/>
-            <categoryLink name="Faction: Drukhari Servants" id="9746-cbea-78c0-1658" hidden="false" primary="false" targetId="2f12-f4c0-1931-f355"/>
-          </categoryLinks>
-          <costs>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
-          </costs>
-          <modifierGroups>
-            <modifierGroup type="and">
-              <modifiers>
-                <modifier field="e356-c769-5920-6e14" type="increment" value="1">
-                  <repeats>
-                    <repeat childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="58da-1dc6-96b9-2d0e" shared="true" value="2"/>
-                  </repeats>
-                </modifier>
-                <modifier field="e356-c769-5920-6e14" type="decrement" value="1">
-                  <conditions>
-                    <condition childId="model" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="58da-1dc6-96b9-2d0e" shared="true" type="atLeast" value="1"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
-          <profiles>
-            <profile name="Berserk Rage" id="d5c2-5000-ec4d-2ceb" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-              <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a model from this unit has lost any wounds, models in this unit have an Attacks characteristic of 6.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Court groups" id="a52a-a2ef-c2bc-c5fb" collective="false" defaultSelectionEntryId="696d-e810-679a-fcec" hidden="false" import="true">
           <selectionEntries>
-            <selectionEntry name="Clawed Fiend" id="9d5e-f130-25b9-435c" collective="false" hidden="false" import="true" type="model">
-              <constraints>
-                <constraint id="898f-6e68-e28b-3667" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="6"/>
-                <constraint id="8c48-6b6c-5186-ec3d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-              </constraints>
-              <costs>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="10"/>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Clawed Fiend" id="3800-295b-edc1-d665" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-                  <characteristics>
-                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10</characteristic>
-                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">-</characteristic>
-                    <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
-                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
-                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">5</characteristic>
-                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">4</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
+            <selectionEntry name="Ur-Ghuls" id="6f9f-d4a1-f96e-0702" hidden="false" import="true" type="unit">
+              <categoryLinks>
+                <categoryLink name="Faction: Drukhari" id="33d4-1823-51dd-5864" hidden="false" primary="false" targetId="137f-9a86-a5a7-ce94"/>
+                <categoryLink name="Faction: Drukhari Servants" id="da50-80f7-282d-68eb" hidden="false" primary="false" targetId="2f12-f4c0-1931-f355"/>
+                <categoryLink name="Faction: Aeldari" id="ea90-9fa0-1066-28ec" hidden="false" primary="false" targetId="1924-ef18-000b-d2ba"/>
+                <categoryLink name="Infantry" id="e878-05b3-f6f1-4179" hidden="false" primary="false" targetId="3d52-fccf-10c0-3fae"/>
+              </categoryLinks>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier field="points" type="decrement" value="5"/>
+                    <modifier field="e356-c769-5920-6e14" type="increment" value="1">
+                      <conditions>
+                        <condition childId="model" childName="model" field="selections" scope="6f9f-d4a1-f96e-0702" shared="true" type="atLeast" value="3"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
               <selectionEntries>
-                <selectionEntry name="Clawed fists" id="17f4-3cce-a294-b7d3" collective="true" hidden="false" import="true" type="upgrade">
+                <selectionEntry name="Ur-Ghul" id="8069-07f7-803f-224e" collective="false" hidden="false" import="true" type="model">
                   <constraints>
-                    <constraint id="b664-cc1b-8f02-8232" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                    <constraint id="04ee-a582-3785-1626" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="45d7-093e-27c0-bf0d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="4"/>
                   </constraints>
                   <costs>
-                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                     <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                    <cost name="Pts" typeId="points" value="0"/>
+                    <cost name="Pts" typeId="points" value="5"/>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                     <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                   </costs>
                   <profiles>
-                    <profile name="Clawed fists" id="f905-b660-1fcc-afc3" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                    <profile name="Ur-Ghul" id="fc8f-5d9d-a309-1d01" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                       <characteristics>
-                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
-                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-                        <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
-                        <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
-                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8</characteristic>
+                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">-</characteristic>
+                        <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
+                        <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
+                        <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
+                        <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+                        <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">4</characteristic>
+                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">7</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Ferocious Charge" id="e6ac-5d37-f96b-4a78" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+                      <characteristics>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time this unit fights, if it made a charge move this turn, add 2 to the Attacks characteristic of Ur-Ghul models in this unit.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
+                  <selectionEntries>
+                    <selectionEntry name="Ur-Ghul talons" id="87fe-35ab-9ad4-1c52" collective="true" hidden="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint id="fe68-ad81-5043-87c1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                        <constraint id="5850-8ad1-722c-2353" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                        <cost name="Pts" typeId="points" value="0"/>
+                        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                      </costs>
+                      <profiles>
+                        <profile name="Ur-Ghul talons" id="0685-6f48-24dc-7e9e" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                            <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
+                            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry name="Lhamaean" id="4da2-5341-b041-0c2d" hidden="false" import="true" type="unit">
+              <categoryLinks>
+                <categoryLink name="Infantry" id="87c0-baaf-5f4f-6948" hidden="false" primary="false" targetId="3d52-fccf-10c0-3fae"/>
+                <categoryLink name="Faction: Drukhari" id="ce4c-cef8-7453-42ab" hidden="false" primary="false" targetId="137f-9a86-a5a7-ce94"/>
+                <categoryLink name="Drukhari Kabal" id="c205-0cc5-f36e-dd66" hidden="false" primary="false" targetId="395b-75d9-5ac9-7a81"/>
+                <categoryLink name="Faction: Aeldari" id="0888-0e15-052c-fd0b" hidden="false" primary="false" targetId="1924-ef18-000b-d2ba"/>
+              </categoryLinks>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier field="points" type="decrement" value="10"/>
+                    <modifier field="e356-c769-5920-6e14" type="increment" value="1">
+                      <conditions>
+                        <condition childId="model" childName="model" field="selections" includeChildSelections="true" scope="4da2-5341-b041-0c2d" shared="true" type="atLeast" value="3"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <selectionEntries>
+                <selectionEntry name="Lhamaean" id="51f1-14bb-4dcd-3e1a" collective="false" hidden="false" import="true" type="model">
+                  <constraints>
+                    <constraint id="6180-0879-feac-53ee" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="4"/>
+                  </constraints>
+                  <costs>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="Pts" typeId="points" value="10"/>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Lhamaean" id="1755-9adb-78b1-fbf0" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+                      <characteristics>
+                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8</characteristic>
+                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
+                        <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+                        <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
+                        <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
+                        <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
+                        <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Toxin Crafter [Aura]" id="8aea-de4f-6d98-0d96" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+                      <characteristics>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly KABAL ARCHON or KABAL CORE unit is within 3&quot; of this unit, if this unit contains any LHAMAEAN models, each time a model in that unit makes an attack with a Poisoned weapon against units without INORGANIC, VEHICLE and TITANIC Keywords, an unmodified hit roll of 6 automatically wounds the target.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <selectionEntries>
+                    <selectionEntry name="Shaimeshi blade" id="5e29-ca8e-cb31-3929" collective="true" hidden="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint id="f8f6-fb2f-0789-f0b5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                        <constraint id="6cdc-b3de-752e-cf9e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                        <cost name="Pts" typeId="points" value="0"/>
+                        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                      </costs>
+                      <profiles>
+                        <profile name="Shaimeshi blade" id="fad6-c4b1-dbae-ff54" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                            <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
+                            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Poisoned Weapon (2+). Each time an attack is made with this weapon, if the target is not a INORGANIC, VEHICLE or TITANIC unit, an unmodified wound roll of 6 inflicts 1 mortal wound on the target in addition to any normal damage.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry name="Medusae" id="59bd-4daa-cb7a-9c07" hidden="false" import="true" type="unit">
+              <categoryLinks>
+                <categoryLink name="Infantry" id="6663-244a-a0fc-caf2" hidden="false" primary="false" targetId="3d52-fccf-10c0-3fae"/>
+                <categoryLink name="Faction: Drukhari" id="2832-73ef-b3ab-5dc6" hidden="false" primary="false" targetId="137f-9a86-a5a7-ce94"/>
+                <categoryLink name="Drukhari Kabal" id="1681-4c63-8a7e-8b54" hidden="false" primary="false" targetId="395b-75d9-5ac9-7a81"/>
+                <categoryLink name="Faction: Aeldari" id="0b98-ae58-c9ab-bfa1" hidden="false" primary="false" targetId="1924-ef18-000b-d2ba"/>
+              </categoryLinks>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier field="e356-c769-5920-6e14" type="decrement" value="1"/>
+                    <modifier field="points" type="decrement" value="15"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <selectionEntries>
+                <selectionEntry name="Medusae" id="5f5d-15ed-ee45-f055" collective="false" hidden="false" import="true" type="model">
+                  <constraints>
+                    <constraint id="a322-b28f-19d3-d780" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="4"/>
+                  </constraints>
+                  <costs>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="Pts" typeId="points" value="15"/>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Medusae" id="85b2-e7f8-b119-808d" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+                      <characteristics>
+                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8</characteristic>
+                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
+                        <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+                        <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
+                        <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
+                        <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+                        <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <selectionEntries>
+                    <selectionEntry name="Claws" id="1dd4-3741-4299-ee4c" collective="true" hidden="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint id="5b99-7f42-7cc9-8679" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                        <constraint id="c595-f0c9-b0eb-aa0b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                        <cost name="Pts" typeId="points" value="0"/>
+                        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                      </costs>
+                      <profiles>
+                        <profile name="Claws" id="23d4-46a0-25b0-e02b" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                            <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
+                            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry name="Eyeburst" id="6556-326c-e108-9d77" collective="true" hidden="false" import="true" type="upgrade">
+                      <categoryLinks>
+                        <categoryLink name="Torrent" id="abed-ea88-9e12-9587" hidden="false" primary="false" targetId="795f-a8d3-dc18-cb2e"/>
+                      </categoryLinks>
+                      <constraints>
+                        <constraint id="fa04-9046-da07-56e8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                        <constraint id="969a-5b9a-7d71-f3ce" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                        <cost name="Pts" typeId="points" value="0"/>
+                        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                      </costs>
+                      <profiles>
+                        <profile name="Eyeburst" id="b96c-a8c3-9fe6-5c78" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
+                            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol D6</characteristic>
+                            <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
+                            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
           </selectionEntries>
-        </selectionEntry>
-        <selectionEntry name="Khymera pack" id="837c-e608-29a1-6abb" collective="false" hidden="false" import="true" type="unit">
-          <categoryLinks>
-            <categoryLink name="Beast" id="f082-8447-67a3-3e06" hidden="false" primary="false" targetId="7892-58f7-e769-4d87"/>
-            <categoryLink name="Daemonic" id="bfea-e576-aad4-f5d2" hidden="false" primary="false" targetId="27fc-c23f-28a9-0a7c"/>
-            <categoryLink name="Faction: Drukhari Servants" id="cb52-0337-ebb9-bf13" hidden="false" primary="false" targetId="2f12-f4c0-1931-f355"/>
-          </categoryLinks>
-          <costs>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
-          </costs>
-          <infoLinks>
-            <infoLink name="Hard to hit" id="479e-ba6e-dca5-fffc" hidden="false" targetId="236e-8f8f-bc13-7537" type="profile"/>
-          </infoLinks>
-          <modifierGroups>
-            <modifierGroup type="and">
-              <modifiers>
-                <modifier field="e356-c769-5920-6e14" type="increment" value="1">
-                  <repeats>
-                    <repeat childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="837c-e608-29a1-6abb" shared="true" value="2"/>
-                  </repeats>
-                </modifier>
-                <modifier field="e356-c769-5920-6e14" type="decrement" value="1">
-                  <conditions>
-                    <condition childId="model" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="837c-e608-29a1-6abb" shared="true" type="atLeast" value="1"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Beast packs" id="dcac-186b-1c84-b5fc" hidden="false">
           <selectionEntries>
-            <selectionEntry name="Khymera" id="43d9-c911-05fa-9c3b" collective="false" hidden="false" import="true" type="model">
-              <constraints>
-                <constraint id="1b2d-7b9a-4821-5c38" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="6"/>
-                <constraint id="bd7b-7dfa-21d8-5a4e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-              </constraints>
+            <selectionEntry name="Clawed Fiend pack" id="58da-1dc6-96b9-2d0e" collective="false" hidden="false" import="true" type="unit">
+              <categoryLinks>
+                <categoryLink name="Beast" id="b0e5-69cb-b056-759b" hidden="false" primary="false" targetId="7892-58f7-e769-4d87"/>
+                <categoryLink name="Faction: Drukhari Servants" id="9746-cbea-78c0-1658" hidden="false" primary="false" targetId="2f12-f4c0-1931-f355"/>
+              </categoryLinks>
               <costs>
-                <cost name="Pts" typeId="points" value="10"/>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier field="e356-c769-5920-6e14" type="increment" value="1">
+                      <repeats>
+                        <repeat childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="58da-1dc6-96b9-2d0e" shared="true" value="2"/>
+                      </repeats>
+                    </modifier>
+                    <modifier field="e356-c769-5920-6e14" type="decrement" value="1">
+                      <conditions>
+                        <condition childId="model" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="58da-1dc6-96b9-2d0e" shared="true" type="atLeast" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="points" type="decrement" value="10">
+                      <conditions>
+                        <condition childId="model" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="58da-1dc6-96b9-2d0e" shared="true" type="atLeast" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
               <profiles>
-                <profile name="Khymera" id="2814-fb6c-ee56-563e" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+                <profile name="Berserk Rage" id="d5c2-5000-ec4d-2ceb" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
-                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10</characteristic>
-                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">-</characteristic>
-                    <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
-                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
-                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
-                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">4</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6</characteristic>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a model from this unit has lost any wounds, models in this unit have an Attacks characteristic of 6.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <selectionEntries>
-                <selectionEntry name="Claws and talons" id="caf5-02f8-c678-ef1b" collective="true" hidden="false" import="true" type="upgrade">
+                <selectionEntry name="Clawed Fiend" id="9d5e-f130-25b9-435c" collective="false" hidden="false" import="true" type="model">
                   <constraints>
-                    <constraint id="3bf8-55ea-ad56-fad4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                    <constraint id="29e8-0309-8fd2-97b8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="898f-6e68-e28b-3667" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="6"/>
+                    <constraint id="8c48-6b6c-5186-ec3d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                   </constraints>
                   <costs>
-                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                     <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                    <cost name="Pts" typeId="points" value="0"/>
+                    <cost name="Pts" typeId="points" value="10"/>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                     <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                   </costs>
                   <profiles>
-                    <profile name="Claws and talons" id="e4e1-b699-ddad-ac1d" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                    <profile name="Clawed Fiend" id="3800-295b-edc1-d665" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                       <characteristics>
-                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
-                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-                        <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
-                        <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
-                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10</characteristic>
+                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4</characteristic>
+                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">-</characteristic>
+                        <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
+                        <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
+                        <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
+                        <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">5</characteristic>
+                        <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">4</characteristic>
+                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
+                  <selectionEntries>
+                    <selectionEntry name="Clawed fists" id="17f4-3cce-a294-b7d3" collective="true" hidden="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint id="b664-cc1b-8f02-8232" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                        <constraint id="04ee-a582-3785-1626" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                        <cost name="Pts" typeId="points" value="0"/>
+                        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                      </costs>
+                      <profiles>
+                        <profile name="Clawed fists" id="f905-b660-1fcc-afc3" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                            <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
+                            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
-          </selectionEntries>
-        </selectionEntry>
-        <selectionEntry name="Razorwing flock" id="b992-5e49-a4ae-c0ec" collective="false" hidden="false" import="true" type="unit">
-          <categoryLinks>
-            <categoryLink name="Swarm" id="d3a0-6827-45d3-76cb" hidden="false" primary="false" targetId="7a53-eedc-8dbb-8505"/>
-            <categoryLink name="Fly" id="de4d-3844-e286-c3ec" hidden="false" primary="false" targetId="3117-16d8-fcef-4f56"/>
-            <categoryLink name="Faction: Drukhari Servants" id="5367-2442-18da-c033" hidden="false" primary="false" targetId="2f12-f4c0-1931-f355"/>
-          </categoryLinks>
-          <costs>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="Pts" typeId="points" value="0"/>
-            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-          </costs>
-          <infoLinks>
-            <infoLink name="Hard to hit" id="aeb1-0c32-f32f-cddd" hidden="false" targetId="236e-8f8f-bc13-7537" type="profile"/>
-          </infoLinks>
-          <modifierGroups>
-            <modifierGroup type="and">
-              <modifiers>
-                <modifier field="e356-c769-5920-6e14" type="increment" value="1">
-                  <repeats>
-                    <repeat childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="b992-5e49-a4ae-c0ec" shared="true" value="2"/>
-                  </repeats>
-                </modifier>
-                <modifier field="e356-c769-5920-6e14" type="decrement" value="1">
-                  <conditions>
-                    <condition childId="model" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="b992-5e49-a4ae-c0ec" shared="true" type="atLeast" value="1"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
-          <selectionEntries>
-            <selectionEntry name="Razorwing Flock" id="25a9-5aa8-921e-faba" collective="false" hidden="false" import="true" type="model">
-              <constraints>
-                <constraint id="6a52-80d2-a446-f907" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                <constraint id="9b1d-2e31-43c1-0676" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="6"/>
-              </constraints>
+            <selectionEntry name="Khymera pack" id="837c-e608-29a1-6abb" collective="false" hidden="false" import="true" type="unit">
+              <categoryLinks>
+                <categoryLink name="Beast" id="f082-8447-67a3-3e06" hidden="false" primary="false" targetId="7892-58f7-e769-4d87"/>
+                <categoryLink name="Daemonic" id="bfea-e576-aad4-f5d2" hidden="false" primary="false" targetId="27fc-c23f-28a9-0a7c"/>
+                <categoryLink name="Faction: Drukhari Servants" id="cb52-0337-ebb9-bf13" hidden="false" primary="false" targetId="2f12-f4c0-1931-f355"/>
+              </categoryLinks>
               <costs>
-                <cost name="Pts" typeId="points" value="10"/>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
-              <profiles>
-                <profile name="Razorwing Flock" id="3ca2-4c43-2ec2-b337" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-                  <characteristics>
-                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12</characteristic>
-                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">-</characteristic>
-                    <characteristic name="S" typeId="2218-aa3c-265f-2939">2</characteristic>
-                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">2</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
-                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
-                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">4</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">7</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
+              <infoLinks>
+                <infoLink name="Hard to hit" id="479e-ba6e-dca5-fffc" hidden="false" targetId="236e-8f8f-bc13-7537" type="profile"/>
+              </infoLinks>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier field="e356-c769-5920-6e14" type="increment" value="1">
+                      <repeats>
+                        <repeat childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="837c-e608-29a1-6abb" shared="true" value="2"/>
+                      </repeats>
+                    </modifier>
+                    <modifier field="e356-c769-5920-6e14" type="decrement" value="1">
+                      <conditions>
+                        <condition childId="model" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="837c-e608-29a1-6abb" shared="true" type="atLeast" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="points" type="decrement" value="10">
+                      <conditions>
+                        <condition childId="model" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="837c-e608-29a1-6abb" shared="true" type="atLeast" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
               <selectionEntries>
-                <selectionEntry name="Razor feathers" id="7e4a-a27e-537b-2280" collective="true" hidden="false" import="true" type="upgrade">
+                <selectionEntry name="Khymera" id="43d9-c911-05fa-9c3b" collective="false" hidden="false" import="true" type="model">
                   <constraints>
-                    <constraint id="fc66-b7b6-75db-1330" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                    <constraint id="af6c-49e3-6bdb-9595" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="1b2d-7b9a-4821-5c38" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="6"/>
+                    <constraint id="bd7b-7dfa-21d8-5a4e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                   </constraints>
                   <costs>
+                    <cost name="Pts" typeId="points" value="10"/>
                     <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
                     <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                    <cost name="Pts" typeId="points" value="0"/>
                     <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
                   </costs>
                   <profiles>
-                    <profile name="Razor feathers" id="1698-db0d-0158-6ff0" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                    <profile name="Khymera" id="2814-fb6c-ee56-563e" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                       <characteristics>
-                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
-                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-                        <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
-                        <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
-                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10</characteristic>
+                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">-</characteristic>
+                        <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
+                        <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
+                        <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
+                        <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                        <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">4</characteristic>
+                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
+                  <selectionEntries>
+                    <selectionEntry name="Claws and talons" id="caf5-02f8-c678-ef1b" collective="true" hidden="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint id="3bf8-55ea-ad56-fad4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                        <constraint id="29e8-0309-8fd2-97b8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                        <cost name="Pts" typeId="points" value="0"/>
+                        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                      </costs>
+                      <profiles>
+                        <profile name="Claws and talons" id="e4e1-b699-ddad-ac1d" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                            <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
+                            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry name="Razorwing flock" id="b992-5e49-a4ae-c0ec" collective="false" hidden="false" import="true" type="unit">
+              <categoryLinks>
+                <categoryLink name="Swarm" id="d3a0-6827-45d3-76cb" hidden="false" primary="false" targetId="7a53-eedc-8dbb-8505"/>
+                <categoryLink name="Fly" id="de4d-3844-e286-c3ec" hidden="false" primary="false" targetId="3117-16d8-fcef-4f56"/>
+                <categoryLink name="Faction: Drukhari Servants" id="5367-2442-18da-c033" hidden="false" primary="false" targetId="2f12-f4c0-1931-f355"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Hard to hit" id="aeb1-0c32-f32f-cddd" hidden="false" targetId="236e-8f8f-bc13-7537" type="profile"/>
+              </infoLinks>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier field="e356-c769-5920-6e14" type="increment" value="1">
+                      <repeats>
+                        <repeat childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="b992-5e49-a4ae-c0ec" shared="true" value="4"/>
+                      </repeats>
+                    </modifier>
+                    <modifier field="e356-c769-5920-6e14" type="decrement" value="1">
+                      <conditions>
+                        <condition childId="model" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="b992-5e49-a4ae-c0ec" shared="true" type="atLeast" value="1"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="points" type="decrement" value="5">
+                      <conditions>
+                        <condition childId="model" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="b992-5e49-a4ae-c0ec" shared="true" type="atLeast" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <selectionEntries>
+                <selectionEntry name="Razorwing Flock" id="25a9-5aa8-921e-faba" collective="false" hidden="false" import="true" type="model">
+                  <constraints>
+                    <constraint id="6a52-80d2-a446-f907" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="9b1d-2e31-43c1-0676" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="6"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="points" value="5"/>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Razorwing Flock" id="3ca2-4c43-2ec2-b337" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+                      <characteristics>
+                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12</characteristic>
+                        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4</characteristic>
+                        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">-</characteristic>
+                        <characteristic name="S" typeId="2218-aa3c-265f-2939">2</characteristic>
+                        <characteristic name="T" typeId="9c9f-9774-a358-3a39">2</characteristic>
+                        <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
+                        <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+                        <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">4</characteristic>
+                        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">7</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <selectionEntries>
+                    <selectionEntry name="Razor feathers" id="7e4a-a27e-537b-2280" collective="true" hidden="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint id="fc66-b7b6-75db-1330" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                        <constraint id="af6c-49e3-6bdb-9595" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                        <cost name="Pts" typeId="points" value="0"/>
+                        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                      </costs>
+                      <profiles>
+                        <profile name="Razor feathers" id="1698-db0d-0158-6ff0" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                            <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
+                            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
           </selectionEntries>
-        </selectionEntry>
-      </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </catalogue>
