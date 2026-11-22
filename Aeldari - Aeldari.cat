@@ -3951,6 +3951,36 @@ Additional reference data obtained from Wahapedia, https://wahapedia.ru/</readme
         <characteristic name="Other" typeId="c2e2-f115-0003-5d7b">-</characteristic>
       </characteristics>
     </profile>
+    <profile name="Windrider" id="ef0a-a6f7-8276-7008" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+      <characteristics>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
+        <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+        <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
+        <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
+        <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+        <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
+      </characteristics>
+      <modifiers>
+        <modifier field="0bdf-a96e-9e38-7779" type="set" value="18">
+          <conditions>
+            <condition childId="bb21-30f8-d7e1-cdb9" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+          </conditions>
+        </modifier>
+        <modifier field="13fc-b29b-31f2-ab9f" type="increment" value="1">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition childId="d294-6bda-13ec-342f" childName="Biel-tan" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                <condition childId="a047-936d-df4a-7d58" childName="Elite citizenry" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </profile>
   </sharedProfiles>
   <sharedRules>
     <rule name="Asuryani Missile launcher" id="2351-b0d0-b620-41be" hidden="false">
@@ -14537,28 +14567,9 @@ In addition, models in this unit are eligible to shoot in a turn in which it Adv
                 </entryLink>
                 <entryLink name="Crushing bulk" id="f36a-5fed-7cbc-da2c" collective="false" hidden="false" import="true" targetId="502f-45c2-6fd1-443b" type="selectionEntry"/>
               </entryLinks>
-              <profiles>
-                <profile name="Windrider" id="ef0a-a6f7-8276-7008" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
-                  <characteristics>
-                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">16</characteristic>
-                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
-                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
-                    <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
-                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
-                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
-                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
-                  </characteristics>
-                  <modifiers>
-                    <modifier field="0bdf-a96e-9e38-7779" type="set" value="18">
-                      <conditions>
-                        <condition childId="bb21-30f8-d7e1-cdb9" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </profile>
-              </profiles>
+              <infoLinks>
+                <infoLink name="Windrider" id="d989-768a-094d-2311" hidden="false" targetId="ef0a-a6f7-8276-7008" type="profile"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry name="Windrider w/Shuriken cannon" id="e942-a4a3-bdb4-764c" collective="false" hidden="false" import="true" type="model">
               <costs>
