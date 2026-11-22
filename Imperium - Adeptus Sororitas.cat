@@ -295,6 +295,10 @@ Units successfully affected by this ability are considered to be Inspired. Unles
       <constraints>
         <constraint id="2f90-cf52-2d97-184b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="false" type="max" value="0"/>
       </constraints>
+      <costs>
+        <cost name="Pts" typeId="points" value="60"/>
+        <cost name="PL" typeId="e356-c769-5920-6e14" value="3"/>
+      </costs>
       <modifiers>
         <modifier field="2f90-cf52-2d97-184b" type="increment" value="1">
           <repeats>
@@ -398,6 +402,138 @@ Units successfully affected by this ability are considered to be Inspired. Unles
         <categoryLink name="No Force Org Slot" id="cc09-fe18-1303-7a8d" hidden="false" primary="true" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74"/>
       </categoryLinks>
     </entryLink>
+    <entryLink name="Hospitaller" id="9372-282f-49b4-c623" hidden="true" import="true" targetId="b018-1a79-a5fa-1171" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Compound units" id="8e53-2279-53b3-f26b" hidden="false" primary="true" targetId="21f9-f3cf-3e48-8b3c"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="001c-f583-6666-7f54" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="0"/>
+        <constraint id="ef59-6f5e-b1cb-02ca" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="0"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier field="hidden" type="set" value="false">
+                  <conditions>
+                    <condition childId="f8c0-59c1-bd40-7274" childName="Hospitaller" field="selections" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier field="001c-f583-6666-7f54" type="increment" value="1"/>
+                <modifier field="ef59-6f5e-b1cb-02ca" type="increment" value="1"/>
+              </modifiers>
+              <repeats>
+                <repeat childId="f8c0-59c1-bd40-7274" childName="Hospitaller" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
+              </repeats>
+            </modifierGroup>
+          </modifierGroups>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink name="Dialogus" id="b521-7ab0-a66b-2c60" hidden="true" import="true" targetId="d97d-8659-1bfe-3ea5" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Compound units" id="8f21-e6cb-88c9-d586" hidden="false" primary="true" targetId="21f9-f3cf-3e48-8b3c"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="12c3-b4f1-1458-ec7d" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="0"/>
+        <constraint id="87e1-a2fc-56e9-4ae5" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="0"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier field="hidden" type="set" value="false">
+                  <conditions>
+                    <condition childId="eb9d-c8d7-b891-c30c" childName="Dialogus" field="selections" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier field="12c3-b4f1-1458-ec7d" type="increment" value="1"/>
+                <modifier field="87e1-a2fc-56e9-4ae5" type="increment" value="1"/>
+              </modifiers>
+              <repeats>
+                <repeat childId="eb9d-c8d7-b891-c30c" childName="Dialogus" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
+              </repeats>
+            </modifierGroup>
+          </modifierGroups>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink name="Imagifier" id="3e92-a164-a5f9-e954" hidden="true" import="true" targetId="6dde-ab5e-e22b-a0a2" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Compound units" id="052b-c2b2-1aec-137f" hidden="false" primary="true" targetId="21f9-f3cf-3e48-8b3c"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="07ab-b519-5c5b-4577" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="0"/>
+        <constraint id="59bd-e1ad-0e09-82df" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="0"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier field="hidden" type="set" value="false">
+                  <conditions>
+                    <condition childId="82d5-543f-6fea-d947" childName="Imagifier" field="selections" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier field="07ab-b519-5c5b-4577" type="increment" value="1"/>
+                <modifier field="59bd-e1ad-0e09-82df" type="increment" value="1"/>
+              </modifiers>
+              <repeats>
+                <repeat childId="82d5-543f-6fea-d947" childName="Imagifier" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
+              </repeats>
+            </modifierGroup>
+          </modifierGroups>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink name="Dogmata" id="2d2f-a473-ffd0-08b8" hidden="true" import="true" targetId="d3fc-15b4-4ddd-fbfa" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Compound units" id="0633-e2bc-4f5c-5b0b" hidden="false" primary="true" targetId="21f9-f3cf-3e48-8b3c"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="4f05-0b7b-052f-ad1a" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="0"/>
+        <constraint id="5e3e-eca9-0fb3-4776" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="0"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier field="hidden" type="set" value="false">
+                  <conditions>
+                    <condition childId="5a74-70df-cc8d-bb29" childName="Dogmata" field="selections" includeChildSelections="true" scope="force" shared="true" type="atLeast" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier field="4f05-0b7b-052f-ad1a" type="increment" value="1"/>
+                <modifier field="5e3e-eca9-0fb3-4776" type="increment" value="1"/>
+              </modifiers>
+              <repeats>
+                <repeat childId="5a74-70df-cc8d-bb29" childName="Dogmata" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
+              </repeats>
+            </modifierGroup>
+          </modifierGroups>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
   </entryLinks>
   <profileTypes>
     <profileType name="Roll" id="9274-72c0-35b3-10df">
@@ -433,10 +569,24 @@ Units successfully affected by this ability are considered to be Inspired. Unles
             <constraint id="74ea-8162-66b0-0366" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="5"/>
             <constraint id="5452-b1a0-a566-807b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
           </constraints>
-          <entryLinks>
-            <entryLink name="Dialogus" id="6b30-be26-e407-b805" collective="false" hidden="false" import="true" targetId="d97d-8659-1bfe-3ea5" type="selectionEntry"/>
-            <entryLink name="Hospitaller" id="c683-1b47-510b-b0c5" collective="false" hidden="false" import="true" targetId="b018-1a79-a5fa-1171" type="selectionEntry"/>
-          </entryLinks>
+          <selectionEntries>
+            <selectionEntry name="Dialogus" id="eb9d-c8d7-b891-c30c" hidden="false" import="true" type="upgrade">
+              <costs>
+                <cost name="Pts" typeId="points" value="40"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry name="Hospitaller" id="f8c0-59c1-bd40-7274" hidden="false" import="true" type="upgrade">
+              <costs>
+                <cost name="Pts" typeId="points" value="60"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="3"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -486,24 +636,29 @@ Units successfully affected by this ability are considered to be Inspired. Unles
         <categoryLink name="Platoon" id="d6d4-b71c-0436-4d69" hidden="false" primary="false" targetId="1724-9147-143d-875e"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Convent relevant" id="6086-110d-e78b-f5df" defaultSelectionEntryId="65bc-6649-384d-672e" hidden="false">
+        <selectionEntryGroup name="Convent relevant" id="6086-110d-e78b-f5df" defaultSelectionEntryId="5a74-70df-cc8d-bb29" hidden="false">
           <constraints>
             <constraint id="c1f9-2e09-7aa6-3848" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="5"/>
             <constraint id="355a-52e5-1304-d446" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
           </constraints>
-          <entryLinks>
-            <entryLink name="Imagifier" id="d613-c3da-7639-11d0" collective="false" hidden="false" import="true" targetId="6dde-ab5e-e22b-a0a2" type="selectionEntry">
+          <selectionEntries>
+            <selectionEntry name="Dogmata" id="5a74-70df-cc8d-bb29" hidden="false" import="true" type="upgrade">
               <costs>
-                <cost name="pts" typeId="points" value="35"/>
-                <cost name=" PL" typeId="e356-c769-5920-6e14" value="2"/>
+                <cost name="Pts" typeId="points" value="35"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
-            </entryLink>
-            <entryLink name="Dogmata" id="65bc-6649-384d-672e" collective="false" hidden="false" import="true" targetId="d3fc-15b4-4ddd-fbfa" type="selectionEntry">
-              <categoryLinks>
-                <categoryLink name="Elites" id="8d9d-9c82-725c-11ae" hidden="false" primary="true" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2"/>
-              </categoryLinks>
-            </entryLink>
-          </entryLinks>
+            </selectionEntry>
+            <selectionEntry name="Imagifier" id="82d5-543f-6fea-d947" hidden="false" import="true" type="upgrade">
+              <costs>
+                <cost name="Pts" typeId="points" value="35"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -4447,12 +4602,6 @@ Until the start of your next Command phase, each time a model in that unit makes
         <categoryLink name="Faction: Adeptus Sororitas" id="ca89-c3cb-4be0-233d" hidden="false" primary="false" targetId="f475-3e56-fd5f-4737"/>
         <categoryLink name="Non-Militant Order" id="04e2-7f6c-01eb-16a0" hidden="false" primary="false" targetId="8a9f-c27e-bf5f-5d68"/>
       </categoryLinks>
-      <costs>
-        <cost name="Pts" typeId="points" value="35"/>
-        <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
-        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-      </costs>
       <entryLinks>
         <entryLink name="Hymns of Battle" id="c8d4-f04a-9d0e-11fd" collective="false" hidden="false" import="true" targetId="396f-b578-f5d6-2c38" type="selectionEntryGroup">
           <modifierGroups>
@@ -4526,12 +4675,6 @@ Until the start of your next Command phase, each time a model in that unit makes
         <categoryLink name="Priest" id="4cee-ffba-2cb4-06ab" hidden="false" primary="false" targetId="4751-a257-7859-1684"/>
         <categoryLink name="Ordo Hereticus" id="8a46-a090-c15e-c73b" hidden="false" primary="false" targetId="2981-f499-19fc-bc80"/>
       </categoryLinks>
-      <costs>
-        <cost name="Pts" typeId="points" value="35"/>
-        <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
-        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-      </costs>
       <entryLinks>
         <entryLink name="Frag &amp; Krak grenades" id="9367-546e-81c8-1b85" collective="false" hidden="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
         <entryLink name=" Character definition" id="3449-39f2-6b59-ccad" collective="false" hidden="false" import="true" targetId="5ab9-e62e-cf29-d190" type="selectionEntryGroup"/>
@@ -4622,12 +4765,6 @@ Until the start of your next Command phase, each time a model in that unit makes
         <categoryLink name="Character" id="4af1-ba8f-d163-4b3e" hidden="false" primary="false" targetId="ef18-746a-369f-43a4"/>
         <categoryLink name="Non-Militant Order" id="8527-3577-dab5-0b5e" hidden="false" primary="false" targetId="8a9f-c27e-bf5f-5d68"/>
       </categoryLinks>
-      <costs>
-        <cost name="Pts" typeId="points" value="60"/>
-        <cost name="PL" typeId="e356-c769-5920-6e14" value="3"/>
-        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-      </costs>
       <entryLinks>
         <entryLink name="Bolt pistol" id="4751-ed1d-4da5-9d71" collective="false" hidden="false" import="true" targetId="1da2-aaf4-c4eb-f218" type="selectionEntry"/>
       </entryLinks>
@@ -4694,159 +4831,6 @@ Until the start of your next Command phase, each time a model in that unit makes
           </profiles>
         </selectionEntry>
       </selectionEntries>
-    </selectionEntry>
-    <selectionEntry name="Imagifier" id="6dde-ab5e-e22b-a0a2" collective="false" hidden="false" import="true" type="model">
-      <categoryLinks>
-        <categoryLink name="Infantry" id="938d-d171-070a-efab" hidden="false" primary="false" targetId="3d52-fccf-10c0-3fae"/>
-        <categoryLink name="Character" id="f72d-1f87-431a-d0c1" hidden="false" primary="false" targetId="ef18-746a-369f-43a4"/>
-        <categoryLink name="Faction: Adeptus Sororitas" id="f86b-5e4e-1184-185e" hidden="false" primary="false" targetId="f475-3e56-fd5f-4737"/>
-        <categoryLink name="Faction: Imperium" id="4bb0-b48a-fac1-ae05" hidden="false" primary="false" targetId="84e2-9fa9-ebe6-1d18"/>
-        <categoryLink name="Ordo Hereticus" id="1e9c-5ddb-c7de-e4f5" hidden="false" primary="false" targetId="2981-f499-19fc-bc80"/>
-      </categoryLinks>
-      <costs>
-        <cost name="Pts" typeId="points" value="35"/>
-        <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
-        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-        <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-      </costs>
-      <entryLinks>
-        <entryLink name="Frag &amp; Krak grenades" id="c175-92d2-dcfb-5c2f" collective="false" hidden="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
-        <entryLink name=" Character definition" id="e25f-fe55-731f-85f9" collective="false" hidden="false" import="true" targetId="5ab9-e62e-cf29-d190" type="selectionEntryGroup"/>
-        <entryLink name="Boltgun" id="64ad-a12c-f5eb-5db6" collective="false" hidden="false" import="true" targetId="e60c-14d4-00f9-b8d4" type="selectionEntry"/>
-      </entryLinks>
-      <infoLinks>
-        <infoLink name="Sister Officer" id="e0a4-f23c-17b8-6d18" hidden="false" targetId="2985-bb30-012c-1e51" type="profile"/>
-      </infoLinks>
-      <modifierGroups>
-        <modifierGroup>
-          <comment>Order</comment>
-          <modifiers>
-            <modifier field="category" type="add" value="9631-bab1-bb78-85f5">
-              <conditions>
-                <condition childId="7de5-3646-50c5-8a65" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-              </conditions>
-            </modifier>
-            <modifier field="category" type="add" value="d226-4b71-35aa-c00b">
-              <conditions>
-                <condition childId="041b-1973-e313-1c63" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-              </conditions>
-            </modifier>
-            <modifier field="category" type="add" value="8610-1f3e-906e-5728">
-              <conditions>
-                <condition childId="0746-4e82-2436-0801" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-              </conditions>
-            </modifier>
-            <modifier field="category" type="add" value="2eca-33b8-0214-dfa4">
-              <conditions>
-                <condition childId="ff16-9833-a99b-101c" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-              </conditions>
-            </modifier>
-            <modifier field="category" type="add" value="b779-6d8f-9558-fbb9">
-              <conditions>
-                <condition childId="fac2-3ddd-de48-9be7" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-              </conditions>
-            </modifier>
-            <modifier field="category" type="add" value="a67a-0695-e651-df42">
-              <conditions>
-                <condition childId="f806-c07a-8031-a8c8" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-              </conditions>
-            </modifier>
-            <modifier field="category" type="add" value="1d04-4ea1-bcdb-73cd">
-              <conditions>
-                <condition childId="525b-2c42-e588-c351" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Litany of Deeds" id="715c-3acd-fe17-a73a" collective="false" defaultSelectionEntryId="08aa-b138-7140-7975" hidden="false" import="true">
-          <constraints>
-            <constraint id="84c2-8f93-3980-34c2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-            <constraint id="9551-abad-535d-a304" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-          </constraints>
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition childId="9bf7-ef4a-6afa-2761" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="true" type="equalTo" value="1"/>
-              </conditions>
-              <modifiers>
-                <modifier field="84c2-8f93-3980-34c2" type="set" value="2"/>
-                <modifier field="9551-abad-535d-a304" type="set" value="2"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
-          <selectionEntries>
-            <selectionEntry name="Tale of the Faithful" id="bab1-6e41-5a4b-8497" collective="false" hidden="false" import="true" type="upgrade">
-              <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Tale of the Faithful [Aura]" id="1fbe-c03b-fac9-7f58" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-                  <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly ORDER CORE unit is within 6&quot; of this model, you can re-roll Advance rolls and charge rolls made for that unit.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry name="Tale of the Warrior" id="7877-cf8c-12f4-3b14" collective="false" hidden="false" import="true" type="upgrade">
-              <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Tale of the Warrior [Aura]" id="549c-85b5-2dc9-754e" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-                  <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly ORDER CORE unit is within 6&quot; of this model, add 1 to the Strength characteristic of models in that unit.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry name="Tale of the Stoic" id="d25b-a3c6-a962-263c" collective="false" hidden="false" import="true" type="upgrade">
-              <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Tale of the Stoic [Aura]" id="08ad-6a54-bbd7-e70f" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-                  <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly ORDER CORE unit is within 6&quot; of this model, each time an attack with a Strength characteristic of 3 or less is made against that unit, subtract 1 from that attack’s wound roll.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry name="Selected before the battle" id="08aa-b138-7140-7975" collective="false" hidden="false" import="true" type="upgrade">
-              <costs>
-                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                <cost name="Pts" typeId="points" value="0"/>
-                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
-              </costs>
-              <infoLinks>
-                <infoLink name="Tale of the Faithful [Aura]" id="84da-b7e7-3c4b-8f36" hidden="false" targetId="1fbe-c03b-fac9-7f58" type="profile"/>
-                <infoLink name="Tale of the Warrior [Aura]" id="d732-4abc-63ba-bee3" hidden="false" targetId="549c-85b5-2dc9-754e" type="profile"/>
-                <infoLink name="Tale of the Stoic [Aura]" id="a867-4e20-c3ed-46c1" hidden="false" targetId="08ad-6a54-bbd7-e70f" type="profile"/>
-              </infoLinks>
-              <profiles>
-                <profile name="Litany of Deeds" id="d901-5d3e-0a11-78c0" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-                  <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model gains an ability depending on which tale it is recounting. 
-At the start of the battle, before the first turn begins, you must select one tale from the following list for this model to recount, and make a note of it on your army roster. 
-You cannot select a tale that another model from your army is already recounting unless all three tales are being recounted by models from your army. Until the end of the battle, this model has the ability associated with that tale.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry name="Preacher" id="bd25-a7cb-c79a-feb3" collective="false" hidden="false" import="true" type="model">
       <categoryLinks>
@@ -9156,6 +9140,400 @@ While this unit is Inspired by this hymn, each time a model in the Inspired unit
         </entryLink>
         <entryLink name="Boltgun" id="6a36-752c-6a6b-7a5c" collective="false" hidden="false" import="true" targetId="b61f-a3c1-827d-c5b6" type="selectionEntry"/>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Compound units" id="b523-4be2-6d76-ac8c" hidden="false">
+      <selectionEntries>
+        <selectionEntry name="Imagifier" id="6dde-ab5e-e22b-a0a2" collective="false" hidden="false" import="true" type="model">
+          <categoryLinks>
+            <categoryLink name="Infantry" id="938d-d171-070a-efab" hidden="false" primary="false" targetId="3d52-fccf-10c0-3fae"/>
+            <categoryLink name="Character" id="f72d-1f87-431a-d0c1" hidden="false" primary="false" targetId="ef18-746a-369f-43a4"/>
+            <categoryLink name="Faction: Adeptus Sororitas" id="f86b-5e4e-1184-185e" hidden="false" primary="false" targetId="f475-3e56-fd5f-4737"/>
+            <categoryLink name="Faction: Imperium" id="4bb0-b48a-fac1-ae05" hidden="false" primary="false" targetId="84e2-9fa9-ebe6-1d18"/>
+            <categoryLink name="Ordo Hereticus" id="1e9c-5ddb-c7de-e4f5" hidden="false" primary="false" targetId="2981-f499-19fc-bc80"/>
+          </categoryLinks>
+          <costs>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink name="Frag &amp; Krak grenades" id="fa94-b33e-6e77-6a8f" collective="false" hidden="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
+            <entryLink name=" Character definition" id="b495-114d-1563-b868" collective="false" hidden="false" import="true" targetId="5ab9-e62e-cf29-d190" type="selectionEntryGroup"/>
+            <entryLink name="Boltgun" id="96b9-a154-2a94-9e31" collective="false" hidden="false" import="true" targetId="e60c-14d4-00f9-b8d4" type="selectionEntry"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Sister Officer" id="d7c3-1d2d-a6b1-0329" hidden="false" targetId="2985-bb30-012c-1e51" type="profile"/>
+          </infoLinks>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Order</comment>
+              <modifiers>
+                <modifier field="category" type="add" value="9631-bab1-bb78-85f5">
+                  <conditions>
+                    <condition childId="7de5-3646-50c5-8a65" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="category" type="add" value="d226-4b71-35aa-c00b">
+                  <conditions>
+                    <condition childId="041b-1973-e313-1c63" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="category" type="add" value="8610-1f3e-906e-5728">
+                  <conditions>
+                    <condition childId="0746-4e82-2436-0801" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="category" type="add" value="2eca-33b8-0214-dfa4">
+                  <conditions>
+                    <condition childId="ff16-9833-a99b-101c" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="category" type="add" value="b779-6d8f-9558-fbb9">
+                  <conditions>
+                    <condition childId="fac2-3ddd-de48-9be7" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="category" type="add" value="a67a-0695-e651-df42">
+                  <conditions>
+                    <condition childId="f806-c07a-8031-a8c8" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="category" type="add" value="1d04-4ea1-bcdb-73cd">
+                  <conditions>
+                    <condition childId="525b-2c42-e588-c351" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Litany of Deeds" id="8ff0-45ab-7d41-28a6" collective="false" defaultSelectionEntryId="08aa-b138-7140-7975" hidden="false" import="true">
+              <constraints>
+                <constraint id="0d35-c05d-63e3-1263" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                <constraint id="dfb7-c60b-9ab1-a29d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+              </constraints>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition childId="9bf7-ef4a-6afa-2761" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier field="0d35-c05d-63e3-1263" type="set" value="2"/>
+                    <modifier field="dfb7-c60b-9ab1-a29d" type="set" value="2"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <selectionEntries>
+                <selectionEntry name="Tale of the Faithful" id="35fd-3248-2da5-3886" collective="false" hidden="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="Pts" typeId="points" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Tale of the Faithful [Aura]" id="cf4e-5a34-d511-ddd7" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+                      <characteristics>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly ORDER CORE unit is within 6&quot; of this model, you can re-roll Advance rolls and charge rolls made for that unit.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry name="Tale of the Warrior" id="e9bc-ac67-4055-59c2" collective="false" hidden="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="Pts" typeId="points" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Tale of the Warrior [Aura]" id="5843-9b40-193a-fec1" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+                      <characteristics>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly ORDER CORE unit is within 6&quot; of this model, add 1 to the Strength characteristic of models in that unit.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry name="Tale of the Stoic" id="0ac0-ade6-f9a8-cba9" collective="false" hidden="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="Pts" typeId="points" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Tale of the Stoic [Aura]" id="ce63-eb70-02bb-0fba" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+                      <characteristics>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly ORDER CORE unit is within 6&quot; of this model, each time an attack with a Strength characteristic of 3 or less is made against that unit, subtract 1 from that attack’s wound roll.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry name="Selected before the battle" id="bfb4-d5f5-a9bb-b30a" collective="false" hidden="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="Pts" typeId="points" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Tale of the Faithful [Aura]" id="f0b9-0616-c649-1783" hidden="false" targetId="1fbe-c03b-fac9-7f58" type="profile"/>
+                    <infoLink name="Tale of the Warrior [Aura]" id="aba5-7ffa-bd93-4ef4" hidden="false" targetId="549c-85b5-2dc9-754e" type="profile"/>
+                    <infoLink name="Tale of the Stoic [Aura]" id="ced8-8b12-6666-c3bc" hidden="false" targetId="08ad-6a54-bbd7-e70f" type="profile"/>
+                  </infoLinks>
+                  <profiles>
+                    <profile name="Litany of Deeds" id="32e7-cc02-b9bd-c855" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+                      <characteristics>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model gains an ability depending on which tale it is recounting. 
+At the start of the battle, before the first turn begins, you must select one tale from the following list for this model to recount, and make a note of it on your army roster. 
+You cannot select a tale that another model from your army is already recounting unless all three tales are being recounted by models from your army. Until the end of the battle, this model has the ability associated with that tale.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+        <selectionEntry name="Hospitaller" id="a921-3901-bb56-d34a" collective="false" hidden="false" import="true" type="model">
+          <categoryLinks>
+            <categoryLink name="Infantry" id="10bd-ae20-bd10-d04d" hidden="false" primary="false" targetId="3d52-fccf-10c0-3fae"/>
+            <categoryLink name="Faction: Adeptus Sororitas" id="8057-cb9a-e903-2201" hidden="false" primary="false" targetId="f475-3e56-fd5f-4737"/>
+            <categoryLink name="Faction: Imperium" id="10d7-5c2f-fc45-0d8d" hidden="false" primary="false" targetId="84e2-9fa9-ebe6-1d18"/>
+            <categoryLink name="Character" id="a29b-e176-edc1-6550" hidden="false" primary="false" targetId="ef18-746a-369f-43a4"/>
+            <categoryLink name="Non-Militant Order" id="f2cf-ca5d-7aa6-9ec9" hidden="false" primary="false" targetId="8a9f-c27e-bf5f-5d68"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink name="Bolt pistol" id="18f3-dec7-6b3b-d6c6" collective="false" hidden="false" import="true" targetId="1da2-aaf4-c4eb-f218" type="selectionEntry"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Rosarius" id="f0c1-f78e-7ccc-32c2" hidden="false" targetId="ace1-892d-7d99-bc9e" type="profile"/>
+            <infoLink name="Lone Operative" id="39a0-59b8-4cf0-fbae" hidden="false" targetId="d330-126a-2734-65ca" type="profile"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Rites of Restoration" id="7b40-68ce-d7d6-525f" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Select one friendly IMPERIUM INFANTRY unit that is not at its Starting Strength and is within 3&quot; of that HOSPITALLER unit. One of the selected friendly unit’s destroyed models is returned to its unit with it&apos;s full wounds remaining.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Medicus Ministorum [Aura]" id="68de-cd25-e706-2af6" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly IMPERIUM INFANTRY unit is within 3&quot; of this model, each time a model in that unit would lose a wound, roll one D6: on a 6, that wound is not lost.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Sacred Healing" id="8628-92af-8f8c-929e" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the end of your Movement phase, this model can heal one friendly IMPERIUM INFANTRY model whose unit is within 3&quot; of it. That model regains up to D3 lost wounds. Each model can only be healed once per turn.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Sister Officer" id="939c-3f6e-fec5-bfbc" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier field="f330-5e6e-4110-0978" type="set" value="4"/>
+              </modifiers>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry name="Chirurgeon’s tools" id="125d-ed94-04da-6ec6" collective="false" hidden="false" import="true" type="upgrade">
+              <constraints>
+                <constraint id="95a8-657c-9c93-92ee" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                <constraint id="a953-e168-bc64-f3d6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Chirurgeon’s tools" id="365a-738a-b5de-0593" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry name="Dogmata" id="ec88-214e-13c6-0716" collective="false" hidden="false" import="true" type="model">
+          <categoryLinks>
+            <categoryLink name="Infantry" id="fa83-1536-ea9d-75d2" hidden="false" primary="false" targetId="3d52-fccf-10c0-3fae"/>
+            <categoryLink name="Character" id="6a5b-f945-07ee-3f38" hidden="false" primary="false" targetId="ef18-746a-369f-43a4"/>
+            <categoryLink name="Faction: Adeptus Sororitas" id="1122-69d2-4d93-2d37" hidden="false" primary="false" targetId="f475-3e56-fd5f-4737"/>
+            <categoryLink name="Faction: Imperium" id="a952-63ee-d4cc-7a76" hidden="false" primary="false" targetId="84e2-9fa9-ebe6-1d18"/>
+            <categoryLink name="Priest" id="db2e-4076-8665-d45c" hidden="false" primary="false" targetId="4751-a257-7859-1684"/>
+            <categoryLink name="Ordo Hereticus" id="c446-a377-e74b-2d28" hidden="false" primary="false" targetId="2981-f499-19fc-bc80"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink name="Frag &amp; Krak grenades" id="26ae-ceba-70ae-cc92" collective="false" hidden="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry"/>
+            <entryLink name=" Character definition" id="17ea-fbb6-4fb8-e2f4" collective="false" hidden="false" import="true" targetId="5ab9-e62e-cf29-d190" type="selectionEntryGroup"/>
+            <entryLink name="Bolt pistol" id="2e51-f7c0-8bcd-b0ac" collective="false" hidden="false" import="true" targetId="1da2-aaf4-c4eb-f218" type="selectionEntry"/>
+            <entryLink name="Power Maul" id="5e36-9e53-e120-c98a" collective="false" hidden="false" import="true" targetId="00c8-5122-da18-2ab9" type="selectionEntry"/>
+            <entryLink name="Hymns of Battle" id="b54c-0f4c-025e-d42c" collective="false" hidden="false" import="true" targetId="396f-b578-f5d6-2c38" type="selectionEntryGroup">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition childId="74b5-12dc-e96f-96f7" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="true" type="equalTo" value="1"/>
+                        <condition childId="74b5-12dc-e96f-96f7" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="self" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <modifiers>
+                    <modifier field="8b22-8b7d-2e65-d00f" type="set" value="3"/>
+                    <modifier field="85a2-5088-6d83-d49f" type="set" value="3"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Sister Officer" id="282c-2ea9-12f9-a550" hidden="false" targetId="2985-bb30-012c-1e51" type="profile"/>
+          </infoLinks>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Order</comment>
+              <modifiers>
+                <modifier field="category" type="add" value="9631-bab1-bb78-85f5">
+                  <conditions>
+                    <condition childId="7de5-3646-50c5-8a65" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="category" type="add" value="d226-4b71-35aa-c00b">
+                  <conditions>
+                    <condition childId="041b-1973-e313-1c63" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="category" type="add" value="8610-1f3e-906e-5728">
+                  <conditions>
+                    <condition childId="0746-4e82-2436-0801" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="category" type="add" value="2eca-33b8-0214-dfa4">
+                  <conditions>
+                    <condition childId="ff16-9833-a99b-101c" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="category" type="add" value="b779-6d8f-9558-fbb9">
+                  <conditions>
+                    <condition childId="fac2-3ddd-de48-9be7" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="category" type="add" value="a67a-0695-e651-df42">
+                  <conditions>
+                    <condition childId="f806-c07a-8031-a8c8" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="category" type="add" value="1d04-4ea1-bcdb-73cd">
+                  <conditions>
+                    <condition childId="525b-2c42-e588-c351" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <profiles>
+            <profile name="Sacred Task [Aura]" id="c019-2a30-166b-a1e6" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly ORDER CORE unit that is performing an action is within 6&quot; of this model, that unit can shoot without that action failing.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Unflinching Determination" id="791e-6937-4992-314f" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">In your Command phase, you can select one friendly ORDER CORE unit within 6&quot; of this model. Until the start of your next Command phase, that unit has the Objective Secured ability. If a model in that unit already has this ability, that model counts as having one additional wound when determining control of an objective marker.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="Dialogus" id="ea13-f357-3c32-e24a" collective="false" hidden="false" import="true" type="model">
+          <categoryLinks>
+            <categoryLink name="Infantry" id="f216-610c-a616-1e1e" hidden="false" primary="false" targetId="3d52-fccf-10c0-3fae"/>
+            <categoryLink name="Character" id="f749-a81f-4d40-b5fc" hidden="false" primary="false" targetId="ef18-746a-369f-43a4"/>
+            <categoryLink name="Faction: Imperium" id="ecea-f512-057a-4314" hidden="false" primary="false" targetId="84e2-9fa9-ebe6-1d18"/>
+            <categoryLink name="Priest" id="7cab-5909-d009-a132" hidden="false" primary="false" targetId="4751-a257-7859-1684"/>
+            <categoryLink name="Faction: Adeptus Sororitas" id="4d49-64cf-8c1f-d9cf" hidden="false" primary="false" targetId="f475-3e56-fd5f-4737"/>
+            <categoryLink name="Non-Militant Order" id="44a4-61b1-fcc5-781c" hidden="false" primary="false" targetId="8a9f-c27e-bf5f-5d68"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink name="Hymns of Battle" id="c68b-4b7e-711b-0d93" collective="false" hidden="false" import="true" targetId="396f-b578-f5d6-2c38" type="selectionEntryGroup">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition childId="74b5-12dc-e96f-96f7" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="true" type="equalTo" value="1"/>
+                        <condition childId="74b5-12dc-e96f-96f7" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="self" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <modifiers>
+                    <modifier field="8b22-8b7d-2e65-d00f" type="set" value="3"/>
+                    <modifier field="85a2-5088-6d83-d49f" type="set" value="3"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </entryLink>
+            <entryLink name="Bolt pistol" id="49e7-7196-4d46-fde3" collective="false" hidden="false" import="true" targetId="1da2-aaf4-c4eb-f218" type="selectionEntry"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Sister Officer" id="9d81-38a1-4f16-217a" hidden="false" targetId="2985-bb30-012c-1e51" type="profile"/>
+            <infoLink name="Lone Operative" id="e335-4417-3078-e16a" hidden="false" targetId="d330-126a-2734-65ca" type="profile"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Stirring Rhetoric [Aura]" id="c999-bfa9-d8ed-39bd" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly ADEPTA SORORITAS unit is within 6&quot; of this model, each time that unit (or a model in that unit) performs an Act of Faith, you can increase or decrease the value of 1 Miracle dice by 1 before you use it to perform that Act of Faith. This is not cumulative with any other abilities that can increase or decrease the value of a Miracle dice.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Laud Hailer [Aura]" id="4803-d8f0-56de-d45d" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly ADEPTA SORORITAS CORE or ADEPTA SORORITAS CHARACTER unit is within 6&quot; of this model, add 1 to the Leadership characteristic of models in that unit.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry name="Dialogus staff" id="afe1-966b-969a-9d37" collective="false" hidden="false" import="true" type="upgrade">
+              <constraints>
+                <constraint id="d9be-12c3-f97c-f043" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                <constraint id="bba1-a211-851d-254d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="Pts" typeId="points" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Dialogus staff" id="c063-5000-cbe5-f85e" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </catalogue>
