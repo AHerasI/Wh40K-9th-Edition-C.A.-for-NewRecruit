@@ -12074,7 +12074,7 @@ INFANTRY, SWARM and BEAST units that are in the way of the pushed WRECKED unit, 
 Non AIRCRAFT MONSTER, VEHICLE and TITANIC units in the way of the pushed WRECKED unit will stop further movement of it.</description>
     </rule>
     <rule name="Compound unit" id="293e-2187-c611-c338" hidden="false">
-      <description> - THIS METHOD IS USED TO PREVENT RULE/ABILITY BLOAT USING YELLOWSCRIBE OR SIMILAR SYSTEMS - 
+      <description>- THIS METHOD IS USED TO PREVENT RULE/ABILITY BLOAT USING YELLOWSCRIBE OR SIMILAR SYSTEMS - 
 By keeping the units separated within de database logic. The groups of the compound unit still belong to the same unit.</description>
     </rule>
   </sharedRules>
