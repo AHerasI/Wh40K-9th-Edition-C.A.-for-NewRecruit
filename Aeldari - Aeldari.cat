@@ -23178,6 +23178,7 @@ From that point onwards, each operates independently and is treated as a separat
         <categoryLink name="Infantry" id="0336-2652-0007-d7bb" hidden="false" primary="false" targetId="3d52-fccf-10c0-3fae"/>
         <categoryLink name="Blades for hire" id="61bc-1775-fd15-298c" hidden="false" primary="false" targetId="7ea4-c13c-383c-315e"/>
         <categoryLink name="Faction: Drukhari" id="238d-289e-f176-23af" hidden="false" primary="false" targetId="137f-9a86-a5a7-ce94"/>
+        <categoryLink name="Bodyguard" id="8ad8-f507-409a-0c6e" hidden="false" primary="false" targetId="b9f1-de64-cd51-3db4"/>
       </categoryLinks>
       <costs>
         <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -23186,9 +23187,9 @@ From that point onwards, each operates independently and is treated as a separat
         <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
       </costs>
       <infoLinks>
-        <infoLink name="Holo-fields" id="d7d6-d626-2760-69c0" hidden="false" targetId="b658-ed22-322c-3bef" type="profile"/>
-        <infoLink name="Tormentors" id="dc68-863e-233a-4cfe" hidden="false" targetId="6ec2-c7a5-2208-970a" type="profile"/>
+        <infoLink name="Forceshield" id="d7d6-d626-2760-69c0" hidden="false" targetId="1f21-f836-36fd-d65e" type="profile"/>
         <infoLink name="Skillful Parry" id="9bbc-c66f-cbda-9c6f" hidden="false" targetId="4ee4-0937-e94e-6728" type="profile"/>
+        <infoLink name="Swift Engagement" id="3780-36da-9b66-6b70" hidden="false" targetId="4a49-7e1f-fe62-0367" type="profile"/>
       </infoLinks>
       <modifierGroups>
         <modifierGroup>
@@ -23268,11 +23269,14 @@ From that point onwards, each operates independently and is treated as a separat
             <constraint id="15b6-3c70-a546-2a48" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
           </constraints>
           <costs>
-            <cost name="Pts" typeId="points" value="20"/>
-            <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+            <cost name="Pts" typeId="points" value="35"/>
+            <cost name="PL" typeId="e356-c769-5920-6e14" value="2"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Tormentor" id="dc68-863e-233a-4cfe" hidden="false" targetId="6ec2-c7a5-2208-970a" type="profile"/>
+          </infoLinks>
           <profiles>
             <profile name="Klaivex" id="edaa-0f12-d1b1-a82d" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
@@ -23284,7 +23288,7 @@ From that point onwards, each operates independently and is treated as a separat
                 <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
-                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -23340,12 +23344,29 @@ From that point onwards, each operates independently and is treated as a separat
                         <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
                         <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
                         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, if this weapon profile is selected, it makes 2 additional attacks with this weapon.</characteristic>
+                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, if this weapon profile is selected, it makes 3 additional attacks with this weapon.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
                 </selectionEntry>
               </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Ranged option" id="b74e-f1e5-130e-9059" hidden="false">
+              <constraints>
+                <constraint id="8522-f1d6-789a-62cc" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <entryLinks>
+                <entryLink name="Blaster rifle" id="0b95-f85b-f9a0-4cd2" hidden="false" import="true" targetId="a7cb-defc-369a-681a" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="points" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink name="Shredder" id="ae14-097b-2bf0-bee7" hidden="false" import="true" targetId="f4df-1f6c-81ff-5fed" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="points" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
@@ -23356,10 +23377,13 @@ From that point onwards, each operates independently and is treated as a separat
             <constraint id="9aad-faa5-d308-da27" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="9"/>
             <constraint id="3d97-c70f-fa82-cde9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="4"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Tormentor" id="f041-3832-bb16-7c6d" hidden="false" targetId="6ec2-c7a5-2208-970a" type="profile"/>
+          </infoLinks>
           <selectionEntries>
             <selectionEntry name="Incubi" id="d2f8-415c-d386-bc6d" collective="false" hidden="false" import="true" type="model">
               <costs>
-                <cost name="Pts" typeId="points" value="20"/>
+                <cost name="Pts" typeId="points" value="30"/>
                 <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
@@ -23383,10 +23407,31 @@ From that point onwards, each operates independently and is treated as a separat
                     <characteristic name="W" typeId="f330-5e6e-4110-0978">2</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Ranged option" id="3148-1563-2c97-9664" hidden="false">
+                  <constraints>
+                    <constraint id="0a59-2ff8-a7bb-9550" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink name="Blaster rifle" id="750f-25bf-e931-f950" hidden="false" import="true" targetId="a7cb-defc-369a-681a" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="points" value="10"/>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink name="Shredder" id="23f1-14e0-8579-6a03" hidden="false" import="true" targetId="f4df-1f6c-81ff-5fed" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="points" value="5"/>
+                        <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -37281,7 +37326,7 @@ If the unit cannot be set-up, it&apos;s placed in the Strategic Reserves of your
                 <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly INCUBI unit is within 6&quot; of this model, each time a model in that unit makes a melee attack, add 1 to that attack’s wound roll.</characteristic>
               </characteristics>
             </profile>
-            <profile name="Tormentors" id="6ec2-c7a5-2208-970a" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+            <profile name="Tormentor" id="6ec2-c7a5-2208-970a" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
                 <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the start of the Fight phase, select one enemy unit within Engagement Range of this model and roll 2D6: if the result is greater than the enemy unit’s Leadership characteristic, until the end of the phase, that unit is not eligible to fight until after all eligible units from your army have done so.</characteristic>
               </characteristics>
