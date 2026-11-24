@@ -22823,7 +22823,7 @@ From that point onwards, each operates independently and is treated as a separat
             <categoryLink name="Bodyguard" id="c449-da04-049f-a735" hidden="false" primary="false" targetId="b9f1-de64-cd51-3db4"/>
           </categoryLinks>
           <constraints>
-            <constraint id="77b7-beb1-600a-4c55" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="4"/>
+            <constraint id="77b7-beb1-600a-4c55" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="6"/>
             <constraint id="ab41-9f5d-c34a-f904" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
           </constraints>
           <costs>
@@ -22847,7 +22847,7 @@ From that point onwards, each operates independently and is treated as a separat
                 <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
-                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -23190,6 +23190,7 @@ From that point onwards, each operates independently and is treated as a separat
         <infoLink name="Forceshield" id="d7d6-d626-2760-69c0" hidden="false" targetId="1f21-f836-36fd-d65e" type="profile"/>
         <infoLink name="Skillful Parry" id="9bbc-c66f-cbda-9c6f" hidden="false" targetId="4ee4-0937-e94e-6728" type="profile"/>
         <infoLink name="Swift Engagement" id="3780-36da-9b66-6b70" hidden="false" targetId="4a49-7e1f-fe62-0367" type="profile"/>
+        <infoLink name="Tormentor" id="dc68-863e-233a-4cfe" hidden="false" targetId="6ec2-c7a5-2208-970a" type="profile"/>
       </infoLinks>
       <modifierGroups>
         <modifierGroup>
@@ -23274,9 +23275,6 @@ From that point onwards, each operates independently and is treated as a separat
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
             <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
           </costs>
-          <infoLinks>
-            <infoLink name="Tormentor" id="dc68-863e-233a-4cfe" hidden="false" targetId="6ec2-c7a5-2208-970a" type="profile"/>
-          </infoLinks>
           <profiles>
             <profile name="Klaivex" id="edaa-0f12-d1b1-a82d" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
               <characteristics>
@@ -23292,6 +23290,28 @@ From that point onwards, each operates independently and is treated as a separat
               </characteristics>
             </profile>
           </profiles>
+          <selectionEntries>
+            <selectionEntry name="Bloodstone" id="6e31-6a7b-0ae8-d669" hidden="false" import="true" type="upgrade">
+              <costs>
+                <cost name="Pts" typeId="points" value="10"/>
+                <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Bloodstone" id="9898-7ec6-ccca-33f3" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">3&quot;</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol D3</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">-</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">-</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time a successful hit roll is made for an attack with this weapon, the target suffers 1 mortal wound and the attack sequence ends.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup name="Melee weapon" id="8193-d2d8-df4e-d99e" collective="false" defaultSelectionEntryId="a655-4f9a-dcba-32c9" hidden="false" import="true">
               <constraints>
@@ -23349,6 +23369,29 @@ From that point onwards, each operates independently and is treated as a separat
                     </profile>
                   </profiles>
                 </selectionEntry>
+                <selectionEntry name="Punisher" id="dacf-1876-b7c9-dd9d" hidden="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name="Pts" typeId="points" value="5"/>
+                    <cost name="PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Power Lance" id="21ee-fcfb-f40d-3a57" hidden="false" targetId="de62-5c9a-e27d-3fa3" type="profile"/>
+                  </infoLinks>
+                  <profiles>
+                    <profile name="Punisher" id="5655-1bb9-8c13-509d" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                        <characteristic name="S" typeId="59b1-319e-ec13-d466">2</characteristic>
+                        <characteristic name="AP" typeId="75aa-a838-b675-6484">3</characteristic>
+                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Add +4 to Strength instead of +2 if the bearer has charged this turn.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="Ranged option" id="b74e-f1e5-130e-9059" hidden="false">
@@ -23377,9 +23420,6 @@ From that point onwards, each operates independently and is treated as a separat
             <constraint id="9aad-faa5-d308-da27" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="9"/>
             <constraint id="3d97-c70f-fa82-cde9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="4"/>
           </constraints>
-          <infoLinks>
-            <infoLink name="Tormentor" id="f041-3832-bb16-7c6d" hidden="false" targetId="6ec2-c7a5-2208-970a" type="profile"/>
-          </infoLinks>
           <selectionEntries>
             <selectionEntry name="Incubi" id="d2f8-415c-d386-bc6d" collective="false" hidden="false" import="true" type="model">
               <costs>
@@ -23388,14 +23428,6 @@ From that point onwards, each operates independently and is treated as a separat
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="RP" typeId="ed03-25cc-2681-bdce" value="0"/>
               </costs>
-              <entryLinks>
-                <entryLink name="Klaive" id="29d2-1eb7-c66d-2645" collective="false" hidden="false" import="true" targetId="1d57-11b3-9e9b-2e9d" type="selectionEntry">
-                  <constraints>
-                    <constraint id="c62d-50d3-7292-6670" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                    <constraint id="b2c2-2642-34ad-6146" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
               <profiles>
                 <profile name="Incubi" id="cbcd-d1ee-74e2-d799" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                   <characteristics>
@@ -23429,6 +23461,16 @@ From that point onwards, each operates independently and is treated as a separat
                         <cost name="PL" typeId="e356-c769-5920-6e14" value="1"/>
                       </costs>
                     </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Melee weapon" id="6bed-a585-a4bc-b32b" defaultSelectionEntryId="29d2-1eb7-c66d-2645" hidden="false">
+                  <constraints>
+                    <constraint id="c62d-50d3-7292-6670" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                    <constraint id="b2c2-2642-34ad-6146" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink name="Klaive" id="29d2-1eb7-c66d-2645" collective="false" hidden="false" import="true" targetId="1d57-11b3-9e9b-2e9d" type="selectionEntry"/>
+                    <entryLink name="Punisher" id="5dfe-b072-8e74-b81f" collective="false" hidden="false" import="true" targetId="dacf-1876-b7c9-dd9d" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -42295,7 +42337,7 @@ Until that happens, that model is still considered to be in play, but no further
               <selectionEntries>
                 <selectionEntry name="Ur-Ghul" id="8069-07f7-803f-224e" collective="false" hidden="false" import="true" type="model">
                   <constraints>
-                    <constraint id="45d7-093e-27c0-bf0d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="4"/>
+                    <constraint id="45d7-093e-27c0-bf0d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="6"/>
                     <constraint id="3dc4-9798-253a-5182" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                   </constraints>
                   <costs>
@@ -42307,10 +42349,10 @@ Until that happens, that model is still considered to be in play, but no further
                   <profiles>
                     <profile name="Ur-Ghul" id="fc8f-5d9d-a309-1d01" hidden="false" typeId="800f-21d0-4387-c943" typeName="Model">
                       <characteristics>
-                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8</characteristic>
+                        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">9</characteristic>
                         <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3</characteristic>
                         <characteristic name="BS" typeId="381b-eb28-74c3-df5f">-</characteristic>
-                        <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
+                        <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
                         <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
                         <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
                         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
@@ -42343,7 +42385,7 @@ Until that happens, that model is still considered to be in play, but no further
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
                             <characteristic name="AP" typeId="75aa-a838-b675-6484">1</characteristic>
-                            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
                           </characteristics>
                         </profile>
@@ -42379,7 +42421,7 @@ Until that happens, that model is still considered to be in play, but no further
               <selectionEntries>
                 <selectionEntry name="Lhamaean" id="51f1-14bb-4dcd-3e1a" collective="false" hidden="false" import="true" type="model">
                   <constraints>
-                    <constraint id="6180-0879-feac-53ee" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="4"/>
+                    <constraint id="6180-0879-feac-53ee" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="6"/>
                     <constraint id="f6eb-c40a-dd6d-c006" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                   </constraints>
                   <costs>
@@ -42404,7 +42446,7 @@ Until that happens, that model is still considered to be in play, but no further
                     </profile>
                     <profile name="Toxin Crafter [Aura]" id="8aea-de4f-6d98-0d96" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                       <characteristics>
-                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly KABAL ARCHON or KABAL CORE unit is within 3&quot; of this unit, if this unit contains any LHAMAEAN models, each time a model in that unit makes an attack with a Poisoned weapon against units without INORGANIC, VEHICLE and TITANIC Keywords, an unmodified hit roll of 6 automatically wounds the target.</characteristic>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly KABAL ARCHON or KABAL CORE unit is within 6&quot; of this unit, if this unit contains any LHAMAEAN models, each time a model in that unit makes an attack with a Poisoned weapon against units without INORGANIC, VEHICLE and TITANIC Keywords, an unmodified hit roll of 6 automatically wounds the target.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -42443,6 +42485,7 @@ Until that happens, that model is still considered to be in play, but no further
                 <categoryLink name="Faction: Drukhari" id="2832-73ef-b3ab-5dc6" hidden="false" primary="false" targetId="137f-9a86-a5a7-ce94"/>
                 <categoryLink name="Drukhari Kabal" id="1681-4c63-8a7e-8b54" hidden="false" primary="false" targetId="395b-75d9-5ac9-7a81"/>
                 <categoryLink name="Faction: Aeldari" id="0b98-ae58-c9ab-bfa1" hidden="false" primary="false" targetId="1924-ef18-000b-d2ba"/>
+                <categoryLink name="Daemonic" id="c47c-ff99-44e0-c233" hidden="false" primary="false" targetId="27fc-c23f-28a9-0a7c"/>
               </categoryLinks>
               <displayCosts>
                 <displayCost name="Pts" typeId="points" value="0"/>
@@ -42459,7 +42502,7 @@ Until that happens, that model is still considered to be in play, but no further
               <selectionEntries>
                 <selectionEntry name="Medusae" id="5f5d-15ed-ee45-f055" collective="false" hidden="false" import="true" type="model">
                   <constraints>
-                    <constraint id="a322-b28f-19d3-d780" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="4"/>
+                    <constraint id="a322-b28f-19d3-d780" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="6"/>
                     <constraint id="48e7-fb37-e063-f3b0" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                   </constraints>
                   <costs>
@@ -42529,7 +42572,7 @@ Until that happens, that model is still considered to be in play, but no further
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol D6</characteristic>
                             <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
                             <characteristic name="AP" typeId="75aa-a838-b675-6484">2</characteristic>
-                            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Torrent.</characteristic>
                           </characteristics>
                         </profile>
